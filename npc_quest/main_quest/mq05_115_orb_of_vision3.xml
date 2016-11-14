@@ -1,0 +1,253 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_115_orb_of_vision3</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>115</qid>
+      <designer>손원호</designer>
+      <qlevel>3</qlevel>
+      <qdesc>파렐리나 안식처의 오브를 더 안전한 곳으로 옮기기 위해 두개의 열쇠를 모아 가는 소서리스. 첫번 째 열쇠는 신시아게서, 두번 째 열쇠는 율리아에게서 얻고 문을 열지만 오히려 적에게 습격당해 오브를 빼앗긴다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>116</nextqid>
+      <nextqname>mq05_116_arrest</nextqname>
+      <nextqnpc>n015_sorceress_tara</nextqnpc>
+      <qkname mid="1"><![CDATA[Reaching for the Vision Orb]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>207</npcid>
+         <npcename>n207_sorceress_yullia</npcename>
+         <npckname>소서리스 율리아(소서전용)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>The weather is rather cold, isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Sorceress Melissa$<BR>It's been a long time.<BR><FONT color=#7e12d2>(You can get the quest from Master Sorceress Cynthia.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting" image="QS_Default.dds" itemindex="300146">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-acceptted" mid="80"><![CDATA[<html>What's this?</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Take this. <BR>I'm not comfortable giving this to you, but unfortunately there's no one else who can do this now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QS_Default.dds" itemindex="300146">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="6"><![CDATA[<html>What this?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Take this. <BR>I'm not comfortable giving this to you, but unfortunately there's no one else who can do this now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="QS_Default.dds" itemindex="300146">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Vision Orb is a precious treasure for us sorceresses, so there are two keys to open the door to the room where it is kept.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="QS_Default.dds" itemindex="300146">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="76"><![CDATA[<html>What about the second key?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Master Sorceress Cynthia$<BR>The first key is the <FONT color=#a82424>Red Pledge</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QS_Default.dds" itemindex="300147">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-d" mid="10"><![CDATA[<html>Got it.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Cynthia$<BR>The second key is the <FONT color=#a82424>Blue Pledge</FONT>. Melissa has the second key. Get it from her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-d" image="QW_FrostHill.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Melissa is waiting for you at <FONT color=#a82424>Frost Hill</FONT>. Stop idling and go find her now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>The weather is rather cold, isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QW_FrostHill.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Melissa is waiting for you at <FONT color=#a82424>Frost Hill</FONT>. Stop idling and go find her already.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2" image="" itemindex="">
+      <talk_answer link_index="n207_sorceress_yullia-2-a" mid="18"><![CDATA[<html>Greetings, Melissa. I'm <FONT color=#382000>{user_nick}.</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Sorceress Melissa$<BR>It's been a long time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-a" image="" itemindex="">
+      <talk_answer link_index="n207_sorceress_yullia-2-b" mid="20"><![CDATA[<html>Um... Yeah...</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Sorceress Melissa$<BR>It seems you've been through a lot after leaving Mana Ridge.<BR>There are lots of rumours about your endeavors going around in Mana Ridge.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-b" image="" itemindex="">
+      <talk_answer link_index="n207_sorceress_yullia-2-c" mid="22"><![CDATA[<html>Pfft. Whatever. Cynthia never gets off my case now!</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Sorceress Melissa$<BR>It's okay, don't be disheartened. We sorceresses are fellow sisters. We help each other out. Deep down inside, I know Cynthia supports you too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-c" image="" itemindex="">
+      <talk_answer link_index="n207_sorceress_yullia-2-d" mid="24"><![CDATA[<html>Yeah, SURE... Anyway, back to the Vision Orb.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Melissa$<BR>One day you'll see. I mean, considering that you left without a word for five years, you're really lucky that Cynthia hasn't set your sorry behind on fire or something!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-d" image="QS_Default.dds" itemindex="300147">
+      <talk_answer link_index="n207_sorceress_yullia-2-e" mid="26"><![CDATA[<html>I guess.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Sorceress Melissa$<BR>Right. So we need to relocate the Vision Orb to a safer place? I'll hand over the <FONT color=#a82424>Blue Pledge</FONT> key to you. Retrieve the Orb from Parelina's Resting Place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-2-e" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Sorceress Melissa$<BR>Hey...you've actually got a lot of potential. You just gotta have faith.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n207_sorceress_yullia-3" image="QW_8.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Sorceress Melissa$<BR>Now, hurry on to <FONT color=#a82424>Parelina's Resting Place</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="QW_8.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Sorceress Tara$<BR>Ah, now that you've both keys, all you need to do now is retrieve the Orb from <FONT color=#a82424>Parelina's Resting Place</FONT>! I'm rooting for you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>What's wrong with you? People are relying on you! Get a move on! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-a" mid="43"><![CDATA[<html>Oops...haha.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>Huh?? You failed to retrieve the Orb? How did you lose it!? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-b" mid="45"><![CDATA[<html>I guess I'm really gonna get it from Cynthia now, huh?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Sorceress Tara$<BR>This is not a joke! You lost the <FONT color=#a82424>Vision Orb</FONT>. <BR>Our most precious treasure!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-c" mid="47"><![CDATA[<html>Yeah! Thanks, Sorceress Tara! I'm...going back to find the Orb...</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Sorceress Tara$<BR>Ohh...Cynthia won't be mad at you... She'll kill you! She'll burn you to death with that beloved Flame Burst of yours, or she'll continously step on you to death with her heels! Maybe she might just start calling down meteors on you or suck you into a black hole!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-4-!next" mid="49"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">115</exe>
+         <exe type="custom">npc_talk_index = "n012_sorceress_master_cynthia-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300146</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300147</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1150,,,,,,</exe>
+         <exe type="complete">115</exe>
+         <exe type="delquestitem" num="-1">300146</exe>
+         <exe type="delquestitem" num="-1">300147</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n012_sorceress_master_cynthia" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="d">0,1,2</exelink>
+   <exelink qstep="2" npc="n207_sorceress_yullia" sub="b" />
+   <exelink qstep="2" npc="n207_sorceress_yullia" sub="c" />
+   <exelink qstep="2" npc="n207_sorceress_yullia" sub="d" />
+   <exelink qstep="2" npc="n207_sorceress_yullia" sub="e">0,1,2</exelink>
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="c">0</exelink>
+   <exelink qstep="4" npc="n015_sorceress_tara" sub="!next">1,2,3</exelink>
+   <journal_data recompense="3:1150" quest_title="비전의 오브Ⅲ" chapterid="1" quest_level="3" quest_mark_type="1" use_item_list="300146,300147">
+      <journal index="1">
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Talk to Master Sorceress Cynthia]]></title>
+         <contents mid="53"><![CDATA[<html>Talk to Master Sorceress Cynthia.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="55"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_FrostHill.dds</contents_image>
+         <destination_pos>6,n207</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>207</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Talk to Melissa]]></title>
+         <contents mid="57"><![CDATA[<html>You are tasked to move the Vision Orb to a safer location. Master Cynthia has already given you the first key, the Red Pledge. Speak with Sorceress Melissa and get the second key, the Blue Pledge from her to access the room that holds the Orb.BR><BR><FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→Sorceress Melissa</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to Sorceress Melissa]]></destination>
+         <todo_msg mid="59"><![CDATA[Get the second key from Sorceress Melissa.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_8.dds</contents_image>
+         <destination_pos>88,0,0</destination_pos>
+         <destination_mode>custom:86@1,87@1,88@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Retrieve the Orb from Parelina's Resting Place.]]></title>
+         <contents mid="61"><![CDATA[<html>You have both keys. Retrieve the Orb from Parelina's Resting Place now.<BR><BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Parelina's Resting Place</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Retrieve the Orb from Parelina's Resting Place.]]></destination>
+         <todo_msg mid="63"><![CDATA[Retrieve the Orb from Parelina's Resting Place.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string>오브 빼앗기는 컷씬 출력</trigger_string>
+         <maptool_index />
+         <title mid="65"><![CDATA[Talk to Sorceress Tara]]></title>
+         <contents mid="66"><![CDATA[<html>The Vision Orb is lost! You'll be in dire straits if you return without the Orb. Consult Sorceress Tara for her advice.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Sorceress Tara</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk to Sorceress Tara]]></destination>
+         <todo_msg mid="68"><![CDATA[Return to Mana Ridge and consult Sorceress Tara.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>114</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

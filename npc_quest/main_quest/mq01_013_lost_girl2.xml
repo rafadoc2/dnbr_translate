@@ -1,0 +1,168 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_013_lost_girl2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>13</qid>
+      <designer>김주연</designer>
+      <qlevel>1</qlevel>
+      <qdesc>오크 크롬쉬 사냥해서 지도조각 얻어옴. 다시 가서 가드 티모시와 만나라고 함
+
+변경 후 : (가드 스티브)오크 크롬쉬의 짓인 듯 하니 마침 혼자서 그 곳으로 향하는 가드 티모시와 합류하라고 함.
+
+지도조각은 가드 티모시가 주고 다음 퀘스트인 흩어진 어쩌구로 이어짐.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>14</nextqid>
+      <nextqname>mq01_014_scattered_evidence</nextqname>
+      <nextqnpc>n008_guard_timose</nextqnpc>
+      <qkname mid="1"><![CDATA[The Mystery of the Missing Girl II]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>8</npcid>
+         <npcename>n008_guard_timose</npcename>
+         <npckname>가드 티모시</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Mayor Harold$<BR>You're the adventurer who saved my granddaughter... Thank you so much. How can I ever repay your kindness...<BR><FONT color=#7e12d2>(Talk to Vigilante Leader Steve to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-accepting-acceptted" mid="265"><![CDATA[<html>Thanks.</html>]]></talk_answer>
+      <talk_question mid="264"><![CDATA[<html>$Vigilante Leader Steve$<BR>Here's some <FONT color=#a82424>medicine</FONT> that we use for emergency. There's only a little so please use it wisely in your battle against <FONT color=#a82424>Orc Kromish</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QS_Default.dds" itemindex="302132232">
+      <talk_answer link_index="n004_guard_steave-2" mid="238"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>The medicine is stored in your inventory. You can press <FONT color=#a82424>[I]</FONT> to open the inventory and drag the item onto the quickslots at the bottom of the screen for quicker usage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="239"><![CDATA[<html>$Mayor Harold$<BR>Before going to <FONT color=#a82424>Shadow Forest Trail</FONT>, please meet <FONT color=#a82424>Vigilante Leader Steve</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-1" image="" itemindex="">
+      <talk_question mid="266"><![CDATA[<html>$Guard Timothy$<BR>Se-security cleared! I-I am not doing anything!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QM_OrcGreen.dds" itemindex="">
+      <talk_question mid="240"><![CDATA[<html>$Vigilante Leader Steve$<BR>One of my men has already headed to <FONT color=#a82424>Shadow Forest Trail</FONT> to find <FONT color=#a82424>Rose</FONT>. Please work with him to find the rest of the <FONT color=#a82424>map fragments</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="" itemindex="">
+      <talk_question mid="241"><![CDATA[<html>$Mayor Harold$<BR>You can get to <FONT color=#a82424>Shadow Forest Trail</FONT> from <FONT color=#a82424>Shadow Forest Path Entrance</FONT> that you can see on your left when you leave the town.<BR>Please rescue Rose...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-3" image="" itemindex="">
+      <talk_answer link_index="n008_guard_timose-3-a" mid="269"><![CDATA[<html>...? Are you alright?</html>]]></talk_answer>
+      <talk_question mid="268"><![CDATA[<html>$Guard Timothy$<BR>Se-security cleared! I-I am not doing anything!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-3-a" image="" itemindex="">
+      <talk_answer link_index="n008_guard_timose-3-b" mid="271"><![CDATA[<html>Steve sent me here.</html>]]></talk_answer>
+      <talk_question mid="270"><![CDATA[<html>$Guard Timothy$<BR>Huh? Wh-who are y-you?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-3-b" image="" itemindex="">
+      <talk_answer link_index="n008_guard_timose-3-c" mid="277"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="276"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-3-c" image="" itemindex="">
+      <talk_answer link_index="n008_guard_timose-3-!next" mid="280"><![CDATA[<html>That piece of map may give us some clues.</html>]]></talk_answer>
+      <talk_question mid="279"><![CDATA[<html>$Guard Timothy$<BR>I... I s-see.... Right... I was just picking up map pieces that the monsters had dropped.<BR>We need to s-save Rose before she gets h-hurt....</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">13</exe>
+         <exe type="talk" npc="n004_guard_steave">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>3스텝 2저널인 상태에서 그늘 숲 기슭으로 가면 가드 티모시가 있음.</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>300057 지도 조각</comment>
+      <conditions />
+      <executions>
+         <exe type="complete">13</exe>
+         <exe type="recompense">,131,132,133,134,135,136</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n008_guard_timose" sub="b">1</exelink>
+   <exelink qstep="3" npc="n008_guard_timose" sub="c">0</exelink>
+   <exelink qstep="3" npc="n008_guard_timose" sub="!next" />
+   <journal_data recompense="1:131,2:132" quest_title="실종된 소녀Ⅱ" chapterid="1" quest_level="1" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="252"><![CDATA[Vigilante Leader Steve]]></title>
+         <contents mid="253"><![CDATA[<html>Mayor Harold of Prairie Town recommends that you meet Vigilante Leader Steve before rescuing Rose.<BR>Find <FONT color=#a82424>Vigilante Leader Steve</FONT> and seek his advice.<BR><BR><FONT color=#086171>Prairie Town</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Vigilante Leader Steve</FONT></FONT></html>]]></contents>
+         <destination mid="254"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="255"><![CDATA[Talk to Vigilante Leader Steve.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_OrcGreen.dds</contents_image>
+         <destination_pos>51,n8</destination_pos>
+         <destination_mode>custom:51@1</destination_mode>
+         <statemark_npcid>8</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="256"><![CDATA[Meet the guard at the Shadow Forest Trail.]]></title>
+         <contents mid="257"><![CDATA[<html><FONT color=#2b2723>Join the guard who has already left for the <FONT color=#a82424>Shadow Forest Trail</FONT><BR></FONT><BR><FONT color=#2b2723><FONT color=#086171>Shadow Forest</FONT> </FONT><FONT color=#a82424>→ Shadow Forest Trail</FONT></html>]]></contents>
+         <destination mid="258"><![CDATA[Talk to Timothy in Shadow Forest Trail]]></destination>
+         <todo_msg mid="259"><![CDATA[Meet the guard at the Shadow Forest Trail.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest>12</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,372 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_186_sweep_all</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>186</qid>
+      <designer>김인정</designer>
+      <qlevel>9</qlevel>
+      <qdesc>수정 개울의 통행증	300012
+다크엘프의 하프	300015
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>187</nextqid>
+      <nextqname>mq08_187_lavor_in_vain</nextqname>
+      <nextqnpc>n547_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[파죽지세]]></qkname>
+      <qnpc>
+         <npcid>1092</npcid>
+         <npcename>n1092_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1101</npcid>
+         <npcename>n1101_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>547</npcid>
+         <npcename>n547_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>549</npcid>
+         <npcename>n549_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-accepting-acceptted" mid="149" select_type="3" />
+      <talk_question mid="131"><![CDATA[<html>$정찰병 퍼거스$<BR>마물들의 움직임 심상치 않군요.<BR>당장이라도 무슨 일이 터질 것만 같습니다.<BR>
+음... 그런데, 당신은...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="QS_Default.dds" itemindex="300012" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-a" mid="145" select_type="0"><![CDATA[<html>(수정 개울 통행증을 보여 준다)</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$정찰병 퍼거스$<BR>이 근처에서는 처음 보는 얼굴이군요.<BR>실례지만 신분을 증명할 만한 것을 보여주시겠습니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-b" mid="147" select_type="2" />
+      <talk_question mid="146"><![CDATA[<html>$정찰병 퍼거스$<BR>음? 프레리 타운에서 오신다는 건 두 분이셨던 것 같은데...?<BR><FONT color=#7e12d2>(퍼거스가 고개를 갸웃거린다)</FONT><BR>어쨌든 잘 오셨습니다. 저는 캐더락 모험자 길드의 정찰병 퍼거스라고 합니다. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-b" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-c" mid="151" select_type="2" />
+      <talk_question mid="150"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>다른 두 분이라면 그 워리어 시안하고...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-c" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-d" mid="153" select_type="2" />
+      <talk_question mid="152"><![CDATA[<html>$정찰병 퍼거스$<BR>네. 워리어 시안 님과 아처 트리아나 님입니다.<BR>두 분은 모험자 길드장 데커드 님의 의뢰를 받고 납치된 소녀를 구하기 위해, 움직이고 계십니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-d" image="QM_HarpyRed.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-e" mid="156" select_type="2" />
+      <talk_question mid="155"><![CDATA[<html>$정찰병 퍼거스$<BR>아, 모험자님도 그 붉은 하피를 쫓고 계셨군요?<BR>저희 정찰대에 의해 그 <FONT color=#a82424>붉은 깃털의 하피</FONT>의 행적은 알아냈습니다.<BR>탄식의 협곡으로 간 것 같더군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-e" image="QM_HarpyRed.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-f" mid="158" select_type="2" />
+      <talk_question mid="157"><![CDATA[<html>$정찰병 퍼거스$<BR>하지만 당장은 추적할 수가 없습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-f" image="QW_13.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-g" mid="160" select_type="2" />
+      <talk_question mid="159"><![CDATA[<html>$정찰병 퍼거스$<BR>탄식의 협곡에서 하피 미스트리스를 찾으려면, 우선 <FONT color=#a82424>다크엘프의 하프</FONT>가 필요합니다.<BR>그것이 있어야만 하피를 끌어낼 수 있거든요.<BR>다른 모험자분들도 도착하자마자 하프를 찾기 위해 <FONT color=#a82424>습격자들의 소굴</FONT>로 향하셨습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-g" image="QW_13.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-h" mid="162" select_type="2" />
+      <talk_question mid="161"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그러면 나도 그 곳으로 가 봐야겠군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-h" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-i" mid="224" select_type="2" />
+      <talk_question mid="223"><![CDATA[<html>$정찰병 퍼거스$<BR>
+음. 저기 괜찮으시다면, <FONT color=#a82424>캐더락 관문</FONT>에 먼저 들러주시지 않겠습니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-i" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-j" mid="226" select_type="2" />
+      <talk_question mid="225"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>왜죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-j" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-k" mid="228" select_type="2" />
+      <talk_question mid="227"><![CDATA[<html>$정찰병 퍼거스$<BR>
+아, 그게... 먼저 가신 모험자 분들이 급하게 가시는 바람에... <FONT color=#a82424>캐더락 관문</FONT>에 가시면 습격자들의 소굴에서 하실 수 있는 다양한 의뢰를 받으실 수 있을 겁니다. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-k" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-2" mid="232" select_type="2" />
+      <talk_question mid="231"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>생각해 보겠습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1092_lunaria-1" image="QN_ranger_fugus.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1092_lunaria-1-" mid="137" select_type="5" />
+      <talk_question mid="135"><![CDATA[<html>$루나리아$<BR>그럼, 수정 개울로 가서 <FONT color=#a82424>정찰병 퍼거스</FONT>를 만나면 되는 거지?<BR>이해했어. 출발해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1" image="QN_ranger_fugus.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-" mid="139" select_type="5" />
+      <talk_question mid="138"><![CDATA[<html>$루나리아$<BR>응?<BR>
+퍼거스는 저쪽에 있는 것 같은데~ 여기가 아니라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-1-" mid="141" select_type="5" />
+      <talk_question mid="140"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(활기찬 인상의 워리어가 서 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n549_triana-1-" mid="143" select_type="5" />
+      <talk_question mid="142"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(침착해 보이는 아처가 자신의 동행과 대화하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-2" image="QW_13.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-2-" mid="164" select_type="5" />
+      <talk_question mid="163"><![CDATA[<html>$정찰병 퍼거스${action:Talk}<BR>
+그럼 잘 부탁드립니다.<BR>
+하프는 <FONT color=#a82424>습격자들의 소굴</FONT>에 있는 다크엘프의 수장인 다크엘프 암살자 리디아가 지니고 있습니다.<BR>다크엘프는 몹시 민첩하고 강한 마물이죠. 그 춤에 시선을 뺏기지 않도록 주의하십시오.<BR>
+<FONT color=#7e12d2>*먼저 캐더락 관문에 들러 서브 퀘스트를 받으세요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-2" image="QW_13.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-2-" mid="222" select_type="5" />
+      <talk_question mid="221"><![CDATA[<html>$루나리아$<BR>...습격자들의 소굴로 가는 거로군.<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3" image="QS_Default.dds" itemindex="300015" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-3-a" mid="167" select_type="2" />
+      <talk_question mid="166"><![CDATA[<html>$정찰병 퍼거스${action:Talk}<BR>하프를 찾아 오셨군요. 이것 참, 생각 외로 대단하십니다.<BR>과연 모험자시군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3-a" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-4" mid="169" select_type="2" />
+      <talk_question mid="168"><![CDATA[<html>$정찰병 퍼거스$<BR>참, 다른 모험자분들은 이미 도착하셨습니다.<BR><FONT color=#387206>{user_nick}</FONT> 님이 오셨다는 말에 저쪽에서 기다리고 계십니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-4-" mid="171" select_type="5" />
+      <talk_question mid="170"><![CDATA[<html>$정찰병 퍼거스$<BR>자세한 이야기는 저쪽 분들께 듣도록 하십시오.<BR><FONT color=#7e12d2>(퍼거스가 워리어 시안 방향을 가리킨다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-4" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-4-" mid="174" select_type="5" />
+      <talk_question mid="172"><![CDATA[<html>$루나리아$<BR>저쪽의 모험자와 대화하려는 거지?<BR>
+이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n549_triana-4-" mid="176" select_type="5" />
+      <talk_question mid="175"><![CDATA[<html>$아처 트리아나$<BR>
+생명의 나무의 축복이 당신과 함께 하기를...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-a" mid="178" select_type="2" />
+      <talk_question mid="177"><![CDATA[<html>$워리어 시안$<BR>앗, <FONT color=#387206>{user_nick}</FONT> 님!<BR>하하. 역시 로제를 구출하기 위해 여기까지 오신 거군요!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-a" image="QM_HarpyRed.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-b" mid="180" select_type="2" />
+      <talk_question mid="179"><![CDATA[<html>$워리어 시안$<BR>그 <FONT color=#a82424>하피 미스트리스</FONT> 말인데요, 탄식의 협곡으로 갔다고 합니다.<BR>단지 거기까지 가려면 다크엘프의 하프가 필요하다고 하던데 혹시 구하셨습니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-b" image="QS_Default.dds" itemindex="300015" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-c" mid="183" select_type="2" />
+      <talk_question mid="182"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네. 여기에...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-d" mid="185" select_type="2" />
+      <talk_question mid="184"><![CDATA[<html>$워리어 시안$<BR>앗! 잘 됐네요.<BR>저희는 하프는 못 찾았습니다. 제가 <FONT color=#a82424>호송 명령서</FONT>인가 하는 걸 주워서 그 쪽에 정신이 팔리는 바람에...<BR>
+<FONT color=#7e12d2>(시안이 머리를 긁적거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-d" image="QS_Default.dds" itemindex="300089" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-e" mid="187" select_type="2" />
+      <talk_question mid="186"><![CDATA[<html>$워리어 시안$<BR>앗! 잘 됐네요.<BR>저희는 하프는 못 찾았습니다. 제가 <FONT color=#a82424>호송 명령서</FONT>인가 하는 걸 주워서 그 쪽에 정신이 팔리는 바람에...<BR>
+<FONT color=#7e12d2>(시안이 머리를 긁적거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-e" image="QS_Default.dds" itemindex="300089" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-f" mid="190" select_type="2" />
+      <talk_question mid="189"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>호송 명령서?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-f" image="QM_DarkelfGray.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-g" mid="192" select_type="2" />
+      <talk_question mid="191"><![CDATA[<html>$워리어 시안$<BR><FONT color=#a82424>다크엘프</FONT>들이 가지고 있었습니다. 하하.<BR>내용을 알아봤는데, 다크엘프들이 붉은 하피에게서 로제를 인도 받아 호송해갈 예정이었던 것 같더군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-g" image="QN_Master_Decud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-h" mid="194" select_type="2" />
+      <talk_question mid="193"><![CDATA[<html>$워리어 시안$<BR><FONT color=#a82424>모험자 길드장 데커드</FONT> 님께 보고도 이미 했고, 그 작전을 이용해서 선수를 치는 게 좋겠다 싶어서요.<BR>이번에야말로 하피에게서 그 소녀를 구출할 수 있을 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-h" image="QN_Rose.dds" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n547_cian-4-i" mid="196" select_type="2" />
+      <talk_question mid="195"><![CDATA[<html>$아처 트리아나$<BR>탄식의 협곡에서 다크엘프들이 소녀를 탈취하기 전에, 로제를 먼저 구출하는 것이 작전입니다.<BR>그렇죠? 시안 님.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-j" mid="198" select_type="2" />
+      <talk_question mid="197"><![CDATA[<html>$워리어 시안$<BR>네!! 바로 그렇습니다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-j" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n547_cian-4-k" mid="200" select_type="2" />
+      <talk_question mid="199"><![CDATA[<html>$아처 트리아나$<BR>
+그럼 지금 출발하는 건가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-k" image="QN_Npc_Archer_Adellin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-l" mid="202" select_type="2" />
+      <talk_question mid="201"><![CDATA[<html>$워리어 시안$<BR>앗! 그 전에 할 일이 하나 더 있습니다.<BR>그 하프 말인데요, <FONT color=#a82424>상급 아처 아델린</FONT> 님께 가서 한 번 점검을 받아야 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-m" mid="204" select_type="4" />
+      <talk_question mid="203"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-4-!next" mid="220" select_type="2" />
+      <talk_question mid="219"><![CDATA[<html>$워리어 시안$<BR>모험자 길드장 데커드 님께서 그게 사용 가능한지, 확인해야 한다셨거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">186</exe>
+         <exe type="talk" npc="n023_ranger_fugus">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">350</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200350</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300015</exe>
+         <exe type="addquestitem" num="1">300015</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">300012</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1860,,,,,,,</exe>
+         <exe type="complete" true="">186</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n023_ranger_fugus" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="a">9</exelink>
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="b" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="c" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="d" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="e" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="f" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="g" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="h" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="i" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="j" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="k" />
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="2">0,1,2,3,4</exelink>
+   <exelink qstep="3" npc="n023_ranger_fugus" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n547_cian" sub="b" />
+   <exelink qstep="4" npc="n547_cian" sub="c" />
+   <exelink qstep="4" npc="n547_cian" sub="d" />
+   <exelink qstep="4" npc="n547_cian" sub="e" />
+   <exelink qstep="4" npc="n547_cian" sub="f" />
+   <exelink qstep="4" npc="n547_cian" sub="g" />
+   <exelink qstep="4" npc="n547_cian" sub="h" />
+   <exelink qstep="4" npc="n547_cian" sub="i" />
+   <exelink qstep="4" npc="n547_cian" sub="j" />
+   <exelink qstep="4" npc="n547_cian" sub="k" />
+   <exelink qstep="4" npc="n547_cian" sub="l">0</exelink>
+   <exelink qstep="4" npc="n547_cian" sub="m">1</exelink>
+   <exelink qstep="4" npc="n547_cian" sub="!next" />
+   <journal_data recompense="1860" quest_title="파죽지세" chapterid="2" quest_level="9" quest_mark_type="1" use_item_list="300012,300015">
+      <journal index="1">
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[파죽지세I]]></title>
+         <contents mid="74"><![CDATA[<html><FONT color=#a82424>수정 개울</FONT>에 있는 <FONT color=#a82424>정찰병 퍼거스</FONT>를 만나, 다른 모험자들과 로제의 행방을 묻자.<BR>
+그 붉은 하피도 거기에 있을 테니까.<BR><BR><FONT color=#086171>수정 개울</FONT><FONT color=#a82424> - 정찰병 퍼거스 </FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[수정 개울의 정찰병 퍼거스와 대화]]></destination>
+         <todo_msg mid="76"><![CDATA[수정 개울에서 정찰병 퍼거스를 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_13.dds</contents_image>
+         <destination_pos>114,0,0</destination_pos>
+         <destination_mode>custom:111@3,112@3,113@3,114@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="206"><![CDATA[파죽지세II]]></title>
+         <contents mid="207"><![CDATA[<html>탄식의 협곡의 결계를 뚫기 위해, 습격자들의 소굴에 있는 다크엘프에게서 마법 하프를 얻어야 한다.<BR>다른 모험자들도 그리로 간 모양이다.<BR>
+ <BR>
+<FONT color=#086171>수정 개울(습격자들의 소굴 입구)</FONT> <FONT color=#a82424>- 습격자들의 소굴</FONT></html>]]></contents>
+         <destination mid="208"><![CDATA[습격자들의 소굴]]></destination>
+         <todo_msg mid="209"><![CDATA[습격자들의 소굴로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="211"><![CDATA[파죽지세III]]></title>
+         <contents mid="212"><![CDATA[<html>하프를 손에 넣었다.<BR>정찰병 퍼거스와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>수정 개울</FONT> <FONT color=#a82424>- 정찰병 퍼거스</FONT></html>]]></contents>
+         <destination mid="213"><![CDATA[수정 개울의 정찰병 퍼거스와 대화]]></destination>
+         <todo_msg mid="214"><![CDATA[수정 개울의 정찰병 퍼거스에게 돌아가, 하프를 보여주세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>4,n547</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>547</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="215"><![CDATA[파죽지세IV]]></title>
+         <contents mid="216"><![CDATA[<html>하프를 손에 넣었다.<BR>워리어 시안과 아처 트리아나가 수정 개울에서 기다린 모양이니, 대화해 보자.<BR>
+ <BR>
+<FONT color=#086171>수정 개울</FONT> <FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="217"><![CDATA[수정 개울의 워리어 시안과 대화]]></destination>
+         <todo_msg mid="218"><![CDATA[수정 개울의 워리어 시안과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>9:-1</user_level>
+      <user_class />
+      <prev_quest>35</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

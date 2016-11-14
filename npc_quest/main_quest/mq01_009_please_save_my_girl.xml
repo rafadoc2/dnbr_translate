@@ -1,0 +1,171 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_009_please_save_my_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>9</qid>
+      <designer>김주연</designer>
+      <qlevel>8</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>10</nextqid>
+      <nextqname>mq01_010_girl_of_destiny</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[In Your Care]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>124</npcid>
+         <npcename>n124_guard_sam</npcename>
+         <npckname>가드 샘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="101"><![CDATA[<html>$Mayor Harold$<BR>I heard Timothy and Rose are currently at <FONT color=#a82424>Ancient Temple Excavation Site</FONT> and in danger...<BR>Please... You must rescue them out safely...<BR>※ <FONT color=#7e12d2>Obtain quest from Vigilante Leader Steve.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-noquest" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$Guard Sam$<BR><FONT color=#a82424>Ancient Temple Excavation Site</FONT> can be reached by passing through <FONT color=#a82424>Wind Forest Temple</FONT>. Rose... You have to save Rose. I'm counting on you, <FONT color=#387206>{user_nick}</FONT>.<BR>※ <FONT color=#7e12d2>Obtain quest from Vigilante Leader Steve.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="QM_HarpyRed.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-accepting-acceptted" mid="100"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Vigilante Leader Steve$<BR>I heard Rose was taken away by <FONT color=#a82424>Red Harpy</FONT> to the <FONT color=#a82424>Ancient Temple Excavation Site</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QW_5.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Vigilante Leader Steve$<BR>Please go to <FONT color=#a82424>Ancient Temple Excavation Site</FONT> and rescue Rose. You can go to <FONT color=#a82424>Ancient Temple Excavation Site</FONT> by passing through <FONT color=#a82424>Wind Forest Temple</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Mayor Harold$<BR>I heard Timothy and Rose are currently at <FONT color=#a82424>Ancient Temple Excavation Site</FONT> and in danger...<BR>Please... You must rescue them out safely...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-1" image="" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Guard Sam$<BR><FONT color=#a82424>Ancient Temple Excavation Site</FONT> can be reached by passing through <FONT color=#a82424>Wind Forest Temple</FONT>. Rose... You have to save Rose. I'm counting on you, <FONT color=#387206>{user_nick}</FONT>.<BR>※ <FONT color=#7e12d2>Recommended level for Ancient Temple Excavation Site is Lv. 8 or higher.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-a" mid="61"><![CDATA[<html>I'm sorry. Timothy has...</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>You're here! How's Rose and Timothy?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-a" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-b" mid="64"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Vigilante Leader Steve$<BR>Timothy and Rose... Did something happen to them?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-b" image="QN_Guard_Timose_down.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-c" mid="66"><![CDATA[<html>I'm really sorry...</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Vigilante Leader Steve${action:Cry}<BR>That... What do you mean...?<BR><FONT color=#a82424>Timothy</FONT>... <FONT color=#a82424>Timothy</FONT> is dead?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-c" image="QN_Guard_Timose_down.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3" mid="68"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Vigilante Leader Steve$<BR>Argh... That fool... I hate myself, I shouldn't have left <FONT color=#a82424>Timothy</FONT> alone...<BR><FONT color=#7e12d2>(Steve has tears in his eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Mayor Harold$<BR><FONT color=#387206>{user_nick}</FONT>, <FONT color=#a82424>Vigilante Leader Steve</FONT> is waiting for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="QN_Guard_Timose_down.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-a" mid="97"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Vigilante Leader Steve$<BR>We will recover <FONT color=#a82424>Timothy</FONT>'s body…<BR>He protected the girl he loved... So he would have no regrets…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-a" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-!next" mid="88"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9</exe>
+         <exe type="talk" npc="n004_guard_steave">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92,91,92,92,92,92,</exe>
+         <exe type="complete">9</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="acceptted">0,1</exelink>
+   <exelink qstep="2" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="3">0</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="a">0</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="!next">1</exelink>
+   <journal_data recompense="1:91,2:92" quest_title="그녀를 부탁해" chapterid="1" quest_level="8" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_5.dds</contents_image>
+         <destination_pos>73,231.34,11.21</destination_pos>
+         <destination_mode>custom:71@1,72@1,73@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string>맵에서 9번퀘스트에 1번 스텝이면 몬스터 전멸시 동영상 출력 -> 스텝, 저널(1 -> 2) 변경 </trigger_string>
+         <maptool_index>73</maptool_index>
+         <title mid="43"><![CDATA[Rescue Rose and Timothy at Ancient Temple Excavation Site]]></title>
+         <contents mid="44"><![CDATA[<html>Head to <BR><BR><FONT color=#a82424>Ancient Temple Excavation Site</FONT> and rescue Rose and Timothy who are in danger.<FONT color=#086171>Wind Forest (Wind Forest Temple) </FONT><FONT color=#a82424>→ Ancient Temple Excavation Site</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Rescue Rose and Timothy at Ancient Temple Excavation Site]]></destination>
+         <todo_msg mid="46"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Talk to Vigilante Leader Steve]]></title>
+         <contents mid="48"><![CDATA[<html>You caught up with Rose and Timothy, but Rose was taken away by the Red Harpy and Timothy died from monsters' attacks.<BR>Return to Prairie Town and report to <FONT color=#a82424>Vigilante Leader Steve</FONT>.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="50"><![CDATA[Return to Vigilante Leader Steve at Prairie Town.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>8</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,409 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_189_surprise_people</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>189</qid>
+      <designer>김인정</designer>
+      <qlevel>12</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>190</nextqid>
+      <nextqname>mq08_190_unsafe_companion</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[의외의 인물]]></qkname>
+      <qnpc>
+         <npcid>1118</npcid>
+         <npcename>n1118_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1119</npcid>
+         <npcename>n1119_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1120</npcid>
+         <npcename>n1120_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="149" select_type="3" />
+      <talk_question mid="131"><![CDATA[<html>$모험자 길드장 데커드${action:Refusal}<BR>자넨가? 그동안 어딜 갔었나?<BR>한참 안 보여서 다른 일로 분주한 줄 알았더니만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="474" select_type="2" />
+      <talk_question mid="466"><![CDATA[<html>$모험자 길드장 데커드$<BR>숲의 성역으로 재차 검은 기사를 추적했지만, 결국 모험자들은 물론 은발의 여검사까지 그놈에게 당하고 말았다네.<BR>은발의 여검사가 부상을 입은데다 선지자인가 하는 소녀는 여전히 검은 기사 손아귀에 있으니...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="476" select_type="2" />
+      <talk_question mid="475"><![CDATA[<html>$모험자 길드장 데커드${action:Talk}<BR>으음? 은발의 여검사가 누구냐고?<BR>글쎄... 그녀는 아군인지 적군인지 알 수 없는 인물이지. <BR>자세한 것은 모르겠네만, 검은 기사가 출현할 즈음에 활동을 시작한 모험가로 알려져 있네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="478" select_type="2" />
+      <talk_question mid="477"><![CDATA[<html>$모험자 길드장 데커드$<BR>현재로서는 이런저런 정보를 그녀에게 받고 있으니, 협력관계로 봐도 무방하겠지.<BR>그녀도 검은 기사를 뒤쫓다 그런 부상을 입었으니 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-d" mid="480" select_type="2" />
+      <talk_question mid="479"><![CDATA[<html>$모험자 길드장 데커드$<BR>그녀의 말로는 빨리 <FONT color=#a82424>세인트헤이븐</FONT>에 연락을 취해야 한다는데, 자네도 알아시피 지금 <FONT color=#a82424>비행선</FONT>이 부서졌거든.<BR>그걸 수리해야 세인트헤이븐에 알리든지 말든지 하겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-d" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-e" mid="482" select_type="2" />
+      <talk_question mid="481"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럼 다른 사람들은...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-e" image="QW_17.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2" mid="484" select_type="2" />
+      <talk_question mid="483"><![CDATA[<html>$모험자 길드장 데커드$<BR>비행선 수리 부품을 구하러 <FONT color=#a82424>죽음의 숲</FONT>으로 갔다네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1119_velskud-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1119_velskud-1-" mid="468" select_type="5" />
+      <talk_question mid="467"><![CDATA[<html>$???$<BR>...비켜라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-1" image="QN_Master_Decud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-1-" mid="470" select_type="5" />
+      <talk_question mid="469"><![CDATA[<html>$루나리아$<BR>...뭘 하고 있어?<BR>
+모험자 길드장 데커드를 만나러 가는거 아니었어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-1" image="QN_Master_Decud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-1-" mid="472" select_type="5" />
+      <talk_question mid="471"><![CDATA[<html></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="486" select_type="2" />
+      <talk_question mid="485"><![CDATA[<html>$모험자 길드장 데커드$<BR>정말 큰일이야.<BR>검은 기사에 의해 파괴당한 비행선을 수리하지 않으면, 세인트헤이븐으로는 갈 수 없지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-" mid="488" select_type="5" />
+      <talk_question mid="487"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(죽음의 숲이라....<BR>아무래도 또 시간을 좀 건너뛴 것 같은데, 잿빛 폐허로 가서 루나리아하고 이야기를 해 보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-2-a" mid="492" select_type="2" />
+      <talk_question mid="490"><![CDATA[<html>$루나리아$<BR>너하고 나, 또 시간이동을 했구나.<BR>응... 역시 그런가 보네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-2-b" mid="494" select_type="2" />
+      <talk_question mid="493"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>감상이 참 짧네.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-2-c" mid="496" select_type="2" />
+      <talk_question mid="495"><![CDATA[<html>$루나리아$<BR>말했지, 나는 언제나 그렇게 살아왔다고.<BR>그건 내 마음대로 정할 수 있는 문제가 아니야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-2-d" mid="499" select_type="2" />
+      <talk_question mid="498"><![CDATA[<html>$루나리아$<BR>나는 그냥 걷고, 어느 틈엔가 멋대로 시간이 나를 두고 혼자 뒤엉켜 버려.<BR>흘러가 버리거나 아니면 되돌아오지. 그뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-2-e" mid="501" select_type="2" />
+      <talk_question mid="500"><![CDATA[<html>$루나리아$<BR>나와 동행하는 한 너도 내 힘에 휘말릴 수밖에 없어.<BR>그게 싫다면 나를 여기에 두고 너 혼자서 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-2-f" mid="504" select_type="2" />
+      <talk_question mid="503"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>너 혼자 두는 편이 더 위험할 것 같은데.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-2-g" mid="506" select_type="2" />
+      <talk_question mid="505"><![CDATA[<html>$루나리아$<BR>나는 아무래도 상관 없어.<BR>
+그런데 네가 돌아가야 한다고, 어디론가 가야 한다고 하니까, 그러니까 나도 가는 것뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-2-h" mid="508" select_type="2" />
+      <talk_question mid="507"><![CDATA[<html>$루나리아$<BR>어떻게 하든 네 자유야.<BR>기다리라고 한다면 그렇게 할게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-3" mid="510" select_type="2" />
+      <talk_question mid="509"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>너를 두고 갈 수는 없어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1118_lunaria-3" image="QW_17.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1118_lunaria-3-" mid="514" select_type="5" />
+      <talk_question mid="513"><![CDATA[<html>$루나리아$<BR>...나는 그저 네 뜻대로, 너를 따라갈뿐.<BR><FONT color=#a82424>죽음의 숲</FONT>으로 가는 거지?<BR>
+이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-3" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-3-" mid="517" select_type="5" />
+      <talk_question mid="516"><![CDATA[<html>$루나리아$<BR>저 남자, 너를 아는 것 같아.<BR>...너, 꽤 인기가 많네.<BR><FONT color=#7e12d2>(루나리아가 검은 옷을 걸친 낯선 남자를 가리킨다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1119_velskud-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1119_velskud-3-a" mid="520" select_type="2" />
+      <talk_question mid="518"><![CDATA[<html>$???$<BR>....<BR>
+<FONT color=#7e12d2>(검은 옷을 걸친 낯선 남자가 {user_nick} 방향을 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1119_velskud-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1119_velskud-3-b" mid="522" select_type="0"><![CDATA[<html>나를 알아?!</html>]]></talk_answer>
+      <talk_answer link_index="n1119_velskud-3-b" mid="523" select_type="0"><![CDATA[<html>당신은 누구지?</html>]]></talk_answer>
+      <talk_question mid="521"><![CDATA[<html>$???$<BR>이건 또 의외의 인물이로군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1119_velskud-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1119_velskud-3-c" mid="525" select_type="2" />
+      <talk_question mid="524"><![CDATA[<html>$???$<BR>...거기에 의외의 대화. 흠.<BR><FONT color=#7e12d2>(낯선 남자가 이죽거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1119_velskud-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1119_velskud-4" mid="527" select_type="2" />
+      <talk_question mid="526"><![CDATA[<html>$???$<BR>세인트헤이븐에서 온 <FONT color=#a82424>비행선</FONT>에는 쓸만한 건 없었군.<BR>다만 <FONT color=#a82424>과거의 망령</FONT>만 불러들인 모양이니, 나는 이만 실례하지. 큭큭큭...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1119_velskud-4" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1119_velskud-4-" mid="548" select_type="5" />
+      <talk_question mid="528"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(검은 옷의 남자가 훌쩍 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-4-a" mid="530" select_type="2" />
+      <talk_question mid="529"><![CDATA[<html>$루나리아$<BR>그래. 시간을 뛰어넘은 거, 맞아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-4-b" mid="532" select_type="2" />
+      <talk_question mid="531"><![CDATA[<html>$루나리아$<BR>방금 또 뛰어넘었지.<BR>그래서 말 했잖아?<BR>
+내게 이런 일은 일상이니, 어쩔 수 없다고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4-b" image="QW_AirShip.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-4-c" mid="534" select_type="2" />
+      <talk_question mid="533"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>역시 비행선 추락 당시로 날아왔었던 건가...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-4-d" mid="536" select_type="2" />
+      <talk_question mid="535"><![CDATA[<html>$루나리아$<BR>그럴 지도 모르지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4-d" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-4-e" mid="538" select_type="2" />
+      <talk_question mid="537"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>날 아는 거 같았어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4-e" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-4-f" mid="540" select_type="2" />
+      <talk_question mid="539"><![CDATA[<html>$루나리아$<BR>
+그 검은 남자?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4-f" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-4-g" mid="542" select_type="2" />
+      <talk_question mid="541"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그래.<BR>답답하네, 정말. 다들 왜 말을 하다 말아?!</FONT><BR>
+<FONT color=#662500>대답을 해 달라고!!!! 내가 누군데!!! 어떻게 아는 건데!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-4-h" mid="544" select_type="2" />
+      <talk_question mid="543"><![CDATA[<html>$루나리아$<BR>그거 안 됐네.<BR>
+그래서? 이제 어떻게 할 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-4-h" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-5" mid="546" select_type="2" />
+      <talk_question mid="545"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>일단, 캐더락 관문으로 돌아가야겠어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1120_lunaria-5" image="QN_Master_Decud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1120_lunaria-5-" mid="550" select_type="5" />
+      <talk_question mid="549"><![CDATA[<html>$루나리아$<BR>캐더락 관문으로 돌아간다고?<BR>흠... 모험자 길드장 데커드인가 하는 그 사람을 만날 생각이구나. 알았어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-a" mid="553" select_type="2" />
+      <talk_question mid="551"><![CDATA[<html>$모험자 길드장 데커드$<BR>오, 어서 오게.<BR>안 그래도 지금 모험자들이 돌아와 자네 소식을 묻고 갔다네.<BR>
+한참 안 보이는데 무사한지 궁금하다고 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5-a" image="QP_AirShip_part .dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-b" mid="555" select_type="0"><![CDATA[<html>지금이 언제쯤인가요?</html>]]></talk_answer>
+      <talk_question mid="554"><![CDATA[<html>$모험자 길드장 데커드$<BR>비행선 부품을 다 구하긴 했는데 호락호락 고칠 수 없는 모양이야.<BR>또 무슨 문제가 생겼다면서 우르르 몰려갔는데... 응?<BR>
+자네 왜 그러나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-c" mid="557" select_type="2" />
+      <talk_question mid="556"><![CDATA[<html>$모험자 길드장 데커드$<BR>뭐라고?! 지금이 언제쯤이냐니 무슨 질문이 그런가?<BR>자네... 혹시 머리를 다치기라도 한 건가?<BR>
+괘, 괜찮은가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5-c" image="QW_17.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-d" mid="559" select_type="2" />
+      <talk_question mid="558"><![CDATA[<html>$모험자 길드장 데커드$<BR>나는 자네도 다른 모험자들처럼 비행선 부품을 찾으러 죽음의 숲으로 간 줄 알았는데...<BR>아니었나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-e" mid="561" select_type="4" />
+      <talk_question mid="560"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-!next" mid="573" select_type="2" />
+      <talk_question mid="572"><![CDATA[<html>$모험자 길드장 데커드$<BR><FONT color=#7e12d2>(데커드가 걱정스러운 얼굴로 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">189</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1890,,,,,,,</exe>
+         <exe type="complete" true="">189</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="d" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="e" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="" />
+   <exelink qstep="2" npc="n1118_lunaria" sub="b" />
+   <exelink qstep="2" npc="n1118_lunaria" sub="c" />
+   <exelink qstep="2" npc="n1118_lunaria" sub="d" />
+   <exelink qstep="2" npc="n1118_lunaria" sub="e" />
+   <exelink qstep="2" npc="n1118_lunaria" sub="f" />
+   <exelink qstep="2" npc="n1118_lunaria" sub="g" />
+   <exelink qstep="2" npc="n1118_lunaria" sub="h" />
+   <exelink qstep="2" npc="n1118_lunaria" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n1119_velskud" sub="b" />
+   <exelink qstep="3" npc="n1119_velskud" sub="b" />
+   <exelink qstep="3" npc="n1119_velskud" sub="c" />
+   <exelink qstep="3" npc="n1119_velskud" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n1120_lunaria" sub="b" />
+   <exelink qstep="4" npc="n1120_lunaria" sub="c" />
+   <exelink qstep="4" npc="n1120_lunaria" sub="d" />
+   <exelink qstep="4" npc="n1120_lunaria" sub="e" />
+   <exelink qstep="4" npc="n1120_lunaria" sub="f" />
+   <exelink qstep="4" npc="n1120_lunaria" sub="g" />
+   <exelink qstep="4" npc="n1120_lunaria" sub="h" />
+   <exelink qstep="4" npc="n1120_lunaria" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="5" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="5" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
+   <exelink qstep="5" npc="n024_adventurer_guildmaster_decud" sub="e">1</exelink>
+   <exelink qstep="5" npc="n024_adventurer_guildmaster_decud" sub="!next" />
+   <journal_data recompense="1890" quest_title="의외의 인물" chapterid="2" quest_level="12" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="440"><![CDATA[의외의 인물I]]></title>
+         <contents mid="441"><![CDATA[<html>모험자 길드장 데커드와 좀 더 대화하자.<BR><BR><FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 모험자 길드장 데커드</FONT></html>]]></contents>
+         <destination mid="442"><![CDATA[모험자 길드장 데커드와 대화]]></destination>
+         <todo_msg mid="443"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>9,n1118</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1118</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="444"><![CDATA[의외의 인물II]]></title>
+         <contents mid="445"><![CDATA[<html>데커드와 대화해 보니, 아무래도 그 사이에 또 시간을 좀 건너 뛴 것 같다. 일단 루나리아와 대화해 상황을 파악해 보자.<BR><BR><FONT color=#086171>잿빛 폐허</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="446"><![CDATA[잿빛 폐허에서 루나리아와 대화]]></destination>
+         <todo_msg mid="447"><![CDATA[잿빛 폐허에서 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_17.dds</contents_image>
+         <destination_pos>133,n1119</destination_pos>
+         <destination_mode>custom:132@1,133@1</destination_mode>
+         <statemark_npcid>1119</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="448"><![CDATA[의외의 인물III]]></title>
+         <contents mid="449"><![CDATA[<html>일단, 죽음의 숲으로 가 보자. 시간을 뛰어넘는다고 해도 손 놓고 있을 수는 없으니까.<BR>
+ <BR>
+<FONT color=#086171>낙엽지는 호숫가(죽음의 숲 입구)</FONT> <FONT color=#a82424>- 죽음의 숲</FONT></html>]]></contents>
+         <destination mid="450"><![CDATA[죽음의 숲 수색]]></destination>
+         <todo_msg mid="451"><![CDATA[죽음의 숲으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_17.dds</contents_image>
+         <destination_pos>133,n1120</destination_pos>
+         <destination_mode>custom:132@1,133@1</destination_mode>
+         <statemark_npcid>1120</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="564"><![CDATA[의외의 인물IV]]></title>
+         <contents mid="565"><![CDATA[<html>검은 옷을 입은 남자를 만났다.<BR>또 시간을 뛰어넘었던 건가? 루나리아와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>낙엽지는 호숫가(죽음의 숲 입구)</FONT> <FONT color=#a82424>- 죽음의 숲(루나리아)</FONT></html>]]></contents>
+         <destination mid="566"><![CDATA[죽음의 숲에서 루나리아와 대화]]></destination>
+         <todo_msg mid="567"><![CDATA[낯선 남자를 만났습니다. 루나리아와 대화해 보세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="568"><![CDATA[의외의 인물V]]></title>
+         <contents mid="569"><![CDATA[<html>검은 옷을 입은 낯선 남자를 만났다. 왠지 이쪽을 아는 눈치인데...<BR>루나리아의 시간이동 덕분에 그 이상은 알아낼 수 없었다. 모험자 길드장 데커드에게 돌아가서 상황이 어떻게 돌아가는지 확인하자.<BR>
+ <BR>
+<FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 모험자 길드장 데커드</FONT></html>]]></contents>
+         <destination mid="570"><![CDATA[모험자 길드장 데커드와 대화]]></destination>
+         <todo_msg mid="571"><![CDATA[모험자 길드장 데커드에게 돌아가 시간대를 파악해 보세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>188</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,179 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_001_lost_girl2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>11</qid>
+      <designer>김주연</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>2</nextqid>
+      <nextqname>mq01_002_scattered_evidence</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[The Mystery of the Missing Girl II]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Mayor Harold$<BR>You're the adventurer who saved my granddaughter... Thank you so much. How can I ever repay your kindness...<BR><FONT color=#7e12d2>(Talk to Vigilante Leader Steve to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-accepting-acceptted" mid="265"><![CDATA[<html>Thanks.</html>]]></talk_answer>
+      <talk_question mid="264"><![CDATA[<html>$Vigilante Leader Steve$<BR>Here's some <FONT color=#a82424>medicine</FONT> that we use for emergency. There's only a little so please use it wisely in your battle against <FONT color=#a82424>Orc Kromish</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QS_Default.dds" itemindex="302132232">
+      <talk_answer link_index="n004_guard_steave-2" mid="238"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>The medicine is stored in your inventory. You can press <FONT color=#a82424>[I]</FONT> to open the inventory and drag the item onto the quickslots at the bottom of the screen for quicker usage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="239"><![CDATA[<html>$Mayor Harold$<BR>Before going to <FONT color=#a82424>Shadow Forest Trail</FONT>, please meet <FONT color=#a82424>Vigilante Leader Steve</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QM_OrcGreen.dds" itemindex="">
+      <talk_question mid="240"><![CDATA[<html>$Vigilante Leader Steve$<BR>As soon as you're ready, please head out to <FONT color=#a82424>Shadow Forest Trail</FONT> to defeat <FONT color=#a82424>Orc Kromish</FONT> and find out <FONT color=#a82424>Rose</FONT>'s whereabouts.<BR>I wish you the best of luck.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="" itemindex="">
+      <talk_question mid="241"><![CDATA[<html>$Mayor Harold$<BR>You can get to <FONT color=#a82424>Shadow Forest Trail</FONT> from <FONT color=#a82424>Shadow Forest Path Entrance</FONT> that you can see on your left when you leave the town.<BR>Please rescue Rose...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-a" mid="243"><![CDATA[<html>(Show Vigilante Leader Steve a piece of map)</html>]]></talk_answer>
+      <talk_question mid="242"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Welcome back, adventurer. <BR>I guess you were not successful in finding <FONT color=#a82424>Rose</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-a" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-3-b" mid="245"><![CDATA[<html>I got it from the orc at the Shadow Forest.</html>]]></talk_answer>
+      <talk_question mid="244"><![CDATA[<html>$Vigilante Leader Steve$<BR>What is it...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-b" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-c" mid="247"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="246"><![CDATA[<html>$Vigilante Leader Steve$<BR>Hmm... It looks like an ordinary piece of <FONT color=#a82424>Map Fragment</FONT>... But if <FONT color=#a82424>Orc Kromish</FONT> was holding onto this piece, it may have some clues to the whereabouts of <FONT color=#a82424>Rose</FONT> and the missing villagers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-c" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-3-d" mid="249"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="248"><![CDATA[<html>$Vigilante Leader Steve$<BR>First, I need to restore the original map. One of my men has already headed to <FONT color=#a82424>Shadow Forest Trail</FONT> to find <FONT color=#a82424>Rose</FONT>. Please work with him to find the rest of the <FONT color=#a82424>map fragments</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-d" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-!next" mid="251"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="250"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">11</exe>
+         <exe type="talk" npc="n004_guard_steave">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="1,4,5,6">104</exe>
+         <exe type="addquestitem" num="1">300057</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">11</exe>
+         <exe type="recompense">11,11,12,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">0,2,3</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="3" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="3" npc="n004_guard_steave" sub="d">1</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="!next">0</exelink>
+   <journal_data recompense="1:11,2:12" quest_title="실종된 소녀Ⅱ" chapterid="1" quest_level="1" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="252"><![CDATA[Vigilante Leader Steve]]></title>
+         <contents mid="253"><![CDATA[<html>Mayor Harold of Prairie Town recommends that you meet Vigilante Leader Steve before rescuing Rose.<BR>Find <FONT color=#a82424>Vigilante Leader Steve</FONT> and seek his advice.<BR><BR><FONT color=#086171>Prairie Town</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Vigilante Leader Steve</FONT></FONT></html>]]></contents>
+         <destination mid="254"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="255"><![CDATA[Talk to Vigilante Leader Steve.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_OrcGreen.dds</contents_image>
+         <destination_pos>53,0,0</destination_pos>
+         <destination_mode>custom:51@1,52@1,53@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="256"><![CDATA[Defeat Orc Kromish at Shadow Forest Trail]]></title>
+         <contents mid="257"><![CDATA[<html>Defeat <FONT color=#a82424>Orc Kromish</FONT> at <FONT color=#a82424>Shadow Forest Trail</FONT> and look for Rose.<BR><BR><FONT color=#2b2723><FONT color=#086171>Shadow Forest (Shadow Forest Path)</FONT> </FONT><FONT color=#a82424>→ Shadow Forest Trail</FONT></html>]]></contents>
+         <destination mid="258"><![CDATA[Defeat Orc Kromish at Shadow Forest Trail]]></destination>
+         <todo_msg mid="259"><![CDATA[Defeat Orc Kromish at Shadow Forest Trail.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="260"><![CDATA[Map Fragment]]></title>
+         <contents mid="261"><![CDATA[<html>You investigated <FONT color=#a82424>Shadow Forest Trail</FONT> but could not find Rose or the missing villagers.<BR>Give the <FONT color=#a82424>Map Fragment</FONT> obtained from <FONT color=#a82424>Kromish</FONT> to <FONT color=#a82424>Vigilante Leader Steve</FONT> at Prairie Town.<BR><BR><FONT color=#086171>Prairie Town</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="262"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="263"><![CDATA[Map Fragment acquired from Orc Baku.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class>1:2</user_class>
+      <prev_quest>1</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,184 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_028_rescue_prophet</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>28</qid>
+      <designer>나은하</designer>
+      <qlevel>5</qlevel>
+      <qdesc>카타콤 입구의 가드 티모시, 열쇠 다 모았으면 자기도 따라가겠다고 고집. 그래라고 함. 안에 가면, 카타콤에 가서 가드 티모시와 로제 탈출씬 목격.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>29</nextqid>
+      <nextqname>mq01_029_true_mission</nextqname>
+      <nextqnpc>n001_elder_harold</nextqnpc>
+      <uistyle>0</uistyle>
+      <qkname mid="1"><![CDATA[Save the Prophet]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>563</npcid>
+         <npcename>n563_kali_totem</npcename>
+         <npckname>은둔자의 토템</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>569</npcid>
+         <npcename>n569_gaharam</npcename>
+         <npckname>가드 티모시</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n569_gaharam-noquest" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="6"><![CDATA[<html>$Guard Timothy$<BR>We need to find R-Rose q-quickly.<BR><FONT color=#7e12d2>(※You can get the quest from Prairie Town's Hermit's Totem)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="7"><![CDATA[<html>$Mayor Harold$<BR>Where have the monsters taken Rose to ….?<BR><FONT color=#7e12d2>(※You can get the quest from Prairie Town's Hermit's Totem)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n563_kali_totem-accepting" image="QW_WindForest.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n563_kali_totem-accepting-!next" mid="10" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>${user_nick}$<BR>Since you have the red seal now, go to <FONT color=#a82424>Wind Forest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n563_kali_totem-1" image="QW_WindForest.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="11"><![CDATA[<html>${user_nick}$<BR>Guard Timothy must be waiting for me at <FONT color=#a82424>Wind Forest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="12"><![CDATA[<html>$Mayor Harold$<BR>Where have the monsters taken Rose to?….<BR><FONT color=#7e12d2>(※ Observe Prairie Town's Hermit's Totem)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n569_gaharam-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n569_gaharam-2" mid="14" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Guard Timothy$<BR>Y-you must have f-found the red seal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n569_gaharam-2" image="QW_3.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="15"><![CDATA[<html>$Guard Timothy$<BR>L-let's go to <FONT color=#a82424>Catacomb</FONT> now.<BR>I-I will follow b-behind you</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n001_elder_harold-3-a" mid="17" select_type="0"><![CDATA[<html>Rose is not back yet?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Mayor Harold$<BR>Have you heard any news about Rose?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n001_elder_harold-3-b" mid="19" select_type="0"><![CDATA[<html>(Tell him what happened at Catacomb)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Mayor Harold$<BR>W-what do you mean…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3-b" image="QN_Guard_Steave.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n001_elder_harold-3-c" mid="21" select_type="0"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Mayor Harold$<BR>If she escaped from Catacomb, she must be home by now…!<BR>Could something have happened to her on her way back?<BR>I'm sorry but could you ask Vigilante Guard Steve whether he has heard any news about her?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n001_elder_harold-3-!next" mid="23" select_type="0"><![CDATA[<html><FONT color=#a82424>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">28</exe>
+         <exe type="talk" npc="n563_kali_totem">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">148</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="4,5,6">200148</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">280,,,,,,,</exe>
+         <exe type="complete" true="">28</exe>
+         <exe type="delquestitem" num="-1">300010</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n563_kali_totem" sub="!next">0,1</exelink>
+   <exelink qstep="1" npc="n569_gaharam" sub="2">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="3" npc="n001_elder_harold" sub="c">0</exelink>
+   <exelink qstep="3" npc="n001_elder_harold" sub="!next">1</exelink>
+   <journal_data recompense="280" quest_title="선지자 구출" chapterid="1" quest_level="5" quest_mark_type="1" use_item_list="300010">
+      <journal index="1">
+         <contents_image>QN_Guard_Timose.dds</contents_image>
+         <destination_pos>3,n569</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>569</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Finding Timothy]]></title>
+         <contents mid="26"><![CDATA[<html>Go to Wind Forest and find Guard Timothy.<BR>
+ <BR>
+<FONT color=#086171>Wind Forest</FONT> <FONT color=#a82424>→ Guard Timothy</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk to Guard Timothy at Wind Forest]]></destination>
+         <todo_msg mid="28"><![CDATA[New quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_3.dds</contents_image>
+         <destination_pos>64,0,0</destination_pos>
+         <destination_mode>custom:61@1,62@1,64@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Search Catacomb]]></title>
+         <contents mid="32"><![CDATA[<html>Look for Rose at Catacomb.<BR>※ <FONT color=#7e12d2>Character must be at least Lv.5 to enter Catacomb.</FONT><BR><BR><FONT color=#086171>Wind Forest</FONT> <FONT color=#a82424>→ Catacomb</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Search Catacomb]]></destination>
+         <todo_msg mid="34"><![CDATA[Look for Rose at Catacomb.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_PrairieTown.dds</contents_image>
+         <destination_pos>1,n1</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Escape Catacomb]]></title>
+         <contents mid="37"><![CDATA[<html>Rose escaped with Guard Timothy. Go back to Prairie Town and check if they have returned safely.<BR>
+ <BR>
+<FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Mayor Harold</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Talk to Mayor Harold at Prairie Town]]></destination>
+         <todo_msg mid="39"><![CDATA[Go back to Prairie Town and check if Rose and Timothy have returned.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>27</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+   </condition_data>
+</quest>

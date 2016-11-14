@@ -1,0 +1,119 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_126_lost_sacred_object2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>126</qid>
+      <designer>김인정</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>127</nextqid>
+      <nextqname>mq05_127_evidence_of_pagan</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[Stolen Goods II]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-acceptted" mid="35"><![CDATA[<html>(Hear the tale.)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Our mission is also important, but I think the situation here may have to take priority. About that object that was taken...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="36"><![CDATA[<html>This is a cleric's...</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cleric Thomas$<BR>I started an investigation in <FONT color=#a82424>Frost Wind Forest</FONT>, to find the item that was stolen from <FONT color=#a82424>Master Cleric Leonard</FONT>.<BR>One of the Templar Knights brought this back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-b" mid="38"><![CDATA[<html>Do you have a hunch or lead?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Cleric Thomas$<BR>Yes, this is a <FONT color=#a82424>rosary</FONT> used by one of the clerics. It was found on an orc in Frost Wind Forest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-b" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-c" mid="40"><![CDATA[<html>And you think all of this is connected somehow?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Well, we've found a clue in an unexpected place.<BR>I don't know what the <FONT color=#a82424>object</FONT> that <FONT color=#a82424>Master Cleric Leonard</FONT> brought is, but if we track that <FONT color=#a82424>object</FONT>, I have a feeling all will be revealed.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-c" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-d" mid="42"><![CDATA[<html>That would be my guess...</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Cleric Thomas$<BR>I think the infidel we're chasing could have joined hands with the monsters.<BR>That should be the reason why a <FONT color=#a82424>cleric's rosary</FONT> was found at the monsters' den...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-d" image="QM_OrcBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-e" mid="44"><![CDATA[<html>Right.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Cleric Thomas$<BR>Anyway, I'd like you to deliver this to Cleric Jake, and investigate together.<BR>I guess you would be able to handle a monster like <FONT color=#a82424>Orc Baku</FONT> in <FONT color=#a82424>Frost Wind Forest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-e" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-!next" mid="46"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">126</exe>
+         <exe type="talk" npc="n013_cleric_tomas">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1260,,,,,,</exe>
+         <exe type="complete">126</exe>
+         <exe type="addquestitem" num="1">300144</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="e">0</exelink>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="!next">2,1</exelink>
+   <journal_data recompense="0:1260" quest_title="빼앗긴 물건Ⅱ" chapterid="1" quest_level="1" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <destination_pos>5,n13</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="22"><![CDATA[Talk to Cleric Thomas]]></title>
+         <contents mid="23"><![CDATA[<html>Find <FONT color=#a82424>Cleric Thomas</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Cleric Thomas</FONT></html>]]></contents>
+         <destination mid="24"><![CDATA[Talk to Cleric Thomas]]></destination>
+         <todo_msg mid="25"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>125</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

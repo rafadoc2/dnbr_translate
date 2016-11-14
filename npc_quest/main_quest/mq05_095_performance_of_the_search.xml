@@ -1,0 +1,278 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_095_performance_of_the_search</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>95</qid>
+      <designer>곽노찬</designer>
+      <qlevel>5</qlevel>
+      <qdesc>300059 비전의 오브</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>96</nextqid>
+      <nextqname>mq05_096_traitor_is_on_the_inside</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Search is Successful]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>535</npcid>
+         <npcename>n535_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>536</npcid>
+         <npcename>n536_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Sorceress Angelica$<BR>Ahh... why is everything so screwed up!!!<BR><BR>
+<FONT color=#7e12d2></FONT> <BR>
+<FONT color=#7e12d2>※ You have to get the quest from Master Sorceress Cynthia to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n536_angelica-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Sorceress Angelica$<BR>
+It's nothing, right? Haha~<BR>
+ <BR>
+<FONT color=#7e12d2>※ You have to get the quest from Master Sorceress Cynthia to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-a" mid="6"><![CDATA[<html>Is Sorceress Angelica not back yet?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk2}<BR>You're asking whether I got the Vision Orb back...?<BR>No, I did not!!!<BR><FONT color=#7e12d2>(Cynthia shouts suddenly)</FONT><BR>Why is the cleric telling this kid everything?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting-a" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-acceptted" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Cynthia$<BR>
+Who? You mean my apprentice <FONT color=#a82424>Angelica</FONT>?<BR>When did you even meet her? I told Angelica to find the Orb, but she hasn't returned. I have no idea where she is now....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="QW_FrostHill.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Cynthia$<BR>If you're really interested, try to find her at the <FONT color=#a82424>Frost Hill</FONT>. Maybe she's wandering around that place.<BR>If you happen to see her, tell her she had better come back soon before I get really mad.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n535_angelica-1-a" mid="12"><![CDATA[<html>Angelica...?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Sorceress Angelica$<BR>Ahh... why is everything so screwed up!!!<BR><FONT color=#7e12d2>(Sorceress Angelica is grumbling)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-a" image="" itemindex="">
+      <talk_answer link_index="n535_angelica-1-b" mid="14"><![CDATA[<html>I'm {user_nick}.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Sorceress Angelica$<BR>
+Huh? Who are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-b" image="" itemindex="">
+      <talk_answer link_index="n535_angelica-1-c" mid="16"><![CDATA[<html>Come to think of it, Cynthia told me to tell you that you had better come back soon...</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>I'm not even interested in knowing your name. What is a little girl like you doing here?<BR>Did... my master send you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-c" image="" itemindex="">
+      <talk_answer link_index="n535_angelica-1-d" mid="19"><![CDATA[<html>Excuse me... what happened to the Vision Orb?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Sorceress Angelica$<BR>Oh no... will I have to spend the rest of my life as a frog?!<BR>
+Oh... My precious life... is going to end like this....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-d" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n535_angelica-1-e" mid="21"><![CDATA[<html>You couldn't find it...?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Sorceress Angelica$<BR>
+V-Vision Orb...?!<BR>
+<FONT color=#7e12d2>(Angelica reacts sensitively)</FONT><BR>
+Uh... Uh... Umm...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-e" image="" itemindex="">
+      <talk_answer link_index="n535_angelica-1-f" mid="23"><![CDATA[<html>Taken from you? By who?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Sorceress Angelica$<BR>
+Are you doubting me?!<BR>
+Of course I found it!!<BR>
+But... as soon as I got a hold of it… it was taken... I mean… I just lost it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-f" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n535_angelica-1-g" mid="25"><![CDATA[<html>Oh... A Minotaur took it from you.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Sorceress Angelica$<BR>
+It wasn't taken, I lost it!<BR>
+To beefy and idiotic <FONT color=#a82424>Minotaur</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-g" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n535_angelica-1-h" mid="27"><![CDATA[<html>Wait a minute. (Search the data using the communicator)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>Why is a Minotaur roaming around near Mana Ridge? If it's a cow, it should act like one and just go around grazing some weed!!<BR>Ahh, I'm so mad! If my master finds out about this, I'm... ahh...<BR>But what are you doing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-h" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n535_angelica-1-i" mid="29"><![CDATA[<html>That Minotaur should be at the Silent Monastery.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$File No.219 : Minotaur Umbaba$<BR><FONT color=#7e12d2>Has a strong body and tough skin. Uses a huge axe to attack its target. When the clerics moved their base to Saint Haven, it took over the empty Silent Monastery and made it its base.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-i" image="" itemindex="">
+      <talk_answer link_index="n535_angelica-1-j" mid="33"><![CDATA[<html>This is called a communicator. I'm actually from the future...</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Sorceress Angelica$<BR>
+Wow! Amazing~! Wonderful!!<BR>
+Kid, what's that?! Huh? What is it??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-j" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n535_angelica-1-k" mid="35"><![CDATA[<html>What? Me? Actually, I have something to do...</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Sorceress Angelica$<BR>
+<FONT color=#7e12d2>(Angelica starts to pack her stuff)</FONT><BR>
+Anyway, you seem to be pretty useful. Follow me.<BR>
+Let's kill that Minotaur and retrieve the Orb!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1-k" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Sorceress Angelica$<BR>
+<FONT color=#7e12d2>(Not listening)</FONT><BR>Did you say 
+<FONT color=#a82424>Silent Monastery</FONT>?<BR>
+How dare a Minotaur steal my jackpot?! … I mean… our treasure?! Payback time!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n536_angelica-1" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Sorceress Angelica$<BR>
+It's nothing, right? Haha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-2" image="QW_22.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Sorceress Angelica$<BR>
+<FONT color=#7e12d2>(Not listening)</FONT><BR>Did you say 
+<FONT color=#a82424>Silent Monastery</FONT>?<BR>
+How dare a Minotaur steal my jackpot?! … I mean… our treasure?! Payback time!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n536_angelica-3" image="" itemindex="">
+      <talk_answer link_index="n536_angelica-3-a" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Sorceress Angelica$<BR>
+It was nothing! Haha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n536_angelica-3-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n536_angelica-3-b" mid="50"><![CDATA[<html>(You were only watching me fighting the Minotaur!)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>Did you find the <FONT color=#a82424>Vision Orb</FONT>? I saw the Orb roll over to you.<BR>Okay, give it to me now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n536_angelica-3-b" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n536_angelica-3-c" mid="52"><![CDATA[<html>Here, here you go…</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Sorceress Angelica$<BR>Please give it to me! You don't want my master to turn me into a frog, do you? Don't you feel sorry for me?<BR>Come on? Be a good girl and give me the Vision Orb~~.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n536_angelica-3-c" image="" itemindex="">
+      <talk_answer link_index="n536_angelica-3-d" mid="54"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n536_angelica-3-d" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Sorceress Angelica$<BR>Haha thanks! I should get going and report to my master now.<BR>I'll show her what I'm worth!<BR><FONT color=#7e12d2>(Angelica runs to her master with the Vision Orb. Return to Mana Ridge and meet Cynthia)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">95</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300059</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">269</exe>
+         <exe type="addquestitem" num="1">300059</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">950,,,,,,</exe>
+         <exe type="complete">95</exe>
+         <exe type="delquestitem" num="-1">300059</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n012_sorceress_master_cynthia" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n535_angelica" sub="b" />
+   <exelink qstep="1" npc="n535_angelica" sub="c" />
+   <exelink qstep="1" npc="n535_angelica" sub="d" />
+   <exelink qstep="1" npc="n535_angelica" sub="e" />
+   <exelink qstep="1" npc="n535_angelica" sub="f" />
+   <exelink qstep="1" npc="n535_angelica" sub="g" />
+   <exelink qstep="1" npc="n535_angelica" sub="h" />
+   <exelink qstep="1" npc="n535_angelica" sub="i" />
+   <exelink qstep="1" npc="n535_angelica" sub="j" />
+   <exelink qstep="1" npc="n535_angelica" sub="k">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n536_angelica" sub="b" />
+   <exelink qstep="3" npc="n536_angelica" sub="c">0</exelink>
+   <exelink qstep="3" npc="n536_angelica" sub="d">1,2</exelink>
+   <journal_data recompense="950" quest_title="검색의 성과는 뛰어납니다" chapterid="1" quest_level="5" quest_mark_type="1" use_item_list="300059">
+      <journal index="1">
+         <contents_image>QN_Npc_Angelica.dds</contents_image>
+         <destination_pos>6,n535</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>535</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Search is Successful I]]></title>
+         <contents mid="58"><![CDATA[<html>Meet Sorceress Angelica at Frost Hill. It seems like she knows where the Vision Orb is.<BR>
+ <BR>
+<FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→ Sorceress Angelica</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Talk to Angelica at Frost Hill]]></destination>
+         <todo_msg mid="60"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_22.dds</contents_image>
+         <destination_pos>93,0,0</destination_pos>
+         <destination_mode>custom:91@1,92@1,93@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Search is Successful II]]></title>
+         <contents mid="63"><![CDATA[<html>Defeat Minotaur Umbaba at the Silent Monastery and get the Vision Orb back.<BR>
+ <BR>
+<FONT color=#086171>Blizzard Plain (Silent Monastery Entrance)</FONT> <FONT color=#a82424>→ Silent Monastery</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Silent Monastery]]></destination>
+         <todo_msg mid="65"><![CDATA[Eliminate the Minotaur at the Silent Monastery.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Angelica.dds</contents_image>
+         <destination_pos>93,n536</destination_pos>
+         <destination_mode>custom:91@1,92@1,93@1</destination_mode>
+         <statemark_npcid>536</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Search is Successful III]]></title>
+         <contents mid="68"><![CDATA[<html>You got the Vision Orb back. Talk to Sorceress Angelica.<BR>
+ <BR>
+<FONT color=#086171>Blizzard Plain (Silent Monastery Entrance)</FONT> <FONT color=#a82424>→ Silent Monastery (Sorceress Angelica)</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk to Angelica at the Silent Monastery]]></destination>
+         <todo_msg mid="70"><![CDATA[Talk to Sorceress Angelica.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>94</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

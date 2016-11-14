@@ -1,0 +1,347 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_031_desiny_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>31</qid>
+      <designer>김인정</designer>
+      <qlevel>1</qlevel>
+      <qdesc>그늘숲 민들레	300572
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>32</nextqid>
+      <nextqname>mq01_032_befogged</nextqname>
+      <nextqnpc>n001_elder_harold</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[운명의 소녀]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1091</npcid>
+         <npcename>n1091_illusion</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>1206</npcid>
+         <npcename>n1206_lunaria</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-accepting-acceptted0" mid="164" select_type="3" />
+      <talk_question mid="119"><![CDATA[<html><FONT color=#7e12d2>(나이 든 노인 한 사람이</FONT> <FONT color=#387206>{user_nick}</FONT><FONT color=#7e12d2>의 모습을 발견하고 반색한다)</FONT><BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1206_lunaria-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1206_lunaria-accepting-acceptted1" mid="196" select_type="2" />
+      <talk_question mid="195"><![CDATA[<html><BR><FONT color=#7e12d2>(의식이 멀어져서 상황을 잘 파악할 수가 없다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-a" mid="130" select_type="2" />
+      <talk_question mid="122"><![CDATA[<html>$촌장 해롤드$<BR>다친 곳은 별로 없으신 모양이군요.<BR>
+어쩌다 그런 위험한 일을 당하셨는지… 쿨럭쿨럭.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-b" mid="201" select_type="2" />
+      <talk_question mid="200"><![CDATA[<html>$촌장 해롤드$<BR>그래도 이만하기를 다행입니다. 콜록콜록…<BR>두 분 모두 어찌나 지친 모습이셨던지, 내 큰일이 생길까 봐 걱정했다오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-b" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-c" mid="133" select_type="2" />
+      <talk_question mid="128"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그보다 그 여자의 몸 상태는 어떻습니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-d" mid="138" select_type="2" />
+      <talk_question mid="134"><![CDATA[<html>$촌장 해롤드$<BR>너무 걱정 마시오. 그 아가씨는 그저 너무 쇠약해진 것 뿐이라오.<BR>가녀린 여자 몸으로 고생을 많이 한 모양이더군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-e" mid="139" select_type="2" />
+      <talk_question mid="135"><![CDATA[<html>$촌장 해롤드$<BR>그래서 말인데, 모험자님.<BR>
+아가씨가 몹시 지친 것 같으니 약초 구하는 일이라도 거들어 주시지 않겠습니까?<BR>어차피 모험자님의 동행이기도 한 것 같고...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-f" mid="140" select_type="2" />
+      <talk_question mid="136"><![CDATA[<html>$촌장 해롤드$<BR>부끄러운 말씀이오만 지금은 경황이 없어서... 콜록콜록.<BR>그 아가씨를 구완할 여유가 없답니다. 쿨럭...<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-g" mid="148" select_type="2" />
+      <talk_question mid="141"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어...?</FONT><BR>
+<FONT color=#662500>무슨 일이 있나 보군요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-h" mid="149" select_type="2" />
+      <talk_question mid="143"><![CDATA[<html>$촌장 해롤드$<BR>며칠 전에 내 손녀가 오크에게 납치가 되고 말았습니다.<BR>여러 모험자분들이 그 아이를 찾기 위해서 백방으로 다니고 있는데 아직까지 좋은 소식은 없군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-i" mid="150" select_type="2" />
+      <talk_question mid="144"><![CDATA[<html>$촌장 해롤드$<BR>아... 모험자님은 심려 안 하셔도 됩니다. 이미 이 근방엔 없는 것 같으니까요. 휴우.<BR><FONT color=#7e12d2>(해롤드가 한숨을 쉰다)<BR></FONT>모험자님의 동행인 그 아가씨야말로 걱정인데...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-i" image="QW_1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-j" mid="152" select_type="2" />
+      <talk_question mid="151"><![CDATA[<html>$촌장 해롤드$<BR>지금은 계속 자고 있지만, 아마 보양을 좀 하면 금세 회복할 겁니다.<BR>자, 어서 그늘숲 기슭으로 가서 약초를 구해다 주십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-k" mid="154" select_type="2" />
+      <talk_question mid="153"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네? 하지만 전 싸울 줄 모르는데... 요...<BR>모험자도 아니고...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-k" image="QS_Default.dds" itemindex="300572" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2" mid="156" select_type="2" />
+      <talk_question mid="155"><![CDATA[<html>$촌장 해롤드$<BR><FONT color=#7e12d2>(촌장 해롤드가 의심스러운 시선을 보낸다)<BR></FONT>그래도 기슭에서 약초 좀 구하는 일인데 못 하신다는 겁니까?<BR>
+우리 손녀들도 할 만한 일인데요. 어서 다녀오십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1091_illusion-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1091_illusion-1-" mid="165" select_type="5" />
+      <talk_question mid="158"><![CDATA[<html>$???$<BR>큭큭큭... 나는 바로 너다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1206_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1206_lunaria-1-" mid="199" select_type="5" />
+      <talk_question mid="198"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(우선은 이 소녀를 마을로 옮기는 편이 좋겠다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="QW_1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2-b" mid="202" select_type="0"><![CDATA[<html>간단한 적응훈련을 할 수 있을까요?</html>]]></talk_answer>
+      <talk_answer link_index="n001_elder_harold-2-a" mid="203" select_type="0"><![CDATA[<html>다녀오겠습니다</html>]]></talk_answer>
+      <talk_question mid="159"><![CDATA[<html>$촌장 해롤드$<BR><FONT color=#a82424>그늘 숲 기슭</FONT>에서 그늘숲 민들레를 구해오는 겁니다.<BR>그곳 깊숙한 곳에서 얻을 수 있다고 들었습니다. 몸 조심하십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2-" mid="205" select_type="5" />
+      <talk_question mid="204"><![CDATA[<html>$촌장 해롤드$<BR>믿음직스러운 <FONT color=#387206>{user_class}</FONT>로구먼. 혹시 <FONT color=#a82424>[상세 튜토리얼]</FONT>이 필요하다면 언제든, 내게 말을 걸어 주시오.<BR>적응 훈련은 아주 중요하니 말이오. 쿨룩쿨룩….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2-party1" mid="207" select_type="0"><![CDATA[<html>네, 지금 하겠습니다.</html>]]></talk_answer>
+      <talk_answer link_index="n001_elder_harold-2-e" mid="208" select_type="0"><![CDATA[<html>지금은 됐어요.</html>]]></talk_answer>
+      <talk_question mid="206"><![CDATA[<html>$촌장 해롤드$<BR>그렇소? 음, 적응 훈련은 아주 중요하지요. 쿨룩쿨룩….<BR>괜찮다면 지금 <FONT color=#a82424>[상세 튜토리얼]</FONT>로 안내해 주겠소. 어떻소?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2-" mid="210" select_type="5" />
+      <talk_question mid="209"><![CDATA[<html>$촌장 해롤드$<BR>미안하오. <FONT color=#a82424>한 사람</FONT> 씩만 이동할 수 있는 곳이라오.<BR>
+나중에 <FONT color=#a82424>[튜토리얼을 받는다]</FONT>고 내게 말하면 옮겨줄테니, 필요하면 말해 주시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2-move_harold" mid="212" select_type="2" />
+      <talk_question mid="211"><![CDATA[<html>$촌장 해롤드$<BR>그럼 초보 모험자를 위해 특별히 마련한 수행장으로 이동시켜 드리겠소.<BR>잘 다녀오시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2-f" mid="214" select_type="2" />
+      <talk_question mid="213"><![CDATA[<html>$촌장 해롤드$<BR>나중에라도 혹시 [<FONT color=#a82424>상세튜토리얼</FONT>]이 필요하면 언제든, 말을 걸어 주시오.<BR>적응 훈련은 아주 중요하니 말이오. 쿨룩쿨룩.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2-" mid="216" select_type="5" />
+      <talk_question mid="215"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(</FONT><FONT color=#387206>[H]</FONT><FONT color=#7e12d2>를 누르면 조작 안내창이 호출됩니다.</FONT><BR><FONT color=#387206>[Ctrl]</FONT><FONT color=#7e12d2>을 누르면 마우스 포인터를 꺼낼 수 있습니다.</FONT><BR><FONT color=#7e12d2>다시 한 번 누르면 원래대로 돌아갑니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1091_illusion-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1091_illusion-3-e" mid="167" select_type="2" />
+      <talk_question mid="160"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...내 안의 이 힘은...... 이 기술은 대체 뭐지?<BR>어째서 싸울 줄 아는 거야?!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1091_illusion-3-a" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1091_illusion-3-b" mid="168" select_type="2" />
+      <talk_question mid="161"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내 몸을 쓰다니?<BR>네 녀석은... 분명 너는 그 여자와 함께 내 앞에 나타난 그 녀석이지?<BR>대체 넌 누구야?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1091_illusion-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1091_illusion-3-c" mid="169" select_type="2" />
+      <talk_question mid="162"><![CDATA[<html>$???${sound:npc_Illusion_qu_0031_02.ogg}<BR>이런. 약해빠진 네 녀석이 저딴 조무래기 마물들 손에 죽지 않도록 돕고 있는데...<BR>너 자신에게 좀 더 고마운 마음을 가져 보는 게 어떨까?<BR>큭큭...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1091_illusion-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1091_illusion-3-d" mid="171" select_type="2" />
+      <talk_question mid="170"><![CDATA[<html>$???${sound:npc_Illusion_qu_0031_03.ogg}<BR>착각하지 말라고.<BR>네 안에서 싸움을 대신하는 건 바로 이 몸이니까.<BR>바로 나. 네가 아닌 나!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1091_illusion-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1091_illusion-3-" mid="173" select_type="5" />
+      <talk_question mid="172"><![CDATA[<html>$???${sound:npc_Illusion_qu_0031_04.ogg}<BR>그 약해빠진 몸을 가져가 주지.<BR>이 몸에게는 해야할 일이 있으니까.<BR>찾아야 할 것이 말이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1091_illusion-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1091_illusion-3-a" mid="192" select_type="2" />
+      <talk_question mid="191"><![CDATA[<html>$???${sound:npc_Illusion_qu_0031_01.ogg}<BR>큭큭큭... 내가 보이나?<BR>이 몸은 바로 너.<BR>네 안에서 네 녀석의 몸을 쓰고 있는 거다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1091_illusion-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_question mid="175"><![CDATA[<html>$???$<BR>그 몸을 순순히 더 유능한 사람의 손에 넘기라고.<BR>헛수고 그만 하고 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-4" image="QS_Default.dds" itemindex="300572" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-4-a" mid="177" select_type="2" />
+      <talk_question mid="176"><![CDATA[<html>$촌장 해롤드$<BR>오, 가지고 오셨구려.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-4-b" mid="179" select_type="2" />
+      <talk_question mid="178"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네. 여기 있습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-4-c" mid="181" select_type="4" />
+      <talk_question mid="180"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-4-c" image="QS_Default.dds" itemindex="300572" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-4-!next" mid="194" select_type="2" />
+      <talk_question mid="193"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>정말 이런 걸로 약이 될까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">31</exe>
+         <exe type="talk" npc="n001_elder_harold">1</exe>
+         <exe type="talk" npc="n1206_lunaria">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">104</exe>
+         <exe type="huntitem" num="1" exe="4,5,6" onexe="">300572</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300572</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n001_elder_harold">d</exe>
+         <exe type="talk" npc="n001_elder_harold">c</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13511,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">310,,,,,,,</exe>
+         <exe type="complete" true="">31</exe>
+         <exe type="delquestitem" num="-1">300572</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n001_elder_harold" sub="acceptted0">0,1</exelink>
+   <exelink qstep="accepting" npc="n1206_lunaria" sub="acceptted1">0,2</exelink>
+   <exelink qstep="1" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="c" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="d" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="e" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="f" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="g" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="h" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="i" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="j" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="k" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="2">0,1,3,2</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="party1">0</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="e" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="move_harold">3</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="f" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="" />
+   <exelink qstep="3" npc="n1091_illusion" sub="b" />
+   <exelink qstep="3" npc="n1091_illusion" sub="c" />
+   <exelink qstep="3" npc="n1091_illusion" sub="d">0,1</exelink>
+   <exelink qstep="3" npc="n1091_illusion" sub="" />
+   <exelink qstep="3" npc="n1091_illusion" sub="a" />
+   <exelink qstep="4" npc="n001_elder_harold" sub="b">0</exelink>
+   <exelink qstep="4" npc="n001_elder_harold" sub="c">1,2</exelink>
+   <exelink qstep="4" npc="n001_elder_harold" sub="!next" />
+   <journal_data recompense="310" quest_title="운명의 소녀" chapterid="1" quest_level="1" quest_mark_type="1" use_item_list="300572">
+      <journal index="1">
+         <contents_image>QW_PrairieTown.dds</contents_image>
+         <destination_pos>1,n1</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[운명의 소녀I]]></title>
+         <contents mid="92"><![CDATA[<html>갑자기 나타났던 이상한 남자와 여자. 그리고 도대체 무슨 일이 벌어진 건지 모르겠다.<BR>상황이 어떻게 된 건지는 모르겠지만, 일단 쓰러진 여자를 데리고 프레리 타운의 촌장집으로 향했다.<BR><BR><FONT color=#086171>프레리 타운</FONT><FONT color=#a82424> - 촌장 해롤드</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[프레리 타운의 촌장 해롤드와 대화]]></destination>
+         <todo_msg mid="94"><![CDATA[새로운 퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_1.dds</contents_image>
+         <destination_pos>53,0,0</destination_pos>
+         <destination_mode>custom:51@3,52@3,53@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[운명의 소녀II]]></title>
+         <contents mid="97"><![CDATA[<html>그늘 숲 기슭에서 그늘숲 민들레를 찾아 보자.<BR><BR>
+<FONT color=#086171>그늘 숲(그늘 숲 오솔길)</FONT> <FONT color=#a82424>- 그늘 숲 기슭</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[그늘 숲 기슭]]></destination>
+         <todo_msg mid="99"><![CDATA[그늘 숲 기슭에서 그늘숲 민들레를 구하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_1.dds</contents_image>
+         <destination_pos>53,n1091</destination_pos>
+         <destination_mode>custom:51@1,52@1,53@1</destination_mode>
+         <statemark_npcid>1091</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="183"><![CDATA[운명의 소녀III]]></title>
+         <contents mid="184"><![CDATA[<html>그늘 숲 기슭에서 그늘숲 민들레를 찾았다.<BR>
+어째서인지 싸울 줄 아는데... 아무래도 이상한 일이니, 좀 더 이 기술과 힘을 시험해 보자.<BR>
+그런데, 눈 앞에 나타난 저 사람은 누구지?<BR>
+ <BR>
+<FONT color=#086171>그늘 숲(그늘 숲 오솔길)</FONT> <FONT color=#a82424>- 그늘 숲 기슭(???)</FONT></html>]]></contents>
+         <destination mid="185"><![CDATA[그늘 숲 기슭에서 누군가와 대화]]></destination>
+         <todo_msg mid="186"><![CDATA[누군가와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <destination_pos>1,n1</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="187"><![CDATA[운명의 소녀IV]]></title>
+         <contents mid="188"><![CDATA[<html>왜 싸울 수 있는 건지 모르겠다.<BR>거기다 그 희미하게 나타나서 헛소리를 지껄이고 사라진 남자는 누구일까? 갑자기 <FONT color=#a82424>그 여자</FONT>와 함께 나타난 바로 그 남자였는데...<BR>아무튼 프레리 타운의 촌장 해롤드에게 돌아가 약초를 전달하자.<BR><BR><FONT color=#086171>프레리 타운</FONT> <FONT color=#a82424>- 촌장 해롤드</FONT></html>]]></contents>
+         <destination mid="189"><![CDATA[프레리 타운의 촌장 해롤드와 대화]]></destination>
+         <todo_msg mid="190"><![CDATA[프레리 타운의 촌장 해롤드에게 보고하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class>7</user_class>
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

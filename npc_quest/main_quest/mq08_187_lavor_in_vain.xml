@@ -1,0 +1,337 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_187_lavor_in_vain</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>187</qid>
+      <designer>김인정</designer>
+      <qlevel>10</qlevel>
+      <qdesc>다크엘프의 하프	300015
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>188</nextqid>
+      <nextqname>mq08_188_clue_out</nextqname>
+      <nextqnpc>n023_ranger_fugus</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[몇번이고 허탕]]></qkname>
+      <qnpc>
+         <npcid>1117</npcid>
+         <npcename>n1117_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>182</npcid>
+         <npcename>n182_point_mark</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>547</npcid>
+         <npcename>n547_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-acceptted" mid="149" select_type="3" />
+      <talk_question mid="131"><![CDATA[<html>$상급 아처 아델린$<BR>생명의 나무에 속한 저희들은 언제나 텔레지아에 순종합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_answer link_index="n033_archer_master_adellin-1-a" mid="223" select_type="2" />
+      <talk_question mid="221"><![CDATA[<html>$상급 아처 아델린$<BR>안녕하세요. 낯선 모험자님.<BR>제게 볼 일이라도 있는 건가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-a" image="QS_Default.dds" itemindex="300015" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_answer link_index="n033_archer_master_adellin-1-b" mid="225" select_type="2" />
+      <talk_question mid="224"><![CDATA[<html>$상급 아처 아델린$<BR>그 손에 들고 계신 하프는….<BR><FONT color=#7e12d2>(아델린의 표정이 잠깐 굳어진다)</FONT><BR>아, 그렇군요. 당신도 그 선지자 소녀를 구출하기 위해 이곳으로 오신 분이군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_answer link_index="n033_archer_master_adellin-1-c" mid="236" select_type="2" />
+      <talk_question mid="235"><![CDATA[<html>$상급 아처 아델린$<BR>자, 이리 주세요. 저는 연주를 하지 않은지 오래 되었지만, 보관중이던 현은 있답니다.<BR>그걸로 당신을 도와드리지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-c" image="QS_Default.dds" itemindex="300015" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_answer link_index="n033_archer_master_adellin-1-d" mid="238" select_type="2" />
+      <talk_question mid="237"><![CDATA[<html>$상급 아처 아델린$<BR>...여기 있습니다.<BR>어디, 잘 고쳐졌는지 확인해 볼겸, 제가 들었던 멜로디를 들려드리겠어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-d" image="QS_Default.dds" itemindex="300015" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_answer link_index="n033_archer_master_adellin-1-e" mid="240" select_type="2" />
+      <talk_question mid="239"><![CDATA[<html>${user_nick}$<BR>들었던 멜로디...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-e" image="QS_Default.dds" itemindex="300015" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_answer link_index="n033_archer_master_adellin-1-f" mid="242" select_type="2" />
+      <talk_question mid="241"><![CDATA[<html>$상급 아처 아델린$<BR>그래요. 정찰병 퍼거스와 함께 인근을 수색할 때, 우연히 들은 멜로디입니다.<BR>다크엘프들의 결계를 여는 코드라면 틀림없이 이것일 거예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-f" image="QW_14.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_answer link_index="n033_archer_master_adellin-2" mid="244" select_type="2" />
+      <talk_question mid="243"><![CDATA[<html>$상급 아처 아델린${sound:Quest_Harp_01.wav}<BR>잘 기억해 두세요.<BR>그리고 <FONT color=#a82424>탄식의 협곡</FONT>에서 당신의 목적을 이루시면 좋겠군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1117_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1117_lunaria-1-" mid="227" select_type="5" />
+      <talk_question mid="226"><![CDATA[<html>$루나리아$<BR>
+뭘 하고 있어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n182_point_mark-1-" mid="229" select_type="5" />
+      <talk_question mid="228"><![CDATA[<html><FONT color=#7e12d2>(아무 것도 없다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="QN_Npc_Archer_Adellin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-1-" mid="231" select_type="5" />
+      <talk_question mid="230"><![CDATA[<html>$정찰병 퍼거스$<BR>아, 하프 말씀이십니까?<BR>하프에 대해서는 상급 아처 아델린 님이 잘 알고 계실 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1" image="QN_Npc_Archer_Adellin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-1-" mid="233" select_type="5" />
+      <talk_question mid="232"><![CDATA[<html>$워리어 시안$<BR>어서 <FONT color=#a82424>캐더락 관문</FONT>으로 가셔서 상급 아처 아델린 님께 그 하프를 보여 드리세요.<BR>저희는 먼저 탄식의 협곡 쪽으로 출발하겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2" image="QW_14.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Archer_Adellin.dds" center_image="">
+      <talk_question mid="246"><![CDATA[<html>$상급 아처 아델린$<BR>하프 연주가 쉽지는 않겠지만, 잘 하시리라 믿어요.<BR><FONT color=#a82424>탄식의 협곡</FONT> 안쪽에서 들려드린 음율로 하프를 연주하면 결계가 해제 될 거예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-2" image="QS_Default.dds" itemindex="300015" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n182_point_mark-3" mid="248" select_type="2" />
+      <talk_question mid="247"><![CDATA[<html>$협곡의 결계$<BR><FONT color=#7e12d2>(하프를 연주하여 결계를 해제한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1117_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1117_lunaria-3-" mid="295" select_type="5" />
+      <talk_question mid="249"><![CDATA[<html>$루나리아$<BR>...앞으로 가자.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3" image="QS_Default.dds" itemindex="300015" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-a" mid="251" select_type="2" />
+      <talk_question mid="250"><![CDATA[<html>$협곡의 결계$<BR><FONT color=#7e12d2>(이제 아무 것도 없다.</FONT><BR>
+<FONT color=#7e12d2>결계는 해제된 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-b" mid="297" select_type="2" />
+      <talk_question mid="296"><![CDATA[<html>$루나리아$<BR>...무슨 일이야?<BR>앞으로 안 가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-c" mid="254" select_type="2" />
+      <talk_question mid="253"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여기까지 오는 사이에 말야. 루나리아.<BR>혹시 몇 번 시간이동하지 않았어?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-d" mid="256" select_type="2" />
+      <talk_question mid="255"><![CDATA[<html>$루나리아$<BR>그럴지도...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-e" mid="258" select_type="2" />
+      <talk_question mid="257"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럴지도... 가 아니잖아!<BR>계속 이런 식이면 어떻게 해?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-f" mid="261" select_type="2" />
+      <talk_question mid="260"><![CDATA[<html>$루나리아$<BR>몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-g" mid="263" select_type="2" />
+      <talk_question mid="262"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>모른다고?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-h" mid="265" select_type="2" />
+      <talk_question mid="264"><![CDATA[<html>$루나리아$<BR>난 항상 그랬으니까.<BR>계속 그렇게 살았으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-3-i" mid="267" select_type="2" />
+      <talk_question mid="266"><![CDATA[<html>$루나리아$<BR>그래서? 이제 어떻게 하고 싶은데?<BR>돌아갈 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3-i" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-4" mid="269" select_type="2" />
+      <talk_question mid="268"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여기까지 왔으니까 앞으로 가 보자.<BR>그 선지자인가 뭔가 하는 여자애는 없더라도, 혹시 하피 미스트리스는 만날 수 있을지도 모르니까.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n182_point_mark-4-" mid="273" select_type="5" />
+      <talk_question mid="272"><![CDATA[<html>$루나리아$<BR>...그렇구나.<BR>그럼, 앞으로 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1117_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1117_lunaria-4-" mid="300" select_type="5" />
+      <talk_question mid="299"><![CDATA[<html>$루나리아$<BR>앞으로 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-5-a" mid="275" select_type="2" />
+      <talk_question mid="274"><![CDATA[<html>$정찰병 퍼거스$<BR>돌아오셨군요.<BR>선지자를 아쉽게 놓쳤다는 말은, 마나리지에서 오신 다른 모험자분들께 이미 들었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-5-b" mid="277" select_type="2" />
+      <talk_question mid="276"><![CDATA[<html>$정찰병 퍼거스$<BR>아, 모르시는군요?<BR>
+프레리 타운에서 오신 모험자분들 뿐 아니라 마나리지에서 파견되어 오신 모험자분들이 계십니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-5-c" mid="281" select_type="4" />
+      <talk_question mid="280"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-5-c" image="QN_Master_Decud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n023_ranger_fugus-5-!next" mid="302" select_type="2" />
+      <talk_question mid="301"><![CDATA[<html>$정찰병 퍼거스$<BR>소서리스 안젤리카 님과 클레릭 에단 님인데, 아직 만난 적이 없으시겠군요.<BR>자세한 이야기는 <FONT color=#a82424>모험자 길드장 데커드</FONT> 님께 가서 듣도록 하십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">187</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300015</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete" true="">187</exe>
+         <exe type="recompense">1870,,,,,,,</exe>
+         <exe type="delquestitem" num="-1">300015</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="c" />
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="e" />
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="f" />
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n182_point_mark" sub="3">0</exelink>
+   <exelink qstep="3" npc="n182_point_mark" sub="b" />
+   <exelink qstep="3" npc="n182_point_mark" sub="c" />
+   <exelink qstep="3" npc="n182_point_mark" sub="d" />
+   <exelink qstep="3" npc="n182_point_mark" sub="e" />
+   <exelink qstep="3" npc="n182_point_mark" sub="f" />
+   <exelink qstep="3" npc="n182_point_mark" sub="g" />
+   <exelink qstep="3" npc="n182_point_mark" sub="h" />
+   <exelink qstep="3" npc="n182_point_mark" sub="i" />
+   <exelink qstep="3" npc="n182_point_mark" sub="4">0,1</exelink>
+   <exelink qstep="5" npc="n023_ranger_fugus" sub="b">1</exelink>
+   <exelink qstep="5" npc="n023_ranger_fugus" sub="c">0,2</exelink>
+   <exelink qstep="5" npc="n023_ranger_fugus" sub="!next" />
+   <journal_data recompense="1870" quest_title="몇번이고 허탕" chapterid="2" quest_level="10" quest_mark_type="1" use_item_list="300015">
+      <journal index="1">
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[몇 번이고 허탕I]]></title>
+         <contents mid="74"><![CDATA[<html>상급 아처 아델린에게 하프를 가지고 가보자.<BR>
+ <BR>
+<FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 상급 아처 아델린</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[캐더락 관문의 상급 아처 아델린과 대화]]></destination>
+         <todo_msg mid="76"><![CDATA[캐더락 관문으로 가서 상급 아처 아델린을 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_14.dds</contents_image>
+         <destination_pos>118,n182</destination_pos>
+         <destination_mode>custom:117@1,118@1</destination_mode>
+         <statemark_npcid>182</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="206"><![CDATA[몇 번이고 허탕II]]></title>
+         <contents mid="207"><![CDATA[<html>아델린에게 배운 하프 연주를 이용해, 탄식의 협곡에서 하피의 결계를 해제하자.<BR><BR><FONT color=#086171>수정 개울(탄식의 협곡 입구)</FONT> <FONT color=#a82424>- 탄식의 협곡</FONT></html>]]></contents>
+         <destination mid="208"><![CDATA[탄식의 협곡에서 하프 연주]]></destination>
+         <todo_msg mid="209"><![CDATA[탄식의 협곡으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_14.dds</contents_image>
+         <destination_pos>118,n182</destination_pos>
+         <destination_mode>custom:117@1,118@1</destination_mode>
+         <statemark_npcid>182</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="282"><![CDATA[몇 번이고 허탕III]]></title>
+         <contents mid="283"><![CDATA[<html>결계를 해제했다.<BR>루나리아와 대화해 보자.<BR><BR><FONT color=#086171>수정 개울(탄식의 협곡 입구)</FONT> <FONT color=#a82424>- 탄식의 협곡(루나리아)</FONT></html>]]></contents>
+         <destination mid="284"><![CDATA[탄식의 협곡에서 루나리아와 대화]]></destination>
+         <todo_msg mid="285"><![CDATA[하프로 결계를 해제했습니다. 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_14.dds</contents_image>
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:117@3,118@3,119@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="287"><![CDATA[몇 번이고 허탕IV]]></title>
+         <contents mid="288"><![CDATA[<html>루나리아의 힘때문에 계속해서 시간이동을 한 것 같다. 순간적인 것이었지만...<BR>
+상황을 파악하기 위해서라도, 하피 미스트리스가 있는 곳으로 나아가자.<BR><BR><FONT color=#086171>수정 개울(탄식의 협곡 입구)</FONT> <FONT color=#a82424>- 탄식의 협곡</FONT></html>]]></contents>
+         <destination mid="289"><![CDATA[탄식의 협곡]]></destination>
+         <todo_msg mid="290"><![CDATA[하피 미스트리스가 있는 곳으로 계속 나아가세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="291"><![CDATA[몇 번이고 허탕V]]></title>
+         <contents mid="292"><![CDATA[<html>하피 미스트리스를 쓰러뜨렸다. 사도 엘레나의 부하... 그 외에는 아무 것도 알 수가 없었다.<BR>그 남자는 또 누구지? 일단 정찰병 퍼거스에게 돌아가자.<BR>
+ <BR>
+<FONT color=#086171>수정 개울</FONT> <FONT color=#a82424>- 정찰병 퍼거스</FONT></html>]]></contents>
+         <destination mid="293"><![CDATA[수정 개울에서 정찰병 퍼거스와 대화]]></destination>
+         <todo_msg mid="294"><![CDATA[정찰병 퍼거스에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>186</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

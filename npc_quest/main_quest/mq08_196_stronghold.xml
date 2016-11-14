@@ -1,0 +1,280 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_196_stronghold</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>196</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>197</nextqid>
+      <nextqname>mq08_197_name_of_disciple</nextqname>
+      <nextqnpc>n547_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[본거지]]></qkname>
+      <qnpc>
+         <npcid>1101</npcid>
+         <npcename>n1101_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>547</npcid>
+         <npcename>n547_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>548</npcid>
+         <npcename>n548_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>549</npcid>
+         <npcename>n549_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>553</npcid>
+         <npcename>n553_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="QW_19.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="149" select_type="3" />
+      <talk_question mid="131"><![CDATA[<html>$상급 소서리스 티아나$<BR>신전 예배당에서는 뭐 수확이 있었니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QW_CristalStream.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-" mid="1062" select_type="5" />
+      <talk_question mid="1061"><![CDATA[<html>$상급 소서리스 티아나$<BR>듣자하니, 워리어 시안이랑 다른 모험자들이 너를 <FONT color=#a82424>수정 개울</FONT> 쪽에서 기다린다고 하던데?<BR>가 보도록 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-1" image="QW_CristalStream.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-1-" mid="1065" select_type="5" />
+      <talk_question mid="1064"><![CDATA[<html>$워리어 시안$<BR><FONT color=#387206>{user_nick}</FONT> 님! 이럴 게 아니라, 일단 <FONT color=#a82424>수정 개울</FONT> 쪽으로 나가죠.<BR>다른 모험자들도 각자 정보를 모아 모이기로 했거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1" image="QW_CristalStream.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-" mid="1067" select_type="5" />
+      <talk_question mid="1066"><![CDATA[<html>$루나리아$<BR>음... 신전 예배당에서 만난 모험자, 저쪽에서 너를 기다리고 있어.<BR>이해했어?<BR>
+저 워리어 시안이라는 사람 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n548_edan-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Edan.dds" center_image="">
+      <talk_answer link_index="n548_edan-1-" mid="1069" select_type="5" />
+      <talk_question mid="1068"><![CDATA[<html>$클레릭 에단$<BR>제 보잘것없는 능력에 무력감을 느낍니다.<BR>여신의 종으로서, 더 큰 도움이 되지 못해 송구합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n549_triana-1-" mid="1071" select_type="5" />
+      <talk_question mid="1070"><![CDATA[<html>$아처 트리아나$<BR>안녕하세요. 당신을 앞으로도 계속 만날 것 같은 생각이 드네요.<BR>이것도 텔레지아의 일부겠죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-1-a" mid="1077" select_type="0"><![CDATA[<html>어디까지나 추측입니다.</html>]]></talk_answer>
+      <talk_answer link_index="n547_cian-1-a" mid="1078" select_type="0"><![CDATA[<html>(시간이동이 어쩌고 하면 오해만 사겠지)</html>]]></talk_answer>
+      <talk_question mid="1073"><![CDATA[<html>$워리어 시안$<BR>음...... 그래서 <FONT color=#387206>{user_nick}</FONT> 님의 말씀은...<BR><FONT color=#a82424>캐더락 관문에 독이 뿌려질 것 같다</FONT>, 그거죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-a" image="QM_Ellena.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n547_cian-1-b" mid="1080" select_type="2" />
+      <talk_question mid="1079"><![CDATA[<html>$클레릭 에단$<BR>죄송한 말씀입니다만, 그런 추측을 곧이 곧대로 믿기는 어렵습니다.<BR>무언가 다른 근거라도 있습니까?<BR>
+예를 들어, 엘레나의 지령을 받는 걸 봤다든가...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-b" image="QW_21.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n547_cian-1-c" mid="1082" select_type="2" />
+      <talk_question mid="1081"><![CDATA[<html>$아처 트리아나$<BR>확인이라...<BR>
+우선 페어리스타 마법 연구소로 간 안젤리카 님의 이야기까지 들어보면 좀 더 확실해지겠죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-c" image="QW_20.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n547_cian-1-d" mid="1084" select_type="2" />
+      <talk_question mid="1083"><![CDATA[<html>$아처 트리아나$<BR>그리고 제가 카타콤 집회장에서 목격한 엘레나의 집회를 떠올려 보면, 거기에 브로들이 가득 있었습니다.<BR>제 생각에, 브로들은 이미 엘레나의 수하가 된 것이 분명합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-d" image="QM_Broo_White.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n547_cian-1-e" mid="1086" select_type="2" />
+      <talk_question mid="1085"><![CDATA[<html>$아처 트리아나$<BR><FONT color=#387206>{user_nick}</FONT> 님, 브로들이 엘레나에게 어떤 식으로 협조하고 있는지 확인해 주실 수 있을까요?<BR>당신의 말씀대로 독을 뿌리려는 거라면...<BR>
+혹, 브로들이 그 일을 담당하고 있을지도 모릅니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-e" image="QM_Broo_White.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n547_cian-1-f" mid="1089" select_type="2" />
+      <talk_question mid="1088"><![CDATA[<html>$클레릭 에단$<BR>브로들은 소서리스들과 유사한 마법을 연구해, 사용하는 마물들입니다.<BR>독과는 연관이 없을 것 같습니다만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-f" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n547_cian-1-g" mid="1091" select_type="2" />
+      <talk_question mid="1090"><![CDATA[<html>$아처 트리아나$<BR>브로들이 마법 물품을 이용해 문제를 일으킬지도 모르니까요.<BR><FONT color=#387206>{user_nick}</FONT> 님은 엘레나를 쫓고 계신 것 같으니, 그곳을 확인해 보셔야 할 거예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-g" image="QW_21.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n547_cian-1-h" mid="1093" select_type="2" />
+      <talk_question mid="1092"><![CDATA[<html>$클레릭 에단$<BR>으음... 그럼 그 사이에 저희들은 안젤리카 양과 합류해 페어리스타 마법 연구소 쪽으로 가야겠군요.<BR>정말로 독을 뿌리려고 한다면 어서 막아야 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-2" mid="1095" select_type="2" />
+      <talk_question mid="1094"><![CDATA[<html>$워리어 시안$<BR>어느 루트로 독이 옮겨질 것인지도 알아볼 필요가 있고 말이죠.<BR>자, 그럼 움직여 볼까요?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-2" image="QW_22.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-2-" mid="1098" select_type="5" />
+      <talk_question mid="1097"><![CDATA[<html>$워리어 시안$<BR>자, 저희가 확인 겸 수색을 해 보겠습니다.<BR>
+<FONT color=#387206>{user_nick}</FONT> 님은 <FONT color=#a82424>고요한 수도원 본당</FONT>으로 가서 브로들을 소탕해 주십시오.<BR>엘레나도 거기에 있을 가능성이 높으니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-2" image="QW_22.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-2-" mid="1100" select_type="5" />
+      <talk_question mid="1099"><![CDATA[<html>$루나리아$<BR>이번에는 <FONT color=#a82424>고요한 수도원 본당</FONT>으로 가는 거구나.<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-" mid="1103" select_type="5" />
+      <talk_question mid="1102"><![CDATA[<html>$루나리아$<BR>아까 그 모험자들, 저쪽에서 기다려.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3" image="QW_21.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-3-a" mid="1105" select_type="2" />
+      <talk_question mid="1104"><![CDATA[<html>$워리어 시안$<BR>다녀오셨습니까?<BR>페어리스타 마법 연구소에서 저희들은 <FONT color=#a82424>엘레나의 지령서</FONT>를 발견했습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n547_cian-3-b" mid="1107" select_type="2" />
+      <talk_question mid="1106"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>지령서요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-b" image="QM_Queen_Spider.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n547_cian-3-c" mid="1109" select_type="2" />
+      <talk_question mid="1108"><![CDATA[<html>$클레릭 에단$<BR>네. 페어리스타 마법 연구소가 독거미들의 본거지였습니다.<BR>
+<FONT color=#a82424>여왕거미 라렌</FONT>은 정말 벅찬 상대였지요.<BR>엘레나는 그들을 이용해 <FONT color=#a82424>독성 물질</FONT>을 모으고 있었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-c" image="QW_CataractGateway.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n547_cian-3-d" mid="1111" select_type="2" />
+      <talk_question mid="1110"><![CDATA[<html>$클레릭 에단$<BR>엘레나는 자기 수하들에게 지령을 내려, <FONT color=#a82424>독성 물질을 모아 캐더락을 오염시킬 예정</FONT>이었던 겁니다.<BR>당신 말씀이 옳았습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-d" image="QN_Npc_Angelica.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n547_cian-3-e" mid="1113" select_type="2" />
+      <talk_question mid="1112"><![CDATA[<html>$아처 트리아나$<BR>소서리스 안젤리카 님이 모험자 길드장 데커드 님께 보고하러 가셨습니다.<BR>모험자 길드를 총 동원해서 막아야만 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n547_cian-3-f" mid="1115" select_type="4" />
+      <talk_question mid="1114"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-f" image="" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n547_cian-3-!next" mid="1127" select_type="2" />
+      <talk_question mid="1126"><![CDATA[<html>$클레릭 에단$<BR>캐더락 관문을 위해, 어서 움직여야 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">196</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">559</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">200559</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1960,,,,,,,</exe>
+         <exe type="complete" true="">196</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n547_cian" sub="b" />
+   <exelink qstep="1" npc="n547_cian" sub="c" />
+   <exelink qstep="1" npc="n547_cian" sub="d" />
+   <exelink qstep="1" npc="n547_cian" sub="e" />
+   <exelink qstep="1" npc="n547_cian" sub="f" />
+   <exelink qstep="1" npc="n547_cian" sub="g" />
+   <exelink qstep="1" npc="n547_cian" sub="h" />
+   <exelink qstep="1" npc="n547_cian" sub="2">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n547_cian" sub="b" />
+   <exelink qstep="3" npc="n547_cian" sub="c" />
+   <exelink qstep="3" npc="n547_cian" sub="d" />
+   <exelink qstep="3" npc="n547_cian" sub="e">0</exelink>
+   <exelink qstep="3" npc="n547_cian" sub="f">1</exelink>
+   <exelink qstep="3" npc="n547_cian" sub="!next" />
+   <journal_data recompense="1960" quest_title="본거지" chapterid="3" quest_level="18" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>4,n547</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>547</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1051"><![CDATA[본거지I]]></title>
+         <contents mid="1052"><![CDATA[<html>수정개울로 돌아가서 워리어 시안과 대화하자.<BR>
+ <BR>
+<FONT color=#086171>수정개울 </FONT><FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="1053"><![CDATA[수정 개울에서 워리어 시안과 대화]]></destination>
+         <todo_msg mid="1054"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_22.dds</contents_image>
+         <destination_pos>164,0,0</destination_pos>
+         <destination_mode>custom:161@3,162@3,163@3,164@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1118"><![CDATA[본거지II]]></title>
+         <contents mid="1119"><![CDATA[<html>모험자들에 따르면, 브로의 본거지가 고요한 수도원 본당이라고 한다. 엘레나는 그들과 함께 있을지도 모른다. 한 번 가 보자.<BR>
+ <BR>
+<FONT color=#086171>해빙의 숲(고요한 수도원 정문)</FONT> <FONT color=#a82424>- 고요한 수도원 본당</FONT></html>]]></contents>
+         <destination mid="1120"><![CDATA[고요한 수도원 본당]]></destination>
+         <todo_msg mid="1121"><![CDATA[고요한 수도원 본당에서 엘레나를 찾아 보세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>4,n547</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>547</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1122"><![CDATA[본거지III]]></title>
+         <contents mid="1123"><![CDATA[<html>브로들을 소탕했지만 별 다른 소득은 없었다.<BR>수정 개울로 돌아가 보자.<BR>
+ <BR>
+<FONT color=#086171>수정 개울</FONT> <FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="1124"><![CDATA[수정 개울에서 워리어 시안과 대화]]></destination>
+         <todo_msg mid="1125"><![CDATA[엘레나를 찾지 못했습니다. 워리어 시안에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>195</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,165 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_008_whereabouts_girl2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>8</qid>
+      <designer>김주연</designer>
+      <qlevel>5</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9</nextqid>
+      <nextqname>mq01_009_please_save_my_girl</nextqname>
+      <nextqnpc>n124_guard_sam</nextqnpc>
+      <qkname mid="1"><![CDATA[Seeking The Girl II]]></qkname>
+      <qnpc>
+         <npcid>124</npcid>
+         <npcename>n124_guard_sam</npcename>
+         <npckname>가드 샘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브   (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>56</npcid>
+         <npcename>n056_guard_pesent_dalcy</npcename>
+         <npckname>가드 달시        (그늘 숲)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-noquest" image="QW_4.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Guard Darcy$<BR>Hello, <FONT color=#387206>{user_class}</FONT>! I saw <FONT color=#a82424>Rose</FONT> and <FONT color=#a82424>Timothy</FONT> at the bottom of the hill, fleeing towards <FONT color=#a82424>Shadow Forest Core</FONT> just now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-accepting-acceptted" mid="38"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Vigilante Steve$<BR>Yes. However, he couldn't really see clearly. If Rose and Timothy did flee towards that direction, <FONT color=#a82424>Guard Darcy</FONT> stationed at <FONT color=#a82424>Shadow Forest</FONT> may have seen them too. Please ask Darcy on their whereabouts.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Please ask <FONT color=#a82424>Guard Darcy</FONT> at <FONT color=#a82424>Shadow Forest</FONT> on the whereabouts of <FONT color=#a82424>Rose</FONT> and <FONT color=#a82424>Timothy</FONT>. They may have fled to somewhere in <FONT color=#a82424>Shadow Forest path</FONT>. I hope they are safe...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-1" image="QW_4.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-1-a" mid="9"><![CDATA[<html>Shadow Forest Core?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Guard Darcy$<BR>Hello, <FONT color=#387206>{user_class}</FONT>! I saw <FONT color=#a82424>Rose</FONT> and <FONT color=#a82424>Timothy</FONT> at the bottom of the hill, fleeing towards <FONT color=#a82424>Shadow Forest Core</FONT> just now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-1-a" image="QW_4.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2" mid="11"><![CDATA[<html>Thanks. I should go to the Shadow Forest Core then.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Guard Darcy$<BR>Y-yes. Everything happened so suddenly that I couldn't stop them... They were being chased with a strange monster with red-feathered wings... <FONT color=#a82424>Guard Sam</FONT> who was patrolling with me at that time has followed them into <FONT color=#a82424>Shadow Forest Core</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-1" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Guard Sam$<BR>You actually defeated that powerful monster...<BR>I've heard about you but I didn't know you were that strong.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Guard Darcy$<BR>Please be careful.<BR>Please go to <FONT color=#a82424>Shadow Forest Core</FONT> and look for my fellow guard, <FONT color=#a82424>Guard Sam</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2" image="" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-a" mid="15"><![CDATA[<html>Where are Rose and Timothy?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Guard Sam$<BR>(Panting for breath) You've killed that powerful monster so easily...<BR>I've heard about you but I didn't know you were that strong.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-a" image="QM_GoblinRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-b" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Guard Sam$<BR>Sorry... When I saw Rose and Timothy being chased in Shadow Forest I followed behind... But I lost them when <FONT color=#a82424>Goblin Boss Jyaja</FONT> got in the way. Argh...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-b" image="QM_HarpyRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-c" mid="20"><![CDATA[<html>Did you see where they went?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Guard Sam$<BR>The monster who captured Rose was a <FONT color=#a82424>Harpy</FONT> with <FONT color=#a82424>red wings</FONT>. Timothy was chasing behind... I don't know what happened after that...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-c" image="QM_HarpyRed.dds" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-d" mid="22"><![CDATA[<html>Ancient Temple Excavation Site... Alright.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Guard Sam$<BR>According to Guard Dickinson at Wind Forest, <FONT color=#a82424>Red Harpy</FONT> flew towards the direction of <FONT color=#a82424>Ancient Temple Excavation Site</FONT>. Rose was abducted not too long ago, so I'm sure you can rescue Rose if you chase after them now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n124_guard_sam-2-d" image="" itemindex="">
+      <talk_answer link_index="n124_guard_sam-2-!next" mid="26"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8</exe>
+         <exe type="talk" npc="n004_guard_steave">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">8</exe>
+         <exe type="recompense">82,81,82,82,82,82,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n056_guard_pesent_dalcy" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n124_guard_sam" sub="b" />
+   <exelink qstep="2" npc="n124_guard_sam" sub="c" />
+   <exelink qstep="2" npc="n124_guard_sam" sub="d">1</exelink>
+   <exelink qstep="2" npc="n124_guard_sam" sub="!next">0</exelink>
+   <journal_data recompense="1:81,2:82" quest_title="소녀의 행방Ⅱ" chapterid="1" quest_level="5" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <destination_pos>2,-742,1636</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>56</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Chasing the Girl]]></title>
+         <contents mid="28"><![CDATA[<html>Guard Dickinson has news that Rose and Timothy were chased by monsters before fleeing towards Shadow Forest.<BR>Find out from <FONT color=#a82424>Guard Darcy</FONT> on their whereabouts.<BR><BR><FONT color=#086171>Shadow Forest</FONT> <FONT color=#a82424>→ Guard Darcy</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Talk to Guard Darcy at Shadow Forest]]></destination>
+         <todo_msg mid="30"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <destination_pos>68,-580.80,727.18</destination_pos>
+         <destination_mode>custom:66@1,67@1,68@1</destination_mode>
+         <statemark_npcid>124</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Looming Dark Clouds]]></title>
+         <contents mid="34"><![CDATA[<html>Find <FONT color=#a82424>Guard Sam</FONT>, who have followed Rose into the <FONT color=#a82424>Shadow Forest Core</FONT>, and ask about Rose and Timothy's whereabouts.<BR><BR><FONT color=#086171>Shadow Forest (Shadow Forest Trail)</FONT> <FONT color=#a82424>→ Shadow Forest Core</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Talk to Guard Sam at Shadow Forest Core]]></destination>
+         <todo_msg mid="36"><![CDATA[Find Guard Sam at Shadow Forest Core.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

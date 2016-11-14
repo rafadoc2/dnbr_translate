@@ -1,0 +1,379 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_194_remotely_error</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>194</qid>
+      <designer>김인정</designer>
+      <qlevel>16</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>195</nextqid>
+      <nextqname>mq08_195_aggravate_error</nextqname>
+      <nextqnpc>n035_soceress_master_tiana</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[아주 약간의 오차]]></qkname>
+      <qnpc>
+         <npcid>1101</npcid>
+         <npcename>n1101_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1125</npcid>
+         <npcename>n1125_academic</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>1126</npcid>
+         <npcename>n1126_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="149" select_type="3" />
+      <talk_question mid="131"><![CDATA[<html>$상급 소서리스 티아나$<BR>그늘이 생기잖니?<BR>
+모처럼 캐더락 관문을 위해 이것저것 고민 중인데, 방해하지 마.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QW_CristalStream.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-" mid="888" select_type="5" />
+      <talk_question mid="887"><![CDATA[<html>$상급 소서리스 티아나$<BR>넌 지금 <FONT color=#a82424>수정 개울</FONT>에 가려는 것 아니었니?<BR>바빠 보이는데, 얼른 가 봐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-1-" mid="891" select_type="5" />
+      <talk_question mid="890"><![CDATA[<html>$낯선 아카데믹$<BR>벨린 코퍼레이션 검색 시스템, 풀 가동 중입니다.<BR>체크, 완료했습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1126_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1126_lunaria-1-" mid="893" select_type="5" />
+      <talk_question mid="892"><![CDATA[<html>$루나리아$<BR>뭘 하고 있어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-a" mid="896" select_type="2" />
+      <talk_question mid="894"><![CDATA[<html>$루나리아$<BR>너는 내게 가능한 한 의도하지 않은 시간이동이 일어나지 않도록, 제어하고 싶은 거지?<BR>일루전이 너의 의식을 완전히 잠식하는 것도 막고 싶은 거고.<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-b" mid="898" select_type="2" />
+      <talk_question mid="897"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>가능해?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-c" mid="900" select_type="2" />
+      <talk_question mid="899"><![CDATA[<html>$루나리아$<BR>예전에... 아주 <FONT color=#a82424>큰 힘을 가진 성물</FONT> 같은 걸 이용하면 된다는 이야기를 들은 적은 있어.<BR>큰 힘을 다른 큰 힘과 충돌하게 하면, 두 힘 모두 고요해지는 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-d" mid="903" select_type="2" />
+      <talk_question mid="902"><![CDATA[<html>$루나리아$<BR>확실한 건 아니야.<BR>그리고 어디까지나 임시적인 <FONT color=#a82424>제어</FONT>에 불과하겠지.<BR>
+그뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-e" mid="906" select_type="2" />
+      <talk_question mid="905"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>뭐든 해 봐야지! 아무 것도 안 하면 아무 것도 안 바뀌잖아.<BR>그래서? 그래서 그 큰 힘을 가진 성물이 뭔데?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-f" mid="908" select_type="2" />
+      <talk_question mid="907"><![CDATA[<html>$루나리아$<BR>
+몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-g" mid="910" select_type="2" />
+      <talk_question mid="909"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>......</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-h" mid="912" select_type="2" />
+      <talk_question mid="911"><![CDATA[<html>$루나리아${action:Stand1}<BR><FONT color=#7e12d2>(루나리아가 고개를 갸웃거린다)</FONT><BR>옛날... 아니면 먼 훗날... 누군가 정보를 아는 사람이 나타날지도 모르지.<BR>아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-2" mid="914" select_type="2" />
+      <talk_question mid="913"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그건 또 무슨 소리야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-2" image="QW_21.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-2-" mid="918" select_type="5" />
+      <talk_question mid="917"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>페어리스타 마법연구소</FONT>라고 알아?<BR>그곳에서라면, 질문에 답할 사람을 찾을 수 있을지도 몰라.<BR>아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1126_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1126_lunaria-2-" mid="920" select_type="5" />
+      <talk_question mid="919"><![CDATA[<html>$루나리아$<BR>
+저기 낯선 사람이 보이는데...<BR>
+네게 도움을 줄 수 있을 것 같아. 아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-2-a" mid="923" select_type="2" />
+      <talk_question mid="921"><![CDATA[<html>$낯선 아카데믹$<BR>데이터에 없는 인물입니다. 인지번호, 확인 요청중.<BR>XD-02, 기동중입니다.<BR>위험도 최하. 가드 시스템, 해제합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-a" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1125_academic-2-b" mid="925" select_type="2" />
+      <talk_question mid="924"><![CDATA[<html>$루나리아$<BR>우리, 자문을 구하러 왔어.<BR>
+시간이 우리를 이곳으로 데려왔으니까 당신은 해답을 알고 있을 거야.<BR>
+아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-b" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-2-c" mid="927" select_type="2" />
+      <talk_question mid="926"><![CDATA[<html>$낯선 아카데믹$<BR>.......<BR><FONT color=#7e12d2>(낯선 소녀가 경계심 어린 시선으로 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-c" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1125_academic-2-d" mid="929" select_type="2" />
+      <talk_question mid="928"><![CDATA[<html>$루나리아$<BR>당신들의 표현으로는 저주... 같은 걸 푸는 방법을 찾고 있어.<BR>자기 자신이 감당할 수 없는 큰 힘을 제어하는 방법, 알아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-2-e" mid="931" select_type="2" />
+      <talk_question mid="930"><![CDATA[<html>$낯선 아카데믹$<BR>저주, 정화. 키워드 입력합니다.<BR><FONT color=#7e12d2>(낯선 소녀가 자그마한 장치를 들여다 보며 조작한다)</FONT><BR>캐더락 관문, 인식 범위 확인, 키워드 검색 결과 요청......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-2-f" mid="934" select_type="2" />
+      <talk_question mid="933"><![CDATA[<html>$낯선 아카데믹$<BR>결과값을 호출합니다.<BR><FONT color=#7e12d2>(기계음이 들린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-f" image="QN_Npc_Karakule_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-2-g" mid="936" select_type="2" />
+      <talk_question mid="935"><![CDATA[<html>$데이터 재생장치$<BR><FONT color=#7e12d2>캐더락 관문의 마물항쟁 10년 전, 소서리스 카라큘의 명령하에 상급 소서리스들이 조사 및 재건한 고대인의 정화장치의 존재 확인.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-g" image="QS_Default.dds" itemindex="300064" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-2-h" mid="939" select_type="2" />
+      <talk_question mid="938"><![CDATA[<html>$데이터 재생장치$<BR><FONT color=#7e12d2>목적은 고대인들이 캐더락 주변의 산림에 생명력을 불어넣기 위한 것.<BR>가동하기 위해서는 순백의 오브와 정화장치의 열쇠가 필요했으며...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-h" image="QS_Default.dds" itemindex="300064" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1125_academic-2-i" mid="941" select_type="2" />
+      <talk_question mid="940"><![CDATA[<html>$루나리아$<BR>아, 그거야.<BR>순백의 오브.<BR><FONT color=#7e12d2>(루나리아가 {user_nick} 쪽을 돌아본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-i" image="QS_Default.dds" itemindex="300064" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1125_academic-2-j" mid="943" select_type="2" />
+      <talk_question mid="942"><![CDATA[<html>$루나리아$<BR>순백의 오브가 있으면 <FONT color=#a82424>시간이동</FONT>을 조금은 제어할 수 있을 거야.<BR>아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-2-k" mid="945" select_type="2" />
+      <talk_question mid="944"><![CDATA[<html>$낯선 아카데믹$<BR>정보는 이상입니다.<BR>도움이 되었습니까? 저는 물러갑니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-2-" mid="947" select_type="5" />
+      <talk_question mid="946"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(낯선 소녀가 기계 장치를 끈다.</FONT><BR>
+<FONT color=#7e12d2>자그맣게 새겨진 XD-02라는 문자가 반짝거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1125_academic-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Normal.dds" center_image="">
+      <talk_answer link_index="n1125_academic-3-" mid="952" select_type="5" />
+      <talk_question mid="951"><![CDATA[<html>$낯선 아카데믹$<BR>...<FONT color=#a82424>언니</FONT>가 화를 내면 어떻게 하지?<BR>
+참견하지 말라고 했는데......<BR><FONT color=#7e12d2>(소녀가 자그만 목소리로 중얼거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1126_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1126_lunaria-3-a" mid="954" select_type="2" />
+      <talk_question mid="953"><![CDATA[<html>$루나리아$<BR>또 시간이동을 한 것 같아.<BR>
+아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1126_lunaria-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1126_lunaria-3-b" mid="956" select_type="2" />
+      <talk_question mid="955"><![CDATA[<html>$루나리아$<BR>약간의 오차는 있지만, 현재로 제대로 귀환했다고 생각해.<BR>...그 현재가 어딘지는 잘 모르지만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1126_lunaria-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1126_lunaria-3-c" mid="958" select_type="2" />
+      <talk_question mid="957"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이봐......</FONT><BR>
+<FONT color=#662500>제대로 귀환한 건 맞아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1126_lunaria-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1126_lunaria-3-d" mid="960" select_type="2" />
+      <talk_question mid="959"><![CDATA[<html>$루나리아$<BR>어쨌든 단서, 얻었어.<BR>순백의 오브.<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1126_lunaria-3-d" image="QS_Default.dds" itemindex="300064" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1126_lunaria-4" mid="962" select_type="2" />
+      <talk_question mid="961"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>상급 소서리스</FONT>들이 조사, 재건한 정화장치와 관련된 거랬어.<BR>그러니까 순백의 오브에 대해 알기 위해서는 캐더락 관문의 상급 소서리스에게 물어보아야 할 거야.<BR>아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1126_lunaria-4" image="QN_Npc_SoceressTiana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1126_lunaria-4-" mid="965" select_type="5" />
+      <talk_question mid="964"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>캐더락 관문</FONT>으로 돌아가서, 상급 소서리스를 찾아가.<BR>어서.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-4-a" mid="967" select_type="2" />
+      <talk_question mid="966"><![CDATA[<html>$루나리아$<BR>약간의 오차는 있지만, 현재로 제대로 귀환했다고 생각해.<BR>...그 현재가 어딘지는 잘 모르지만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-4-a" image="QN_Npc_SoceressTiana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-4-" mid="969" select_type="5" />
+      <talk_question mid="968"><![CDATA[<html>$루나리아$<BR>캐더락 관문의 상급 소서리스에게 가는 거지?<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="972" select_type="2" />
+      <talk_question mid="971"><![CDATA[<html>$상급 소서리스 티아나$<BR>흠, 요즘 너에 대해 떠드는 모험자들이 몇 보이던데, 이렇게 만나서 반갑군.<BR>내게 무슨 볼일이지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-b" mid="974" select_type="2" />
+      <talk_question mid="973"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여쭤보고 싶은 게 있습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-c" mid="976" select_type="2" />
+      <talk_question mid="975"><![CDATA[<html>$상급 소서리스 티아나$<BR>그래. 여쭤 보렴.<BR>...응? 뭐라고? 순백의... 뭐?<BR><FONT color=#7e12d2>(이름을 들은 티아나가 고개를 갸웃거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-d" mid="978" select_type="2" />
+      <talk_question mid="977"><![CDATA[<html>$상급 소서리스 티아나$<BR>어디서 들어본 거 같기도 하고... 아닌 거 같기도 하고...<BR>
+하지만 역시 잘 모르겠는데.<BR>그게 뭐니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-e" mid="998" select_type="4" />
+      <talk_question mid="997"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-!next" mid="980" select_type="2" />
+      <talk_question mid="979"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(역시 제대로 된 시기로 되돌아온 게 아닌가?<BR>또 시간이 꼬여 버린 것일지도...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">194</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1940,,,,,,,</exe>
+         <exe type="complete" true="">194</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1101_lunaria" sub="b" />
+   <exelink qstep="1" npc="n1101_lunaria" sub="c" />
+   <exelink qstep="1" npc="n1101_lunaria" sub="d" />
+   <exelink qstep="1" npc="n1101_lunaria" sub="e" />
+   <exelink qstep="1" npc="n1101_lunaria" sub="f" />
+   <exelink qstep="1" npc="n1101_lunaria" sub="g" />
+   <exelink qstep="1" npc="n1101_lunaria" sub="h" />
+   <exelink qstep="1" npc="n1101_lunaria" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1125_academic" sub="b" />
+   <exelink qstep="2" npc="n1125_academic" sub="c" />
+   <exelink qstep="2" npc="n1125_academic" sub="d" />
+   <exelink qstep="2" npc="n1125_academic" sub="e" />
+   <exelink qstep="2" npc="n1125_academic" sub="f" />
+   <exelink qstep="2" npc="n1125_academic" sub="g" />
+   <exelink qstep="2" npc="n1125_academic" sub="h" />
+   <exelink qstep="2" npc="n1125_academic" sub="i" />
+   <exelink qstep="2" npc="n1125_academic" sub="j" />
+   <exelink qstep="2" npc="n1125_academic" sub="k">0,1</exelink>
+   <exelink qstep="2" npc="n1125_academic" sub="" />
+   <exelink qstep="3" npc="n1126_lunaria" sub="b" />
+   <exelink qstep="3" npc="n1126_lunaria" sub="c" />
+   <exelink qstep="3" npc="n1126_lunaria" sub="d" />
+   <exelink qstep="3" npc="n1126_lunaria" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n1101_lunaria" sub="" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="d">0</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="e">1</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="!next" />
+   <journal_data recompense="1940" quest_title="아주 약간의 오차" chapterid="3" quest_level="16" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_CristalStream.dds</contents_image>
+         <destination_pos>4,n1101</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1101</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="871"><![CDATA[아주 약간의 오차I]]></title>
+         <contents mid="872"><![CDATA[<html>루나리아의 시간이동 능력을 제어하기 위한 단서에 대해 대화해 보자.<BR><BR><FONT color=#086171>수정 개울</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="873"><![CDATA[수정 개울에서 루나리아와 대화]]></destination>
+         <todo_msg mid="874"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>153,n1125</destination_pos>
+         <destination_mode>custom:152@1,153@1</destination_mode>
+         <statemark_npcid>1125</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="984"><![CDATA[아주 약간의 오차II]]></title>
+         <contents mid="985"><![CDATA[<html>페어리스타 마법연구소로 가자. 루나리아의 말에 따르면, 그곳에서 뭔가 정보를 줄 인물을 만날 수 있을 것 같다.<BR>
+ <BR>
+<FONT color=#086171>해빙의 숲(마법사들의 길)</FONT> <FONT color=#a82424>- 페어리스타 마법연구소</FONT></html>]]></contents>
+         <destination mid="986"><![CDATA[페어리스타 마법연구소]]></destination>
+         <todo_msg mid="987"><![CDATA[페어리스타 마법연구소로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>153,n1126</destination_pos>
+         <destination_mode>custom:152@1,153@1</destination_mode>
+         <statemark_npcid>1126</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="989"><![CDATA[아주 약간의 오차III]]></title>
+         <contents mid="990"><![CDATA[<html>낯선 소녀에게서 정보를 얻었다. 루나리아와 대화해 보자.<BR>
+ <BR>
+<FONT color=#086171>해빙의 숲(마법사들의 길)</FONT> <FONT color=#a82424>- 페어리스타 마법연구소(루나리아)</FONT></html>]]></contents>
+         <destination mid="991"><![CDATA[페어리스타 마법연구소에서 루나리아와 대화]]></destination>
+         <todo_msg mid="992"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="993"><![CDATA[아주 약간의 오차IV]]></title>
+         <contents mid="994"><![CDATA[<html>캐더락 관문의 상급 소서리스에게 가서 순백의 오브에 대해 아는지 물어보자.<BR>
+ <BR>
+<FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 상급 소서리스 티아나</FONT></html>]]></contents>
+         <destination mid="995"><![CDATA[캐더락 관문의 상급 소서리스 티아나와 대화]]></destination>
+         <todo_msg mid="996"><![CDATA[캐더락 관문의 상급 소서리스와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>193</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

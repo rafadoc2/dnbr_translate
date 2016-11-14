@@ -1,0 +1,270 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_202_rescue_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>202</qid>
+      <designer>김주연</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>203</nextqid>
+      <nextqname>mq08_203_black_knight_tracking</nextqname>
+      <nextqnpc>n023_ranger_fugus</nextqnpc>
+      <qkname mid="1"><![CDATA[To The Rescue!]]></qkname>
+      <qnpc>
+         <npcid>182</npcid>
+         <npcename>n182_point_mark</npcename>
+         <npckname>느낌표(!)_(ID는 빈공란)/탄식의 협곡3층</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>6</npcid>
+         <npcename>n006_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-noquest" image="" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Nothing seems to be out of the ordinary.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-noquest" image="" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$Master Archer Adelynn$<BR>Calderock Village...it houses both great joy...and great sorrow for me. I met him here...and I lost him here...<BR>Memories of him dwell everywhere here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n006_rose-noquest" image="" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Rose$<BR>Darkness is coming... Darkness is coming...<BR><FONT color=#7e12d2>(Rose repeats that line over and over.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-accepting" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-accepting-acceptted" mid="87"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Scout Fergus$<BR>Adelynn was with me when I was tracking the Red Harpy down. Learn to play the tune on the harp from her, and go to Sigh Canyon. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-1-a" mid="6"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Scout Fergus$<BR>Sigh Canyon is a dangerous place...I would like to help you out, but I can't.<BR>I'm sorry, {user_nick}, the <FONT color=#a82424>Adventurer's Guild</FONT> has just activated me for an emergency. It seems you'll be on your own...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-1-b" mid="29"><![CDATA[<html>Right...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Scout Fergus$<BR>A wanted man the Guild has been searching for has been spotted in the vicinity of Calderock Village. They call him the <FONT color=#a82424>Black Knight</FONT> as his armor and cape are fully black. Practically everyone in the Guild has been recalled to track him down.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-b" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Scout Fergus${action:Talk}<BR>{user_nick}, speak with Adelynn and get the harp repaired. Once it's done, proceed to Sigh Canyon. I will join you as soon as I can.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n006_rose-1" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Rose$<BR>Darkness is coming... Darkness is coming...<BR>(Rose repeats the same words over and over.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Master Archer Adelynn$<BR>Calderock Village...it houses both great joy...and great sorrow for me. I met him here...and I lost him here...<BR>Memories of him dwell everywhere here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-1" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Nothing seems to be out of the ordinary.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-2" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Scout Fergus${action:Talk}<BR>{user_nick}, Get Adelynn to fix the harp. She's in Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2" image="QS_Default.dds" itemindex="300015">
+      <talk_answer link_index="n033_archer_master_adellin-2-b" mid="45"><![CDATA[<html>Can you fix this harp?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Archer Adelynn$<BR>It's been a long time since I've seen a harp, but I heard someone playing it while I was on patrol with Scout Fergus.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-a" image="QS_Default.dds" itemindex="300015">
+      <talk_question mid="46"><![CDATA[<html>$Master Archer Adelynn$<BR>I haven't played a harp in ages. What a beautiful instrument. Hmm, I could fix it for you, but I need some time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-b" image="QS_Default.dds" itemindex="300015">
+      <talk_answer link_index="n033_archer_master_adellin-2-c" mid="48"><![CDATA[<html>Oh, thank you!</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Archer Adelynn$<BR>I haven't played a harp in ages. What a beautiful instrument. Luckily, I have some strings at hand. It wouldn't take that long.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-c" image="QS_Default.dds" itemindex="300015">
+      <talk_answer link_index="n033_archer_master_adellin-2-d" mid="50"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Archer Adelynn$<BR>What are you planning to do with this harp, though?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-d" image="QS_Default.dds" itemindex="300015">
+      <talk_answer link_index="n033_archer_master_adellin-2-e" mid="52"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Master Archer Adelynn${sound:Quest_Harp_01.wav}<BR>Oh, that melody! I can play that! Fergus is kind of bad in playing instruments, I shall play that for you.<BR><FONT color=#7e12d2>(Adelynn closes her eyes and plays the harp gently)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-e" image="QW_14.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Master Archer Adelynn$<BR>This melody should be the signal that the Red Harpy in Sigh Canyon is waiting for.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3" image="QW_14.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Master Archer Adelynn$<BR>It's not easy to play a harp, but I believe you'll be alright. The Red Harpy should come to you if you play that tune in Sigh Canyon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3" image="QM_HarpyRed.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Scout Fergus${action:Talk}<BR>Take the harp and lure the Red Harpy out. Slay her, and rescue the girl. Be careful, the Red Harpy is much stronger than the other harpies.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n182_point_mark-3" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>Speak to <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT> at <FONT color=#a82424>Calderock Village</FONT>.<BR><BR><FONT color=#086171>Calderock Village </FONT><FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-a" mid="59"><![CDATA[<html>(You tell him about the Black Knight.)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Scout Fergus$<BR>What happened? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-b" mid="61"><![CDATA[<html>...Yes...</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Scout Fergus$<BR>The Black Knight appeared at Sigh Canyon and took the girl away?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4-b" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-!next" mid="63"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">202</exe>
+         <exe type="talk" npc="n023_ranger_fugus">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>탄식의 협곡 3층에서 저널 3을 4로 바꿔줌.</comment>
+      <conditions>
+         <chk type="lvl" op="]=">10</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">b</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">a</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6,7,8">372</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200372</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 372);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">202</exe>
+         <exe type="delquestitem" num="-1">300015</exe>
+         <exe type="recompense">2021,2021,2022,2023,2024,2026,2026</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n023_ranger_fugus" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="c" />
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="e">5,3,9,4</exelink>
+   <exelink qstep="4" npc="n023_ranger_fugus" sub="b">2</exelink>
+   <exelink qstep="4" npc="n023_ranger_fugus" sub="!next">0,1</exelink>
+   <journal_data recompense="1:2021,2:2022,3:2023,4:2024,6:2026" quest_title="소녀를 구출하라" chapterid="2" quest_level="10" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <destination_pos>4,335,-26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="16"><![CDATA[A Daring Rescue]]></title>
+         <contents mid="17"><![CDATA[<html>Get more information on the Black Knight from <FONT color=#a82424>Scout Fergus</FONT>.<BR><BR><FONT color=#086171>Cristal Stream</FONT><FONT color=#a82424>→ Scout Fergus</FONT></html>]]></contents>
+         <destination mid="18"><![CDATA[Talk to Scout Fergus at Cristal Stream]]></destination>
+         <todo_msg mid="19"><![CDATA[Talk to Scout Fergus.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <destination_pos>8,-2912,2754</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Adelynn and the Harp]]></title>
+         <contents mid="66"><![CDATA[<html>Scout Fergus thinks Master Archer Adelynn may be able to fix the harp. Bring it to her.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Archer Adelynn</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk to Master Archer Adelynn]]></destination>
+         <todo_msg mid="68"><![CDATA[Go to Master Archer Adelynn at Calderock Village.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_14.dds</contents_image>
+         <destination_pos>118,708,2468</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1</destination_mode>
+         <statemark_npcid>182</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Break the harpy's barrier in Sigh Canyon]]></title>
+         <contents mid="70"><![CDATA[<html>Play the tune that Adelynn taught you to break the harpy's barrier in <FONT color=#a82424>Sigh Canyon</FONT>.<BR> <BR><FONT color=#086171>Cristal Stream (Sigh Canyon Entrance) </FONT> <FONT color=#a82424>→ Sigh Canyon </FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Break the Harpy's barrier in Sigh Canyon]]></destination>
+         <todo_msg mid="72"><![CDATA[Play the harp to remove the barrier in Sigh Canyon.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QM_HarpyRed.dds</contents_image>
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Defeat the Red Harpy in Sigh Canyon]]></title>
+         <contents mid="74"><![CDATA[<html>You have broken the Harpy's barrier. Defeat the <FONT color=#a82424>Red Harpy</FONT> and save the <FONT color=#a82424>girl</FONT>. <BR><BR><FONT color=#086171>Cristal Stream (Sigh Canyon Entrance)</FONT> <FONT color=#a82424>→ Sigh Canyon</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Defeat the Red Harpy in Sigh Canyon]]></destination>
+         <todo_msg mid="76"><![CDATA[Defeat the Red Harpy in Sigh Canyon]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <destination_pos>4,335,-26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Talk to Scout Fergus at Cristal Stream]]></title>
+         <contents mid="80"><![CDATA[<html>After slaying the <FONT color=#a82424>Red Harpy</FONT>, the <FONT color=#a82424>Black Knight</FONT> appeared and kidnapped the girl! Report this to <FONT color=#a82424>Scout Fergus</FONT> at Cristal Stream.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Scout Fergus</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Scout Fergus at Cristal Stream]]></destination>
+         <todo_msg mid="82"><![CDATA[Return to Scout Fergus]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>201</prev_quest>
+      <have_quest />
+      <have_normal_item xml:space="preserve"> </have_normal_item>
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

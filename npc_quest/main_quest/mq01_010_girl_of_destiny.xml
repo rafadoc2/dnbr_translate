@@ -1,0 +1,195 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_010_girl_of_destiny</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>10</qid>
+      <designer>김주연</designer>
+      <qlevel>9</qlevel>
+      <qdesc>시작레벨이 9.
+
+9레벨이 아직 되지 않았다면 수정 개울은 위험한 곳이니 좀 더 실력을 쌓으란 충고를 하고, 9레벨이 넘으면 촌장님께 들리란 말을 한다. 
+ 대사를 넣기 위해 8레벨로 넣음.
+ </qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>201</nextqid>
+      <nextqname>mq08_201_secret_melody</nextqname>
+      <nextqnpc>n001_elder_harold</nextqnpc>
+      <qkname mid="1"><![CDATA[Girl of Destiny]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="127"><![CDATA[<html>$Mayor Harold$<BR><FONT color=#a82424>Vigilante Leader Steve</FONT> is waiting for you, <FONT color=#387206>{user_nick}</FONT>. (Coughs)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-accepting-acceptted" mid="126"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Vigilante Leader Steve$<BR>We will recover <FONT color=#a82424>Timothy</FONT>'s body…<BR>He protected the girl he loved... So he would have no regrets…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-1-a" mid="99"><![CDATA[<html>I will track the monster down and bring Rose back.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Vigilante Leader Steve$<BR>What do you think we should do next?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-a" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-1-bbcd" mid="101"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Vigilante Leader Steve$<BR>I see... According to the report, the <FONT color=#a82424>Red Harpy</FONT> that took Rose passed through Wind Forest and flew towards <FONT color=#a82424>Cristal Stream</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-b" image="QS_Default.dds" itemindex="300012">
+      <talk_answer link_index="n004_guard_steave-1-c" mid="103"><![CDATA[<html>Thank you... Rest assured, I will bring Rose back.</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Vigilante Leader Steve$<BR>If you wish to cross Cristal Stream, you must pass through a blockade... You would need a pass. Take this <FONT color=#a82424>Cristal Stream Pass</FONT> with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-c" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Vigilante Leader Steve$<BR>I sincerely appreciate your help.<BR>Please go and see <FONT color=#a82424>Mayor Harold</FONT> before you leave. I will make preparations for Timothy's funeral...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-d" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-1-e" mid="106"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Vigilante Leader Steve$<BR><FONT color=#a82424>Cristal Stream</FONT> is where the monsters that are eyeing <FONT color=#a82424>Calderock Village</FONT> are stationed. Unlike the monsters around this neighbourhood, they are highly organized and dangerous.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-e" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Vigilante Leader Steve$<BR>You won't be able to deal with them with your current abilities. I suggest you stay at Prairie Town a little longer for futher training?<BR><FONT color=#a82424>(You must be Lv. 9 or higher to proceed with the next stage of the quest)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="108"><![CDATA[<html>$Mayor Harold$<BR><FONT color=#a82424>Vigilante Leader Steve</FONT> is waiting for you, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Please go and see <FONT color=#a82424>Mayor Harold</FONT> before you leave.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-a" mid="114"><![CDATA[<html>Your fault?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Mayor Harold$<BR>You're here... I heard about <FONT color=#a82424>Rose</FONT> and <FONT color=#a82424>Timothy</FONT>... Timothy sacrificed himself for Rose. This is all my fault. My heart feels so heavy now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-b" mid="115"><![CDATA[<html>What's... a <FONT color=#a94407>Dream Reader</FONT>?</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Mayor Harold$<BR><FONT color=#a82424>Rose</FONT> is a special child… She has the abilities of a <FONT color=#a94407>Dream Reader</FONT> which was lost for a long time….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-c" mid="116"><![CDATA[<html>So that's the reason why the monsters took Rose?</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Mayor Harold$<BR>According to the legends, it's the name given to people who can see the dreams of others. Those who reach the highest stage of dream reading is said to be able to read even <FONT color=#a94407>Goddess Altea</html>'s dreams.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-d" mid="117"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Mayor Harold${action:Talk}<BR>It seems like so... I hoped Rose could grow up ordinarily... Looks like my expectations were too high. (Coughs)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-d" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-e" mid="120"><![CDATA[<html>Rest assured I will find Rose back...</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Mayor Harold${action:Talk}<BR>I should have accepted the protection from <FONT color=#a82424>Saint Haven Royal Castle</FONT> or the <FONT color=#a82424>Terramai Order</FONT>. They may have exploited us but at least we wouldn't have been under the threat of the evil monsters...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-e" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-f" mid="122"><![CDATA[<html>Thanks.</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Mayor Harold$<BR>You've helped so much for a child you have never met... I really don't know how I can thank you. (Coughs)<FONT color=#387206>{user_nick}</FONT>, this is something the town has prepared for you… I hope you like it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-f" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-!next" mid="124"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">10</exe>
+         <exe type="talk" npc="n004_guard_steave">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300012 : 수정 개울 통행증
+300010 :붉은 인장 삭제</comment>
+      <conditions>
+         <chk type="lvl" op="]=">9</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n004_guard_steave">b</exe>
+         <exe type="talk" npc="n004_guard_steave">d</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300012</exe>
+         <exe type="delquestitem" num="-1">300010</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">102,101,102,102,102,,</exe>
+         <exe type="complete">10</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="bbcd">0</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="c">5,3,4,6</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="e" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="c" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="d" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="e" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="f">0</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="!next">1</exelink>
+   <journal_data recompense="1:101,2:102" quest_title="운명의 소녀" chapterid="1" quest_level="9" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Talk to Vigilante Leader Steve]]></title>
+         <contents mid="44"><![CDATA[<html>Vigilante Leader Steve told you that you have to go to Cristal Stream to find Rose, where the <FONT color=#a82424>Red Harpy</FONT> came from. Get <FONT color=#a82424>Cristal Stream Pass</FONT> from <FONT color=#a82424>Steve</FONT>.<BR>※ <FONT color=#7e12d2>You must be Lv. 9 or higher to proceed with the next stage of the quest</FONT><BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="46"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <destination_pos>1,-1390,-629</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Talk to Mayor Harold]]></title>
+         <contents mid="48"><![CDATA[<html>Steve gave you the Cristal Stream Pass and suggested you meet the mayor before leaving.<BR>Meet <FONT color=#a82424>Mayor Harold</FONT> and prepare to leave for <FONT color=#a82424>Cristal Stream</FONT>.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Mayor Harold</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to Mayor Harold]]></destination>
+         <todo_msg mid="50"><![CDATA[Acquired Cristal Steam Pass. Please Talk to Mayor Harold.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

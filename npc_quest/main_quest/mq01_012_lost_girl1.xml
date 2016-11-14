@@ -1,0 +1,214 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_012_lost_girl1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>1</qid>
+      <designer>김주연</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>13</nextqid>
+      <nextqname>mq01_013_lost_girl2</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[The Mystery of the Missing Girl I]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Vigilante Leader Steve$<BR>I heard that you're the adventurer who rescued Lily. Thankfully she seems to have awakened a little while ago. I thank you on behalf of the town.<BR><FONT color=#7e12d2>(Talk to Mayor Harold to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-accepting-acceptted" mid="238"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Mayor Harold$<BR>You are the young hero who rescued <FONT color=#a82424>Lily</FONT>. Thank you so much. How can I ever repay your kindness...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-a" mid="8"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Mayor Harold$<BR>You are the young hero who rescued <FONT color=#a82424>Lily</FONT>. Thank you so much. How can I ever repay your kindness...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-a" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-b" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Mayor Harold$<BR>We have met only today and I'm not sure how to say this...<BR>But actually, the number of villagers disappearing has been on the rise recently.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-b" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-c" mid="234"><![CDATA[<html>I picked this up when I rescued Lily.</html>]]></talk_answer>
+      <talk_question mid="233"><![CDATA[<html>$Mayor Harold$<BR>I restricted the villagers from going out of town, but my own granddaughters ended up going out and getting into trouble. Thanks to you, <FONT color=#a82424>Lily</FONT> is back but <FONT color=#a82424>Rose</FONT> is still somewhere out there...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-c" image="QS_Default.dds" itemindex="300002">
+      <talk_answer link_index="n001_elder_harold-1-d" mid="236"><![CDATA[<html>Do you know anything about the monsters that kidnapped Rose?</html>]]></talk_answer>
+      <talk_question mid="235"><![CDATA[<html>$Mayor Harold${action:Talk}<BR>Th.. That's <FONT color=#a82424>Rose's Pendant</FONT>. She carries the pendant with her at all times... Ro.. Rose...<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-d" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-e" mid="231"><![CDATA[<html>I'll find Rose.</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Mayor Harold$<BR>There is a place called <FONT color=#a82424>Shadow Forest Trail</FONT> near our village where the orcs appear frequently. It seems like Rose was taken by the leader <FONT color=#a82424>Orc </FONT><FONT color=#a82424>Kromish</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-e" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2" mid="239"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Mayor Harold$<BR>Thank you... Before you head out to the forest, talking to <FONT color=#a82424>Vigilante Leader Steve</FONT> might help you in your journey. It was a pleasure meeting you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR><FONT color=#a82424>Mayor Harold</FONT>seems to be looking for you, adventurer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-b" mid="240"><![CDATA[<html>Can I get some training first?</html>]]></talk_answer>
+      <talk_answer link_index="n001_elder_harold-2-a" mid="241"><![CDATA[<html>Leave it to me.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Mayor Harold$<BR>Before going to <FONT color=#a82424>Shadow Forest Trail</FONT>, don't fOgret to meet <FONT color=#a82424>Vigilante Leader Steve</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-a" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-f" mid="251"><![CDATA[<html>(I'm ready for this...)</html>]]></talk_answer>
+      <talk_question mid="242"><![CDATA[<html>$Mayor Harold$<BR>You look like a trustworthy <FONT color=#387206>{user_class}</FONT>. If by any chance you need a <FONT color=#a82424>[Detailed Tutorial]</FONT>, speak to me at any time. I understand the importance of adaptive trainings.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-b" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-party" mid="244"><![CDATA[<html>Ok, please guide me through.</html>]]></talk_answer>
+      <talk_answer link_index="n001_elder_harold-2-e" mid="245"><![CDATA[<html>I think it's fine for now.</html>]]></talk_answer>
+      <talk_question mid="243"><![CDATA[<html>$Mayor Harold$<BR>Yes? Well, the adaptive training is of utmost importance.<BR>If it's alright with you, I can show you the <FONT color=#a82424>[Detailed Tutorial]</FONT> now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-c" image="" itemindex="">
+      <talk_question mid="246"><![CDATA[<html>$Mayor Harold$<BR>I'm sorry but you can only take the tutorial <FONT color=#a82424>alone</FONT>. Leave your party and talk to me again for the <FONT color=#a82424>[Detailed Tutorial]</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-d" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-move" mid="248"><![CDATA[<html>(Proceed)</html>]]></talk_answer>
+      <talk_question mid="247"><![CDATA[<html>$Mayor Harold$<BR>Well then, I will take you to a special training ground for beginner adventurers.<BR>Please follow me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-e" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-f" mid="252"><![CDATA[<html>(Well, let's go!)</html>]]></talk_answer>
+      <talk_question mid="249"><![CDATA[<html>$Mayor Harold$<BR>You look like a trustworthy <FONT color=#387206>{user_class}</FONT>. If by any chance you need a <FONT color=#a82424>[Detailed Tutorial]</FONT>, speak to me at any time. I understand the importance of adaptive trainings.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-f" image="" itemindex="">
+      <talk_question mid="253"><![CDATA[<html>(Press <FONT color=#387206>[H]</FONT> to open the window to view the default controls. Press <FONT color=#387206>[Ctrl]</FONT> to toggle the mouse pointer.<BR>Press the key again to reset.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-a" mid="147"><![CDATA[<html>Tell me more about Orc Kromish.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>I heard that you are going to <FONT color=#a82424>Shadow Forest Trail</FONT> to find <FONT color=#a82424>Rose</FONT>.<BR>I'm sorry that we have to bother you, <FONT color=#008000>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-a" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-b" mid="149"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Vigilante Leader Steve$<BR><FONT color=#a82424>Orc Kromish</FONT> from the <FONT color=#a82424>Shadow Forest Trail</FONT> is a ferocious and powerful monster. He uses a <FONT color=#a82424>large shield</FONT> to block most of the attacks.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-b" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-c" mid="151"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="150"><![CDATA[<html>$Vigilante Leader Steve$<BR>It would be wise to destroy his <FONT color=#a82424>shield</FONT> first. <FONT color=#008000>{user_nick}</FONT>, you should be able to use your <FONT color=#a82424>skills</FONT> to destroy his <FONT color=#a82424>shield</FONT> easily.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-c" image="QS_Default.dds" itemindex="302132232">
+      <talk_answer link_index="n004_guard_steave-2-d" mid="190"><![CDATA[<html>Thanks.</html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$Vigilante Leader Steve$<BR>Here's some <FONT color=#a82424>medicine</FONT> that we use for emergency. There's only a little so please use it wisely in your battle against <FONT color=#a82424>Orc Kromish</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-d" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-!next" mid="192"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="185"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">12</exe>
+         <exe type="custom">npc_talk_index = "n001_elder_harold-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>(팬던트 뺏음)</comment>
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="delquestitem" num="-1">300002</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">120,,,,,,</exe>
+         <exe type="complete">1</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="talk" npc="n001_elder_harold">c</exe>
+         <exe type="talk" npc="n001_elder_harold">d</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13511,1);</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n001_elder_harold" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="c" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="d" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="e" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="f" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="party">2</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="e" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="move">5</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="f" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="d">0</exelink>
+   <exelink qstep="2" npc="n004_guard_steave" sub="!next">1</exelink>
+   <journal_data recompense="0:120" quest_title="실종된 소녀Ⅰ" chapterid="1" quest_level="1" quest_mark_type="1" use_item_list="300002">
+      <journal index="1">
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <destination_pos>1,-1390,-629</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[The Mystery of the Missing Girl]]></title>
+         <contents mid="51"><![CDATA[<html>Find and talk to <FONT color=#a82424>Mayor Harold</FONT> in Prairie Town.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Mayor Harold</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to Mayor Harold]]></destination>
+         <todo_msg mid="53"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Vigilante Leader Steve]]></title>
+         <contents mid="55"><![CDATA[<html>Mayor Harold of Prairie Town recommends that you meet Vigilante Leader Steve before rescuing Rose.<BR>Find <FONT color=#a82424>Vigilante Leader Steve</FONT> and seek his advice.<BR><BR><FONT color=#086171>Prairie Town</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Vigilante Leader Steve</FONT></FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="57"><![CDATA[Talk to Vigilante Leader Steve.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level>-1:-1</user_worldzone_level>
+      <user_class>1:2</user_class>
+      <prev_quest>24</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

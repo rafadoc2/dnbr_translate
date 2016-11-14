@@ -1,0 +1,376 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_034_gone_memory</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>34</qid>
+      <designer>김인정</designer>
+      <qlevel>5</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>35</nextqid>
+      <nextqname>mq01_035_slightest_clue</nextqname>
+      <nextqnpc>n001_elder_harold</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[사라진 기억]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1096</npcid>
+         <npcename>n1096_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1097</npcid>
+         <npcename>n1097_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1098</npcid>
+         <npcename>n1098_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-accepting-a" mid="191" select_type="2" />
+      <talk_question mid="119"><![CDATA[<html>$촌장 해롤드$<BR>오, 모험자님.<BR>한참 전에 다른 모험자분들이 돌아와, 로제가 카타콤에서 탈출했다고 전해 주었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-accepting-acceptted" mid="193" select_type="3" />
+      <talk_question mid="192"><![CDATA[<html>$촌장 해롤드$<BR>그런데 좀 이상합니다.<BR>탈출을 제대로 했다면 지금쯤은 돌아왔어야 하는데, 도무지 행적이 오리무중이랍니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Lily.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-a" mid="522" select_type="2" />
+      <talk_question mid="513"><![CDATA[<html>$촌장 해롤드$<BR>자경단 사람들하고 모험자분들이 수군수군 이야기를 나누는 것 같았는데, 결론이 났는지 모르겠습니다.<BR>휴우... 우리 손녀 릴리는 언니가 염려되어 계속 울기만 하고, 정말 걱정이군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-b" mid="524" select_type="2" />
+      <talk_question mid="523"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>곧 좋은 소식이 있겠죠.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-b" image="QW_ShadowForest.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-c" mid="526" select_type="2" />
+      <talk_question mid="525"><![CDATA[<html><FONT color=#2b2723>$촌장 해롤드$<BR></FONT><FONT color=#2b2723>꼭 그랬으면 좋겠군요.<BR>그나저나 이제 로제의 행적을 알아냈는지 궁금합니다.</FONT><BR>
+<FONT color=#2b2723>모험자분들은 다들 </FONT><FONT color=#a82424>그늘 숲</FONT><FONT color=#2b2723> 쪽으로 가셨거든요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-c" image="QW_ShadowForest.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-1-" mid="528" select_type="5" />
+      <talk_question mid="527"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그늘 숲? 신경이 쓰이니까 한 번 가 볼까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-1-" mid="516" select_type="5" />
+      <talk_question mid="515"><![CDATA[<html><FONT color=#7e12d2>(루나리아가 무표정하게 하늘 저편을 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-1-" mid="518" select_type="5" />
+      <talk_question mid="517"><![CDATA[<html><FONT color=#7e12d2>(씩씩한 인상의 워리어가 서 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1098_triana-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1098_triana-1-" mid="520" select_type="5" />
+      <talk_question mid="519"><![CDATA[<html><FONT color=#7e12d2>(침착해 보이는 아처가 자신의 동행과 대화하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="QW_ShadowForest.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-2-" mid="530" select_type="5" />
+      <talk_question mid="529"><![CDATA[<html>$촌장 해롤드$<BR>우리 로제는 무사한 것인지...<BR><FONT color=#a82424>그늘 숲</FONT>으로 간 모험자분들만 믿을 뿐입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-2-a" mid="535" select_type="0"><![CDATA[<html>그런 셈이죠.</html>]]></talk_answer>
+      <talk_answer link_index="n1097_cian-2-a" mid="536" select_type="0"><![CDATA[<html>누구십니까?</html>]]></talk_answer>
+      <talk_question mid="532"><![CDATA[<html>$낯선 워리어$<BR>앗, 안녕하십니까!!!!<BR>이거 반갑습니다. 그쪽도 모험자신가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2-a" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-2-b" mid="538" select_type="2" />
+      <talk_question mid="537"><![CDATA[<html>$워리어 시안$<BR>전 시안이라고 합니다.<BR>이쪽은 우연히 만난 <FONT color=#a82424>트리아나 </FONT>님이고요.<BR>
+같이 로제를 찾고 있습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2-b" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1097_cian-2-c" mid="540" select_type="2" />
+      <talk_question mid="539"><![CDATA[<html>$아처 트리아나$<BR>안녕하세요.<BR><FONT color=#7e12d2>(트리아나가 투명한 시선으로 인사한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2-c" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1097_cian-2-d" mid="542" select_type="2" />
+      <talk_question mid="541"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>전 {user_nick} 입니다.<BR>그런데 그 로제라는 사람은 찾았습니까?</FONT><BR><FONT color=#662500>촌장님 말씀으로는 아직 안 돌아왔다고 하던데...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2-d" image="QW_4.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-2-e" mid="544" select_type="2" />
+      <talk_question mid="543"><![CDATA[<html>$워리어 시안$<BR>자경단 분들께 벌써 말씀드린 거지만, 아무래도 <FONT color=#a82424>그늘 숲 중심</FONT> 쪽에 있는 게 아닐까 합니다.<BR>그쪽 마물들 동태가 수상하다는 보고를 들었거든요.<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2-e" image="QW_4.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-2-f" mid="546" select_type="2" />
+      <talk_question mid="545"><![CDATA[<html>$워리어 시안$<BR>트리아나 님과 함께 그쪽을 수색해 보려는 중입니다.<BR>지금 출발할 건데, <FONT color=#387206>{user_nick}</FONT> 님도 도와주실 거라면 함께 가시겠습니까?<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2-f" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-2-g" mid="548" select_type="2" />
+      <talk_question mid="547"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>동행이 있어서요.</FONT><BR>
+<FONT color=#662500>저희도 한 번 찾아보겠습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2-g" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-2-h" mid="550" select_type="2" />
+      <talk_question mid="549"><![CDATA[<html>$워리어 시안$<BR>아~ 그러시겠어요?<BR>하하. 돕는 손은 많을 수록 좋죠!! 행운을 빌겠습니다!!<BR><FONT color=#7e12d2>(워리어 시안이 유쾌한 웃음을 지으며 손을 흔든다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-2-h" image="QW_4.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-2-" mid="552" select_type="5" />
+      <talk_question mid="551"><![CDATA[<html>$워리어 시안$<BR>로제를 <FONT color=#a82424>그늘 숲 중심</FONT>에서 꼭 찾을 수 있어야 할텐데...<BR>걱정입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1097_cian-3" image="QW_4.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1097_cian-3-" mid="554" select_type="5" />
+      <talk_question mid="553"><![CDATA[<html>$워리어 시안$<BR>로제를 <FONT color=#a82424>그늘 숲 중심</FONT>에서 꼭 찾을 수 있어야 할텐데...<BR>걱정입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1098_triana-3" image="QW_4.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_question mid="555"><![CDATA[<html>$아처 트리아나$<BR>
+모든 것은 텔레지아.<BR>
+낯모를 소녀를 구하기 위해 싸우는 것도, 역시 제 텔레지아의 일부일 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-4-a" mid="558" select_type="2" />
+      <talk_question mid="557"><![CDATA[<html><FONT color=#7e12d2>(루나리아가 무표정하게 하늘 저편을 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-4-b" mid="560" select_type="2" />
+      <talk_question mid="559"><![CDATA[<html>$루나리아$<BR>...무슨 일이 있었냐고?<BR>흐음. 그렇구나.<BR>
+기억이 안 나는 거네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4-b" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-4-c" mid="562" select_type="0"><![CDATA[<html>내 안의 사람?</html>]]></talk_answer>
+      <talk_answer link_index="n1096_lunaria-4-c" mid="591" select_type="0"><![CDATA[<html>...누구?</html>]]></talk_answer>
+      <talk_question mid="561"><![CDATA[<html>$루나리아$<BR>전투 중에 그 사람에게 먹혀버렸던 것 아닐까.<BR><FONT color=#7e12d2>(루나리아가 {user_nick} 쪽을 가리킨다)</FONT><BR>네 안의 그 사람.<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4-c" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-4-d" mid="564" select_type="2" />
+      <talk_question mid="563"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그 다음에는?</FONT><BR>
+<FONT color=#662500>그는 어떻게 됐지? 다른 모험자들은 어디로 갔고?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-4-e" mid="566" select_type="2" />
+      <talk_question mid="565"><![CDATA[<html>$루나리아$<BR>
+몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-4-f" mid="569" select_type="0"><![CDATA[<html>어떤 인간?</html>]]></talk_answer>
+      <talk_answer link_index="n1096_lunaria-4-f" mid="570" select_type="0"><![CDATA[<html>그게 누군데?</html>]]></talk_answer>
+      <talk_question mid="568"><![CDATA[<html>$루나리아$<BR>어떤 인간이 나타나서 그 소녀와 함께 갔어.<BR>그걸 보고 모험자들도 갔어.<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-4-g" mid="572" select_type="2" />
+      <talk_question mid="571"><![CDATA[<html>$루나리아$<BR>몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-4-h" mid="574" select_type="2" />
+      <talk_question mid="573"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>프레리 타운으로 돌아가서 물어보면 되겠지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-4-h" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-5" mid="576" select_type="2" />
+      <talk_question mid="575"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(내 안에 있는 사람 덕분에 내가 전투를 할 수 있는 게 사실이지만...<BR>정작 내 의식이 날아가서야 의미가 없잖아. 이거 좀 신경이 쓰이는데.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1096_lunaria-5" image="QW_PrairieTown.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1096_lunaria-5-" mid="579" select_type="5" />
+      <talk_question mid="577"><![CDATA[<html>$루나리아$<BR>
+다시 <FONT color=#a82424>프레리 타운</FONT>으로 가는 거구나.<BR>
+이해했어.<BR>
+나는 바람 숲에 남아 있을게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5" image="QW_5.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-5-a" mid="581" select_type="2" />
+      <talk_question mid="580"><![CDATA[<html>$촌장 해롤드$<BR>모험자님들이 조금 전에 들러 로제의 행방을 말해 주셨습니다.<BR>로제와 티모시가 고대의 신전 발굴지 쪽으로 갔다고 하더군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5-a" image="QN_Guard_Timose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-5-b" mid="583" select_type="2" />
+      <talk_question mid="582"><![CDATA[<html>$촌장 해롤드$<BR>티모시는 로제를 구출하기 위해 그곳을 헤매고 있던 젊은입니다.<BR>
+우리 마을 자경단 일을 하던 청년인데 이런 위험한 일을 자청해 주다니, 얼마나 고마운지요.<BR>
+휴우...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5-b" image="QW_5.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-5-c" mid="585" select_type="2" />
+      <talk_question mid="584"><![CDATA[<html>$촌장 해롤드$<BR>마을 자경단장이 수색대를 구성해 출동시켰다는데, 아무래도 걱정입니다.<BR>우리 마을 사람들의 힘만으로는 역부족일 것 같아서요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-5-d" mid="587" select_type="4" />
+      <talk_question mid="586"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Harold.dds" center_image="">
+      <talk_answer link_index="n001_elder_harold-5-!next" mid="594" select_type="2" />
+      <talk_question mid="593"><![CDATA[<html>$촌장 해롤드$<BR>일이 무사히 잘 되면 좋겠지만...<BR>
+역시 자꾸만 비관적인 생각이 듭니다. 막막하군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">34</exe>
+         <exe type="talk" npc="n001_elder_harold">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">169</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">200169</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">340,,,,,,,</exe>
+         <exe type="complete" true="">34</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n001_elder_harold" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="c">0,1</exelink>
+   <exelink qstep="1" npc="n001_elder_harold" sub="" />
+   <exelink qstep="2" npc="n1097_cian" sub="b" />
+   <exelink qstep="2" npc="n1097_cian" sub="c" />
+   <exelink qstep="2" npc="n1097_cian" sub="d" />
+   <exelink qstep="2" npc="n1097_cian" sub="e" />
+   <exelink qstep="2" npc="n1097_cian" sub="f" />
+   <exelink qstep="2" npc="n1097_cian" sub="g" />
+   <exelink qstep="2" npc="n1097_cian" sub="h">0,1,2,6</exelink>
+   <exelink qstep="2" npc="n1097_cian" sub="" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="b" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="c" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="c" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="d" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="e" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="f" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="f" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="g" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="h" />
+   <exelink qstep="4" npc="n1096_lunaria" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="5" npc="n001_elder_harold" sub="c">0</exelink>
+   <exelink qstep="5" npc="n001_elder_harold" sub="d">1</exelink>
+   <exelink qstep="5" npc="n001_elder_harold" sub="!next" />
+   <journal_data recompense="340" quest_title="사라진 기억" chapterid="1" quest_level="5" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <destination_pos>1,n1</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[사라진 기억I]]></title>
+         <contents mid="92"><![CDATA[<html>로제는 아직 돌아오지 않았다. 촌장 해롤드와 좀 더 대화해 보자.<BR><BR><FONT color=#086171>프레리 타운</FONT> <FONT color=#a82424>- 촌장 해롤드</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[프레리 타운의 촌장 해롤드와 대화]]></destination>
+         <todo_msg mid="94"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_ShadowForest.dds</contents_image>
+         <destination_pos>2,n1097</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1097</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="183"><![CDATA[사라진 기억II]]></title>
+         <contents mid="184"><![CDATA[<html>그늘 숲으로 갔다는 모험자들을 만나 보자.<BR><BR><FONT color=#086171>그늘 숲</FONT></html>]]></contents>
+         <destination mid="185"><![CDATA[그늘 숲에서 모험자와 대화]]></destination>
+         <todo_msg mid="186"><![CDATA[그늘 숲으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_4.dds</contents_image>
+         <destination_pos>68,0,0</destination_pos>
+         <destination_mode>custom:66@3,67@3,68@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="500"><![CDATA[사라진 기억III]]></title>
+         <contents mid="501"><![CDATA[<html>그늘 숲 중심을 수색해 로제의 행적에 대한 단서를 찾자.<BR><BR><FONT color=#086171>그늘 숲(그늘 숲 오솔길)</FONT> <FONT color=#a82424>- 그늘 숲 중심</FONT></html>]]></contents>
+         <destination mid="502"><![CDATA[그늘 숲 중심에서 로제 찾기]]></destination>
+         <todo_msg mid="503"><![CDATA[그늘 숲 중심에서 로제를 찾아보세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_4.dds</contents_image>
+         <destination_pos>68,n1096</destination_pos>
+         <destination_mode>custom:66@1,67@1,68@4</destination_mode>
+         <statemark_npcid>1096</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="504"><![CDATA[사라진 기억IV]]></title>
+         <contents mid="505"><![CDATA[<html>로제는 찾지 못한 것 같은데... 잠깐. 방금 또 무슨 일이 벌어진 거지?<BR>시안과 트리아나라는 모험자들의 모습도 보이지 않는다.<BR>일단 루나리아에게 물어보자.<BR>
+ <BR>
+<FONT color=#086171>그늘 숲(그늘 숲 오솔길)</FONT> <FONT color=#a82424>- 그늘 숲 중심(루나리아)</FONT></html>]]></contents>
+         <destination mid="506"><![CDATA[그늘 숲 중심에서 루나리아와 대화]]></destination>
+         <todo_msg mid="507"><![CDATA[그늘 숲 중심에서 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <destination_pos>1,n1</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="509"><![CDATA[사라진 기억V]]></title>
+         <contents mid="510"><![CDATA[<html>촌장 해롤드에게 돌아가 다시 로제의 소식을 묻자.<BR><BR><FONT color=#086171>프레리타운</FONT> <FONT color=#a82424>- 촌장 해롤드</FONT></html>]]></contents>
+         <destination mid="511"><![CDATA[프레리 타운의 촌장 해롤드와 대화]]></destination>
+         <todo_msg mid="512"><![CDATA[프레리 타운의 촌장 해롤드와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>33</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

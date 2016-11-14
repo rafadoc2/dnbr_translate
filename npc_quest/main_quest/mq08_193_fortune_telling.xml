@@ -1,0 +1,337 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_193_fortune_telling</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>193</qid>
+      <designer>김인정</designer>
+      <qlevel>16</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>194</nextqid>
+      <nextqname>mq08_194_remotely_error</nextqname>
+      <nextqnpc>n1101_lunaria</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[미리 목격한 내일]]></qkname>
+      <qnpc>
+         <npcid>1101</npcid>
+         <npcename>n1101_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1123</npcid>
+         <npcename>n1123_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1124</npcid>
+         <npcename>n1124_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="149" select_type="3" />
+      <talk_question mid="131"><![CDATA[<html>$모험자 길드장 데커드$<BR>오오, 자넨가?<BR>
+어서 오게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Angelica.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="896" select_type="2" />
+      <talk_question mid="887"><![CDATA[<html>$모험자 길드장 데커드$<BR>갔던 일은 어떻게 됐나?<BR><FONT color=#a82424>소서리스 안젤리카</FONT> 양은 무사히 돌아오긴 한 것 같네만...<BR>보아하니 이래저래 고초를 겪은 모양일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_Angelica.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="898" select_type="2" />
+      <talk_question mid="897"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(다행히 시간이동의 오차는 그리 크지 않은 모양이다.</FONT><BR>
+<FONT color=#662500>소서리스 안젤리카도 무사한 것 같고.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-chk_level" mid="900" select_type="2" />
+      <talk_question mid="899"><![CDATA[<html>$모험자 길드장 데커드$<BR><FONT color=#a82424>붉은 옷을 입은 다크엘프</FONT>에게 꼭 복수를 해 주겠다면서 큰소리를 치더군.<BR>응? 자네도 그 다크엘프를 쫓고 있었나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-" mid="906" select_type="5" />
+      <talk_question mid="905"><![CDATA[<html>$모험자 길드장 데커드$<BR>그 다크엘프의 행방에 대해서는 더 조사 중이니 쓸만한 소식이 들어오는 대로 자네에게도 알려주겠네.<BR>좀 전에 몇 군데로 나누어서 수색대를 보낸 참이거든.<BR><BR><FONT color=#7e12d2>(* 16레벨이 된 이후에 다음 단계로 진행이 가능합니다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-d" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-e" mid="909" select_type="2" />
+      <talk_question mid="908"><![CDATA[<html>$모험자 길드장 데커드$<BR>조사를 좀 해 봤는데, 프레리타운 인근에 붉은 다크엘프가 나타났다는 자경단의 제보가 있었네.<BR>혹시 그 엘프일지도 모르지. 붉은 옷의 다크엘프는 흔하지 않으니 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-f" mid="911" select_type="2" />
+      <talk_question mid="910"><![CDATA[<html>$모험자 길드장 데커드$<BR>안 그래도 다른 모험자들이 방금 그쪽으로 갔다네.<BR>자네도 신경이 쓰이면 가 보는 게 어떤가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-f" image="QW_20.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-" mid="913" select_type="5" />
+      <talk_question mid="912"><![CDATA[<html>$모험자 길드장 데커드$<BR>바람 숲 쪽으로 가서 <FONT color=#a82424>카타콤 집회장</FONT>을 찾아보게.<BR>길드원들이 돌아보면 파견을 보낼 예정인데, 모험자들이 여럿 갔으니 소득이 있겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-" mid="890" select_type="5" />
+      <talk_question mid="889"><![CDATA[<html>$루나리아$<BR>
+뭘 하고 있어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1123_lunaria-1" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1123_lunaria-1-a" mid="892" select_type="2" />
+      <talk_question mid="891"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>언제쯤으로 시간이동을 했는지, 엘레나의 행방은 찾았는지, 일단 캐더락 관문으로 돌아가서 알아보자.<BR>그리고 무언가 내 안의 그 녀석을 다스릴 만한 방법을 찾아 봐야겠어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1123_lunaria-1-a" image="QN_NPC_Shadow_Meow.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1123_lunaria-1-" mid="894" select_type="5" />
+      <talk_question mid="893"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(* Lv15부터 캐더락 관문의 그림자 냥에게서 전직이 가능합니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-1-" mid="902" select_type="5" />
+      <talk_question mid="901"><![CDATA[<html>$정찰병 퍼거스$<BR>아, 안녕하십니까.<BR>
+저는 임무 수행 중입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_20.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Decud.dds" center_image="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-" mid="916" select_type="5" />
+      <talk_question mid="915"><![CDATA[<html>$모험자 길드장 데커드$<BR>정보에 의하면, 그 다크엘프는 독하기가 매운 고추 다섯개를 씹은 것보다 더 하다고 하더구만.<BR>
+조심하게.<BR>아, 가볼 곳은 <FONT color=#a82424>카타콤 집회장</FONT>일세~ 그것도 잊지 말게나!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-2-a" mid="920" select_type="0"><![CDATA[<html>네? 오랜만이라구요?</html>]]></talk_answer>
+      <talk_answer link_index="n1124_ranger_fugus-2-a" mid="921" select_type="0"><![CDATA[<html>(무슨 의미지?)</html>]]></talk_answer>
+      <talk_question mid="917"><![CDATA[<html>$정찰병 퍼거스$<BR>어, <FONT color=#387206>{user_nick}</FONT> 님!<BR>
+오랜만입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-2-a" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-2-b" mid="923" select_type="2" />
+      <talk_question mid="922"><![CDATA[<html>$정찰병 퍼거스$<BR>예전 캐더락 관문에 <FONT color=#a82424>독</FONT>이 뿌려질 뻔 했을 때는 정말이지 놀랐습니다. 가슴이 서늘했지요.<BR>그때 <FONT color=#387206>{user_nick}</FONT> 님이나, 다른 모험자분들이 헌신적으로 노력해 주신 덕분에, 마을을 지킬 수 있었죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-2-b" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-2-c" mid="925" select_type="2" />
+      <talk_question mid="924"><![CDATA[<html>$정찰병 퍼거스$<BR>그 이후 다 함께 <FONT color=#a82424>세인트헤이븐</FONT>으로 떠나신 줄 알았는데, 이렇게 또 뵙게 되는군요.<BR>정말이지 오랜만입니다. 뭔가 캐더락 쪽에 용무가 생기셨나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-2-d" mid="927" select_type="2" />
+      <talk_question mid="926"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>독? 캐더락에 독이라니요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-2-d" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-2-e" mid="929" select_type="2" />
+      <talk_question mid="928"><![CDATA[<html>$정찰병 퍼거스$<BR>음? 왜 그 <FONT color=#a82424>엘레나</FONT>... 인가 하는 못된 다크엘프가 앙심을 품고 마을에 독을 뿌리려고 하지 않았습니까?<BR>잘 기억이 안 나시는 모양이군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-2-e" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-2-f" mid="931" select_type="2" />
+      <talk_question mid="930"><![CDATA[<html>$정찰병 퍼거스$<BR>엘레나를 쫓는다, <FONT color=#a82424>캐더락을 정화</FONT>한다... 하면서 아주 정신없이 바빴지요.<BR>
+다들 혼비백산해서 난리도 아니었습니다.<BR>하하. 지나고 보니 그것도 다 추억거리네요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-3" mid="933" select_type="2" />
+      <talk_question mid="932"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...아무래도 여기까지 오는 사이에 시간을 제법 뛰어넘은 모양이다.</FONT><BR>
+<FONT color=#662500>그것도 미래 쪽으로!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-3" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-3-a" mid="935" select_type="2" />
+      <talk_question mid="934"><![CDATA[<html>$정찰병 퍼거스$<BR>저는 이 근처 정찰 업무가 있어서 이만 먼저 실례하겠습니다.<BR>언제 마을에 들러 주십시오. 하하하.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1124_ranger_fugus-3-a" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ranger_Fugus.dds" center_image="">
+      <talk_answer link_index="n1124_ranger_fugus-3-" mid="937" select_type="5" />
+      <talk_question mid="936"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(수정 개울로 돌아가서 루나리아와 대화해 봐야겠다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-a" mid="940" select_type="2" />
+      <talk_question mid="939"><![CDATA[<html>$루나리아$<BR>응. 그래.<BR>또 시간을 뛰어넘은 것 같아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-b" mid="943" select_type="2" />
+      <talk_question mid="942"><![CDATA[<html>$루나리아$<BR>하지만 다시 조금 과거로 돌아온 것 같기도 하니까, 큰 오차는 없을 지도 몰라.<BR>...아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-c" mid="945" select_type="2" />
+      <talk_question mid="944"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그 시간이동 어떻게 해야 할 거 같은데.<BR>그 능력, 네 힘으로는 전혀 제어할 수 없는 거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-d" mid="947" select_type="2" />
+      <talk_question mid="946"><![CDATA[<html>$루나리아$<BR>.......<BR>
+하지 않는 것보다, 하는 편이 가능성 높을지도...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-e" mid="949" select_type="2" />
+      <talk_question mid="948"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>음, 요약하자면 시간이동을 억지로 안 하기는 어렵지만, 억지로 하는 건 가능하다는 거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-f" mid="951" select_type="2" />
+      <talk_question mid="950"><![CDATA[<html>$루나리아$<BR>가능성은 있어.<BR>아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-f" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-g" mid="954" select_type="0"><![CDATA[<html>그때, 일루전은 왜 너와 함께 있었지?</html>]]></talk_answer>
+      <talk_answer link_index="n1101_lunaria-3-g" mid="955" select_type="0"><![CDATA[<html>그때, 일루전은 너를 데리고 어디로 가고 있었어?</html>]]></talk_answer>
+      <talk_question mid="953"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>또 하나 궁금한 게 있는데. 루나리아.<BR>내 앞에 갑자기 일루전이 나타나, 충돌했던 그때......</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-h" mid="957" select_type="2" />
+      <talk_question mid="956"><![CDATA[<html>$루나리아$<BR>
+...몰라.<BR>
+다만... 공격을 받았다는 건 확실해.<BR>
+누군가에게 쫓기고 있었어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-h" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-i" mid="959" select_type="2" />
+      <talk_question mid="958"><![CDATA[<html>$루나리아$<BR>
+<FONT color=#a82424>일루전</FONT>은 나를 억지로 데려갔어. 그런데 쫓겼고, 공격 받아서 죽어가고 있었어.<BR>
+나는 시간을 뛰어 넘었어. 몇 번이나 뛰어넘었는데... 눈 앞에 네가 있었어.<BR>
+그리고 충돌했지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-j" mid="961" select_type="2" />
+      <talk_question mid="960"><![CDATA[<html>$루나리아$<BR>더 자주 시간이동을 하게 되는 건 그때 갑자기 힘을 많이 써서일지도 몰라.<BR>무언가 <FONT color=#a82424>균형</FONT>이 깨진 것 같아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-k" mid="963" select_type="2" />
+      <talk_question mid="962"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러면 그 균형이라는 걸 어떻게 맞출 수 있으려나...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-l" mid="967" select_type="4" />
+      <talk_question mid="966"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-3-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-3-!next" mid="984" select_type="2" />
+      <talk_question mid="983"><![CDATA[<html>$루나리아$<BR><FONT color=#7e12d2>(루나리아가 투명한 눈으로 빤히 쳐다본다)</FONT><BR>균형을 맞추고 싶어?<BR>...그렇구나. 이제 네 말을 이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">193</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="[">16</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">c</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">d</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1930,,,,,,,</exe>
+         <exe type="complete" true="">193</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">0</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="chk_level">0</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="e" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="f">3,4</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="" />
+   <exelink qstep="1" npc="n1123_lunaria" sub="" />
+   <exelink qstep="2" npc="n1124_ranger_fugus" sub="b" />
+   <exelink qstep="2" npc="n1124_ranger_fugus" sub="c" />
+   <exelink qstep="2" npc="n1124_ranger_fugus" sub="d" />
+   <exelink qstep="2" npc="n1124_ranger_fugus" sub="e" />
+   <exelink qstep="2" npc="n1124_ranger_fugus" sub="f" />
+   <exelink qstep="2" npc="n1124_ranger_fugus" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n1124_ranger_fugus" sub="" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="b" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="c" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="d" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="e" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="f" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="g" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="g" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="h" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="i" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="j" />
+   <exelink qstep="3" npc="n1101_lunaria" sub="k">0</exelink>
+   <exelink qstep="3" npc="n1101_lunaria" sub="l">1</exelink>
+   <exelink qstep="3" npc="n1101_lunaria" sub="!next" />
+   <journal_data recompense="1930" quest_title="미리 목격한 내일" chapterid="3" quest_level="16" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="971"><![CDATA[미리 목격한 내일I]]></title>
+         <contents mid="972"><![CDATA[<html>일단 캐더락 관문으로 돌아가, 모험자 길드장 데커드를 만나 상황을 파악해 보자.<BR>
+<BR><FONT color=#7e12d2>(* 16레벨이 된 이후에 다음 단계로 진행이 가능합니다.)</FONT><BR><BR><FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 모험자 길드장 데커드</FONT></html>]]></contents>
+         <destination mid="973"><![CDATA[[Lv16] 캐더락 관문의 모험자 길드장 데커드와 대화]]></destination>
+         <todo_msg mid="974"><![CDATA[모험자 길드장 데커드와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_20.dds</contents_image>
+         <destination_pos>149,n1124</destination_pos>
+         <destination_mode>custom:147@3,148@3,149@1</destination_mode>
+         <statemark_npcid>1124</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="975"><![CDATA[미리 목격한 내일II]]></title>
+         <contents mid="976"><![CDATA[<html>데커드의 말대로라면 엘레나는 카타콤 집회장에 나타났을 지도 모른다. 그곳으로 가서 행적을 추적하자.<BR>
+ <BR>
+<FONT color=#086171>바람 숲(카타콤 입구)</FONT> <FONT color=#a82424>- 카타콤 집회장</FONT></html>]]></contents>
+         <destination mid="977"><![CDATA[카타콤 집회장 수색]]></destination>
+         <todo_msg mid="978"><![CDATA[카타콤 집회장에서 엘레나를 찾아보세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>4,n1101</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1101</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="979"><![CDATA[미리 목격한 내일III]]></title>
+         <contents mid="980"><![CDATA[<html>아무래도 카타콤 집회장으로 가는 사이 시간을 또 건너뛴 모양이다.<BR>상당히 뒷날로 넘어온 것 같은데...<BR>
+수정 개울로 돌아가 루나리아와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>수정 개울</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="981"><![CDATA[수정 개울에서 루나리아와 대화]]></destination>
+         <todo_msg mid="982"><![CDATA[수정 개울로 돌아가 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>192</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

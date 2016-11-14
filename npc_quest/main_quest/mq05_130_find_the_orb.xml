@@ -1,0 +1,277 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_130_find_the_orb</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>130</qid>
+      <designer>김인정</designer>
+      <qlevel>5</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>131</nextqid>
+      <nextqname>mq05_131_internal_enemy</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[Finding the Orb]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>상급 클레릭 토마스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>14</npcid>
+         <npcename>n014_cleric_cedric</npcename>
+         <npckname>클레릭 세드릭</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-noquest" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Cleric Cedric$<BR><FONT color=#7e12d2>(His wounds have not healed yet and he seems to be in pain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-noquest" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Sorceress Tara$<BR>I heard from Master Sorceress Cynthia.<BR>So a <FONT color=#a82424>minotaur</FONT> has taken the <FONT color=#a82424>Vision Orb</FONT>...<BR><FONT color=#a82424>Minotaur</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-acceptted" mid="74"><![CDATA[<html>I'm sorry....</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Cleric Thomas$<BR>Hmm... so, they got the Orb as well...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="10"><![CDATA[<html>I'm sorry...</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Cleric Thomas$<BR>Hmm... so, they got the Orb as well...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-b" mid="12"><![CDATA[<html>That's correct.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Relax.. I know you did what you could.<BR>The monster that took the Orb was a <FONT color=#a82424>minotaur</FONT>, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-b" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Cleric Thomas$<BR><FONT color=#a82424>Minotaurs</FONT> are a rare sight. It's hard to believe that one was sighted near <FONT color=#a82424>Mana Ridge</FONT>... <BR>There's a good chance that the <FONT color=#a82424>minotaur</FONT> is being controlled by the <FONT color=#a82424>Dragon Followers</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Cleric Cedric$<BR><FONT color=#7e12d2>(His wounds have not healed yet and he seems to be in pain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Sorceress Tara$<BR>I heard from Master Sorceress Cynthia.<BR>So a <FONT color=#a82424>minotaur</FONT> has taken the <FONT color=#a82424>Vision Orb</FONT>...<BR><FONT color=#a82424>Minotaur</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>We may still have a chance to turn this around. We must get the <FONT color=#a82424>Vision Orb</FONT> back before the <FONT color=#a82424>Dragon Follower</FONT> lays hands on it.<BR>Ask <FONT color=#a82424>Sorceress Tara</FONT> where that <FONT color=#a82424>minotaur</FONT> lives. When you're ready, meet up with <FONT color=#a82424>Jake</FONT> at <FONT color=#a82424>Frost Hill</FONT> and proceed together. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="19"><![CDATA[<html>Is there a place where a minotaur might live in the vicinity of Mana Ridge?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Sorceress Tara$<BR>I heard from Master Sorceress Cynthia.<BR>So a <FONT color=#a82424>minotaur</FONT> has taken the Vision Orb...?<BR><FONT color=#a82424>Minotaur</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-a" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-b" mid="21"><![CDATA[<html>I see. I understand.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Sorceress Tara$<BR>After the clerics of Mana Ridge left for <FONT color=#a82424>Saint Haven</FONT> long ago, <FONT color=#a82424>Umbaba</FONT> took over the empty <FONT color=#a82424>Silent Monestery</FONT>. That's the only <FONT color=#a82424>minotaur</FONT> around Mana Ridge.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-b" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3" mid="23"><![CDATA[<html>Thank you for the advice.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Sorceress Tara$<BR>Look, <FONT color=#a82424>Umbaba</FONT> is a large, powerful monster. Way bigger than what you're used to. When <FONT color=#a82424>Umbaba</FONT> attacks, it's hard to stop.<BR>Either hit it with an extra powerful skill to stop its advance, or dodge and counterattack.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="QM_MinotaurosNormal.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Sorceress Tara$<BR>Well...you're our best chance to get the <FONT color=#a82424>Vision Orb</FONT> back from <FONT color=#a82424>Umbaba</FONT>.<BR>I know Master Sorceress Cynthia blames you, but… I trust you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-4" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-4-a" mid="26"><![CDATA[<html>How are you feeling?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Cleric Cedric$<BR>Ah, may the Goddess's blessings be with you!<BR>It's an honor to meet you properly. You are the <FONT color=#a82424>savior</FONT> who rescued me. I wanted to thank you sooner, but with all the chaos... I'm really sorry...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-4-a" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-4-b" mid="28"><![CDATA[<html>I came to see Cleric Jake.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Cleric Cedric$<BR>Other than my injured leg that limits my movements, I'm fine. <BR>What brings you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-4-b" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-5" mid="70"><![CDATA[<html>Not at all. I'll come see him later.</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Cleric Cedric$<BR>Ahh... <FONT color=#a82424>Cleric Jake</FONT> is not here at the moment....<BR>I'm not sure where he went. Is it something urgent?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-5" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Cleric Cedric$<BR>Very well.<BR>May the Goddess's blessings be with you, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n013_cleric_tomas-6-a" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>You got the Orb! Haha!<BR>Fantastic!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-6-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-6-!next" mid="34"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">130</exe>
+         <exe type="custom">npc_talk_index = "n013_cleric_tomas-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6,3,4,5">269</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="addquestitem" num="1">300059</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300059</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">130</exe>
+         <exe type="recompense">1300,,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="3">0,1</exelink>
+   <exelink qstep="4" npc="n014_cleric_cedric" sub="b" />
+   <exelink qstep="4" npc="n014_cleric_cedric" sub="5">7,2,0,1</exelink>
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="a">1</exelink>
+   <exelink qstep="6" npc="n013_cleric_tomas" sub="!next">0</exelink>
+   <journal_data recompense="0:1300" quest_title="오브를 찾아라" chapterid="1" quest_level="5" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Talk to Cleric Thomas]]></title>
+         <contents mid="36"><![CDATA[<html>Report to <FONT color=#a82424> Cleric Thomas</FONT> that the Orb was taken by the <FONT color=#a82424>minotaur</FONT> at <FONT color=#a82424>Parelina's Resting Place</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ ClericThomas</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to ClericThomas]]></destination>
+         <todo_msg mid="38"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <destination_pos>5,910,38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Talk to Sorceress Tara]]></title>
+         <contents mid="41"><![CDATA[<html><FONT color=#a82424>Cleric Thomas</FONT> said it's unlikely that <FONT color=#a82424>minotaur</FONT> just appeared at Mana Ridge, and said to ask <FONT color=#a82424>Sorceress Tara</FONT> where the <FONT color=#a82424>minotaur</FONT> lives.<BR>Talk to <FONT color=#a82424>Sorceress Tara</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Sorceress Tara</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Talk to Sorceress Tara]]></destination>
+         <todo_msg mid="43"><![CDATA[Talk to Sorceress Tara.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Jake.dds</contents_image>
+         <destination_pos>6,4597,-2090</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Talk to Cleric Jake at Frost Hill]]></title>
+         <contents mid="46"><![CDATA[<html><FONT color=#a82424>Sorceress Tara</FONT> says that Umbaba took over the <FONT color=#a82424>Silent Monastery</FONT> and made it its home.<BR>Go see <FONT color=#a82424>Cleric Jake</FONT> at <FONT color=#a82424>Frost Hill</FONT> and search <FONT color=#a82424>Silent Monastery</FONT>.<BR><BR><FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→ Cleric Jake</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Talk to Cleric Jake at Frost Hill]]></destination>
+         <todo_msg mid="48"><![CDATA[Talk to Cleric Jake at Frost Hill.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Cl_Fallen_Cedric.dds</contents_image>
+         <destination_pos>6,440,-820</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>14</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Talk to Cleric Cedric at Frost Hill]]></title>
+         <contents mid="51"><![CDATA[<html><FONT color=#a82424>Jake</FONT> is nowhere to be seen at the cleric camp on <FONT color=#a82424>Frost Hill</FONT>. Talk to <FONT color=#a82424>Cleric Cedric</FONT> and ask about <FONT color=#a82424>Jake's</FONT> whereabouts.<BR><BR><FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→ Cleric Cedric</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to Cleric Cedric at Frost Hill]]></destination>
+         <todo_msg mid="53"><![CDATA[Jake is gone. Talk to Cleric Cedric.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_9.dds</contents_image>
+         <destination_pos>93,0,0</destination_pos>
+         <destination_mode>custom:91@1,92@1,93@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Obtain Vision Orb from Silent Monastery]]></title>
+         <contents mid="55"><![CDATA[<html>Since Jake is not here, you have to go without him. <BR>Defeat <FONT color=#a82424>Umbaba</FONT> at the <FONT color=#a82424>Silent Monastery</FONT> and retrieve the <FONT color=#a82424>Vision Orb</FONT>.<BR><BR><FONT color=#086171>Blizzard Plain (Silent Monastery Gate)</FONT> <FONT color=#a82424>→ Silent Monastery</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Obtain Vision Orb from Silent Monastery]]></destination>
+         <todo_msg mid="57"><![CDATA[Defeat Umbaba at the Silent Monastery.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Talk to Cleric Thomas]]></title>
+         <contents mid="60"><![CDATA[<html>At the <FONT color=#a82424>Silent Monastery.</FONT>, you were able to stop <FONT color=#a82424>Umbaba</FONT> from handing the <FONT color=#a82424>Vision Orb</FONT> over to the <FONT color=#a82424>Dragon Follower</FONT>.<BR>Return to <FONT color=#a82424>Mana Ridge</FONT> with the Orb, and report to <FONT color=#a82424>ClericThomas</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Cleric Thomas</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Cleric Thomas]]></destination>
+         <todo_msg mid="62"><![CDATA[Please return to Mana Ridge and talk to Cleric Thomas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>129</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,218 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_006_escape_of_the_catacomb</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>6</qid>
+      <designer>김주연</designer>
+      <qlevel>5</qlevel>
+      <qdesc>300010 붉은 인장 (붉은 인장을 소지하고 있어야 트랩이 동작하지 않는다.)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>7</nextqid>
+      <nextqname>mq01_007_whereabouts_girl1</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[The Catacombs Escape]]></qkname>
+      <qnpc>
+         <npcid>129</npcid>
+         <npcename>n129_scholar_bunstain</npcename>
+         <npckname>문장학자 번스테인 (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-noquest" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="144"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Going to the <FONT color=#a82424>Catacombs</FONT>? Don't take <FONT color=#a82424>Minotaur Umrak</FONT> too lightly. Drop by and have a chat with <FONT color=#a82424>Heraldry Scholar Bernstein</FONT> before your trip.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-accepting" image="" itemindex="">
+      <talk_answer link_index="n129_scholar_bunstain-accepting-acceptted" mid="142"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Heraldry Scholar Bernstein$<BR>Great work. Wait for a while and I will combine them into a complete <FONT color=#a82424>Red Seal</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Going to the <FONT color=#a82424>Catacombs</FONT>? Don't take <FONT color=#a82424>Minotaur Umrak</FONT> too lightly. Drop by and have a chat with <FONT color=#a82424>Heraldry Scholar Bernstein</FONT> before your trip.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-1" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n129_scholar_bunstain-2" mid="134"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Heraldry Scholar Bernstein${action:Talk}<BR>Ok, this is it. The complete <FONT color=#a82424>Red Seal</FONT>. The trap wouldn't be a problem now, but it's the <FONT color=#a82424>Minotaur Umrak</FONT> that I fear.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-a" mid="118"><![CDATA[<html>It's ok. More than that… (Tell him about what happened with Timothy)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Oh you're here. Thank you for your help at the <FONT color=#a82424>Ancient Temple Ruins</FONT>. Thanks to you, the missing villagers could return home safely.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-a" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-b" mid="120"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Vigilante Leader Steve$<BR>... I've received news that Rose is being kept by <FONT color=#a82424>Minotaur Umrak</FONT> at <FONT color=#a82424>Catacombs</FONT>. Hmm... It looks like a tough opponent has appeared this time... <FONT color=#a82424>Umrak</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-b" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-c" mid="122"><![CDATA[<html>I'll keep that in mind.</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Vigilante Leader Steve$<BR>To fight with <FONT color=#a82424>Minotaur Umrak</FONT>, you have to use a powerful skill that can stop his movements or you must observe his movements and evade quickly. Please be careful of <FONT color=#a82424>Minotaur </FONT><FONT color=#a82424>Umrak</FONT>'s charging attacks and sudden swinging attacks.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3" mid="124"><![CDATA[<html><FONT size=2>Alright.</FONT></html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Vigilante Leader Steve$<BR>Hmm… At first… It seemed like coincidence… But now… It seems as if <FONT color=#a82424>Rose</FONT> had been the target from the beginning…. Phew… Please hurry up and save <FONT color=#a82424>Rose</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-2" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="138"><![CDATA[<html>$Heraldry Scholar Bernstein$<BR>It would be a good idea to listen to what <FONT color=#a82424>Vigilante Leader Steve</FONT> has to say.<BR>May the Goddess's blessings be with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="QW_3.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Please go to the <FONT color=#a82424>Catacombs</FONT>. My men will join you shortly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4" image="QW_3.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-4-a" mid="125"><![CDATA[<html>Did Rose and Timothy come back?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Vigilante Leader Steve$<BR>Awesome. You finished the <FONT color=#a82424>Minotaur Umrak</FONT> of the <FONT color=#a82424>Catacombs</FONT>... Once again I'm amazed at your capabilities.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4-a" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-4-b" mid="127"><![CDATA[<html>(Explain what happened at the Catacombs)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Vigilante Leader Steve$<BR>They are still not back in town...<BR>Didn't they come back with you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4-b" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-4-c" mid="129"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Vigilante Leader Steve$<BR><FONT color=#a82424>Timothy</FONT> took <FONT color=#a82424>Rose</FONT> and fled from <FONT color=#a82424>Minotaur</FONT> <FONT color=#a82424>Umrak</FONT>…? But why haven't they returned yet…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4-c" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-4-!next" mid="131"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-4" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="132"><![CDATA[<html>$Heraldry Scholar Bernstein$<BR><FONT color=#a82424>Vigilante Leader Steve</FONT> is waiting for you. Go to him now.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">6</exe>
+         <exe type="talk" npc="n129_scholar_bunstain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>붉은 인장을 소지하고 있지 않으면 데미지가 발생하는 트랩 설치
+보스방에 입장하면 퀘스트 컷씬 플레이
+내용: 마물들이 로제를 고대에 만들어진 시설처럼 보이는 곳에 얹는다. 그러자 시설이 반응을 보인다. 마물들은 놀라워하다가 기뻐한다. 그 순간, 갑자기 나타난 티모시가 로제의 손을 잡고 달아난다. </comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">148</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">62,61,62,62,62,62,</exe>
+         <exe type="complete">6</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n129_scholar_bunstain" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n129_scholar_bunstain" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="3">0,1,2</exelink>
+   <exelink qstep="4" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="4" npc="n004_guard_steave" sub="c">0</exelink>
+   <exelink qstep="4" npc="n004_guard_steave" sub="!next">1</exelink>
+   <journal_data recompense="1:61,2:62" quest_title="카타콤 탈출" chapterid="1" quest_level="5" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>1,1628,1078</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>129</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Talk to Heraldry Scholar Bernstein]]></title>
+         <contents mid="53"><![CDATA[<html><FONT color=#a82424>Red Seal</FONT> can be used to dismantle the trap installed by the monsters.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Heraldry Scholar Bernstein</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Heraldry Scholar Bernstein]]></destination>
+         <todo_msg mid="55"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Talk to Vigilante Leader Steve]]></title>
+         <contents mid="57"><![CDATA[<html>You need some information about <FONT color=#a82424>Umrak</FONT>. Go and talk to <FONT color=#a82424>Vigilante Leader Steve</FONT>.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="59"><![CDATA[Talk to Vigilante Leader Steve.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_minotauros_Bison.dds</contents_image>
+         <destination_pos>64,0,0</destination_pos>
+         <destination_mode>custom:61@1,62@1,64@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Defeat Minotaur Umrak at Catacombs]]></title>
+         <contents mid="61"><![CDATA[<html>Defeat <FONT color=#a82424>Minotaur Umrak</FONT> at <FONT color=#a82424>Catacombs</FONT> and rescue <FONT color=#a82424>Rose</FONT>.<BR><BR><FONT color=#086171>Wind Forest (Catacombs Entrance)</FONT> <FONT color=#a82424>→ Catacombs</html>]]></contents>
+         <destination mid="62"><![CDATA[Defeat Minotaur Umrak at Catacombs]]></destination>
+         <todo_msg mid="63"><![CDATA[Defeat Umrak at Catacombs and rescue Rose.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Talk to Vigilante Leader Steve]]></title>
+         <contents mid="65"><![CDATA[<html>You have defeated <FONT color=#a82424>Minotaur Umrak</FONT> at <FONT color=#a82424>Catacombs</FONT> and rescued Timothy and Rose, but it is unknown if they managed to escape safely.<BR>Return to town and talk to <FONT color=#a82424>Vigilante Leader Steve</FONT>.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="67"><![CDATA[You have defeated Umrak. Please go back to Prairie Town and talk to Vigilante Leader Steve.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>5</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

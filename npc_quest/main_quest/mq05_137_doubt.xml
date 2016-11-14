@@ -1,0 +1,268 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_137_doubt</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>137</qid>
+      <designer>김인정</designer>
+      <qlevel>1</qlevel>
+      <qdesc>신시아의 부탁으로 다시 서리바람 계곡으로 향하는 소서리스. 마차를 습격한 무리가 흘리고 간 단서를 찾아온다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>138</nextqid>
+      <nextqname>mq05_138_orb_of_vision1</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[Bizarre Aura]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>156</npcid>
+         <npcename>n156_cleric_jake</npcename>
+         <npckname>클레릭 제이크(눈서리 고갯길)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>158</npcid>
+         <npcename>n158_point_mark</npcename>
+         <npckname>느낌표(!)_(ID는 빈공란)/서리바람 계곡</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="86"><![CDATA[<html>$Master Cleric Leonard$<BR>It's blistering cold here. Maybe age is really catching up to me... Ahem.<BR><FONT color=#7e12d2>(You can get the quest from Master Sorceress Cynthia.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="87"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>What can I do for you, young sorceress?<BR><FONT color=#7e12d2>(You can get the quest from Master Sorceress Cynthia.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-noquest" image="" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(Nothing of interest here.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-acceptted" mid="90"><![CDATA[<html>(It was an empty box... )</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Master Sorceress Cynthia$<BR>The dumb monsters were actually smart enough to change the location of the <FONT color=#a82424>Sage's Staff</FONT>. Yet, my smartest disciple is dumb enough to actually deliver an empty box. Unbelievable!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="6"><![CDATA[<html>What?!</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Hahahaha! Are you serious?<BR>Really?<BR><FONT color=#7e12d2>(There is nothing inside the box!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="97"><![CDATA[<html>(How could it be empty... )</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Master Sorceress Cynthia$<BR>The dumb monsters were actually smart enough to change the location of the <FONT color=#a82424>Sage's Staff</FONT>. Yet, my smartest disciple is dumb enough to actually deliver an empty box. Unbelievable!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="QW_7.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="99"><![CDATA[<html>Aww... I just made more work for myself...</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Go to <FONT color=#a82424>Frost Wind Forest</FONT> and search the area CAREFULLY. If there's an empty box, there should be <FONT color=#a82424>traces of the monster</FONT> that took the Sage's Staff nearby. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Cynthia$<BR>That's right!.<BR>Now get moving! Drop by <FONT color=#a82424>Frost Hill</FONT> and tell the clerics what happened.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Master Cleric Leonard$<BR>Hmm, maybe I am getting old. Mana Ridge is so cold...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>Hello, young sorceress. What's the matter?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-1" image="" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(You see nothing strange.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-a" mid="9"><![CDATA[<html>(You explains about the empty box.)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>Hello, young sorceress. What's the matter?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-a" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-b" mid="11"><![CDATA[<html>Yes… that's right…</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Cleric Jake$<BR>I see... Just as Master Sorceress Cynthia said, the Sage's Staff must have been moved elsewhere.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-b" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-c" mid="95"><![CDATA[<html>Um...yep... *Ahem* So, how's Cleric Cedric?</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Cleric Jake$<BR>But... How did you find the box? We looked everywhere!<BR>You really are something!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-c" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-d" mid="13"><![CDATA[<html>Remember to reward me hansomely!</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Cleric Jake$<BR>He's resting to treat his wounds. He wanted to apologize for troubling you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-d" image="QW_7.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2-e" mid="15"><![CDATA[<html>Oh, fine.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Cleric Jake$<BR>Haha, you're funny! I am but a humble servant of the light. I do not have much to give. Please go to <FONT color=#a82424>Frost Wind Forest</FONT> following Master Sorceress Cynthia's orders.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2-e" image="s" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Cleric Jake$<BR>the sorceresses and the clerics did not get along well for a long time. However, times are changing. At a time for prophecy like we are in now, we need to work together and retrieve the <FONT color=#a82424>Sage's Staff</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Why are you still around? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-3" image="QW_7.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Cleric Jake$<BR>Hurry over to <FONT color=#a82424>Frost Wind Forest</FONT> quickly! If you're too late you may not be able to find any leads.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-3" image="" itemindex="">
+      <talk_answer link_index="n158_point_mark-3-a" mid="24"><![CDATA[<html>(You pick up the object)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(Something is shining in the bush.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-3-a" image="QS_Default.dds" itemindex="300144">
+      <talk_question mid="25"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(You found a cleric's rosary.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="27"><![CDATA[<html>(You hand over the cleric's rosary.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Dis you find anything?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-b" mid="29"><![CDATA[<html>Do you really suspect the clerics?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Sorceress Cynthia$<BR><FONT color=#a82424>A rosary?!</FONT> Did they attack their fellow clerics? What are they up to? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-c" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Sorceress Cynthia$<BR>This is absurd...this is strong evidence that it was an inside job. the clerics cannot be trusted anymore!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-!next" mid="85"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-4" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(seems nothing strange.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">137</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300144</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1370,,,,,,</exe>
+         <exe type="complete">137</exe>
+         <exe type="delquestitem" num="-1">300144</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n012_sorceress_master_cynthia" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n156_cleric_jake" sub="b" />
+   <exelink qstep="2" npc="n156_cleric_jake" sub="c" />
+   <exelink qstep="2" npc="n156_cleric_jake" sub="d" />
+   <exelink qstep="2" npc="n156_cleric_jake" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n158_point_mark" sub="a">0,1,2</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="c">0</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="!next">1,2</exelink>
+   <journal_data recompense="1370" quest_title="수상한 기운" chapterid="1" quest_level="1" quest_mark_type="1" use_item_list="300144">
+      <journal index="1">
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Talk to Master Sorceress Cynthia]]></title>
+         <contents mid="50"><![CDATA[<html>Talk to Master Sorceress Cynthia.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="52"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Jake.dds</contents_image>
+         <destination_pos>6,n156</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>156</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Talk to Cleric Jake]]></title>
+         <contents mid="54"><![CDATA[<html>Talk to Cleric Jake at Frost Hill.<BR><BR><FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→ Cleric Jake</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Talk to Cleric Jake]]></destination>
+         <todo_msg mid="56"><![CDATA[Talk to Cleric Jake towards Frost Hill]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_7.dds</contents_image>
+         <destination_pos>83,0,0</destination_pos>
+         <destination_mode>custom:81@1,82@1,83@3</destination_mode>
+         <statemark_npcid>158</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Find clues that the attackers of the wagon left behind.]]></title>
+         <contents mid="58"><![CDATA[<html>Go towards Frost Wind Forest and find traces of the monsters that attacked the cleric's wagon.<BR><BR><FONT color=#086171>Frost Hill (Frost Wind Forest Pass)</FONT> <FONT color=#a82424>→ Frost Wind Forest</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Find the monster's trace that attacked the wagon]]></destination>
+         <todo_msg mid="60"><![CDATA[Find the monster's trace that attacked the wagon]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string>스탭 3에 보스맵 진입 : n158_point_mark 생성. 보스 해치워야만 대화 가능. 대화 종료후 스테이지 종료.</trigger_string>
+         <maptool_index />
+         <title mid="61"><![CDATA[Talk to Master Sorceress Cynthia]]></title>
+         <contents mid="62"><![CDATA[<html>You found a cleric's rosary. Report this to Master Sorceress Cynthia at Mana Ridge.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="64"><![CDATA[Report to Master Sorceress Cynthia at Mana Ridge.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>136</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

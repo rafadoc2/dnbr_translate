@@ -1,0 +1,238 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_195_aggravate_error</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>195</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>196</nextqid>
+      <nextqname>mq08_196_stronghold</nextqname>
+      <nextqnpc>n553_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[성가신 오차]]></qkname>
+      <qnpc>
+         <npcid>1101</npcid>
+         <npcename>n1101_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>553</npcid>
+         <npcename>n553_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="149" select_type="3" />
+      <talk_question mid="131"><![CDATA[<html>$상급 소서리스 티아나$<BR>네가 내게 물어본 게 뭐였지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="999" select_type="2" />
+      <talk_question mid="997"><![CDATA[<html>$상급 소서리스 티아나$<BR>무슨 이야기를 하려는 거지?<BR>순백의 오브?<BR>...그게 뭔데?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-b" mid="1001" select_type="2" />
+      <talk_question mid="1000"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럼 캐더락에 뿌려질 뻔 했다던 독은...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-c" mid="1003" select_type="0"><![CDATA[<html>(소문을 들었다고 얼버무린다)</html>]]></talk_answer>
+      <talk_answer link_index="n035_soceress_master_tiana-1-c" mid="1004" select_type="0"><![CDATA[<html>그 다크엘프의 계획이었다던데요?</html>]]></talk_answer>
+      <talk_question mid="1002"><![CDATA[<html>$상급 소서리스 티아나$<BR>독?! 그, 그게 무슨 소리야?<BR>자세히 이야기 해 봐!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-c" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-d" mid="1006" select_type="2" />
+      <talk_question mid="1005"><![CDATA[<html>$상급 소서리스 티아나$<BR>그 <FONT color=#a82424>붉은 다크엘프</FONT> 녀석이 설마하니 그런 계획을 꾸미고 있는 거야?<BR>안 그래도 요즘 그 녀석이 무슨 꿍꿍이 속인지 몰라, 모험자들이 온통 비상이던데!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-e" mid="1013" select_type="2" />
+      <talk_question mid="1012"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(독이 뿌려지기 전의 과거로 되돌아 온 모양이군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-f" mid="1015" select_type="2" />
+      <talk_question mid="1014"><![CDATA[<html>$상급 소서리스 티아나$<BR>으으으으~ 좌시할 수 없지.<BR>이봐, 너. 가서 책임지고! 확인을 하고 오도록 해!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-f" image="QW_19.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-" mid="1017" select_type="5" />
+      <talk_question mid="1016"><![CDATA[<html>$상급 소서리스 티아나$<BR>지금 모험자들이 <FONT color=#a82424>신전 예배당</FONT>에 가 있단 말이야.<BR>너도 가서 그 붉은 다크엘프가 정말로 캐더락을 오염 시킬 계획을 세우고 있는지 확인하고 오도록!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1" image="QN_Npc_SoceressTiana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-" mid="1008" select_type="5" />
+      <talk_question mid="1007"><![CDATA[<html>$루나리아$<BR>상급 소서리스 티아나... 하고 대화하는 거지?<BR>다녀왔어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-1-" mid="1010" select_type="5" />
+      <talk_question mid="1009"><![CDATA[<html>$워리어 시안$<BR>나쁜 다크엘프...!<BR>캐더락 관문을 지켜내기 위해 힙냅시다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QW_19.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-" mid="1019" select_type="5" />
+      <talk_question mid="1018"><![CDATA[<html>$상급 소서리스 티아나$<BR>
+<FONT color=#a82424>신전 예배당</FONT>으로 가는 거야.<BR>
+알았니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-2" image="QW_19.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-2-" mid="1022" select_type="5" />
+      <talk_question mid="1021"><![CDATA[<html>$루나리아$<BR>
+신전 예배당으로 가는 거구나.<BR>
+이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2" image="QP_hobgoblin_maker.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-a" mid="1025" select_type="2" />
+      <talk_question mid="1024"><![CDATA[<html>$워리어 시안$<BR>저희들은 붉은 다크엘프가 무슨 속셈인지 알아내기 위해 움직이던 중입니다.<BR>마침 그 수하들이 <FONT color=#a82424>홉고블린을 제조</FONT>하고 있었다는 걸 알아냈고, <FONT color=#a82424>제조시설을 파괴</FONT>하라는 의뢰를 받았습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-a" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-b" mid="1027" select_type="2" />
+      <talk_question mid="1026"><![CDATA[<html>$워리어 시안$<BR><FONT color=#a82424>붉은 다크엘프</FONT>의 수하들이 홉고블린을 제조하고 있었다니... 정말 놀라운 일이 아닙니까?<BR>이 홉고블린들이 캐더락 인근에 퍼지기라도 했다면 큰일이었을 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-b" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-c" mid="1032" select_type="0"><![CDATA[<html>왜 캐더락을 돕는 거죠?</html>]]></talk_answer>
+      <talk_answer link_index="n553_cian-2-c" mid="1033" select_type="0"><![CDATA[<html>어째서 모험자가 되려는 건가요?</html>]]></talk_answer>
+      <talk_answer link_index="n553_cian-2-c" mid="1034" select_type="0"><![CDATA[<html>(목적이 뭔지 묻는다)</html>]]></talk_answer>
+      <talk_question mid="1029"><![CDATA[<html>$워리어 시안$<BR>미리 제조시설을 파괴할 수 있어서 다행입니다.<BR>휴우... 세인트헤이븐으로 가는 것도 중요하지만, 캐더락이 위험해지지 않도록 끝까지 도울 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-d" mid="1036" select_type="2" />
+      <talk_question mid="1035"><![CDATA[<html>$워리어 시안$<BR>네? 그야 다른 모든 사람들을 위해섭니다.<BR>다들 제게 <FONT color=#a82424>부탁한다</FONT>고 하잖습니까?<BR>
+제겐 힘이 있고, 도울 수 있고, 그러니까 돕는 거죠!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-e" mid="1038" select_type="2" />
+      <talk_question mid="1037"><![CDATA[<html>$워리어 시안$<BR>전 열심히 할 겁니닷! 아버지를 만나기 위해서라도 말이죠.<BR><FONT color=#7e12d2>(시안이 주먹을 꽉 쥐어 보인다)<BR></FONT>텔 누마라의 영웅. <FONT color=#a82424>사막의 푸른 늑대 램버트</FONT>... 실은 그 분이 제 아버지예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-e" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-f" mid="1041" select_type="2" />
+      <talk_question mid="1040"><![CDATA[<html>$워리어 시안$<BR>언제나 그 이름을 동경하며, 결코 부끄러운 아들이 되어서는 안 되겠다고 결의를 다져 왔거든요.<BR>아버진 언젠가 제가 <FONT color=#a82424>바르낙</FONT>을 뛰어넘는 강한 검사가 되면, 다시 만날 수 있을 거라고 하셨어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-g" mid="1043" select_type="2" />
+      <talk_question mid="1042"><![CDATA[<html>$워리어 시안$<BR>언젠가는 꼭 그렇게 될 겁니다! 아버지를 다시 만나기 위해서라도.<BR>뭐어...... 잘난 척 떠들기에는, 전 아직은 엄청나게 약하지만요.<BR><FONT color=#7e12d2>(시안이 머리를 긁적거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-g" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-h" mid="1045" select_type="2" />
+      <talk_question mid="1044"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>바르낙?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-h" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-i" mid="1047" select_type="2" />
+      <talk_question mid="1046"><![CDATA[<html>$워리어 시안$<BR>응? 바르낙 님을 모르십니까?<BR><FONT color=#a82424>여섯 영웅</FONT>의 일원이자, 우리 워리어들에게는 전설과도 같은......<BR>아차! 지금 이럴 때가 아니죠.<BR><FONT color=#7e12d2>(시안이 주위를 두리번거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-j" mid="1049" select_type="4" />
+      <talk_question mid="1048"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n553_cian-2-!next" mid="1060" select_type="2" />
+      <talk_question mid="1059"><![CDATA[<html>$워리어 시안$<BR><BR><FONT color=#7e12d2>(시안이 주위를 두리번거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">195</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1950,,,,,,,</exe>
+         <exe type="complete" true="">195</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="e" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="f">0,1</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="" />
+   <exelink qstep="2" npc="n553_cian" sub="b" />
+   <exelink qstep="2" npc="n553_cian" sub="c" />
+   <exelink qstep="2" npc="n553_cian" sub="c" />
+   <exelink qstep="2" npc="n553_cian" sub="c" />
+   <exelink qstep="2" npc="n553_cian" sub="d" />
+   <exelink qstep="2" npc="n553_cian" sub="e" />
+   <exelink qstep="2" npc="n553_cian" sub="f" />
+   <exelink qstep="2" npc="n553_cian" sub="g" />
+   <exelink qstep="2" npc="n553_cian" sub="h" />
+   <exelink qstep="2" npc="n553_cian" sub="i">0</exelink>
+   <exelink qstep="2" npc="n553_cian" sub="j">1</exelink>
+   <exelink qstep="2" npc="n553_cian" sub="!next" />
+   <journal_data recompense="1950" quest_title="성가신 오차" chapterid="3" quest_level="18" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1051"><![CDATA[성가신 오차I]]></title>
+         <contents mid="1052"><![CDATA[<html>상급 소서리스 티아나와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 상급 소서리스 티아나</FONT></html>]]></contents>
+         <destination mid="1053"><![CDATA[캐더락 관문의 상급 소서리스 티아나와 대화]]></destination>
+         <todo_msg mid="1054"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_19.dds</contents_image>
+         <destination_pos>144,n553</destination_pos>
+         <destination_mode>custom:142@1,143@1,144@1</destination_mode>
+         <statemark_npcid>553</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1055"><![CDATA[성가신 오차II]]></title>
+         <contents mid="1056"><![CDATA[<html>신전 예배당으로 가서, 다른 모험자들을 만나 보자.<BR>
+ <BR>
+<FONT color=#086171>바람 숲(바람 숲 신전 입구)</FONT> <FONT color=#a82424>- 신전 예배당(워리어 시안)</FONT></html>]]></contents>
+         <destination mid="1057"><![CDATA[신전 예배당에서 모험자와 대화]]></destination>
+         <todo_msg mid="1058"><![CDATA[신전 예배당에서 다른 모험자들을 만나 보세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>194</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

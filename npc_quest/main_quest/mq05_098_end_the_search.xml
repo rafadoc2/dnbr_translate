@@ -1,0 +1,233 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_098_end_the_search</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>98</qid>
+      <designer>곽노찬</designer>
+      <qlevel>8</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>99</nextqid>
+      <nextqname>mq05_099_deep_trouble</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[Say Goodbye]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>391</npcid>
+         <npcename>n391_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>535</npcid>
+         <npcename>n535_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>541</npcid>
+         <npcename>n541_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Sorceress Angelica$<BR>Ha... Wait you Dragon Follower! That treasure is mine!!<BR>※ <FONT color=#7e12d2>You have to get the quest from the Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Master Sorceress Cynthia$<BR>From what I hear, my apprentice is working with that novice cleric these days.<BR>Well... since this is an emergency, I'll let it slip.<BR>
+※ <FONT color=#7e12d2>You have to get the quest from the Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n391_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n391_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR><FONT color=#086171>Checking Data.............</FONT><BR><BR>※ <FONT color=#7e12d2>Checking mission. Please wait.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n391_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Academic Station$<BR>※ Mission Objective.<BR>※ <FONT color=#7e12d2>Go to Marian's Shrine.</FONT><BR>
+<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n535_angelica-1" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Sorceress Angelica$<BR>Ha... Wait you Dragon Follower! That treasure is mine!!<BR>
+<FONT color=#7e12d2>(Angelica heads to Marian's Shrine. Let's follow her)</FONT><BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n541_angelica-1-a" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Sorceress Angelica$<BR>
+I hate this job....<BR>
+<FONT color=#7e12d2>(Angelica looks depressed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-a" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n541_angelica-1-b" mid="15"><![CDATA[<html>That was his choice....</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Sorceress Angelica$<BR>Betrayed by a person who was like a <FONT color=#a82424>real brother</FONT>...<BR>How could he do that? And just dying like that!<BR>The person left behind will have to feel guilty for the rest of his life!<BR>I hate this!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-b" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n541_angelica-1-c" mid="17"><![CDATA[<html>Where is Edan?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Sorceress Angelica$<BR>What do you mean his choice?!<BR>Anyway, I feel so sorry for <FONT color=#a82424>Edan</FONT>.<BR>He killed a person whom he cared for like a real brother... Ahh.... It's so horrible just to think about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-c" image="" itemindex="">
+      <talk_answer link_index="n541_angelica-1-d" mid="19"><![CDATA[<html>Are you going to see Master Cynthia?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Sorceress Angelica$<BR>I don't know. He went out screaming just now.<BR>Anyway, I'm going to return to town since we have found the Vision Orb and the Sage's Staff.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-d" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n541_angelica-1-e" mid="21"><![CDATA[<html>You'll learn about the Prophet's whereabouts.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Sorceress Angelica$<BR>Of course. I'll take them to my <FONT color=#a82424>master</FONT>.<BR>I wonder what's going to happen next~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n541_angelica-1-f" mid="23"><![CDATA[<html>Yes, according to the historical data, the Sage's last prophecy was about the Prophet...</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Sorceress Angelica$<BR>
+The Prophet's whereabouts...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-f" image="" itemindex="">
+      <talk_answer link_index="n541_angelica-1-g" mid="25"><![CDATA[<html>It's true. Because I'm from the future...</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Sorceress Angelica$<BR>The Sage?! What?<BR>
+That's a little too far-fetched don't you think?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-g" image="" itemindex="">
+      <talk_answer link_index="n541_angelica-1-h" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>Ahh! Stop! The situation seems more serious than I can handle now!<BR>I don't like those grand stories!<BR>Ahh... It feels like something irritatingly complicated will happen~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-h" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n541_angelica-1-i" mid="29"><![CDATA[<html>Then I should meet Cynthia too.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Sorceress Angelica$<BR>Anyway, I'm going back to my master.<BR>The clerics will take care of their own matter.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-1-i" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Sorceress Angelica$<BR>Be my guest.<BR>I wonder how much my <FONT color=#a82424>master</FONT> will reward me.<BR>I hope she gives me the reward in gold!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n541_angelica-2" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Sorceress Angelica$<BR>
+I wonder how much my master will reward me.<BR>
+I hope she gives me the reward in gold!<BR>
+<FONT color=#7e12d2>(Return to town and meet Master Sorceress Cynthia)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n391_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Academic Station$<BR>※ Mission Objective.<BR>※ <FONT color=#7e12d2>Talk to Master Sorceress Cynthia.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-a" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Sorceress Cynthia$<BR>
+I didn't know my stupid apprentice Angelica would do so well....<BR>
+Well, she wasn't always stupid. She just lost focus when too many people complimented her that she was a genius sorceress.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-a" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-b" mid="39"><![CDATA[<html>Yes, I was very helpful.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Sorceress Cynthia$<BR>
+Great work, kid.<BR>
+Angelica was blabbering that she did all this on her own, but she isn't very good at lying. Haha...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-b" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-c" mid="41"><![CDATA[<html>Why? She only told the truth...</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Master Sorceress Cynthia$<BR>
+....... How could you say such a thing without even a slightest change of expression?<BR><FONT color=#7e12d2>(Cynthia becomes serious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-d" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Ahh.... Anyway, since the Staff and the Orb have been retrieved, we'll be able to view the <FONT color=#a82424>Sage's Prophecy</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-!next" mid="45"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">98</exe>
+         <exe type="talk" npc="n391_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">980,,,,,,</exe>
+         <exe type="complete">98</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n391_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n541_angelica" sub="b" />
+   <exelink qstep="1" npc="n541_angelica" sub="c" />
+   <exelink qstep="1" npc="n541_angelica" sub="d" />
+   <exelink qstep="1" npc="n541_angelica" sub="e" />
+   <exelink qstep="1" npc="n541_angelica" sub="f" />
+   <exelink qstep="1" npc="n541_angelica" sub="g" />
+   <exelink qstep="1" npc="n541_angelica" sub="h" />
+   <exelink qstep="1" npc="n541_angelica" sub="i">0,1</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="d">0</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="!next">1</exelink>
+   <journal_data recompense="980" quest_title="작별 인사를 건냅니다" chapterid="1" quest_level="8" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_11.dds</contents_image>
+         <destination_pos>103,n541</destination_pos>
+         <destination_mode>custom:101@1,102@1,103@1</destination_mode>
+         <statemark_npcid>541</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Say Goodbye I]]></title>
+         <contents mid="50"><![CDATA[<html>Angelica and Edan seem to be heading to Marian's Shrine. Follow them to Marian's Shrine.<BR><BR><BR>
+<FONT color=#7e12d2></FONT><BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Marian's Shrine</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk to Angelica at Marian's Shrine]]></destination>
+         <todo_msg mid="52"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Say Goodbye II]]></title>
+         <contents mid="55"><![CDATA[<html>Finally, Jake didn't try to change his future and he lost his life to Edan.<BR>
+Return to town and meet Master Sorceress Cynthia.<BR>
+ <BR>
+<FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="57"><![CDATA[Return to Mana Ridge and talk to Master Sorceress Cynthia.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>97</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

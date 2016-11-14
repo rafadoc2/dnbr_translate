@@ -1,0 +1,276 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_029_true_mission</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>29</qid>
+      <designer>나은하</designer>
+      <qlevel>6</qlevel>
+      <qdesc>그들을 쫓으려던 칼리 마법진이 자신에게 반응하는 것을 알게 됨. (컷씬 그딴 거 없이 그냥 텍스트로 처리 -_-)
+
+보스룸에 있던 스승님이 그 마법진은 고대인의 피를 가진 자에게 반응하는 마법진이란 것을 알려줌. 그러면 나도 고대인이냔 말에 스승은 그렇다 함.
+
+너는 선지자의 그림자 별, 아르테아와 베스티넬과 같은 운명 - 로제가 선한 선지자가 되면 너는 그에 대칭점에 서서 그녀에게 대적해야 하고 그 반대면 네가 선한 편에 서서 로제에게 맞서야 한다 너를 지키는 것이 우리 일족의 사명이었음을 폭로
+칼리는 가벼운 거부의 뜻을 밝히지만, 스승은 피할 수 있는 운명이 아니라며 로제를 쫓아가서 그녀의 행보를 보라 함.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>30</nextqid>
+      <nextqname>mq01_030_fatality_and_fate</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <uistyle>0</uistyle>
+      <qkname mid="1"><![CDATA[True Mission]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>자경단장 스티브</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>562</npcid>
+         <npcename>n562_gaharam</npcename>
+         <npckname>가하람의 영혼</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-noquest" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="7"><![CDATA[<html>$Gaharam's Spirit$<BR><FONT color=#7e12d2>(An exotic looking spirit is staring quietly)<BR>(※You can get the quest from Prairie Town's Mayor Harold)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-noquest" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="12"><![CDATA[<html>$Vigilante Guard Steve$<BR>
+<FONT color=#a82424>Mayor Harold</FONT> seemed worried.<BR>
+Please let him know if you hear any news about Rose.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting" image="QN_Guard_Steave.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n001_elder_harold-accepting-acceptted" mid="9" select_type="0"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Mayor Harold$<BR>If she escaped from Catacomb, she must be home by now…!<BR>Could something have happened to her on her way back?<BR>I'm sorry but could you ask <FONT color=#a82424>Vigilante Guard Steve</FONT> whether he has heard any news?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="13"><![CDATA[<html>$Mayor Harold$<BR>Thank you. Please find Rose for us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-1" image="QN_Elder_Harold.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="14"><![CDATA[<html>$Gaharam's Spirit$<BR><FONT color=#7e12d2>(An exotic looking spirit is staring quietly )<BR>(※You have to finish talking to Prairie Town's Mayor Harold)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n004_guard_steave-1-a" mid="17" select_type="0"><![CDATA[<html>Do you know anything about what happened to Rose?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Vigilante Guard Steve$<BR><FONT color=#387206>{user_nick}</FONT>. I heard that you're helping out with finding Rose.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-a" image="QW_4.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n004_guard_steave-1-b" mid="19" select_type="0"><![CDATA[<html>What is going on there?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Vigilante Guard Steve$<BR>I'm sorry, but there's no news yet. But I received a report that the monsters are acting strangely at <FONT color=#a82424>Shadow Forest Core</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n004_guard_steave-2" mid="21" select_type="0"><![CDATA[<html>Then I'll go there.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Vigilante Guard Steve$<BR>Many monsters are said to be gathering at that place.<BR>They seem to be looking for something. Maybe they are looking for Rose?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QW_4.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="23"><![CDATA[<html>$Vigilante Guard Steve$<BR>I'll pray that you can find Rose at <FONT color=#a82424>Shadow Forest Core</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-2-a" mid="25" select_type="0"><![CDATA[<html>Goodbye?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Gaharam's Spirit$<BR>I can hear the voices of many spirits here.<BR>Do you know, <FONT color=#387206>{user_nick}</FONT>? The souls of many nameless soldiers who fought against the Dragon Followers lay asleep here.<BR>It's a good place to say goodbye to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-2-b" mid="27" select_type="0"><![CDATA[<html>Please don't go. I still have many things that I don't know.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Gaharam's Spirit$<BR>A dead person can't stay in this world for too long. I'm just a handful of spirit energy with the name of Gaharam. I can't maintain this appearance anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-2-c" mid="29" select_type="0"><![CDATA[<html>What is that?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Gaharam's Spirit$<BR>I've already passed you all the knowledge that you need.<BR>Except for one.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-2-d" mid="31" select_type="0"><![CDATA[<html>You mean I have the Ancient's blood?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Gaharam's Spirit$<BR>You must have always wondered what that sign on your body is.<BR>That is a proof that you have the Ancient's blood flowing in you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-2-e" mid="33" select_type="0"><![CDATA[<html>Shadow Star?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Gaharam's Spirit$<BR>You are the <FONT color=#a94407>Shadow Star</FONT> of the Prophet. You and her are like light and shadow. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-2-f" mid="36" select_type="0"><![CDATA[<html>W-What do you mean?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Gaharam's Spirit$<BR>
+If the Prophet is taking the good path, you have to hide your existence in her light. If the Prophet is taking the evil path, you have to stop her powers from being misused.<BR>You are the only one who can do this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-2-g" mid="38" select_type="0"><![CDATA[<html>… then because of me, our tribe….</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Gaharam's Spirit$<BR>It must be hard for you to accept it, but you must. <BR>It was our tribe's mission to protect you. Whatever path you took, we were the ones who had to follow you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2-g" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-2-h" mid="40" select_type="0"><![CDATA[<html>… It's hard for me to accept it. But if it's your will….</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Gaharam's Spirit$<BR>Our tribe didn't get killed because of you. Don't blame yourself.<BR>Please accept it even if it's hard. This is the last thing we ask from you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-2-h" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n562_gaharam-3" mid="42" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Gaharam's Spirit$<BR>Good girl, <FONT color=#387206>{user_nick}</FONT>.<BR>Continue to follow the Prophet and observe her. That's your fate.<BR>…Now my heart seems a little lighter.<BR><FONT color=#7e12d2>(Gaharam's Spirit smiles comfortably)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n562_gaharam-3" image="QW_PrairieTown.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="44"><![CDATA[<html>$Gaharam's Spirit$<BR>Go back to <FONT color=#a82424>Prairie Town</FONT>.<BR>A new death will strengthen the fate between you and her.<BR>If at any chance… you can't find the path that you're supposed to take, look at <FONT color=#a94407>Hermit's Totem</FONT> and meditate.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n001_elder_harold-3-a" mid="46" select_type="0"><![CDATA[<html>(You reply no)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Mayor Harold$<BR>Have you heard the news about our Rose?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n001_elder_harold-4" mid="48" select_type="0"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Mayor Harold$<BR>*Sob* Our Rose…What could have happened to her?<BR>I'm sorry but could you ask Vigilante Guard Steve if he has heard any news?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-4" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="53"><![CDATA[<html>$Mayor Harold$<BR>I hope <FONT color=#a82424>Vigilante Guard Steve</FONT> has some good news….<BR>My poor child.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n004_guard_steave-4-a" mid="55" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Vigilante Guard Steve$<BR>I was about to go and look for you, <FONT color=#387206>{user_nick}</FONT>.<BR>One of the guards said that he saw Timothy and Rose running towards <FONT color=#a82424>Ancient Temple Excavation Site </FONT>. The guards followed them but had to give up because there were just too many monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n004_guard_steave-4-b" mid="57" select_type="0"><![CDATA[<html>Got it.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Vigilante Guard Steve$<BR>We were going to create a search team and investigate the area. But our strength wasn't enough.<BR>I'm sorry but could you search the Ancient Temple Excavation Site?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-4-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n004_guard_steave-4-!next" mid="59" select_type="0"><![CDATA[<html><FONT color=#a82424>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">29</exe>
+         <exe type="talk" npc="n001_elder_harold">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">290,,,,,,,</exe>
+         <exe type="complete" true="">29</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n001_elder_harold" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n562_gaharam" sub="b" />
+   <exelink qstep="2" npc="n562_gaharam" sub="c" />
+   <exelink qstep="2" npc="n562_gaharam" sub="d" />
+   <exelink qstep="2" npc="n562_gaharam" sub="e" />
+   <exelink qstep="2" npc="n562_gaharam" sub="f" />
+   <exelink qstep="2" npc="n562_gaharam" sub="g" />
+   <exelink qstep="2" npc="n562_gaharam" sub="h" />
+   <exelink qstep="2" npc="n562_gaharam" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n001_elder_harold" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n004_guard_steave" sub="b">0</exelink>
+   <exelink qstep="4" npc="n004_guard_steave" sub="!next">1</exelink>
+   <journal_data recompense="290" quest_title="진실한 사명" chapterid="1" quest_level="6" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,n4</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Rose's Whereabouts]]></title>
+         <contents mid="62"><![CDATA[<html>Rose has not come back yet. Go to Vigilante Guard Steve and ask about Timothy and Rose's whereabouts.<BR>
+ <BR>
+<FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Vigilante Guard Steve</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Vigilante Guard Steve]]></destination>
+         <todo_msg mid="64"><![CDATA[New quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_4.dds</contents_image>
+         <destination_pos>68,n562</destination_pos>
+         <destination_mode>custom:66@1,67@1,68@4</destination_mode>
+         <statemark_npcid>562</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Their traces]]></title>
+         <contents mid="67"><![CDATA[<html>Search Shadow Forest Core and find traces of Rose and Guard Timothy.<BR>
+※ <FONT color=#7e12d2>The character must be above Lv.5 to enter Shadow Forest Core.</FONT><BR><BR><FONT color=#086171>Shadow Forest Path </FONT><FONT color=#a82424>→ Shadow Forest Core</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Search Shadow Forest Core]]></destination>
+         <todo_msg mid="69"><![CDATA[ Look for Rose and Guard Timothy at Shadow Forest Core.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <destination_pos>1,n1</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Talk to Mayor Harold]]></title>
+         <contents mid="73"><![CDATA[<html>Unfortunately, you couldn't find Rose. Report to Mayor Harold.<BR>
+ <BR>
+<FONT color=#086171>Prairie Town</FONT><FONT color=#a82424> → Mayor Harold</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk to Mayor Harold]]></destination>
+         <todo_msg mid="75"><![CDATA[Go back to Prairie Town and talk to Mayor Harold.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,n4</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Talk with Vigilante Guard Steve]]></title>
+         <contents mid="78"><![CDATA[<html>Ask Vigilante Guard Steve whether he has any news about Rose again.<BR>
+ <BR>
+<FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Vigilante Guard Steve</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Talk to Vigilante Guard Steve]]></destination>
+         <todo_msg mid="80"><![CDATA[Talk to Vigilante Guard Steve.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>28</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+   </condition_data>
+</quest>

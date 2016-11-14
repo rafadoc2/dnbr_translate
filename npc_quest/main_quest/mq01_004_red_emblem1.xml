@@ -1,0 +1,350 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_004_red_emblem1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>4</qid>
+      <designer>김주연</designer>
+      <qlevel>3</qlevel>
+      <qdesc>300058 지도
+300009 붉은 인장 파편
+(아처 전용 퀘스트)
+1. 고대의 신전 유적지 1층에서 마을 사람과 대화, 사람들이 안에 잡혀 있다는 정보를 입수.
+2. 안쪽의 사람들을 구출하지만 로제가 없다는 사실을 알게 됨.
+3. 티모시는 로제가 카타콤으로 끌려간듯하다는 말을 함.
+4. 프레리 타운의 촌장 해롤드에게 그 사실을 전하면 촌장은 매우 불안해하는 모습을 보임.
+(로제가 고대인의 후예라는 것을 유일하게 알고 있고, 과거에 고대인 부부를 통해 마물들이 고대인을 쫓고 있는 것을 알고 있기 때문에 마물들이 로제의 정체를 알아낸 것은 아닌지 두려워 하는 것.)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>5</nextqid>
+      <nextqname>mq01_005_red_emblem2</nextqname>
+      <nextqnpc>n001_elder_harold</nextqnpc>
+      <qkname mid="1"><![CDATA[The Red Seal I]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드   (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>106</npcid>
+         <npcename>n106_prairie_wounded</npcename>
+         <npckname>부상당한 마을 사람1</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>107</npcid>
+         <npcename>n107_prairie_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람1</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>120</npcid>
+         <npcename>n120_prairie_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람2</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>121</npcid>
+         <npcename>n121_prairie_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람3</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>122</npcid>
+         <npcename>n122_prairie_wounded</npcename>
+         <npckname>부상당한 마을 사람2</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>123</npcid>
+         <npcename>n123_prairie_wounded</npcename>
+         <npckname>부상당한 마을 사람3</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>131</npcid>
+         <npcename>n131_guard_timose</npcename>
+         <npckname>가드 티모시 (mp003)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>5</npcid>
+         <npcename>n005_archer_master_diana</npcename>
+         <npckname>상급 아처 디아나  (프레리 아쳐스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>8</npcid>
+         <npcename>n008_guard_timose</npcename>
+         <npckname>가드 티모시 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="" itemindex="">
+      <talk_question mid="190"><![CDATA[<html>$Mayor Harold$<BR>(Coughs) It seems like you could not find Rose… I'm so thankful for your kindness in helping to find a girl that you don't even know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-noquest" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="191"><![CDATA[<html>$Master Archer Deanna$<BR>You must be the brave adventurer <FONT color=#a82424>Vigilante Leader Steve</FONT> was talking about.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-accepting-acceptted" mid="189"><![CDATA[<html>(Give the map to Steve)</html>]]></talk_answer>
+      <talk_question mid="188"><![CDATA[<html>$Vigilante Leader Steve$<BR>Have you recovered all of the map fragments?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Guard Timothy$<BR>R-return to town and give the map to <FONT color=#a82424>Vigilante Leader Steve</FONT> and come to <FONT color=#a82424>Ancient Temple Ruins</FONT>...<BR>Y-you must come as soon as possible! <FONT color=#a82424>Rose</FONT> m-must be in danger...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-1-a" mid="57"><![CDATA[<html>(Give the map to Steve)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Vigilante Leader Steve$<BR>Have you recovered all of the Map Fragments?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-a" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-1-b" mid="138"><![CDATA[<html>He left for Ancient Temple Ruins first.</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Vigilante Leader Steve$<BR>The map is pointing towards <FONT color=#a82424>Ancient Temple Ruins</FONT>. We may be able to find Rose and the missing villagers there...<BR>Hmm? But... I don't see <FONT color=#a82424>Timothy</FONT>. Didn't he come back with you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1-b" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2" mid="140"><![CDATA[<html>I'll help.</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Vigilante Leader Steve$<BR>Is that right? Hmm... He stammers and talks clumsily but he knows how to protect himself. But since this concerns <FONT color=#a82424>Rose</FONT>, I'm not sure how he will react. Please go to <FONT color=#a82424>Ancient Temple Ruins</FONT> quickly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Guard Timothy$<BR>R-return to town and hand the map to <FONT color=#a82424>Vigilante Leader Steve</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-1" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Master Archer Deanna$<BR>You must be the brave adventurer <FONT color=#a82424>Vigilante Leader Steve</FONT> was talking about.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n106_prairie_wounded-1" image="" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$Wounded Villager$<BR>T-thank you for saving me...<BR>The rest are still in there. Please help the other villagers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n107_prairie_prison-1" image="" itemindex="">
+      <talk_question mid="122"><![CDATA[<html>$Imprisoned Villager$<BR>I'm... I'm alive! Thank you!<BR>There are others who were taken inside. Please help the other villagers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n120_prairie_prison-1" image="" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$Imprisoned Villager$<BR>You came to save me!<BR>Thank you... I thought I was going to die.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n121_prairie_prison-1" image="" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$Imprisoned Villager$<BR>Phew... Thank you for saving me...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n122_prairie_wounded-1" image="" itemindex="">
+      <talk_question mid="125"><![CDATA[<html>$Wounded Villager$<BR>Wow you defeated those terrifying monsters... Thanks to you I'm alive.<BR>I'll never fOgret your kindness!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n123_prairie_wounded-1" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Wounded Villager$<BR>Uhh... Huh? Where... Where am I? Why am I here?<BR><FONT color=#7e12d2>(Seems like he was unconscious when he was kidnapped)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="" itemindex="">
+      <talk_question mid="155"><![CDATA[<html>$Mayor Harold$<BR>(Coughs) It seems like you could not find Rose… I'm so thankful for your kindness in helping to find a girl that you don't even know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QN_Npc_Archer_Diana.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Vigilante Leader Steve$<BR>Thank you. Before you go, do meet up with <FONT color=#a82424>Master Archer Deanna</FONT> from the <FONT color=#a82424>Adventurer's Guild</FONT>. She would like to have a word with you, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-a" mid="142"><![CDATA[<html>Yes. That's right.</html>]]></talk_answer>
+      <talk_question mid="141"><![CDATA[<html>$Master Archer Deanna$<BR>You must be the brave adventurer <FONT color=#a82424>Vigilante Leader Steve</FONT> talked about.<BR>So you're going to the <FONT color=#a82424>Ancient Temple Ruins</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2-a" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-b" mid="144"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Master Archer Deanna$<BR>If so, you have to be careful of the boss monster <FONT color=#a82424>Jukanook</FONT>. He will roll his body before charging towards you from a distance away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2-b" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-c" mid="146"><![CDATA[<html>Okay, I'll remember.</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$Master Archer Deanna$<BR>If you spot Jukanook <FONT Color=#a82424>curling its body</FONT>, evade to your side to avoid getting hurt. You can <FONT color=#a82424>tumble</FONT> by <FONT color=#a82424>double tapping a direction key</FONT> or pressing [<FONT color=#a82424>Shift</FONT>] and a direction key at the same time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2-c" image="" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-d" mid="148"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Master Archer Deanna$<BR>Furthermore, it is essential to learn new <FONT color=#a82424>skills</FONT> if you wish to grow into a strong Archer. It seems like you can learn new skills now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-2-d" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n005_archer_master_diana-2-_skill_trade_1" mid="186"><![CDATA[<html>[Learn Skill]</html>]]></talk_answer>
+      <talk_question mid="178"><![CDATA[<html>$Master Archer Deanna$<BR>Please learn <FONT color=#a82424>Willow Kick</FONT> from the Skill Window. It will be helpful when dealing with Troll Jukanook.<BR>Well then <FONT color=#382000>{user_nick}</FONT>, may the Tree of Life bless you in your journey.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="QN_Npc_Archer_Diana.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Vigilante Leader Steve$<BR>Before you go, do meet up with <FONT color=#a82424>Master Archer Deanna</FONT> from the <FONT color=#a82424>Adventurer's Guild</FONT>. She would like to have a word with you, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-3" image="QN_Npc_Archer_Diana.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Guard Timothy$<BR>A-are you looking for <FONT color=#a82424>Master Archer Deanna</FONT>?<BR>She's in town now!<BR>Meet her quickly before you go to <FONT color=#a82424>Ancient Temple Ruins</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-3" image="QN_Npc_Archer_Diana.dds" itemindex="">
+      <talk_question mid="129"><![CDATA[<html>$Guard Timothy$<BR>A-are you looking for <FONT color=#a82424>Master Archer Deanna</FONT>?<BR>She's in town now!<BR>Meet her quickly before you go to <FONT color=#a82424>Ancient Temple Ruins</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-4" image="QW_2.dds" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Master Archer Deanna$<BR>Now, quickly go to <FONT color=#a82424>Ancient Temple Ruins</FONT>.<BR>There are many people waiting for your help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4" image="" itemindex="">
+      <talk_answer link_index="n131_guard_timose-4-a" mid="108"><![CDATA[<html>But… Where is Rose…?</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Guard Timothy$<BR>Ah… you're here. Th-thanks for coming not too l-late….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4-a" image="" itemindex="">
+      <talk_answer link_index="n131_guard_timose-4-b" mid="110"><![CDATA[<html>Why was only Rose taken away?</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Guard Timothy$<BR>I... I think we're a little too late... They took <FONT color=#a82424>R-Rose</FONT> to somewhere else...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4-b" image="QS_Default.dds" itemindex="300009">
+      <talk_answer link_index="n131_guard_timose-4-c" mid="112"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Guard Timothy$<BR>…M-more importantly…. Take th-this…<BR>This fell from <FONT color=#a82424>Troll </FONT><FONT color=#a82424>Jukanook</FONT> while you were f-fighting him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4-c" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n131_guard_timose-4-d" mid="114"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Guard Timothy$<BR>I-it's an <FONT color=#a82424>Evil Seal Fragment</FONT>... Looking at the carvings... It must be <FONT color=#a82424>Catacombs</FONT> <FONT color=#a82424>Minotaur Umrak</FONT>'s seal... R-Rose might have been taken to the <FONT color=#a82424>Catacombs</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-4-d" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$Guard Timothy$<BR>I'm off to the <FONT color=#a82424>Catacombs</FONT> first... You should drop by the town and see the <FONT color=#a82424>Mayor</FONT>. If you're looking for information about <FONT color=#a82424>Minotaur Umrak</FONT> in <FONT color=#a82424>Catacombs</FONT>... H-he'll probably know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-4" image="QW_2.dds" itemindex="">
+      <talk_question mid="131"><![CDATA[<html>$Guard Timothy$<BR>H-have you finished your business in town?<BR>Then c-come on, go to the <FONT color=#a82424>Ancient Temple Ruins</FONT>. Why are you still standing around?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-5-a" mid="159"><![CDATA[<html>Rest assured, Rose will return safely.</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Mayor Harold${action:Talk}<BR><FONT color=#a82424>Only Rose was taken?</FONT>(Coughs) That can't be. That shouldn't happen. Oh no… the monsters… (coughs)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-5-a" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-5-!next" mid="161"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-5" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Vigilante Leader Steve$<BR>I'm worried about Timothy. He's always been shy but ever since Rose was kidnapped, he is risking his life at dangerous places. He should take care of himself more...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n005_archer_master_diana-5" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$Master Archer Deanna$<BR>Only Rose was taken away? Poor Rose... You should tell the Mayor about this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n131_guard_timose-5" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="169"><![CDATA[<html>$Guard Timothy$<BR>I'm off to the <FONT color=#a82424>Catacombs</FONT> first... You should drop by the town and see the <FONT color=#a82424>Mayor</FONT>. If you're looking for information about <FONT color=#a82424>Minotaur Umrak</FONT> in <FONT color=#a82424>Catacombs</FONT>... H-he'll probably know.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">4</exe>
+         <exe type="custom">npc_talk_index = "n004_guard_steave-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="delquestitem" num="-1">300058</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>감옥에 갇힌 마을사람 프랍 클릭하면 스텝/저널 변경 4->5</comment>
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300009</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">42,,,,,,</exe>
+         <exe type="complete">4</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n005_archer_master_diana" sub="b" />
+   <exelink qstep="2" npc="n005_archer_master_diana" sub="c" />
+   <exelink qstep="2" npc="n005_archer_master_diana" sub="d" />
+   <exelink qstep="2" npc="n005_archer_master_diana" sub="_skill_trade_1">0,1,2</exelink>
+   <exelink qstep="4" npc="n131_guard_timose" sub="b" />
+   <exelink qstep="4" npc="n131_guard_timose" sub="c" />
+   <exelink qstep="4" npc="n131_guard_timose" sub="d">0,1,2</exelink>
+   <exelink qstep="5" npc="n001_elder_harold" sub="a">0</exelink>
+   <exelink qstep="5" npc="n001_elder_harold" sub="!next">1</exelink>
+   <journal_data recompense="42" quest_title="붉은 인장Ⅰ" chapterid="1" quest_level="3" quest_mark_type="1" use_item_list="300058">
+      <journal index="1">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Talk to Vigilante Leader Steve]]></title>
+         <contents mid="39"><![CDATA[<html>The map was pieced back together with the help of Timothy. Hand the <FONT color=#a82424>Map</FONT> to <FONT color=#a82424>Vigilante Leader Steve</FONT> in Prairie Town.<BR><BR><FONT color=#086171>Prairie Town</FONT><FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="41"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Archer_Diana.dds</contents_image>
+         <destination_pos>1,-964,1546</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>5</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Talk to Master Archer Deanna]]></title>
+         <contents mid="43"><![CDATA[<html>Vigilante Leader Steve encourages you to meet <FONT color=#a82424>Master Archer Deanna</FONT> before leaving for <FONT color=#a82424>Ancient Temple Ruins</FONT>.<BR>Talk to <FONT color=#a82424>Master Archer Deanna</FONT>.<BR><BR><FONT color=#086171>Prairie Town</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Master Archer Deanna</FONT></FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Talk to Master Archer Deanna]]></destination>
+         <todo_msg mid="45"><![CDATA[Talk to Master Archer Deanna.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Guard_Timose.dds</contents_image>
+         <destination_pos>58,430,924</destination_pos>
+         <destination_mode>custom:56@1,57@1,58@1</destination_mode>
+         <statemark_npcid>131</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Talk to Timothy at Ancient Temple Ruins]]></title>
+         <contents mid="47"><![CDATA[<html>Meet <FONT color=#a82424>Timothy</FONT> at <FONT color=#a82424>Ancient Temple Ruins</FONT>.<BR><BR><FONT color=#086171>Wind Forest (Wind Forest Temple) → Ancient Temple Ruins </FONT><FONT color=#a82424>→ Timothy</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk to Timothy at Ancient Temple Ruins]]></destination>
+         <todo_msg mid="49"><![CDATA[Find Timothy at Ancient Temple Ruins in Wind Forest.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <destination_pos>1,-1390,-629</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="163"><![CDATA[Talk to Mayor Harold]]></title>
+         <contents mid="164"><![CDATA[<html><FONT color=#a82424>Timothy</FONT> said <FONT color=#a82424>Rose</FONT> has been taken to the Catacombs. Inform Mayor Harold about this piece of news.<BR><B<FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Mayor Harold</FONT></html>]]></contents>
+         <destination mid="165"><![CDATA[Talk to Mayor Harold]]></destination>
+         <todo_msg mid="166"><![CDATA[Please go back to Prairie Town and Talk to Mayor Harold.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>2</user_class>
+      <prev_quest>2</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,281 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_092_tools_to_rebuild</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>92</qid>
+      <designer>곽노찬</designer>
+      <qlevel>2</qlevel>
+      <qdesc>400300 방패 조각</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>93</nextqid>
+      <nextqname>mq05_093_review_the_current_time</nextqname>
+      <nextqnpc>n391_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Repairing the Equipment]]></qkname>
+      <qnpc>
+         <npcid>16</npcid>
+         <npcename>n016_trader_borin</npcename>
+         <npckname>대장장이 보린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>391</npcid>
+         <npcename>n391_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n391_academic_station-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Academic Station$<BR>※ Mission Objective.<BR>※ <FONT color=#7e12d2>Meet Blacksmith Borin and optimize your equipment to match current body.</FONT><BR>
+<FONT color=#7e12d2></FONT> <BR>
+<FONT color=#7e12d2>※ You have to get the quest from Blacksmith Borin in order to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-acceptted" mid="6"><![CDATA[<html>(Show him the equipment)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Borin$<BR>
+Oh right, you asked me to take a look at your equipment.<BR>
+Okay, let me have a look.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-a" mid="9"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Borin$<BR>Hmm... hey, little girl. I'll repair these equipment for free.<BR>
+Your equipment are a special challenge for a blacksmith!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-a" image="QM_OrcBlue.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-b" mid="11"><![CDATA[<html>Frost Wind Forest?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Blacksmith Borin$<BR>But I don't have all the materials in the fOgre to repair the equipment.<BR>Can you get me a piece of <FONT color=#a82424>{monster:224}</FONT>'s shield at the <FONT color=#a82424>Frost Wind Forest</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-b" image="QW_7.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-c" mid="13"><![CDATA[<html>Okay, I'll be back!</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Blacksmith Borin$<BR>Yes. When you walk out of the town, you'll see the <FONT color=#a82424>Frost Hill</FONT>. On the right side of Frost Hill, you'll find the path to the <FONT color=#a82424>Frost Wind Forest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-c" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Blacksmith Borin$<BR>I don't know if I should ask a young girl like you to fight the monsters.<BR>But if you're an adventurer, you should be able to do this by yourself.<BR>
+I'll wait for you to return.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n391_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Academic Station$<BR>※ Mission Objective.<BR>※ <FONT color=#7e12d2>Meet Blacksmith Borin and optimize the equipment to current body.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2" image="QM_OrcBlue.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Borin$<BR>
+Go to Frost Wind Forest and bring back a piece of <FONT color=#a82424>{monster:224}</FONT>'s shield.<BR>Look carefully at the quest arrow on the right side of your screen so you don't lose your way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-a" mid="18"><![CDATA[<html>Haha, this task is nothing.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Blacksmith Borin$<BR>
+Wow... you brought it.<BR>
+Little girl, you're quite good.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-a" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-b" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Borin$<BR>
+Okay. Wait a minute.<BR>
+I'll repair the equipment just like a new one.<BR>
+<FONT color=#7e12d2>(Borin brings a hammer and stretches his arms)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-b" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-c" mid="22"><![CDATA[<html>Wow...!</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Borin${sound:UI_Item_Repair.wav}<BR>
+Haiya~!!<BR>
+Haaaaar~!!!<BR>
+<FONT color=#7e12d2>(Borin starts hammering at a great speed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-c" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-d" mid="24"><![CDATA[<html>Ohh...</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Blacksmith Borin${sound:UI_Item_Fail.wav}<BR>
+Haargh~! <FONT color=#7e12d2>(Clank)</FONT><BR>
+Yeah~!! <FONT color=#7e12d2>(Clonk)</FONT><BR>
+Warhh~!!! <FONT color=#7e12d2>(Clunk)</FONT><BR>
+Here we go~!!!! <FONT color=#7e12d2>(Crack)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-d" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-e" mid="26"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Borin${sound:UI_Item_Broken.wav}<BR>
+Oh... No.............<BR>
+<FONT color=#7e12d2>(Borin's fierce hammering stopped. Borin's tight grip on the hammer loosened and his eyes slightly trembled)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-e" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-f" mid="32"><![CDATA[<html>What? (Where?!)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Borin$<BR>
+Ahh... Hahahahahahaha!<BR>
+As, you can see, the repair was successful!<BR>
+<FONT color=#7e12d2>(Borin laughes heartily)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-f" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-g" mid="34"><![CDATA[<html>Ohh...</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Blacksmith Borin$<BR>
+Now now, little girl, you don't seem to know....<BR>
+If you look at these minute cracks, you can see that I've made them on purpose to equip your weapon with a cooling effect in case it overheats.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-g" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-4" mid="42"><![CDATA[<html>Okay, Thank... thank you....</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Blacksmith Borin$<BR>
+Then, have a great adventure.<BR>
+I hope I could dismantle that equipment someday....<BR>
+<FONT color=#7e12d2>(Borin seems sorry to let it go)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>${user_nick}$<BR>
+<BR><FONT color=#7e12d2>(Finished optimizing the equipment. Talk to Jasmine by using the Academic Station)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n391_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n391_academic_station-4-a" mid="45"><![CDATA[<html>Well, he did repair the equipment but...</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_03.ogg}<BR><FONT color=#387206>{user_nick}</FONT>, everything okay with the equipment?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n391_academic_station-4-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n391_academic_station-4-b" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Academic Jasmine$<BR>Really? <FONT color=#a82424>Borin</FONT> is a renowned blacksmith even at our headquarters, so he must have repaired it well. Now, shall we start with our plan?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n391_academic_station-4-b" image="" itemindex="">
+      <talk_answer link_index="n391_academic_station-4-!next" mid="49"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">92</exe>
+         <exe type="talk" npc="n016_trader_borin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2,3,4,5">224</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400300</exe>
+         <exe type="addquestitem" num="1">400300</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">920,,,,,,</exe>
+         <exe type="complete">92</exe>
+         <exe type="delquestitem" num="-1">400300</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="1" npc="n016_trader_borin" sub="c">0,1,6,7</exelink>
+   <exelink qstep="3" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="c" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="d" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="e" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="f" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="g" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n391_academic_station" sub="b">0</exelink>
+   <exelink qstep="4" npc="n391_academic_station" sub="!next">1,2</exelink>
+   <journal_data recompense="920" quest_title="도구를 재정비 합니다" chapterid="1" quest_level="2" quest_mark_type="1" use_item_list="400300">
+      <journal index="1">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Repairing the Equipment I]]></title>
+         <contents mid="52"><![CDATA[<html>Meet Blacksmith Borin and optimize the equipment.<BR>
+ <BR>
+<FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Blacksmith Borin</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Talk to Blacksmith Borin]]></destination>
+         <todo_msg mid="54"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_OrcBlue.dds</contents_image>
+         <destination_pos>83,0,0</destination_pos>
+         <destination_mode>custom:81@1,82@1,83@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Repairing the Equipment II]]></title>
+         <contents mid="56"><![CDATA[<html>Defeat the monster and collect a piece of the shield at Frost Wind Forest.<BR>
+ <BR>
+<FONT color=#086171>Frost Hill (Frost Wind Forest Entrance)</FONT> <FONT color=#a82424>→ Frost Wind Forest</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Frost Wind Forest]]></destination>
+         <todo_msg mid="58"><![CDATA[Collect a piece of the shield at Frost Wind Forest.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Repairing the Equipment III]]></title>
+         <contents mid="61"><![CDATA[<html>Got a piece of the shield. Return to Blacksmith Borin at Mana Ridge.<BR>
+ <BR>
+<FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Blacksmith Borin</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Talk to Blacksmith Borin]]></destination>
+         <todo_msg mid="63"><![CDATA[Collected a piece of the shield. Return to Blacksmith Borin.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>5,n391</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>391</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Repairing the Equipment IV]]></title>
+         <contents mid="65"><![CDATA[<html>Finished optimizing the equipment. Connect to the Academic Station and talk to Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="67"><![CDATA[Equipment repair is over. Move to the Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>91</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

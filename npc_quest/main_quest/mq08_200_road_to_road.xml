@@ -1,0 +1,558 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_200_road_to_road</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>200</qid>
+      <designer>김인정</designer>
+      <qlevel>22</qlevel>
+      <qdesc>정화장치 가동열쇠	300063
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9300</nextqid>
+      <nextqname>mq11_9300_arrive_sainthaven</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[이어지는 길]]></qkname>
+      <qnpc>
+         <npcid>1101</npcid>
+         <npcename>n1101_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>557</npcid>
+         <npcename>n557_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>558</npcid>
+         <npcename>n558_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="QS_Default.dds" itemindex="300064" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="149" select_type="3" />
+      <talk_question mid="131"><![CDATA[<html>$상급 소서리스 티아나$<BR>이게 순백의 오브로구나. 내 눈으로 이런 귀한 물건을 보게 될 날이 오다니, 감격스럽군.<BR>참으로 아름다워. 스승님께서도 살아 계셨다면 좋았을텐데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QP_puri_facility.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="1452" select_type="2" />
+      <talk_question mid="1439"><![CDATA[<html>$상급 소서리스 티아나$<BR>자, 캐더락 관문을 완전히 정화하기 위해 다음으로 해야 할 일에 대해서 말해볼까?<BR>이 문서에 따르면 <FONT color=#a82424>정화 장치</FONT>를 활성화 시키기 위해 필요한 나머지 물건은 <FONT color=#a82424>정화장치의 가동열쇠</FONT>야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="QM_Manticore.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-b" mid="1454" select_type="2" />
+      <talk_question mid="1453"><![CDATA[<html>$상급 소서리스 티아나$<BR>그 열쇠를 가진 것은 기도하는 자의 안식처의 <FONT color=#a82424>만티코어 크루루</FONT>.<BR>
+만티코어는 고대 문명과 마도학의 결합이 이루어낸 창조물이야.<BR>
+흔히 사자 머리와 양의 몸, 뱀의 꼬리 등을 혼합하여 만들어낸 키메라의 일종이랄까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-b" image="QM_Manticore.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-c" mid="1457" select_type="2" />
+      <talk_question mid="1456"><![CDATA[<html>$상급 소서리스 티아나$<BR><FONT color=#a82424>기도하는 자의 안식처</FONT>에 있는 만티코어 크루루는 보다 고차원적인 마수인 것 같은데.<BR>고대인들이 자신들의 유적을 지키는 수호자로까지 배치할 정도라면 만만하게 볼 상대가 아니란 것쯤은 짐작할 수 있지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-c" image="QW_26.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-" mid="1459" select_type="5" />
+      <talk_question mid="1458"><![CDATA[<html>$상급 소서리스 티아나$<BR>다른 모험자들은 이미 그쪽으로 떠났을 거야.<BR>너도 혹 마음의 준비가 되어 있다면, 그곳으로 가 보도록 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-1-" mid="1442" select_type="5" />
+      <talk_question mid="1441"><![CDATA[<html>$루나리아$<BR>바빠 보이네.<BR>흐음... 정말로 이곳을 구하고 싶은 거구나?<BR>네 마음대로 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-1-" mid="1444" select_type="5" />
+      <talk_question mid="1443"><![CDATA[<html>$아르젠타$<BR>처음엔 오우거가 부유장치를 삼켜버리질 않나, 엘레나가 독을 풀어 안개가 끼게 하질 않나.<BR>나의 발목을 잡는 방법도 여러가지군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Edan.dds" center_image="">
+      <talk_answer link_index="n557_edan-1-" mid="1446" select_type="5" />
+      <talk_question mid="1445"><![CDATA[<html>$클레릭 에단$<BR>하아... 안젤리카 양은 나쁜 사람은 아닙니다만 역시 좀 자유분방한 데가 있으셔서....<BR>
+곤란하네요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-1-" mid="1448" select_type="5" />
+      <talk_question mid="1447"><![CDATA[<html>$소서리스 안젤리카$<BR>응? 내가 평소엔 노는 것 같아도, 할 땐 한다구!<BR>
+난 진지한 사람이란 말야~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-1-" mid="1450" select_type="5" />
+      <talk_question mid="1449"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>정체모를 안개가 뿌옇게 끼어있으니...<BR>이 안개가 걷히지 않는다면, 멀쩡한 비행선이라도 출발 할 수 없네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QW_26.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_question mid="1460"><![CDATA[<html>$상급 소서리스 티아나$<BR><FONT color=#a82424>기도하는 자의 안식처</FONT>에서 만티코어 크루루를 쓰러트리고 가동 열쇠를 사용해 정화 장치를 작동시키시면, 캐더락에 퍼진 오염물질을 정화시킬 수 있을거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-3" image="QN_Npc_Angelica.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Edan.dds" center_image="">
+      <talk_answer link_index="n557_edan-3-" mid="1462" select_type="5" />
+      <talk_question mid="1461"><![CDATA[<html>$클레릭 에단$<BR>
+하아... 안젤리카 양은 나쁜 사람은 아닙니다만 역시 좀 자유분방한 데가 있으셔서...<BR>
+곤란하네요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3" image="QN_Npc_Edan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-3-a" mid="1464" select_type="2" />
+      <talk_question mid="1463"><![CDATA[<html>$소서리스 안젤리카$<BR>제법인데? 그동안 이것저것 도와줘서 고마워.<BR>다른 모험자들한테 네 얘기 많이 들었거든.<BR>
+저기 있는 에단 녀석이라든가 말이야~ 우후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-3-b" mid="1466" select_type="2" />
+      <talk_question mid="1465"><![CDATA[<html>$소서리스 안젤리카$<BR>으음~ 매번 달고 다닌다는 미인은 어디로 가셨나~?<BR><FONT color=#7e12d2>(안젤리카가 장난스럽게 웃으며 주위를 살핀다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-3-c" mid="1468" select_type="2" />
+      <talk_question mid="1467"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그보다 여기는 어쩐 일이십니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-c" image="QP_puri_facility.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-3-d" mid="1470" select_type="2" />
+      <talk_question mid="1469"><![CDATA[<html>$소서리스 안젤리카$<BR>응? 내가 평소엔 노는 것 같아도, 할 땐 한다구. 난 진지한 사람이란 말야~!!<BR>당연히 캐더락 관문을 위해서 정화장치를 가동시키러 왔지!! 참 내!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-3-e" mid="1472" select_type="2" />
+      <talk_question mid="1471"><![CDATA[<html>$소서리스 안젤리카$<BR>이 사람도 저 사람도 모두 내가 엄청 놀기만 하는 줄 아는 모양인데…<BR>이 안젤리카 님은 빚이 많아서 그렇지, 캐더락을 위해서 이런 일도 저런 일도~~~<BR><FONT color=#7e12d2>(안젤리카가 열변을 토한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-e" image="" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n558_angelica-3-f" mid="1474" select_type="2" />
+      <talk_question mid="1473"><![CDATA[<html>$클레릭 에단$<BR>안젤리카 양, 그만 진정하십시오.<BR><FONT color=#387206>{user_nick}</FONT> 님, 마침 잘 만났습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-f" image="QM_Ellena.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n558_angelica-3-g" mid="1476" select_type="2" />
+      <talk_question mid="1475"><![CDATA[<html>$클레릭 에단$<BR>다른 모험자 분들께 들었습니다만, 그동안 캐더락을 위해 많은 노력을 해 주신 것 같더군요.<BR>그리고 잘은 모르지만... <FONT color=#a82424>엘레나</FONT>에 대해 궁금해 하셨다고 들었는데요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-g" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n558_angelica-3-h" mid="1478" select_type="2" />
+      <talk_question mid="1477"><![CDATA[<html>$클레릭 에단$<BR>혹시 도움이 되실지 모르니 <FONT color=#a82424>아르젠타</FONT> 님을 만나 보시는 게 어떻겠습니까?<BR>그분이라면 혹 당신의 의문에 조금이나마 답을 해 주실 지도 모를 일이니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-h" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-3-i" mid="1480" select_type="2" />
+      <talk_question mid="1479"><![CDATA[<html>$소서리스 안젤리카$<BR>흥~ <FONT color=#a82424>아르젠타 </FONT>님께 갔다간, 저 사람도 그냥 노예 신세나 될 게 뻔하다고. 아님 벌써 노예 신세이려나?<BR>
+아무튼~ 사람을 만티코어 아가리로 밀어 넣어도 유분수지.<BR>
+에단, 너무하는 거 아냐?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-i" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n558_angelica-3-j" mid="1482" select_type="2" />
+      <talk_question mid="1481"><![CDATA[<html>$클레릭 에단$<BR><FONT color=#a82424>아르젠타</FONT> 님은 그런 분이 아닙니다.<BR>그리고 그 노예도 말이 그렇다 뿐이지... 음... 저희를 수행 시키기 위한...... 음......<BR><FONT color=#7e12d2>(에단이 쩔쩔 매기 시작했다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-j" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="NPC_Left_Edan.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n558_angelica-3-k" mid="1484" select_type="2" />
+      <talk_question mid="1483"><![CDATA[<html>$클레릭 에단$<BR>어... 어쨌거나 아르젠타 님은 잿빛 폐허에서 부상을 치료하고 계십니다.<BR>만약 마음이 내키면 가 보십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3-k" image="QS_Default.dds" itemindex="300063" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-4" mid="1487" select_type="2" />
+      <talk_question mid="1486"><![CDATA[<html>$소서리스 안젤리카$<BR>그래그래~ 가 봐~<BR>정화장치 가동은 우리들이 할 테니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-4" image="QW_GrayRuin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n558_angelica-4-" mid="1489" select_type="5" />
+      <talk_question mid="1488"><![CDATA[<html>$소서리스 안젤리카$<BR>아르젠타 님은 예쁘장한 얼굴로 앉아선, 노예들을 손끝으로 부리고 계신 분이지~<BR>잿빛 폐허에서 당신도 잡아먹히지 않도록 조심하라고.<BR><FONT color=#7e12d2>(안젤리카가 깔깔 웃는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="1492" select_type="2" />
+      <talk_question mid="1491"><![CDATA[<html>$상급 소서리스 티아나$<BR>장하다 장해~ 만티코어를 물리치고 캐더락을 구했구나!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressTiana.dds" center_image="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-" mid="1494" select_type="5" />
+      <talk_question mid="1493"><![CDATA[<html>$상급 소서리스 티아나$<BR>이런 말은 낯간지럽지만... 좋아!! 어차피 기분이니, 오늘 하루쯤은 널 캐더락을 구한 영웅이라고 불러주지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-4" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-4-a" mid="1496" select_type="2" />
+      <talk_question mid="1495"><![CDATA[<html>$루나리아$<BR>아르젠타...?<BR>...잿빛 폐허로 그녀를 만나러 간다는 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-4-" mid="1498" select_type="5" />
+      <talk_question mid="1497"><![CDATA[<html>$루나리아$<BR>그건 네 자유야. 내게 일일이 설명할 필요는 없어.<BR>나는 너를 따를뿐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-a" mid="1500" select_type="2" />
+      <talk_question mid="1499"><![CDATA[<html>$아르젠타$<BR>아, 너로군? 요즘 모험자들이 떠들고 다니던 이상한 녀석.<BR><FONT color=#7e12d2>(아르젠타가 싱긋 웃는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-b" mid="1503" select_type="2" />
+      <talk_question mid="1502"><![CDATA[<html>$아르젠타$<BR>그간 너에 대해서 돌던 수상한 녀석이라는 소문답게 정말로......<BR>
+<FONT color=#7e12d2>(아르젠타가 아래 위로 {user_nick}의 모습을 훑어본다)</FONT><BR>...흐음, 평범한데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-c" mid="1505" select_type="0"><![CDATA[<html>(엘레나에 대해 묻는다)</html>]]></talk_answer>
+      <talk_answer link_index="n164_argenta_wounded-4-f" mid="1506" select_type="0"><![CDATA[<html>(사도에 대해 묻는다)</html>]]></talk_answer>
+      <talk_question mid="1504"><![CDATA[<html>$아르젠타$<BR>그보다 뭐 묻고 싶은 게 있는 얼굴인데, 빨리 묻도록 해.<BR>기분이 내키면 대답해 줄 테니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-c" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-d" mid="1508" select_type="2" />
+      <talk_question mid="1507"><![CDATA[<html>$아르젠타$<BR>엘레나하고는 수십 년 정도 묵은 악연이 있지.<BR>그 성가신 다크엘프는 옛날에도 내 뒤를 쫓아다니면서 방해를 해 댔거든.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-d" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-e" mid="1510" select_type="2" />
+      <talk_question mid="1509"><![CDATA[<html>$아르젠타$<BR>한 50년 전에도 그랬지만, 엘레나는 매번 남의 발목을 잡아 보려고 안간힘을 쓰더군.<BR>아무튼 참 지칠 줄 모른다니까.<BR>멍청이들이란 끈기 하나만 믿고 헛수고를 계속 하는 생물들이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-e" image="QM_HopGoblinGreen.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-g" mid="1512" select_type="2" />
+      <talk_question mid="1511"><![CDATA[<html>$아르젠타$<BR>전에도 그 큰 고블린들을 부려서 사고를 치려다 혼쭐이 난 적이 있는데도, 정신을 못 차렸던 모양이야.<BR>네 얘기를 듣자면 그 녀석에게도 배후란 게 있었던 모양이지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-g" mid="1514" select_type="2" />
+      <talk_question mid="1513"><![CDATA[<html>$아르젠타$<BR>사도? 흠, 그런 괴상한 이름은 들어본 적 없는데...?<BR><FONT color=#7e12d2>(아르젠타가 고개를 갸웃거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-g" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-h" mid="1516" select_type="2" />
+      <talk_question mid="1515"><![CDATA[<html>$아르젠타$<BR>엘레나가 <FONT color=#a82424>왕</FONT>이라고 부른 자가 있고 그 밑에 사역하는 것이 사도라면...<BR>그러면 간단하지. 엘레나와 그 무리들의<FONT color=#a82424> 배후의 누군가</FONT>겠지.<BR>그 <FONT color=#a82424>붉은 군대</FONT> 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-h" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-4-i" mid="1518" select_type="2" />
+      <talk_question mid="1517"><![CDATA[<html>$아르젠타$<BR>뭘 노리는 지는 모르겠지만 선지자를 목적으로 삼고 있다는 것만은 확실하고.<BR>이런 와중에 그 기분 나쁘게 시커먼 녀석이 <FONT color=#a82424>선지자</FONT>를 데려가 버렸으니, 좋든 싫든 뒤를 쫓아야만 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-i" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-5" mid="1520" select_type="2" />
+      <talk_question mid="1519"><![CDATA[<html>$아르젠타$<BR>사도인지 뭔지도 결국은 선지자를 쫓아서 오지 않겠어?<BR>너도 <FONT color=#a82424>세인트헤이븐</FONT>으로 가야겠군.<BR><FONT color=#7e12d2>(아르젠타가 가볍게 웃는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-5" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-5-a" mid="1522" select_type="2" />
+      <talk_question mid="1521"><![CDATA[<html>$아르젠타$<BR>슬슬 비행선인지 뭔지, 고쳐졌을 거 같으니 머뭇거리지 말고 비행선 엔지니어인가 하는 녀석이나 만나 봐.<BR>세인트헤이븐으로 간다면 너도 잠깐은 내 동행이 될 테니. 후후후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-5-a" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n164_argenta_wounded-5-" mid="1524" select_type="5" />
+      <talk_question mid="1523"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그 전에 수정 개울에서 루나리아를 만나야겠다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-a" mid="1527" select_type="2" />
+      <talk_question mid="1525"><![CDATA[<html>$루나리아$<BR>아르젠타를 만났어?<BR>흐음...<BR>
+사도가 뭔지는 그녀도 모르는 모양이구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-a" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-b" mid="1529" select_type="2" />
+      <talk_question mid="1528"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>선지자라는 그 여자애를 검은 옷을 입은 남자가 납치해 갔고, 아르젠타는 다른 모험자들과 함께 그 뒤를 쫓아</FONT> 세인트헤이븐으로 가려는 거지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-b" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-c" mid="1531" select_type="2" />
+      <talk_question mid="1530"><![CDATA[<html>$루나리아$<BR>이해했어.<BR>하지만 너는 왜 그곳으로 가는 거야?<BR>
+선지자를 구하고 싶어? 아니면 검은 옷을 입은 남자를 만나고 싶어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-c" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-d" mid="1533" select_type="2" />
+      <talk_question mid="1532"><![CDATA[<html>$루나리아$<BR>일루전은 미래의 너... 일 수도 있었고, 그가 사도의 일원이었다고 해도...<BR>그렇다고 해도, 나는 네가 사도에 대해 더 알아야 할 이유를 모르겠어. 이해할 수 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-d" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-e" mid="1535" select_type="2" />
+      <talk_question mid="1534"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>일루전에 대해 아는 것이 원래대로 돌아가기 위한 선결조건이라고 생각해.<BR>너도 돌려 보내야 하고 말이지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-f" mid="1537" select_type="2" />
+      <talk_question mid="1536"><![CDATA[<html>$루나리아$<BR>내게는 돌아갈 곳이 존재하지 않아.<BR>나는 그저 너를 따르고 있을뿐. 네가 가는 길에 같이 있을뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-f" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-g" mid="1539" select_type="2" />
+      <talk_question mid="1538"><![CDATA[<html>$루나리아$<BR>네 선택에 결코 반대는 하지 않아. 그러나 <FONT color=#387206>{user_nick}</FONT>, 나는 너를 이해할 수 없어.<BR><FONT color=#a82424>일루전에 대해서 알고 싶다</FONT>...?<BR>
+더 알아야 할 것이 무엇이 있지? 그걸 안다고 해서 네가 다시 돌아갈 수 있을까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-h" mid="1541" select_type="2" />
+      <talk_question mid="1540"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러면 내가 돌아가기 위해 뭘 해야 한다고 생각해?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-i" mid="1543" select_type="2" />
+      <talk_question mid="1542"><![CDATA[<html>$루나리아$<BR>
+......몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-j" mid="1545" select_type="0"><![CDATA[<html>너는 대체 누구야?</html>]]></talk_answer>
+      <talk_answer link_index="n1101_lunaria-5-j" mid="1546" select_type="0"><![CDATA[<html>너는 뭘 알고 있지?</html>]]></talk_answer>
+      <talk_question mid="1544"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>나도 네게 묻고 싶은 게 많아. 너무나도 많아.<BR>넌 아무 것도 내게 말해 주지 않지.<BR>루나리아 너는......</FONT><BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-k" mid="1548" select_type="0"><![CDATA[<html>그래, 그럴 줄 알았어.</html>]]></talk_answer>
+      <talk_answer link_index="n1101_lunaria-5-k" mid="1549" select_type="0"><![CDATA[<html>넌 내게 아무 것도 말할 수 없는 거야.</html>]]></talk_answer>
+      <talk_question mid="1547"><![CDATA[<html>$루나리아$<BR>......나는 루나리아.<BR>내가 알고 있는 것은...... 돌아갈 수 없다는 것뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-l" mid="1551" select_type="2" />
+      <talk_question mid="1550"><![CDATA[<html>$루나리아$<BR>.......<BR><FONT color=#7e12d2>(루나리아가 눈을 내리감았다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-l" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-m" mid="1554" select_type="2" />
+      <talk_question mid="1553"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>세인트헤이븐으로 가자. 루나리아.<BR>나는 눈 앞에 있는 단서를 계속 따라 가겠어.</FONT><BR>
+<FONT color=#662500>돌아갈 길을 발견할 때까지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-5-n" mid="1556" select_type="2" />
+      <talk_question mid="1555"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네가 아무 것도 말할 수 없다면, 언젠가 말해 줄 때까지 기다릴 거야.<BR>아니면 내게 무언가 말해 줄 사람을 찾겠어. 찾으러 갈 거야.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-5-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-6" mid="1558" select_type="2" />
+      <talk_question mid="1557"><![CDATA[<html>$루나리아$<BR>......<BR>네 뜻을 이해했어. <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1101_lunaria-6" image="QN_NPC_Engineer_Hubert.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1101_lunaria-6-" mid="1561" select_type="5" />
+      <talk_question mid="1560"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>비행선 엔지니어 휴버트</FONT>에게 가면 세인트헤이븐 행 비행선을 탈 수 있다고 했지?<BR>그곳으로 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="QW_CataractGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-6-a" mid="1564" select_type="2" />
+      <talk_question mid="1563"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>잘했네, 잘했어! 와하하하!<BR>자네 덕분에 캐더락이 무사해졌다고 다들 아주 칭찬이 자자하다네. 껄껄!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-a" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-6-b" mid="1566" select_type="2" />
+      <talk_question mid="1565"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>자아, 캐더락을 감싸고 있던 칙칙한 안개도 이미 걷히기 시작했네.<BR>이제 세인트헤이븐으로 출발할 수 있겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-b" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-6-c" mid="1568" select_type="2" />
+      <talk_question mid="1567"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>정예병사들도 부상에서 어느 정도 회복이 되어서, 이번에 비행선을 타고 세인트헤이븐으로 돌아갈 예정이라더군.<BR>비행선 추락과 <FONT color=#a82424>검은 기사</FONT>에 대해, 그리고 이 캐더락의 여러가지 일을 보고해야 한다던데....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-c" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-6-d" mid="1571" select_type="2" />
+      <talk_question mid="1570"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>다른 모험자 몇 사람도 그 보고 일 때문에 같이 세인트헤이븐으로 간다더군.<BR>아마 자네도 거기 같이 가는 모양이군 그래.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-6-e" mid="1573" select_type="2" />
+      <talk_question mid="1572"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(꼭 그런 건 아니지만.......)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-e" image="QN_Npc_Elite_Soilder.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-6-f" mid="1575" select_type="2" />
+      <talk_question mid="1574"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>비행선 추락으로 쓸만한 장교들이 전사해서 <FONT color=#a82424>정예병사 클림드</FONT>가 남은 병사를 이끌고 보고를 할 모양이더구만.<BR>세인트헤이븐에 내려서 정예병사 클림드와 이야기를 해 보게나. 핫핫.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-6-g" mid="1579" select_type="4" />
+      <talk_question mid="1578"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-6-!next" mid="1602" select_type="2" />
+      <talk_question mid="1601"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(정보를 얻는 데는 도움이 될 것 같군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">200</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">762</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200762</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300063</exe>
+         <exe type="addquestitem" num="1">300063</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300063</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2000,,,,,,,</exe>
+         <exe type="complete" true="">200</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c">0,1,2,3,4</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="" />
+   <exelink qstep="3" npc="n558_angelica" sub="b" />
+   <exelink qstep="3" npc="n558_angelica" sub="c" />
+   <exelink qstep="3" npc="n558_angelica" sub="d" />
+   <exelink qstep="3" npc="n558_angelica" sub="e" />
+   <exelink qstep="3" npc="n558_angelica" sub="f" />
+   <exelink qstep="3" npc="n558_angelica" sub="g" />
+   <exelink qstep="3" npc="n558_angelica" sub="h" />
+   <exelink qstep="3" npc="n558_angelica" sub="i" />
+   <exelink qstep="3" npc="n558_angelica" sub="j" />
+   <exelink qstep="3" npc="n558_angelica" sub="k" />
+   <exelink qstep="3" npc="n558_angelica" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="" />
+   <exelink qstep="4" npc="n1101_lunaria" sub="" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="g" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="g" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="h" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="i" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n164_argenta_wounded" sub="" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="b" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="c" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="d" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="e" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="f" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="g" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="h" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="i" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="j" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="j" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="k" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="k" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="l" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="m" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="n" />
+   <exelink qstep="5" npc="n1101_lunaria" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="c" />
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="d" />
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="e" />
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="f">0</exelink>
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="g">1</exelink>
+   <exelink qstep="6" npc="n099_engineer_hubert" sub="!next" />
+   <journal_data recompense="2000" quest_title="이어지는 길" chapterid="3" quest_level="22" quest_mark_type="1" use_item_list="300063">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1241"><![CDATA[이어지는 길I]]></title>
+         <contents mid="1242"><![CDATA[<html>상급 소서리스 티아나와 대화하자.<BR><BR><FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 상급 소서리스 티아나</FONT></html>]]></contents>
+         <destination mid="1243"><![CDATA[캐더락 관문의 상급 소서리스 티아나와 대화]]></destination>
+         <todo_msg mid="1244"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_26.dds</contents_image>
+         <destination_pos>264,0,0</destination_pos>
+         <destination_mode>custom:262@3,263@3,264@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1585"><![CDATA[이어지는 길II]]></title>
+         <contents mid="1586"><![CDATA[<html>정화장치의 가동열쇠는 기도하는 자의 안식처의 만티코어가 가지고 있다고 한다. 만티코어 크루루를 쓰러뜨리고 정화장치 가동열쇠를 얻어 정화장치를 가동시키자.<BR>
+ <BR>
+<FONT color=#086171>낙엽지는 호숫가(잊혀진 사원입구)</FONT> <FONT color=#a82424>- 기도하는 자의 안식처</FONT></html>]]></contents>
+         <destination mid="1587"><![CDATA[기도하는 자의 안식처]]></destination>
+         <todo_msg mid="1588"><![CDATA[기도하는 자의 안식처로 가서 정화장치를 가동시키세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_26.dds</contents_image>
+         <destination_pos>264,n558</destination_pos>
+         <destination_mode>custom:262@3,263@3,264@1</destination_mode>
+         <statemark_npcid>558</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1581"><![CDATA[이어지는 길III]]></title>
+         <contents mid="1582"><![CDATA[<html>만티코어를 쓰러뜨렸다. 소서리스 안젤리카와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>낙엽지는 호숫가(잊혀진 사원입구)</FONT> <FONT color=#a82424>- 기도하는 자의 안식처(소서리스 안젤리카</FONT></html>]]></contents>
+         <destination mid="1583"><![CDATA[기도하는 자의 안식처에서 소서리스 안젤리카와 대화]]></destination>
+         <todo_msg mid="1584"><![CDATA[소서리스 안젤리카와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1589"><![CDATA[이어지는 길IV]]></title>
+         <contents mid="1590"><![CDATA[<html>클레릭 에단이 아르젠타를 만나 보는 게 어떻냐고 권해 왔다.<BR>그녀가 엘레나에 대해 뭔가 알고 있을까?<BR>
+ <BR>
+<FONT color=#086171>잿빛 폐허</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="1591"><![CDATA[잿빛 폐허에서 아르젠타와 대화]]></destination>
+         <todo_msg mid="1592"><![CDATA[잿빛 폐허에서 아르젠타와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>4,n1101</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1101</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1593"><![CDATA[이어지는 길V]]></title>
+         <contents mid="1594"><![CDATA[<html>엘레나가 사도의 일원이고, 그 배후가 있다면. 그리고 일루전 역시 사도였던 거라면......<BR>
+도대체 그 사이에 무슨 일이 있었던 걸까?<BR>우선 수정 개울로 가서 루나리아에게 지금까지의 이야기를 전해 주자.<BR>
+ <BR>
+<FONT color=#086171>수정 개울</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="1595"><![CDATA[수정 개울에서 루나리아와 대화]]></destination>
+         <todo_msg mid="1596"><![CDATA[수정 개울에서 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1597"><![CDATA[이어지는 길VI]]></title>
+         <contents mid="1598"><![CDATA[<html>세인트헤이븐으로 가기 위해 비행선 엔지니어 휴버트를 만나야 한다.<BR>
+ <BR>
+<FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 비행선 엔지니어 휴버트</FONT></html>]]></contents>
+         <destination mid="1599"><![CDATA[캐더락 관문의 비행선 엔지니어 휴버트와 대화]]></destination>
+         <todo_msg mid="1600"><![CDATA[비행선 엔지니어 휴버트와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>199</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

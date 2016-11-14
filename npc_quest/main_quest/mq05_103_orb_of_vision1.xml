@@ -1,0 +1,290 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_103_orb_of_vision1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>103</qid>
+      <designer>곽노찬</designer>
+      <qlevel>3</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>104</nextqid>
+      <nextqname>mq05_104_orb_of_vision2</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[The Vision Orb I]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>160</npcid>
+         <npcename>n160_cleric_jake</npcename>
+         <npckname>클레릭 제이크(파렐리나의 안식처)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="116"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>We must check on the safety of the <FONT color=#a82424>Vision Orb</FONT>. If they get their hands on the orb as well, we may lose all of the relics from our progenitors... Go meet up with <FONT color=#a82424>Master Sorceress Cynthia</FONT> and ask her about the <FONT color=#a82424>Vision Orb</FONT>'s location.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="117"><![CDATA[<html>$Cleric Jake${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>? What are you doing here?<BR>It's dangerous here, you should leave.<BR>※ <FONT color=#7e12d2>Get the quest from Master Sorceress Cynthia</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-acceptted" mid="119"><![CDATA[<html>I have some questions about the Vision Orb</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>We must check on the safety of the <FONT color=#a82424>Vision Orb</FONT>. If they get their hands on the orb as well, we may lose all of the relics from our progenitors... Go meet up with <FONT color=#a82424>Master Sorceress Cynthia</FONT> and ask her about the <FONT color=#a82424>Vision Orb</FONT>'s location.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="8"><![CDATA[<html>I have some questions about the Vision Orb</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="12"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Why do you ask about the <FONT color=#a82424>Vision Orb</FONT>?<BR>Is it because you stupid clerics lost your <FONT color=#a82424>Sage's Staff</FONT> to the monsters?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="14"><![CDATA[<html>Where is the Vision Orb?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Tsk tsk... I knew the clerics were blockheads, but I didn't know that they had mastered their stupidity to such a perfection. Haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-d" mid="16"><![CDATA[<html>Dragon Followers are involved here.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR><FONT color=#a82424>Vision Orb</FONT> is being transported safely by the sorceresses so just concentrate on recovering the bloody <FONT color=#a82424>Sage's Staff</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-d" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-e" mid="18"><![CDATA[<html>I can help you.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Cynthia$<BR>...?! <FONT color=#a82424>Dragon Followers</FONT>...? My sorceresses may end up in danger if those traitors are involved...<BR>Sheesh... How troublesome. <FONT color=#a82424>Dragon Followers</FONT>…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-e" image="QW_8.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2" mid="20"><![CDATA[<html>I will set off once I report to Cleric Thomas.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Argh... I never thought I'd accept a cleric's assistance...<BR>I hope you live up to the name of the <FONT color=#a82424>Templar Knights</FONT>. The Vision Orb is at <FONT color=#a82424>Parelina's Resting Place</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Cleric Jake${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>? What are you doing here?<BR>It's dangerous here, you should leave.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QW_8.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Okay.<BR>Hurry before it's too late.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-a" mid="54"><![CDATA[<html>A troll? Is it a tough opponent?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR><FONT color=#a82424>Palerina's Resting Place</FONT>?<BR>Isn't that where the <FONT color=#a82424>Troll Jukuruku</FONT> lives?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2-a" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-b" mid="56"><![CDATA[<html>Evade to the side?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Cleric Thomas$<BR>You should be able to handle it just fine.<BR>However, take note when <FONT color=#a82424>Troll Jukuruku</FONT> rolls its body and rolls towards you. You have to evade to the side.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2-b" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-c" mid="58"><![CDATA[<html>I'll keep that in mind.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Yes. I guess you know how to <FONT color=#a82424>tumble</FONT> by double tapping a direction key or holding down [<FONT color=#a82424>Shift</FONT>] and a direction key at the same time.<BR>The moment it rolls its body, evade at the right time and attack him while he's not looking.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2-c" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-d" mid="113"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Cleric Thomas$<BR>Don't be lazy in learning skills if you want to live up to the name of the <FONT color=#a82424>Templar Knights</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2-d" image="QM_TrollBlue.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2-_skill_trade_1" mid="60"><![CDATA[<html>[Learn Skill]</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Cleric Thomas$<BR>Anyway, it's about time you learnt new skills. I'll help you to open the Skill Window. You can try learning <FONT color=#a82424>Charge Bolt</FONT>. It would help you in fighting <FONT color=#a82424>Troll Jukuruku</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3" image="QW_8.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-3-a" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Have you learnt any new skills? The skills you can learn now may be limited, but as you level up you'll able to learn more.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-3-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4" mid="115"><![CDATA[<html>Thank you for your guidance.</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Cleric Thomas$<BR>In addition, when you reach <FONT color=#a82424>Lv. 15</FONT>, you can learn more specialized skills through <FONT color=#a82424>Specialization</FONT>. It's a little too early to be talking about this, but with your capabilities, you will be an excellent Templar Knight in no time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-4" image="" itemindex="">
+      <talk_answer link_index="n160_cleric_jake-4-a" mid="28"><![CDATA[<html>Cleric Jake? What... What happened?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Cleric Jake${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>? What are you doing here?<BR>It's dangerous here, you should leave.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-4-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n160_cleric_jake-5" mid="70"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Cleric Jake$<BR>I came here while tracking the <FONT color=#a82424>Dragon Followers</FONT>.<BR>the sorceresses were already assaulted when I got here.<BR>What are you doing here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4" image="QW_8.dds" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Cleric Thomas$<BR>Make your way to <FONT color=#a82424>Parelina's Resting Place</FONT> quickly and retrieve the <FONT color=#a82424>Vision Orb</FONT>.<BR>If the Vision Orb's gone, the situation will get out of hand. We must get it back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-a" mid="73"><![CDATA[<html>The Vision Orb seems to be safe.</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Master Sorceress Cynthia$<BR>All my sorceresses were on the floor…? Despicable <FONT color=#a82424>Dragon Followers</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-b" mid="75"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>The key to the <FONT color=#a82424>Sealed Room</FONT> is with the sorceresses.<BR>Fortunately, it seems like the <FONT color=#a82424>Dragon Followers</FONT> have not found it yet...<BR>I wonder how long it would take until it gets discovered. Find the key from the sorceresses and recover the Vision Orb.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-!next" mid="77"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n160_cleric_jake-5" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>The <FONT color=#a82424>Vision Orb</FONT>? Does that mean that the other side of the door is the <FONT color=#a82424>Sealed Room</FONT> that stores the Vision Orb? Hmm... Since the door is undamaged the Vision Orb should still be safe... Hurry back to <FONT color=#a82424>Mana Ridge</HTML> and report to <FONT color=#a82424>Master Sorceress Cynthia</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">103</exe>
+         <exe type="custom">npc_talk_index = "n012_sorceress_master_cynthia-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>***파렐리나의 안식처 보스방 입장시 스텝,저널을 4/4으로 바꿈***</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">103</exe>
+         <exe type="recompense">1030,,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n012_sorceress_master_cynthia" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="2" npc="n013_cleric_tomas" sub="_skill_trade_1">0,1,2</exelink>
+   <exelink qstep="3" npc="n013_cleric_tomas" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n160_cleric_jake" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="b">1</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="!next">0</exelink>
+   <journal_data recompense="1030" quest_title="비전의 오브Ⅰ" chapterid="1" quest_level="3" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <destination_pos>5,-456,4330</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Talk to Master Sorceress Cynthia]]></title>
+         <contents mid="38"><![CDATA[<html>Ask <FONT color=#a82424>Master Sorceress Cynthia</FONT> about the <FONT color=#a82424>Vision Orb</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Talk to Cleric Thomas]]></title>
+         <contents mid="42"><![CDATA[<html>The <FONT color=#a82424>Vision Orb</FONT>is inside <FONT color=#a82424>Parelina's Resting Place</FONT>. After reporting to <FONT color=#a82424>Cleric Thomas</FONT>, head to <FONT color=#a82424>Parelina's Resting Place</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Cleric Thomas</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk to Cleric Thomas]]></destination>
+         <todo_msg mid="44"><![CDATA[Talk to Cleric Thomas.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_8.dds</contents_image>
+         <destination_pos>88,0,0</destination_pos>
+         <destination_mode>custom:86@1,87@1,88@4</destination_mode>
+         <statemark_npcid>160</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Check the safety of the Vision Orb at Parelina's Resting Place]]></title>
+         <contents mid="46"><![CDATA[<html>Cynthia said that the <FONT color=#a82424>Vision Orb</FONT> was being transported from <FONT color=#a82424>Parelina's Resting Place</FONT> to <FONT color=#a82424>Mana Ridge</FONT>.<BR>Go to <FONT color=#a82424>Parelina's Resting Place</FONT> to check on the <FONT color=#a82424>Vision Orb</FONT>.<BR><BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Parelina's Resting Place</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Confirm the safety of the Vision Orb at Blizzard Plain, Parelina's Resting Place]]></destination>
+         <todo_msg mid="48"><![CDATA[Please go to Parelina's Resting Place and confirm the safety of the Vision Orb.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Jake.dds</contents_image>
+         <destination_pos>88,-90,80</destination_pos>
+         <destination_mode>custom:86@1,87@1,88@1</destination_mode>
+         <statemark_npcid>160</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Talk to Cleric Jake at Parelina's Resting Place]]></title>
+         <contents mid="50"><![CDATA[<html>the sorceresses who were heading towards <FONT color=#a82424>Parelina's Resting Place</FONT> to transport the <FONT color=#a82424>Vision Orb</FONT> had all been attacked while <FONT color=#a82424>Cleric Jake</FONT> was found nearby investigating the area.<BR>Talk to <FONT color=#a82424>Cleric Jake</FONT>.<BR><BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Parelina's Resting Place (Cleric Jake)</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk to Cleric Jake at Parelina's Resting Place]]></destination>
+         <todo_msg mid="52"><![CDATA[Talk to Cleric Jake at Parelina's Resting Place.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <destination_pos>5,-456,4330</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Talk to Master Sorceress Cynthia]]></title>
+         <contents mid="83"><![CDATA[<html>Return to <FONT color=#a82424>Mana Ridge</FONT> and report what happened at <FONT color=#a82424>Parelina's Resting Place</FONT> to <FONT color=#a82424>Master Sorceress Cynthia</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="85"><![CDATA[Please return to Mana Ridge and meet Master Sorceress Cynthia.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>102</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

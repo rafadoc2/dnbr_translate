@@ -1,0 +1,251 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_135_comeback1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>135</qid>
+      <designer>곽노찬</designer>
+      <qlevel>1</qlevel>
+      <qdesc>오랜 만에 마나리지로 돌아온 소서리스. 우연히 습격당한 마차를 구한다. 스승 신시아는 방탕한 소서리스에게 근신을 명하고 소서리스는 심심풀이로 세드릭의 부탁을 들어준다. 빼앗긴 상자를 되찾아 오지만 상자는 비어있고 허탕을 친다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>136</nextqid>
+      <nextqname>mq05_136_comeback2</nextqname>
+      <nextqnpc>n015_sorceress_tara</nextqnpc>
+      <qkname mid="1"><![CDATA[The Prodigal Returns]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-noquest" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>Are you lost?<BR>Is this your first time in this town? I think you should go and meet <FONT color=#a82424>Cynthia</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-accepting" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-accepting-acceptted" mid="125"><![CDATA[<html>Master...it's been a long while.</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Oh, look who's here?<BR>Could this really be my long-lost disciple?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-a" mid="7"><![CDATA[<html>Master...it's been a long while.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Oh, look who's here?<BR>Could this really be my long-lost disciple?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-b" mid="9"><![CDATA[<html> Hehehe… </html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Sorceress Cynthia$<BR>I recall sending one of my disciples on an errand. A disciple who looks just like YOU! It was just ONE SIMPLE TASK, which till this day remains uncompleted. That was over FIVE YEARS AGO. ARE YOU THAT DISCIPLE? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Are you laughing now? Is this all a big JOKE to you?<BR>You ignored your duties as a sorceress, and instead spent all that time on gambling all your gold away. What's more, you didn't come back here because you repented, but to run away from the people trying to collect the debts you owe! I'm utterly disappointed in you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-c" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Sorceress Cynthia$<BR>I shouldn't have given you so much attention. I thought that under my guidance you would mature, and we could focus on your gifted talents as a sorceress. To think that I even considered you as a successor to <FONT color=#a82424>Master Karacule</FONT>! How wrong I was!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-e" mid="15"><![CDATA[<html>Yes? But I just returned. Would you mind if I take a break?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Now you come crawling back to this place. Such insolence. Ugh, enough playing around. It appears that the blasted clerics have lost something important. Prove yourself to be not completely useless. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-e" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-1-f" mid="148"><![CDATA[<html>Going right away!</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Aww… You must be tired after your long journey.<BR>Well wait ... let me help you <FONT color=#a82424>rest in peace</FONT>.<BR><FONT color=#7e12d2>(Cynthia pulls out her staff.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1-f" image="QN_SoceressTara.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2" mid="135"><![CDATA[<html>Yes! I'm going!</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Listen to <FONT color=#a82424>Sorceress Tara</FONT> for details.<BR>And remember, this is your final chance. DO NOT fail me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>Are you lost?<BR>Is this your first time in this town? I think you should go and meet <FONT color=#a82424>Cynthia</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="QN_SoceressTara.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-b" mid="136"><![CDATA[<html>Master, I need some adaptation training.</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-a" mid="137"><![CDATA[<html>Fine, I'm going!</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Why have you not gone to <FONT color=#a82424>Sorceress Tara</FONT> yet?<BR>You got something to say?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-f" mid="149"><![CDATA[<html>(Hmm, at least you could spare me a little money ...)</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Master Sorceress Cynthia$<BR>If you need a training, come to me to take the <FONT color=#a82424>Tutorial</FONT> about basic controls.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-party" mid="140"><![CDATA[<html>Yeah, that sounds pretty good.</html>]]></talk_answer>
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-c" mid="141"><![CDATA[<html>I was trying to be nice...for once!</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Trying to be hardworking? YOU? Yeah, right!<BR>Anyway, the <FONT color=#a82424>Tutorial</FONT> teaches you all the basics you need to know. Do you want to take it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-f" mid="150"><![CDATA[<html>Yes, Master!</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$Master Sorceress Cynthia$<BR>It seems that you haven't improved at all, even after five years. Should you want to take it later, come back and beg for it.<BR>(Select <FONT color=#a82424>Receive Tutorial</FONT>.)<BR>Is that clear?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-d" image="" itemindex="">
+      <talk_question mid="143"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Hey! You think this is a free public workshop?<BR>Leave your friends at home if you want to learn!<BR>
+ <BR>
+※ <FONT color=#7e12d2>You cannot proceed in a party.</FONT></html></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-move" mid="145"><![CDATA[<html>(Proceed)</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Okay, pay attention and take notes.<BR>If you lose your focus, beware of the consequences.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-f" image="" itemindex="">
+      <talk_question mid="151"><![CDATA[<html><FONT color=#7e12d2>(</FONT>Press <FONT color=#387206>[H]</FONT><FONT color=#7e12d2> to display the control guide window.</FONT><BR><Press <FONT color=#387206>[Ctrl]</FONT><FONT color=#7e12d2> to display the mouse pointer.</FONT><BR><FONT color=#7e12d2>Press it again to hide the pointer.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-a" mid="19"><![CDATA[<html>Tara, it's me!</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>Are you lost?<BR>Do you need any help?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-b" mid="21"><![CDATA[<html>Heh... It's been a long time since we last met.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Sorceress Tara$<BR>Oh... <FONT color=#387206>{user_nick}</FONT>?!<BR>Is it really you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-b" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-c" mid="23"><![CDATA[<html>Yeah ... Well actually...</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Sorceress Tara$<BR>What in the world have you been doing! What happened? Where were you? Did you go to see Master <FONT color=#a82424>Karacule</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-c" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-d" mid="25"><![CDATA[<html>You make it sound so terrible...</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Sorceress Tara$<BR>What!? You didn't go to <FONT color=#a82424>Master Karacule</FONT>? You gambled all your gold away?? You've accumulated<FONT color=#a82424> millions of gold</FONT> in debt at the Saint Haven gambling hall???</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-d" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-e" mid="27"><![CDATA[<html>I think I got a reminder...</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Sorceress Tara$<BR>Have you lost your mind? What is wrong with you? How enraged Master <FONT color=#a82424>Cynthia</FONT> must be! Have you forgotten how scary she is?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-e" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-f" mid="134"><![CDATA[<html>Okay!</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$Sorceress Tara$<BR>Master Cynthia might cool down if you perform this task well. At least a little, I guess. So please remain focused and show her that you can do a good job!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-g" mid="29"><![CDATA[<html>Sage's prophecy?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Sorceress Tara$<BR>Apparently, the object that the clerics were transporting was something related to the <FONT color=#a82424>Sage's prophecy</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-h" mid="117"><![CDATA[<html>(Was there a prophecy like that...?)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Sorceress Tara$<BR>Did you gamble so much that you have forgotten already? It's the great Sage's final prophecy. The one about a <FONT color=#a82424>great catastrophe</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-i" mid="130"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Sorceress Tara$<BR>Your task at hand is to identify what the clerics lost, and figure out how we can help them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-i" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-j" mid="132"><![CDATA[<html>Yes, thanks.</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Sorceress Tara$<BR>Take this. You will need it for your adventure in future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-2-j" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-2-!next" mid="120"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">135</exe>
+         <exe type="custom">npc_talk_index = "n012_sorceress_master_cynthia-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">1350,,,,,,</exe>
+         <exe type="complete">135</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">e</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">d</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13511,1);</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n012_sorceress_master_cynthia" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="1" npc="n012_sorceress_master_cynthia" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="party">2</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="move">5</exelink>
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="d" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="e" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="f" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="g" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="h" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="i" />
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="j">0</exelink>
+   <exelink qstep="2" npc="n015_sorceress_tara" sub="!next">1</exelink>
+   <journal_data recompense="0:1350" quest_title="돌아온 말썽꾼 Ⅰ" chapterid="1" quest_level="1" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[Report to Master Sorceress Cynthia]]></title>
+         <contents mid="81"><![CDATA[<html>Talk to Master Sorceress Cynthia.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[Report to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="83"><![CDATA[Talk to Sorceress Cynthia.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Talk to Sorceress Tara]]></title>
+         <contents mid="85"><![CDATA[<html>A long time has passed since you left Mana Ridge and it seems like something happened while you were gone. Meet your junior Tara and talk to her.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Sorceress Tara</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Talk to Sorceress Tara]]></destination>
+         <todo_msg mid="87"><![CDATA[Talk to Sorceress Tara]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest>124</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>
