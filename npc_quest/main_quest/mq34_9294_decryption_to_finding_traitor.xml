@@ -1,0 +1,302 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9294_decryption_to_finding_traitor</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9294</qid>
+      <designer>강지영</designer>
+      <qlevel>67</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9295</nextqid>
+      <nextqname>mq34_9295_imperfect_information</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[암호 해독]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타$<BR>그럴지도 모르지. 하지만 읽을 수가 없잖아?<BR>이건 고대어도 아니고. 처음 보는 문자인걸?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-1-" mid="8" select_type="5" />
+      <talk_question mid="7"><![CDATA[<html>$문장학자 스타쉬$<BR><FONT color=#a82424>아누 아렌델</FONT>에 갔다고 들었네만, 그곳에서의 볼일은 끝난겐가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-a" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$아르젠타$<BR>네가 가져온 편지니, 알아서 해석해 와.<BR>도서관에 가든 물을 뿌리든, 어딘가는 해독할 방법이 있지 않겠어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-b" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그냥 문장학자에게 가져가 볼까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="14" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>$아르젠타$<BR><FONT color=#a82424>문장학자</FONT><FONT color=#2b2723>?</FONT> 그래, 그럼 알아서 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$아르젠타$<BR><FONT color=#a82424>세인트헤이븐의 문장학자</FONT>한테 간다며?<BR>뭐, 누구한테 가도 상관 없지만 이 편지 해독해 와. 알았지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>$문장학자 스타쉬$<BR>이건 글씨라고 볼 수 없겠군. 그림이라고 하기엔 너무 규칙적이고....<BR>아무래도 이건 암호인 것 같네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>역시 암호군요! 해독할 수 있으세요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$문장학자 스타쉬$<BR>이런 패턴의 암호라면... 분명 어딘가... 흔적이...<BR><FONT color=#7e12d2>(스타쉬가 편지를 높이 들어 이리저리 비추어 본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-d" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>뭔가 해독할 방법이 있는 건가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-e" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$문장학자 스타쉬$<BR>이건 특별한 잉크를 부분적으로 사용한 암호라네. <BR>시간이 지나면 투명해져 흔적이 남지 않는 기름으로 만들어진 잉크지.<BR>이런 암호를 사용하는 건 정말 오랜만에 보는군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-f" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$문장학자 스타쉬$<BR>하지만 아주 오래된 암호인 만큼 해독 방법도 잘 알려져 있네.<BR>간단한 재료만 있으면 되지만, 재료를 구하러 사막에 좀 다녀와야 할 듯 하군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-g" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그런 거라면 맡겨주세요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-g" image="QS_Default.dds" itemindex="400397" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-" mid="32" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>$문장학자 스타쉬$<BR>허허허, 역시 젊은 사람들은 힘이 넘치는군.<BR>그럼 <FONT color=#a82424>모래먼지 바다</FONT>에서 사막 식물의 즙을 하나만 구해 오게나. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QW_76.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-3-" mid="34" select_type="5" />
+      <talk_question mid="33"><![CDATA[<html>$문장학자 스타쉬$<BR>허허허, 역시 젊은 사람들은 힘이 넘치는군.<BR>그럼 <FONT color=#a82424>모래먼지 바다</FONT>에서 사막 식물의 즙을 하나만 구해 오게나. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>$문장학자 스타쉬$<BR>이게 보통은 보기 힘든 광경이지. 마법처럼 이렇게~ <BR><FONT color=#7e12d2>(스타쉬가 액채를 뿌리자 편지에 얼룩이 생기기 시작한다)<BR></FONT>보게나. 이제 알아볼 수 있는 글씨가 되었지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="38" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아직도 모르겠는데요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>$문장학자 스타쉬$<BR>저런, 엘프어를 읽지 못하나 보군.<BR>요즘 엘프어와 고블린어 쯤은 교양이고 상식인데 말이야. 공부는 원래 젊을 때 하는 것 아닌가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그냥 해석해서 주세요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-e" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$문장학자 스타쉬$<BR>알았네. 뭐, 내용이 많진 않군. 어떤 일정에 대한 정보인 것 같은데...<BR>출발 시간, 장소 뭐 이런 게 적혀 있고. 그래 이건 확실하군. 쥬벤.. 아니지, <FONT color=#a82424>유벤시엘이라는 자가 보낸 편지</FONT>일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-" mid="46" select_type="5" />
+      <talk_question mid="45"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>유벤시엘이요?<BR>그랬군요. 고마워요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-" mid="48" select_type="5" />
+      <talk_question mid="47"><![CDATA[<html>$문장학자 스타쉬$<BR>근데 그 편지는 뭔가?? 응? <FONT color=#a82424>아누 아렌델</FONT>에 급하게 돌아가야 한다고??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-a" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$아르젠타$<BR><FONT color=#a82424>유벤시엘</FONT>이 보낸 거라고? <BR>유벤시엘은 사도 중 하나였으니 뭐, 새삼 놀랍지도 않지. <BR><FONT color=#7e12d2>(아르젠타가 편지를 훑어본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-b" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9295_02.ogg}<BR>이건... 숲의 근원이 있는 위치와 여왕 후보들이 움직이는 시간이로구나.<BR>유벤시엘이 로잘린데에게 콘클라베의 정보를 빼돌리고 있었어. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-!next" mid="54" select_type="4" />
+      <talk_question mid="53"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9294</exe>
+         <exe type="talk" npc="n1047_argenta">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="1" exe="6,7,8" onexe="">400397</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">601011</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">701011</exe>
+         <exe type="addquestitem" num="1">400397</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92941,92941,,92943,92944,92945,92946,92947</exe>
+         <exe type="complete" true="">9294</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="b">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="g">0,1,2,3,4</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="e">0,1</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="" />
+   <exelink qstep="5" npc="n1047_argenta" sub="b">0</exelink>
+   <exelink qstep="5" npc="n1047_argenta" sub="!next">1</exelink>
+   <journal_data recompense="1:92941,3:92943,4:92944,5:92945,6:92946,7:92947" quest_title="암호 해독" chapterid="12" quest_level="67" quest_mark_type="1" use_item_list="400397,400321">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[암호 해독 I]]></title>
+         <contents mid="56"><![CDATA[<html>로잘린데가 떨어뜨린 편지는 알아볼 수 없는 문자들이 적혀 있다.<BR>어떻게 해야 할지 아르젠타와 대화 해보자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="58"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n088</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[암호 해독 II]]></title>
+         <contents mid="60"><![CDATA[<html>편지의 문자를 해석하기 위해 문장학자를 찾아가기로 했다. 그를 만나 편지를 보여주자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 문장학자 스타쉬</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[세인트헤이븐의 문장학자 스타쉬와 대화]]></destination>
+         <todo_msg mid="62"><![CDATA[세인트헤이븐의 문장학자를 찾아 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_76.dds</contents_image>
+         <destination_pos>761,0,0</destination_pos>
+         <destination_mode>custom:761@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[암호 해독 III]]></title>
+         <contents mid="64"><![CDATA[<html>스타쉬는 편지의 암호를 해독하기 위한 재료를 구해야 한다고 알려줬다.<BR>모래먼지 바다에서 칵퉤꽃을 사냥하고 재료를 구하자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 모래먼지 바다</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[모래먼지 바다에서 사막 칵퉤꽃의 즙 획득]]></destination>
+         <todo_msg mid="66"><![CDATA[모래먼지 바다에서 칵퉤꽃을 사냥하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n088</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[암호 해독 IV]]></title>
+         <contents mid="68"><![CDATA[<html>편지의 암호를 해독하기 위한 재료를 구했다.<BR>세인트헤이븐의 문장학자 스타쉬에게 가져가자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 문장학자 스타쉬</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[세인트헤이븐의 문장학자 스타쉬와 대화]]></destination>
+         <todo_msg mid="70"><![CDATA[세인트헤이븐의 문장학자에게 돌아가세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[암호 해독 V]]></title>
+         <contents mid="72"><![CDATA[<html>로잘린데에게 편지를 보낸 자는 유벤시엘이었다. <BR>아누 아렌델로 돌아가 아르젠타에게 이 내용을 전달하자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="74"><![CDATA[아누 아렌델 관문으로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9293</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

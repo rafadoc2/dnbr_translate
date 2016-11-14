@@ -1,0 +1,265 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9296_division_foe</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9296</qid>
+      <designer>강지영</designer>
+      <qlevel>69</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9297</nextqid>
+      <nextqname>mq34_9297_crisis_visited_the_queen</nextqname>
+      <nextqnpc>n1067_elder_elf</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[분열된 적]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1065</npcid>
+         <npcename>n1065_geraint_kid</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>1067</npcid>
+         <npcename>n1067_elder_elf</npcename>
+         <npckname>엘프 장로</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1089</npcid>
+         <npcename>n1089_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9295_05.ogg}<BR>유벤시엘이 엘프도 사도도 다 배신해가면서 해야 하는 일이 뭘까? 신경이 쓰이는군.<BR>뭐, 로잘린데와 페더가 만나는 곳을 알았으니 다행이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-" mid="8" select_type="5" />
+      <talk_question mid="7"><![CDATA[<html>$제레인트$<BR>그렇군. 기분 나쁜 느낌이 들어.<BR><FONT color=#7e12d2>(제레인트가 잔뜩 인상을 쓰고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1089_argenta-1" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1089_argenta-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$아르젠타$<BR>여기 오래 있을 순 없겠군. <FONT color=#a82424>아누 아렌델 관문</FONT>으로 돌아가야겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$엘프 장로$<BR>콘클라베를 중단한 것이 옳은 결정인지...저 역시 확신할 수가 없군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="QW_79.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-a" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$아르젠타$<BR><FONT color=#a82424>청동 그믐달 숲길</FONT>이라... 그자의 말을 믿을 수 없긴 하지만, 대충 저쪽이겠지?<BR><FONT color=#7e12d2>(아르젠타가 서쪽 하늘을 바라보며 말한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-a" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-b" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$제레인트${sound:npc_AN_Gereint Young_qu_9296_01.ogg}<BR>아마 그렇겠지. 마침 케이어스의 불쾌한 기운이 가까워지는 느낌이 들거든.<BR><FONT color=#7e12d2>(제레인트가 하늘을 노려보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-b" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-c" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>케이어스 드래곤들이 어지간히도 싫으신가 봐요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-c" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-d" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$제레인트$<BR>너희같은 좋고 싫고의 감정이 아니다.<BR>나는 그들을 이 세계에서 사라지게 하기 위해 태어났으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-d" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-e" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$제레인트$<BR>마침 콘클라베도 중단되었다고 했던가? 이제야 좀 돌아다닐 수 있겠군.<BR>아르젠타. 넌 여기 있을 거지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-f" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9296_01.ogg}<BR>아니, 같이 가. 레드 드래곤을 잡을 절호의 기회잖아?<BR>잠깐 동안 이곳을 지키는 정도는 엘프들도 할 수 있겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="26" select_type="5" />
+      <talk_question mid="25"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(내 의견은 이제 묻지도 않는구나. 일단 따라가자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-g" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="66" select_type="5" />
+      <talk_question mid="64"><![CDATA[<html>$제레인트$<BR>잘 모르겠어. 기분 나쁜 느낌이 들지만 아직 멀어.<BR><FONT color=#7e12d2>(제레인트가 유벤시엘의 정보를 믿지 않습니다.</FONT><BR><FONT color=#7e12d2>69Lv 이후에 이어서 진행할 수 있습니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="QW_79.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-" mid="29" select_type="5" />
+      <talk_question mid="28"><![CDATA[<html>$아르젠타$<BR>뭐해? 넌 안갈꺼야?<BR><FONT color=#7e12d2>(청동 그믐달 숲길로 향하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-2" image="QW_79.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-2-" mid="31" select_type="5" />
+      <talk_question mid="30"><![CDATA[<html>$제레인트$<BR>귀찮은 혹이 생겼군. 따라와라.<BR><FONT color=#7e12d2>(제레인트와 함께 청동 그믐달 숲길로 향하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1089_argenta-3" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1089_argenta-3-a" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9296_02.ogg}<BR>네 녀석이 꾸물대서 따라갈 수가 없잖아. 느려터져서는!<BR>이제부턴 우리 둘이 간다. 너는 <FONT color=#a82424>생명의 나무</FONT>로 돌아가 생명의 나무를 지키고 있어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1089_argenta-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1089_argenta-3-b" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저도 같이 가겠어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1089_argenta-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1089_argenta-3-" mid="37" select_type="5" />
+      <talk_question mid="36"><![CDATA[<html>$아르젠타$<BR>방.해.돼.<BR><FONT color=#7e12d2>(아르젠타와 제레인트가 사막을 향해 빠르게 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1089_argenta-4" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1089_argenta-4-" mid="39" select_type="5" />
+      <talk_question mid="38"><![CDATA[<html>$아르젠타$<BR>넌 <FONT color=#a82424>생명의 나무</FONT>로 돌아가. 방해되니까.<BR><FONT color=#7e12d2>(아르젠타와 제레인트가 사막을 향해 빠르게 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-4-a" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9280_01.ogg}<BR>나는 장로로서 여왕 후보를 지키는 것도, 생명의 나무를 지키는 것도 할 수 없단 말인가….<BR><FONT color=#7e12d2>(엘프 장로가 어두운 표정으로 한탄하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-4-b" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어떻게 된 건가요? 생명의 나무는...?? </FONT><FONT color=#662500>경비병들은 다 어딜 간 거죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-4-c" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>$엘프 장로$<BR>조금 전 마물들이 여길 습격했습니다. 이곳을 지키던 드래곤이 사라진 틈을 노린 것이지요.<BR>생명의 나무로 향하는 것은 어찌 막을 수 있었지만 이렇게 많은 이들이 당했군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-4-!next" mid="47" select_type="4" />
+      <talk_question mid="46"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9296</exe>
+         <exe type="talk" npc="n1047_argenta">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">69</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n1047_argenta">a</exe>
+         <exe type="talk" npc="n1047_argenta">g</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92961,92961,,92963,92964,92965,92966,92967</exe>
+         <exe type="complete" true="">9296</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="b" />
+   <exelink qstep="1" npc="n1047_argenta" sub="c" />
+   <exelink qstep="1" npc="n1047_argenta" sub="d" />
+   <exelink qstep="1" npc="n1047_argenta" sub="e" />
+   <exelink qstep="1" npc="n1047_argenta" sub="f">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="3" npc="n1089_argenta" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n1089_argenta" sub="" />
+   <exelink qstep="4" npc="n1067_elder_elf" sub="b" />
+   <exelink qstep="4" npc="n1067_elder_elf" sub="c">0</exelink>
+   <exelink qstep="4" npc="n1067_elder_elf" sub="!next">1</exelink>
+   <journal_data recompense="1:92961,3:92963,4:92964,5:92965,6:92966,7:92967" quest_title="분열된 적" chapterid="12" quest_level="69" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[분열된 적 I]]></title>
+         <contents mid="49"><![CDATA[<html>로잘린데와 페더가 만나는 장소를 알아냈다. 아르젠타와 이야기를 더 나눠 보자.<BR>
+ <BR>
+<FONT color=#7e12d2>※ 69Lv 이상이 되어야 다음으로 진행할 수 있습니다.</FONT><BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="51"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_79.dds</contents_image>
+         <destination_pos>791,0,0</destination_pos>
+         <destination_mode>custom:791@4,792@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[분열된 적 II]]></title>
+         <contents mid="53"><![CDATA[<html>로잘린데와 페더를 쫓아 가기로 했다.<BR>아르젠타, 제레인트와 함께 청동 그믐달 숲길로 향하자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 청동 그믐달 숲길</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[청동 그믐달 숲길 탐색]]></destination>
+         <todo_msg mid="55"><![CDATA[아르젠타와 제레인트를 쫓아 청동 그믐달 숲길로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_79.dds</contents_image>
+         <destination_pos>791,n1089</destination_pos>
+         <destination_mode>custom:791@1</destination_mode>
+         <statemark_npcid>1089</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[분열된 적 III]]></title>
+         <contents mid="57"><![CDATA[<html>이미 페더는 청동 그믐달 숲길을 떠난 것 같다. 아르젠타와 이야기 해 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 청동 그믐달 숲길(아르젠타)</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[아누 아렌델 관문의 아르젠타 추적]]></destination>
+         <todo_msg mid="59"><![CDATA[청동 그믐달 숲길에서 아르젠타를 계속 쫓으세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_AnuarendelGateway.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[분열된 적 IV]]></title>
+         <contents mid="61"><![CDATA[<html>아르젠타와 제레인트는 레드 드래곤 페더를 쫓아간다고 한다.<BR>아르젠타 대신 생명의 나무로 돌아가 엘프의 여왕을 지키자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 생명의 나무 앞</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[아누 아렌델 귀환]]></destination>
+         <todo_msg mid="63"><![CDATA[아누 아렌델 관문으로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9295</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,437 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9298_the_power_of_the_prophet</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9298</qid>
+      <designer>강지영</designer>
+      <qlevel>69</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[선지자의 힘으로]]></qkname>
+      <qnpc>
+         <npcid>1067</npcid>
+         <npcename>n1067_elder_elf</npcename>
+         <npckname>엘프 장로</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1090</npcid>
+         <npcename>n1090_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1133</npcid>
+         <npcename>n1133_rojalin</npcename>
+         <npckname>로잘린데</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1134</npcid>
+         <npcename>n1034_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-accepting" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-accepting-!next" mid="7" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9280_04.ogg}<BR><FONT color=#387206>유벤시엘</FONT>이 이미... 여왕의 옥좌로 들어가 버렸습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1133_rojalin-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1133_rojalin-1-" mid="10" select_type="5" />
+      <talk_question mid="8"><![CDATA[<html>$로잘린데$<BR>아하하하하! <FONT color=#a82424>페더</FONT>님이 말씀하신 대로. 모든 것을 이루게 되는군!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-1" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$트리아나$<BR>유벤시엘님을... 막아야 해요.<BR><FONT color=#7e12d2>(트리아나가 슬퍼 보이는 표정을 짓고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-party_check" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$엘프 장로$<BR>유벤시엘이 여왕을, 생명의 나무를 해치려는 것인지 모릅니다.<BR>트리아나가 쫓아갔지만 막을 수 있을지....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$엘프 장로$<BR><FONT color=#387206>{user_nick}</FONT>님도 서둘러 주십시오.<BR>그자를 막아야 합니다. 엘프의 미래가....으윽..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-" mid="18" select_type="5" />
+      <talk_question mid="17"><![CDATA[<html>$엘프 장로$<BR><FONT color=#387206>{user_nick}</FONT>님도 서둘러 주십시오.<BR>그자를 막아야 합니다. 엘프의 미래가....으윽..<BR><FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_question mid="32"><![CDATA[<html>$엘프 장로$<BR><FONT color=#387206>{user_nick}</FONT>님 서둘러 주십시요.<BR>그자를 막아야 합니다. 엘프의 미래가....으윽..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3" image="QN_Npc_Rosalin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-" mid="22" select_type="5" />
+      <talk_question mid="21"><![CDATA[<html>$엘프 장로$<BR>유벤시엘과 트리아나가 사라졌다고요? 무슨 일이 일어난 겁니까.<BR><FONT color=#7e12d2>(생명의 나무 안쪽의 로잘린데와 대화를 진행하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1133_rojalin-3" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1133_rojalin-3-a" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$로잘린데${sound:npc_AN_Rozalinde_qu_9298_01.ogg}<BR>유벤시엘... 어디로 사라진 거지?<BR><FONT color=#7e12d2>(로잘린데가 주변을 두리번거리고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1133_rojalin-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1133_rojalin-3-b" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$로잘린데$<BR>뭐, 그 정도 상처라면 살아나진 못하겠지. 엘프의 여왕도.. 이렇게 죽어버렸고.<BR>역시 모든 것이 <FONT color=#a82424>페더</FONT>님의 뜻대로 되었구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1133_rojalin-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1133_rojalin-3-c" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$로잘린데$<BR>게다가 여왕에게서 얻은 이 보옥...<BR>드디어... 드디어! 페더님을 여신의 심장으로, 모노리스로 모실 수 있게 되었어!!<BR><FONT color=#7e12d2>(로잘린데가 격양된 표정으로 말한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1133_rojalin-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1133_rojalin-3-" mid="30" select_type="5" />
+      <talk_question mid="29"><![CDATA[<html>$로잘린데${sound:npc_AN_Rozalinde_qu_9298_03.ogg}<BR>이 로잘린데가, 선지자의 힘으로!!!<BR><FONT color=#7e12d2>(로잘린데 말을 마치고는 어디론가 빠르게 날아간다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1133_rojalin-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1133_rojalin-4-" mid="35" select_type="5" />
+      <talk_question mid="34"><![CDATA[<html>$로잘린데$<BR>이 로잘린데가, 선지자의 힘으로!!!<BR><FONT color=#7e12d2>(로잘린데 말을 마치고는 어디론가 빠르게 날아간다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-4" image="QN_Npc_Rosalin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1034_argenta-4-a" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9298_01.ogg}<BR>괜히 레드 드래곤한테 정신을 팔았잖아.<BR>로잘린데가 선지자의 힘을 회복했으니 이젠 모노리스로 가는 걸 힘으로 막을 수밖에 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1034_argenta-4-b" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>힘으로요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-4-b" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1034_argenta-4-c" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$제레인트${sound:npc_AN_Gereint Young_qu_9298_01.ogg}<BR>내 힘 말이다. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1034_argenta-4-d" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$아르젠타$<BR>생명의 나무뿌리에 네스트라도 만들어야 겠는걸?<BR>페더가<FONT color=#a82424> 모노리스의 길</FONT> 입구를 알고 있다면 지금 출발해도 늦겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-4-d" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1034_argenta-4-e" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$아르젠타$<BR>일을 이 지경으로 만든 유벤시엘이란 엘프를 잡아다 족치고 싶지만<BR>두 엘프가 어디로 사라진 건지 알 수가 없으니...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1034_argenta-4-f" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$아르젠타$<BR>넌 그들이 여기 다시 나타날지도 모르니 만나서 상황을 듣고 따라와.<BR>아니 오든지 말든지 별 상관은 없지만 결과를 내게 알리라는 말이야. 알아들어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-4-f" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1034_argenta-4-g" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여기서 트리아나를 기다리면 되는 건가요? 어디로 가실건데요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-4-g" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1034_argenta-4-" mid="54" select_type="5" />
+      <talk_question mid="53"><![CDATA[<html>$제레인트${sound:npc_AN_Gereint Young_qu_9298_02.ogg}<BR><FONT color=#a82424>생명의 나무가 시작된 곳</FONT>. 엘프 장로에게 물어보도록.<BR><FONT color=#7e12d2>(아르젠타와 제레인트가 바람처럼 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1034_argenta-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1034_argenta-5-" mid="56" select_type="5" />
+      <talk_question mid="55"><![CDATA[<html>$제레인트$<BR><FONT color=#a82424>생명의 나무가 시작된 곳</FONT>. 엘프 장로에게 물어보면 될 거야.<BR><FONT color=#7e12d2>(아르젠타와 제레인트가 바람처럼 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-job5_2" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>$트리아나${sound:npc_AN_Archer Triana_qu_9298_01.ogg}<BR>어떻게 된 거죠? 여긴 다시, 생명의 나무....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-c" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그건 오히려 내가 더 궁금한걸? <BR>너, 그 엘프, 유벤시엘인가 하는 남자랑 사라졌었다구.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-c" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저도 어떻게 된 일인지 물어보고 싶었어요.<BR>트리아나님, 엘프와 함께 사라졌었거든요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-d" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>$트리아나$<BR>인간들의 말로는 설명하기 어렵군요. 제게도 신비한 체험이었어요.<BR>어머. 왜 얼굴이 붉어지는 거죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-d" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-job5_3" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>$트리아나$<BR>나르실리아님은 곧 영면을 맞으실 거예요. 근원이 적어졌으니 생명력이 조금 더 유지되긴 하겠죠.<BR>그리고 다음 여왕... 아니 왕이라고 해야겠군요.<BR><FONT color=#387206>유벤시엘</FONT>, 그분이 엘프들의 다음 왕이 되었어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-g" mid="68" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어? 유벤시엘이 죽은게 아녔어? 갑자기 왕이라니. 황당한걸?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-g" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>유벤시엘님 꽤 위독했는데 무사하군요. 그렇게 다친 몸으로..</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-job5_4" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>$트리아나$<BR>네. 엘프의 옥좌를 승계 받고 나무와 하나가 되어 상처는 의미가 없어진 것 같아요.<BR>이제 유벤시엘님의 몸은 엘프의 육신 하나가 아니기에..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-j" mid="74" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그자가 엘프에 왕이라고??<BR>아하하... 좀 어이없긴 한데, 그런 못 미더운 자가 왕이 되어도 괜찮은 거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-j" mid="76" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어..? 어?? 그럼 엘프 최초로 남성 여왕.. 아니 왕이 탄생한 건가요?<BR>이거 축하해야 하나....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-j" image="QN_Npc_Rosalin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-job5_5" mid="78" select_type="2" />
+      <talk_question mid="77"><![CDATA[<html>$트리아나$<BR><FONT color=#7e12d2>(트리아나가 조용히 알 수 없는 미소를 짓는다)<BR></FONT>그런데 <FONT color=#a82424>로잘린데</FONT>는요? 그리고 아르젠타님과 제레인트님도 본 것 같았는데 어찌 되었나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-l" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아! 맞다. 좀 골치 아파졌지.<BR>로잘린데가 선지자의 힘을 되찾은 것 같았거든. 이제 모노리스로 가는 길을 열 수 있게 된 거지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-p" mid="82" select_type="2" />
+      <talk_question mid="81"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그래서 두 분은 그걸 막으러 가셨어.<BR>생명의 나무가 시작된 곳으로, 우리도 서둘러야 해!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-n" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아! 맞다. 좀 골치 아파졌어요.<BR>로잘린데가 선지자의 힘을 되찾았거든요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-o" mid="86" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>새 여왕.. 아니 왕이 생겼다니 좀 다행이지만 곧 로잘린데가 모노리스로 가는 통로를 열지도 모른다고 하더군요.<BR>아르젠타님과 제레인트님은 일단 그들을 막으러 갔죠.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-p" mid="88" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>생명의 나무가 시작된 곳. 숲의 경계에 모노리스로 가는 길 통로가 있어요.<BR>우리도 서두르죠!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-5-p" image="QN_Npc_Elder_elf.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-5-" mid="90" select_type="5" />
+      <talk_question mid="89"><![CDATA[<html>$트리아나${sound:npc_AN_Archer Triana_qu_9298_03.ogg}<BR>모든 엘프의 뿌리 말이군요. 그곳은...<BR>그렇다면 <FONT color=#a82424>장로</FONT>님께 말씀드려야겠군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1090_triana-6" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1090_triana-6-" mid="92" select_type="5" />
+      <talk_question mid="91"><![CDATA[<html>$트리아나${sound:npc_AN_Archer Triana_qu_9298_03.ogg}<BR>모든 엘프의 뿌리 말이군요. 그곳은...<BR>그렇다면 장로님께 여쭤봐야겠군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-6" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-6-a" mid="94" select_type="2" />
+      <talk_question mid="93"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9281_01.ogg}<BR>생명의 나무가 시작된 곳. 모든 엘프들의 뿌리를 찾는다는 말인가요.<BR>트리아나. 당신은 그곳이 어떤 곳인지 알면서도 제게 말해달라는 거로군요.<BR><FONT color=#7e12d2>(엘프 장로가 깊은 생각에 잠긴다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-6-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-6-b" mid="96" select_type="2" />
+      <talk_question mid="95"><![CDATA[<html>$엘프 장로$<BR>흠.... 세상은 변화하는 법이지요. 엘프 최초의 왕이 생긴 것도 그렇고.<BR>어쩌면 우리 엘프는 너무 오래 같은 모습으로 있었는지도 모릅니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-6-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-6-c" mid="125" select_type="4" />
+      <talk_question mid="97"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-6-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-6-" mid="100" select_type="5" />
+      <talk_question mid="99"><![CDATA[<html>$엘프 장로$<BR>하지만... 모노리스, 생명의 나무가 시작된 곳... 당신에게 알려줘도 좋을지 저는 아직 모르겠습니다.<BR><BR><FONT color=#7e12d2>(Chapter 10. 텔레지아의 이야기는 여기까지 입니다. 다음 이야기를 기대해주세요!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9298</exe>
+         <exe type="talk" npc="n1067_elder_elf">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="0,1,3" false="4">0</exe>
+         <exe type="talk" npc="n1067_elder_elf">a</exe>
+         <exe type="talk" npc="n1067_elder_elf">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="conexe" true="6" false="7">0</exe>
+         <exe type="conexe" true="8" false="9">0</exe>
+         <exe type="conexe" true="10" false="11">0</exe>
+         <exe type="conexe" true="12" false="13">0</exe>
+         <exe type="talk" npc="n1090_triana">a</exe>
+         <exe type="talk" npc="n1090_triana">b</exe>
+         <exe type="talk" npc="n1090_triana">e</exe>
+         <exe type="talk" npc="n1090_triana">f</exe>
+         <exe type="talk" npc="n1090_triana">h</exe>
+         <exe type="talk" npc="n1090_triana">i</exe>
+         <exe type="talk" npc="n1090_triana">k</exe>
+         <exe type="talk" npc="n1090_triana">m</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92981,92981,,92983,92984,92985,92986,92987</exe>
+         <exe type="complete" true="">9298</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1067_elder_elf" sub="!next">0,1</exelink>
+   <exelink qstep="1" npc="n1067_elder_elf" sub="party_check">2</exelink>
+   <exelink qstep="1" npc="n1067_elder_elf" sub="" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="" />
+   <exelink qstep="3" npc="n1133_rojalin" sub="b" />
+   <exelink qstep="3" npc="n1133_rojalin" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n1133_rojalin" sub="" />
+   <exelink qstep="4" npc="n1034_argenta" sub="b" />
+   <exelink qstep="4" npc="n1034_argenta" sub="c" />
+   <exelink qstep="4" npc="n1034_argenta" sub="d" />
+   <exelink qstep="4" npc="n1034_argenta" sub="e" />
+   <exelink qstep="4" npc="n1034_argenta" sub="f" />
+   <exelink qstep="4" npc="n1034_argenta" sub="g">0,1</exelink>
+   <exelink qstep="4" npc="n1034_argenta" sub="" />
+   <exelink qstep="5" npc="n1090_triana" sub="job5_2">2</exelink>
+   <exelink qstep="5" npc="n1090_triana" sub="c" />
+   <exelink qstep="5" npc="n1090_triana" sub="c" />
+   <exelink qstep="5" npc="n1090_triana" sub="d" />
+   <exelink qstep="5" npc="n1090_triana" sub="job5_3">3</exelink>
+   <exelink qstep="5" npc="n1090_triana" sub="g" />
+   <exelink qstep="5" npc="n1090_triana" sub="g" />
+   <exelink qstep="5" npc="n1090_triana" sub="job5_4">4</exelink>
+   <exelink qstep="5" npc="n1090_triana" sub="j" />
+   <exelink qstep="5" npc="n1090_triana" sub="j" />
+   <exelink qstep="5" npc="n1090_triana" sub="job5_5">5</exelink>
+   <exelink qstep="5" npc="n1090_triana" sub="l" />
+   <exelink qstep="5" npc="n1090_triana" sub="p">0,1</exelink>
+   <exelink qstep="5" npc="n1090_triana" sub="n" />
+   <exelink qstep="5" npc="n1090_triana" sub="o" />
+   <exelink qstep="5" npc="n1090_triana" sub="p">0,1</exelink>
+   <exelink qstep="5" npc="n1090_triana" sub="" />
+   <exelink qstep="6" npc="n1067_elder_elf" sub="b">0</exelink>
+   <exelink qstep="6" npc="n1067_elder_elf" sub="c">1</exelink>
+   <exelink qstep="6" npc="n1067_elder_elf" sub="">0</exelink>
+   <journal_data recompense="1:92981,3:92983,4:92984,5:92985,6:92986,7:92987" quest_title="선지자의 힘으로" chapterid="12" quest_level="69" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[선지자의 힘으로 I]]></title>
+         <contents mid="102"><![CDATA[<html>유벤시엘이 이미 생명의 나무 속, 여왕의 옥좌에 들어갔다고 한다.<BR>무슨 일이 있었던 것인지 엘프 장로와 더 대화를 해보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 생명의 나무 앞(엘프 장로)</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[(1인) 아누 아렌델 관문의 엘프 장로와 대화]]></destination>
+         <todo_msg mid="104"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>34,n1133</destination_pos>
+         <destination_mode>custom:34@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[선지자의 힘으로 II]]></title>
+         <contents mid="106"><![CDATA[<html>유벤시엘이 이미 생명의 나무 속, 여왕의 옥좌에 들어갔다고 한다.<BR>유벤시엘의 목적을 알지는 못하지만 그를 막아야 한다.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 여왕의 옥좌(아처 유벤시엘)</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[(1인) 아누 아렌델 관문에서 유벤시엘 추적]]></destination>
+         <todo_msg mid="108"><![CDATA[여왕의 옥좌로 들어가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Rosalin.dds</contents_image>
+         <destination_pos>34,n1133</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1133</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="109"><![CDATA[선지자의 힘으로 III]]></title>
+         <contents mid="110"><![CDATA[<html>여왕의 옥좌에서 로잘린데와 대치했던 유벤시엘은 빛과 함께 어디론가 사라졌다.<BR>남아있는 로잘린데와 대화를 해보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 여왕의 옥좌(로잘린데)</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="111"><![CDATA[(1인) 아누 아렌델 관문에서 로잘린데와 대화]]></destination>
+         <todo_msg mid="112"><![CDATA[사도 로잘린데와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1134</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1134</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="113"><![CDATA[선지자의 힘으로 IV]]></title>
+         <contents mid="114"><![CDATA[<html>로잘린데가 생명의 나무의 근원을 가지고 떠났다. <BR>이제 어떻게 그들을 막아야 할 지 아르젠타와 상의해보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 여왕의 옥좌(아르젠타)</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="115"><![CDATA[(1인) 아누 아렌델 관문에서 아르젠타와 대화]]></destination>
+         <todo_msg mid="116"><![CDATA[아르젠타와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Triana.dds</contents_image>
+         <destination_pos>34,n1090</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1090</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="117"><![CDATA[선지자의 힘으로 V]]></title>
+         <contents mid="118"><![CDATA[<html>아르젠타는 유벤시엘과 트리아나에게 무슨 일이 있었는지 알아야 한다고 말하며 떠났다.<BR>홀로 나타난 트리아나와 대화를 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 여왕의 옥좌(아처 트리아나)</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="119"><![CDATA[(1인) 아누 아렌델 관문에서 아처 트리아나와 대화]]></destination>
+         <todo_msg mid="120"><![CDATA[여왕의 옥좌로 다시 나타난 트리아나와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Elf_Narsilia.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="121"><![CDATA[선지자의 힘으로 VI]]></title>
+         <contents mid="122"><![CDATA[<html>트리아나에게 있었던 일을 들었다.<BR>모노리스의 길이 열리는 것을 막기 위해, 장로에게 생명의 나무가 시작된 곳을 물어야 한다.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 생명의 나무 앞(엘프 장로)</FONT><BR><BR><FONT color=#7e12d2>Chapter 10. 텔레지아의 이야기는 여기까지 입니다. 다음 이야기를 기대해주세요!</FONT></html>]]></contents>
+         <destination mid="123"><![CDATA[아누 아렌델 관문의 엘프 장로와 대화]]></destination>
+         <todo_msg mid="124"><![CDATA[여왕의 옥좌 밖 엘프 장로를 만나세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9297</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

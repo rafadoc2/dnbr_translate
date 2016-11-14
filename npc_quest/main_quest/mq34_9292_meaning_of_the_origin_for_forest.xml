@@ -1,0 +1,228 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9292_meaning_of_the_origin_for_forest</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9292</qid>
+      <designer>강지영</designer>
+      <qlevel>65</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9293</nextqid>
+      <nextqname>mq34_9293_who_is_the_traitor</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[근원의 의미]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1074</npcid>
+         <npcename>n1074_azelia_dead</npcename>
+         <npckname>아젤리아의 시체</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9292_01.ogg}<BR>숲의 마물들이라... 그렇다면 이해가 가는군.<BR>그렇지 않아도 트리아나가 안 좋은 소식을 알려왔거든. 여왕 후보가 살해당했고 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1074_azelia_dead-1-" mid="8" select_type="5" />
+      <talk_question mid="7"><![CDATA[<html>$아젤리아의 시체$<BR><FONT color=#7e12d2>(아젤리아의 시체가 모래가 되어 흩날리려 한다.</FONT><BR><FONT color=#7e12d2>무슨 일이 일어나고 있는건지, 아누 아렌델 관문으로 돌아가 얘기해보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-a" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$아르젠타$<BR>아, 너도 본 적 있는 엘프지? <BR>이름이 뭐였더라. 아젤... 뭐였는데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-a" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-b" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아젤리아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-c" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아르젠타$<BR>그래. 그 엘프가 죽었다고 했어.<BR>친한 엘프가 죽은 건 처음 봤는지, 엘프가 당황한 모습을 다 봤다니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-d" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9292_02.ogg}<BR>트리아나가 시체를 살펴볼 정신이 없었던 모양이야.<BR>아직 시체가 남아있을 테니 네가 좀 살펴보고 올래? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-e" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>시체가 남아있다고요?<BR>엘프의 숲에서 죽었다면 벌써 나무가 되어버리지 않았을까요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-e" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="58" select_type="5" />
+      <talk_question mid="57"><![CDATA[<html>$아르젠타$<BR>그럴지도 모르겠네? 그러니까 서둘러.<BR>트리아나 말로는 <FONT color=#a82424>황금초원</FONT> 어딘가에 시체가 있다고 했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$아르젠타$<BR>트리아나 말로는 <FONT color=#a82424>황금 초원</FONT> 어딘가에 시체가 있다고 했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1074_azelia_dead-2-a" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$아젤리아의 시체$<BR><FONT color=#7e12d2>(아젤리아의 시체가 모래가 되어 흩날리려 한다. 좀 더 자세히 살펴보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-2-a" image="QS_Default.dds" itemindex="400395" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1074_azelia_dead-2-" mid="14" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>$아젤리아의 시체$<BR><FONT color=#7e12d2>(시체의 손에 작은 조각이 쥐여 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-3" image="QS_Default.dds" itemindex="400395" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1074_azelia_dead-3-" mid="17" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$아젤리아의 시체$<BR><FONT color=#7e12d2>(아젤리아가 쥐고 있던 작은 돌 조각을 발견했다.</FONT><BR><FONT color=#7e12d2>아르젠타에게 가져가 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3" image="QS_Default.dds" itemindex="400395" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-a" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9292_03.ogg}<BR>살해당한 엘프가 이걸 들고 있었다고?<BR>이건 저번에 우리가 잃어버린 유물의 일부잖아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-a" image="QN_Npc_Rosalin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-b" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네. 로잘린데가 들고 있던 유물인 것 같아요.</FONT><BR><FONT color=#662500>그리고 아젤리아의 시체가 모래가 되어가고 있었어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-c" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$아르젠타$<BR>근원을 잃어버린 숲에서 죽었으니 그렇겠지.<BR>엘프들이 영면에 들 수 있는 신월의 숲이란, 숲의 근원을 통해 생명의 나무의 힘을 얻은 숲뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-d" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$아르젠타$<BR>그나저나 사도들은 콘클라베를 틈타 유물을 구하고 있는 거였어.<BR>숨겨져 있던 숲의 근원이 콘클라베 때에는 모습을 드러내니까 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-d" image="QN_Npc_Rosalin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-e" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>숲의 근원은 엘프들한테는 정말 소중한 거 아닐까요?<BR>이렇게 자꾸 로잘린데가 가져가도 되는 거예요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-f" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>$아르젠타$<BR>뭐... 나야 상관없지만 엘프들은 상관있겠지.<BR>근원이 없는 숲에서는 어린 엘프가 자라날 수 없으니, 낙과엘프가 태어나거든.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-f" image="QN_Npc_Elder_elf.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-g" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>$아르젠타$<BR>여왕 후보도 잃고, 숲도 잃고. 엘프 장로는 대체 뭐 하고 있는 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-!next" mid="34" select_type="4" />
+      <talk_question mid="33"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9292</exe>
+         <exe type="talk" npc="n1047_argenta">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>연출 아이템 지급 추가 예정</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">400395</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92921,92921,,92923,92924,92925,92926,92927</exe>
+         <exe type="complete" true="">9292</exe>
+         <exe type="delquestitem" num="-1">400395</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="b" />
+   <exelink qstep="1" npc="n1047_argenta" sub="c" />
+   <exelink qstep="1" npc="n1047_argenta" sub="d" />
+   <exelink qstep="1" npc="n1047_argenta" sub="e">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="2" npc="n1074_azelia_dead" sub="a">0,1,2</exelink>
+   <exelink qstep="2" npc="n1074_azelia_dead" sub="">0,1</exelink>
+   <exelink qstep="3" npc="n1047_argenta" sub="b" />
+   <exelink qstep="3" npc="n1047_argenta" sub="c" />
+   <exelink qstep="3" npc="n1047_argenta" sub="d" />
+   <exelink qstep="3" npc="n1047_argenta" sub="e" />
+   <exelink qstep="3" npc="n1047_argenta" sub="f" />
+   <exelink qstep="3" npc="n1047_argenta" sub="g">0</exelink>
+   <exelink qstep="3" npc="n1047_argenta" sub="!next">1,2</exelink>
+   <journal_data recompense="1:92921,3:92923,4:92924,5:92925,6:92926,7:92927" quest_title="근원의 의미" chapterid="12" quest_level="65" quest_mark_type="1" use_item_list="400395">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[근원의 의미 I]]></title>
+         <contents mid="36"><![CDATA[<html>엘프들의 여왕 후보가 승계식에서 살해당하고 있다는 소식을 들었다.<BR>아르젠타와 이야기를 나눠 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="38"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Azelia.dds</contents_image>
+         <destination_pos>781,n1074</destination_pos>
+         <destination_mode>custom:781@4</destination_mode>
+         <statemark_npcid>1074</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[근원의 의미 II]]></title>
+         <contents mid="40"><![CDATA[<html>황금 초원에서 아젤리아의 시체가 발견되었다고 한다. 시체가 사라지기 전에 확인해 보자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 황금 초원(아젤리아의 시체)</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[황금 초원에서 아젤리아의 시체 확인]]></destination>
+         <todo_msg mid="42"><![CDATA[황금 초원에서 아젤리아의 시체를 찾으세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[근원의 의미 III]]></title>
+         <contents mid="44"><![CDATA[<html>아젤리아가 들고 있던 작은 돌 조각을 발견했다.<BR>유물의 일부인 것 같은데 확실하지 않다. 아르젠타에게 가져가 보여주자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 아르젠타</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="46"><![CDATA[돌조각을 아르젠타에게 가져가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9291</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

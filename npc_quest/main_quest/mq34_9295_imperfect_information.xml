@@ -1,0 +1,367 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9295_imperfect_information</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9295</qid>
+      <designer>강지영</designer>
+      <qlevel>67</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9296</nextqid>
+      <nextqname>mq34_9296_division_foe</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[불완전한 정보]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1060</npcid>
+         <npcename>n1060_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1085</npcid>
+         <npcename>n1085_rojalin</npcename>
+         <npckname>로잘린데</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9295_02.ogg}<BR>유벤시엘이 콘클라베의 정보를 빼돌리고 있었어. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-1-" mid="9" select_type="5" />
+      <talk_question mid="8"><![CDATA[<html>$유벤시엘$<BR>또 만났군요.<BR><FONT color=#7e12d2>(유벤시엘이 별 다른 관심을 보이지는 않습니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-a" mid="11" select_type="2" />
+      <talk_question mid="10"><![CDATA[<html>$아르젠타$<BR>하지만 편지의 내용이 좀 이상한걸?<BR>모든 근원이라고 적혀는 있는데 다 적혀있는 건 아니고 가장 중요한 유물, 생명의 나무에 관한 이야기가 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-b" mid="13" select_type="2" />
+      <talk_question mid="12"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그나마 다행이군요.<BR>로잘린데는 그래서 짜증이 났던 걸까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-c" mid="15" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>$아르젠타$<BR>나야 모르지. 인간들의 감정은 알 수가 없다니까?<BR>여튼, 다음에 만나는 장소가 적혀 있으니 가 봐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-d" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이미 늦지 않았을까요?<BR>해독도 하고 왔다갔다 하느라 시간이 좀 흘렀는데...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-e" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$아르젠타$<BR>그럼 넌 이제 뭐할 건데? 늦었다고 주저 앉을 거였으면 단서는 왜 들고 왔니?<BR>귀찮으면 다 관두고 얌전히 세상이 파멸로 향하길 기다리던가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-f" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>가요. 갈게요. 가면 되잖아요~</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-f" image="QW_80.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="23" select_type="5" />
+      <talk_question mid="22"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9295_03.ogg}<BR>그래 가봐. <FONT color=#a82424>월식의 계곡</FONT>이라....<BR>그쪽엔 이미 숲의 근원이 없었을 텐데, 정말 이상하네?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-1-" mid="25" select_type="5" />
+      <talk_question mid="24"><![CDATA[<html>$로잘린데$<BR>어떻게 된 거지? 유벤시엘은... 이자식은 언제 오는 거야!?<BR><FONT color=#7e12d2>(로잘린데는 생각에 잠겨 내가 다가온 걸 모르는 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="QW_80.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_question mid="26"><![CDATA[<html>$아르젠타$<BR><FONT color=#a82424>월식의 계곡</FONT>엔 이미 숲의 근원이 없을 텐데....<BR>뭐, 헛수고해도 네가 하는 거니까. 냉큼 다녀와!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-a" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$로잘린데$<BR>어떻게 된 거야? 네가 알려준 유물을 다 모았는데도 아무런 힘이 느껴지지 않는다구!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-a" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-b" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>$유벤시엘$<BR>유물의 힘을 일깨우기 위해서는 한 가지 더 필요한 게 있습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-b" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-c" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(생명의 나무에 있다던 그 근원 말인가???)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-c" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-d" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$유벤시엘$<BR>드래곤의 보옥... 특히 페더님이 가지고 있는 순수한 붉은 보옥의 힘이라면 유물에서부터 고대인의 힘을 되살릴 수 있을 것입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-e" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>$로잘린데$<BR>페더님의 보옥이? 페더님 앞에서 힘을 되찾는 모습을 보여줄 수 있는 거야?<BR>그거 꽤.. 맘에 드는데? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-" mid="38" select_type="5" />
+      <talk_question mid="37"><![CDATA[<html>$로잘린데$<BR>후훗. 알았어. 페더님께 당장 가 봐야겠군!<BR><FONT color=#7e12d2>(로잘린데가 재빠르게 시야에서 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-3-" mid="40" select_type="5" />
+      <talk_question mid="39"><![CDATA[<html>$로잘린데$<BR>후훗. 알았어. 페더님께 당장 가 봐야겠군!<BR><FONT color=#7e12d2>(로잘린데가 재빠르게 시야에서 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3" image="QW_80.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-" mid="42" select_type="5" />
+      <talk_question mid="41"><![CDATA[<html>$아르젠타$<BR>뭐야. <FONT color=#a82424>월식의 계곡</FONT>에서 아무것도 발견하지 못한거야?<BR>로제랑 유벤시엘이 있었다면 쫓아갔어야지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-job3_2" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$유벤시엘${sound:npc_AN_Yuvenciel_qu_9295_01.ogg}<BR>또 만났군요.<BR><FONT color=#7e12d2>(유벤시엘이 별다른 관심을 보이지는 않습니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-a" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-c" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>뭐야 넌? 무슨 수호자라고 들었는데 트리아나는 어쩌고 혼자 다니는 거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-b" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-c" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신은 트리아나의 수호자라고 들었습니다. 아니었나요?<BR>왜 트리아나와 함께 있지 않죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-job3_3" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$유벤시엘$<BR>콘클라베 말인가요. 이미 중단되었으니 더 이상 수호자의 의무는 없습니다.<BR>물론 그녀 곁에 더 머물고 싶은 마음은 있었지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-d" image="QS_Default.dds" itemindex="400396" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-f" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>로잘린데가 떨어뜨린 편지를 주웠어. 당신 역시 사도였던거야?<BR>엘프를 배신했어?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-e" image="QS_Default.dds" itemindex="400396" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-f" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>로잘린데가 떨어뜨린 편지를 찾았습니다.<BR>당신은 역시 사도였나요? 엘프를 배신한 건가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-job3_4" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$유벤시엘$<BR>이미 알고 계신 것 같습니다만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-i" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>응. 아까 봤거든. 로잘린데와 대화 하던 것... 그럼 왜 엉뚱한 말을 한 건데?<BR>로잘린데랑 같은 편 아녔어?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-i" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네. 하지만 로잘린데에게 잘못된 정보를 알려주더군요. 저들과 한패가 아닌가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-job3_5" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$유벤시엘$<BR>눈치가 없으시군요.<BR>제 일에 신경 쓸 시간에 당신이 해야 할 일이나 하는 게 좋을 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-l" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내 일?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-l" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>제가 할 일이요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-l" image="QW_79.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-job3_6" mid="68" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>$유벤시엘${sound:npc_AN_Yuvenciel_qu_9295_02.ogg}<BR>로잘린데가 힘을 되찾으려 할 때 레드 드래곤이 완전히 모습을 드러내겠지요. <FONT color=#a82424>용추종자의 왕 페더</FONT> 말입니다.<BR><FONT color=#a82424>청동 그믐달 숲길</FONT>로 가십시오. 그들을 막고 싶다면...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-o" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이건 믿어도 되는 거 맞아? 넌 사도잖아!<BR>우리가 로잘린데를 막아도 상관없는 것처럼 말하네?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-o" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>사도라면서 당신은 그래도 상관없는 것처럼 말하는군요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-3-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-3-" mid="74" select_type="5" />
+      <talk_question mid="73"><![CDATA[<html>$유벤시엘$<BR>그럼요. 오히려 바라고 있지요. 내 목적은 다른 사도들과는 좀 다르니..<BR>어쨋튼 페더의 위치는 당신과 에이션트 드래곤들도 바라던 정보가 아닙니까?<BR><FONT color=#7e12d2>(유벤시엘이 할 말이 끝났다는 듯 몸을 돌린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-" mid="77" select_type="5" />
+      <talk_question mid="76"><![CDATA[<html>$유벤시엘$<BR>한가한가 보군요. 기껏 그들이 만나는 곳을 알려줬는데 말이지.<BR><FONT color=#7e12d2>(서둘러 아르젠타에게 돌아가야겠다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-a" mid="79" select_type="2" />
+      <talk_question mid="78"><![CDATA[<html>$아르젠타$<BR>콘클라베가 중단되었다는 건 그렇지 않아도 트리아나에게 들었어.<BR>그나저나 그 유벤시엘이라는 엘프. 도대체 원하는 게 뭐야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-b" mid="100" select_type="2" />
+      <talk_question mid="80"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>잘 모르겠어요. 하지만 그자가 한 말은 사실인 것 같았어요.<BR>로잘린데를 속이고 있었고요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-c" mid="101" select_type="2" />
+      <talk_question mid="82"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9295_05.ogg}<BR>엘프도 사도도 다 배신해가면서 해야 하는 일이 대체 뭘까? 신경이 쓰이는군.<BR>뭐, 로잘린데와 페더가 만나는 곳을 알았으니 다행이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-!next" mid="103" select_type="4" />
+      <talk_question mid="102"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9295</exe>
+         <exe type="talk" npc="n1047_argenta">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="conexe" true="7" false="8">0</exe>
+         <exe type="conexe" true="9" false="10">0</exe>
+         <exe type="conexe" true="11" false="12">0</exe>
+         <exe type="conexe" true="13" false="14">0</exe>
+         <exe type="conexe" true="15" false="16">0</exe>
+         <exe type="talk" npc="n1060_yuvenciel">a</exe>
+         <exe type="talk" npc="n1060_yuvenciel">b</exe>
+         <exe type="talk" npc="n1060_yuvenciel">d</exe>
+         <exe type="talk" npc="n1060_yuvenciel">e</exe>
+         <exe type="talk" npc="n1060_yuvenciel">g</exe>
+         <exe type="talk" npc="n1060_yuvenciel">h</exe>
+         <exe type="talk" npc="n1060_yuvenciel">j</exe>
+         <exe type="talk" npc="n1060_yuvenciel">k</exe>
+         <exe type="talk" npc="n1060_yuvenciel">m</exe>
+         <exe type="talk" npc="n1060_yuvenciel">n</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92951,92951,,92953,92954,92955,92956,92957</exe>
+         <exe type="complete" true="">9295</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="b" />
+   <exelink qstep="1" npc="n1047_argenta" sub="c" />
+   <exelink qstep="1" npc="n1047_argenta" sub="d" />
+   <exelink qstep="1" npc="n1047_argenta" sub="e" />
+   <exelink qstep="1" npc="n1047_argenta" sub="f">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="b" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="c" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="d" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n1085_rojalin" sub="" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="job3_2">2</exelink>
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="c" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="c" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="job3_3">3</exelink>
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="f" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="f" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="job3_4">4</exelink>
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="i" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="i" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="job3_5">5</exelink>
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="l" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="l" />
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="job3_6">6</exelink>
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="o">0,1</exelink>
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="o">0,1</exelink>
+   <exelink qstep="3" npc="n1060_yuvenciel" sub="" />
+   <exelink qstep="4" npc="n1047_argenta" sub="b" />
+   <exelink qstep="4" npc="n1047_argenta" sub="c">0</exelink>
+   <exelink qstep="4" npc="n1047_argenta" sub="!next">1</exelink>
+   <journal_data recompense="1:92951,3:92953,4:92954,5:92955,6:92956,7:92957" quest_title="불완전한 정보" chapterid="12" quest_level="67" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[불완전한 정보 I]]></title>
+         <contents mid="85"><![CDATA[<html>유벤시엘이 로잘린데에게 보낸 편지에는 콘클라베에 관련된 정보가 적혀 있었다.<BR>아르젠타와 이야기를 더 나누자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="87"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_80.dds</contents_image>
+         <destination_pos>801,n1085</destination_pos>
+         <destination_mode>custom:801@1</destination_mode>
+         <statemark_npcid>1085</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[불완전한 정보 II]]></title>
+         <contents mid="89"><![CDATA[<html>편지에서 사도 로잘린데의 다음 목적지 정보를 얻었다.<BR>그녀을 쫓아 월식의 계곡으로 향하자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 월식의 계곡(???)</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[월식의 계곡의 사도 추적]]></destination>
+         <todo_msg mid="91"><![CDATA[월식의 계곡에서 사도를 쫓으세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>801,n1060</destination_pos>
+         <destination_mode>custom:801@1</destination_mode>
+         <statemark_npcid>1060</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[불완전한 정보 III]]></title>
+         <contents mid="93"><![CDATA[<html>로잘린데와 유벤시엘의 대화를 목격했다.<BR>남아있는 유벤시엘과 이야기를 해 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 월식의 계곡(유벤시엘)</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[월식의 계곡에서 유벤시엘과 대화]]></destination>
+         <todo_msg mid="95"><![CDATA[유벤시엘과 대화를 나누세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[불완전한 정보 IV]]></title>
+         <contents mid="97"><![CDATA[<html>로잘린데와 페더가 만나는 장소를 알아냈다.<BR>
+유벤시엘의 믿을 수 없는 정보지만 아르젠타에게 알려주자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="99"><![CDATA[아누 아렌델 관문으로 돌아가 아르젠타를 만나세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9294</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>
