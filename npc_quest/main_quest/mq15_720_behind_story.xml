@@ -1,0 +1,283 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_720_behind_story</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>720</qid>
+      <designer>곽노찬</designer>
+      <qlevel>48</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>721</nextqid>
+      <nextqname>mq15_721_native_medicine</nextqname>
+      <nextqnpc>n701_oldkarakule</nextqnpc>
+      <qkname mid="1"><![CDATA[Behind story]]></qkname>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>727</npcid>
+         <npcename>n727_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-noquest" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Velskud$<BR>What an annoying boy.<BR><BR>※ <FONT color=#7e12d2>You need to receive the quest from Karacule to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-a" mid="6"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Lady Karacule$<BR>
+Is the goal of <FONT color=#a82424>Velskud </FONT>Karahan?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-acceptted" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Lady Karacule$<BR>I have no idea what happened between the two.<BR>Follow after <FONT color=#a82424>Velskud</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="QW_54.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Lady Karacule$<BR>It would be great if Velskud and Karahan fight and kill each other... .<BR>Follow after <FONT color=#a82424>Velskud</FONT> quickly. He is heading to<FONT color=#a82424>the West Ancient Armory</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-1" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Velskud$<BR>
+What a persistent boy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-2" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Velskud$<BR>
+What a persitent boy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3" image="" itemindex="">
+      <talk_answer link_index="n727_velskud-3-a" mid="21"><![CDATA[<html>Karahan ran away.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Velskud$<BR>
+You made it until here...What a persistent boy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-a" image="" itemindex="">
+      <talk_answer link_index="n727_velskud-3-b" mid="24"><![CDATA[<html>What is Kaleon's Knight...?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Velskud$<BR>
+He will appear again because he couldn't get the power to awaken<FONT color=#a82424>the Green Dragon's Jewel</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-b" image="" itemindex="">
+      <talk_answer link_index="n727_velskud-3-c" mid="26"><![CDATA[<html>What is Apostles?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Velskud$<BR>
+You have many questions....<BR>
+Long time ago, Apostles<FONT color=#a82424>was just my nickname</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-c" image="" itemindex="">
+      <talk_answer link_index="n727_velskud-3-d" mid="28"><![CDATA[<html>Why do they follow him?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Velskud$<BR>
+<FONT color=#a82424>Apostles</FONT>means ...<FONT color=#a82424>Seven Followers</FONT>of one man.<BR>
+Elena, Ignacio, Karahan, Typhoon Kim and etc...were at his back and served him as his hands and feet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-d" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n727_velskud-3-e" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Velskud$<BR>
+Apostles follow a master because they have their own purpose. However, <FONT color=#a82424>Ignacio</FONT> and I had no doubt about obedience as our ancestors were also Apostles.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-e" image="" itemindex="">
+      <talk_answer link_index="n727_velskud-3-f" mid="34"><![CDATA[<html>Is the Dragon's Jewel what he wants?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Velskud$<BR>
+But believing someone bindly is a stupid thing.<BR>
+It took me too long for me to realize it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-f" image="" itemindex="">
+      <talk_answer link_index="n727_velskud-3-g" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Velskud$<BR>
+He gained the Dragon's Jewel quite a long time ago.<BR>
+But he couldn't find out how to become a dragon.<BR>
+He thought that his Dragon's Jewel was unstable or insufficient.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-g" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n727_velskud-3-h" mid="38"><![CDATA[<html>That was the Dragon Raid 50 years ago....</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Velskud$<BR>
+So he wanted to get another Dragon's Jewel.<BR>
+He wanted the Jewel of the<FONT color=#a82424>Black Dragon Karas</FONT>who was a mature dragon....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-h" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n727_velskud-3-i" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Velskud$<BR>
+But the jewel of the Black Dragon has been absorbed into my body so it is impossible to pull it out again. So he ordered <FONT color=#a82424>Karahan</FONT> to figure a way to get the jewel out from me or another way to become a dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-i" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n727_velskud-3-j" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Velskud$<BR>
+Karahan figured out how to become a dragon as well as a way to get the jewel out from me. So, he tried to get the Black Dragon's jewel from me to be a dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-j" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n727_velskud-3-k" mid="44"><![CDATA[<html>Who is he...?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Velskud$<BR>
+I ran away from Karahan's labaratory using that chance.<BR>
+Then I have been looking for <FONT color=#a82424>the Decendants of the Ancient </FONT>for a long time.<BR>
+To get the dragon's power....for revenge....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-3-k" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Velskud$<BR>
+I talked too much.<BR>
+Go back to your place, newbie.<BR>
+Don't ever think about him. He is too big for you.<BR>
+<FONT color=#7e12d2>(Go back to Karacule)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n727_velskud-4" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Velskud$<BR>
+Go back to your place, newbie.<BR>
+ <BR>
+<FONT color=#7e12d2>(Return to Karacule)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-a" mid="52"><![CDATA[<html>(Tell Karacule what happened with Velskud)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Lady Karacule$<BR>
+What did you find out?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-a" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-b" mid="54"><![CDATA[<html>Who is he?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Lady Karacule$<BR>It's ridiculous that he mentioned abut betrayal... He is the one who betrayed us....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-b" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-c" mid="56"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Lady Karacule$<BR>
+Huh, it's none of my business....<BR>
+I don't want to poke my nose into this whole dragon business... Cough cough....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-c" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-d" mid="58"><![CDATA[<html>Then what should we do?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Lady Karacule$<BR>While you went out, we got bad news.<BR>The condition of Charti's Natives who are cared for by <FONT color=#a82424>Tamara</FONT> has gotten worse. Even the stabilizer doesn't work and some had turned back into monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-d" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-e" mid="61"><![CDATA[<html>What...?</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Lady Karacule$<BR>We need to take action now....<BR>We have no choice but to <FONT color=#a82424>kill </FONT>them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-e" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-!next" mid="63"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">720</exe>
+         <exe type="talk" npc="n701_oldkarakule">1</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>1스텝인 상태로 고대의 무기고 서쪽 스테이지에 입장하면 벨스커드가 아군으로 등장.
+퀘스트를 포기하거나, 고대의 무기고 서쪽 보스를 쓰러트리면 2스텝으로 변경하여 벨스커드 아군 등장은 다시 진행되지 않음.</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>2스텝에 진행되는 카메라 워크(벨스커드와 카라한의 대화)를 마치면 3스텝/2저널 로 바꿈</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7201,7201,7202,7203,7204,7205,7206</exe>
+         <exe type="complete">720</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n701_oldkarakule" sub="acceptted">0,1,2</exelink>
+   <exelink qstep="3" npc="n727_velskud" sub="b" />
+   <exelink qstep="3" npc="n727_velskud" sub="c" />
+   <exelink qstep="3" npc="n727_velskud" sub="d" />
+   <exelink qstep="3" npc="n727_velskud" sub="e" />
+   <exelink qstep="3" npc="n727_velskud" sub="f" />
+   <exelink qstep="3" npc="n727_velskud" sub="g" />
+   <exelink qstep="3" npc="n727_velskud" sub="h" />
+   <exelink qstep="3" npc="n727_velskud" sub="i" />
+   <exelink qstep="3" npc="n727_velskud" sub="j" />
+   <exelink qstep="3" npc="n727_velskud" sub="k">0,1</exelink>
+   <exelink qstep="4" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="4" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="4" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="4" npc="n701_oldkarakule" sub="e">0</exelink>
+   <exelink qstep="4" npc="n701_oldkarakule" sub="!next">1</exelink>
+   <journal_data recompense="1:7201,2:7202,3:7203,4:7204,5:7205,6:7206" quest_title="감춰진 이야기" chapterid="7" quest_level="48" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>563,0,0</destination_pos>
+         <destination_mode>custom:561@1,562@1,563@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Behind the Story I]]></title>
+         <contents mid="68"><![CDATA[<html>Velskud is going to West Ancient Armory as he felt Karahan's power there. Move to West Ancient Armory to follow Velskud.<BR>
+<BR>
+<FONT color=#086171>Riverwort Wharf(Entrance of West Ancient Armory)</FONT> <FONT color=#a82424>→ West Ancient Armory</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[West Ancient Armory]]></destination>
+         <todo_msg mid="70"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>563,n727</destination_pos>
+         <destination_mode>custom:561@1,562@1,563@1</destination_mode>
+         <statemark_npcid>727</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Behind the Story II]]></title>
+         <contents mid="73"><![CDATA[<html>Karahan gave up the fight and ran away. Talk to Velskud.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Entrance of Ancient Armory)</FONT> <FONT color=#a82424>→ West Ancient Armory(Velskud)</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk to Velskud at West Ancient Armory]]></destination>
+         <todo_msg mid="75"><![CDATA[Talk to Velskud.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Behind the Story III]]></title>
+         <contents mid="78"><![CDATA[<html>Find out why he came to Lotus Marsh by talking to Velskud. Go back and report to Karacule.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Lady Karacule</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Talk to Karacule]]></destination>
+         <todo_msg mid="80"><![CDATA[Talk to Karacule at Karacule's Hut.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>719</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

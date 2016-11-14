@@ -1,0 +1,309 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_716_reason_to_be_strong</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>716</qid>
+      <designer>곽노찬</designer>
+      <qlevel>46</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>717</nextqid>
+      <nextqname>mq15_717_for_my_friend</nextqname>
+      <nextqnpc>n701_oldkarakule</nextqnpc>
+      <qkname mid="1"><![CDATA[Reason for being stronger]]></qkname>
+      <qnpc>
+         <npcid>497</npcid>
+         <npcename>n497_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>498</npcid>
+         <npcename>n498_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n497_sidel-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>
+Charti... I should have stopped her!<BR>
+Ahahah~<BR>
+<FONT color=#7e12d2>(Cidel cries)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Adventurer David$<BR>
+Hmm, I wasn't dumped by Argenta.<BR>
+I dropped by because I was running Argenta's errands.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Lady Karacule$<BR>
+Did <FONT color=#a82424>Karahan </FONT>and <FONT color=#a82424>Charti</FONT> head to the holy place?<BR>
+That young girl is creating a huge trouble!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-a" image="QW_55.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Lady Karacule$<BR>
+Have to stop Karahan from going close to the Green Dragon's Jewel!<BR>
+Hurry to the <FONT color=#a82424>East Ancient Armory</FONT> now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n497_sidel-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Cidel$<BR>
+Charti... I should have stopped her!<BR>
+Ahahah~<BR>
+<FONT color=#7e12d2>(Cidel cries)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Adventurer David$<BR>
+Hmm, I wasn't dumped by Argenta.<BR>
+I dropped by because I was running Argenta's errands.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="QW_55.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Lady Karacule$<BR>
+Have to stop Karahan from going close to the Green Dragon's Jewel!<BR>
+Hurry to the <FONT color=#a82424>East Ancient Armory</FONT> now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n497_sidel-2" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n497_sidel-2-a" mid="14"><![CDATA[<html>Cidel! Calm down!</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Cidel$<BR>
+Charti... Charti turned into a monster...<BR>
+I should have stopped her...!<BR>
+Ahahah~!!<BR>
+<FONT color=#7e12d2>(Cidel cries)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n497_sidel-2-a" image="" itemindex="">
+      <talk_answer link_index="n497_sidel-3" mid="16"><![CDATA[<html>Let's go back. Karacule will have a solution.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Cidel$<BR>I... I wasn't able to get Charti away from him this time!<BR>Charti...*sobbing*....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n497_sidel-3" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Cidel$<BR>You're right. <FONT color=#a82424>Master</FONT> will have a solution for this.<BR>The solution to get Charti turned back....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-3" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n498_slave_david-3-a" mid="19"><![CDATA[<html>What brings you here, Adventurer David?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Adventurer David$<BR>
+Oh, now you're coming. How slow you are!<BR>
+Do you have any idea how long <FONT color=#a82424>Adventurer David</FONT> has been waiting for you?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n498_slave_david-3-b" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Adventurer David$<BR>
+Hmmm, anyway Argenta told me to let you know very important news. You are polluted by the Dragon's blood! You should never touch the <FONT color=#a82424>Dragon's Jewel</FONT> because it's from<FONT color=#a82424>Descendant of Chaos</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-3-b" image="" itemindex="">
+      <talk_answer link_index="n498_slave_david-3-c" mid="23"><![CDATA[<html>Well, it should have been told yesterday. You're already late.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Adventurer David$<BR>If someone who is polluted by Dragon's blood like you touches the Dragon's Jewel, it will be absorbed into that someone's body.<BR>If the person doesn't have the power for it, he can be turned into a <FONT color=#a82424>monster</FONT>. By the way ... why are you crying?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-3-c" image="" itemindex="">
+      <talk_answer link_index="n498_slave_david-3-d" mid="25"><![CDATA[<html>Cidel's friend ... already absorbed the Jewel.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Adventurer David$<BR>
+What...?!<BR>
+You seem alright...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-3-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n498_slave_david-3-e" mid="27"><![CDATA[<html>What is Argenta doing there... ?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Adventurer David$<BR>What...?!<BR>Why do you always make problems when I'm out of work!!<BR>Haa... anyway I need to tell <FONT color=#a82424>Argenta</FONT> about this problem.<BR>You should stop this while I'm out!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-3-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n498_slave_david-4" mid="29"><![CDATA[<html>An important thing...? What's that?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Adventurer David$<BR>
+<FONT color=#a82424>Argenta</FONT> is at <FONT color=#a82424>Anu Arendel</FONT> which is the Elves' holy place.<BR>
+She is doing a very important thing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n498_slave_david-4" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Adventurer David$<BR>
+Well, you can see it later. You'll be surprised.<BR>
+Anyway I'm going back~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-a" mid="33"><![CDATA[<html>Do you have any solution for Charti?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Lady Karacule$<BR>
+The young girl caused the trouble in the end.<BR>
+<FONT color=#7e12d2>(Karacule clicks her tongue)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-a" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-b" mid="35"><![CDATA[<html>Is there a solution to turn her back into human?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Lady Karacule$<BR>
+There is no solution for someone who has already absorbed the Jewel. But not all monsters go crazy, so we may still be able to awaken her reasoning mind. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-b" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-c" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Lady Karacule$<BR>
+If she has a little piece of reason in her mind, it'll be possible. If we can find any way to wake up her mind that is.<BR>
+<FONT color=#7e12d2>(Karacule looks at Cidel)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-c" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-d" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Cidel$<BR>
+I'll... I'll get her back!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-d" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-e" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Lady Karacule$<BR>
+It's not a piece of cake, Cidel.<BR>
+At your level, you'll be killed by her as she is a monster now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-e" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-f" mid="43"><![CDATA[<html>The power to protect myself...?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Lady Karacule$<BR>
+She is not a dragon but still a powerful monster as she absorbed the Jewel. She can be quite a challenge to handle.<BR>
+If you want to wake her up, you will need to get <FONT color=#a82424>a power to protect yourself</FONT> first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-f" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-g" mid="46"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-g" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-!next" mid="67"><![CDATA[<html>What do you mean as a strong power... ?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Lady Karacule$<BR>
+Yes. Until you get the power, don't even dream of rescuing her!<BR>
+<FONT color=#7e12d2>(Karacule yells)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">716</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7161,7161,7162,7163,7164,7165,7166</exe>
+         <exe type="complete">716</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n701_oldkarakule" sub="a">0</exelink>
+   <exelink qstep="2" npc="n497_sidel" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n498_slave_david" sub="b" />
+   <exelink qstep="3" npc="n498_slave_david" sub="c" />
+   <exelink qstep="3" npc="n498_slave_david" sub="d" />
+   <exelink qstep="3" npc="n498_slave_david" sub="e" />
+   <exelink qstep="3" npc="n498_slave_david" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="4" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="4" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="4" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="4" npc="n701_oldkarakule" sub="f">0</exelink>
+   <exelink qstep="4" npc="n701_oldkarakule" sub="g">1</exelink>
+   <exelink qstep="4" npc="n701_oldkarakule" sub="!next" />
+   <journal_data recompense="1:7161,2:7162,3:7163,4:7164,5:7165,6:7166" quest_title="강해져야 할 이유" chapterid="6" quest_level="46" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>13018,0,0</destination_pos>
+         <destination_mode>custom:551@1,552@1,553@1,554@1,13018@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[To the holy place]]></title>
+         <contents mid="50"><![CDATA[<html>Cidel wants to help Charti this time. Go after Cidel.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Entrance of Ancient Armory)</FONT> <FONT color=#a82424>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Move to the holy place at East Ancient Armory]]></destination>
+         <todo_msg mid="52"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>13018,n497</destination_pos>
+         <destination_mode>custom:551@1,552@1,553@1,554@1,13018@1</destination_mode>
+         <statemark_npcid>497</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[A sad cry]]></title>
+         <contents mid="54"><![CDATA[<html>After Charti absorbed the Dragon's Jewel, she turned into a monster. Charti lost her sense of reason and disappeared.<BR>
+Talk to Cidel.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Entrance of Ancient Armory)</FONT> <FONT color=#a82424>→ East Ancient Armory(Green Dragon's Jewel sealed)</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Talk to Cidel at East Ancient Armory]]></destination>
+         <todo_msg mid="56"><![CDATA[Talk to Cidel.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n498</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>498</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Late news]]></title>
+         <contents mid="59"><![CDATA[<html>Go back to Karacule's Hut to find a solution for turning Charti back into a human.<BR>
+ <BR>
+<FONT color=#a82424>Riverwort Wharf</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Riverwort Wharf]]></destination>
+         <todo_msg mid="61"><![CDATA[Go back to Riverwort Wharf.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Reason for being stronger]]></title>
+         <contents mid="63"><![CDATA[<html>Tell Karacule about current situation and ask for advice.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Lady Karacule</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Talk to Karacule]]></destination>
+         <todo_msg mid="65"><![CDATA[Talk to Karacule]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>715</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,255 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_723_succession</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>723</qid>
+      <designer>곽노찬</designer>
+      <qlevel>48</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9200</nextqid>
+      <nextqname>mq15_9200_lament_for_farewell1</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <qkname mid="1"><![CDATA[Succession]]></qkname>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Cidel$<BR>
+Master... Boo hoo...<BR>
+ <BR>
+※ <FONT color=#7e12d2>You need to receive the quest from Karacule to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Lady Karacule$<BR>I bore the burden of Dark Tower for a long time.<BR>It's time to take it off. Cough cough...<BR><FONT color=#a82424>Cidel</FONT>, come closer....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Lady Karacule$<BR>
+This will be my final instruction to you....<BR>
+The name of Dark Tower will be passed on to you now, Cidel.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Cidel$<BR>
+Master... I...<BR>
+I don't deserve to be the one to hold the Dark Tower name....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-b" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-c" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Lady Karacule$<BR>So will you run away?<BR>Anyone can run away from a mistake or a regret of the past. But only the brave one can fix it right.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-c" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-d" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Lady Karacule$<BR>
+Cidel.... When I first saw you, I was surprised and fearful at the same time. Because of your potential, your enormous capabilities were really similar to Karahan's....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-d" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-e" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Lady Karacule$<BR>
+I had witnessed what could happened if excellent talent is combined with a man's ambition.<BR>
+While I was watching Karahan, I understood why Dark Tower's ancestors dislike male sorceresses.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-e" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-f" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Lady Karacule$<BR>
+That's why I couldn't open my mind to you and teach you more magic after accepting you.<BR>
+Like you, I ran away, haunted by my pain caused by Karahan....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-f" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-g" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Lady Karacule$<BR>
+But now, I understand.<BR>
+You are different from him, Cidel.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-g" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-h" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Cidel$<BR>
+But I didn't obey your guidelines.<BR>
+I learnt forbidden magic..., hurt Master..., couldn't take care of Charti... , stayed away from my friends...<BR>
+I..., I'm so weak... Boo hoo....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-h" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Lady Karacule$<BR>
+Only the brave ones can realize their weaknesses, Cidel. Most people don't understand and accept their own shortcomings but blame them on others or the environment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Cidel$<BR>
+Master... Boo hoo...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Lady Karacule$<BR>
+If Karahan could see and cry over his own shortcomings... Dark Tower would be different by now....<BR>
+Cidel.... You can do it well.<BR>
+I believe so....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-a" mid="40"><![CDATA[<html>Cidel....</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Cidel$<BR>
+Whenever I think of what I have done till now... I feel so ashamed. <FONT color=#387206>{user_nick}</FONT>, I have nothing to say to you besides... sorry... .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-a" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-b" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Cidel$<BR>
+However, I will not run away from my mistakes and immature past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-b" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-c" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Cidel${action:Talk}<BR>
+Don't be afraid. I won't be stupid again.... But I'll keep the honor of Dark Tower that Master has upheld so preciously and will guard the Natives whom Charti loved.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-c" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-d" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Cidel$<BR>
+I found that the real power does not come from the Dragon's Jewel or from vengeful thoughts but from a good strong mind which is determined to take care of the people around me. If the power is not based on good intentions, it could easily become evil.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-d" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-e" mid="48"><![CDATA[<html>Will you fight against Karahan again...?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Cidel$<BR>
+<FONT color=#387206>{user_nick}</FONT>, thank you for helping me so long.<BR>
+Now, I'm the Leader of Dark Tower. I'll finish the matter of Dark Tower as a Dark Tower.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-e" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-f" mid="51"><![CDATA[<html>You will be very busy.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Cidel${action:Talk}<BR>
+Well.... first, I will hold a meeting with sorceresses all around the world. I'll decide all matters including the ceremony of Master's death and celebration for the new leader of Dark Tower, and will deal with the conflicts of the Natives after listening to other Dark Towers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-f" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-g" mid="53"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-g" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-3-h" mid="56"><![CDATA[<html>I got it.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Cidel$<BR>Yes. Please let me know Karahan's news if I'm not able to catch up.<BR>
+As soon as I gather the Dark Tower's power, I'll beat him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-h" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-3-i" mid="69"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Cidel$<BR>
+Of course, since there are various problems now, I won't be able to do something big....<BR>
+<FONT color=#7e12d2>(Cidel looks serious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-i" image="" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Cidel$<BR>But I should not have said thank you to you<BR>because there will be a lot of things that I have to thank you later on. Haha...<BR>Let's get along well. <FONT color=#387206>{user_nick}</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">723</exe>
+         <exe type="talk" npc="n701_oldkarakule">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>2스텝일 때 컷씬 출력</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7231,7231,7232,7233,7234,7235,7236</exe>
+         <exe type="complete">723</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n701_oldkarakule" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="f" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="g" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="h" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="2">0</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="b" />
+   <exelink qstep="3" npc="n707_sidel" sub="c" />
+   <exelink qstep="3" npc="n707_sidel" sub="d" />
+   <exelink qstep="3" npc="n707_sidel" sub="e" />
+   <exelink qstep="3" npc="n707_sidel" sub="f">0</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="g">1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="h" />
+   <exelink qstep="3" npc="n707_sidel" sub="i" />
+   <journal_data recompense="1:7231,2:7232,3:7233,4:7234,5:7235,6:7236" quest_title="계승" chapterid="7" quest_level="48" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Succession]]></title>
+         <contents mid="61"><![CDATA[<html>Karacule is going to make Cidel the new successor of Fairystar. Talk to Karacule.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Karacule's Hut)</FONT> <FONT color=#a82424>→ Karacule Fairystar</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Talk to Karacule]]></destination>
+         <todo_msg mid="63"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Cidel Dark Tower]]></title>
+         <contents mid="65"><![CDATA[<html>Cidel is the new successor of Fairystar. Talk to Cidel.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Karacule's Hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="67"><![CDATA[Talk to Cidel.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>722</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

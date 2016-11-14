@@ -1,0 +1,297 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_712_karahan_recipe</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>712</qid>
+      <designer>곽노찬</designer>
+      <qlevel>44</qlevel>
+      <qdesc>검은 재버섯	300382
+부패한 늪지이끼	300383
+정글 미나리	300384
+카라한의 치료약	300385</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>713</nextqid>
+      <nextqname>mq15_713_across_mind</nextqname>
+      <nextqnpc>n725_charty</nextqnpc>
+      <qkname mid="1"><![CDATA[Karahan's recipe]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>724</npcid>
+         <npcename>n724_karahan</npcename>
+         <npckname>카라한 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>725</npcid>
+         <npcename>n725_charty</npcename>
+         <npckname>차티</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Karahan$<BR>Well, this medicine that I made is actually work on any disease. Hahaha~!<BR>
+<FONT color=#7e12d2>(You need to receive a quest from Cidel at Karacule's Hut to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Charti$<BR>
+Karahan will make a medicine for our Natives.<BR>
+<FONT color=#7e12d2>(You need to receive a quest from Cidel at Karacule's Hut to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Cidel$<BR>
+Meet <FONT color=#a82424>Karahan</FONT> at Riverwort Wharf.<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Cidel$<BR>What is his ... prupose...?<BR>
+I hope <FONT color=#a82424>Charti</FONT> to be okay....<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-1" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Charti$<BR>Karahan will give a cure for our Natives!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-1-a" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Karahan$<BR>Okay, where should we start?<BR><FONT color=#a82424>Karacule</FONT> would tell you that I betrayed <FONT color=#a82424>Dark Tower</FONT><BR>
+However, it's not true.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-a" image="" itemindex="">
+      <talk_answer link_index="n724_karahan-1-b" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Karahan$<BR>Dark Tower betrayed me actually. Dark Tower's successors was always women. That's because the women had much stronger talents of Ancient Magic.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-b" image="" itemindex="">
+      <talk_answer link_index="n724_karahan-1-c" mid="31"><![CDATA[<html>(Karahan is about to continue his proud story)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Karahan${action:Talk}<BR>However, I was different. After Marian and Parelina, I was the one who had the power and the talent of the accumulated Ancient Magic. Haha...Obviously I became the Dark Tower's <FONT color=#a82424>legitimate successor</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-c" image="" itemindex="">
+      <talk_answer link_index="n724_karahan-1-d" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Karahan$<BR>After becoming to Dark Tower's successor, I did a small test for getting more powerful magic. Well, it was necessary for a little sacrifice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-d" image="" itemindex="">
+      <talk_answer link_index="n724_karahan-1-e" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Karahan$<BR>But Dark Tower expeled me by the small sacrifice. They are cowards. Although they could make a progress, they expeled me. They didn't want to take a shortcut.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-e" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-1-f" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Karahan$<BR>After leaving Dark Tower, I didn't stop studying Ancient Magic. As you can see, my <FONT color=#a82424>sister</FONT> became a wrinkled <FONT color=#a82424>old woman</FONT> though, I didn't get older because of my efforts.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-f" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-1-g" mid="36"><![CDATA[<html>Anyway, tell me the cure.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Karahan${action:Talk}<BR>I established the best Ancient Magic ever. Even <FONT color=#a82424>Karacule</FONT> was unable to master this level. So my cure would work better than Karacule's. Isn't that obvious?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-g" image="" itemindex="">
+      <talk_answer link_index="n724_karahan-1-h" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Karahan$<BR>Well, you have a hot temper.<BR>
+I've just started to tell you about my adventure. Anyway the cure is quite simple.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-h" image="" itemindex="">
+      <talk_answer link_index="n724_karahan-2" mid="38"><![CDATA[<html>Where can I get those things?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Karahan$<BR>Make a medicine of three herbs to ease the poison. The herbs are <FONT color=#a82424>Black Mushrooms</FONT>, <FONT color=#a82424>Rotten Marsh's Moss</FONT>, and <FONT color=#a82424>Jungle Parsley</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-a" mid="106"><![CDATA[<html>That's all?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Karahan$<BR><FONT color=#a82424>Black Mushrooms</FONT> is usually grown at Shadowy Ruins.<BR>You can find it at <FONT color=#a82424>East Ancient Armory</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-a" image="QW_51.dds" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Karahan$<BR><FONT color=#a82424>Rotten Marsh's Moss</FONT>is found at <FONT color=#a82424>Ancient Library</FONT> and <FONT color=#a82424>Jungle Parsley</FONT> is found at <FONT color=#a82424>Riverwort Village Ruins</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-3" image="QS_Default.dds" itemindex="300385">
+      <talk_answer link_index="n724_karahan-4" mid="60"><![CDATA[<html>(Pass the ingredients)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Karahan$<BR>You collected all the necessary ingredients.<BR>
+If you pass those to me, I'll make the medicine in <FONT color=#a82424>3 seconds</FONT> .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-4" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Karahan${action:Talk}<BR>It took <FONT color=#a82424>1.5 seconds</FONT>. Haha...<BR>Alright, pass it to the Natives. <FONT color=#a82424>Charti</FONT> knows where they are.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-4" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n725_charty-4-a" mid="63"><![CDATA[<html>What kind of favour do you ask?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Charti${action:Talk2}<BR><FONT color=#a82424>Karahan</FONT> is wonderful!<BR>He made the medicine in just a second~.<BR>By the way... can can you do me a favour?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-4-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n725_charty-4-b" mid="65"><![CDATA[<html>Got it.</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Charti$<BR>I'll get this medicine to our Natives, so please take care of <FONT color=#a82424>Cidel</FONT>. He's feeling sad because of me....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-4-b" image="" itemindex="">
+      <talk_answer link_index="n725_charty-4-!next" mid="67"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">712</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>검은 재버섯	300382
+부패한 늪지이끼	300383
+정글 미나리	300384
+1559 하프 스톤 골렘 / 1402 아사이 워리어 좀비 / 1398 탄달로</comment>
+      <conditions>
+         <chk type="questitem" num="2" op="]=">300382</chk>
+         <chk type="questitem" num="3" op="]=">300383</chk>
+         <chk type="questitem" num="1" op="]=">300384</chk>
+         <chk type="prob">500</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="3" exe="" onexe="">300383</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">300382</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300384</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="5,6,7" false="">0 and 1 and 2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="18">1559</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="18">201559</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="19">1402</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="19">201402</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="20">1391</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="20">201391</exe>
+         <exe type="addquestitem" num="1">300382</exe>
+         <exe type="addquestitem" num="1">300383</exe>
+         <exe type="addquestitem" num="1">300384</exe>
+         <exe type="conexe" true="8" false="15,8">0</exe>
+         <exe type="conexe" true="8" false="16,8">1</exe>
+         <exe type="conexe" true="8" false="17,8">2</exe>
+         <exe type="conexe" true="16,8" false="">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300382</exe>
+         <exe type="delquestitem" num="-1">300383</exe>
+         <exe type="delquestitem" num="-1">300384</exe>
+         <exe type="addquestitem" num="1">300385</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7121,7121,7122,7123,7124,7125,7126</exe>
+         <exe type="complete">712</exe>
+         <exe type="delquestitem" num="-1">300385</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n724_karahan" sub="b" />
+   <exelink qstep="1" npc="n724_karahan" sub="c" />
+   <exelink qstep="1" npc="n724_karahan" sub="d" />
+   <exelink qstep="1" npc="n724_karahan" sub="e" />
+   <exelink qstep="1" npc="n724_karahan" sub="f" />
+   <exelink qstep="1" npc="n724_karahan" sub="g" />
+   <exelink qstep="1" npc="n724_karahan" sub="h" />
+   <exelink qstep="1" npc="n724_karahan" sub="2">0,1,2,3,4,9,10,11,12,13,14</exelink>
+   <exelink qstep="3" npc="n724_karahan" sub="4">0,1,2,3,4,5</exelink>
+   <exelink qstep="4" npc="n725_charty" sub="b">0</exelink>
+   <exelink qstep="4" npc="n725_charty" sub="!next">1,2</exelink>
+   <journal_data recompense="1:7121,2:7122,3:7123,4:7124,5:7125,6:7126" quest_title="카라한의 조제법" chapterid="6" quest_level="44" quest_mark_type="1" use_item_list="300382,300383,300384,300385">
+      <journal index="1">
+         <contents_image>QN_Npc_karahan.dds</contents_image>
+         <destination_pos>14,n724</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>724</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Karahan's Recipe I]]></title>
+         <contents mid="87"><![CDATA[<html>Talk to Karahan and find out how to cure the Natives.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Karahan</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Talk to Karahan at Riverwort Wharf]]></destination>
+         <todo_msg mid="89"><![CDATA[Talk to Karahan at Riverwort Wharf]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>14,0,0</destination_pos>
+         <destination_mode>custom:14@4,521@3,522@3,523@3,511@3,551@3,552@3,553@3,554@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[Karahan's recipe II]]></title>
+         <contents mid="92"><![CDATA[<html>Karahan said that three herbs are necessary for the medicine. Black Mushrooms can be found at East Ancient Armory. Rotten Marsh's Moss is at Ancient Library. Jungle Parsley is at Riverwort Village Ruins.<BR><BR><FONT color=#086171>Riverwort Wharf (Entrance of Ancient Armory)</FONT> <FONT color=#a82424>→ Ancient Library</FONT><BR><FONT color=#086171>Riverwort Wharf (Entrance of Ancient Armory)</FONT> <FONT color=#a82424>→ East Ancient Armory<BR></FONT><FONT color=#086171>Riverwort Wharf (Riverwort Ruins)</FONT> <FONT color=#a82424>→ Riverwort Village Ruins</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[Collecting ingredients]]></destination>
+         <todo_msg mid="94"><![CDATA[Collect ingredients for the medicine]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_karahan.dds</contents_image>
+         <destination_pos>14,n724</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>724</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[Karahan's recipe III]]></title>
+         <contents mid="98"><![CDATA[<html>Collection of herbs completed.<BR>
+Go back to Riverwort Wharf and pass them to Karahan.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Karahan</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[Talk to Karahan at Riverwort Wharf]]></destination>
+         <todo_msg mid="100"><![CDATA[Pass ingredients to Karahan at Riverwort Wharf]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Charty.dds</contents_image>
+         <destination_pos>14,n725</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>725</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[Karahan's recipe IV]]></title>
+         <contents mid="103"><![CDATA[<html>Ask how to deliver the medicine to Charti and the Natives.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Charti</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[Talk to Charti at Riverwort Wharf]]></destination>
+         <todo_msg mid="105"><![CDATA[Talk to Charti.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>711</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

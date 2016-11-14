@@ -1,0 +1,334 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_742_genius</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>742</qid>
+      <designer>곽노찬</designer>
+      <qlevel>48</qlevel>
+      <qdesc>검은 재버섯	300382
+부패한 늪지이끼	300383
+정글 미나리	300384</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>743</nextqid>
+      <nextqname>mq15_743_destiny</nextqname>
+      <nextqnpc>n713_soceress_tamara</nextqnpc>
+      <qkname mid="1"><![CDATA[Genius]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Cidel$<BR>I want to keep a distance from you for a while.<BR>Please leave me alone.<BR>※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Master Sorceress Tamara$<BR>The condition of the Natives is getting worse.<BR>We need Karahan's medication....<BR>※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$Karacule Fairystar$<BR>Unless we get <FONT color=#a82424>Karahan's recipe</FONT>, we can't cure them. Taking away their pain is the best we can do....<BR>
+※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Network Connection is not stable.</FONT><BR>※ <FONT color=#7e12d2>Resetting the Mission Objective.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-a" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Cidel$<BR>Master, what are you talking about?<BR>They... can be cured!<BR><FONT color=#a82424>Karahan's medication</FONT>... did it work?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-b" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Karacule Fairystar$<BR>Don't be so silly, Cidel.<BR>You know unless we acquire <FONT color=#a82424>Karahan's recipe</FONT> we can't cure them. All we can do is take away their pain and suffering.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-c" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Cidel$<BR>
+I've watched the whole process of <FONT color=#a82424>Karahan's medication</FONT>.<BR>
+If I have the ingredients I can make them. So...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-c" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-d" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Karacule Fairystar$<BR>
+Is that true, Cidel?<BR>
+Can you make <FONT color=#a82424>Karahan's medication</FONT> simply by watching from the side?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-e" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Cidel$<BR>
+I can....<BR>
+I can't guarantee if the effect will be same but it will have some effect. Please trust me Master.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-e" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-f" mid="21"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Karacule Fairystar$<BR>
+It's amazing Cidel....<BR>
+Ok. Ingredients....<FONT color=#387206>{user_nick}</FONT>, can you do us a favor please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-f" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-g" mid="97"><![CDATA[<html>(Karacule heads to Cidel)</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Karacule Fairystar$<BR>
+What we need is <FONT color=#a82424>Rotten Swamp Moss</FONT>, <FONT color=#a82424>Jungle Parsley</FONT> and <FONT color=#a82424>Black Ash Mushroom</FONT>.<BR>
+Do you know where to get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-g" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-h" mid="99"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Cidel$<BR>
+Yes. <FONT color=#a82424>Rotten Swamp Moss</FONT> can be found in <FONT color=#a82424>Ancient Library</FONT>, <FONT color=#a82424>Jungle Parsley</FONT> can be found in <FONT color=#a82424>Riverwort Town Ruins</FONT>, <FONT color=#a82424>Black Ash Mushroom</FONT> can be found in <FONT color=#a82424>East Ancient Armory</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-h" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Karacule Fairystar$<BR><FONT color=#7e12d2>(Karacule smiles)</FONT><BR>Cidel, your genius mind always surprises me.<BR>I wish I had more time....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Cidel$<BR>
+Natives' condtions are getting worse....I must help them somehow.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Master Sorceress Tamara$<BR>
+Natives' are getting worse.<BR>
+We need Karahan's medication....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Objective.</FONT><BR>※ <FONT color=#7e12d2>Talk to Karacule Fairystar.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="QW_55.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Karacule Fairystar$<BR><FONT color=#a82424>Rotten Swamp Moss</FONT> can be found in <FONT color=#a82424>Ancient Library</FONT>, <FONT color=#a82424>Jungle Parsley</FONT> can be found in <FONT color=#a82424>Riverwort Town Ruins</FONT>, <FONT color=#a82424>Black Ash Mushroom</FONT> can be found in <FONT color=#a82424>East Ancient Armory</FONT>.<BR>Get them before the Natives get worse.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Cidel$<BR>
+I can make the medication.<BR>
+So please bring me the ingredients....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Objective.</FONT><BR>※ <FONT color=#7e12d2>Collect ingredients of medication for Natives.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Karacule Fairystar$<BR>
+If you have found all the ingredients, give them to <FONT color=#a82424>Cidel</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-a" mid="31"><![CDATA[<html>(Hand over the ingredients)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Cidel$<BR>
+You've got the ingredients.<BR>
+This enough to give it a try.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-3-b" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Cidel$<BR>
+<FONT color=#7e12d2>(Cidel makes the medication with the ingredients)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-b" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-c" mid="106"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Cidel${action:Talk}<BR>I'm not sure if this has any effect but the medication is made.<BR>Please give this to <FONT color=#a82424>Sorceress Tamara</FONT>.<BR>
+I have a place to visit....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-c" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Cidel$<BR>
+It's nothing, don't worry.<BR>
+Hurry and give this to Tamara.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Objective.</FONT><BR>※ <FONT color=#7e12d2>Talk to Cidel.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Cidel${action:Talk}<BR>I'm not sure if this has any effect but the medication is made.<BR>Please give this to <FONT color=#a82424>Sorceress Tamara</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-a" mid="57"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Master Sorceress Tamara$<BR>
+<FONT color=#a82424>Cidel</FONT> made this?<BR>
+He must be a genius remembering the process.<BR>
+No wonder Karacule takes good care of him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-!next" mid="77"><![CDATA[<html><FONT color=#a94407>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Objective.</FONT><BR>※ <FONT color=#7e12d2>Talk to Master Sorceress Tamara.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">742</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>검은 재버섯	300382
+부패한 늪지이끼	300383
+정글 미나리	300384
+1559 하프 스톤 골렘 / 1402 아사이 워리어 좀비 / 1398 탄달로</comment>
+      <conditions>
+         <chk type="questitem" num="2" op="]=">300382</chk>
+         <chk type="questitem" num="3" op="]=">300383</chk>
+         <chk type="questitem" num="1" op="]=">300384</chk>
+         <chk type="prob">500</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="3" exe="" onexe="">300383</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">300382</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300384</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="5,6,7" false="">0 and 1 and 2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="18">1559</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="18">201559</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="19">1402</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="19">201402</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="20">1391</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="20">201391</exe>
+         <exe type="addquestitem" num="1">300382</exe>
+         <exe type="addquestitem" num="1">300383</exe>
+         <exe type="addquestitem" num="1">300384</exe>
+         <exe type="conexe" true="8" false="15,8">0</exe>
+         <exe type="conexe" true="8" false="21">1</exe>
+         <exe type="conexe" true="8" false="17,8">2</exe>
+         <exe type="conexe" true="16,8" false="">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7420,,,,,,</exe>
+         <exe type="complete">742</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="f" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="g" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="h">0,1,2,3,4,9,10,11,12,13,14</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="b" />
+   <exelink qstep="3" npc="n707_sidel" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="a">0</exelink>
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="!next">1</exelink>
+   <journal_data recompense="7420" quest_title="천재입니다" chapterid="7" quest_level="48" quest_mark_type="1" use_item_list="300382,300383,300384">
+      <journal index="1">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Genius I]]></title>
+         <contents mid="79"><![CDATA[<html>Karacule said the Natives are getting worse. Talk to Karacule.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Karacule Fairystar</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Conversation with Karacule]]></destination>
+         <todo_msg mid="81"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>14,-1244,-7489</destination_pos>
+         <destination_mode>custom:14@4,521@3,522@3,523@3,511@3,551@3,552@3,553@3,554@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Genius II]]></title>
+         <contents mid="84"><![CDATA[<html>Cidel wants to make the medication by herself. Collect ingredients for the cure.<BR>
+<BR><FONT color=#086171>Riverwort Wharf (Entrance of Ancient Warehouse)</FONT> <FONT color=#a82424>→ Ancient Library</FONT><BR><FONT color=#086171>Riverwort Wharf (Entrance of Ancient Warehouse)</FONT> <FONT color=#a82424>→ East Ancient Armory<BR></FONT><FONT color=#086171>Riverwort Wharf (Riverwort Ruins)</FONT> <FONT color=#a82424>→ Riverwort Town Ruins</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Collect Ingredients]]></destination>
+         <todo_msg mid="86"><![CDATA[Collect Ingredients for the Cure]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[Genius III]]></title>
+         <contents mid="88"><![CDATA[<html>Collected all of the ingredients. Return to Karacule's hut and deliver them to Cidel.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[Conversation with Cidel]]></destination>
+         <todo_msg mid="90"><![CDATA[Deliver collected ingredients to Cidel]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Genius IV]]></title>
+         <contents mid="93"><![CDATA[<html>The cure for Natives are made. Return to Lotus Marsh and deliver them to Master Sorceress Tamara.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Conversation with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="95"><![CDATA[Deliver medication to Master Sorceress Tamara]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>741</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,175 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9205_shadow</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9205</qid>
+      <designer>곽노찬</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9206</nextqid>
+      <nextqname>mq15_9206_strange</nextqname>
+      <nextqnpc>n711_warrior_fedro</nextqnpc>
+      <qkname mid="1"><![CDATA[Hero's Shadow]]></qkname>
+      <qnpc>
+         <npcid>711</npcid>
+         <npcename>n711_warrior_fedro</npcename>
+         <npckname>상급 워리어 페드로</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>809</npcid>
+         <npcename>n809_warrior_fedro</npcename>
+         <npckname>상급 워리어 페드로</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Warrior Pedro$<BR>I think the person you saw at <FONT color=#a82424>Queen's Garden</FONT> was not <FONT color=#a82424>Rambert</FONT>.<BR>I also am not sure because I only heard about him from my father, but his looks seem different.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1" image="QW_68.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Master Warrior Pedro$<BR>It'd be better to check with our own eyes.<BR>Let's go to <FONT color=#a82424>Queen's Garden</FONT>.<BR>I will reveal the identity of this Unidentified Warrior!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n809_warrior_fedro-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Master Warrior Pedro$<BR>
+That... That person is...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n809_warrior_fedro-2" image="" itemindex="">
+      <talk_answer link_index="n809_warrior_fedro-2-a" mid="10"><![CDATA[<html>Do you know him?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Warrior Pedro$<BR>That... That person is...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n809_warrior_fedro-2-a" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n809_warrior_fedro-2-b" mid="14"><![CDATA[<html>Barnac... one of the six heroes...?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Warrior Pedro$<BR>
+That person is...<BR>
+<FONT color=#a82424>Warrior Barnac</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n809_warrior_fedro-2-b" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n809_warrior_fedro-3" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Warrior Pedro$<BR>
+That's right!<BR>
+I've never seen him personally but according to what I heard from my father, I'm sure it's him! I'm certain!<BR>
+Wow... the legendary hero <FONT color=#a82424>Barnac</FONT> is in Lotus Marsh!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n809_warrior_fedro-3" image="QW_67.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Master Warrior Pedro$<BR>That direction must be... <FONT color=#a82424>Valley of Blindness</FONT>.<BR>
+Hey, let's return to village first.<BR>Let's cool our heads on the way and think more about this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-a" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Warrior Pedro$<BR>
+I kept thinking about why <FONT color=#a82424>Barnac</FONT> is in Lotus Marsh.<BR>
+Since he was quite "close" to Karacule, maybe he came to pay his respects after hearing about her death.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-a" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-!next" mid="24"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9205</exe>
+         <exe type="talk" npc="n711_warrior_fedro">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92050,,,,,,</exe>
+         <exe type="complete">9205</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="acceptted">0,1</exelink>
+   <exelink qstep="2" npc="n809_warrior_fedro" sub="b" />
+   <exelink qstep="2" npc="n809_warrior_fedro" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="a">0</exelink>
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="!next">1</exelink>
+   <journal_data recompense="92050" quest_title="영웅의 그림자" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_68.dds</contents_image>
+         <destination_pos>681,n809</destination_pos>
+         <destination_mode>custom:681@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Hero's Shadow I]]></title>
+         <contents mid="27"><![CDATA[<html>Go to Queen's Garden with Pedro and follow the Unidentified Warrior.<BR><BR><FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Queen's Garden</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Search Queen's Garden]]></destination>
+         <todo_msg mid="29"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_WarriorFedro.dds</contents_image>
+         <destination_pos>681,n809</destination_pos>
+         <destination_mode>custom:681@1</destination_mode>
+         <statemark_npcid>809</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Hero's Shadow II]]></title>
+         <contents mid="31"><![CDATA[<html>You saw the Unidentified Warrior. Talk to Pedro.<BR><BR><FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Queen's Garden(Master Warrior Pedro)</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Talk to Pedro at Queen's Garden.]]></destination>
+         <todo_msg mid="33"><![CDATA[Talk to Master Warrior Pedro.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_WarriorFedro.dds</contents_image>
+         <destination_pos>15,n711</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>711</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="34"><![CDATA[Hero's Shadow III]]></title>
+         <contents mid="35"><![CDATA[<html>Pedro suspects that the Unidentified Warrior is Barnac. Go back to the village and listen to what he thinks.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Warrior Pedro</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[Talk to Master Warrior Pedro]]></destination>
+         <todo_msg mid="37"><![CDATA[Go back to Lotus Marsh and talk to Pedro]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9204</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

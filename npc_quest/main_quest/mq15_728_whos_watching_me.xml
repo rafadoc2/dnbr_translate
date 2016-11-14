@@ -1,0 +1,248 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_728_whos_watching_me</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>728</qid>
+      <designer>곽노찬</designer>
+      <qlevel>42</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>729</nextqid>
+      <nextqname>mq15_729_resolve</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Who's Watching Me]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>485</npcid>
+         <npcename>n485_overhear</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>754</npcid>
+         <npcename>n754_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>788</npcid>
+         <npcename>n788_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>789</npcid>
+         <npcename>n789_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+※ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Go to Riverwort Village Ruins to meet Warrior Xian.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1" image="QW_51.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Warrior Xian$<BR>
+So, I'll go to Riverwort Village Ruins to hear the information from him!<BR>
+<FONT color=#7e12d3>(Let's follow Xian to Riverwort Village Ruins)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n789_cian-1" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n789_cian-1-a" mid="11"><![CDATA[<html>Did you hear the information about Charti's grandfather?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Warrior Xian$<BR>
+OH, <FONT color=#387206>{user_nick}</FONT>....<BR>
+<FONT color=#7e12d3>(Xian's standing with concerns)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n789_cian-1-a" image="" itemindex="">
+      <talk_answer link_index="n789_cian-1-b" mid="13"><![CDATA[<html>Where are they?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Warrior Xian$<BR>
+Actually... Charti suddenly came up here so I couldn't hear it.<BR>
+I think he has some bad things in his mind....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n789_cian-1-b" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n789_cian-1-c" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Warrior Xian$<BR>They went to
+<FONT color=#a82424>Riverwort Wharf</FONT>. But...<BR>
+<FONT color=#7e12d3>(Xian looks around)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n789_cian-1-c" image="" itemindex="">
+      <talk_answer link_index="n789_cian-1-d" mid="17"><![CDATA[<html>Yes, I can feel it too.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Warrior Xian$<BR>
+I can feel somebody's watching me...<BR>
+<FONT color=#387207>{user_nick}</FONT>, can you feel that too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n789_cian-1-d" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Warrior Xian$<BR>Who's that...? Is it... <FONT color=#a82424>Jack</FONT>?!<BR>Umm... what an odious man!<BR>
+He's chased me to Lotus Marsh?!<BR><FONT color=#7e12d3>(Xian's trembling)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Karahan$<BR>Ah, you found me?<BR>Well, it's because that I'm too beautiful so brightening all the things around me. Haha....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n789_cian-2" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Warrior Xian$<BR>
+Charti and the strange man went to Riverwort Wharf.<BR>
+But I definitely felt <FONT color=#a82424>somebody watched me</FONT>...<BR>
+It was <FONT color=#a82425>Jack</FONT>. I'm sure!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Go to Riverwort Wharf to meet Charti and the strange man.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-a" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Charti$<BR>
+Huh...? This smell is...?<BR>
+<FONT color=#7e12d3>(Charti looks around)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-b" mid="27"><![CDATA[<html>What... ? I just came here...?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Charti$<BR>
+What the? You! How long have you been there?<BR>
+Did you watch me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-c" mid="29"><![CDATA[<html>(Charti also felt the same feeling from Riverwort Village Ruins?)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Charti$<BR>
+Don't lie!<BR>
+I know you've chased me before!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-c" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-d" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Strange man$<BR>Tut-tut..., You watched me because of my beauty.<BR>
+Look, look at me as you wish.<BR>
+But don't look at me over three seconds because I'm brightening now.<BR>You'll lose your eyes! Haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-e" mid="33"><![CDATA[<html>(Karahan...? It's common...?)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Cidel$<BR>Karahan....what are you going to do at the back?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-f" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Charti$<BR>Cidel, what're you talking about to Karahan?<BR><FONT color=#7e12d3>(Charti talks mildly)</FONT><BR>Karahan. What was the present that you said...?<BR>Do you have any information about my grandfather...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-f" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-g" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Karahan$<BR>Huhu, yeah.<BR>There was a hiding place of dragon-followers in<FONT color=#a82425>East Ancient Armory</FONT>.<BR>Dragon followers hid other tribe people in there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-g" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-h" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Cidel$<BR>How could you know about it? What do you have a connection with dragon-followers?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-h" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-2-i" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Charti$<BR>Cidel What's wrong with you?<BR>Thank you Karahan. I'll go to <FONT color=#a82425>East Ancient Armory</FONT>right now.<BR>Cidel, I'll see what you're going to give~Seeya</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-i" image="" itemindex="">
+      <talk_answer link_index="n485_overhear-2-!next" mid="44"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-2-j" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>${user_nick$<BR>
+<FONT color=#7e12d3>(I feel something ominous with Riverwort Village Ruins' strange feeling and the name of Karahan. I'd better connect to Academic Station and ask to Jasmine about this)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">728</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>리버워트 마을 폐허 진입 시, NPC 아카데믹 지켜보는 카메라 워크씬</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7280,,,,,,</exe>
+         <exe type="complete">728</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n789_cian" sub="b" />
+   <exelink qstep="1" npc="n789_cian" sub="c" />
+   <exelink qstep="1" npc="n789_cian" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n485_overhear" sub="b" />
+   <exelink qstep="2" npc="n485_overhear" sub="c" />
+   <exelink qstep="2" npc="n485_overhear" sub="d" />
+   <exelink qstep="2" npc="n485_overhear" sub="e" />
+   <exelink qstep="2" npc="n485_overhear" sub="f" />
+   <exelink qstep="2" npc="n485_overhear" sub="g" />
+   <exelink qstep="2" npc="n485_overhear" sub="h" />
+   <exelink qstep="2" npc="n485_overhear" sub="i">0</exelink>
+   <exelink qstep="2" npc="n485_overhear" sub="!next">1</exelink>
+   <journal_data recompense="7280" quest_title="누군가 지켜보고 있습니다" chapterid="6" quest_level="42" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,n789</destination_pos>
+         <destination_mode>custom:511@1</destination_mode>
+         <statemark_npcid>789</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Somebody's watching me I]]></title>
+         <contents mid="51"><![CDATA[<html>Go to Riverwort Village Ruins to meet Xian.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82425>→ Riverwort Village Ruins</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk with Warrior Xian in Riverwort Village Ruins]]></destination>
+         <todo_msg mid="53"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Charty.dds</contents_image>
+         <destination_pos>14,n485</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>485</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Somebody's watching me II]]></title>
+         <contents mid="55"><![CDATA[<html>Charti and Strange man seemed to go to Riverwort Wharf. Let's talk with Charti in Riverwort Wharf.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82425>→ Charti</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Talk with Charti in Riverwort Wharf]]></destination>
+         <todo_msg mid="57"><![CDATA[Go to Riverwort Wharf to meet Charti.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>727</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

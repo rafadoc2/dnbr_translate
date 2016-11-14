@@ -1,0 +1,388 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9318_fade_off_disciple</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9318</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc>빛나는 가루 진통제	300480
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9319</nextqid>
+      <nextqname>mq11_9319_about_dragon</nextqname>
+      <nextqnpc>n523_velskud</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[사라진 사도]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1151</npcid>
+         <npcename>n1151_academic</npcename>
+         <npckname>아카데믹 코멜리나 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>523</npcid>
+         <npcename>n523_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(낯선 항아리가 수상한 소리를 내며 눈길을 끈다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-1-" mid="1737" select_type="5" />
+      <talk_question mid="1736"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(아참. 그러고보니 아카데믹 코멜리나와 검은 산자락에서 대화해야 한다는 걸 잊고 있었다.<BR>벨스커드... 검은 기사를 찾을 힌트를 준다고 했는데.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds " center_image="">
+      <talk_answer link_index="n523_velskud-1-" mid="1739" select_type="5" />
+      <talk_question mid="1738"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(벨스커드가 부상의 상처를 감싼 채 눈을 감고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="1743" select_type="5" />
+      <talk_question mid="1740"><![CDATA[<html>$루나리아$<BR>저쪽의 꼬마 모험자를 만나려는 거지?<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-1-a" mid="1744" select_type="2" />
+      <talk_question mid="1741"><![CDATA[<html>$아카데믹 코멜리나$<BR>전 벨스커드 님을 치료하기 위한 치료약을 구하는 중입니다.<BR>당신이 그걸 도와주신다면, 그분을 해치지 않을 거라는 사실을 믿고 정보를 드리겠어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-1-b" mid="1746" select_type="0"><![CDATA[<html>어디서 뭘 구하면 되죠?</html>]]></talk_answer>
+      <talk_answer link_index="n1151_academic-1-b" mid="1747" select_type="0"><![CDATA[<html>(무슨 사연이 있나 보다)</html>]]></talk_answer>
+      <talk_question mid="1745"><![CDATA[<html>$아카데믹 코멜리나$<BR>그분은 좋은 분이에요.<BR>...제가 아는 그분은... 이라고 해야 되겠지만요...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1-b" image="QW_33.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-1-c" mid="1749" select_type="0"><![CDATA[<html>물론이죠!</html>]]></talk_answer>
+      <talk_answer link_index="n1151_academic-1-c" mid="1750" select_type="0"><![CDATA[<html>일단 해 보죠.</html>]]></talk_answer>
+      <talk_answer link_index="n1151_academic-1-c" mid="1751" select_type="0"><![CDATA[<html>그래야 알려주실 테니까.</html>]]></talk_answer>
+      <talk_question mid="1748"><![CDATA[<html>$아카데믹 코멜리나$<BR>예전에 배운 건데, 외딴섬 중심부에서 빛나는 가루 진통제를 구할 수 있다고 합니다.<BR>저는 그걸 사용해 보려고 합니다. 정말 저를 도와주실 건가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1-c" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-1-d" mid="1753" select_type="2" />
+      <talk_question mid="1752"><![CDATA[<html>$아카데믹 자스민$<BR>빛나는 가루 진통제를 구해서, <FONT color=#a82424>세인트헤이븐</FONT>의 <FONT color=#a82424>아카데믹 스테이션</FONT>에 놓아 주십시오.<BR>거기에 약속대로 정보를 적은 메모를 남기겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1-d" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2" mid="1755" select_type="2" />
+      <talk_question mid="1754"><![CDATA[<html>$아카데믹 자스민$<BR>아참, <FONT color=#a82424>아카데믹 스테이션</FONT>이란 이렇게 저렇게 그렇게 생긴 <FONT color=#a82424>항아리</FONT>입니다.<BR>
+노란 항아리인데, 아마 금세 찾을 수 있으실 거예요. 그럼...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2" image="QW_33.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-" mid="1758" select_type="5" />
+      <talk_question mid="1757"><![CDATA[<html>$아카데믹 코멜리나$<BR>빛나는 가루 진통제는 <FONT color=#a82424>외딴섬 중심부</FONT>의 {monster:926}한테서 구할 수 있다고 합니다.<BR>아주 까다로운 상대니까 몸 조심하십시오.<BR><FONT color=#7e12d2>(코멜리나가 몹시 공손하게 고개를 숙인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="QW_33.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-" mid="1760" select_type="5" />
+      <talk_question mid="1759"><![CDATA[<html>$루나리아$<BR>외딴섬 중심부로 가는 거구나.<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-3" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-3-" mid="1762" select_type="5" />
+      <talk_question mid="1761"><![CDATA[<html>$루나리아$<BR>여기에서 헤매고 있을 때가 아니지 않아?<BR>세인트헤이븐에 있는 노란 항아리를 찾아보도록 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-3" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-3-" mid="1764" select_type="5" />
+      <talk_question mid="1763"><![CDATA[<html>$아카데믹 자스민$<BR>빛나는 가루 진통제를 세인트헤이븐의 <FONT color=#a82424>아카데믹 스테이션</FONT>에 놓아 주십시오.<BR>거기에 약속대로 정보를 적은 메모를 남겼습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-3-a" mid="1766" select_type="2" />
+      <talk_question mid="1765"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#662500>(낯선 항아리가 수상한 소리를 내며 눈길을 끌고 있군.<BR>어디를 보아도 평범한 항아리인데...</FONT><BR>
+<FONT color=#662500>움직인 것처럼 느껴지는 건 기분 탓인가?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-a" image="QS_Default.dds" itemindex="300480" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-3-b" mid="1768" select_type="2" />
+      <talk_question mid="1767"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(여기에 약을 올려놓으면 되려나?</FONT><BR>
+<FONT color=#662500>아, 이쪽에 메모가 있다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-b" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-3-c" mid="1770" select_type="2" />
+      <talk_question mid="1769"><![CDATA[<html>$코멜리나의 메모$<BR><FONT color=#7e12d2>(약속대로 정보를 드립니다.<BR>반드시 비밀을 지켜 주세요. 믿고, 부탁드립니다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-c" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-3-d" mid="1773" select_type="2" />
+      <talk_question mid="1772"><![CDATA[<html>$코멜리나의 메모$<BR><FONT color=#7e12d2>(벨스커드 님은 부상을 입으셨습니다.<BR>제가 발견해, 지금은 검은 산자락의 버려진 동굴 속에 가 계십니다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-d" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-3-e" mid="1775" select_type="2" />
+      <talk_question mid="1774"><![CDATA[<html>$코멜리나의 메모$<BR><FONT color=#7e12d2>(다른 모험자님들께서는 모두 그분을 적이라고 여기십니다.</FONT><BR>
+<FONT color=#7e12d2>지금까지의 일들을 보면 원망하시는 게 당연해요.<BR>그렇지만 그분은 제게는 아주 소중한 분입니다. 저는 그분을 도와드리고 싶어요.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-e" image="" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-4" mid="1777" select_type="2" />
+      <talk_question mid="1776"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(메모는 이게 전부인 것 같다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QW_SkirtOfBlackMountain.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-4-" mid="1780" select_type="5" />
+      <talk_question mid="1779"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(검은 산자락으로 가서 벨스커드의 은신처를 찾아보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-a" mid="1782" select_type="0"><![CDATA[<html>벨스커드...?</html>]]></talk_answer>
+      <talk_answer link_index="n523_velskud-4-a" mid="1783" select_type="0"><![CDATA[<html>검은 기사!</html>]]></talk_answer>
+      <talk_answer link_index="n523_velskud-4-a" mid="1784" select_type="0"><![CDATA[<html>블랙 드래곤!</html>]]></talk_answer>
+      <talk_question mid="1781"><![CDATA[<html>$벨스커드$<BR>......호오, 이게 누구신가?<BR>오래 살다보니 의외의 얼굴을 만나게 되는군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-b" mid="1786" select_type="2" />
+      <talk_question mid="1785"><![CDATA[<html>$벨스커드$<BR>여기까지는 무슨 연유로 행차하셨는가?<BR>오래 전에 썩어 해골이 된 줄 알았는데.<BR>
+캐더락에서 본 것이 헛된 신기루가 아니었군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-b" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-c" mid="1788" select_type="2" />
+      <talk_question mid="1787"><![CDATA[<html>$벨스커드$<BR>일루전.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-c" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-d" mid="1790" select_type="2" />
+      <talk_question mid="1789"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>역시...<BR>당신은 일루전을 알고 있군요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-e" mid="1792" select_type="2" />
+      <talk_question mid="1791"><![CDATA[<html>$벨스커드$<BR>당신<FONT color=#a82424>은</FONT>이라...너 자신은 모르나?<BR>
+자신에 대해서 모른다는 건 우스운 이야기다.<BR>...하긴 누구든 진정한 자신에 대해서는 잘 알지 못하겠지만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-e" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-f" mid="1794" select_type="2" />
+      <talk_question mid="1793"><![CDATA[<html>$벨스커드$<BR>네 녀석은 뭐냐?<BR>일루전이라면 너는 어째서 50년 이상을 나이 들지 않고 그대로 다시 나타난 거냐?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-g" mid="1797" select_type="2" />
+      <talk_question mid="1796"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저도 잘 모르겠습니다.<BR>다만 어떤 이유때문에 시간을 이동한 게 아닐까... 추측합니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-g" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-h" mid="1799" select_type="2" />
+      <talk_question mid="1798"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(역시, 일루전은 50년 전에서 다시 10년 정도 시간을 뛰어넘어서 나와 만났던 거야.<BR>여전히 겨우 10년 정도 사이에 어떻게 내가 일루전 같은 인간이 되었던 건지는 모르겠지만.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-i" mid="1801" select_type="2" />
+      <talk_question mid="1800"><![CDATA[<html>$벨스커드$<BR>시간을 이동한다?<BR>흠... 어리석은 일이 세상엔 제법 많이 일어나는 모양이군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-j" mid="1804" select_type="2" />
+      <talk_question mid="1803"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(응? 시간을 이동했다는 말을 믿어?<BR>신기한 일이네. 또 이런 경우를 본 것도 아닐테고...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-k" mid="1807" select_type="2" />
+      <talk_question mid="1806"><![CDATA[<html>$벨스커드$<BR>네 녀석을 처음 만난 것은 수십년 전.<BR>
+블랙 드래곤 카라스가 이 일대를 요란스럽게 만들던 시기 정도였다.<BR>혹은 그보다 좀 더 전이었을지도...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-l" mid="1809" select_type="2" />
+      <talk_question mid="1808"><![CDATA[<html>$벨스커드$<BR>그때 너는 <FONT color=#a82424>그자</FONT>를 모시는 사도였다. <FONT color=#a82424>네 번째 사도</FONT>.<BR>그자는 가신들의 충성을 강요하지 않았으나, 너는 특히 그자에게 별 관심이 없었다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-m" mid="1812" select_type="2" />
+      <talk_question mid="1811"><![CDATA[<html>$벨스커드$<BR>나는 왜 네 녀석이 사도가 되었는지 궁금했지. 너는 강력한 힘에도, 권력에도, 보물에도 관심이 없었다.<BR>어울리지도 않았고 그자를 열렬히 따르는 것도 아니었지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-n" mid="1814" select_type="2" />
+      <talk_question mid="1813"><![CDATA[<html>$벨스커드$<BR>블랙 드래곤 카라스의 레이드를 준비하는 동안 나는 네 녀석의 소식을 듣지 못했다.<BR>그러나 그 이후 다시 네 녀석의 소식을 듣지는 못했다. 죽어 버렸거나...<BR>
+아니면, 그자의 수하를 떠나 버렸다고 생각했다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-n" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-o" mid="1816" select_type="2" />
+      <talk_question mid="1815"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그때 일루전은 루나리아와 함께 어딘가로 가려고 하다가 부상을 입고, 시간을 거슬러서 나를 만났던 거군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-p" mid="1818" select_type="2" />
+      <talk_question mid="1817"><![CDATA[<html>$벨스커드$<BR>지금은 그 <FONT color=#a82424>네번째 사도</FONT> 자리를 다른 자가 차지했지.<BR><FONT color=#7e12d2>(벨스커드가 조소 어린 시선을 들어 올린다)</FONT><BR>...다시 너를 봤을 때, 네 녀석도 드래곤이 되어 버렸는가 생각했다. 그러나 그런 기운은 느껴지지 않는군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-q" mid="1821" select_type="0"><![CDATA[<html>에이션트...?</html>]]></talk_answer>
+      <talk_answer link_index="n523_velskud-4-q" mid="1822" select_type="0"><![CDATA[<html>...당신과 같은 드래곤?</html>]]></talk_answer>
+      <talk_question mid="1820"><![CDATA[<html>$벨스커드$<BR>무엇보다, 정말로 네 녀석이 나와 같은 드래곤이 되었더라면 그 성가신 <FONT color=#a82424>에이션트</FONT> 놈들이 얌전히 두고 봤을 리가 없으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-r" mid="1824" select_type="2" />
+      <talk_question mid="1823"><![CDATA[<html>$벨스커드$<BR>모르나?<BR>흥... 멍청이를 일일이 가르치는 재주는 없다.<BR>
+그 정도는 저 <FONT color=#a82424>인간들의 성곽 </FONT>안에서도 얼마든지 알아낼 수 있을 터.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-s" mid="1826" select_type="2" />
+      <talk_question mid="1825"><![CDATA[<html>$벨스커드$<BR>더는 네게 해줄 말이 없다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-t" mid="1829" select_type="4" />
+      <talk_question mid="1828"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-t" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-4-!next" mid="1844" select_type="2" />
+      <talk_question mid="1843"><![CDATA[<html>$벨스커드$<BR>성가시게 굴지 말고 물러가라.<BR><FONT color=#7e12d2>(벨스커드가 눈을 감고 완고하게 입을 다문다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9318</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200926</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">926</exe>
+         <exe type="addquestitem" num="1">300480</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300480</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300480</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93180,,,,,,,</exe>
+         <exe type="complete" true="">9318</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1151_academic" sub="b" />
+   <exelink qstep="1" npc="n1151_academic" sub="b" />
+   <exelink qstep="1" npc="n1151_academic" sub="c" />
+   <exelink qstep="1" npc="n1151_academic" sub="c" />
+   <exelink qstep="1" npc="n1151_academic" sub="c" />
+   <exelink qstep="1" npc="n1151_academic" sub="d" />
+   <exelink qstep="1" npc="n1151_academic" sub="2">0,1,2,3,5</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="b" />
+   <exelink qstep="3" npc="n393_academic_station" sub="c" />
+   <exelink qstep="3" npc="n393_academic_station" sub="d" />
+   <exelink qstep="3" npc="n393_academic_station" sub="e" />
+   <exelink qstep="3" npc="n393_academic_station" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n523_velskud" sub="b" />
+   <exelink qstep="4" npc="n523_velskud" sub="c" />
+   <exelink qstep="4" npc="n523_velskud" sub="d" />
+   <exelink qstep="4" npc="n523_velskud" sub="e" />
+   <exelink qstep="4" npc="n523_velskud" sub="f" />
+   <exelink qstep="4" npc="n523_velskud" sub="g" />
+   <exelink qstep="4" npc="n523_velskud" sub="h" />
+   <exelink qstep="4" npc="n523_velskud" sub="i" />
+   <exelink qstep="4" npc="n523_velskud" sub="j" />
+   <exelink qstep="4" npc="n523_velskud" sub="k" />
+   <exelink qstep="4" npc="n523_velskud" sub="l" />
+   <exelink qstep="4" npc="n523_velskud" sub="m" />
+   <exelink qstep="4" npc="n523_velskud" sub="n" />
+   <exelink qstep="4" npc="n523_velskud" sub="o" />
+   <exelink qstep="4" npc="n523_velskud" sub="p" />
+   <exelink qstep="4" npc="n523_velskud" sub="q" />
+   <exelink qstep="4" npc="n523_velskud" sub="q" />
+   <exelink qstep="4" npc="n523_velskud" sub="r" />
+   <exelink qstep="4" npc="n523_velskud" sub="s">0</exelink>
+   <exelink qstep="4" npc="n523_velskud" sub="t">1</exelink>
+   <exelink qstep="4" npc="n523_velskud" sub="!next" />
+   <journal_data recompense="93180" quest_title="사라진 사도" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="300480">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>13,n1151</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1151</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1719"><![CDATA[사라진 사도I]]></title>
+         <contents mid="1720"><![CDATA[<html>아카데믹 코멜리나에게 벨스커드의 행방을 물어보자.<BR><BR><FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 아카데믹 코멜리나</FONT></html>]]></contents>
+         <destination mid="1721"><![CDATA[검은 산자락에서 코멜리나와 대화]]></destination>
+         <todo_msg mid="1722"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1831"><![CDATA[사라진 사도II]]></title>
+         <contents mid="1832"><![CDATA[<html>외딴섬 중심부에서 빛나는 가루 진통제를 구해보자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(외딴 섬행 수송선)</FONT> <FONT color=#a82424>- 외딴섬 중심부</FONT></html>]]></contents>
+         <destination mid="1833"><![CDATA[외딴섬 중심부]]></destination>
+         <todo_msg mid="1834"><![CDATA[외딴섬 중심부로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1835"><![CDATA[사라진 사도III]]></title>
+         <contents mid="1836"><![CDATA[<html>아카데믹 스테이션에 빛나는 가루 진통제를 가져다 놓자. 약속대로 정보를 얻을 수 있을 것이다.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 아카데믹 스테이션</FONT></html>]]></contents>
+         <destination mid="1837"><![CDATA[세인트헤이븐의 아카데믹 스테이션과 대화]]></destination>
+         <todo_msg mid="1838"><![CDATA[세인트헤이븐으로 돌아가 아카데믹 스테이션을 찾아보세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13,n523</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>523</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1839"><![CDATA[사라진 사도IV]]></title>
+         <contents mid="1840"><![CDATA[<html>검은 산자락에서 벨스커드를 찾아 보자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 벨스커드</FONT></html>]]></contents>
+         <destination mid="1841"><![CDATA[검은 산자락에서 벨스커드와 대화]]></destination>
+         <todo_msg mid="1842"><![CDATA[검은 산자락에서 벨스커드를 찾아보세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9317</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

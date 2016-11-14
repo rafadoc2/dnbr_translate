@@ -1,0 +1,345 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9310_end_of_raide</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>9310</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9311</nextqid>
+      <nextqname>mq11_9311_secret_area</nextqname>
+      <nextqnpc>n214_geraint_wounded</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[드래곤 레이드의 결말]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1150</npcid>
+         <npcename>n1150_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>214</npcid>
+         <npcename>n214_geraint_wounded</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>215</npcid>
+         <npcename>n215_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>518</npcid>
+         <npcename>n518_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>574</npcid>
+         <npcename>n574_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$그림자 냥$<BR>제자가 잘 살고 있으니 좋다냥.<BR>제자는 지금 어디로 가야 하는지 기억하고 있냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1" image="QW_SaintHaven_Inside.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-" mid="906" select_type="5" />
+      <talk_question mid="905"><![CDATA[<html>$그림자 냥$<BR>뭘 헤매고 있는 거냥?<BR>다른 모험자들 모두 <FONT color=#a82424>왕성</FONT>으로 갔으니, 너도 가는 거 아니냥?! 왕성으로, 어서 가라냥~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="QW_SaintHaven_Inside.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="909" select_type="5" />
+      <talk_question mid="908"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>왕성</FONT>으로 가는 거, 아니었어?<BR>잘은 모르지만... 다른 모험자들은 모두 그리로 갔을 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-1-" mid="911" select_type="5" />
+      <talk_question mid="910"><![CDATA[<html>$워리어 시안$<BR>하핫. 마음의 준비가 되셨으면, 가서 <FONT color=#a82424>장군 더글라스</FONT> 님께 보고하고 어서 검은 대군주의 연병장으로 가죠.<BR><FONT color=#387206>{user_nick}</FONT> 님이라면, 장군 더글라스 님도 허가해 주실테니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n215_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n215_argenta-1-" mid="913" select_type="5" />
+      <talk_question mid="912"><![CDATA[<html>$아르젠타$<BR>지금 정신 없어서 너까지 챙겨줄 수 없거든?<BR>
+알아서 좀 해줄래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-1-" mid="916" select_type="5" />
+      <talk_question mid="915"><![CDATA[<html>$부상당한 제레인트$<BR>...지금의 네게는 해줄 말이 없군. 무엇을 해야 하는지, 네 자신이 가장 잘 알 것이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1150_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1150_lunaria-1-" mid="918" select_type="5" />
+      <talk_question mid="917"><![CDATA[<html>$루나리아$<BR>...그런가. 이런 식으로 흘러가는 거로구나...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="920" select_type="0"><![CDATA[<html>물론 저도 가겠습니다.</html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-1-a" mid="921" select_type="0"><![CDATA[<html>동행하겠습니다!!</html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-1-a" mid="922" select_type="0"><![CDATA[<html>허락만 해 주신다면...</html>]]></talk_answer>
+      <talk_question mid="919"><![CDATA[<html>$장군 더글라스$<BR>아. 자네로군. 안 그래도 여러모로 도움 받았다는 소식은 들었네.<BR>자네의 각오만 단단하다면, 이번 출정에 참여해도 좋은데 어떤가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="924" select_type="2" />
+      <talk_question mid="923"><![CDATA[<html>$장군 더글라스$<BR>태도가 좋군!<BR>자, 50년 전의 여섯 영웅들을 본받아 우리도 함께 장대한 역사를 이뤄보세나!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-c" mid="926" select_type="2" />
+      <talk_question mid="925"><![CDATA[<html>$장군 더글라스$<BR>비록 적이 강대하지만 용기를 잃지 않고 나아가면, 반드시 블랙 드래곤을 물리치고 선지자를 되찾을 수 있을 걸세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-c" image="QW_36.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-" mid="928" select_type="5" />
+      <talk_question mid="927"><![CDATA[<html>$장군 더글라스$<BR>그럼 어서 <FONT color=#a82424>검은 대군주의 연병장</FONT>으로 출발하게.<BR>다른 모험자들과 정예부대는 이미 그쪽으로 떠났으니 말일세.<BR><BR><FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_36.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-2-" mid="931" select_type="5" />
+      <talk_question mid="930"><![CDATA[<html>$장군 더글라스$<BR>만약의 사태에 대비해 세인트 이븐의 방비도 단단히 하고 있네.<BR>이쪽은 염려하지 말고 어서 <FONT color=#a82424>검은 대군주의 연병장</FONT>으로 가서 선지자를 되찾도록 하게!<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="QW_36.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-" mid="933" select_type="5" />
+      <talk_question mid="932"><![CDATA[<html>$루나리아$<BR>검은 대군주의 연병장으로 출발하도록 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2" image="QW_36.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-" mid="935" select_type="5" />
+      <talk_question mid="934"><![CDATA[<html>$워리어 시안$<BR>어서 검은 대군주의 연병장으로 출발합시다.<BR>이번에야말로 선지자를 꼭 구출할 겁니다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n215_argenta-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n215_argenta-3-" mid="937" select_type="5" />
+      <talk_question mid="936"><![CDATA[<html>$아르젠타$<BR>그 몹쓸 검은 놈 때문에 제레인트가 부상을 입다니!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1150_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1150_lunaria-3-" mid="939" select_type="5" />
+      <talk_question mid="938"><![CDATA[<html>$루나리아$<BR>...그런가.<BR>결국 이 시간은 이런 식으로 흘러가는 거로구나...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-a" mid="941" select_type="2" />
+      <talk_question mid="940"><![CDATA[<html>$제레인트$<BR>
+앞이 보이지 않는군...<BR>녀석의 브레스를 정통으로 맞았으니 다시 눈을 뜨긴 어려울 것 같다...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-b" mid="943" select_type="2" />
+      <talk_question mid="942"><![CDATA[<html>$아르젠타$<BR>하나 남은 눈마저... 이렇게 되다니...<BR>제레인트...!<BR><FONT color=#7e12d2>(아르젠타가 제레인트를 끌어안고 눈시울을 적신다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-c" mid="945" select_type="2" />
+      <talk_question mid="944"><![CDATA[<html>$제레인트$<BR>최선의... 결과였다고 생각한다.<BR>스스로를 자책할 필요도, 이유도 없다.<BR>넌 최선을 다했어, 아르젠타...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-c" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-d" mid="947" select_type="2" />
+      <talk_question mid="946"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>괜찮으십니까?<BR>저... 검은 기사는...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-d" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-e" mid="949" select_type="2" />
+      <talk_question mid="948"><![CDATA[<html>$제레인트$<BR>벨스커드는... 현재로서는 이 근방에서 그 기운을 느낄 수 없다.<BR>그러나 드래곤은 보옥이 남아 있는 한 그리 쉽게 소멸하지 않지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-e" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-f" mid="951" select_type="2" />
+      <talk_question mid="950"><![CDATA[<html>$제레인트$<BR>완전히 소멸한 것이 아닌 이상 안심하긴 이르다.<BR><FONT color=#a82424>고대인의 후예</FONT>를 노리고 또 무슨 문제가 일어날지 알 수 없다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-f" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-g" mid="953" select_type="2" />
+      <talk_question mid="952"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>블랙 드래곤이 벨스커드......?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-g" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-h" mid="955" select_type="2" />
+      <talk_question mid="954"><![CDATA[<html>$아르젠타$<BR>캐더락에서부터 <FONT color=#a82424>검은 기사</FONT>라고 부르며 뒤를 쫓아온 주제에 모르겠어?<BR>
+지금 한가하게 그런 이야기를 시시콜콜 늘어 놓을 때가 아니잖아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-h" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-i" mid="957" select_type="2" />
+      <talk_question mid="956"><![CDATA[<html>$아르젠타$<BR>그래, 블랙 드래곤이 바로 벨스커드. 고대인의 후예인 그 빨간머리 인간 아이를 납치해 간 검은 기사.<BR>지금은 제레인트의 하나 남았던 눈과 함께 찢겨져 사라지고 말았지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-i" image="" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-j" mid="959" select_type="2" />
+      <talk_question mid="958"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럴 수가...?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-j" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-k" mid="961" select_type="2" />
+      <talk_question mid="960"><![CDATA[<html>$제레인트$<BR>충격을 받은 것 같군.<BR>네가 그와 어떤 관계였건, 지금은 여기서 더 허비할 시간이 없다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-k" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-l" mid="964" select_type="2" />
+      <talk_question mid="963"><![CDATA[<html>$제레인트$<BR>나는 내가 할 수 있는 일을 행하겠다.<BR>...아르젠타와 함께 돌아가라. 세인트헤이븐으로.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-l" image="QW_SaintHaven_Inside.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-m" mid="966" select_type="2" />
+      <talk_question mid="965"><![CDATA[<html>$제레인트$<BR><FONT color=#a82424>세인트헤이븐 왕성</FONT>에 <FONT color=#a82424>지하로 통하는 길</FONT>이 있을 거다.<BR>그 곳으로 오거라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-m" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-n" mid="968" select_type="2" />
+      <talk_question mid="967"><![CDATA[<html>$루나리아$<BR><FONT color=#7e12d2>(루나리아가 고요한 눈으로 제레인트와 아르젠타를 바라보며 중얼거린다)</FONT><BR>...그런가. 이런 식으로 흘러가는 거로구나...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-n" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-o" mid="970" select_type="2" />
+      <talk_question mid="969"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-o" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-p" mid="972" select_type="2" />
+      <talk_question mid="971"><![CDATA[<html>$루나리아$<BR><FONT color=#387206>{user_nick}</FONT>, 이제 가야 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-p" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-q" mid="974" select_type="2" />
+      <talk_question mid="973"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>머릿속이 좀 복잡해.<BR>검은 기사... 벨스커드라는 그 남자는 일루전과 어떻게 알고 있었던 거지? 대체 왜...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-q" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-r" mid="976" select_type="2" />
+      <talk_question mid="975"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>일루전이 루나리아를 데리고 부상을 입은 채 달리던 시기만 해도, 지금 여기로부터 50년은 더 된 때야.<BR>벨스커드가 이미 인간이 아니라니, 이해가 되지만... 일루전은 대체 뭐였던 걸까? 뭘 바라서 너를...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-r" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-s" mid="978" select_type="2" />
+      <talk_question mid="977"><![CDATA[<html>$루나리아$<BR>그가 무엇인지, 나는 몰라.<BR>자기 자신조차 <FONT color=#a82424>자신이 진정 무엇인지</FONT> 다 알 수는 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-s" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-t" mid="980" select_type="2" />
+      <talk_question mid="979"><![CDATA[<html>$루나리아$<BR>무엇을 바라는지, 어디로 가고 있는지...<BR><FONT color=#a82424>도착한 후에야 비로소 알 수 있는 것</FONT>.<BR>그것이 바로 시간의 비밀.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-t" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-u" mid="1000" select_type="4" />
+      <talk_question mid="999"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-3-u" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n214_geraint_wounded-3-!next" mid="982" select_type="2" />
+      <talk_question mid="981"><![CDATA[<html>$루나리아$<BR>지금은 <FONT color=#a82424>저 자</FONT>의 말을 따르도록 해.<BR>지금으로서는 네 앞에 펼쳐져 있는 길을 따라가는 수밖에 할 수 있는 게 없으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9310</exe>
+         <exe type="talk" npc="n574_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93100,,,,,,,</exe>
+         <exe type="complete" true="">9310</exe>
+         <exe type="addquestitem" num="1">300022</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n574_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="c">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="b" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="c" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="d" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="e" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="f" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="g" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="h" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="i" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="j" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="k" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="l" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="m" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="n" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="o" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="p" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="q" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="r" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="s" />
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="t">0</exelink>
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="u">1,2</exelink>
+   <exelink qstep="3" npc="n214_geraint_wounded" sub="!next" />
+   <journal_data recompense="93100" quest_title="드래곤 레이드의 결말" chapterid="4" quest_level="30" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="987"><![CDATA[드래곤 레이드의 결말I]]></title>
+         <contents mid="988"><![CDATA[<html>고대 제사장의 룬을 받았다.<BR>상황이 어떻게 되어 가는지 확인할 겸, 왕성으로 가 보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성</FONT> <FONT color=#a82424>- 장군 더글라스</FONT></html>]]></contents>
+         <destination mid="989"><![CDATA[왕성 내부의 장군 더글라스와 대화]]></destination>
+         <todo_msg mid="990"><![CDATA[왕성으로 가서 장군 더글라스와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_36.dds</contents_image>
+         <destination_pos>13012,0,0</destination_pos>
+         <destination_mode>custom:361@3,362@3,363@3,364@3,13012@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="991"><![CDATA[드래곤 레이드의 결말II]]></title>
+         <contents mid="992"><![CDATA[<html>검은 대군주의 연병장으로 가자. 검은 기사를 쫓아...<BR><BR>
+<FONT color=#7e12d2>* 파티 상태에서는 진행할 수 없는 퀘스트입니다.</FONT><BR>
+ <BR>
+<FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 대군주의 연병장</FONT></html>]]></contents>
+         <destination mid="993"><![CDATA[(1인) 검은 대군주의 연병장]]></destination>
+         <todo_msg mid="994"><![CDATA[검은 대군주의 연병장으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13012,n214</destination_pos>
+         <destination_mode>custom:361@3,362@3,363@3,364@3,13012@1</destination_mode>
+         <statemark_npcid>214</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="995"><![CDATA[드래곤 레이드의 결말III]]></title>
+         <contents mid="996"><![CDATA[<html>블랙 드래곤은 추락해 사라졌고, 제레인트는 큰 부상을 입은 듯 하다.<BR>
+ <BR>
+<FONT color=#7e12d2>* 파티 상태에서는 진행할 수 없는 퀘스트입니다.</FONT><BR>
+ <BR>
+<FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 대군주의 연병장(제레인트)</FONT></html>]]></contents>
+         <destination mid="997"><![CDATA[(1인) 검은 대군주의 연병장에서 제레인트와 대화]]></destination>
+         <todo_msg mid="998"><![CDATA[부상당한 제레인트와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9309</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

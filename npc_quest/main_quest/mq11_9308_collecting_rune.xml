@@ -1,0 +1,325 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9308_collecting_rune</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>9308</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>룬의 파편	300020
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9309</nextqid>
+      <nextqname>mq11_9309_develop_and_inprove</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[룬을 수집하다]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>518</npcid>
+         <npcename>n518_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$문장학자 스타쉬$<BR>뭐라고? 검은 기사를 추적하다 놓쳤다고? 나 원 참...<BR>
+그거 큰일이구만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-1-" mid="758" select_type="5" />
+      <talk_question mid="757"><![CDATA[<html>$문장학자 스타쉬$<BR>검은 산자락 쪽으로 간 다른 모험자들은 만나 보았나?<BR>뭔가 방책이 있는지는 논의를 해 보아야지. 안 그런가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="761" select_type="5" />
+      <talk_question mid="760"><![CDATA[<html>$루나리아$<BR>
+워리어 시안과의 대화는 끝났어</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-1" image="QS_Default.dds" itemindex="300020" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-1-a" mid="849" select_type="2" />
+      <talk_question mid="762"><![CDATA[<html>$워리어 시안$<BR>고대 제사장의 룬을 만들려면 <FONT color=#a82424>룬의 파편</FONT>을 모아서 가공해야만 한다더군요.<BR>그래서 지금 모두들 룬의 파편을 구하러 흩어졌죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-1-a" image="QW_35.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-1-b" mid="765" select_type="2" />
+      <talk_question mid="764"><![CDATA[<html>$워리어 시안$<BR>룬의 파편은 <FONT color=#a82424>말라버린 마리사의 샘</FONT>에서 찾을 수 있는 물건이라고 하는데, <FONT color=#387206>{user_nick}</FONT> 님도 도와주십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-1-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2" mid="767" select_type="2" />
+      <talk_question mid="766"><![CDATA[<html>$워리어 시안$<BR>그곳에서 룬의 파편을 수집한 후, <FONT color=#a82424>문장학자 스타쉬</FONT> 님께 가 주시면 됩니다.<BR>그쪽으로 다 같이 모으기로 말을 맞췄거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-a" mid="769" select_type="2" />
+      <talk_question mid="768"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그러면 일단 루나리아에게 목적지를 이야기 해 주자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-" mid="771" select_type="5" />
+      <talk_question mid="770"><![CDATA[<html>$워리어 시안$<BR>어서 검은 기사를 추적해야만 할텐데...<BR>
+<FONT color=#7e12d2>(시안이 걱정스럽게 짐을 챙기고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-a" mid="773" select_type="2" />
+      <talk_question mid="772"><![CDATA[<html>$루나리아$<BR>네스트...?<BR>그렇구나. 검은 기사를 놓쳤구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-b" mid="775" select_type="2" />
+      <talk_question mid="774"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이번에야 말로 시간이동 안 될까?<BR>놓치기 전으로 말야. 아주 조금만 예전으로 되돌아간다면...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-c" mid="778" select_type="2" />
+      <talk_question mid="777"><![CDATA[<html>$루나리아${action:Stand1}<BR>안 돼.<BR>시간이라는 건, 한 가지의 길로 이루어진 것이 아니야.<BR>너는 이해하지 못하겠지만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-d" mid="780" select_type="2" />
+      <talk_question mid="779"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무슨 의미야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-e" mid="782" select_type="2" />
+      <talk_question mid="781"><![CDATA[<html>$루나리아$<BR>딱 하나 뿐인 과거나 미래로 이동하는 게 아니라는 의미지.<BR><FONT color=#a82424>시간</FONT>은 여러 겹의 껍질 같은 것.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-f" mid="785" select_type="0"><![CDATA[<html>(점점 더 이상한 말이 되어 가는데?)</html>]]></talk_answer>
+      <talk_answer link_index="n1139_lunaria-2-f" mid="786" select_type="0"><![CDATA[<html>...좀 쉽게 말해줄 수 없어?</html>]]></talk_answer>
+      <talk_answer link_index="n1139_lunaria-2-f" mid="787" select_type="0"><![CDATA[<html>버터가... 뭐... 어쨌다고...?</html>]]></talk_answer>
+      <talk_question mid="784"><![CDATA[<html>$루나리아$<BR>말하자면 빵 위에 덧바른 버터나 잼 같은 거야.<BR>몇 번이든 덧바를 수 있지.<BR>
+바르기 전과 조금 달라 보여도 결국은 똑 같은 버터나 잼에 불과해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-g" mid="789" select_type="2" />
+      <talk_question mid="788"><![CDATA[<html>$루나리아$<BR>...어차피 너는 이해하지 못해.<BR>나도 잘 모르니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-g" image="QS_Default.dds" itemindex="300020" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-h" mid="792" select_type="2" />
+      <talk_question mid="791"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>흐음... 아무튼 안 된다는 건 알겠어.</FONT><BR>
+<FONT color=#662500>그럼 별 수 없이 룬의 파편을 모으러 가야겠군.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-i" mid="794" select_type="2" />
+      <talk_question mid="793"><![CDATA[<html>$루나리아$<BR>저런. 그거 곤란하겠네.<BR>수고가 많아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-j" mid="796" select_type="2" />
+      <talk_question mid="795"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>또 남의 일처럼 그런다.<BR>루나리아.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-j" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-k" mid="798" select_type="2" />
+      <talk_question mid="797"><![CDATA[<html>$루나리아$<BR>사실 내 일은 아니지.<BR>엄밀히 말해 네 일도 아니라고 생각하는데?<BR>대체 너는 왜 검은 기사를 쫓는 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-l" mid="801" select_type="2" />
+      <talk_question mid="800"><![CDATA[<html>$루나리아$<BR>그가 너를, 아니 일루전을 알아 보았기 때문에?<BR><FONT color=#a82424>일루전은 사도이며 네 미래의 모습일 수도 있었다</FONT><BR>
+...그것 외에 뭘 더 알고 싶은 건지 난 모르겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-l" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-m" mid="803" select_type="2" />
+      <talk_question mid="802"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>일루전에 대해서도 나는 잘 몰라. 그에 대해서 알면, 내 의식을 집어삼키지 못하도록 할 수 있을 지도 몰라.<BR>그리고 분리할 수 있을 지도 모르고. 모든 건 가능성의 문제잖아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-n" mid="805" select_type="2" />
+      <talk_question mid="804"><![CDATA[<html>$루나리아$<BR>다른 단서가 없으니까... 라는 거야?<BR>다만 그 가능성에 걸겠다고?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-3" mid="807" select_type="2" />
+      <talk_question mid="806"><![CDATA[<html>$루나리아$<BR>......이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-3" image="QW_35.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1139_lunaria-3-" mid="810" select_type="5" />
+      <talk_question mid="809"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>말라버린 마리사의 샘</FONT>에서 룬의 파편을 <FONT color=#a82424>수집</FONT>하는 거지?<BR>뻔히 보고도 놓치지 않도록 주의해.<BR>
+괜한 수고를 또 하면 가엾으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-4-" mid="812" select_type="5" />
+      <talk_question mid="811"><![CDATA[<html>$루나리아$<BR>문장학자 스타쉬에게 가는 거야.<BR>기억, 하고 있지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-4-" mid="814" select_type="5" />
+      <talk_question mid="813"><![CDATA[<html>$워리어 시안$<BR>아, 룬의 파편을 모두 모으셨군요.<BR>그럼<FONT color=#a82424> 문장학자 스타쉬</FONT> 님께 가져가 주십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="817" select_type="2" />
+      <talk_question mid="816"><![CDATA[<html>$문장학자 스타쉬$<BR>음? 룬의 파편? 아하! 자네가 바로 그...<BR>
+<FONT color=#7e12d2>(스타쉬가 주위를 둘러보며 소리를 낮춘다)</FONT><BR><FONT color=#a82424>선지자</FONT> 구출을 위해 모인 모험자의 일원이로구만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="819" select_type="2" />
+      <talk_question mid="818"><![CDATA[<html>$문장학자 스타쉬$<BR>블랙 드래곤이 부활했다는 소문은 들었네.<BR>왕성에서도 쉬쉬 하는 모양이네만, 시끄러워지는 건 시간문제겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="822" select_type="2" />
+      <talk_question mid="821"><![CDATA[<html>$문장학자 스타쉬$<BR>...<FONT color=#a82424>50년 전</FONT>의 드래곤 레이드 때 나도 한 몫 거들었네.<BR>
+그것에 대해서는 남들보단 제법 많이 알고 있지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="824" select_type="4" />
+      <talk_question mid="823"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-!next" mid="852" select_type="2" />
+      <talk_question mid="851"><![CDATA[<html>$문장학자 스타쉬$<BR>안 그래도 조금 전 그 당시 사용하던 고대 제사장의 룬 제작법을 얻었으니, 그대로 한 번 만들어 봄세.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9308</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="5" exe="3,4,5" onexe="">300020</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300020</exe>
+         <exe type="recompense">93080,,,,,,,</exe>
+         <exe type="complete" true="">9308</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n518_cian" sub="b" />
+   <exelink qstep="1" npc="n518_cian" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n518_cian" sub="" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="b" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="c" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="d" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="e" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="f" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="f" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="f" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="g" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="h" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="i" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="j" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="k" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="l" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="m" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="n" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="3">0,1,2</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c">1</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d">0,2</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="!next" />
+   <journal_data recompense="93080" quest_title="룬을 수집하다" chapterid="4" quest_level="30" quest_mark_type="1" use_item_list="300020">
+      <journal index="1">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>13,n518</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>518</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="827"><![CDATA[룬을 수집하다I]]></title>
+         <contents mid="828"><![CDATA[<html>네스트 안으로 들어갈 방법에 대해 워리어 시안과 대화하자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="829"><![CDATA[검은 산자락에서 워리어 시안과 대화]]></destination>
+         <todo_msg mid="830"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>13,n1139</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1139</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="831"><![CDATA[룬을 수집하다II]]></title>
+         <contents mid="832"><![CDATA[<html>룬의 파편을 모으러 가기 전에 루나리아와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="833"><![CDATA[검은 산자락에서 루나리아와 대화]]></destination>
+         <todo_msg mid="834"><![CDATA[검은 산자락에서 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_35.dds</contents_image>
+         <destination_pos>354,0,0</destination_pos>
+         <destination_mode>custom:352@4,353@4,354@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="835"><![CDATA[룬을 수집하다III]]></title>
+         <contents mid="836"><![CDATA[<html>말라버린 마리사의 샘을 돌며서 룬의 파편을 수집하자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 말라버린 마리사의 샘</FONT></html>]]></contents>
+         <destination mid="837"><![CDATA[말라버린 마리사의 샘에서 룬의 파편 수집]]></destination>
+         <todo_msg mid="838"><![CDATA[말라버린 마리사의 샘에서 룬의 파편을 수집하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="841"><![CDATA[룬을 수집하다IV]]></title>
+         <contents mid="842"><![CDATA[<html>룬의 파편 수집을 마쳤다. 문장학자 스타쉬에게 가져가면 된다.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 문장학자 스타쉬</FONT></html>]]></contents>
+         <destination mid="843"><![CDATA[세인트헤이븐의 문장학자 스타쉬와 대화]]></destination>
+         <todo_msg mid="844"><![CDATA[룬의 파편을 문장학자 스타쉬에게 전하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9307</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

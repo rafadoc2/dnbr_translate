@@ -1,0 +1,278 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9327_sense_of_crisis</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9327</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9328</nextqid>
+      <nextqname>mq11_9328_visionary_gone</nextqname>
+      <nextqnpc>n1166_lunaria</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[위기감]]></qkname>
+      <qnpc>
+         <npcid>1164</npcid>
+         <npcename>n1164_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1165</npcid>
+         <npcename>n1165_illusion</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>1166</npcid>
+         <npcename>n1166_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder" center_image="">
+      <talk_answer link_index="n209_elite_soldier-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$정예병사 클림드$<BR>서펜트라가 나타나다니... 정말 걱정입니다.<BR>세인트헤이븐은 무사할까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="QW_44.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder" center_image="">
+      <talk_answer link_index="n209_elite_soldier-1-" mid="2721" select_type="5" />
+      <talk_question mid="2720"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(지금은 내게서 분리된 일루전이 루나리아를 데리고 간 일에 집중해야 돼.<BR>이름 모를 폭군의 무덤 쪽으로 어서 가 보자.)</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1164_shadow_meow-1" image="QW_44.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n1164_shadow_meow-1-" mid="2724" select_type="5" />
+      <talk_question mid="2723"><![CDATA[<html>$그림자 냥$<BR>너와 똑 같이 생긴 녀석은 이름 모를 폭군의 무덤 쪽으로 가 버렸다냥!<BR>어서 뒤를 쫓아가 봐라 냥!!<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-1-" mid="2726" select_type="5" />
+      <talk_question mid="2725"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(그녀는 아무 말도 할 수 없는 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1165_illusion-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1165_illusion-1-a" mid="2728" select_type="2" />
+      <talk_question mid="2727"><![CDATA[<html>$일루전$<BR>
+…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1165_illusion-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1165_illusion-1-b" mid="2784" select_type="2" />
+      <talk_question mid="2783"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9327_01.ogg}<BR>어리석은 일이군. 결국 시간을 구겨서 내다 버리는 거나 마찬가지의 짓거리야.<BR>내 과거 님.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1165_illusion-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1165_illusion-1-c" mid="2730" select_type="2" />
+      <talk_question mid="2729"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1165_illusion-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1165_illusion-1-d" mid="2732" select_type="2" />
+      <talk_question mid="2731"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9327_02.ogg}<BR>자기 자신부터 걱정하는 게 어떨까?<BR>이런 식으로 다시 몸을 얻을 수 있을 줄은 상상도 못했는데 말이야. 역시 세상은 알 수 없는 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1165_illusion-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1165_illusion-1-e" mid="2734" select_type="2" />
+      <talk_question mid="2733"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9327_03.ogg}<BR>그렇게 생각하지 않나, 과거의 <FONT color=#387206>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1165_illusion-1-e" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1165_illusion-2" mid="2736" select_type="2" />
+      <talk_question mid="2735"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9327_01.ogg}<BR>...<BR><FONT color=#387206>{user_nick}</FONT>, 피해!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1165_illusion-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1165_illusion-2-" mid="2738" select_type="5" />
+      <talk_question mid="2737"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9327_04.ogg}<BR>...어디 한 번 해 보시지!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-a" mid="2745" select_type="2" />
+      <talk_question mid="2744"><![CDATA[<html>$루나리아$<BR>...일루전이 아니라 정말로 <FONT color=#387206>{user_nick}</FONT> 맞아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-b" mid="2747" select_type="2" />
+      <talk_question mid="2746"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어떻게 된 거야?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-b" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-c" mid="2749" select_type="2" />
+      <talk_question mid="2748"><![CDATA[<html>$루나리아$<BR>헤르말테 포구로 나왔을 때, 갑자기 <FONT color=#a82424>일루전</FONT>이 나타났어.<BR>지금까지는 네 안에서 너를 조종했지만...<BR>
+이번에는 <FONT color=#a82424>분리</FONT>됐지. 이유는 알 수 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-d" mid="2751" select_type="2" />
+      <talk_question mid="2750"><![CDATA[<html>$루나리아$<BR>나는 다른 인간들이 휘말리지 않도록 하기 위해 시간이동을 시도했지.<BR>
+하지만 성공했는지, 어떻게 됐는지, 그런 건 모르겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-e" mid="2754" select_type="2" />
+      <talk_question mid="2753"><![CDATA[<html>$루나리아$<BR>너와 분리된 일루전은 나를 데리고 이곳으로 향했어.<BR>곧 네가 나타났고...<BR>
+그 다음은 네가 아는 그대로야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-e" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-f" mid="2756" select_type="2" />
+      <talk_question mid="2755"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>대체 왜...?</FONT><BR>
+<FONT color=#662500>일루전은 내 안에 있는 것 아니었어?<BR>어째서 그가 분리되어서 실체를 가질 수 있었다는 거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-g" mid="2759" select_type="2" />
+      <talk_question mid="2758"><![CDATA[<html>$루나리아$<BR>몰라.<BR>그를 제어하기 위해 사용한 독의 부작용일 지도 몰라.<BR>
+...아닐 수도 있고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-g" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-h" mid="2761" select_type="2" />
+      <talk_question mid="2760"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>...이대로라면 일루전은 어떻게 되는 걸까.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-i" mid="2763" select_type="2" />
+      <talk_question mid="2762"><![CDATA[<html>$루나리아$<BR>그것도, 알 수 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-i" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-j" mid="2765" select_type="2" />
+      <talk_question mid="2764"><![CDATA[<html>$루나리아$<BR>일단 지금 그는 네 안으로 되돌아간 것 같아.<BR>아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-k" mid="2768" select_type="2" />
+      <talk_question mid="2767"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아. 여기에서 나가자.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-l" mid="2770" select_type="4" />
+      <talk_question mid="2769"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-3-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-3-!next" mid="2782" select_type="2" />
+      <talk_question mid="2781"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>헤르말테 포구 쪽으로 가서 모험자들이 아직 남아 있는지 봐야겠어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9327</exe>
+         <exe type="talk" npc="n209_elite_soldier">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="3,4,5">22015</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93270,,,,,,,</exe>
+         <exe type="complete" true="">9327</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n209_elite_soldier" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1165_illusion" sub="b" />
+   <exelink qstep="1" npc="n1165_illusion" sub="c" />
+   <exelink qstep="1" npc="n1165_illusion" sub="d" />
+   <exelink qstep="1" npc="n1165_illusion" sub="e" />
+   <exelink qstep="1" npc="n1165_illusion" sub="2">0,1,2</exelink>
+   <exelink qstep="3" npc="n1166_lunaria" sub="b" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="c" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="d" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="e" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="f" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="g" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="h" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="i" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="j" />
+   <exelink qstep="3" npc="n1166_lunaria" sub="k">0</exelink>
+   <exelink qstep="3" npc="n1166_lunaria" sub="l">1</exelink>
+   <exelink qstep="3" npc="n1166_lunaria" sub="!next" />
+   <journal_data recompense="93270" quest_title="위기감" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_44.dds</contents_image>
+         <destination_pos>444,n1165</destination_pos>
+         <destination_mode>custom:441@1,442@1,443@1,444@4</destination_mode>
+         <statemark_npcid>1165</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2739"><![CDATA[위기감I]]></title>
+         <contents mid="2740"><![CDATA[<html>일루전이 루나리아를 데리고 사라져 버린 것 같다. 그 뒤를 쫓아가 보자.<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT><BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(검은 광산 입구)</FONT> <FONT color=#a82424>- 이름 모를 폭군의 무덤(일루전)</FONT></html>]]></contents>
+         <destination mid="2741"><![CDATA[(1인) 이름 모를 폭군의 무덤]]></destination>
+         <todo_msg mid="2742"><![CDATA[이름 모를 폭군의 무덤으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_44.dds</contents_image>
+         <destination_pos>444,0.0</destination_pos>
+         <destination_mode>custom:441@1,442@1,443@1,444@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2772"><![CDATA[위기감II]]></title>
+         <contents mid="2773"><![CDATA[<html>일루전의 공격을 막아내야 한다.<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT><BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(검은 광산 입구)</FONT> <FONT color=#a82424>- 이름 모를 폭군의 무덤</FONT></html>]]></contents>
+         <destination mid="2774"><![CDATA[(1인) 이름 모를 폭군의 무덤]]></destination>
+         <todo_msg mid="2775"><![CDATA[일루전의 공격을 막아내세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_44.dds</contents_image>
+         <destination_pos>444,n1166</destination_pos>
+         <destination_mode>custom:441@1,442@1,443@1,444@1</destination_mode>
+         <statemark_npcid>1166</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2777"><![CDATA[위기감III]]></title>
+         <contents mid="2778"><![CDATA[<html>상황이 어떻게 된 것인지 루나리아에게 듣자.<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT><BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(검은 광산 입구)</FONT> <FONT color=#a82424>- 이름 모를 폭군의 무덤(루나리아)</FONT></html>]]></contents>
+         <destination mid="2779"><![CDATA[(1인) 이름 모를 폭군의 무덤에서 루나리아와 대화]]></destination>
+         <todo_msg mid="2780"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9326</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

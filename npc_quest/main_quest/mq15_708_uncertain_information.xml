@@ -1,0 +1,235 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_708_uncertain_information</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>708</qid>
+      <designer>곽노찬</designer>
+      <qlevel>42</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>709</nextqid>
+      <nextqname>mq15_709_rescue_natives</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Uncertain Information]]></qkname>
+      <qnpc>
+         <npcid>480</npcid>
+         <npcename>n480_overhear</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Charti$<BR>What? Why are you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="15"><![CDATA[<html>Why do you think so?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Cidel$<BR>
+<FONT color=#7e12d2>(Cidel is thinking)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-a" mid="79"><![CDATA[<html>He uses magic to stop his aging.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Cidel$<BR>I didn't know Master has a brother.<BR><FONT color=#a82424>He</FONT>, doesn't seem that old unlike master.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-b" mid="81"><![CDATA[<html>(Cidel talks about his time magic theory)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Cidel${action:Talk}<BR><FONT color=#7e12d2>(Cidel whispers)</FONT><BR>I have heard of it... but it's impossible that he can get that kind of results by making use of space and time control magic. Most of time magic is dependant by force...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-1-c" mid="83"><![CDATA[<html>Hmm, that makes sense.... So what do you think about it...?</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Cidel$<BR>...So he could stop aging ultimately.<BR>If it's available by only <FONT color=#a82424>Ancient Magic</FONT>, Dark Tower's ancestors will live much longer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-c" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-1-d" mid="85"><![CDATA[<html>Is it possible?</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Cidel$<BR>He definitely knew a different kind of magic from ... Ancient Magic. It is like Divine Magic... or another one.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-d" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-1-e" mid="89"><![CDATA[<html>Hmm, alright.... You know this quite well.</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Cidel${action:Talk}<BR>Well.... I don't know if it's really possible as Dark Tower's sorceresses should study only Ancient Magic. But I think it's possible that Ancient Magic and Divine Magic was divided from one root.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-f" mid="91"><![CDATA[<html>Do you really like Charti?</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Cidel$<BR>My master puts me through tough trainings....<BR>Anyway if the information is helpful for <FONT color=#a82424>Charti</FONT>, I would like to go with you... I'm so sad.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-f" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-g" mid="93"><![CDATA[<html>(It's hard not to know...)</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Cidel$<BR>
+How, how did you know that...?!<BR>
+<FONT color=#7e12d2>(Cidel's face turns red)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-g" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-h" mid="95"><![CDATA[<html>Well..., that's quite different from Charti who I know....</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Cidel$<BR><FONT color=#a82424>Charti</FONT> is very thoughful and kind.<BR>She even cares about what I missed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-h" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-i" mid="98"><![CDATA[<html>Nightmares...?</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Cidel${action:Talk}<BR>No, it's not true. As you aren't close to <FONT color=#a82424>Charti</FONT> yet, you think of her like that. She always gives me herbs for my sleep disorder caused by nightmares.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-i" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-1-j" mid="100"><![CDATA[<html>You must have suffered a lot....</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Cidel$<BR>I often have the same nightmares from childhood.<BR>A huge green monster will appear and start attacking people....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-j" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-1-k" mid="104"><![CDATA[<html>I'm fine. I'm totally okay.</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Cidel$<BR>I feel better when I take the herbs from Charti.<BR>Master would suffer more than me....<BR>And you as well... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-k" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-2" mid="106"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Cidel$<BR>You're quite strong.<BR>You don't look like you have the same disease as Master does.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Charti$<BR>What? Why are you here?<BR>There is nothing you can help with, go back to <FONT color=#a82424>Cidel</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Cidel${action:Talk}<BR>Well, Master wants to talk to me....<BR>Go to <FONT color=#a82424>Riverwort Village Ruins</FONT> and meet <FONT color=#a82424>the Mysterious Man</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n480_overhear-2-a" mid="40"><![CDATA[<html>I just wanted to get information about the missing Natives from him...</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Charti$<BR>What? Why are you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n480_overhear-2-b" mid="115"><![CDATA[<html>What...?</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Charti$<BR>That's alright.<BR>I've already heard about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n480_overhear-2-c" mid="117"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Charti$<BR>I told you. I know a reliable person.<BR>I'll introduce him to you. This man saved me.<BR>
+<FONT color=#7e12d2>(Charti looks up at Karahan)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-c" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n480_overhear-2-d" mid="119"><![CDATA[<html>I have no idea what you're talking about.</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Karahan$<BR>Oh... so you heard about my sad story too. Why I had to throw away the honourable name of Dark Tower.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-d" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n480_overhear-2-e" mid="42"><![CDATA[<html>Anyway give me the information about the Natives just as you promised.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Karahan$<BR>Huh? Didn't Karacule tell you about me?<BR>That's very sad. If she told you about it, you could hear my dramatic and various stories.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-e" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n480_overhear-2-f" mid="44"><![CDATA[<html>Oh, yes....</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Karahan$<BR>Hmm, okay. I'll let you know my long story when we have free time. Once you hear it, you can't help but worship me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-f" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n480_overhear-2-g" mid="123"><![CDATA[<html>Ancient Armory?</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Karahan$<BR>The trace of the Natives is connecting to <FONT color=#a82424>East Ancient Armory</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-g" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n480_overhear-2-h" mid="125"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Karahan$<BR>
+Yes. <FONT color=#a82424>Ancient Armory</FONT>is where ancient people stored their remains. As the place has a lot of remains, it's crowded by magic living there. Perhaps that place could be as dangerous as my attraction? Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-h" image="" itemindex="">
+      <talk_answer link_index="n480_overhear-2-i" mid="127"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n480_overhear-2-i" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="128"><![CDATA[<html>$Karahan$<BR>If you don't prepare well, you'll regret.<BR>Go back and get ready first.<BR><FONT color=#7e12d2>(Go back to Cidel)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">708</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7081,7081,7082,7083,7084,7085,7086</exe>
+         <exe type="complete">708</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="c" />
+   <exelink qstep="1" npc="n707_sidel" sub="d" />
+   <exelink qstep="1" npc="n707_sidel" sub="e" />
+   <exelink qstep="1" npc="n707_sidel" sub="f" />
+   <exelink qstep="1" npc="n707_sidel" sub="g" />
+   <exelink qstep="1" npc="n707_sidel" sub="h" />
+   <exelink qstep="1" npc="n707_sidel" sub="i" />
+   <exelink qstep="1" npc="n707_sidel" sub="j" />
+   <exelink qstep="1" npc="n707_sidel" sub="k" />
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n480_overhear" sub="b" />
+   <exelink qstep="2" npc="n480_overhear" sub="c" />
+   <exelink qstep="2" npc="n480_overhear" sub="d" />
+   <exelink qstep="2" npc="n480_overhear" sub="e" />
+   <exelink qstep="2" npc="n480_overhear" sub="f" />
+   <exelink qstep="2" npc="n480_overhear" sub="g" />
+   <exelink qstep="2" npc="n480_overhear" sub="h">0</exelink>
+   <exelink qstep="2" npc="n480_overhear" sub="i">1</exelink>
+   <journal_data recompense="1:7081,2:7082,3:7083,4:7084,5:7085,6:7086" quest_title="의심스러운 제보" chapterid="6" quest_level="42" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="130"><![CDATA[Uncertain information I]]></title>
+         <contents mid="131"><![CDATA[<html>Talk to Cidel before meeting Karahan at Riverwort Village Ruins.<BR> <BR><FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="132"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="133"><![CDATA[Talk to Cidel]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_karahan.dds</contents_image>
+         <destination_pos>511,n480</destination_pos>
+         <destination_mode>custom:511@1</destination_mode>
+         <statemark_npcid>480</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[Uncertain information II]]></title>
+         <contents mid="136"><![CDATA[<html>Get information about the missing Natives from Karahan at Riverwort Village Ruins.<BR> <BR><FONT color=#086171>Riverwort Wharf (Riverwort Ruins)</FONT> <FONT color=#a82424>→ Riverwort Village Ruins</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[Talk to Karahan at Riverwort Village Ruins]]></destination>
+         <todo_msg mid="138"><![CDATA[Meet Karahan at Riverwort Village Ruins.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>707</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

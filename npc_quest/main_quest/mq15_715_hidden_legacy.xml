@@ -1,0 +1,287 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_715_hidden_legacy</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>715</qid>
+      <designer>곽노찬</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>716</nextqid>
+      <nextqname>mq15_716_reason_to_be_strong</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Hidden Legacy]]></qkname>
+      <qnpc>
+         <npcid>494</npcid>
+         <npcename>n494_overhear</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Cidel$<BR><FONT color=#7e12d2>(Cidel looks very confused)</FONT><BR>I feel... very bad.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="6"><![CDATA[<html>(Tell him about Charti's grandfather's death)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>Oh, <FONT color=#387206>{user_nick}</FONT> you arrived.<BR>Is <FONT color=#a82424>Charti</FONT> doing well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Cidel$<BR>
+What...?!<BR>
+<FONT color=#7e12d2>(Cidel drops the book he was reading)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QN_Npc_charty_grandfather.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-b" mid="11"><![CDATA[<html>Dragon Followers tortured the chief to get information.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Cidel${action:Talk}<BR><FONT color=#a82424>Charti's grandfather</FONT>has passed away...?<BR>He was the only family of Charti, what happened to him...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2" mid="13"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Cidel$<BR>
+Oh... Charti must be really upset....<BR>
+Is <FONT color=#a82424>Dragon Followers' Base</FONT> where Charti is now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Karahan$<BR>
+Hush~. I'm cheering the girl up now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_54.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Cidel$<BR>
+I have to go to Charti.<BR>
+Let's hurry to <FONT color=#a82424>Dragon Followers' Base</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-a" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Cidel$<BR>
+Karahan...?<BR>
+Why are you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-b" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Karahan$<BR>
+I didn't come to see you, kid.<BR>
+I'm here to cheer this poor girl today.<BR>
+As you know, my presence is rather comforting too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-b" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-c" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Karahan$<BR>
+Charti, please stop crying.<BR>
+You have to keep your holy place safe, just as your grandfather said.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-d" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Charti$<BR>
+<FONT color=#7e12d2>(Charti nods tearfully)</FONT><BR>
+Yes. Now... I'm the chief of our Natives. As my grandpa asked of me,... I'll keep the people and the holy place safe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-e" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Cidel$<BR>
+Charti....<BR>
+Don't push yourself too hard. You'd better have some rest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-f" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Charti$<BR>
+I'm not pushing myself, Cidel. You always think of me as a weak girl. I can perform my duty by myself.<BR>
+Because I'm Charti... I'm grandfather's granddaughter....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-f" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-g" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Karahan$<BR>
+In that case, why don't you look around the holy place to see if it's okay? I'm worried if the Dragon Followers are already there.<BR>
+<FONT color=#7e12d2>(Karahan says kindly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-g" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-h" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Charti$<BR>
+<FONT color=#7e12d2>(Charti hesitates a little then speaks)</FONT><BR>
+Yes. I'll go there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-h" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-i" mid="37"><![CDATA[<html>(Karahan appears awkward)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Karahan$<BR>
+Good girl, Charti.<BR>
+I'll go with you to see if the Dragon Followers have arrived there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-i" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-j" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Cidel$<BR>
+What...?!<BR>
+No, Charti! He has an another purpose!<BR>
+Go with me. I'll keep you safe!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-j" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-2-k" mid="41"><![CDATA[<html>(Cidel's face turns red)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Karahan$<BR>
+Hahaha, what can you do for her?<BR>
+When Charti's grandfather passed away, you were running errands for Karacule!<BR>
+Well, Charti please stand up. I'll go with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-2-k" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Charti$<BR>
+Sorry, Cidel.... I need his power now.<BR>
+Let's talk later when I come back.<BR>
+Let's go... Karahan.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-3-a" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Cidel$<BR><FONT color=#7e12d2>(Cidel looks very worried)</FONT><BR>Well... I feel very bad.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-3-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-3-b" mid="49"><![CDATA[<html>But, you don't know where Charti is heading?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Cidel$<BR>
+I can't just go back.<BR>
+<FONT color=#387206>{user_nick}</FONT> sorry, but can you go back first?<BR>
+I... have to go after <FONT color=#a82424>Charti</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-3-b" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n494_overhear-3-c" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Cidel$<BR>
+There is a road at the end of <FONT color=#a82424>East Ancient Armory</FONT> which no one can go. A strong power sometimes leaks there.<BR>
+Probably that is the road to <FONT color=#a82424>the holy place</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-3-c" image="" itemindex="">
+      <talk_answer link_index="n494_overhear-3-d" mid="53"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n494_overhear-3-d" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Cidel$<BR>
+I always wanted to help <FONT color=#a82424>Charti</FONT> but I couldn't do anything. This time, it's really for Charti.<BR>
+Even though I may have to sacrifice myself....</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">715</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7151,7151,7152,7153,7154,7155,7156</exe>
+         <exe type="complete">715</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n494_overhear" sub="b" />
+   <exelink qstep="2" npc="n494_overhear" sub="c" />
+   <exelink qstep="2" npc="n494_overhear" sub="d" />
+   <exelink qstep="2" npc="n494_overhear" sub="e" />
+   <exelink qstep="2" npc="n494_overhear" sub="f" />
+   <exelink qstep="2" npc="n494_overhear" sub="g" />
+   <exelink qstep="2" npc="n494_overhear" sub="h" />
+   <exelink qstep="2" npc="n494_overhear" sub="i" />
+   <exelink qstep="2" npc="n494_overhear" sub="j" />
+   <exelink qstep="2" npc="n494_overhear" sub="k">0,1</exelink>
+   <exelink qstep="3" npc="n494_overhear" sub="b" />
+   <exelink qstep="3" npc="n494_overhear" sub="c">0</exelink>
+   <exelink qstep="3" npc="n494_overhear" sub="d">1</exelink>
+   <journal_data recompense="1:7151,2:7152,3:7153,4:7154,5:7155,6:7156" quest_title="숨겨진 유산" chapterid="6" quest_level="44" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Sad news]]></title>
+         <contents mid="58"><![CDATA[<html>Talk to Cidel about Charti's grandfather's death.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="60"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,n494</destination_pos>
+         <destination_mode>custom:541@1,542@1</destination_mode>
+         <statemark_npcid>494</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[The Holy Place I]]></title>
+         <contents mid="62"><![CDATA[<html>Talk to Cidel about Charti's grandfather' death. Cidel is going to the Dragon Followers' Base to cheer Charti up. Go after Cidel.<BR>
+<BR>
+<FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Dragon Followers' Base</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Cidel at Dragon Followers' Base]]></destination>
+         <todo_msg mid="64"><![CDATA[Go after Cidel and head to Dragon Followers' Base.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>542,n494</destination_pos>
+         <destination_mode>custom:541@1,542@1</destination_mode>
+         <statemark_npcid>494</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[The Holy Place II]]></title>
+         <contents mid="66"><![CDATA[<html>Karahan and Charti headed out to the holy place. Karahan seems quite suspicious.<BR>
+Talk to Cidel at Dragon Followers' Base.<BR>
+<BR>
+<FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Dragon Followers' Base</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk to Cidel at Dragon Followers' Base]]></destination>
+         <todo_msg mid="68"><![CDATA[Talk to Cidel.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>714</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

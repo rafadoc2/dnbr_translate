@@ -1,0 +1,212 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9220_reveal_the_way</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9220</qid>
+      <designer>곽노찬</designer>
+      <qlevel>56</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9221</nextqid>
+      <nextqname>mq15_9221_unpleased_successor</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <qkname mid="1"><![CDATA[Path Revealed]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>858</npcid>
+         <npcename>n858_place_of_trail</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>You got all the ingredients?<BR>
+It doesn't take long to make it so wait for a while.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Cidel$<BR>
+<FONT color=#7e12d2>(Cidel casts a spell and the meteor fragments and mutant's eye are combined)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Cidel$<BR>
+Hmm... looks like it's done.<BR>
+Here you go.<BR><FONT color=#7e12d2>(Cidel gives you the completed Mask of Distortion)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QS_Default.dds" itemindex="400321">
+      <talk_question mid="23"><![CDATA[<html>$Terrence Terramai$<BR>You haven't found the <FONT color=#a82424>Mirror of Truth</FONT> yet?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-1" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There's nothing special)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_62.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Cidel$<BR>Okay, then go to <FONT color=#a82424>Encroached Temple Ruins</FONT>.<BR>I hope you'll find the mirror.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-2" image="" itemindex="">
+      <talk_answer link_index="n858_place_of_trail-2-a" mid="46"><![CDATA[<html>(Wear the Mask of Distortion)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Something seems to be there)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-2-a" image="QS_Default.dds" itemindex="400321">
+      <talk_answer link_index="n858_place_of_trail-3" mid="48"><![CDATA[<html>(Get the Mirror of Truth)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(Mirror of Truth is there)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3" image="QS_Default.dds" itemindex="400321">
+      <talk_answer link_index="n822_teramai-3-a" mid="13"><![CDATA[<html>(Show Terramai the Mirror of Truth)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Terrence Terramai$<BR>Welcome.<BR>Did you get some information about the <FONT color=#a82424>Mirror of Truth</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-a" image="QS_Default.dds" itemindex="400321">
+      <talk_answer link_index="n822_teramai-3-b" mid="25"><![CDATA[<html>Oh... you have to wear this mask to see it.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Terrence Terramai$<BR>You obtained the <FONT color=#a82424>Mirror of Truth</FONT>...?!<BR>......?<BR>But where is the mirror?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-b" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-3-c" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Terrence Terramai$<BR>
+<FONT color=#7e12d2>(Terramai wears the Mask of Distortion)<BR></FONT>Indeed.... Excellent.<BR>
+Since we're ready to save Barnac, let's leave with the Prophet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-c" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-3-!next" mid="17"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Cidel$<BR>I'm happy to hear that the Mask of Distortion helped in finding the Mirror of Truth.<BR><FONT color=#a82424>Terrence Terramai</FONT> must be waiting so hurry back to Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-3" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(You have obtained the Mirror of Truth. Go back to Saint Haven and report to Terramai)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9220</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">400320</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">400318</exe>
+         <exe type="delquestitem" num="-1">400319</exe>
+         <exe type="addquestitem" num="1">400320</exe>
+         <exe type="conexe" true="" false="4">0</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400321</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">400321</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92201,92201,92202,92203,92204,92205,92206</exe>
+         <exe type="complete">9220</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1,2,3,5,6</exelink>
+   <exelink qstep="2" npc="n858_place_of_trail" sub="3">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="b" />
+   <exelink qstep="3" npc="n822_teramai" sub="c">0</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="!next">1</exelink>
+   <journal_data recompense="1:92201,2:92202,3:92203,4:92204,5:92205,6:92206" quest_title="드러나는 길" chapterid="9" quest_level="56" quest_mark_type="1" use_item_list="400318,400319">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Path Revealed I]]></title>
+         <contents mid="32"><![CDATA[<html>Pass the meteor fragments and mutated eye to Cidel to complete the Mask of Distortion.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Karacule's Hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Talk with Cidel]]></destination>
+         <todo_msg mid="34"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_62.dds</contents_image>
+         <destination_pos>622,n858</destination_pos>
+         <destination_mode>custom:621@1,622@1</destination_mode>
+         <statemark_npcid>858</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Path Revealed II]]></title>
+         <contents mid="36"><![CDATA[<html>Mask of Distortion has been completed.<BR>Go to Encroached Temple Ruins and find Mirror of Truth.<BR><BR><FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Encroached Temple Ruins</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Encroached Temple Ruins]]></destination>
+         <todo_msg mid="38"><![CDATA[Find the Mirror of Truth at Encroached Temple Ruins.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Path Revealed III]]></title>
+         <contents mid="40"><![CDATA[<html>You have obtained the Mirror of Truth at Encroached Temple Ruins.<BR>Go back to Saint Haven and pass the Mirror of Truth to Terrence Terramai.<BR><BR><FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Talk with Terrence Terramai]]></destination>
+         <todo_msg mid="42"><![CDATA[Go back to Terrence Terramai inside the Saint Haven Royal Palace]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9219</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

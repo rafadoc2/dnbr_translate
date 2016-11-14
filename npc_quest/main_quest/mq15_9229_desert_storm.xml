@@ -1,0 +1,311 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9229_desert_storm</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9229</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Desert Storm]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>880</npcid>
+         <npcename>n880_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="6"><![CDATA[<html>(Quickly tell her about Comelina)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Stella$<BR>…..<BR>I'm so tired….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="8"><![CDATA[<html>(Tell her about Academic Comelina)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Stella$<BR>…Okay… I'm not going to be surprised by anything now…!!<BR>Tell me what you found out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="QN_Npc_Academic_Commelina.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="10"><![CDATA[<html>Yeah it seems like it. </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Stella$<BR>……Future? So she's from the future?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="QN_Npc_Academic_Commelina.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="12"><![CDATA[<html>I didn't know you would be so scared of ghosts. </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Stella$<BR>Ah… I was scared for nothing…!<BR><FONT color=#7e12d2>(Stella seems relieved)</FONT><BR>I was scared of such an interesting person! Oh my….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="14"><![CDATA[<html>…Everyone seems to have heard you already.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#387206><FONT color=#2b2723><FONT color=#2b2723>……</FONT></FONT>{user_nick}</FONT><FONT color=#2b2723>,</FONT><BR><FONT color=#2b2723> I hope you don't tell anyone.</FONT><BR><FONT color=#2b2723>No one should find out that the great sorceress Stella is scared of ghosts. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="118"><![CDATA[<html>No Stella, I won't tell anyone.</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Master Sorceress Stella$<BR>Hohohoho, <FONT color=#387206>{user_nick}</FONT><FONT color=#2b2723>.</FONT><BR>Do you want to become a frog and live in a bottle for the rest of your life?<BR><FONT color=#7e12d2>(Stella</FONT><FONT color=#7e12d2> searches for her wand)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-f" mid="120"><![CDATA[<html>It's interesting but the situation seemed quite serious….</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Master Sorceress Stella$<BR>Hohoho you're thinking straight now.<BR>Anyway, doesn't it make your heart pound just by thinking of people from the future?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-g" mid="122"><![CDATA[<html>(… Where should I start my rebuttal...)</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Master Sorceress Stella$<BR>Yeah… but still interesting nonetheless.<BR>Maybe we're in for something that's beyond our imagination.<BR>This is all thanks to my thirst for knowledge and discovery~ Hohohoho~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-g" image="QW_72.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="124"><![CDATA[<html>Yes ma'am! (Oh no, I've been swept by her enthusiasm…) </html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#7e12d2>(Stella is full of enthusiasm)</FONT><BR>We shouldn't be chatting away like this!<BR>Go, <FONT color=#2b2723><FONT color=#2b2723><FONT color=#387206>{user_nick}</FONT>!</FONT> Go to <FONT color=#a82424>Tel Noir Temple</FONT> and find out more about </FONT>the people from the future!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-1" image="" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$Academic Comelina$<BR>I hate this fate.<BR>Until when should I kill and see people being killed….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_72.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Master Sorceress Stella$<BR>Hmm <FONT color=#a82424>Tel Noir Temple</FONT>…?<BR>
+It's kind of romantic to meet a person from the future in a building constructed in the past. <BR>I'd go there too if I wasn't so busy. Hohoho~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3" image="" itemindex="">
+      <talk_answer link_index="n880_academic-3-a" mid="51"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Academic Comelina$<BR><BR><FONT color=#7e12d2>(She looks devastated)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-a" image="" itemindex="">
+      <talk_answer link_index="n880_academic-3-b" mid="53"><![CDATA[<html>What?!</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#a82424>Desert Storm</FONT> was successful…<BR>XD-29 was one step ahead of me…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-b" image="" itemindex="">
+      <talk_answer link_index="n880_academic-3-c" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Academic Comelina$<BR>It seems like I can't handle them by myself.<BR>It must be a major operation since the entire army is here….<BR>
+I didn't want to pull you into danger but I have no choice now.<BR><FONT color=#7e12d2>(The Academic is shivering)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-c" image="" itemindex="">
+      <talk_answer link_index="n880_academic-3-d" mid="57"><![CDATA[<html>Of course, but we have to let the royal castle know about this first.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Academic Comelina$<BR>Please fight them with me! I beg you!!<BR><FONT color=#7e12d2>(The Academic looks desperate)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-d" image="QS_Default.dds" itemindex="400337">
+      <talk_answer link_index="n880_academic-3-e" mid="89"><![CDATA[<html>Professor K's hidden experimental notes? How did you...?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Her eyes widen due to surprise)</FONT><BR>Yes, of course… Then… I will… Oh, please take this first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-e" image="QS_Default.dds" itemindex="400337">
+      <talk_answer link_index="n880_academic-3-f" mid="144"><![CDATA[<html>Yeah but… don't you need it too?</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Academic Comelina$<BR>…I got it from someone. <BR>I heard that you needed it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-f" image="" itemindex="">
+      <talk_answer link_index="n880_academic-3-g" mid="147"><![CDATA[<html>Huh?</html>]]></talk_answer>
+      <talk_question mid="146"><![CDATA[<html>$Academic Comelina$<BR>It's not that important to me now. It didn't have any information that I was looking for. <BR>I can understand where it is going to be used though….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-g" image="QW_70.dds" itemindex="">
+      <talk_answer link_index="n880_academic-4" mid="149"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Academic Comelina$<BR>I'm not too sure either. It's just a guess.<BR>I'll be going to <FONT color=#a82424>Madman's Laboratory</FONT> now. Please find me there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-a" mid="61"><![CDATA[<html>A human subject…??</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Master Sorceress Stella$<BR>What took you so long?<BR>
+I thought you became an experimental subject or something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-b" mid="63"><![CDATA[<html>Please stop such jokes….</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Master Sorceress Stella$<BR>Hoho I was just joking~<BR>I was worried because you were gone for so long.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-b" image="QN_Npc_Academic_Commelina.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="65"><![CDATA[<html>(Explain what happened)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Sorceress Stella$<BR>So what happened to the girl from the future?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-d" mid="67"><![CDATA[<html>I'm not really sure too. </html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Master Sorceress Stella$<BR>Whaaat? <FONT color=#a82424>Desert Storm</FONT>? <BR><FONT color=#2b2723>What the heck is that?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-e" mid="69"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Master Sorceress Stella$<BR>Sounds like a big operation and….<BR>We shouldn't be complacent after all that they have done… What on earth are they up to?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-e" image="QS_Default.dds" itemindex="400337">
+      <talk_answer link_index="n045_soceress_master_stella-4-f" mid="126"><![CDATA[<html>Oh, these are Professor K's experimental notes.</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Master Sorceress Stella$<BR>What's that book you have with you?<BR>
+It doesn't look like a weapon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-g" mid="128"><![CDATA[<html>(Explain what happened)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Master Sorceress Stella$<BR>Whaaat?<BR>
+Why give them to me only now…?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-h" mid="130"><![CDATA[<html>I think so too. </html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Master Sorceress Stella$<BR>…The girl gave it to you?<BR>I'm grateful but this feels a little strange...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-h" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-i" mid="132"><![CDATA[<html>Hmm…</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Master Sorceress Stella$<BR>She told you she didn't have it last time and she suddenly had it now. <BR>Why did the clones need these notes?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-i" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-j" mid="135"><![CDATA[<html>That's right!</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Master Sorceress Stella$<BR>Nevermind, this isn't the important thing now.<BR>What is urgent is <FONT color=#a82424>Desert Storm</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-j" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-k" mid="71"><![CDATA[<html>Okay. (Talk to Stella a while later)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Master Sorceress Stella$<BR>This is an emergency.<BR>I will let the Court Sorceress Kayleen and Guild Master Gunther know, so wait for a while.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-k" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-l" mid="93"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-l" image="" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Master Sorceress Stella$<BR>I won't take long.<BR><BR><BR>※ <FONT color=#7e12d2>[Extra Chapter I. Desert Storm] Completed- Continued in side quests. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-4" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Academic Comelina$<BR>I never wanted to pull you into this danger….<BR>I hope that you believe that I'm from the future. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+         <exe type="setquest">9229</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>텔 누아르 던전으로 들어갔을 때, 영상이 나오고 XD-29에게 대화를 검으로써 이야기가 시작됩니다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>XD-29, 사망 애니메이션 스타트/끝나면 스텝 3으로. </comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">400337</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92290,,,,,,</exe>
+         <exe type="complete">9229</exe>
+         <exe type="delquestitem" num="-1">400337</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="g" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n880_academic" sub="b" />
+   <exelink qstep="3" npc="n880_academic" sub="c" />
+   <exelink qstep="3" npc="n880_academic" sub="d" />
+   <exelink qstep="3" npc="n880_academic" sub="e">2</exelink>
+   <exelink qstep="3" npc="n880_academic" sub="f" />
+   <exelink qstep="3" npc="n880_academic" sub="g" />
+   <exelink qstep="3" npc="n880_academic" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c">3</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="g" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="h" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="i" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="j" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="k">0</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="l">1,2,3</exelink>
+   <journal_data recompense="92290" quest_title="데저트 스톰" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="400337">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="20"><![CDATA[Desert Storm I]]></title>
+         <contents mid="21"><![CDATA[<html>Tell Master Sorceress Stella that the mysterious girl is from the future.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="22"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="23"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_72.dds</contents_image>
+         <destination_pos>721,n880</destination_pos>
+         <destination_mode>custom:721@1</destination_mode>
+         <statemark_npcid>880</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="24"><![CDATA[Desert Storm II]]></title>
+         <contents mid="25"><![CDATA[<html><FONT color=#2b2723>Stella couldn't hide her excitement after hearing that the girl was from the future.</FONT><BR><FONT color=#a82424><FONT color=#2b2723>Go to </FONT> </FONT><FONT color=#a82424>Tel Noir Temple</FONT> to talk with the girl from the future, <FONT color=#a82424>Academic Comelina</FONT>.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Numara Entrance)</FONT> <FONT color=#a82424>→ Tel Noir Temple (Academic Comelina)</FONT></html>]]></contents>
+         <destination mid="26"><![CDATA[Talk to Comelina at Tel Noir Temple]]></destination>
+         <todo_msg mid="27"><![CDATA[Meet Academic Comelina at Tel Noir Temple.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds </contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[Desert Storm III]]></title>
+         <contents mid="97"><![CDATA[<html><FONT color=#2b2723>You got to know about <FONT color=#a82424>Desert Storm</FONT>.</FONT><BR><FONT color=#a82424><FONT color=#2b2723>Report to Master Sorceress Stella.</FONT></FONT><BR><FONT color=#a82424><FONT color=#2b2723></FONT></FONT><BR><FONT color=#a82424><FONT color=#2b2723><FONT color=#086171>Saint Haven</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Master Sorceress Stella</FONT></FONT></FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="99"><![CDATA[Go back to Saint Haven and report to Master Sorceress Stella]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="150"><![CDATA[[Extra Chapter I. Desert Storm] Completed]]></title>
+         <contents mid="151"><![CDATA[<html>※ <FONT color=#7e12d2>[Extra Chapter I. Desert Storm] has been completed.</FONT><BR><FONT color=#7e12d2></FONT><BR>※ <FONT color=#7e12d2> The story about Academic Comelina will be continued in side quests.</FONT></html>]]></contents>
+         <destination mid="152"><![CDATA[]]></destination>
+         <todo_msg mid="153"><![CDATA[[Extra Chapter I. Desert Storm] has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9228</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

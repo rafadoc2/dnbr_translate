@@ -1,0 +1,342 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_727_mystery_man</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>727</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>728</nextqid>
+      <nextqname>mq15_728_whos_watching_me</nextqname>
+      <nextqnpc>n754_cian</nextqnpc>
+      <qkname mid="1"><![CDATA[Mystery Man]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>754</npcid>
+         <npcename>n754_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>786</npcid>
+         <npcename>n786_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>787</npcid>
+         <npcename>n787_mystery_man</npcename>
+         <npckname>의문의 남자</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>788</npcid>
+         <npcename>n788_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Karacule Fairystar$<BR>Cough cough... I don't feel good.... I need to be hurry....<BR><BR>
+※ <FONT color=#7e12d3>You can continue if you acquire a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Cidel$<BR>It doesn't make sense that Karacule made natives a monster.<BR>Charti misunderstands it.<BR>
+※ <FONT color=#7e12d3>You can continue if you acquire a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+※ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Collect juggle brackens in Riverwort Wharf.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Cidel$<BR>
+And <FONT color=#a82425>Karacule</FONT> looks that she has something to tell you.<BR>
+If you have time, go and talk with her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-a" mid="13"><![CDATA[<html>(Wow... how do you...)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Karacule Fairystar$<BR>Where did you go?<BR>I guess Cidel asked you to take care of the native girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-a" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-b" mid="15"><![CDATA[<html>(Tell her Charti's situation)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Karacule Fairystar$<BR>I don't have any idea why he's so into the native girl.<BR>
+So, what did she tell you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-b" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-c" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Karacule Fairystar$<BR>She heard it from a<FONT color=#a82425>countable person</FONT>that I kidnapped natives?<BR>Pah, I don't know the countable person, but he must have tried to come between us. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-c" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-d" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Karacule Fairystar$<BR>I should punish the person who tried to come between us and insulted Fairystar.<BR>I already asked Angelica and Xian to get close to Charti, so it's going to be revealed who the person is soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-d" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-e" mid="21"><![CDATA[<html>I couldn't know about the jewel because of the lack of information.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Karacule Fairystar$<BR>In fact, I wanted to see you in person because I had something to ask you.<BR>You said you came from <FONT color=#a82424>the future</FONT>? Then do you know where the <FONT color=#a82425>dragon's jewel</FONT>is?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2" mid="45"><![CDATA[<html>Where is Xian now?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Karacule Fairystar$<BR>Hmm.... That's disappointing.<BR>So, I only can know where it is through <FONT color=#a82425>the native girl</FONT>....<BR>I hope Xian and Angelica persuade her well....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n786_angelica-1" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Sorceress Angelica$<BR>
+Ah, damn.... The fox girl.<BR>
+<FONT color=#7e12d3>(Angelica's angry now)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n787_mystery_man-1" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Strange man$<BR>Ah... how poor you are that you're trapped in the temptation...!<BR>You really didn't know that you can't escape from my scent if you're addicted to it?<BR>
+<FONT color=#7e12d3>(Strange man's murmuring now)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Warrior Xian$<BR>Oh, <FONT color=#387207>{user_nick}</FONT>! Hello?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="QW_52.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Karacule Fairystar$<BR>
+Xian and Angelica would be in<FONT color=#a82425>Ancient Library</FONT>.<BR>
+I can't feel relieved so please go to help them. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※Go to <FONT color=#7e12d3>Ancient Library to meet Xian.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n786_angelica-2" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n786_angelica-2-a" mid="48"><![CDATA[<html>Angelica, what're you doing here alone? Where's Xian?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Sorceress Angelica$<BR>Ah, damn.... The fox girl did make me really pissed off.<BR>
+'<FONT color=#a82424>you like a nerd can't kidnap a child, so I don't misunderstand you</FONT>'...? What the..! <BR><FONT color=#7e12d3>(Angelica's so angry)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n786_angelica-2-a" image="" itemindex="">
+      <talk_answer link_index="n786_angelica-2-b" mid="50"><![CDATA[<html>I'm here to meet Xian.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Sorceress Angelica$<BR>
+Oh, hey.<BR>
+What're you doing here too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n786_angelica-2-b" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n786_angelica-3" mid="52"><![CDATA[<html>Xian went to inside of here?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>Xian? He walked to inside of here.<BR>That fox girl <FONT color=#a82424>Charti</FONT> made me really pissed off so I didn't really want to talk with her!<BR>Can you imagine what she told me? <FONT color=#7e12d3>(murmuring...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n786_angelica-3" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Sorceress Angelica$<BR>
+Yes. He chased for Charti who went to inside of here for meeting somebody. I didn't want to meet <FONT color=#a82425>the countable swindler</FONT>so I didn't follow them.<BR>
+I felt like the same feeling when I was deceived in Saint Haven!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n787_mystery_man-3" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n787_mystery_man-3-a" mid="59"><![CDATA[<html>(What's he talking about...?)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Strange man$<BR>Ah... how poor you are. You're trapped in the temptation...!<BR>You really didn't know that you can't escape from my scent if you're addicted to it?<BR>
+<FONT color=#7e12d3>(Strange man's murmuring now)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n787_mystery_man-3-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n787_mystery_man-3-b" mid="62"><![CDATA[<html>Well... Have you seen a man, Xian?</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Strange man$<BR>Poor young spirit. You've gone too deep to go back.<BR><FONT color=#7e12d3>(Strange man shakes his head)</FONT><BR>I'm the man calling misfortune.<BR>This unstable world can't take me like a perfect man..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n787_mystery_man-3-b" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n787_mystery_man-3-c" mid="64"><![CDATA[<html>(.........) So, do you know where Xian is...?</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Strange man$<BR>
+<FONT color=#a82425>Xian</FONT>, the warrior with golden yellow hair like a stack of straws?<BR>
+Haha... the boy just ran away from here because he was afraid of himself to be tempted by energy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n787_mystery_man-3-c" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n787_mystery_man-3-d" mid="66"><![CDATA[<html>Okay. Then, I've got to....</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Strange man$<BR>He got my letter and went back to <FONT color=#a82424>Karacule</FONT>.<BR>But... you...?<BR><FONT color=#7e12d3>(Strange man looks at me like a stranger)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n787_mystery_man-3-d" image="" itemindex="">
+      <talk_answer link_index="n787_mystery_man-4" mid="69"><![CDATA[<html>What, what're you talking about...? What do I....</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Strange man${action:Talk}<BR>Hmm...? You're interesting....<BR>You deserve to be held in my arms.<BR>You want to do it?!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n787_mystery_man-4" image="QW_Karakule_House.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Strange man$<BR>Well well.... You don't know much about you.<BR>Hahaha~ if you want to yourself, feel free to visit to me in anytime.<BR>I can let you know about yourself everything. Haha~<BR><FONT color=#7e12d3>(Go back to Riverwort Wharf and meet Xian)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Go to Riverwort Wharf to meet Xian.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-4" image="" itemindex="">
+      <talk_answer link_index="n754_cian-4-a" mid="75"><![CDATA[<html>Where are you going?</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Warrior Xian$<BR>
+Oh, <FONT color=#387207>{user_nick}</FONT>. I heard that you've been to Ancient Library to find me. We couldn't meet each other. I was about to go out of here after giving a letter to Karacule. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-4-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n754_cian-4-b" mid="77"><![CDATA[<html>Are you also interested in the dragon's jewel?</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#a82425>Some strange man</FONT> made a promise to give an information about Charti's grandfather if I send a letter to Karacule. Charti' grandfather is a native's head so he would know where the dragon's jewel is sealed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-4-b" image="" itemindex="">
+      <talk_answer link_index="n754_cian-4-c" mid="79"><![CDATA[<html>Xian, you're such a good man....</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Warrior Xian$<BR>
+Well, I'm not but....<BR>
+As I said before, I should pay back to Geraint.<BR>
+It's also good for Charti to find her grandfather.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-4-c" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n754_cian-4-d" mid="81"><![CDATA[<html>(I should be more firm.... I've got to save the world...)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Warrior Xian$<BR>
+Haha, don't say that. I'm shy....<BR>
+<FONT color=#7e12d3>(Xian looks he's helping others with a pure motivation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-4-d" image="" itemindex="">
+      <talk_answer link_index="n754_cian-4-!next" mid="83"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">727</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7270,,,,,,</exe>
+         <exe type="complete">727</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n786_angelica" sub="b" />
+   <exelink qstep="2" npc="n786_angelica" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n787_mystery_man" sub="b" />
+   <exelink qstep="3" npc="n787_mystery_man" sub="c" />
+   <exelink qstep="3" npc="n787_mystery_man" sub="d" />
+   <exelink qstep="3" npc="n787_mystery_man" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n754_cian" sub="b" />
+   <exelink qstep="4" npc="n754_cian" sub="c" />
+   <exelink qstep="4" npc="n754_cian" sub="d">0</exelink>
+   <exelink qstep="4" npc="n754_cian" sub="!next">1</exelink>
+   <journal_data recompense="7270" quest_title="이상한 남자를 만났습니다" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Mystery man I]]></title>
+         <contents mid="86"><![CDATA[<html>Cidel said that he's going to meet Charti in Ancient Library <BR>Let's talk with Karacule in her hut.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82425>→ Karacule Fairystar</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Talk with Karacule]]></destination>
+         <todo_msg mid="88"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>521,n786</destination_pos>
+         <destination_mode>custom:521@1</destination_mode>
+         <statemark_npcid>786</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Mystery man II]]></title>
+         <contents mid="90"><![CDATA[<html>Warrior Xian and sorceress Angelica're trying to know where the dragon's jewel is through Charti. To help them, let's go to Ancient Library.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Entrance to Ancient Warehouse)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Ancient Library]]></destination>
+         <todo_msg mid="92"><![CDATA[Go to Ancient Library and meet Xian and Angelica.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>521,n787</destination_pos>
+         <destination_mode>custom:521@1</destination_mode>
+         <statemark_npcid>787</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Mystery man III]]></title>
+         <contents mid="94"><![CDATA[<html>Angelica said Xian went into the inside of here.<BR>
+Go inside of Ancient Library to find Xian.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Entrance to Ancient Warehouse)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Ancient Library]]></destination>
+         <todo_msg mid="96"><![CDATA[Go inside of Ancient Library.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>14,n754</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>754</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="98"><![CDATA[Mystery man IV]]></title>
+         <contents mid="99"><![CDATA[<html>Xian went back to Karacule's Hut to gave a letter to her. Go back to Riverwort Wharf and meet Xian.<BR><BR><FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82425>→ Xian</FONT></html>]]></contents>
+         <destination mid="100"><![CDATA[Talk with Xian in Riverwort Wharf]]></destination>
+         <todo_msg mid="101"><![CDATA[Go back to Riverwort Wharf and meet Xian.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>726</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,226 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9203_lament_for_farewell4</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9203</qid>
+      <designer>김인정</designer>
+      <qlevel>50</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9204</nextqid>
+      <nextqname>mq15_9204_warrior</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <uistyle>0</uistyle>
+      <qkname mid="1"><![CDATA[A Lament For Her IV]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>801</npcid>
+         <npcename>n801_sorceress_tessa</npcename>
+         <npckname>소서리스 텟사</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="189"><![CDATA[<html>$Master Sorceress Tamara$<BR>I'm busy at the moment.<BR>Please come back later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-noquest" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="302"><![CDATA[<html>$Sorceress Tysha$<BR>I can't believe Karacule has passed away....<BR>
+Boohoo.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="6" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>...I'm so sad that we have to send Karacule on her final journey among this chaos.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_SoceressTamara.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="270"><![CDATA[<html>$Cide${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>, please go to the town and bring <FONT color=#a82424>Tamara</FONT> here.<BR>
+Other Master Sorceresses are here already.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-1-a" mid="272" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="271"><![CDATA[<html>$Master Sorceress Tamara$<BR>You have come to get me.<BR>
+Thank you for everthing, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-a" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-2" mid="274" select_type="0"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="273"><![CDATA[<html>$Master Sorceress Tamara$<BR>After the funeral, we will have a meeting to take down Karahan.<BR>I wish you could continue to help us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="303"><![CDATA[<html>$Sorceress Tysha$<BR>...Ah. I'm so sad please do not talk about <FONT color=#a82424>Karacule</FONT> anymore. Boohoo.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="275"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>I wish you could help us and Cidel.<BR><FONT color=#7e12d2>(Tamara turned her body towards Riverwort Wharf)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="278"><![CDATA[<html>$Cidel$<BR>...I'm so sad that we have to send Karacule on her last journey among this chaos.<BR>
+<FONT color=#7e12d2>(Cidel turns his body towards Riverwort Wharf)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n801_sorceress_tessa-2-a" mid="320" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="304"><![CDATA[<html>$Sorceress Tysha$<BR>I can't belive this...<BR>Karacule has passed away....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-2-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n801_sorceress_tessa-2-b" mid="322" select_type="0"><![CDATA[<html>(Tysha takes a big breath)</html>]]></talk_answer>
+      <talk_question mid="321"><![CDATA[<html>$Sorceress Tysha$<BR>Master Sorceresses left because of the funeral.<BR>
+I saw a crowd going past, shouldn't it be finished by now?<BR>
+I wanted to see her one last time...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-2-b" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="323"><![CDATA[<html>$Sorceress Tysha$<BR>Anyway I still can't believe that Cidel the kid is the leader of Fairystar.<BR>
+<FONT color=#7e12d2>(Karacule's funeral should be finished by now. Go to the hut and see Cidel)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="305"><![CDATA[<html>$Master Sorceress Tamara$<BR>Cidel is thinking of going after Karahan.<BR>If you can help us, could you go to <FONT color=#a82424>Cidel</FONT> please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-3" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="307"><![CDATA[<html>$Sorceress Tysha$<BR>A <FONT color=#a82424>kid</FONT> becoming the leader of Fairystar.<BR>...I will see if he ruins the name of Fairystar.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-a" mid="310" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="308"><![CDATA[<html>$Cidel$<BR><FONT color=#387206>{user_nick}</FONT>, you're here.<BR>
+Other Sorceresses agreed that we should correct this disgrace.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-a" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-b" mid="312" select_type="0"><![CDATA[<html>Something else?</html>]]></talk_answer>
+      <talk_question mid="311"><![CDATA[<html>$Cidel${action:Talk}<BR><FONT color=#a82424>Karahan</FONT> is already stong enough to make the Nest. Also he collected most of the relics that would help him...<BR>
+However, seeing that he still can't transform into the Green dragon, there must be <FONT color=#a82424>something else</FONT> required.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-c" mid="314" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="313"><![CDATA[<html>$Cidel$<BR>Yes. Something came into my mind so I studied ancient writings.<BR>Also heard about the tribe tradition from Charti's tribe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-c" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-d" mid="316" select_type="0"><![CDATA[<html>(Cidel has made up his mind)</html>]]></talk_answer>
+      <talk_question mid="315"><![CDATA[<html>$Cidel$<BR>Karahan is a disgrace to Fairystar. For Charti's and Karacule's revenge, and also to prove that I'm a different person from him... we will end this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-e" mid="318" select_type="0"><![CDATA[<html><FONT color=#a94407>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="317"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-e" image="QN_Npc_Lotus_WarriorFedro.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-!next" mid="326" select_type="0"><![CDATA[<html>(계속)</html>]]></talk_answer>
+      <talk_question mid="324"><![CDATA[<html>$Cidel$<BR>
+Come to think of it, <FONT color=#a82424>Master Warrior Pedro</FONT> had something to ask you…,<BR>
+Why don't you go to town and meeet him.<BR>
+I'll call you as soon as the investigation on the ancient documents is over.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9203</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92030,,,,,,,</exe>
+         <exe type="complete" true="">9203</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n801_sorceress_tessa" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="b" />
+   <exelink qstep="3" npc="n707_sidel" sub="c" />
+   <exelink qstep="3" npc="n707_sidel" sub="d">0</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="e">1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="!next" />
+   <journal_data recompense="92030" quest_title="그녀에게 바치는 만가Ⅳ" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="289"><![CDATA[Meeting]]></title>
+         <contents mid="290"><![CDATA[<html>Talk to Master Sorceress Tamara about the funeral and the meeting.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="291"><![CDATA[Conversation with Master Sorcerss Tamara]]></destination>
+         <todo_msg mid="292"><![CDATA[Go to Master Sorceress Tamara]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressYulliaPrison.dds</contents_image>
+         <destination_pos>14,n801</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>801</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="293"><![CDATA[Goodbye]]></title>
+         <contents mid="294"><![CDATA[<html>The funeral is taking place. Spend some time and pray for Karacule.<BR><BR><FONT color=#086171>Riverwort Wharf </FONT><FONT color=#a82424>→ Sorceress Tysha</FONT></html>]]></contents>
+         <destination mid="295"><![CDATA[Conversation with Sorceress Tysha]]></destination>
+         <todo_msg mid="296"><![CDATA[Talk to Sorceress Tysha]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="297"><![CDATA[Cidel's Will]]></title>
+         <contents mid="298"><![CDATA[<html>Talk to Cidel in Karacule's hut.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="299"><![CDATA[Conversation with Cidel]]></destination>
+         <todo_msg mid="300"><![CDATA[Return to Karacule's hut and talk to Cidel.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9202</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

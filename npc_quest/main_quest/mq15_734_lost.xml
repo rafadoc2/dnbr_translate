@@ -1,0 +1,208 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_734_lost</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>734</qid>
+      <designer>곽노찬</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>735</nextqid>
+      <nextqname>mq15_735_tell_you</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Lost]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>760</npcid>
+         <npcename>n760_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Cidel$<BR>I feel... something bad.<BR>
+ <BR>
+※ <FONT color=#7e12d3>You can continue after acquiring a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+※ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Talk with Cidel in Karacule's Hut.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-a" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Cidel$<BR>What...?!<BR><FONT color=#7e12d3>(Cidel drop a book in his hand)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QN_Npc_charty_grandfather.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2" mid="13"><![CDATA[<html>Dragon-followers may have tortured the tribe's head to get an information.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Cidel${action:Talk}<BR><FONT color=#a82425>Charti's grandfather</FONT>passed away...?<BR>He was the only one of Charti's family. What happened...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n760_cian-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Warrior Xian$<BR>Oh, <FONT color=#387207>{user_nick}</FONT>. You came back....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_54.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Cidel$<BR>Ah... How poor Charti is....<BR>Charti is now in <FONT color=#a82425>Dragon Followers Base</FONT>?<BR>I think I should go to Charti right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n760_cian-2" image="" itemindex="">
+      <talk_answer link_index="n760_cian-2-a" mid="20"><![CDATA[<html>Where is Charti...? Where areCharti and Cidel?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Warrior Xian$<BR>Oh, <FONT color=#387207>{user_nick}</FONT>. You came back....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n760_cian-2-a" image="" itemindex="">
+      <talk_answer link_index="n760_cian-2-b" mid="22"><![CDATA[<html>The place with the jewel sealed in...? Where is it?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#a82424>Karahan</FONT>took Charti the the place where green dragon's jewel are sealed in <FONT color=#a82425>the sanctum</FONT>. Cidel followed to Karahan and Charti.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n760_cian-2-b" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n760_cian-3" mid="24"><![CDATA[<html>Ah..., I have something to do. So I'd better go there alone.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Warrior Xian$<BR>Cidel said it is around <FONT color=#a82424>East Ancient Armory</FONT>.<BR>I'm going to follow them too.<BR>Would you join with me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Go to Dragon Followers Base.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n760_cian-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Warrior Xian$<BR>Okay. So see you there!<BR><BR><FONT color=#7e12d3>(Connect to Academic Station to call Jasmine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-a" mid="33"><![CDATA[<html>What...? (Check the communications equipment)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Academic Station$<BR>※ It's unable to find <FONT color=#a82424>a master key</FONT><FONT color=#086171><FONT color=#086171>to connect the network</FONT>.</FONT><BR>※ <FONT color=#7e12d2>Please check again if you have the master key.</FONT><BR>※ <FONT color=#7e12d3>If you have any question, please contact to customer service center.</FONT><FONT color=#7e12d2><FONT color=#7e12d2><BR></FONT></FONT><FONT color=#086171>※ Bellin Corporation. Customer Center : 1588 - xxxx(for 24 hours)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-a" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-b" mid="35"><![CDATA[<html>Where... did I drop it?!</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#7e12d3>(I can't see the communications equipment. If you don't have it, you can't call to Jasmine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-b" image="" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-c" mid="38"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-c" image="QW_54.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d3>(Let's check around Dragon Followers Base to find it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">734</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7340,,,,,,</exe>
+         <exe type="complete">734</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n760_cian" sub="b" />
+   <exelink qstep="2" npc="n760_cian" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n394_academic_station" sub="b">0</exelink>
+   <exelink qstep="3" npc="n394_academic_station" sub="c">1</exelink>
+   <journal_data recompense="7340" quest_title="접속할 수 없습니다" chapterid="6" quest_level="44" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Lost I]]></title>
+         <contents mid="44"><![CDATA[<html>Tell Cidel about the death of the grandfather.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82425>→ Cidel</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Talk with Cidel]]></destination>
+         <todo_msg mid="46"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>541,n760</destination_pos>
+         <destination_mode>custom:541@1</destination_mode>
+         <statemark_npcid>760</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Lost II]]></title>
+         <contents mid="49"><![CDATA[<html>I told to Cidel about the death of Charti's grandfather. Cidel is about to go to Dragon Followers Base to console Charti. Let's follow Cidel.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82425>→ Dragon Followers Base</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Dragon Followers Base]]></destination>
+         <todo_msg mid="51"><![CDATA[Follow Cidel to Dragon Followers Base.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>15,n394</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>394</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Lost III]]></title>
+         <contents mid="53"><![CDATA[<html>Go back to Lotus Marsh and connect to Academic Station to discuss with Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Connect to Academic Station]]></destination>
+         <todo_msg mid="55"><![CDATA[Go back to Lotus Marsh to connect to Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>733</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

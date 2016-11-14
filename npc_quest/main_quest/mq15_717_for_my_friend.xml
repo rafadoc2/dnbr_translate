@@ -1,0 +1,347 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_717_for_my_friend</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>717</qid>
+      <designer>곽노찬</designer>
+      <qlevel>46</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>718</nextqid>
+      <nextqname>mq15_718_other_uninvited_guest</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[For my friend]]></qkname>
+      <qnpc>
+         <npcid>495</npcid>
+         <npcename>n495_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Cidel$<BR>Charti... wake up... please...<BR>
+<FONT color=#7e12d2>(Cidel cries and hugs Charti)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Cidel$<BR>I'm getting special training lessons from Master.<BR>I have to get stronger quickly to save Charti... but master always scolds me for mistakes....<BR>
+<FONT color=#7e12d2>(You need to receive a quest from Karacule.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-a" mid="6"><![CDATA[<html>The power to protect myself...?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Lady Karacule$<BR>If you want to awaken Charti's mind, you should get <FONT color=#a82424>the power to protect yourself</FONT> first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-acceptted" mid="8"><![CDATA[<html>What do you mean a strong power... ?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Lady Karacule$<BR>
+Yes. Until you get hold of the power, don't even dream of rescuing her!<BR>
+<FONT color=#7e12d2>(Karacule yells)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-a" mid="10"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Lady Karacule$<BR>
+Do I have to teach you every single little thing?<BR>
+Power is not given from someone.<BR>
+You should find out what you lack.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Lady Karacule$<BR>If you are ready, visit me again.<BR><BR>※ <FONT color=#7e12d2>After completing 2nd job specialization, you can proceed to the next step.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-b" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Lady Karacule$<BR>
+Hmm... you seem better than before.<BR>
+If you have this power, you won't get killed so easily by a monster's mere kick.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Cidel$<BR>I'm getting special training lessons from Master.<BR>I have to get stronger quickly to save Charti... but Master always scolds me for mistakes....<BR>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Cidel$<BR>Charti... wake up... please...<BR>
+<FONT color=#7e12d2>(Cidel cries and hugs Charti)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="QW_54.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Lady Karacule$<BR>
+The girl is walking around the <FONT color=#a82424>Dragon Followers' Base</FONT>.<BR>
+Go there with <FONT color=#a82424>Cidel</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-2-a" mid="20"><![CDATA[<html>How do you feel, Cidel?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Cidel$<BR>You came back here. You look rather different...?<BR>I'm impressed that you have grown so much stronger in such a short time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-2-b" mid="22"><![CDATA[<html>Karacule's eyes...?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Cidel${action:Talk}<BR>I'm getting special training lessons from Master as well.<BR>Master seems to be satisfied... but I don't feel that I have gotten stronger than before. Anyway Master's eyes are awkward when she looks at me....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-3" mid="24"><![CDATA[<html>Okay, let's hurry up for Charti.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Cidel$<BR>Well, just my imagination. Or I couldn't catch up the classes that much. Anyway I achieved a bit of success... Let's go and see <FONT color=#a82424>Charti</FONT>....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Cidel$<BR>
+Charti, please wait a little more.<BR>
+I'll... I'll rescue you....<BR>
+<FONT color=#7e12d2>(You can feel Cidel's firm decision)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-a" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Cidel$<BR>Charti...?! Please... please open your eyes!<BR>It's me, Cidel! I'm here to save you... to meet you... I came here... please... please wake up, Charti!<BR><FONT color=#7e12d2>(Cidel sadly cries)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-b" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Charti$<BR>
+<FONT color=#7e12d2>(Charti opens her eyes slowly)</FONT><BR>
+Ah... Ci, Cidel...?<BR>
+You're coming....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-c" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Cidel$<BR>
+Are you okay? Charti....<BR>
+What happened to you...?<BR>
+Why did you fall down here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-d" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Charti$<BR>
+Karahan... appeared... cough cough....<BR>
+He took...<BR>
+the jewel from me... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-e" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Cidel$<BR>
+Stop, stop. It's okay.... It'll be fine....<BR>
+See, your body is back to normal too...<BR>
+Let's go back to the village and get you cured.... You should return back to normal now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-f" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Charti$<BR>
+<FONT color=#7e12d2>(Charti shakes her head)</FONT><BR>
+No... it's too much....<BR>
+Cidel, you already know it...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-f" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-g" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Cidel$<BR>What are you talking about, Charti?!<BR>You're okay! ... If we go now...<BR><FONT color=#7e12d2>(He can't say anymore)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-g" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-h" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Charti$<BR>
+Kind Cidel...<BR>
+<FONT color=#7e12d2>(Charti touches Cidel's cheek with shaky hands)</FONT><BR>
+I'm... punished because I did bad things to you... .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-h" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-i" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Charti$<BR>
+<FONT color=#7e12d2>(Charti passes the gift pen which she grabbed to Cidel)</FONT><BR>
+This... is for you...<BR>
+I asked <FONT color=#387206>{user_nick}</FONT> to buy ... this...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-i" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-j" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Charti$<BR>
+It's really good... <BR>
+to give you... in person...<BR>
+..........<BR>
+<FONT color=#7e12d2>(Charti's hand fall onto the ground)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-j" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-3-k" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Cidel$<BR>Cha... Charti...?<BR>This is not true, right...?<BR>Please... open your eyes, open...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-3-k" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n495_sidel-4" mid="55"><![CDATA[<html>Cidel...</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Cidel$<BR>
+Wake up...!<BR>
+I... I have a gift for you too!<BR>
+Why... why... sobbing...<BR>
+<FONT color=#7e12d2>(Cidel cries and hugs Charti)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n495_sidel-4" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Cidel$<BR>Sobbing...<BR>Charti... Charti...<BR><FONT color=#7e12d2>(Cidel keeps crying. It's better to leave Cidel alone to calm down. Go back to Karacule)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-a" mid="66"><![CDATA[<html>(Talk about what happened at Dragon Followers' Base)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Lady Karacule$<BR>Cough cough... How was Charti... ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-b" mid="68"><![CDATA[<html>Are you okay...?</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Lady Karacule$<BR>In the end...cough cough...<BR>That's ...her. Cough cough!<BR><FONT color=#7e12d2>(Karacule's cough is getting worse)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-b" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4-c" mid="70"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4-c" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Lady Karacule$<BR>Cough cough...q..quickly...get the medicine from <FONT color=#a82424>Tamara</FONT>...<BR>Cough cough...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">717</exe>
+         <exe type="talk" npc="n701_oldkarakule">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 758) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 767) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 763) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 754) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 4073) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="4" false="1">0</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="conexe" true="4" false="3">2</exe>
+         <exe type="conexe" true="4" false="8">3</exe>
+         <exe type="talk" npc="n701_oldkarakule">b</exe>
+         <exe type="talk" npc="n701_oldkarakule">1</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4" false="5">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7171,7171,7172,7173,7174,7175,7176</exe>
+         <exe type="complete">717</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n701_oldkarakule" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n701_oldkarakule">0</exelink>
+   <exelink qstep="1" npc="n701_oldkarakule" sub="2">6,7</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n495_sidel" sub="b" />
+   <exelink qstep="3" npc="n495_sidel" sub="c" />
+   <exelink qstep="3" npc="n495_sidel" sub="d" />
+   <exelink qstep="3" npc="n495_sidel" sub="e" />
+   <exelink qstep="3" npc="n495_sidel" sub="f" />
+   <exelink qstep="3" npc="n495_sidel" sub="g" />
+   <exelink qstep="3" npc="n495_sidel" sub="h" />
+   <exelink qstep="3" npc="n495_sidel" sub="i" />
+   <exelink qstep="3" npc="n495_sidel" sub="j" />
+   <exelink qstep="3" npc="n495_sidel" sub="k" />
+   <exelink qstep="3" npc="n495_sidel" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n701_oldkarakule" sub="b">0</exelink>
+   <exelink qstep="4" npc="n701_oldkarakule" sub="c">1</exelink>
+   <journal_data recompense="1:7171,2:7172,3:7173,4:7174,5:7175,6:7176" quest_title="친구를 위하여" chapterid="6" quest_level="46" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[For My Friend I]]></title>
+         <contents mid="73"><![CDATA[<html>Karacule advises you to get a stronger power to save Charti. Come back thereafter.<BR><BR>※ <FONT color=#7e12d2>You need to complete 2nd job specialization to proceed.</FONT><BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Karacule</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk to Karacule]]></destination>
+         <todo_msg mid="75"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[For My Friend II]]></title>
+         <contents mid="78"><![CDATA[<html>After talking to Cidel, move to Dragon Followers' Base to find Charti.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="80"><![CDATA[Talk to Cidel.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Charty.dds</contents_image>
+         <destination_pos>542,n495</destination_pos>
+         <destination_mode>custom:541@1,542@1</destination_mode>
+         <statemark_npcid>495</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[For My Friend III]]></title>
+         <contents mid="83"><![CDATA[<html>Find Charti at Dragon Followers' Base.<BR><BR><FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Dragon Followers' Base</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Talk to Charti at Dragon Followers' Base]]></destination>
+         <todo_msg mid="85"><![CDATA[Find Charti at Dragon Followers' Base.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[Sad Ending]]></title>
+         <contents mid="88"><![CDATA[<html>Cidel seems quite shocked by Charti's death. Calm him down and return to Karacule's Hut.<BR> <BR><FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Lady Karacule</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[Talk to Karacule]]></destination>
+         <todo_msg mid="90"><![CDATA[Go back to Karacule's Hut and talk to Karacule.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>716</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

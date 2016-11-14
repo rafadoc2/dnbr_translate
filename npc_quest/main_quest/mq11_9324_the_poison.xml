@@ -1,0 +1,258 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9324_the_poison</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9324</qid>
+      <designer>김인정</designer>
+      <qlevel>36</qlevel>
+      <qdesc>고대인의 독성 물질	300575
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9325</nextqid>
+      <nextqname>mq11_9325_word_of_promise</nextqname>
+      <nextqnpc>n776_darklair_mardlen</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[독을 삼키다]]></qkname>
+      <qnpc>
+         <npcid>1160</npcid>
+         <npcename>n1160_eclair</npcename>
+         <npckname>어둠의 여신관 에클레르</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1161</npcid>
+         <npcename>n1161_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1162</npcid>
+         <npcename>n1162_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1193</npcid>
+         <npcename>n1193_illusion</npcename>
+         <npckname>일루전</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>776</npcid>
+         <npcename>n776_darklair_mardlen</npcename>
+         <npckname>어둠의 여신관 마들렌</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>어둠의 여신관의 나침반은 도움이 되었나요?<BR>아, 아직 바늘이 움직이고 있군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-1" image="QW_41.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-1-" mid="2442" select_type="5" />
+      <talk_question mid="2441"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>에클레르 님이 고엽의 숲 폭발지역으로 가라고 하셨다면, 그 말에 따라 보세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1160_eclair-1" image="QW_41.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Eclairer.dds" center_image="">
+      <talk_answer link_index="n1160_eclair-1-" mid="2444" select_type="5" />
+      <talk_question mid="2443"><![CDATA[<html>$어둠의 여신관 에클레르$<BR>고엽의 숲 폭발지역으로 가세요.<BR>그곳에서 고대인의 독성 물질 일부를 채취해, 검은 코어와 결합하면 그 강력한 독이 당신들의 독을 중화해 줄 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1161_lunaria-1" image="QW_41.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="2492"><![CDATA[<html>$루나리아$<BR>고엽의 숲 폭발지역으로 가는 거지?<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-a" mid="2494" select_type="2" />
+      <talk_question mid="2493"><![CDATA[<html>$루나리아$<BR>이쪽이야.<BR>여기에서 그 독성 물질인지 뭔지를 채취하면 돼.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-b" mid="2496" select_type="2" />
+      <talk_question mid="2495"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이게 효과가 있다면 좋을텐데.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-c" mid="2499" select_type="2" />
+      <talk_question mid="2498"><![CDATA[<html>$루나리아$<BR><FONT color=#387206>{user_nick}</FONT>, 잠깐......!<BR><FONT color=#7e12d2>(루나리아의 표정이 어두워진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-c" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-d" mid="2501" select_type="2" />
+      <talk_question mid="2500"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(독성 물질에 손을 대자 시야가 흐려진다.<BR>루나리아의 목소리가 멀어져 간다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-d" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-e" mid="2504" select_type="2" />
+      <talk_question mid="2503"><![CDATA[<html>$일루전$<BR>...그렇게 네 멋대로는 안 될 거다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-e" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-f" mid="2506" select_type="2" />
+      <talk_question mid="2505"><![CDATA[<html>$일루전$<BR>루나리아. 이번에도 네 뜻대로는 되지 않을 거다. 너는 언제나......<BR><FONT color=#7e12d2>(목소리가 잘 들리지 않는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-f" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-g" mid="2508" select_type="2" />
+      <talk_question mid="2507"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(무슨 이야기를 하는 거지...? 일루전은 루나리아에게 도대체 뭘 바랐던 건지 모르겠다.<BR>일루전은 왜 루나리아에게 집착하는 걸까? 둘은 대체 그때 어디로 향하고 있었던 거지?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-g" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-h" mid="2510" select_type="2" />
+      <talk_question mid="2509"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그리고 루나리아는...</FONT><BR>
+<FONT color=#662500>대체 루나리아는 누구지?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-h" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-i" mid="2512" select_type="2" />
+      <talk_question mid="2511"><![CDATA[<html>$일루전$<BR>속지 마라.<BR>
+얼간이 녀석.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-i" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-j" mid="2514" select_type="2" />
+      <talk_question mid="2513"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(희미한 기억이 엿보인다.</FONT><BR>
+<FONT color=#7e12d2>그러나 형태를 잘 파악할 수 없다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-k" mid="2516" select_type="2" />
+      <talk_question mid="2515"><![CDATA[<html>$루나리아$<BR><FONT color=#387206>{user_nick}</FONT>...... 돌아왔어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-k" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-l" mid="2518" select_type="2" />
+      <talk_question mid="2517"><![CDATA[<html>$루나리아$<BR>일루전이 나타났어.<BR>기억나지 않는 모양이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-1-l" image="QS_Default.dds" itemindex="300575" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1162_lunaria-1-m" mid="2520" select_type="2" />
+      <talk_question mid="2519"><![CDATA[<html>$루나리아$<BR>고대인의 독성 물질은 여기 있어.<BR><FONT color=#7e12d2>(루나리아가 손을 내민다)</FONT><BR>가지고 돌아가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1162_lunaria-2" image="QW_SaintHaven_NestWorldZone01.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1162_lunaria-2-" mid="2522" select_type="5" />
+      <talk_question mid="2521"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>시공의 정원</FONT>으로 돌아가는 거지?<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2" image="QS_Default.dds" itemindex="300575" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-a" mid="2525" select_type="2" />
+      <talk_question mid="2524"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>에클레르 님은 만나셨나요?<BR>아, 그것이 그분이 조언해 주신 물건인가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-b" mid="2527" select_type="2" />
+      <talk_question mid="2526"><![CDATA[<html>$어둠의 여신관 마들렌$<BR><FONT color=#7e12d2>(마들렌이 고대인의 독성 물질을 건네받는다)</FONT><BR>이것과 블랙 드래곤의 날개 파편을 조합한 물질이라면, 어떤 독도 당해낼 수 있겠지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-c" mid="2529" select_type="2" />
+      <talk_question mid="2528"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>자, 이것이 두 가지 독의 합성 물질입니다.<BR><FONT color=#7e12d2>(마들렌이 건네준 것이 손을 대자, 그 물질은 흡수되듯이 사라졌다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-d" mid="2531" select_type="2" />
+      <talk_question mid="2530"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(잘 된 건가?</FONT><BR>
+<FONT color=#662500>당장은 변화를 느낄 수가 없는데.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-e" mid="2533" select_type="2" />
+      <talk_question mid="2532"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...그나저나 일루전도 나타났던 것 같고, 루나리아의 상태도 불안정했으니 걱정이다.<BR>대체 지금은 언제쯤일까? 또 이상한 시기로 시간을 뛰어넘은 건 아니겠지?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-f" mid="2535" select_type="2" />
+      <talk_question mid="2534"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(어둠의 여신관 마들렌의 반응을 보면 일단 동떨어진 시기로 이동한 건 아닌 것 같지만...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-g" mid="2537" select_type="4" />
+      <talk_question mid="2536"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-!next" mid="2548" select_type="2" />
+      <talk_question mid="2547"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그래도 신경이 쓰이는군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9324</exe>
+         <exe type="talk" npc="n776_darklair_mardlen">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300575</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93240,,,,,,,</exe>
+         <exe type="complete" true="">9324</exe>
+         <exe type="delquestitem" num="-1">300575</exe>
+         <exe type="delquestitem" num="-1">300574</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n776_darklair_mardlen" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1162_lunaria" sub="b" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="c" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="d" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="e" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="f" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="g" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="h" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="i" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="j" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="k" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="l" />
+   <exelink qstep="1" npc="n1162_lunaria" sub="m">0,1,2</exelink>
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="b" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="c" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="d" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="e" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="f">0</exelink>
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="g">1,2,3</exelink>
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="!next" />
+   <journal_data recompense="93240" quest_title="독을 삼키다" chapterid="5" quest_level="36" quest_mark_type="1" use_item_list="300575">
+      <journal index="1">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>413,n1162</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@1</destination_mode>
+         <statemark_npcid>1162</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2539"><![CDATA[독을 삼키다I]]></title>
+         <contents mid="2540"><![CDATA[<html>어둠의 여신관 에클레르는 고엽의 숲 폭발지역에서 고대인의 독성 물질을 채취해 보라고 권했다.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락(쓸쓸한 숲길)</FONT> <FONT color=#a82424>- 고엽의 숲 폭발지역</FONT></html>]]></contents>
+         <destination mid="2541"><![CDATA[고엽의 숲 폭발지역]]></destination>
+         <todo_msg mid="2542"><![CDATA[고엽의 숲 폭발지역으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_SaintHaven_NestWorldZone01.dds</contents_image>
+         <destination_pos>27,n776</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>776</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2543"><![CDATA[독을 삼키다II]]></title>
+         <contents mid="2544"><![CDATA[<html>시공의 정원으로 돌아가자.<BR><BR><FONT color=#086171>세인트헤이븐(시공의 정원)</FONT> <FONT color=#a82424>- 어둠의 여신관 마들렌</FONT></html>]]></contents>
+         <destination mid="2545"><![CDATA[어둠의 여신관 마들렌과 대화]]></destination>
+         <todo_msg mid="2546"><![CDATA[시공의 정원으로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9323</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

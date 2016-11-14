@@ -1,0 +1,355 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_726_boy_and_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>726</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc>300379 정글 고사리</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>727</nextqid>
+      <nextqname>mq15_727_mystery_man</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <qkname mid="1"><![CDATA[Boy and Girl]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>465</npcid>
+         <npcename>n465_charty</npcename>
+         <npckname>차티</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>718</npcid>
+         <npcename>n718_invisible</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>785</npcid>
+         <npcename>n785_invisible</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#7e12d2>(Xian and Cidel're talking each other)</FONT><BR><BR>※ <FONT color=#7e12d3>You can continue after you acquire a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Cidel$<BR>
+Have you got a jungle bracken?<BR>
+ <BR>
+※ <FONT color=#7e12d3>You can continue after you acquire a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+※ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Collect a jungle bracken around Riverwort Wharf.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-1" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n785_invisible-1-a" mid="10"><![CDATA[<html>So you want me to get it instead of you?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Cidel$<BR>My friend really loves a food with<FONT color=#a82425>a jungle bracken</FONT>.<BR>
+So I promised him to get a jungle bracken on the way to home, but I have to make a medicine now...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-1-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-1-b" mid="12"><![CDATA[<html>Where can I get it?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Cidel$<BR>Yes, please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-1-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-1-c" mid="14"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Cidel$<BR>Around
+<FONT color=#a82425>Riverwort Wharf</FONT>, it must be around humid moisture place.<BR>I just need a bunch of it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-1-c" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Cidel$<BR>So, I'll be waiting for you in the hut.<BR>If you get a bunch of a <FONT color=#a82425>jungle bracken</FONT>, please come to me. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n718_invisible-1" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n718_invisible-2" mid="18"><![CDATA[<html>(Collect a jungle bracken)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Jungle Bracken$<BR><FONT color=#7e12d3>(There's a jungle bracken)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QS_Default.dds" itemindex="300379">
+      <talk_question mid="23"><![CDATA[<html>$Cidel$<BR>
+Did you bring a jungle bracken?<BR>
+<FONT color=#a82425>Riverwort Wharf</FONT> it must be around humid moisture place..<BR>I just need a bunch of it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Charti$<BR>Ah..., where is Cidel!<BR>He must have gotten the medicine herb....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n718_invisible-2" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Jungle Bracken$<BR><FONT color=#7e12d3>(I just got a jungle bracken. Go back to Karacule's Hut's Cidel)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-a" mid="25"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Cidel$<BR>Oh, you came back?<BR>Xian just left to do something.<BR><FONT color=#7e12d3>(Cidel tries to read Karacule's countenance)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-b" mid="27"><![CDATA[<html>Attack to Karacule...?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Cidel${action:Talk}<BR>Well..<BR><FONT color=#7e12d3>(Cidel speaks in a low tone)</FONT><BR>A friend of mine is Charti..., she's a native here.<BR>
+She suddenly attacked here to Karacule, and I don't have any idea why she did it....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-2-c" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Cidel$<BR>Shh-!There must be a misunderstanding. She was not that violent.... She ran away after attacking Karacule. I'm so worried about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-c" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-d" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Karacule Fairystar$<BR>
+I can hear you, Cidel!<BR>You shouldn't think about taking care of the girl!<BR>
+<FONT color=#7e12d3>(Karacule's shouting with anger)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-e" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Cidel$<BR>
+Yes! Okay!<BR>
+<FONT color=#7e12d3>(Cidel speaks in a low tone again)</FONT><BR>
+Hu..., I would be punished by my master Karacule if I go outside.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-e" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3" mid="35"><![CDATA[<html>Okay, I can.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Cidel$<BR>Could you check Charti's okay instead of me and get the Juggle Bracken?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QW_52.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Cidel$<BR>Thanks. Charti ran away to <FONT color=#a82424>Ancient Library</FONT> .<BR>
+<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3" image="" itemindex="">
+      <talk_answer link_index="n465_charty-3-a" mid="40"><![CDATA[<html>Ah, you must be Charti.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Charti$<BR>Ah..., where is <FONT color=#a82425>Cidel</FONT>... !<BR>She must have gotten the medicine herb....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n465_charty-3-b" mid="42"><![CDATA[<html>No, I came here with Cidel's request.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Charti${action:Talk}<BR>What, who're you?!<BR>
+Did you follow me? Are you...<BR>
+a pawn of witch...?!<BR><FONT color=#7e12d3>(Charti shows her hostility)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-b" image="" itemindex="">
+      <talk_answer link_index="n465_charty-3-c" mid="44"><![CDATA[<html>I'm not lying. I came here to get a juggle bracken.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Charti$<BR>Pah, do you think that I'm deceived with the name, Cidel??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n465_charty-3-d" mid="46"><![CDATA[<html>Cidel's worried about you. Are you okay?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Charti${action:Talk2}<BR>Juggle Bracken...?<BR>
+<FONT color=#7e12d3>(Charti seems to be calm down)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-d" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n465_charty-3-e" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Charti$<BR>I'm okay, this wound....<BR><FONT color=#7e12d3>(Charti sees her wound)</FONT><BR>Cidel's good at worrying about me...haha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-e" image="" itemindex="">
+      <talk_answer link_index="n465_charty-3-f" mid="50"><![CDATA[<html>Witch...?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Charti$<BR>I don't understand why he became a pawn of <FONT color=#a82425>witch</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-f" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n465_charty-3-g" mid="52"><![CDATA[<html>You've... got something misunderstood.</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Charti$<BR>Yes, <FONT color=#a82425>Karacule</FONT>.<BR>She kidnapped our tribe people and made them a monster!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-g" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n465_charty-3-h" mid="54"><![CDATA[<html>No, never!</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Charti$<BR>This information is from <FONT color=#a82424>countable</FONT>person!<BR>Don't side with her!<BR>You're suspicious...? Are you a spy?! <BR><FONT color=#7e12d3>(Charti smells me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-h" image="" itemindex="">
+      <talk_answer link_index="n465_charty-3-i" mid="56"><![CDATA[<html>What...?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Charti$<BR>Wait! I can't smell a different scent compared to normal humans'!<BR>And... yes! This smell!<BR>
+I smelled it before...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-3-i" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n465_charty-4" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Charti$<BR>
+Hmm? A little different?<BR>
+I think I smelled it from the jungle.....<BR>
+<FONT color=#7e12d3>(Charti smells me closely)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-4" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Charti$<BR>
+It smells like what I smelled....<BR>
+Anyway, just go to <FONT color=#a82425>Cidel</FONT>that I'm okay so don't worry about me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-4-a" mid="62"><![CDATA[<html>(Tell her Charti's situation)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Cidel$<BR>Charti's fine?<BR><FONT color=#7e12d3>(Cidel asks me with a concerned look)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-4-b" mid="64"><![CDATA[<html>She said it is from a countable person.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Cidel$<BR>She misunderstood that <FONT color=#a82425>Karacule</FONT>made natives a monster...?<BR>Oh my.... Charti had a big misunderstanding.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4-b" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-4-c" mid="66"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Cidel$<BR><FONT color=#a82425>Countable person</FONT>? Who's that?<BR>If Charti knows the person, I would know him too....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-4-d" mid="68"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Cidel$<BR>Who's it....<BR>I'd better meet with <FONT color=#a82425>Charti</FONT>.<BR>Please keep this secret.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4-d" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-4-!next" mid="70"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">726</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300379</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300379</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">726</exe>
+         <exe type="recompense">7260,,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n785_invisible" sub="b" />
+   <exelink qstep="1" npc="n785_invisible" sub="c" />
+   <exelink qstep="1" npc="n718_invisible" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="c" />
+   <exelink qstep="2" npc="n707_sidel" sub="d" />
+   <exelink qstep="2" npc="n707_sidel" sub="e" />
+   <exelink qstep="2" npc="n707_sidel" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n465_charty" sub="b" />
+   <exelink qstep="3" npc="n465_charty" sub="c" />
+   <exelink qstep="3" npc="n465_charty" sub="d" />
+   <exelink qstep="3" npc="n465_charty" sub="e" />
+   <exelink qstep="3" npc="n465_charty" sub="f" />
+   <exelink qstep="3" npc="n465_charty" sub="g" />
+   <exelink qstep="3" npc="n465_charty" sub="h" />
+   <exelink qstep="3" npc="n465_charty" sub="i" />
+   <exelink qstep="3" npc="n465_charty" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n707_sidel" sub="b" />
+   <exelink qstep="4" npc="n707_sidel" sub="c" />
+   <exelink qstep="4" npc="n707_sidel" sub="d">1</exelink>
+   <exelink qstep="4" npc="n707_sidel" sub="!next">0</exelink>
+   <journal_data recompense="7260" quest_title="소년과 소녀를 만났습니다" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="300379">
+      <journal index="1">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n718</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>718</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Boy and Girl]]></title>
+         <contents mid="74"><![CDATA[<html>Cidel asked me to get a juggle bracken. Collect a juggle bracken around Riverwort Wharf and deliver it to Cidel.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82425>→ Juggle Bracken</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Collect a juggle bracken around Riverwort Wharf]]></destination>
+         <todo_msg mid="76"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Boy and Girl II]]></title>
+         <contents mid="78"><![CDATA[<html>I just got a juggle bracken. Let's go to Karacule's Hut and deliver it to Cidel.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82425>→ Cidel</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Talk with Cidel]]></destination>
+         <todo_msg mid="80"><![CDATA[Deliver a jungle bracken to Cidel.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>521,n465</destination_pos>
+         <destination_mode>custom:521@1,522@1</destination_mode>
+         <statemark_npcid>465</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Boy and Girl III]]></title>
+         <contents mid="82"><![CDATA[<html>Charti seemed to go to Ancient Library. Let's find Charti in Ancient Library.<BR>
+<BR>
+<FONT color=#086171>Riverwort Wharf(Entrance to Ancient Warehouse)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Talk with Charti in Ancient Library]]></destination>
+         <todo_msg mid="84"><![CDATA[Let's find Charti in Ancient Library]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Boy and Girl IV]]></title>
+         <contents mid="87"><![CDATA[<html>Charti looks fine. Go back to Cidel and tell her situation.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82425>→ Cidel</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Talk with Cidel]]></destination>
+         <todo_msg mid="89"><![CDATA[Go back to Karacule's Hut and meet with Cidel.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>725</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

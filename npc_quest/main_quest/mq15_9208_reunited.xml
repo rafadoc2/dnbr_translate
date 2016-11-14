@@ -1,0 +1,231 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9208_reunited</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9208</qid>
+      <designer>곽노찬</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9209</nextqid>
+      <nextqname>mq15_9209_eternal_rest</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Met the Girl Again]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>811</npcid>
+         <npcename>n811_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>812</npcid>
+         <npcename>n812_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>813</npcid>
+         <npcename>n813_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>The Unidentified Warrior was actually <FONT color=#a82424>Barnac</FONT>....<BR>And he had already passed away... What had happened?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Cidel$<BR>But I'm heartened by Terramai's visit.<BR>Well, go to <FONT color=#a82424>Riverwort Wharf</FONT> and meet another guest who's waiting there.<BR>Terramai said that you should know the person too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Terrence Terramai$<BR>Go to <FONT color=#a82424>Riverwort Wharf</FONT>.<BR>You will find out why I said that there's a solution when you go there.<BR>
+Goddess's grace is always helping us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n813_teramai-1" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Terrence Terramai$<BR>Barnac... I will return peace to you no matter what....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n812_rose-1-class_check" mid="11"><![CDATA[<html>Rose...?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Rose$<BR>...Haven't we met before?<BR>It's vague like I saw it in my dreams, but I remember your face.<BR><FONT color=#7e12d2>(Rose softly gazes at you)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-1-a" image="" itemindex="">
+      <talk_answer link_index="n812_rose-1-b" mid="13"><![CDATA[<html>What happened...? You...</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Rose$<BR>You called me while I was asleep.<BR>When I was running away endlessly into my own self..., I heard <FONT color=#387206>{user_nick}</FONT>, your voice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-1-b" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n812_rose-1-e" mid="15"><![CDATA[<html>(It's different from the records.... Did history change...?)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Rose$<BR>
+I was being taken by the Dragon Followers and by chance, or fate, <FONT color=#a82424>Terramai</FONT> saved me. He told me not to give up and not to lose, and took care of me until now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-1-c" image="" itemindex="">
+      <talk_answer link_index="n812_rose-1-d" mid="17"><![CDATA[<html>Are you okay now? What happened?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Rose$<BR>
+He worked hard to save a stranger like me for a long time.<BR>
+I'm sincerely thankful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-1-d" image="" itemindex="">
+      <talk_answer link_index="n812_rose-1-e" mid="19"><![CDATA[<html>That's really a relief.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Rose$<BR>
+I was being taken by the Dragon Followers and by chance, or fate, <FONT color=#a82424>Terramai</FONT> saved me. He told me not to give up and not to lose, and took care of me until now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-1-e" image="" itemindex="">
+      <talk_answer link_index="n812_rose-1-f" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Rose$<BR>To my saviour Terramai, and to you, <FONT color=#387206>{user_nick}</FONT>, I want to be of help. If this power that has tortured me all this while... can be of help to you, I will try my best.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-1-f" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n812_rose-1-g" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Rose$<BR>I'm the one who sees Goddess's dreams....<BR>
+Altea is a world made up of Goddess's dreams.<BR>With this power, I can know what situation Barnac is in and where he is.<BR>
+<FONT color=#7e12d2>(Rose closes her eyes like she is praying)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-1-g" image="QW_67.dds" itemindex="">
+      <talk_answer link_index="n812_rose-2" mid="30"><![CDATA[<html>Then, I will go to Valley of Blindness.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Rose$<BR>Barnac is now...<BR>
+Near the <FONT color=#a82424>Valley of Blindness</FONT>.<BR>
+I can't see much because of the Goddess's nightmares that have spread across the world. You must hurry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n812_rose-2" image="QW_67.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Rose$<BR>
+Please.<BR>
+I will go to the <FONT color=#a82424>Valley of Blindness</FONT> with Terramai.<BR>
+I hope that poor soul can rest in peace soon....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-2" image="QW_67.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Terrence Terramai$<BR><FONT color=#a82424>Valley of Blindness</FONT>?<BR>I see. If it is said so by the prophet herself, it must be so.<BR>Now, let's hurry and go to Barnac.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_67.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Cidel$<BR>Terramai and that... prophet girl are going to the <FONT color=#a82424>Valley of Blindness</FONT> together with you?<BR>I will tell this to Tamara and ask her opinions.<BR>Take care.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n813_teramai-3" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n813_teramai-3-a" mid="45"><![CDATA[<html>Terramai....</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Terrence Terramai$<BR>Oh no....<BR><FONT color=#7e12d2>(Terramai bites his lip)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n813_teramai-3-a" image="" itemindex="">
+      <talk_answer link_index="n813_teramai-3-b" mid="49"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n813_teramai-3-b" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Terrence Terramai$<BR>Let's go back to Karacule's Hut first and discuss what to do next.<BR>Since Barnac is gone, we have no business here anymore....<BR><FONT color=#7e12d2>(Terramai walks away)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9208</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n812_rose">a</exe>
+         <exe type="talk" npc="n812_rose">c</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92080,,,,,,</exe>
+         <exe type="complete">9208</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n812_rose" sub="class_check">0</exelink>
+   <exelink qstep="1" npc="n812_rose" sub="b" />
+   <exelink qstep="1" npc="n812_rose" sub="e" />
+   <exelink qstep="1" npc="n812_rose" sub="d" />
+   <exelink qstep="1" npc="n812_rose" sub="e" />
+   <exelink qstep="1" npc="n812_rose" sub="f" />
+   <exelink qstep="1" npc="n812_rose" sub="g" />
+   <exelink qstep="1" npc="n812_rose" sub="2">3,4</exelink>
+   <exelink qstep="3" npc="n813_teramai" sub="a">0</exelink>
+   <exelink qstep="3" npc="n813_teramai" sub="b">1</exelink>
+   <journal_data recompense="92080" quest_title="다시 만난 소녀" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n812</destination_pos>
+         <destination_mode>custom:14@4</destination_mode>
+         <statemark_npcid>812</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[Met the Girl Again I]]></title>
+         <contents mid="33"><![CDATA[<html>Terrence Terramai says there's another special guest.<BR>Go to Riverwort Wharf to meet that person.<BR><BR><FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Riverwort Wharf]]></destination>
+         <todo_msg mid="35"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_67.dds</contents_image>
+         <destination_pos>671,n813</destination_pos>
+         <destination_mode>custom:671@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Met the Girl Again II]]></title>
+         <contents mid="37"><![CDATA[<html>Surprisingly, the person who was waiting at Riverwort Wharf was Rose. Rose said that while she was being taken by the Dragon Followers, she was saved by Terramai by chance and came to Lotus Marsh together.<BR>Go to Valley of Blindness where Barnac is and save Barnac.<BR><BR><FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Valley of Blindness</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Valley of Blindness]]></destination>
+         <todo_msg mid="39"><![CDATA[Go to Valley of Blindness and find Barnac.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>671,n813</destination_pos>
+         <destination_mode>custom:671@1</destination_mode>
+         <statemark_npcid>813</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Met the Girl Again III]]></title>
+         <contents mid="52"><![CDATA[<html>Purifying Barnac has failed.<BR>Talk to Terrence Terramai.<BR><BR><FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Valley of Blindness(Terrence Terramai)</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Talk to Terramai at the Valley of Blindness]]></destination>
+         <todo_msg mid="54"><![CDATA[Talk to Terramai.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9207</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

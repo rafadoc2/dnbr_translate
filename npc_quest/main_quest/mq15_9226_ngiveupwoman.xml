@@ -1,0 +1,203 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9226_ngiveupwoman</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9226</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9227</nextqid>
+      <nextqname>mq15_9227_dejavu</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[Never Giving Up]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>873</npcid>
+         <npcename>n873_academic</npcename>
+         <npckname>아카데믹 NPC</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="22"><![CDATA[<html>(Stella is in deep thought)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Master Sorceress Stella$<BR>Hmm….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="70"><![CDATA[<html>Huh?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Master Sorceress Stella$<BR>No, it's unlike me to give up!<BR><FONT color=#7e12d2>(Stella clenches her fists)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="72"><![CDATA[<html>What…?!</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Master Sorceress Stella$<BR>If you don't have teeth to chew your food, you chew with your gums. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="74"><![CDATA[<html>Well… yes.</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Master Sorceress Stella$<BR>I'm saying that the value of the land doesn't depend on its price alone.<BR>
+Understand?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="76"><![CDATA[<html>What???</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Master Sorceress Stella$<BR>Phew… Why don't you have a sense of humour?<BR>I'm just joking to calm myself. Please learn some jokes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="QW_69.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="78"><![CDATA[<html>I thought you were not interested in that land anymore…?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Master Sorceress Stella$<BR>Nevermind.<BR><FONT color=#7e12d2>(Stella shakes her head)</FONT><BR>Anyway, I want you to go to <FONT color=#a82424>Miracle Altar Conservation Area</FONT> again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-e" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-f" mid="82"><![CDATA[<html>So that was the motive. </html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Master Sorceress Stella$<BR>Well, I was until I talked to <FONT color=#a82424>Berlin</FONT>. He said he's setting up a biotechnology center there!<BR>Since Professor K was a renowned figure in biotechnology, there might still be some of his <FONT color=#a82424>experimental notes</FONT> at Miracle Altar.<BR>If we can find them, Berlin may buy them at a high price. Hahaha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="84"><![CDATA[<html>(She orders me around so naturally now…)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Master Sorceress Stella$<BR>So go and get them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_69.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Master Sorceress Stella$<BR>You just have to bring a stack of papers that is full of weird language that you can't understand.<BR>You've been there already, so I guess it wouldn't be hard for you. Hohoho~<BR>
+<FONT color=#a82424>Miracle Altar Conservation Area</FONT> would be a piece of cake to you, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2" image="" itemindex="">
+      <talk_answer link_index="n873_academic-2-a" mid="97"><![CDATA[<html>What? The corpse came back to life?!</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Mysterious Girl$<BR>Oh, you are…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-a" image="" itemindex="">
+      <talk_answer link_index="n873_academic-3" mid="99"><![CDATA[<html>Wait!</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Mysterious Girl$<BR>N-no!! Please take it as you've not seen me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="86"><![CDATA[<html>No I couldn't find it.</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Master Sorceress Stella$<BR>You're back.<BR>Have you found Professor K's experimental notes?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="88"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Master Sorceress Stella$<BR>Hmm… Too bad.<BR><FONT color=#7e12d2>(She looks like she can't fOgret about those notes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-!next" mid="90"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-3" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html><FONT color=#7e12d2>The girl disappeared like the wind.</FONT><BR><FONT color=#7e12d2>Nothing like an experimental note can be seen anywhere here….</FONT><BR><FONT color=#7e12d2>What can be found are just weird coloured crumbles.</FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2>(Go back to Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9226</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>여기서 아카데믹이 사라지는 애니메이션이 들어가야 합니다. 들어가는게 가능한 지 확인해야 함. 
+아카데믹이 사라지고, 그 자리에 투명 npc 배치하여 퀘스트 속행하는 방식으로.. </comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92260,,,,,,</exe>
+         <exe type="complete" true="">9226</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n873_academic" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b">0</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="!next">1</exelink>
+   <journal_data recompense="92260" quest_title="포기를 모르는 여자" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Never Giving UpⅠ]]></title>
+         <contents mid="59"><![CDATA[<html>Stella isn't going to give up like this.<BR>Talk to Stella again.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="61"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_69.dds</contents_image>
+         <destination_pos>691,n873</destination_pos>
+         <destination_mode>custom:691@1</destination_mode>
+         <statemark_npcid>873</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Never Giving UpⅡ]]></title>
+         <contents mid="64"><![CDATA[<html>Stella did not give up.<BR>Go back to Miracle Altar Conservation Area and look for experimental notes.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Numara Village)<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Miracle Altar Conservation Area</FONT></FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Investigate Miracle Altar Conservation Area]]></destination>
+         <todo_msg mid="66"><![CDATA[Please investigate Miracle Altar Conservation Area.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[Never Giving UpⅢ]]></title>
+         <contents mid="102"><![CDATA[<html>You could not find the experimental notes, but you saw the girl who looked like the corpse you had seen last time.<BR>Report to Stella.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="104"><![CDATA[Go to Saint Haven and report to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9225</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

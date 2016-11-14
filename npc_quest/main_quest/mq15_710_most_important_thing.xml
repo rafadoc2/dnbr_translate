@@ -1,0 +1,406 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_710_most_important_thing</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>710</qid>
+      <designer>곽노찬</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>711</nextqid>
+      <nextqname>mq15_711_disease</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Most Important Thing]]></qkname>
+      <qnpc>
+         <npcid>485</npcid>
+         <npcename>n485_overhear</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>491</npcid>
+         <npcename>n491_overhear</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Cidel$<BR>I can't help caring about Charti.<BR>What happened to her arm?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-acceptted" mid="18"><![CDATA[<html>I'm coming.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Lady Karacule$<BR>Cough cough...<BR>
+<FONT color=#7e12d2>(Karacule coughs)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Cidel$<BR>I can't help caring about Charti.<BR>What happened to her arm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-a" mid="29"><![CDATA[<html>Did he join the Dragon Followers?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Lady Karacule$<BR>You arrived earlier than expected.<BR>
+So did the Dragon Followers kidnap the Natives...?<BR>
+<FONT color=#a82424>Karahan</FONT> might join forces with the Dragon Followers....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-b" mid="43"><![CDATA[<html>What is Karahan aiming?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Lady Karacule$<BR>If <FONT color=#a82424>Karahan</FONT> was controlling this case from behind, it would make sense. Karahan will do anything to achieve his goal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-b" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-c" mid="44"><![CDATA[<html>What is that...?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Lady Karacule$<BR>
+Huh, that's obvious.<BR><FONT color=#7e12d2>(Karacule sniffs)<BR></FONT>After you left, I thought it through and I realised I missed out a very simple thing. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-c" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-d" mid="45"><![CDATA[<html>Dragon's Jewel...?!</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Lady Karacule$<BR>
+It's probably, the <FONT color=#a82424>Green Dragon's Jewel</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-d" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-e" mid="135"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Lady Karacule$<BR>
+Here, the<FONT color=#a82424>Green Dragon's Jewel</FONT> is hidden and sealed by <FONT color=#a82424>Geraint</FONT>. Only the Natives know where the jewel is located.<BR>
+I don't know where it is stored.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-f" mid="138"><![CDATA[<html>I have to let Charti know about Karahan's purpose.</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Lady Karacule$<BR>
+Remember what <FONT color=#a82424>Argenta</FONT> told you before she left.<BR>
+The dragon's jewel would wake up after Geraint's death.... The Descendant of Chaos will appear.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-f" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-g" mid="143"><![CDATA[<html>Plus, I'd like to ask one more question about Charti.</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$Lady Karacule$<BR>
+Isn't she already brainwashed by Karahan?<BR>She will definitely not agree with you if you were to tell her the truth. It's much faster if you find out where the dragon's jewel was sealed before Karahan does.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-g" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-h" mid="49"><![CDATA[<html>(Tell her about Charti's arm)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Lady Karacule$<BR>
+Cough cough...<BR>Tell me....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-h" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-i" mid="50"><![CDATA[<html>Is it possible that a part of body can be changed by contamination?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Lady Karacule$<BR>Hmm..., I can tell you more accurately after seeing the symptoms.<BR>
+But it sounds similar to the symptoms of people who were polluted by the <FONT color=#a82424>Dragon's blood</FONT> according to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-i" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-j" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Lady Karacule$<BR>Yes. It starts from the hands or feet.<BR>
+Then it will spread out to the remaining parts of the body and will finally turn a person into a monster. It affects people with weak minds much faster. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-j" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-k" mid="52"><![CDATA[<html>(Is that a compliment?)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Lady Karacule$<BR>Anyway the young girl has been enduring it for a long time....<BR>
+The progress of the disease is slow as she is quite stubborn.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-k" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2" mid="53"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Lady Karacule$<BR>If you can bring her to me, it would be good.<BR>If her symptoms are similar as mine, my medicine could help her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="144"><![CDATA[<html>$Cidel and Charti$<BR>
+<FONT color=#7e12d2>(Cidel and Charti are talking)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-1" image="" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$Karahan$<BR>
+Oh, did you see me?<BR>My appearance is so outstanding even in this wild environment. Haha....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Lady Karacule$<BR>Talk to <FONT color=#a82424>Cidel</FONT> and persuade Charti.<BR>
+I'm not sure if the stubborn girl will come here willingly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-a" mid="67"><![CDATA[<html>Calm down. Anyway Karacule should see her condition personally.</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Cidel$<BR>
+What did Master say to you?<BR>Is Cha, <FONT color=#a82424>Charti </FONT> fine?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-b" mid="68"><![CDATA[<html>So, go and apologize instantly. Plus, we need to persuade her.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Cidel${action:Talk}<BR>Yes...? It's not easy to persuade <FONT color=#a82424>Charti</FONT>....<BR>Plus, Charti was surprised by my reaction as I freaked out after seeing her hand. I have no idea what to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-c" mid="71"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Cidel$<BR><FONT color=#7e12d2>(Cidel smiles sadly)<BR></FONT>Charti's hand just reminded me of the green monster in my nightmare. So I couldn't do anything...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-c" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-2-d" mid="72"><![CDATA[<html>It's not too late. Let's go together.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Cidel$<BR>I said that I will do anything for Charti but I was haunted by that monster in my dream....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-d" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3" mid="73"><![CDATA[<html>Yes, let's go.</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Cidel$<BR>Yes. You're right. I need to apologize to her first.<BR>
+I'll take her to Master and get her cured.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QW_55.dds" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Cidel${action:Talk}<BR>Charti has gone to look around East Ancient Armory again.<BR>Go to <FONT color=#a82424>East Ancient Armory</FONT> and find Charti.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-a" mid="130"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html><FONT color=#7e12d2><FONT color=#2b2723>$Cidel and Charti$<BR></FONT></FONT><FONT color=#7e12d2>(Cidel and Charti are talking)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-b" mid="118"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Cidel$<BR>I'm so sorry about what happened before....<BR>
+So please go to Master to get cured.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-c" mid="119"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Charti$<BR>No way! Why should I get that old woman's help?!<BR>This is because of her!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-c" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-d" mid="120"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Cidel$<BR>No, you misunderstand, Charti.<BR>
+Karahan deceived your Natives to sow discord between us!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-d" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-e" mid="121"><![CDATA[<html>That's Karahan's trick. He's deceiving you.</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Charti$<BR>You're wrong. I know that Karacule took care of you but don't deny the truth! And Karahan saved me several times!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-f" mid="122"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Charti$<BR>Why are you saying that even though you don't know what happened?<BR>
+One day, the Natives and I... we fell sick and our hands started to change. Then Dragon Followers started to kidnap us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-f" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-g" mid="123"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Charti$<BR>When I was about to be kidnapped, Karahan rescued me. After that, whenever I got into a dangerous situation, he saved me and he told me that Karacule did everything!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-g" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-h" mid="124"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Charti$<BR>And you're saying that Karahan did everything?!<BR>Okay, let's say that I was deceived by him. But what did Karacule or your immigrants do for us when we suffered...?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-h" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-i" mid="125"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Cidel$<BR>...... Sorry. <BR>I have not done anything for you.<BR>But you should get your hand cured nonetheless.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-i" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-j" mid="126"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Charti$<BR>I don't need to. Because of this hand, I could keep everything I wanted to keep today. And I need this power to help keep the most precious thing to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-j" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-3-k" mid="127"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Cidel$<BR>
+Okay.... then, after rescuing your grandfather, please promise to me that you will get cured. Please. Give me a chance to do something for you....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-3-k" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-4" mid="128"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Charti$<BR>
+I'll think about it later.<BR>It's much more important to save my grandpa.<BR><FONT color=#7e12d2>(Charti calms down a little bit)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-4" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Cidel$<BR>Okay. Get over here first.<BR>I left something at the Hut that I wanted to give you, so could you head over there for a second? <FONT color=#387206>{user_nick}</FONT>, let's go back <FONT color=#a82424>Riverwort Wharf</FONT> together.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4" image="" itemindex="">
+      <talk_answer link_index="n485_overhear-4-a" mid="110"><![CDATA[<html>Why did you appear again...?</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Karahan$<BR>Oh..., my presence fascinates you so.<BR>Today, I'm especially outstanding but don't look at me for more than 3 seconds.<BR>You might lose your eyes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-4-b" mid="111"><![CDATA[<html>A gift...?</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Karahan$<BR><FONT color=#7e12d2>(Karahan shakes his index finger from side to side)</FONT><BR>
+No no, it's not your turn today.<BR>I brought a gift for pretty Charti.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-4-c" mid="112"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Cidel$<BR>What are you doing to her again?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-4-d" mid="113"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Charti$<BR>Cidel, what is that rude attitude towards Karahan?!<BR><FONT color=#7e12d2>(Charti says happily)</FONT><BR>Karahan. What's the gift for me...?<BR>Is it about my grandpa...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4-d" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-4-e" mid="114"><![CDATA[<html>A hidden place...?</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Karahan$<BR>Haha, that's correct. There is a hidden place for Dragon Followers at the<BR><FONT color=#a82424>East Ancient Armory</FONT>.<BR>They have kept other Natives there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4-e" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-4-f" mid="115"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Cidel$<BR>How do you know that? You must have some connections to the Dragon Followers?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4-f" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n485_overhear-4-g" mid="116"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$Charti$<BR>Cidel, what's wrong with you?<BR>Thanks, Karahan. I'll look around <FONT color=#a82424>East Ancient Armory</FONT> again now.<BR>Cidel, I'll see your gift later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4-g" image="" itemindex="">
+      <talk_answer link_index="n485_overhear-4-h" mid="117"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n485_overhear-4-h" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="149"><![CDATA[<html>$Cidel$<BR>
+Charti.... I can't believe him. Why do you rely on him...<BR><FONT color=#7e12d2>(Cidel looks angry)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">710</exe>
+         <exe type="talk" npc="n701_oldkarakule">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7101,7101,7102,7103,7104,7105,7106</exe>
+         <exe type="complete">710</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n701_oldkarakule" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="f" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="g" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="h" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="i" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="j" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="k" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="c" />
+   <exelink qstep="2" npc="n707_sidel" sub="d" />
+   <exelink qstep="2" npc="n707_sidel" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n491_overhear" sub="b" />
+   <exelink qstep="3" npc="n491_overhear" sub="c" />
+   <exelink qstep="3" npc="n491_overhear" sub="d" />
+   <exelink qstep="3" npc="n491_overhear" sub="e" />
+   <exelink qstep="3" npc="n491_overhear" sub="f" />
+   <exelink qstep="3" npc="n491_overhear" sub="g" />
+   <exelink qstep="3" npc="n491_overhear" sub="h" />
+   <exelink qstep="3" npc="n491_overhear" sub="i" />
+   <exelink qstep="3" npc="n491_overhear" sub="j" />
+   <exelink qstep="3" npc="n491_overhear" sub="k" />
+   <exelink qstep="3" npc="n491_overhear" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n485_overhear" sub="b" />
+   <exelink qstep="4" npc="n485_overhear" sub="c" />
+   <exelink qstep="4" npc="n485_overhear" sub="d" />
+   <exelink qstep="4" npc="n485_overhear" sub="e" />
+   <exelink qstep="4" npc="n485_overhear" sub="f" />
+   <exelink qstep="4" npc="n485_overhear" sub="g">0</exelink>
+   <exelink qstep="4" npc="n485_overhear" sub="h">1</exelink>
+   <journal_data recompense="1:7101,2:7102,3:7103,4:7104,5:7105,6:7106" quest_title="가장 소중한 것" chapterid="6" quest_level="44" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="152"><![CDATA[Karahan's Goal]]></title>
+         <contents mid="153"><![CDATA[<html>Talk to Karacule about what happened at East Ancient Armory and ask about Charti's arm.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Lady Karacule</FONT></html>]]></contents>
+         <destination mid="154"><![CDATA[Talk to Karacule]]></destination>
+         <todo_msg mid="155"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="156"><![CDATA[Feeling Sorry]]></title>
+         <contents mid="157"><![CDATA[<html>Talk to Cidel about Charti's condition and suggest to persuade her to get cured.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="158"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="159"><![CDATA[Talk to Cidel]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>551,n491</destination_pos>
+         <destination_mode>custom:551@1</destination_mode>
+         <statemark_npcid>491</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="161"><![CDATA[Persuasion]]></title>
+         <contents mid="162"><![CDATA[<html>Find Charti again at East Ancient Armory and persuade her to get cured.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Entrance of Ancient Armory)</FONT> <FONT color=#a82424>→ East Ancient Armory(Charti)</FONT></html>]]></contents>
+         <destination mid="163"><![CDATA[Talk to Charti at East Ancient Armory]]></destination>
+         <todo_msg mid="164"><![CDATA[Find Charti at East Ancient Armory.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n485</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>485</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="166"><![CDATA[Most Important Thing]]></title>
+         <contents mid="167"><![CDATA[<html>Charti and Cidel had an argument. However, they agreed that the most urgent thing for now is saving the chief. Go back to Riverwort Wharf.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="168"><![CDATA[Riverwort Wharf]]></destination>
+         <todo_msg mid="169"><![CDATA[Go back to Riverwort Wharf.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>709</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

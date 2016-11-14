@@ -1,0 +1,324 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9228_meet_future</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9228</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9229</nextqid>
+      <nextqname>mq15_9229_desert_storm</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[Encounter With The Future]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>875</npcid>
+         <npcename>n875_academic</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="7"><![CDATA[<html>(Stella is mumbling something)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Stella$<BR>Yes of course… I can fight ghosts with magic…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="56"><![CDATA[<html>Well… (Tell her what happened)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh-h okay. I-I k-knew i-it. <BR>T-tell me what h-happened.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="58"><![CDATA[<html>It's exactly as I've told you. A corpse and a girl who looks exactly the same…</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Master Sorceress Stella$<BR>So t-there was a d-d-dead body and another girl had the s-s-same face? <BR>
+And the girl is alive? <BR>Er… WHAT ARE YOU TALKING ABOUT?<BR><FONT color=#7e12d2>(Stella seems very confused)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="112"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Master Sorceress Stella$<BR>S-s-stop! That means nothing has been solved!!<BR><FONT color=#7e12d2>(Stella takes a quick glance at the map and thrusts it back to you)</FONT><BR>Urrgh~ This is the map of <FONT color=#a82424>Intruder's Forward Base</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="QW_71.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="109"><![CDATA[<html>Don't cry! People are staring!!</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Master Sorceress Stella$<BR>Phew, then quickly go to that <FONT color=#a82424>Intruder's Forward Base</FONT> and find out at least something~!!<BR>I feel too weak to be scared now… *sniff*</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-a" mid="21"><![CDATA[<html>Hi, I'm <FONT color=#086171>{user_nick}</FONT>…. Nice to meet you!!</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Academic Comelina$<BR>You came. My name is <FONT color=#a82424>Academic Comelina</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-a" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-h" mid="23"><![CDATA[<html>Huh? (Six heroes?)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Academic Comelina$<BR>I never thought I could meet the <FONT color=#a82424>Bloody Destroyer</FONT> <FONT color=#387206>{user_class}{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-b" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-c" mid="97"><![CDATA[<html>I'm <FONT color=#086171>{user_nick}</FONT>.</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Academic Comelina$<BR>You came. My name is <FONT color=#a82424>Academic Comelina</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-c" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-h" mid="25"><![CDATA[<html>Huh? (Six heroes?)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Academic Comelina$<BR>I never thought I could meet one of the six heroes, the <FONT color=#a82424>Soul of Silver Crescent</FONT> <FONT color=#387206>{user_class} {user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-d" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-e" mid="99"><![CDATA[<html>I'm <FONT color=#086171>{user_nick}</FONT>.</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Academic Comelina$<BR>You came. My name is <FONT color=#a82424>Academic Comelina</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-e" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-h" mid="27"><![CDATA[<html>Huh? (Six heroes?)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Academic Comelina$<BR>I never thought I could meet one of the six heroes, the <FONT color=#a82424>Master of Raging Mana</FONT> <FONT color=#387206>{user_class} {user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-f" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-g" mid="101"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>I'm </FONT> {user_nick}</FONT>. </html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Academic Comelina$<BR>You came. My name is <FONT color=#a82424>Academic Comelina</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-g" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-h" mid="29"><![CDATA[<html>Huh? (Six heroes?)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Academic Comelina$<BR>I never thought I could meet one of the six heroes, the <FONT color=#086171><FONT color=#a82424>Guardian of Holy Light</FONT> </FONT><FONT color=#a82424><FONT color=#387206>{user_class} {user_nick}</FONT></FONT><FONT color=#2b2723>.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-h" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-l" mid="31"><![CDATA[<html>(Weird...)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Academic Comelina$<BR>Oh! Maybe you are not a hero yet at this time… Please fOgret what I said.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-i" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-j" mid="103"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>I'm</FONT> {user_nick}</FONT>. </html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Academic Comelina$<BR>You came. My name is <FONT color=#a82424>Academic Comelina</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-j" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-k" mid="33"><![CDATA[<html>What do you mean?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Academic Comelina$<BR>I think I heard your name somewhere…<BR>I wish I could search for it now. But your looks….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-k" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-l" mid="36"><![CDATA[<html>(Weird...)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Academic Comelina$<BR>Oh, n-nothing. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-l" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-m" mid="38"><![CDATA[<html>I have many questions. </html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Academic Comelina$<BR>I didn't know you would really come. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-m" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-o" mid="40"><![CDATA[<html>I found it strange that you look exactly the same as the dead body.</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-n" mid="54"><![CDATA[<html>Do you know where Professor K's experiment notes are?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Academic Comelina$<BR>What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-n" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-m" mid="42"><![CDATA[<html>Hmm…</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(She shrugs)<BR></FONT>I'm not sure either. I looked for them too but couldn't find them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-o" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-p" mid="44"><![CDATA[<html>Clones???</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Academic Comelina${action:Talk}<BR><FONT color=#7e12d2>(Seems to think for a while and starts to speak)<BR></FONT>I have many explanations to do. Do you know about <FONT color=#a82424>clones</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-p" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-q" mid="46"><![CDATA[<html>(I don't understand anything)</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-q" mid="114"><![CDATA[<html>(Wait! Is she speaking a human language?!)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Academic Comelina$<BR>Yes. Clones are copies of a human. It's based on the same mechanism as the identical twins….<BR>Like genes of monozygotic twins, you take the deoxyribonucleic acid fragments and… @!??&amp;amp;amp;amp;&amp;amp;amp;amp;%</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-q" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-r" mid="48"><![CDATA[<html>Stop!!</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Academic Comelina$<BR>Using the telomere to… (blah blah blah)… to minimize the genomic aberration...;*^* The culture fluid of ()()() that determines the appearance has to be… And the concentration of NaCl is important here to enhance the cells and… (blah blah blah)…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-r" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-s" mid="50"><![CDATA[<html>Not easy!</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-s" mid="115"><![CDATA[<html>No… she's scary….</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Academic Comelina${action:Talk}<BR>Easy, huh?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-s" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-t" mid="52"><![CDATA[<html>(…I'm getting pissed)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Academic Comelina$<BR>I explained as simply as possible with the current technological advancements in mind….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-t" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-u" mid="66"><![CDATA[<html>No way… I've never heard of something like that.</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Academic Comelina$<BR>I'll summarize it for you then.<BR>
+The reason why XD-27, XD-28, and I look the same is because we're clones and we have the same genetic make up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-u" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-v" mid="68"><![CDATA[<html>Do you have a fever?</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Academic Comelina$<BR>That's because we're from the future, 50 years ahead. <BR>If it's according to the plan, we came to save the world but….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-v" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-w" mid="70"><![CDATA[<html>I'm sorry. (But she is a child)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Academic Comelina$<BR>No! Don't treat me like a little child.<BR><FONT color=#7e12d2>(Comelina stares with an unhappy face)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-w" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-x" mid="72"><![CDATA[<html>What are you talking about? No way.</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Academic Comelina$<BR>Ehem…But all the clones except me are your enemies.<BR>They plan to <FONT color=#a82424>take over the present world, destroy it, and move the people from the future</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-x" image="" itemindex="">
+      <talk_answer link_index="n875_academic-2-y" mid="74"><![CDATA[<html>Why there?</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Academic Comelina$<BR>I know it's hard for you to believe it. <BR>I will show you more concrete evidence if you come to <FONT color=#a82424>Tel Noir Temple</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-y" image="QW_72.dds" itemindex="">
+      <talk_answer link_index="n875_academic-3" mid="76"><![CDATA[<html><FONT color=#a82424>Desert Storm</FONT>…?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Academic Comelina$<BR>I only found this out on my way here but part of the troops in the forward base were planning to execute the operation <FONT color=#a82424>Desert Storm</FONT> which is invading the <FONT color=#a82424>Tel Noir Temple</FONT>.<BR>The most important part of the whole expedition will be held there. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_71.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#7e12d2><FONT color=#2b2723>I didn't cry!</FONT></FONT><BR><FONT color=#7e12d2><FONT color=#2b2723>Quickly go to <FONT color=#a82424>Intruder's Forward Base</FONT> and find out something!!</FONT></FONT><BR><FONT color=#7e12d2>(Seems like she can't talk anymore)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-3" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Academic Comelina$<BR>I'm going to go there too. I will make my move first….<BR><FONT color=#7e12d2>(You must go to Saint Haven and report to Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="85"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#7e12d2>(Stella seems very tired)</FONT><BR><FONT color=#2b2723>Okay, so what did you find out?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-!next" mid="87"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9228</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>각 직업별로 호칭이 다릅니다. </comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>으아 길다...</comment>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n875_academic">2</exe>
+         <exe type="conexe" true="5" false="6">1</exe>
+         <exe type="talk" npc="n875_academic">b</exe>
+         <exe type="conexe" true="7" false="8">2</exe>
+         <exe type="talk" npc="n875_academic">d</exe>
+         <exe type="conexe" true="9" false="10">3</exe>
+         <exe type="talk" npc="n875_academic">f</exe>
+         <exe type="talk" npc="n875_academic">i</exe>
+         <exe type="delquestitem" num="-1">400336</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92280,,,,,,</exe>
+         <exe type="complete" true="">9228</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n875_academic">2</exelink>
+   <exelink qstep="2" npc="n875_academic" sub="h" />
+   <exelink qstep="2" npc="n875_academic" sub="c" />
+   <exelink qstep="2" npc="n875_academic" sub="h" />
+   <exelink qstep="2" npc="n875_academic" sub="e" />
+   <exelink qstep="2" npc="n875_academic" sub="h" />
+   <exelink qstep="2" npc="n875_academic" sub="g" />
+   <exelink qstep="2" npc="n875_academic" sub="h" />
+   <exelink qstep="2" npc="n875_academic" sub="l" />
+   <exelink qstep="2" npc="n875_academic" sub="j" />
+   <exelink qstep="2" npc="n875_academic" sub="k" />
+   <exelink qstep="2" npc="n875_academic" sub="l" />
+   <exelink qstep="2" npc="n875_academic" sub="m" />
+   <exelink qstep="2" npc="n875_academic" sub="o" />
+   <exelink qstep="2" npc="n875_academic" sub="n" />
+   <exelink qstep="2" npc="n875_academic" sub="m" />
+   <exelink qstep="2" npc="n875_academic" sub="p" />
+   <exelink qstep="2" npc="n875_academic" sub="q" />
+   <exelink qstep="2" npc="n875_academic" sub="q" />
+   <exelink qstep="2" npc="n875_academic" sub="r" />
+   <exelink qstep="2" npc="n875_academic" sub="s" />
+   <exelink qstep="2" npc="n875_academic" sub="s" />
+   <exelink qstep="2" npc="n875_academic" sub="t" />
+   <exelink qstep="2" npc="n875_academic" sub="u" />
+   <exelink qstep="2" npc="n875_academic" sub="v" />
+   <exelink qstep="2" npc="n875_academic" sub="w" />
+   <exelink qstep="2" npc="n875_academic" sub="x" />
+   <exelink qstep="2" npc="n875_academic" sub="y" />
+   <exelink qstep="2" npc="n875_academic" sub="3">0,1,11</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="a">0</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="!next">1</exelink>
+   <journal_data recompense="92280" quest_title="미래와의 조우" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="400336">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Encounter With The FutureⅠ]]></title>
+         <contents mid="89"><![CDATA[<html>Report to Stella about the mysterious girl.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="91"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_71.dds</contents_image>
+         <destination_pos>710,n875</destination_pos>
+         <destination_mode>custom:710@1</destination_mode>
+         <statemark_npcid>875</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Encounter With The FutureⅡ]]></title>
+         <contents mid="93"><![CDATA[<html>You told Stella what happened but it seems like she doesn't believe you.<BR>Go to Intruder's Forward Base to meet the mysterious girl.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Numara Entrance)</FONT> <FONT color=#a82424>→ Intruder's Forward Base</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Find the mysterious girl at Intruder's Forward Base]]></destination>
+         <todo_msg mid="95"><![CDATA[Meet the girl at Intruder's Forward Base.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[Encounter With The FutureⅢ]]></title>
+         <contents mid="105"><![CDATA[<html>The girl said she's from the future. Go back and report to Stella.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="107"><![CDATA[Go back to Saint Haven and report to Master Sorceress Stella]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9227</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,146 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9207_contact</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9207</qid>
+      <designer>곽노찬</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9208</nextqid>
+      <nextqname>mq15_9208_reunited</nextqname>
+      <nextqnpc>n811_teramai</nextqnpc>
+      <qkname mid="1"><![CDATA[Another Encounter]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>811</npcid>
+         <npcename>n811_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-noquest" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Terrence Terramai$<BR>Since he came all the way here, I want to end this with my own hands.<BR>
+<FONT color=#7e12d2>(A strange man is looking at Cidel with no expressions)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="7"><![CDATA[<html>Talking about him...?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Cidel$<BR>Indeed.... So Velskud said that Barnac was a bit weird...? I was just talking about Barnac too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Cidel$<BR>I heard from that gentleman who came to see me.<BR><FONT color=#387206>{user_nick}</FONT>, go and say hello to him.<BR><FONT color=#7e12d2>(Cidel waves his hand at a strange man)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-a" mid="10"><![CDATA[<html>Terramai...?!</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Terrence Terramai$<BR>Nice to meet you, <FONT color=#387206>{user_nick}</FONT>.<BR>I'm the leader of the Order of the Goddess, <FONT color=#a82424>Terrence Terramai</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-a" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Terrence Terramai$<BR>We have exchanged letters before.<BR>I heard that you've been a great help.<BR>
+Thank you.<BR>
+<FONT color=#7e12d2>(Terramai pats your shoulder)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-b" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-c" mid="14"><![CDATA[<html>Why is he here?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Terrence Terramai$<BR>As you already know...<BR>My old friend <FONT color=#a82424>Barnac</FONT> is roaming around this area.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-c" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-d" mid="16"><![CDATA[<html>What? What do you mean he passed away...?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Terrence Terramai$<BR>Well, Barnac...<BR>has already <FONT color=#a82424>passed away</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-d" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-e" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Terrence Terramai$<BR>Sadly he can't rest in peace even after his death and he is being made use of for evil acts.<BR>I came after him to stop him from being used in a bigger tragedy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-e" image="" itemindex="">
+      <talk_answer link_index="n811_teramai-1-f" mid="20"><![CDATA[<html>Just as you said. But, where would he be...</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Terrence Terramai$<BR>
+Let's talk about details later.<BR>
+<FONT color=#387206>{user_nick}</FONT>, now we need to find him as soon as possible.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-f" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-g" mid="23"><![CDATA[<html>What do you mean...?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Terrence Terramai$<BR>There's a solution to that problem.<BR>Gracious Goddess never gives hardships without exits.<BR><FONT color=#7e12d2>(A warm smile appears on Terramai's gloomy face)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-g" image="" itemindex="">
+      <talk_answer link_index="n811_teramai-1-!next" mid="25"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9207</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92070,,,,,,</exe>
+         <exe type="complete">9207</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n811_teramai" sub="b" />
+   <exelink qstep="1" npc="n811_teramai" sub="c" />
+   <exelink qstep="1" npc="n811_teramai" sub="d" />
+   <exelink qstep="1" npc="n811_teramai" sub="e" />
+   <exelink qstep="1" npc="n811_teramai" sub="f" />
+   <exelink qstep="1" npc="n811_teramai" sub="g">0</exelink>
+   <exelink qstep="1" npc="n811_teramai" sub="!next">1</exelink>
+   <journal_data recompense="92070" quest_title="또 하나의 만남" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>14,n811</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>811</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Another Encounter]]></title>
+         <contents mid="27"><![CDATA[<html>There's a visitor in Karacule's Hut. Try talking to him.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Talk to Terrence Terramai]]></destination>
+         <todo_msg mid="29"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9206</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

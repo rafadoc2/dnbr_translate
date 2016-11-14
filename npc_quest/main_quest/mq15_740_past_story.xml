@@ -1,0 +1,374 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_740_past_story</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>740</qid>
+      <designer>곽노찬</designer>
+      <qlevel>46</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>741</nextqid>
+      <nextqname>mq15_741_past_wounds</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[It's The Story Of The Past.]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>726</npcid>
+         <npcename>n726_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Cidel$<BR>Sorry for making you worry....<BR><BR>※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="125"><![CDATA[<html>$Velskud$<BR>It's must be your specialty... asking for death.<BR>Move away before I kill you.<BR><BR>※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="179"><![CDATA[<html>$Karacule Fairystar$<BR>What? <FONT color=#a82424>Velskud</FONT> has shown up...?<BR>A big disaster is coming to Lotus Marsh. Velskud showing up after Karahan.<BR>
+※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Network Connection is not stable.</FONT><BR>※ <FONT color=#7e12d2>Resetting the Mission Objective.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-a" mid="9"><![CDATA[<html>May I ask what happened 50 years ago...?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Karacule Fairystar$<BR>What? <FONT color=#a82424>Velskud</FONT> has shown up...?<BR>A big disaster is coming to Lotus Marsh. Velskud showing up after Karahan..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-b" mid="11"><![CDATA[<html>I only know a little bit of it.. Please.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Karacule Fairystar$<BR>Don't you know about the story of 50 years ago?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-c" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Karacule Fairystar$<BR>50 years ago, six heroes gathered to take down <FONT color=#a82424>Black Dragon Karas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-c" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-d" mid="163"><![CDATA[<html>Red Army..., Elena.</html>]]></talk_answer>
+      <talk_question mid="162"><![CDATA[<html>$Karacule Fairystar$<BR>
+On the day of the Dragon raid....<BR>Red Army has shown up while the raiders were climbing the mountain.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-d" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Karacule Fairystar$<BR>Yes, <FONT color=#a82424>Dark Elf Elena</FONT> came with the Red Army. At that time we thought Red Army was the supporter of Black Dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-f" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Karacule Fairystar$<BR>On our side <FONT color=#a82424>Argenta</FONT> stayed behind to take care of the Red Army and the rest continued to Foothills of Black Mountain, where Black Dragon was.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-f" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-g" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Karacule Fairystar$<BR>However, the power of the Black Dragon was much more stronger than we expected.... Less than an hour of battle later, most of the raiders were dead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-g" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-h" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Karacule Fairystar$<BR>When everyone else was in despair, Geraint stepped forward.<BR>He said 「<FONT color=#a82424>Humans, I'm sorry</FONT>」 and turned into the Gold Dragon to fight the Black Dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-h" image="QN_knight_velskud.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-i" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Karacule Fairystar$<BR>It did not take long for the betrayal to sit in our heads.<BR>Barnac and Nerwin who trusted Geraint with everything was shocked.<BR>So was <FONT color=#a82424>Velskud</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-i" image="QN_knight_velskud.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-j" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Karacule Fairystar$<BR>He was the most shocked among us. Barnac and Terramai had to take care of him. Velskud didn't move a step and stared at Geraint throughout the whole fight.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-j" image="QN_knight_velskud.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-k" mid="31"><![CDATA[<html>An eye of Geraint...?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Karacule Fairystar$<BR>It was when Geraint became human again after the fight. He was holding the Black Dragon treasure, suddenly Velskud rushed at him, slashed his eye and took the treasure of Black Dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-k" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-l" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Karacule Fairystar$<BR>Yes, Velskud took it.<BR>Anyway, Velskud had the treasure in his hand.<BR>
+Then the treasure was absorbed into Velskud.<BR>
+It just happened in a second....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-l" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-m" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$CKaracule Fairystar$<BR>He wasn't expecting that. Velskud was in severe pain.<BR>
+Then, Dark Elf Elena came and took Velskud away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-m" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-n" mid="170"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="169"><![CDATA[<html>$Karacule Fairystar$<BR>When Argenta came back, she too disappeared with Geraint.<BR>Without any explanation, without saying goodbye to us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-n" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-o" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Karacule Fairystar$<BR>That was it.<BR>Everything was in a mess and all we had left was chaos and wounds.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-o" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-1-p" mid="173"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$Karacule Fairystar$<BR>Barnac, Nerwin and I who were tainted with the blood of Black Dragon returned to our hometowns.<BR>With the useless title of '<FONT color=#a94407>heroes</FONT>'.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-p" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2" mid="47"><![CDATA[<html>No....</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Karacule Fairystar$<BR>It is not the story the world knows about. It is sad and miserable....<BR>Is there anything else you want to hear about?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Cidel$<BR>
+Sorry for making you worry....<BR>
+Meet the Master first.<BR>
+We'll talk after that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-1" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Velskud$<BR>It's must be your specialty... asking for death<BR>Move away before I kill you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="174"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Objective.</FONT><BR>※ <FONT color=#7e12d2>Talk to Karacule Fairystar.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Karacule Fairystar$<BR>Ok. Well, go and see <FONT color=#a82424>Cidel</FONT>.<BR>She wants to talk to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-2-a" mid="55"><![CDATA[<html>Are you ok? What happened?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Cidel${action:Talk}<BR>
+Sorry....<BR>
+I made you worry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-b" mid="59"><![CDATA[<html>Karahan...?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Cidel${action:Talk}<BR>I went to the Dragon Followers' Base to give a present to Charti.<BR>But, there was <FONT color=#a82424>Karahan</FONT>..., I met him again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3" mid="61"><![CDATA[<html>Cheer up, Cidel....</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Cidel$<BR>Yes. I attacked him without thinking anything but I got knocked out. Haha....damn...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="89"><![CDATA[<html>$Cidel$<BR>
+Thanks.<BR>
+I want to rest bit more, can you tell the Master I'm ok please?.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-3-a" mid="94"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Karacule Fairystar$<BR>
+Cidel must be hurt worse than I thought.<BR>
+Well, take good care of him, she needs time to get well again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3-a" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-4" mid="178"><![CDATA[<html>I'll go and meet him.</html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Karacule Fairystar$<BR>
+Also, we need to find out why <FONT color=#a82424>Velskud</FONT> came to Lotus Marsh.<BR>
+To see if he is after the treasure of the Green Dragon or some other purpose.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4" image="QW_54.dds" itemindex="">
+      <talk_question mid="127"><![CDATA[<html>$Karacule Fairystar$<BR>
+Please do that.<BR>Find Velskud in Dragon Followers' Base and find out why he came.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4" image="" itemindex="">
+      <talk_answer link_index="n726_velskud-4-a" mid="131"><![CDATA[<html>I have something to ask you.</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Velskud$<BR>Do you still have business with me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4-a" image="" itemindex="">
+      <talk_answer link_index="n726_velskud-4-b" mid="142"><![CDATA[<html>To be honest, Karacule wants to know why you are here...</html>]]></talk_answer>
+      <talk_question mid="141"><![CDATA[<html>$Velskud$<BR>I don't know why you chose the hard life instead of living easily and comfortably....<BR>
+So, what is your question?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4-b" image="" itemindex="">
+      <talk_answer link_index="n726_velskud-4-c" mid="135"><![CDATA[<html>Then what is it?</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Velskud$<BR>
+The reason.... She needs to know as she can be involved.\<BR>
+I'm not after the treasure of Green Dragon, Argenta nor Karacule.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4-c" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n726_velskud-4-d" mid="137"><![CDATA[<html>Karahan?... Why would you want Karahan...</html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$Velskud$<BR>
+<FONT color=#a82424>Sorcerer Karahan</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4-d" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n726_velskud-4-e" mid="139"><![CDATA[<html>What... is it?</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Velskud$<BR>I have a personal debt to <FONT color=#a82424>Karahan</FONT>.<BR>It's none of your business, go back....<BR>
+<FONT color=#7e12d2>(Velskud stares far away)</FONT><BR>......?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n726_velskud-4-f" mid="148"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Velskud$<BR>Karahan is bringing out the power of remains...<BR>Is it possible to gain power without the <FONT color=#a82424>Descendant of the Ancients</FONT>...?<BR>Well, it's not a lie that he is the best sorcerer since Marion.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4-f" image="QW_56.dds" itemindex="">
+      <talk_answer link_index="n726_velskud-4-g" mid="150"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="149"><![CDATA[<html>$Velskud$<BR>Location...<BR>Is it <FONT color=#a82424>West Ancient Armory</FONT>....<BR>Wait, Karahan!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4-g" image="" itemindex="">
+      <talk_answer link_index="n726_velskud-4-h" mid="152"><![CDATA[<html><FONT color=#a94407>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n726_velskud-4-h" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="153"><![CDATA[<html>$Velskud$<BR>
+<FONT color=#7e12d2>(Velskud will go to West Ancient Armory after Karahan. </FONT><FONT color=#7e12d2>Chase Velskud )</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">740</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7400,,,,,,</exe>
+         <exe type="complete">740</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="f" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="g" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="h" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="i" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="j" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="k" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="l" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="m" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="n" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="o" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="p" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n701_oldkarakule" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n726_velskud" sub="b" />
+   <exelink qstep="4" npc="n726_velskud" sub="c" />
+   <exelink qstep="4" npc="n726_velskud" sub="d" />
+   <exelink qstep="4" npc="n726_velskud" sub="e" />
+   <exelink qstep="4" npc="n726_velskud" sub="f" />
+   <exelink qstep="4" npc="n726_velskud" sub="g">0</exelink>
+   <exelink qstep="4" npc="n726_velskud" sub="h">1</exelink>
+   <journal_data recompense="7400" quest_title="지난 과거의 이야기입니다" chapterid="7" quest_level="46" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="112"><![CDATA[Story of the Past I]]></title>
+         <contents mid="113"><![CDATA[<html>Hear the story about 50 years ago from Karacule.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Karacule Fairystar</FONT></html>]]></contents>
+         <destination mid="114"><![CDATA[Conversation with Karacule]]></destination>
+         <todo_msg mid="115"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="116"><![CDATA[Story of the Past II]]></title>
+         <contents mid="117"><![CDATA[<html>Ask Cidel, what happened in Dragon Followers' Base.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="118"><![CDATA[Conversation with Cidel]]></destination>
+         <todo_msg mid="119"><![CDATA[Talk to Cidel]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="121"><![CDATA[Story of the Past III]]></title>
+         <contents mid="122"><![CDATA[<html>Cidel is seeking Velskud's help for Charti's revenge. Ask Karacule to stop her.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Karacule Fairystar</FONT></html>]]></contents>
+         <destination mid="123"><![CDATA[Conversation with Karacule]]></destination>
+         <todo_msg mid="124"><![CDATA[Talk to Karacule]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>541,n726</destination_pos>
+         <destination_mode>custom:541@1</destination_mode>
+         <statemark_npcid>726</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="157"><![CDATA[Story of the Past IV]]></title>
+         <contents mid="158"><![CDATA[<html>Meet Velskud in Dragon Followers' Base and ask the reason why he came to Lotus Marsh.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Dragon Followers' Base</FONT></html>]]></contents>
+         <destination mid="159"><![CDATA[Conversation with Velskud in Dragon Followers' Base]]></destination>
+         <todo_msg mid="160"><![CDATA[Talk to Velskud in Dragon Followers' Base]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>739</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,263 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_731_can_not_understand</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>731</qid>
+      <designer>곽노찬</designer>
+      <qlevel>42</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>732</nextqid>
+      <nextqname>mq15_732_medicines</nextqname>
+      <nextqnpc>n724_karahan</nextqnpc>
+      <qkname mid="1"><![CDATA[Cannot Understand]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>491</npcid>
+         <npcename>n491_overhear</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>724</npcid>
+         <npcename>n724_karahan</npcename>
+         <npckname>카라한 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+※ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Go to East Ancient Armory to find Charti.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html><FONT color=#2b2723>$Cidel and Charti$<BR></FONT><FONT color=#7e12d3>(Cidel and Charti're talking each other)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Cidel$<BR>I'm so sorry about what I did....<BR>So please let's go with me to treat you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-c" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Charti$<BR>No! Who should I let the witch treat me?!<BR>This is because of the witch!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-c" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Cidel$<BR>You misunderstood, Charti.<BR><FONT color=#a82425>Karahan</FONT>deceived you to separate you and us!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-d" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-e" mid="17"><![CDATA[<html>That's Karahan's deception. He deceived you, Charti!</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Charti$<BR>You're the one who was deceived. I know <FONT color=#a82424>Karacule </FONT>helped you to grow up. But don't deny the truth! Also <FONT color=#a82425>Karahan </FONT>saved me a lot!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-f" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Charti$<BR>You don't know me. Don't interrupt us.<BR>Someday our tribe people were getting sick and my arm changed to be like this.<BR>In the mean time, <FONT color=#a82425>dragon-followers</FONT>kidnapped our people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-f" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-g" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Charti$<BR>And I was almost kidnapped by them but, <FONT color=#a82425>Karahan</FONT>saved me.<BR>
+He saved me several times whenever I was in danger.<BR>And he told all these things were because of Karacule!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-g" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-h" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Charti$<BR>But you said it's a deception?!<BR>Yeah, let's suppose that I was deceived. But what did Karacule and you do when our people and I were in such a big danger...?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-h" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-i" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Cidel$<BR>...... I'm sorry. <BR>I've done nothing to you.<BR>But please let's treat your arm first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-i" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-j" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Charti$<BR>I don't need it. I could save what I wanted to save thanks to this arm. I don't want to lose this power to save my precious people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-j" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-1-k" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Cidel$<BR>Okay....then, promise me to treat your arm after saving your grandfather.<BR>
+Please let me do something to you....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-1-k" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n491_overhear-2" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Charti$<BR>I'll think about it.<BR>It's more important to save my grandfather right now.<BR><FONT color=#7e12d3>(Charti looks calm down)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Karahan$<BR>Huhu, you want to see me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n491_overhear-2" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Cidel$<BR>Okay. Then, let's go to<FONT color=#a82425>Riverwort Wharf</FONT>to talk about it more.<BR>
+We need to talk about how to treat natives.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-a" mid="35"><![CDATA[<html>Where's Cidel?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Karahan$<BR>Huhu, you want to see me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-b" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Karahan$<BR>
+The boy just left as soon as I came up! Hahaha</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-c" mid="39"><![CDATA[<html>Make a medicine?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Charti$<BR>Karahan said he'll make <FONT color=#a82425>a medicine</FONT>to cure natives.<BR>Thank you, Karahan.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-c" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-d" mid="41"><![CDATA[<html>But why were you kicked out from Fairystar?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Karahan$<BR>Huhu...yes. When Karacule started spelling the magic, I was already a master of it. So it's clear that I'm better to make a medicine than Karacule or the boy?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-d" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-e" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Karahan$<BR>Nono....do you want to hear my past story? If you want to be an admirer of me, I should tell you about me. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-e" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-f" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Karahan$<BR>So, from where can I start it.<BR><FONT color=#a82424>Karacule </FONT>must have said that I betrayed <FONT color=#a82425>Dark Tower</FONT>?<BR>However, it's not true.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-f" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-g" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Karahan$<BR>Rather, Fairystar betrayed me. Fairystar's <FONT color=#a82424>successor</FONT>was <FONT color=#a82425>a girl</FONT>for generations. The reason was that most of women were far better spelling vision-magic than men.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-g" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-h" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Karahan${action:Talk}<BR>But, I was different. After Marion and Parelina, I was the one who was talented to spell vision-magic with huge energies. Huhu... I was surely supposed to be Fairystar's <FONT color=#a82425>successor</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-h" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-i" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Karahan$<BR>After being a successor of Fairystar, I tried to do a small experiment to have more energies. Like every experiment, a small sacrifice was needed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-i" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-j" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Karahan$<BR>But, Fairystar called it into question and <FONT color=#a82425>expelled</FONT>me.<BR>
+They were a coward. They were afraid of me who can improve them so fast.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-j" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-k" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Karahan$<BR>But I didn't give up doing experiments about my vision-magic.<BR>
+As you can see, <FONT color=#a82424>my sister</FONT>is already wrinkled with age but I'm still young thanks to my experiments.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-k" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-2-l" mid="63"><![CDATA[<html>Don't flatter yourself and give us the medicine.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Karahan${action:Talk}<BR>
+Anyway, <FONT color=#a82425>Karacule</FONT> couldn't do this but I achieved the top level of vision-magic. So, It's so sure my medicine will be better than Karacule's.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2-l" image="" itemindex="">
+      <talk_answer link_index="n724_karahan-2-!next" mid="65"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">731</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7310,,,,,,</exe>
+         <exe type="complete">731</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n491_overhear" sub="b" />
+   <exelink qstep="1" npc="n491_overhear" sub="c" />
+   <exelink qstep="1" npc="n491_overhear" sub="d" />
+   <exelink qstep="1" npc="n491_overhear" sub="e" />
+   <exelink qstep="1" npc="n491_overhear" sub="f" />
+   <exelink qstep="1" npc="n491_overhear" sub="g" />
+   <exelink qstep="1" npc="n491_overhear" sub="h" />
+   <exelink qstep="1" npc="n491_overhear" sub="i" />
+   <exelink qstep="1" npc="n491_overhear" sub="j" />
+   <exelink qstep="1" npc="n491_overhear" sub="k" />
+   <exelink qstep="1" npc="n491_overhear" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n724_karahan" sub="b" />
+   <exelink qstep="2" npc="n724_karahan" sub="c" />
+   <exelink qstep="2" npc="n724_karahan" sub="d" />
+   <exelink qstep="2" npc="n724_karahan" sub="e" />
+   <exelink qstep="2" npc="n724_karahan" sub="f" />
+   <exelink qstep="2" npc="n724_karahan" sub="g" />
+   <exelink qstep="2" npc="n724_karahan" sub="h" />
+   <exelink qstep="2" npc="n724_karahan" sub="i" />
+   <exelink qstep="2" npc="n724_karahan" sub="j" />
+   <exelink qstep="2" npc="n724_karahan" sub="k" />
+   <exelink qstep="2" npc="n724_karahan" sub="l">0</exelink>
+   <exelink qstep="2" npc="n724_karahan" sub="!next">1</exelink>
+   <journal_data recompense="7310" quest_title="소녀는 이해하지 못합니다" chapterid="6" quest_level="42" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Charty.dds</contents_image>
+         <destination_pos>551,n491</destination_pos>
+         <destination_mode>custom:551@1</destination_mode>
+         <statemark_npcid>491</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Cannot Understand I]]></title>
+         <contents mid="74"><![CDATA[<html>Meet with Charti in East Ancient Armory to persuade her for treatment.<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Riverwort Wharf(Entrance to Ancient Warehouse)</FONT> <FONT color=#a82425>→ East Ancient Armory(Charti)</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Talk with Charti in East Ancient Armory]]></destination>
+         <todo_msg mid="76"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Charty.dds</contents_image>
+         <destination_pos>14,n724</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>724</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Cannot Understand II]]></title>
+         <contents mid="78"><![CDATA[<html>Go back to Riverwort Wharf and meet with Charti.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Riverwort Wharf(Charti)</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Talk with Charti in Riverwort Wharf]]></destination>
+         <todo_msg mid="80"><![CDATA[Meet Charti in Riverwort Wharf.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>730</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

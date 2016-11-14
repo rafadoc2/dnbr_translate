@@ -1,0 +1,303 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_714_occupied_territory_of_ds</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>714</qid>
+      <designer>곽노찬</designer>
+      <qlevel>44</qlevel>
+      <qdesc>300386 선물용 펜</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>715</nextqid>
+      <nextqname>mq15_715_hidden_legacy</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Dragon Followers' Base]]></qkname>
+      <qnpc>
+         <npcid>493</npcid>
+         <npcename>n493_charty_grandfather</npcename>
+         <npckname>차티 할아버지</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>725</npcid>
+         <npcename>n725_charty</npcename>
+         <npckname>차티</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-noquest" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Charti$<BR>
+Sobbing... Grandpa...<BR>
+I'm sorry I'm late...<BR>
+Grandpa... sobbing...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-noquest" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Charti$<BR>
+I'm worried that Cidel feels upset...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-accepting-acceptted" mid="6"><![CDATA[<html>Charti asked me to buy a pen.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant Rucita$<BR>
+What? Who asked you to buy what...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-1" image="QN_Npc_Lucita.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Charti$<BR>Go to <FONT color=#a82424>Merchant Rucita</FONT>and buy a gift for Cidel on my behalf. He likes to study so something to write would be good... like a pen. Please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-1-a" mid="9"><![CDATA[<html>No, she asked for a gift.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Rucita$<BR>
+Charti asked to buy a pen...?<BR>
+When did she learn the alphabets...? Did she say it's for her personal use?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-a" image="QS_Default.dds" itemindex="300386">
+      <talk_answer link_index="n709_trader_lucita-1-b" mid="11"><![CDATA[<html>Thanks.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Rucita$<BR>
+Aha, she needs <FONT color=#a82424>a pen for a gift</FONT>.<BR>
+Wait a second... here you are.<BR>
+<FONT color=#7e12d2>(Rucita passes you a gift pen)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-b" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-2" mid="13"><![CDATA[<html>Dragon Followers' Base?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Rucita$<BR>
+Oh, brave adventurer, I heard this from someone but it would help you a little bit. Immigrants wearing masks often gather at some place known as the <FONT color=#a82424>Dragon Followers' Base</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Charti$<BR>
+Sobbing... Grandpa...<BR>
+I'm sorry to be late...<BR>
+Grandpa... sobbing...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Merchant Rucita$<BR>
+Yes, it's near Riverwort Village Ruins. If you need to go there, please be careful.<BR>
+<FONT color=#7e12d2>(Go back to Charti)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-2" image="" itemindex="">
+      <talk_answer link_index="n725_charty-2-a" mid="20"><![CDATA[<html>(Pass the gift pen to her)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Charti$<BR>
+Oh, have you been there already?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-2-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n725_charty-2-b" mid="22"><![CDATA[<html>But... (Tell her about what Merchant Rucita said)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Charti$<BR>
+Thanks. I hope <FONT color=#a82424>Cidel</FONT> likes this....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-2-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n725_charty-2-c" mid="24"><![CDATA[<html>Where are you going?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Charti$<BR>
+...?!<BR>
+<FONT color=#7e12d2>(Charti is going somewhere before you finish talking)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-2-c" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n725_charty-2-d" mid="26"><![CDATA[<html>Oh, wait. I'll call Cidel so we can go together.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Charti${action:Talk}<BR>If Dragon Followers are gathering there... perhaps, my grandpa could be there as well. I have to go there even without <FONT color=#a82424>Karahan</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-2-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n725_charty-2-e" mid="28"><![CDATA[<html>No, it's too dangerous! </html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Charti$<BR>
+I don't want to owe this to Cidel.<BR>
+I'll go alone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-2-e" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Charti$<BR>Don't worry about me. I'm not a fool.<BR>
+I'll just get inside there and just look around a little bit.<BR><FONT color=#7e12d2>(It's better to follow her.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-3" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Charti$<BR>
+Did you say <FONT color=#a82424>Dragon Followers' Base</FONT>...?<BR>
+I hope my grandpa is okay...<BR>
+<FONT color=#7e12d2>(Follow Charti and head to Dragon Followers' Base)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-a" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Charti$<BR>
+Sobbing... Grandpa.... I'm so sorry I'm late....<BR>I... I should have come earlier....<BR>
+Grandpa...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-a" image="QN_Npc_charty_grandfather.dds" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-b" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Charti's grandfather${action:Stand}<BR>No, no... . Thank Goddess you came before it's too late. Cough cough... it's time that I should join our ancestors... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-c" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Charti$<BR>
+No! Don't do that! Don't leave me alone!<BR>
+I need you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-c" image="QN_Npc_charty_grandfather.dds" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-d" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Charti's grandfather$<BR>
+I'm sorry, Charti.... Cough cough... you should take care of our Natives.... Let me tell you about our holy place...<BR>
+<FONT color=#7e12d2>(Charti's grandfather whispers something to her)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-d" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-e" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Charti$<BR>
+Sobbing....<BR>
+<FONT color=#7e12d2>(Charti nods while sobbing)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-e" image="QN_Npc_charty_grandfather.dds" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-f" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Charti's grandfather$<BR>
+Cough cough... Dragon Followers tortured me to know where the holy place is located... I... could keep the ancestors' secret... *breathes painfully*...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-f" image="QN_Npc_charty_grandfather.dds" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-g" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Charti's grandfather${action:Die}<BR>Charti... please keep the secret of...dragon's jewel...<BR><FONT color=#7e12d2>(Charti's grandfather closes his eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-g" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-h" mid="48"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Charti$<BR>
+No way~! Grandpa! Please... please open your eyes!<BR>
+Please... don't leave me alone... please... sobbing...<BR>
+<FONT color=#7e12d2>(Charti cries sadly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-h" image="" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-i" mid="50"><![CDATA[<html>Okay.... I got it.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Charti$<BR>
+Please... let me leave with my grandpa....<BR>
+Please...sobbing...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-i" image="" itemindex="">
+      <talk_answer link_index="n493_charty_grandfather-3-j" mid="52"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-3-j" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Charti$<BR>
+<FONT color=#7e12d2>(Charti cries and hugs her granpa. Charti needs Cidel's comfort)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">714</exe>
+         <exe type="talk" npc="n709_trader_lucita">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300386</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">300386</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7141,7141,7142,7143,7144,7145,7146</exe>
+         <exe type="complete">714</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n709_trader_lucita" sub="b" />
+   <exelink qstep="1" npc="n709_trader_lucita" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n725_charty" sub="b" />
+   <exelink qstep="2" npc="n725_charty" sub="c" />
+   <exelink qstep="2" npc="n725_charty" sub="d" />
+   <exelink qstep="2" npc="n725_charty" sub="e">0,1,2</exelink>
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="b" />
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="c" />
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="d" />
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="e" />
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="f" />
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="g" />
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="h" />
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="i">0</exelink>
+   <exelink qstep="3" npc="n493_charty_grandfather" sub="j">1</exelink>
+   <journal_data recompense="1:7141,2:7142,3:7143,4:7144,5:7145,6:7146" quest_title="용추종자 점거지" chapterid="6" quest_level="44" quest_mark_type="1" use_item_list="300386">
+      <journal index="1">
+         <contents_image>QN_Npc_Lucita.dds</contents_image>
+         <destination_pos>15,n709</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>709</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Charti's gift]]></title>
+         <contents mid="56"><![CDATA[<html>Charti asked you to buy a gift for Cidel. Buy a pen from Merchant Rucita.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Merchant Rucita</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Merchant Rucita]]></destination>
+         <todo_msg mid="58"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Charty.dds</contents_image>
+         <destination_pos>14,n725</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>725</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Dragon Followers' Base I]]></title>
+         <contents mid="61"><![CDATA[<html>Merchant Rucita revealed information that Dragon Followers are gathering at somewhere recently.<BR>
+Go back and pass the pen to Charti and tell her about the news.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Charti</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Talk to Charti at Riverwort Wharf]]></destination>
+         <todo_msg mid="63"><![CDATA[Bought the pen. Go back to Charti at Riverwort Wharf.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,n493</destination_pos>
+         <destination_mode>custom:541@1,542@1</destination_mode>
+         <statemark_npcid>493</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Dragon Followers' Base II]]></title>
+         <contents mid="65"><![CDATA[<html>Charti will go to where the Dragon Followers are gathering after she hears the news.<BR>
+It is dangerous for Charti to go alone, so it's better to follow her.<BR>
+<BR>
+<FONT color=#086171>Riverwort Wharf(Riverwort Ruins)</FONT> <FONT color=#a82424>→ Dragon Followers' Base</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk to Charti at Dragon Followers' Base]]></destination>
+         <todo_msg mid="67"><![CDATA[Go after Charti and move to the Dragon Followers' Base.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>713</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

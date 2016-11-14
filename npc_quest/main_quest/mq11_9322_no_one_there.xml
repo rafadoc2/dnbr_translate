@@ -1,0 +1,341 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9322_no_one_there</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9322</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9323</nextqid>
+      <nextqname>mq11_9323_multi_layer_time</nextqname>
+      <nextqnpc>n1158_lunaria</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[이미 여기 없는 여자]]></qkname>
+      <qnpc>
+         <npcid>1157</npcid>
+         <npcename>n1157_sorceress_karakule</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>1158</npcid>
+         <npcename>n1158_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>776</npcid>
+         <npcename>n776_darklair_mardlen</npcename>
+         <npckname>어둠의 여신관 마들렌</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>블랙 드래곤의 날개 파편을 지니고 있는 것만으로는 의미가 없는 것 같습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-1-a" mid="2347" select_type="0"><![CDATA[<html>그분...?</html>]]></talk_answer>
+      <talk_answer link_index="n776_darklair_mardlen-1-a" mid="2348" select_type="0"><![CDATA[<html>그게 누구죠?</html>]]></talk_answer>
+      <talk_question mid="2340"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>역시, 어렵겠지만 그분께 부탁을 드리는 편이 좋을 것 같군요.<BR>만약 이것이 인연이라면, 당신은 분명 <FONT color=#a82424>그분</FONT>을 뵐 수 있을 거예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-1-b" mid="2350" select_type="2" />
+      <talk_question mid="2349"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>오랫동안 어둠의 경계를 지켜온 여신관들 가운데, 저 깊은 어둠 속을 보고도 아직 자신을 잃지 않은 분입니다.<BR>제게는 선배님이라고 할 수 있겠지요. <FONT color=#a82424>어둠의 여신관 에클레르</FONT> 님...! 그분이라면, 당신을 도울 수 있을 지도 몰라요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-1-b" image="QS_Default.dds" itemindex="300574" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-1-c" mid="2352" select_type="2" />
+      <talk_question mid="2351"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>자, 이걸 빌려 드릴게요.<BR>어둠의 여신관의 나침반입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-1-c" image="QS_Default.dds" itemindex="300574" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2" mid="2354" select_type="2" />
+      <talk_question mid="2353"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>이것이 가리키는 방향을 따라 간다면, 그분의 흔적을 쫓을 수 있을 겁니다.<BR>물론 여신의 뜻이 그분을 당신과 만나도록 허락한다면 말이지만요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-1-" mid="2343" select_type="5" />
+      <talk_question mid="2342"><![CDATA[<html>$???$<BR>역시 없나...? 이 근처가 아닌 건가...<BR><FONT color=#7e12d2>(낯선 소서리스 한 사람이 주위를 두리번거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1158_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1158_lunaria-1-" mid="2345" select_type="5" />
+      <talk_question mid="2344"><![CDATA[<html>$루나리아$<BR>나는 별로 할 말이 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2" image="QW_46.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-" mid="2358" select_type="5" />
+      <talk_question mid="2357"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>지금 그 나침반은 <FONT color=#a82424>침몰된 화물선</FONT> 방향을 가리키고 있군요.<BR>그쪽으로 가 보도록 하세요. 여신의 어둠이 당신의 어둠을 감당해 주기를 기원하죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1158_lunaria-2" image="QN_Npc_Karakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1158_lunaria-2-" mid="2360" select_type="5" />
+      <talk_question mid="2359"><![CDATA[<html>$루나리아$<BR>저 소서리스와 대화해 보는 게 나을 거야.<BR>내가 아니라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2" image="QS_Default.dds" itemindex="300036" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-a" mid="2362" select_type="2" />
+      <talk_question mid="2361"><![CDATA[<html>$???$<BR>역시 없나...? 그깟 귀고리 같은걸 누가 집어갔을 리도 없고.<BR>
+어휴...<BR><FONT color=#7e12d2>(낯선 소서리스 한 사람이 주위를 두리번거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-b" mid="2364" select_type="2" />
+      <talk_question mid="2363"><![CDATA[<html>$???$<BR>어머, 너는...?!<BR>
+<FONT color=#7e12d2>(낯선 소서리스가 눈을 가느다랗게 뜨고 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-c" mid="2366" select_type="2" />
+      <talk_question mid="2365"><![CDATA[<html>$???$<BR>으흠~ <FONT color=#387206>{user_nick}</FONT>? 역시 <FONT color=#a82424>지금</FONT> 넌 나를 모르는 것 같구나.<BR>새로 내 소개를 해야겠네? 난 <FONT color=#a82424>카라큘 페어리스타</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-c" image="QN_Npc_Karakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-d" mid="2369" select_type="2" />
+      <talk_question mid="2368"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(응? 그 카라큘? 영웅 카라큘?<BR>어떻게 된 거야? 또 시간을 뛰어넘은 건가?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-e" mid="2371" select_type="2" />
+      <talk_question mid="2370"><![CDATA[<html>$카라큘$<BR>어머~ 뭘 그렇게 놀란 표정을 지어?<BR>후후후후. 이거 정말 재밌는걸?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-f" mid="2373" select_type="2" />
+      <talk_question mid="2372"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저를 알고 계십니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-g" mid="2375" select_type="2" />
+      <talk_question mid="2374"><![CDATA[<html>$카라큘$<BR>글쎄~ 어떨까~? 우후후후.<BR>뭔가 내게 할 이야기가 있는 건 너 아니야? 어서 말 해 봐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-g" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-h" mid="2378" select_type="2" />
+      <talk_question mid="2377"><![CDATA[<html>$루나리아$<BR>당신에게 상의할 것이 있어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-i" mid="2380" select_type="2" />
+      <talk_question mid="2379"><![CDATA[<html>$카라큘$<BR>그래, 듣고 있어.<BR>뭐야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-i" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-j" mid="2382" select_type="2" />
+      <talk_question mid="2381"><![CDATA[<html>$루나리아$<BR><FONT color=#387206>{user_nick}</FONT>, 말 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-j" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-k" mid="2384" select_type="2" />
+      <talk_question mid="2383"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>나한테 떠넘기는 거냐...<BR>그보다, 말해도 괜찮은 거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-k" image="QS_Default.dds" itemindex="300574" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-l" mid="2386" select_type="2" />
+      <talk_question mid="2385"><![CDATA[<html>$루나리아$<BR>그 <FONT color=#a82424>나침반이 가리키는 곳</FONT>, 여기잖아.<BR>그럼 이 사람에게 상의해야 하는 걸지도 몰라.<BR>
+...아닐 지도 모르지만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-l" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-m" mid="2389" select_type="2" />
+      <talk_question mid="2388"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럴 지도 모르지.<BR>(거기다 여섯 영웅으로 불릴 정도니까, 뭔가 아는 게 있을 지도......)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-n" mid="2391" select_type="2" />
+      <talk_question mid="2390"><![CDATA[<html>$카라큘$<BR><FONT color=#a82424>시간을 뛰어넘는 힘</FONT>이나, <FONT color=#a82424>네 안의 또 다른 사람</FONT> 이야기를 하려는 거 아냐?<BR>그런 대단한 힘이 있어도 괴롭기만 할 뿐이라니 안 됐네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-o" mid="2393" select_type="2" />
+      <talk_question mid="2392"><![CDATA[<html>${user_nick}$<BR>그걸 어떻게...?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-p" mid="2395" select_type="2" />
+      <talk_question mid="2394"><![CDATA[<html>$카라큘$<BR>어떻게 안다고 생각하니? 후후후.<BR>또 들어도 재미있어.<BR>조~금 독특한 소서리스가 들었다면 <FONT color=#a82424>연구 재료</FONT>로 쓰자고 주장했을지도 모르겠네~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-p" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-q" mid="2397" select_type="0"><![CDATA[<html>......?!</html>]]></talk_answer>
+      <talk_answer link_index="n1157_sorceress_karakule-2-q" mid="2398" select_type="0"><![CDATA[<html>여보세요. 루나리아...?!</html>]]></talk_answer>
+      <talk_question mid="2396"><![CDATA[<html>$루나리아$<BR>그런 건 싫어.<BR>그런 데에 쓸 거면 <FONT color=#387206>{user_nick}</FONT> 하나만 데리고 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-r" mid="2400" select_type="2" />
+      <talk_question mid="2399"><![CDATA[<html>$카라큘$<BR>후후후. 필요 없어. 페어리스타가 자랑하는 비전 마법은 누굴 괴롭혀서 얻어내는 힘이 아니거든.<BR>으음~ 하지만 정말 미안해. 난 그런 힘을 제어하는 방법 같은 거 몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-s" mid="2403" select_type="2" />
+      <talk_question mid="2402"><![CDATA[<html>$카라큘$<BR>흥미는 있으니까, 나중에 한가해 지면 연구는 해 볼게. 정말 너희들이 시간을 뛰어넘는다면, 이미 연구를 마친 후의 내게 찾아갈 수도 있지 않을까? 모든 일이 무사히 끝나고 아름다운 영웅이 된, 훗날의 나를 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-s" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-t" mid="2405" select_type="2" />
+      <talk_question mid="2404"><![CDATA[<html>$루나리아$<BR>마음대로 뛰어넘을 수 없어. 멋대로 미래로 가도, 의미 또한 없어.<BR>시간 위에 또 한 겹의 시간을 덧씌울뿐, 고칠 수도 다시 살아낼 수도 없으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-t" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-u" mid="2407" select_type="2" />
+      <talk_question mid="2406"><![CDATA[<html>$카라큘$<BR>그러면 힘들겠네. 지금 현재를 열심히 살아도, 제대로 된 미래가 오는 대신 과거로 돌아가거나 한다는 거잖아?<BR>후회할 짓을 저지르고 또 똑같은 짓을 저지르던 시기로 돌아가게 된다면, 그건 정말 힘들 거야.<BR>다시 살 수도 없다면...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-u" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-v" mid="2409" select_type="2" />
+      <talk_question mid="2408"><![CDATA[<html>$카라큘$<BR>어쨌거나, 내가 무사히 <FONT color=#a82424>블랙 드래곤 카라스</FONT>를 쓰러뜨리게 되면 너희들의 고민거리를 연구해 볼게.<BR><FONT color=#a82424>인간은 자신 안의 마물을 어떻게 길들이는가</FONT>~~ 같은 걸 말이야. 후후후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-v" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-w" mid="2411" select_type="2" />
+      <talk_question mid="2410"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러면 혹시 어둠의 여신관 에클레르라는 분은 모르십니까?<BR>그분이 도와줄 수 있을 지도 모른다는 말을 들었는데요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-w" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-x" mid="2413" select_type="2" />
+      <talk_question mid="2412"><![CDATA[<html>$카라큘$<BR>으으으으음~~~ 그것도 처음 듣는데? 여신관? 여신관이라고?<BR><FONT color=#a82424>어둠의 여신관</FONT>... 이라... 으음~ 역시 모르겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-x" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-2-y" mid="2416" select_type="2" />
+      <talk_question mid="2415"><![CDATA[<html>$루나리아$<BR>아무 성과가 없네.<BR>
+<FONT color=#7e12d2>{user_nick}</FONT>, 이런 걸 헛수고라고 하는 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-2-y" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-3" mid="2418" select_type="2" />
+      <talk_question mid="2417"><![CDATA[<html>$카라큘$<BR>흥! 귀엽게 생겨선 꼭 <FONT color=#a82424>아르젠타</FONT>처럼 밉살맞은 소리를... 아, 그렇지!<BR>이봐, 시간을 뛰어 넘는다면 뭔가 예언이라도 해줄 수 없어? 미래에 내가 어떻게 되는지...<BR>
+앗! 잠깐만! 야!!!<BR><FONT color=#7e12d2>(카라큘의 목소리가 멀어져 간다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1157_sorceress_karakule-3" image="QN_Npc_Karakule.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1157_sorceress_karakule-3-" mid="2420" select_type="5" />
+      <talk_question mid="2419"><![CDATA[<html>$카라큘$<BR>정말로 시간을 뛰어넘는 거야?<BR>신기한걸...?!<BR><FONT color=#7e12d2>(카라큘의 모습이 흐릿해진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1158_lunaria-3" image="QN_Npc_Karakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1158_lunaria-3-a" mid="2423" select_type="2" />
+      <talk_question mid="2421"><![CDATA[<html>$루나리아$<BR>네가 본 건 과거의 그녀야.<BR>지금은 다시 지금. ...찾던 것은, 여기에 없었던 모양이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1158_lunaria-3-a" image="QS_Default.dds" itemindex="300574" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1158_lunaria-3-b" mid="2441" select_type="2" />
+      <talk_question mid="2440"><![CDATA[<html>$루나리아$<BR>그 나침반, 다시 돌아가고 있어.<BR>가리키는 곳은...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1158_lunaria-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1158_lunaria-3-c" mid="2427" select_type="4" />
+      <talk_question mid="2426"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1158_lunaria-3-c" image="QS_Default.dds" itemindex="300574" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1158_lunaria-3-!next" mid="2443" select_type="2" />
+      <talk_question mid="2442"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(루나리아가 나침반의 바늘을 들여다 본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9322</exe>
+         <exe type="talk" npc="n776_darklair_mardlen">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93220,,,,,,,</exe>
+         <exe type="complete" true="">9322</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n776_darklair_mardlen" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n776_darklair_mardlen" sub="b" />
+   <exelink qstep="1" npc="n776_darklair_mardlen" sub="c" />
+   <exelink qstep="1" npc="n776_darklair_mardlen" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="b" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="c" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="d" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="e" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="f" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="g" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="h" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="i" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="j" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="k" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="l" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="m" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="n" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="o" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="p" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="q" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="q" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="r" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="s" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="t" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="u" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="v" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="w" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="x" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="y" />
+   <exelink qstep="2" npc="n1157_sorceress_karakule" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n1158_lunaria" sub="b">0</exelink>
+   <exelink qstep="3" npc="n1158_lunaria" sub="c">1</exelink>
+   <exelink qstep="3" npc="n1158_lunaria" sub="!next" />
+   <journal_data recompense="93220" quest_title="이미 여기 없는 여자" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_SaintHaven_NestWorldZone01.dds</contents_image>
+         <destination_pos>28,n776</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>776</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2428"><![CDATA[이미 여기 없는 여자 I]]></title>
+         <contents mid="2429"><![CDATA[<html>시공의 정원의 어둠의 여신관 마들렌과 대화하자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(시공의 정원)</FONT> <FONT color=#a82424>- 어둠의 여신관 마들렌</FONT></html>]]></contents>
+         <destination mid="2430"><![CDATA[시공의 정원에서 마들렌과 대화]]></destination>
+         <todo_msg mid="2431"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_46.dds</contents_image>
+         <destination_pos>462,n1157</destination_pos>
+         <destination_mode>custom:461@1,462@1</destination_mode>
+         <statemark_npcid>1157</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2432"><![CDATA[이미 여기 없는 여자 II]]></title>
+         <contents mid="2433"><![CDATA[<html>어둠의 여신관 에클레르를 만난다면, 그녀가 모든 상황에 대한 힌트를 줄 지도 모른다. 어둠의 여신관의 나침반에 의지해 침몰된 화물선으로 가 보자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(외딴 섬행 수송선)</FONT> <FONT color=#a82424>- 침몰된 화물선</FONT></html>]]></contents>
+         <destination mid="2434"><![CDATA[침몰된 화물선에서 누군가와 대화]]></destination>
+         <todo_msg mid="2435"><![CDATA[침몰된 화물선으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>462,n1158</destination_pos>
+         <destination_mode>custom:461@1,462@1</destination_mode>
+         <statemark_npcid>1158</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2436"><![CDATA[이미 여기 없는 여자 III]]></title>
+         <contents mid="2437"><![CDATA[<html>옛날의 카라큘을 만났다. 그러나 그녀에게는 어떤 정보도 없었던 것 같다.<BR>루나리아와 대화해 보자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(외딴 섬행 수송선)</FONT> <FONT color=#a82424>- 침몰된 화물선(루나리아)</FONT></html>]]></contents>
+         <destination mid="2438"><![CDATA[침몰된 화물선에서 루나리아와 대화]]></destination>
+         <todo_msg mid="2439"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9321</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

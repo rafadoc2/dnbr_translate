@@ -1,0 +1,113 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_701_lotusmarsh</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>701</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>702</nextqid>
+      <nextqname>mq15_702_witch_of_swamp</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Lotus Marsh]]></qkname>
+      <qnpc>
+         <npcid>213</npcid>
+         <npcename>n213_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-accepting" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-accepting-acceptted" mid="14"><![CDATA[<html>I was on my way to Lotus Marsh.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurer David$<BR>I still can't believe Geraint is dead. This must be a dream...!<BR>No way I am returning to Argenta as a suicide mission. If I go by myself, then I will...<FONT color=#7e12d2>(Gulp)</FONT> not survive...<BR>Hey you, <FONT color=#387206>{user_nick}</FONT>! You should break the news about Geraint's news to Argenta yourself!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-1-level_check" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer David${action:Stand01}<BR>Good, this transaction has been made!<BR>I, a great slave, <FONT color=#a82424>David</FONT>will lead you to Argenta. You should take this an honor for your family. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1-a" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Adventurer David$<BR>※ <FONT color=#7e12d2>You have completed [Chapter 5. Geraint the guardian].</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1-b" image="" itemindex="">
+      <talk_answer link_index="n213_slave_david-1-c" mid="16"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1-c" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Adventurer David$<BR>Argenta is at one of Six Heroes <FONT color=#a82424>Karacule's</FONT> home.<BR>Move to <FONT color=#a82424>Riverwort Wharf</FONT>and visit Karacule's home.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1-d" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$David$<BR>※ <FONT color=#7e12d2>You must be level 40 and above to visit Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">701</exe>
+         <exe type="talk" npc="n213_slave_david">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>701_로터스마쉬 클리어 체크하여 헤르말테포구에서 리버워트 선착장으로 연결되는 포탈 오픈</comment>
+      <conditions>
+         <chk type="lvl" op="]=">40</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">7011,7011,7012,7013,7014,7015,7016</exe>
+         <exe type="complete">701</exe>
+         <exe type="conexe" true="0,3" false="4">0</exe>
+         <exe type="talk" npc="n213_slave_david">b</exe>
+         <exe type="talk" npc="n213_slave_david">d</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n213_slave_david" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n213_slave_david" sub="level_check">2</exelink>
+   <exelink qstep="1" npc="n213_slave_david" sub="c">1</exelink>
+   <journal_data recompense="1:7011,2:7012,3:7013,4:7014,5:7015,6:7016" quest_title="로터스마쉬" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <destination_pos>12,n213</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>213</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="9"><![CDATA[Lotus Marsh]]></title>
+         <contents mid="10"><![CDATA[<html>※ <FONT color=#7e12d2>You have completed [Chapter 5. Geraint the guardian].</FONT></html>]]></contents>
+         <destination mid="11"><![CDATA[Talk to Adventurer David at Hermalte Port]]></destination>
+         <todo_msg mid="12"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>431</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

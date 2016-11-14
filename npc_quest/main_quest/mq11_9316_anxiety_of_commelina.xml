@@ -1,0 +1,262 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9316_anxiety_of_commelina</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9316</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9317</nextqid>
+      <nextqname>mq11_9317_tip_of_commelina</nextqname>
+      <nextqnpc>n1151_academic</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[코멜리나의 염려]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1151</npcid>
+         <npcename>n1151_academic</npcename>
+         <npckname>아카데믹 코멜리나 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Kalaen.dds" center_image="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$궁정 소서리스 칼라엔$<BR>아휴. 이게 뭐야. 주름살이 보이려고 하잖아.<BR><FONT color=#7e12d2>(칼라엔은 손거울을 주머니에 넣으며 귀찮다는 듯 손을 내젓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Kalaen.dds" center_image="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-" mid="1591" select_type="5" />
+      <talk_question mid="1590"><![CDATA[<html>$궁정 소서리스 칼라엔$<BR>난 좀 쉬어야 겠어.<BR>할일이 필요하다면 저~기 <FONT color=#a82424>장군 더글라스</FONT>에게나 가 보는 게 어때?<BR>
+바쁜 것 같던데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-1-" mid="1593" select_type="5" />
+      <talk_question mid="1592"><![CDATA[<html>$아카데믹 코멜리나$<BR>또 뵙습니다.<BR><FONT color=#7e12d2>(코멜리나가 공손히 인사한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="1595" select_type="5" />
+      <talk_question mid="1594"><![CDATA[<html>$루나리아$<BR>사람이 많은 곳은 싫어.<BR>
+왕성은 너 혼자 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="1597" select_type="2" />
+      <talk_question mid="1596"><![CDATA[<html>$장군 더글라스$<BR>오! <FONT color=#387206>{user_nick}</FONT>, 지난 번엔 수고 많았네.<BR>자네와 다른 모험자들의 용감한 모습은 많은 병사들에게 귀감이 되었다네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="1599" select_type="2" />
+      <talk_question mid="1598"><![CDATA[<html>${user_nick}$<BR>그 이후 별다른 소식은 없습니까?<BR>블랙 드래곤에 대한 새로운 소식이라든가...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-c" mid="1601" select_type="2" />
+      <talk_question mid="1600"><![CDATA[<html>$장군 더글라스$<BR>아직 그런 소식은 없네.<BR>...아니, 사실은 그 이후 이렇다 할 정찰대를 제대로 파견하지 못하고 있다고 해야 맞겠구먼.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-d" mid="1603" select_type="0"><![CDATA[<html>...후유증이요?</html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-1-d" mid="1604" select_type="0"><![CDATA[<html>(이야기를 더 들어볼까?)</html>]]></talk_answer>
+      <talk_question mid="1602"><![CDATA[<html>$장군 더글라스$<BR>그럴 만한 여유가 없네. 당장 전쟁 후의 뒷처리를 하는 것만 해도 힘에 부치니 말일세.<BR>게다가 살아남은 장병들마저 기괴한 후유증에 시달리고 있으니...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-d" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-e" mid="1606" select_type="2" />
+      <talk_question mid="1605"><![CDATA[<html>$장군 더글라스$<BR>사실 이번 전쟁은... 골드 드래곤이 나타난 덕분에 병사들의 전공이 모조리 무위로 돌아가고 말았네.<BR>공작께서는 무용지물이 될게 뻔한 동상을 세운다 뭘 한다 분주하시고, 소서리스들에게는 기대를 접은지 오래지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-f" mid="1609" select_type="2" />
+      <talk_question mid="1608"><![CDATA[<html>$장군 더글라스$<BR>이런 와중이니 부상병들에 대한 처우도 자연스럽게 미흡해졌네.<BR>
+나라를 위해 힘껏 싸운 그들을 버려둬서야 말이 안 되는데 말일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-g" mid="1611" select_type="2" />
+      <talk_question mid="1610"><![CDATA[<html>$장군 더글라스$<BR>특히 괴이한 증세를 보이고 있는 부상병들이 속속 나타나서 걱정일세.<BR>
+제대로 된 치료 지원을 위해 그 증세의 원인을 알아내야 할텐데... 그것조차 쉽지가 않군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-h" mid="1614" select_type="2" />
+      <talk_question mid="1613"><![CDATA[<html>${user_nick}$<BR>어떤 증세입니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-i" mid="1616" select_type="2" />
+      <talk_question mid="1615"><![CDATA[<html>$장군 더글라스$<BR>이상할 정도의 고열에 기괴한 것이 몸을 뒤덮지. 곧 신체 일부가 변이되기 시작하네. 정말 알 수 없는 병일세.<BR>검은 대군주의 영지에서 무언가 독이라도 옮은 것일지도 모르겠네만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-j" mid="1618" select_type="2" />
+      <talk_question mid="1617"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>알만한 사람이 없을까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-k" mid="1621" select_type="2" />
+      <talk_question mid="1620"><![CDATA[<html>$장군 더글라스$<BR>그게...<BR><FONT color=#7e12d2>(더글라스가 머리를 긁적거린다)</FONT><BR>문장학자 스타쉬의 조언을 구해서 어찌어찌 힌트를 얻긴 했네만...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-k" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-2" mid="1623" select_type="2" />
+      <talk_question mid="1622"><![CDATA[<html>$장군 더글라스$<BR>그 자료를 <FONT color=#a82424>아카데믹 코멜리나</FONT>라는 어린 모험자의 손에 넘겼다네. 한참 조사 중일 걸세.<BR>괜찮다면 자네도 힘을 보태 주겠나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-2-" mid="1625" select_type="5" />
+      <talk_question mid="1624"><![CDATA[<html>$장군 더글라스$<BR>지금 <FONT color=#a82424>검은 산자락</FONT> 방향으로 가면 그 모험자를 만날 수 있을 것 같네<BR>부디 약을 구해 어서 고통받은 장병들을 구할 수 있다면 좋겠군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-a" mid="1627" select_type="2" />
+      <talk_question mid="1626"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#387206>{user_nick}</FONT> 님이시군요. 안녕하세요.<BR><FONT color=#7e12d2>(코멜리나가 공손히 인사한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-b" mid="1629" select_type="2" />
+      <talk_question mid="1628"><![CDATA[<html>$아카데믹 코멜리나$<BR>...아, 병사님들의 후유증을 조사하고 계셨군요.<BR>원인은 블랙 드래곤의 피 때문일 겁니다.<BR>
+그 피는 토양을 오염시키고, 생물을 상하게 만드니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-c" mid="1631" select_type="0"><![CDATA[<html>응? 역사?!</html>]]></talk_answer>
+      <talk_answer link_index="n1151_academic-2-c" mid="1632" select_type="0"><![CDATA[<html>...안 낫는다고?</html>]]></talk_answer>
+      <talk_question mid="1630"><![CDATA[<html>$아카데믹 코멜리나$<BR>워리어 시안 님이나 다른 모험자님들도 이번에 피를 뒤집어 쓰고 말아서, 정말이지 걱정입니다.<BR>역사에서도 그분들은 이 일로 인해 낫지 않은 지병을 품게 되셨다고 들었지만...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-d" mid="1634" select_type="2" />
+      <talk_question mid="1633"><![CDATA[<html>$아카데믹 코멜리나$<BR>앗! <FONT color=#7e12d2>(코멜리나가 몹시 당황한다)<BR></FONT>그... 그게... 신, 신경쓰지 마세요!<BR>
+혼잣말입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-e" mid="1640" select_type="0"><![CDATA[<html>당연히 도와야지!</html>]]></talk_answer>
+      <talk_answer link_index="n1151_academic-2-e" mid="1641" select_type="0"><![CDATA[<html>뭘 도우면 되죠?</html>]]></talk_answer>
+      <talk_answer link_index="n1151_academic-2-e" mid="1642" select_type="0"><![CDATA[<html>일단 이야기라도 들어보고~</html>]]></talk_answer>
+      <talk_question mid="1635"><![CDATA[<html>$아카데믹 코멜리나$<BR>어, 어쨌거나 병사님들을 위해서라도, 다른 모험자님들을 위해서라도, 조금이라도 도움을 드리고 싶습니다.<BR><FONT color=#387206>{user_nick}</FONT> 님도 도와주시겠어요? 가... 강요를 하는 건 아니지만 도와주시면 도움이 될 것 같아서...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-f" mid="1644" select_type="2" />
+      <talk_question mid="1643"><![CDATA[<html>$아카데믹 코멜리나$<BR>아앗!!! 도와주시는 건가요?<BR>가... 감사합니다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-g" mid="1646" select_type="2" />
+      <talk_question mid="1645"><![CDATA[<html>$아카데믹 코멜리나$<BR>그... 드래곤의 피로 인한 오염은 아직 확실히 밝혀진 치료법이 없습니다.<BR>그러나 임시방편으로 증세를 억제하는 것만은 가능하다고 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-h" mid="1657" select_type="4" />
+      <talk_question mid="1647"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-!next" mid="1659" select_type="2" />
+      <talk_question mid="1658"><![CDATA[<html>$아카데믹 코멜리나$<BR>전 임시방편이나마, 그 약을 구하려고 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-" mid="1638" select_type="5" />
+      <talk_question mid="1637"><![CDATA[<html>$루나리아$<BR>저쪽의 꼬마 모험자를 만나려는 거지?<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9316</exe>
+         <exe type="talk" npc="n038_royal_magician_kalaen">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93160,,,,,,,</exe>
+         <exe type="complete" true="">9316</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="e" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="f" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="g" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="h" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="i" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="j" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="k" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1151_academic" sub="b" />
+   <exelink qstep="2" npc="n1151_academic" sub="c" />
+   <exelink qstep="2" npc="n1151_academic" sub="c" />
+   <exelink qstep="2" npc="n1151_academic" sub="d" />
+   <exelink qstep="2" npc="n1151_academic" sub="e" />
+   <exelink qstep="2" npc="n1151_academic" sub="e" />
+   <exelink qstep="2" npc="n1151_academic" sub="e" />
+   <exelink qstep="2" npc="n1151_academic" sub="f" />
+   <exelink qstep="2" npc="n1151_academic" sub="g">0</exelink>
+   <exelink qstep="2" npc="n1151_academic" sub="h">1</exelink>
+   <exelink qstep="2" npc="n1151_academic" sub="!next" />
+   <journal_data recompense="93160" quest_title="코멜리나의 염려" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1649"><![CDATA[코멜리나의 염려I]]></title>
+         <contents mid="1650"><![CDATA[<html>선지자를 깨우는 일은 실패했다. 무언가 새로운 소식이 있는지, 장군 더글라스를 만나 보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성</FONT> <FONT color=#a82424>- 장군 더글라스</FONT></html>]]></contents>
+         <destination mid="1651"><![CDATA[왕성 내부에서 장군 더글라스와 대화]]></destination>
+         <todo_msg mid="1652"><![CDATA[장군 더글라스와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>13,n1151</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1151</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1653"><![CDATA[코멜리나의 염려II]]></title>
+         <contents mid="1654"><![CDATA[<html>장군은 병사들의 후유증에 대해 조사 중이라고 한다. 자료를 가진 모험자를 만나러 검은 산자락으로 가 보자.<BR><BR><FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 아카데믹 코멜리나</FONT></html>]]></contents>
+         <destination mid="1655"><![CDATA[검은 산자락에서 코멜리나와 대화]]></destination>
+         <todo_msg mid="1656"><![CDATA[검은 산자락에서 아카데믹 코멜리나를 만나세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9315</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,524 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_703_wild_cat_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>703</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>704</nextqid>
+      <nextqname>mq15_704_missing_natives</nextqname>
+      <nextqnpc>n705_sidel</nextqnpc>
+      <qkname mid="1"><![CDATA[Cat girl]]></qkname>
+      <qnpc>
+         <npcid>462</npcid>
+         <npcename>n462_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>465</npcid>
+         <npcename>n465_charty</npcename>
+         <npckname>차티</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>705</npcid>
+         <npcename>n705_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>712</npcid>
+         <npcename>n712_archer_zenya</npcename>
+         <npckname>상급 아처 제냐</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>714</npcid>
+         <npcename>n714_cleric_yohan</npcename>
+         <npckname>상급 클레릭 요한</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>718</npcid>
+         <npcename>n718_invisible</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Master Cleric Johan$<BR>I feel an increasing tension between Natives and Northern people.<BR><FONT color=#7e12d2>(You need to receive a quest from Cidel at Karacule's Hut to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n462_sidel-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Cidel$<BR>I'll return to master's hut.<BR>If you want to say something, come to the Hut.<BR><FONT color=#7e12d2>(You need to receive a quest from Cidel at Karacule's hut to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Merchant Rucita$<BR>Ah! I'm sorry.<BR>I misunderstood that you hit me.<BR><FONT color=#7e12d2>(You need to receive a quest from Cidel at Karacule's Hut to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Master Archer Zenya$<BR>Many things happened suddenly these days.<BR>Which side do I have to take if a battle happens?<BR><FONT color=#7e12d2>(You need to receive a quest from Cidel at Karacule's Hut to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Charti$<BR>What? I don't want to talk with you.<BR>
+<FONT color=#7e12d2>(You need to receive a quest from Cidel at Karacule's Hut to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n718_invisible-noquest" image="" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(It seems nothing is here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="37"><![CDATA[<html>Something to give?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Cidel$<BR>Well..., sorry to ask this of you...<BR><FONT color=#7e12d2>(Cidel hesitates and tells)<BR></FONT>I have something to give my friend....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-accepting" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n705_sidel-accepting-acceptted" mid="132"><![CDATA[<html>Something to give?</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Cidel$<BR>Well..., sorry to ask you this kind of matter though.<BR><FONT color=#7e12d2>(Cidel hesitates)<BR></FONT>I have something to give my friend....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n462_sidel-1" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n462_sidel-1-a" mid="6"><![CDATA[<html>Do you want me to get Jungle Parsley instead of you?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>My friend would really like a dish of <FONT color=#a82424>Jungle Parsley</FONT>. So I told her I'd get Jungle Parsley on the way home, but my master called me to come back immediately....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n462_sidel-1-a" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n462_sidel-1-b" mid="8"><![CDATA[<html>Where can I find it?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Cidel$<BR>Yes, can you do me a favour for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n462_sidel-1-b" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_answer link_index="n462_sidel-2" mid="10"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Cidel${action:Talk}<BR>It is grown at humid places near <FONT color=#a82424>Riverwort Wharf</FONT>.<BR>I'd appreciate if you can get a bunch of it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n707_sidel-1-a" mid="40"><![CDATA[<html>Do you want me to get Jungle Parsley for you?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Cidel$<BR>My friend would really like a dish of <FONT color=#a82424>Jungle Parsley</FONT>. So I told her I'd get Jungle Parsley on the way home, but I can't go there because I need to run an errand for my master....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n707_sidel-1-b" mid="42"><![CDATA[<html>Where can I find it?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Cidel$<BR>Yes, can you do this favour for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2" mid="44"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Cidel${action:Talk}<BR>It is grown at humid places near <FONT color=#a82424>Riverwort Wharf</FONT>.<BR>I'd appreciate if you can get a bunch of it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Merchant Rucita$<BR>Ah! I'm sorry.<BR>I misunderstood that you hit me.<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-1" image="" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Master Archer Zenya$<BR>Many things happened suddenly these days.<BR>Which side should I take if a battle breaks out?<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1" image="" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Master Cleric Johan$<BR>I feel increasing tension between the Natives and Northern people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Charti$<BR>What? I don't want to talk with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-1" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n705_sidel-1-a" mid="135"><![CDATA[<html>Do you want me to get Jungle Parsley instead of you?</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$Cidel$<BR>My friend would really like a dish of <FONT color=#a82424>Jungle Parsley</FONT>. So I told her I'd get Jungle Parsley on the way home, but I can't go there because I need to run an errand for my master....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-1-a" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n705_sidel-1-b" mid="137"><![CDATA[<html>Where can I find it?</html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$Cidel$<BR>Yes, can you do this favour for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-1-b" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_answer link_index="n705_sidel-2" mid="139"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Cidel${action:Talk}<BR>It is grown at humid places near <FONT color=#a82424>Riverwort Wharf</FONT>.<BR>I'd appreciate if you get a bunch of it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n718_invisible-1" image="" itemindex="">
+      <talk_question mid="142"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(There is nothing here.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n462_sidel-2" image="QS_Default.dds" itemindex="300379">
+      <talk_question mid="12"><![CDATA[<html>$Cidel$<BR>Thanks. I'll get back to my master's<FONT color=#a82424>Hut</FONT>.<BR>
+<FONT color=#7e12d2>(Find Jungle Parsley near Riverwort Wharf)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QS_Default.dds" itemindex="300379">
+      <talk_question mid="45"><![CDATA[<html>$Cidel$<BR>Thanks. I'd appreciate it.<BR>
+<FONT color=#7e12d2>(Find Jungle Parsley near Riverwort Wharf)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-2" image="QS_Default.dds" itemindex="300379">
+      <talk_question mid="140"><![CDATA[<html>$Cidel$<BR>Thanks. I appreciate it.<BR>
+<FONT color=#7e12d2>(Find Jungle Parsley near Riverwort Wharf)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n718_invisible-2" image="QS_Default.dds" itemindex="300379">
+      <talk_answer link_index="n718_invisible-3" mid="144"><![CDATA[<html>(Collect Jungle Parsley)</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Jungle Parsley$<BR>
+<FONT color=#7e12d2>(There is Jungle Parsley)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-3-a" mid="16"><![CDATA[<html>What's up?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Cidel$<BR><FONT color=#7e12d2>(Cidel looks embarrassed by Karacule)</FONT><BR>Oh, have you gone there?<BR>I'm making the medicine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-3-b" mid="18"><![CDATA[<html>What? An attack...?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Cidel${action:Talk}<BR>Well, I have a friend ....<BR><FONT color=#7e12d2>(Cidel lowers his voice)<BR></FONT>Charti..., who is a Native here.<BR>She attacked this place as she misunderstood something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-b" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-3-c" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Cidel$<BR>Hush! She isn't that aggressive, but must have misunderstood something.... I heard that she attacked master and ran away but I don't know whether she is fine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-c" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-3-d" mid="22"><![CDATA[<html>(Cidel hunches his shoulders)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Lady Karacule$<BR>I can hear you, Cidel!<BR>Don't dream of finding that arrogant girl!<BR><FONT color=#7e12d2>(Karacule scolds angrily)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-3-e" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Cidel$<BR>Yes! All right, Master!<BR><FONT color=#7e12d2>(Cidel whispers)</FONT><BR>Ahhh, if I go out now, master will scold me severely.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-4" mid="26"><![CDATA[<html>Hmm, okay.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Cidel$<BR>Can you see if <FONT color=#a82424>Charti</FONT> is fine and pass this <FONT color=#a82424>Jungle Parsley</FONT> to her on my behalf? Please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n718_invisible-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$Jungle Parsley$<BR>
+<FONT color=#7e12d2>(You have obtained Jungle Parsley. Go back to Cidel)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4" image="QN_Npc_Lucita.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Cidel$<BR>Thanks. As <FONT color=#a82424>Charti</FONT> ran away to the village, so please ask the villagers where she is.<BR>Find <FONT color=#a82424>Merchant Rucita</FONT> and ask about Charti because they are close.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-4" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-5" mid="47"><![CDATA[<html>I'm looking for a girl, Charti.</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Merchant Rucita$<BR>
+Hi.<BR>
+Who are you looking for?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n718_invisible-4" image="" itemindex="">
+      <talk_question mid="146"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(There was Jungle Parsley. Nothing is there now)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-5" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Merchant Rucita$<BR>
+What? I haven't seen Charti. Perhaps <FONT color=#a82424>Master Cleric Johan</FONT> knows where she is. Ask him.<BR>
+<FONT color=#7e12d2>(Rucita doesn't seem to know where Charti is. Ask Master Cleric Johan.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-5-a" mid="51"><![CDATA[<html>I'm not chasing her... I'd just like to know where she is now.</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Master Cleric Johan$<BR>
+So, you are chasing <FONT color=#a82424>Charti</FONT>, and you ask me for a hint?<BR>
+She made trouble for you...? Or created a mess... right? Hmm....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-6" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Cleric Johan$<BR>Alright. However,<BR>the criminal is not here.<BR><FONT color=#a82424>Charti</FONT> is...<BR>Hmm...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-6" image="QN_Npc_Lotus_ArcherZenya.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>About Charti, ask <FONT color=#a82424>Zenya</FONT>.<BR>She said hello to Charti while the girl was on her way back.<BR><FONT color=#7e12d2>(Ask Master Archer Zenya)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-6" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-6-a" mid="60"><![CDATA[<html>(Talk about what happened at Karacule's Hut)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Master Archer Zenya$<BR><FONT color=#a82424>Charti</FONT>? I have met her when she was on the way to <FONT color=#a82424>Ancient Library</FONT> to meet Cidel....<BR>She might be hurt somewhere because she was walking a bit awkwardly. By the way, why are you looking for Charti?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-6-a" image="QW_52.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Master Archer Zenya$<BR>Hmm, people don't get along well these days as lots of bad things have happened.... A young girl like <FONT color=#a82424>Charti</FONT>, is easy to be affected by a rumor. If you want to see Charti, go to <FONT color=#a82424>Ancient Library</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-7" image="QW_52.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Master Archer Zenya$<BR>
+Charti said that she was on the way to <FONT color=#a82424>Ancient Library</FONT> to meet Cidel. If you wanna meet her, go to Ancient Library.<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-7" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n465_charty-7-a" mid="68"><![CDATA[<html>Are you Charti?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Charti$<BR>Where is <FONT color=#a82424>Cidel</FONT>... !<BR>He should finish collecting herbs by now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-7-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n465_charty-7-b" mid="152"><![CDATA[<html>No, I came here on behalf of Cidel.</html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$Charti${action:Talk}<BR>Who are you?! Did you chase me? You must be... the old witch's servant?!<BR><FONT color=#7e12d2>(Charti gets upset)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-7-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n465_charty-7-c" mid="70"><![CDATA[<html>I mean it, he told me to pass Jungle Parsley to you.</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Charti$<BR>Huh, do you think that I'll be deceived just because you mentioned <FONT color=#a82424>Cidel</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-7-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n465_charty-7-d" mid="72"><![CDATA[<html>Cidel wanted to check on your condition.</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Charti${action:Talk2}<BR>Jungle Parsley...?<BR><FONT color=#7e12d2>(Charti softens up)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-7-d" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n465_charty-7-e" mid="74"><![CDATA[<html>Why did you attack Lady Karacule?</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Charti$<BR>I'm alright, I just have small injuries....<BR><FONT color=#7e12d2>(Charti licks her injuries)</FONT><BR>Cidel always worry about everything.... Hmm...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-7-e" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n465_charty-7-f" mid="76"><![CDATA[<html>Did you misunderstand ... ?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Charti$<BR>Huh, that old woman turned the Northern people against my family! What a vicious <FONT color=#a82424>Witch</FONT> !</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-7-f" image="" itemindex="">
+      <talk_answer link_index="n465_charty-8" mid="79"><![CDATA[<html>Do you think so...? Anyway, I'll go back now since I've given you the Parsely.</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Charti$<BR>Misunderstanding? Huh, this is accurate information from <FONT color=#a82424>a reliable person</FONT>.<BR>If you take the Witch's side, go back home!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-8" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$Charti${action:Talk}<BR>tell <FONT color=#a82424>Cidel</FONT>, I'm fine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-8" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n705_sidel-8-a" mid="86"><![CDATA[<html>(Talk about Charti)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Cidel${action:Talk}<BR>Is Charti okay?<BR><FONT color=#7e12d2>(Cidel looks very worried)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-8-a" image="" itemindex="">
+      <talk_answer link_index="n705_sidel-8-b" mid="88"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-8-b" image="" itemindex="">
+      <talk_answer link_index="n705_sidel-8-!next" mid="90"><![CDATA[<html>She told me that the information came from a reliable person...?</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Cidel$<BR>Master turned some people against the Natives?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">703</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+         <exe type="talk" npc="n705_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300379</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300379</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">8</exe>
+         <exe type="delquestitem" num="1">300379</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7031,7031,7032,7033,7034,7035,7036</exe>
+         <exe type="complete">703</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="accepting" npc="n705_sidel" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n462_sidel" sub="b" />
+   <exelink qstep="1" npc="n462_sidel" sub="2">0,1,2</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1,2</exelink>
+   <exelink qstep="1" npc="n705_sidel" sub="b" />
+   <exelink qstep="1" npc="n705_sidel" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n718_invisible" sub="3">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="b" />
+   <exelink qstep="3" npc="n707_sidel" sub="c" />
+   <exelink qstep="3" npc="n707_sidel" sub="d" />
+   <exelink qstep="3" npc="n707_sidel" sub="e" />
+   <exelink qstep="3" npc="n707_sidel" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n709_trader_lucita" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n714_cleric_yohan" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n712_archer_zenya" sub="a">0,1</exelink>
+   <exelink qstep="7" npc="n465_charty" sub="b" />
+   <exelink qstep="7" npc="n465_charty" sub="c" />
+   <exelink qstep="7" npc="n465_charty" sub="d" />
+   <exelink qstep="7" npc="n465_charty" sub="e" />
+   <exelink qstep="7" npc="n465_charty" sub="f" />
+   <exelink qstep="7" npc="n465_charty" sub="8">0,1,2</exelink>
+   <exelink qstep="8" npc="n705_sidel" sub="a">0</exelink>
+   <exelink qstep="8" npc="n705_sidel" sub="b">1</exelink>
+   <exelink qstep="8" npc="n705_sidel" sub="!next" />
+   <journal_data recompense="1:7031,2:7032,3:7033,4:7034,5:7035,6:7036" quest_title="들고양이 소녀" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="300379">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>521,n462</destination_pos>
+         <destination_mode>custom:521@1</destination_mode>
+         <statemark_npcid>462</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[Cidel's favour]]></title>
+         <contents mid="96"><![CDATA[<html>Cidel needs a favour. Continue talking to Cidel.<BR>
+<BR>
+<FONT color=#086171>Ancient Library</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="98"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n718</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>718</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[Jungle Parsley]]></title>
+         <contents mid="102"><![CDATA[<html>Cidel asked me to collect Jungle Parsley for his friend. Collect it near Riverwort Wharf and pass it to Cidel.<BR>
+<BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Jungle Parsley</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[Collect Jungle Parsley at Riverwort Wharf]]></destination>
+         <todo_msg mid="104"><![CDATA[Collect Jungle Parsley at Riverwort Wharf]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[Pass Jungle Parsley to Cidel]]></title>
+         <contents mid="106"><![CDATA[<html>Collection of Jungle Parsley complete. Pass them to Cidel.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="108"><![CDATA[Pass them to Cidel.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Lucita.dds</contents_image>
+         <destination_pos>15,n709</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>709</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="109"><![CDATA[Where is Charti? I]]></title>
+         <contents mid="110"><![CDATA[<html>Ask Merchant Rucita at Lotus Marsh where Charti is.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Merchant Rucita</FONT></html>]]></contents>
+         <destination mid="111"><![CDATA[Talk to Merchant Rucita]]></destination>
+         <todo_msg mid="112"><![CDATA[Ask Merchant Rucita where Charti is.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="113"><![CDATA[Where is Charti? II]]></title>
+         <contents mid="114"><![CDATA[<html>Ask Master Cleric Johan at Lotus Marsh where Charti is.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Cleric Johan</FONT></html>]]></contents>
+         <destination mid="115"><![CDATA[Talk to Master Cleric Johan]]></destination>
+         <todo_msg mid="116"><![CDATA[Ask Master Cleric Johan where Charti is.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Lotus_ArcherZenya.dds</contents_image>
+         <destination_pos>15,n712</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>712</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="118"><![CDATA[Where is Charti III]]></title>
+         <contents mid="119"><![CDATA[<html>Ask Master Archer Zenya at Lotus Marsh where Charti is.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Archer Zenya</FONT></html>]]></contents>
+         <destination mid="120"><![CDATA[Talk to Master Archer Zenya]]></destination>
+         <todo_msg mid="121"><![CDATA[Ask Master Archer Zenya where Charti is.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Charty.dds</contents_image>
+         <destination_pos>521,n465</destination_pos>
+         <destination_mode>custom:521@1</destination_mode>
+         <statemark_npcid>465</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="122"><![CDATA[Wild Cat Girl]]></title>
+         <contents mid="123"><![CDATA[<html>According to Zenya, Charti went to Ancient Library to meet Cidel.<BR>
+Find Charti at Ancient Library.<BR>
+<BR>
+<FONT color=#086171>Riverwort Wharf(Entrance of Ancient Armory)</FONT> <FONT color=#a82424>→ Ancient Library(Charti)</FONT></html>]]></contents>
+         <destination mid="124"><![CDATA[Talk to Charti at Ancient Library]]></destination>
+         <todo_msg mid="125"><![CDATA[Find Charti at Ancient Library.]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n705</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>705</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[Charti's Condition]]></title>
+         <contents mid="128"><![CDATA[<html>Charti seems healthy without major injuries.<BR>Go back to Cidel and tell him about her condition.<BR>
+<BR><FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="130"><![CDATA[Go back to Cidel.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>702</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

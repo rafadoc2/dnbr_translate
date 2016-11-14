@@ -1,0 +1,343 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_725_karakule</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>725</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc>300390 카라큘의 조제약</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>726</nextqid>
+      <nextqname>mq15_726_boy_and_girl</nextqname>
+      <nextqnpc>n785_invisible</nextqnpc>
+      <qkname mid="1"><![CDATA[I just met with Karacule]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>461</npcid>
+         <npcename>n461_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>754</npcid>
+         <npcename>n754_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>785</npcid>
+         <npcename>n785_invisible</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n461_argenta-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Argenta$<BR>How dare you came here.<BR><BR>
+※ <FONT color=#7e12d3>You can continue if you get a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Warrior Xian$<BR>... If I hadn't been there, Geraint wouldn't have died.<BR>I'm so foolish.<BR>※ <FONT color=#7e12d3>You can get a quest in Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Karacule Fairystar$<BR>Cough, you're an impolite child....<BR>Knock the door when you open it.<BR>※ <FONT color=#7e12d3>You can continue if you get a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Warrior Xian$<BR>
+<FONT color=#7e12d2>(Xian and Cidel are talking each other)</FONT><BR>
+ <BR>
+※ <FONT color=#7e12d3>You can continue if you get a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+※ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Go to Riverwort Wharf's Karacule's Hut and meet Argenta.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1" image="QW_Karakule_House.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Warrior Xian$<BR>
+<FONT color=#a82424>Argenta </FONT>will be still in <FONT color=#a82425>Karacule's Hut</FONT>.<BR>
+But, you'd better hurry up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n461_argenta-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n461_argenta-1-a" mid="15"><![CDATA[<html>(Ask her about the prophet's whereabouts)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Argenta$<BR>
+<FONT color=#7e12d3>(Argenta's face looks cold)</FONT><BR>
+What? Why're you wandering around here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n461_argenta-1-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n461_argenta-1-b" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Argenta$<BR>What? <FONT color=#a82425>prophet</FONT>'s whereabouts?<BR>You humans lost him but you're asking me?<BR>Pah, if I knew it, you think I didn't do anything?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n461_argenta-1-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n461_argenta-1-c" mid="19"><![CDATA[<html>Are you... giving up the prophet?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Argenta$<BR>Don't ever think about doing something after finding
+<FONT color=#a82425>the prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n461_argenta-1-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n461_argenta-1-d" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Argenta$<BR>
+Giving up? It sounds irritating me.<BR>
+The prophet wasn't anything for me at the first time.<BR>I had an interest because of
+<FONT color=#a82425>Velskud</FONT>. But he disappeared now, so I don't want to give any attention to useless destroyed the ancients' successor.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n461_argenta-1-d" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n461_argenta-1-e" mid="23"><![CDATA[<html>Argenta....</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Argenta$<BR>I even want to kill every human in the world..., but I don't do that because of Geraint who loved humans once.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n461_argenta-1-e" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Argenta$<BR>
+If you have a sense of shame, you should help <FONT color=#a82424>Karacule </FONT>not to let dragon's jewels revive!<BR>
+<FONT color=#7e12d3>(Argenta doesn't want to talk. Let's talk with Karacule Fairystar)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Karacule Fairystar$<BR>Cough, you're an impolite child....<BR>Knock the door when you open it.<BR>※ <FONT color=#7e12d3>You can continue if you get a quest from Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-1" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Warrior Xian$<BR>
+<FONT color=#7e12d3>(Xian and Cidel are talking each other)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n461_argenta-2" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Argenta$<BR>
+<FONT color=#7e12d3>(Argenta doesn't want to talk. Let's talk with Karacule Fairystar)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Go to Riverwort Wharf's Karacule's Hut and meet Karacule Fairystar.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-a" mid="34"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Karacule Fairystar$<BR>
+cough cough....<BR>
+You also had a part of responsibility of <FONT color=#a82425>Geraint</FONT>'s death?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-b" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Karacule Fairystar$<BR>
+Well..., it doesn't matter.<BR>
+Who would be sad about such a dragon's death....<BR>
+<FONT color=#7e12d3>(Karacule's hands are trembling)</FONT><BR>
+By the way, you...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-b" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-c" mid="38"><![CDATA[<html>(Tell Karacule about the future story)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Karacule Fairystar$<BR>
+You don't look contaminated by black dragons like other children...?<BR>
+What's this strange feeling. Where did you come from?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-c" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-d" mid="40"><![CDATA[<html>(Tell about the future)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Karacule Fairystar$<BR>...you're the child who's looking for an ice from a jungle.<BR>There's no prophet here.<BR>
+There are only pains and humid moisture.<BR>So..., how was the future that you came from?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-d" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-e" mid="42"><![CDATA[<html>What are you talking about?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Karacule Fairystar$<BR>
+<FONT color=#7e12d3>(Karacule frowns)</FONT><BR>
+I've fought for that kind of future... what a vain future it is....<BR>
+It would be better for children chasing for Argenta and I can't see that kind of future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-e" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-f" mid="45"><![CDATA[<html>I... didn't know that....</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Karacule Fairystar$<BR>
+Xian didn't tell you about it?<BR>
+He can't maintain his life. He was the serious injured child among children.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-f" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-g" mid="47"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Karacule Fairystar$<BR>
+He doesn't take care of himself because of the sense of guilty of Geraint....<BR>
+That kind of kind-alike person would be killed first....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-g" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-3" mid="49"><![CDATA[<html>What's this...?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Karacule Fairystar$<BR>
+Xian left something after running out of here to make a medicine for the elf Triana.<BR>
+<FONT color=#7e12d3>(Karacule gives me a small medicine bottle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3" image="QW_52.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Karacule Fairystar$<BR>
+It helps to alleviate symptoms temporarily.<BR>
+This is the last one so take this to the child.<BR>
+He would be around<FONT color=#a82425>Ancient Library</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Take Karacule's medicine bottle to Xian in Ancient Library.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-3" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-3-a" mid="66"><![CDATA[<html>(Give Karacule's medicine bottle to him)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#387207>{user_nick}</FONT>, what're you doing here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-3-a" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-3-b" mid="68"><![CDATA[<html>You'd better take care of yourself.</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Warrior Xian$<BR>
+If I had this before, I would've given to<FONT color=#a82424>Triana</FONT> ....<BR>
+<FONT color=#7e12d3>(Xian looks depressed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-3-b" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-3-c" mid="70"><![CDATA[<html>(Cidel...? I've heard of the name...)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#387206>{user_nick}</FONT>, you're nagging me like a mom.<BR>Ah, this is Karacule's disciple <FONT color=#a82425>Cidel</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-3-c" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-3-d" mid="72"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Cidel$<BR>Nice to meet you. <FONT color=#387206>{user_nick}</FONT>is your name?<BR>I was about to go back with Xian.<BR>
+By the way, I'm sorry to ask you in the first time....<BR><FONT color=#7e12d3>(Cidel looks embarrassed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-3-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-3-e" mid="74"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Cidel$<BR>I've got to go back to Karacule's Hut now, so I think I can't keep my friend's promise. so, can you help me?<BR>
+I need to take this to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-3-e" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-3-f" mid="77"><![CDATA[<html>I'll do that. Xian, you have something to give to Triana.</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Warrior Xian$<BR>Just count on me! Haha~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-3-f" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n785_invisible-3-g" mid="79"><![CDATA[<html>I'm okay. This is for your previous advice.</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Warrior Xian$<BR>Ah, y... yeah. Haha....<BR>Then <FONT color=#387207>{user_nick}</FONT>, you take this to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n785_invisible-3-g" image="" itemindex="">
+      <talk_answer link_index="n785_invisible-3-!next" mid="81"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">725</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">400070</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300390</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7250,,,,,,</exe>
+         <exe type="complete">725</exe>
+         <exe type="delquestitem" num="-1">300390</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n461_argenta" sub="b" />
+   <exelink qstep="1" npc="n461_argenta" sub="c" />
+   <exelink qstep="1" npc="n461_argenta" sub="d" />
+   <exelink qstep="1" npc="n461_argenta" sub="e">0,1,2</exelink>
+   <exelink qstep="2" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="f" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="g" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n785_invisible" sub="b" />
+   <exelink qstep="3" npc="n785_invisible" sub="c" />
+   <exelink qstep="3" npc="n785_invisible" sub="d" />
+   <exelink qstep="3" npc="n785_invisible" sub="e" />
+   <exelink qstep="3" npc="n785_invisible" sub="f" />
+   <exelink qstep="3" npc="n785_invisible" sub="g">0</exelink>
+   <exelink qstep="3" npc="n785_invisible" sub="!next">1,2</exelink>
+   <journal_data recompense="7250" quest_title="카라큘님을 뵈었습니다" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="300390">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>14,n461</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>461</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[I just saw Karacule I]]></title>
+         <contents mid="54"><![CDATA[<html>Go to Riverwort Wharf's Karacule's Hut to meet Argenta.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82425>→ Argenta</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Talk with Argenta in Karacule's Hut]]></destination>
+         <todo_msg mid="56"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[I just saw Karacule II]]></title>
+         <contents mid="59"><![CDATA[<html>Argenta's feeling doesn't look good.<BR>
+Let's talk with Karacule Fairystar.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82425>→ Karacule Fairystar</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Talk with Karacule Fairystar ]]></destination>
+         <todo_msg mid="61"><![CDATA[Talk with Karacule Fairystar ]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>521,n785</destination_pos>
+         <destination_mode>custom:521@1</destination_mode>
+         <statemark_npcid>785</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[I just saw Karacule III]]></title>
+         <contents mid="84"><![CDATA[<html>In Ancient Library, take Karacule's medicine to Warrior Xian.<BR><BR>
+<BR>
+<BR><FONT color=#086171>Riverwort Wharf(Entrance to Ancient Warehouse)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Go to Ancient Library and talk with Warrior Xian]]></destination>
+         <todo_msg mid="86"><![CDATA[In Ancient Library, meet with Warrior Xian]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>724</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

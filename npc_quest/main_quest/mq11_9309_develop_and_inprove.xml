@@ -1,0 +1,249 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9309_develop_and_inprove</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>9309</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>여족장 루즈카의 문장	300021
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9310</nextqid>
+      <nextqname>mq11_9310_end_of_raide</nextqname>
+      <nextqnpc>n574_shadow_meow</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[개발과 개선]]></qkname>
+      <qnpc>
+         <npcid>574</npcid>
+         <npcename>n574_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$문장학자 스타쉬$<BR>써 있는 대로 고대 제사장의 룬을 만들어 보겠네.<BR>룬의 파편을 이리 주게나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="850" select_type="2" />
+      <talk_question mid="846"><![CDATA[<html>$문장학자 스타쉬$<BR>흠... <FONT color=#7e12d2>(스타쉬가 골몰한 표정을 짓는다)</FONT><BR>그런데 고대 제사장의 룬을 이 파편으로 조합하려면 한 가지가 더 필요한데, 그건 가지고 왔나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="QW_34.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2" mid="852" select_type="2" />
+      <talk_question mid="851"><![CDATA[<html>$문장학자 스타쉬$<BR>강하류 수몰지의 강한 마물인 <FONT color=#a82424>{monster:951}</FONT>의 문장말일세.<BR>어떤 역할을 하는지 모르겠으나, 기껏 만든 고대 제사장의 룬을 변형해 어딘가에 고정시키는 작용을 한다고 들었네. 옛날 방식을 따르는 게 좋겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-" mid="848" select_type="5" />
+      <talk_question mid="847"><![CDATA[<html>$그림자 냥$<BR>제자여, 잘 지내고 있냥?<BR>배움이 필요하면 찾아오라냥!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="QW_34.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-" mid="856" select_type="5" />
+      <talk_question mid="855"><![CDATA[<html>$문장학자 스타쉬$<BR>그럼 어서 <FONT color=#a82424>강하류 수몰지</FONT>로 가서 여족장 루즈카의 문장을 구해오게나.<BR>내 준비를 마치고 기다리고 있겠네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QS_Default.dds" itemindex="300021" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="859" select_type="2" />
+      <talk_question mid="858"><![CDATA[<html>$문장학자 스타쉬$<BR>고대 제사장의 룬은 거의 다 완성 되었네.<BR>그걸 이리 주면 고정을 시켜 줌세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="861" select_type="2" />
+      <talk_question mid="860"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>고정?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-3-c" mid="863" select_type="2" />
+      <talk_question mid="862"><![CDATA[<html>$문장학자 스타쉬$<BR>아아~ 그냥 지니고 다니기엔 형태가 알맞지 않거든.<BR>대개는 지내고 다니는 물건 같은 곳에 깃들이게 된다네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-c" image="QS_Default.dds" itemindex="300573" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-3-d" mid="866" select_type="2" />
+      <talk_question mid="865"><![CDATA[<html>$문장학자 스타쉬$<BR>자, 일단 아쉬운대로 처리는 끝났네.<BR>이제 여기 이 문장을 가지고 가서 좋은 방법을 찾아보는 게 어떤가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-d" image="QN_NPC_Shadow_Meow.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4" mid="868" select_type="2" />
+      <talk_question mid="867"><![CDATA[<html>$문장학자 스타쉬$<BR>자네라면...<BR>
+<FONT color=#7e12d2>(스타쉬가 아래위로 훑어본다)</FONT><BR>내 요 근처에서 자네와 비슷한 옷을 입은 자를 봤는데, 그 자가 도와줄 수 있지 않겠는가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QN_NPC_Shadow_Meow.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-4-" mid="872" select_type="5" />
+      <talk_question mid="871"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(으음...? 그림자 냥을 찾아가 보라는 이야기인가?<BR>왠지 못미덥지만 한 번 가 보는 게 좋겠군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4-a" mid="874" select_type="2" />
+      <talk_question mid="873"><![CDATA[<html>$그림자 냥$<BR>아니!!! 제자가 드디어 이 스승님에게 의지하러 와 주었다냥?!<BR>이 스승, 기쁨에 눈물이 마구 나온다냥... 냥냥...!<BR><FONT color=#7e12d2>(그림자 냥이 통통한 고양이 앞발로 눈가를 훔친다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-4-a" image="QS_Default.dds" itemindex="300573" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4-b" mid="876" select_type="2" />
+      <talk_question mid="875"><![CDATA[<html>$그림자 냥$<BR>제자가 찾아온 용건은 대충 알았다냥.<BR>그 문장인가 뭔가 하는 걸 줘 보라냥!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-4-b" image="QS_Default.dds" itemindex="300573" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4-c" mid="880" select_type="2" />
+      <talk_question mid="879"><![CDATA[<html>$그림자 냥$<BR>냐냐냥~ 고르릉고르릉~ 냥냥~<BR><FONT color=#7e12d2>(그림자 냥이 문장을 들여다 본다)<BR></FONT>아하! 알았다냥. 이건 이런 식으로 붙이면 된다냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4-d" mid="882" select_type="2" />
+      <talk_question mid="881"><![CDATA[<html>$그림자 냥$<BR>잘 사용하도록 하라냥! 모든 도구는 마음에 달린 것이다냥.<BR>도구의 힘은 그걸 사용하는 자의 힘을 넘어서지 못하는 것이니까냥~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4-e" mid="885" select_type="2" />
+      <talk_question mid="884"><![CDATA[<html>$그림자 냥$<BR>제자가 착실히 성장하니 보기가 좋다냥. 이 스승님은 여기에서 열심히 가다랑어포를 갉아 먹고 있을 테니 제자는 열심히 살도록 해라냥. 할 일이 있는 거 아니냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4-f" mid="905" select_type="4" />
+      <talk_question mid="904"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-4-f" image="QW_36.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4-!next" mid="887" select_type="2" />
+      <talk_question mid="886"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(아, 그러고보니 워리어 시안은 지금쯤 어디로 갔을까?<BR>검은 기사를 쫓아 그 블랙 드래곤의 네스트로 출발했을까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9309</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">951</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200951</exe>
+         <exe type="huntitem" num="1" exe="" onexe="4,6,8">300021</exe>
+         <exe type="addquestitem" num="1">300021</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300021</exe>
+         <exe type="addquestitem" num="1">300573</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300573</exe>
+         <exe type="recompense">93090,,,,,,,</exe>
+         <exe type="complete" true="">9309</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="2">5,7,0,1,2</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="4">0,2,3,1</exelink>
+   <exelink qstep="4" npc="n574_shadow_meow" sub="b">0</exelink>
+   <exelink qstep="4" npc="n574_shadow_meow" sub="c" />
+   <exelink qstep="4" npc="n574_shadow_meow" sub="d" />
+   <exelink qstep="4" npc="n574_shadow_meow" sub="e">1</exelink>
+   <exelink qstep="4" npc="n574_shadow_meow" sub="f">2</exelink>
+   <exelink qstep="4" npc="n574_shadow_meow" sub="!next" />
+   <journal_data recompense="93090" quest_title="개발과 개선" chapterid="4" quest_level="30" quest_mark_type="1" use_item_list="300021">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="841"><![CDATA[개발과 개선I]]></title>
+         <contents mid="842"><![CDATA[<html>문장학자 스타쉬에게 고대 제사장의 룬 제작을 문의하자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 문장학자 스타쉬</FONT></html>]]></contents>
+         <destination mid="843"><![CDATA[세인트헤이븐의 문장학자 스타쉬와 대화]]></destination>
+         <todo_msg mid="844"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_34.dds</contents_image>
+         <destination_pos>344,0,0</destination_pos>
+         <destination_mode>custom:341@3,342@3,343@3,344@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="890"><![CDATA[개발과 개선II]]></title>
+         <contents mid="891"><![CDATA[<html>강하류 수몰지로 가서 여족장 루즈카의 문장을 구해오자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(강하류 폐허 입구)</FONT> <FONT color=#a82424>- 강하류 수몰지</FONT></html>]]></contents>
+         <destination mid="892"><![CDATA[강하류 수몰지]]></destination>
+         <todo_msg mid="893"><![CDATA[강하류 수몰지에서 여족장 루즈카의 문장을 구하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="894"><![CDATA[개발과 개선III]]></title>
+         <contents mid="895"><![CDATA[<html>문장학자 스타쉬에게 여족장 루즈카의 문장을 전달하자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 문장학자 스타쉬</FONT></html>]]></contents>
+         <destination mid="896"><![CDATA[세인트헤이븐의 문장학자 스타쉬와 대화]]></destination>
+         <todo_msg mid="897"><![CDATA[문장학자 스타쉬에게 가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_NPC_Shadow_Meow.dds</contents_image>
+         <destination_pos>11,n574</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>574</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="900"><![CDATA[개발과 개선IV]]></title>
+         <contents mid="901"><![CDATA[<html>미완성된 문장을 그림자 냥에게 가져가자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 그림자 냥</FONT></html>]]></contents>
+         <destination mid="902"><![CDATA[세인트헤이븐의 그림자 냥과 대화]]></destination>
+         <todo_msg mid="903"><![CDATA[그림자 냥에게 가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9308</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

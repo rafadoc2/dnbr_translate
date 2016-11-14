@@ -1,0 +1,335 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_704_missing_natives</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>704</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>705</nextqid>
+      <nextqname>mq15_705_doubtful_proposal</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Missing Natives]]></qkname>
+      <qnpc>
+         <npcid>468</npcid>
+         <npcename>n468_empty_place</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>705</npcid>
+         <npcename>n705_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="132"><![CDATA[<html>$Lady Karacule$<BR>Cough cough... I'm feeling worse.... Need to hurry....<BR><FONT color=#7e12d2>(You need to receive a quest from Cidel to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-noquest" image="" itemindex="">
+      <talk_question mid="155"><![CDATA[<html>$Cidel and Charti$<BR><FONT color=#7e12d2>(Cidel and Charti are having a conversation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="37"><![CDATA[<html>Something to pass to your friend?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Cidel$<BR>
+Well... sorry to ask this of you when we are not even properly aquainted.<BR><FONT color=#7e12d2>(Cidel hesitates briefly)<BR></FONT>Actually I need to pass something to my friend....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-1" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n705_sidel-1-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR><FONT color=#a82424>A reliable person</FONT>... I have no idea who it is.<BR>I'm quite close to <FONT color=#a82424>Charti</FONT> but I haven't heard about the person....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-1-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n705_sidel-1-b" mid="8"><![CDATA[<html>Does Karacule want to say something to me...?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Cidel${action:Talk}<BR>Hmm, I can't ignore it. I have to meet Charti in person.<BR>Oh, I was about to fOgret this.<BR><FONT color=#a82424>Master</FONT> wants to tell you something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-1-b" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Cidel$<BR>
+Yes. She wants to tell you something.<BR>
+Then, I'll go and meet Charti.<BR>
+Please keep this a secret from <FONT color=#a82424>Master</FONT>... .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="">
+      <talk_question mid="133"><![CDATA[<html>$Lady Karacule$<BR>Cough cough... I'm feeling worse.... Need to hurry....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-1" image="" itemindex="">
+      <talk_question mid="156"><![CDATA[<html>$Cidel and Charti$<BR><FONT color=#7e12d2>(Cidel and Charti are having a conversation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-a" mid="195"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="194"><![CDATA[<html>$Cidel$<BR><FONT color=#a82424>A reliable person</FONT>... I have no idea who it is.<BR>I'm quite close to <FONT color=#a82424>Charti</FONT> but I haven't heard about the person....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-b" mid="197"><![CDATA[<html>Does Karacule want to say something to me...?</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Cidel${action:Talk}<BR>Hmm, I can't ignore it. I have to meet Charti in person.<BR>Oh, I forgot it because of Charti.<BR><FONT color=#a82424>Master</FONT> wants to tell you something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="198"><![CDATA[<html>$Cidel$<BR>
+Yes. She has something to tell you.<BR>
+Then, I'll go and meet Charti.<BR>
+Please keep this as secret to <FONT color=#a82424>Master</FONT>... .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n705_sidel-2" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="134"><![CDATA[<html>$Cidel$<BR>Talk to my Master.<BR>I'll go and see Charti.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-a" mid="137"><![CDATA[<html>I've been to Ancient Library.</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Lady Karacule$<BR>Where did you go?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-b" mid="139"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Lady Karacule$<BR>It seems that Cidel asked you to see <FONT color=#a82424>the girl</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-c" mid="141"><![CDATA[<html>...?</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Lady Karacule$<BR>Huh, I don't understand why he cares about that girl. Anyway it will be helpful this time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-c" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-d" mid="143"><![CDATA[<html>I have heard a rumor from the village though....</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$Lady Karacule$<BR>Recently the relationship between the Natives and immigrants has been getting worse. Well, you have heard about the missing Natives?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-d" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-e" mid="145"><![CDATA[<html>Why did she misunderstand it?</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$Lady Karacule$<BR>Cough cough... it is a problem that the Natives are missing but also some people believe that the immigrants and I have something to do with it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-e" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-f" mid="147"><![CDATA[<html>Charti said to me that she heard it from a reliable person.</html>]]></talk_answer>
+      <talk_question mid="146"><![CDATA[<html>$Lady Karacule$<BR><FONT color=#7e12d2>(Karacule sniffs)<BR></FONT>Huh, that's because someone comes between us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-f" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-g" mid="149"><![CDATA[<html>Is there anything that I can help you with?</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Lady Karacule$<BR><FONT color=#a82424>A reliable person</FONT>? Then, the so-called reliable person is turning the Natives against me. I don't know who it is but the person will pay for this.... Cough cough....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-g" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-h" mid="151"><![CDATA[<html>Isn't it much faster that Cidel investigates this in person?</html>]]></talk_answer>
+      <talk_question mid="150"><![CDATA[<html>$Lady Karacule$<BR>Cidel is quite close to <FONT color=#a82424>the young girl</FONT> so get closer to her through Cidel. And find out who brought about the rumor.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-h" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-3" mid="157"><![CDATA[<html>Got it.</html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$Lady Karacule$<BR><FONT color=#a82424>Cidel</FONT>is a very clever kid.<BR>But he can't think clearly when it comes to that girl. That's why I'm asking you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="200"><![CDATA[<html>$Cidel$<BR>Talk to my Master.<BR>I'll go and see Charti.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="153"><![CDATA[<html>$Lady Karacule$<BR>If you understand me, don't hesitate anymore but go after <FONT color=#a82424>Cidel</FONT> immediately.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-a" mid="159"><![CDATA[<html>Yes. I came here as I'm worried about you.</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Cidel$<BR>
+Oh, <FONT color=#387206>{user_nick}</FONT> why are you here?<BR>
+Did you talk to my Master?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-b" mid="161"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Charti$<BR>
+Why are you here?<BR>
+I have nothing to tell you so go back that old woman!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-c" mid="163"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="162"><![CDATA[<html>$Cidel$<BR>
+Ummm..., Charti. That's too much. He came here as he was worried about me, so don't be so rude. Will you stop him even knowing how he helped me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-d" mid="165"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="164"><![CDATA[<html>$Charti$<BR>Hmm, Cidel, you are too kind.<BR>How can I believe him whether or not he had helped you? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-e" mid="167"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$Cidel$<BR>Umm... he helped me, although he had not seen me before....<BR>
+I think he is good.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-f" mid="170"><![CDATA[<html>(What? Stupid...?)</html>]]></talk_answer>
+      <talk_question mid="169"><![CDATA[<html>$Charti$<BR>Cidel.... well, that's what you say.<BR>But it doesn't seem that this stupid stranger is related to the missing case.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-f" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-g" mid="172"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Charti$<BR>
+He doesn't look very bright.<BR>
+No one will take him for a spy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-g" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-h" mid="174"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="173"><![CDATA[<html>$Cidel$<BR>
+<FONT color=#7e12d2>(Cidel looks awkward)</FONT><BR>
+Ah... haven't you found out where your grandfather and village people are yet?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-h" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-i" mid="176"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Charti$<BR>Not yet.... However, I got some information. Apparently the trace of the missing villagers have been found near <FONT color=#a82424>Riverwort Village Ruins</FONT>. So I am about to look around there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-i" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-j" mid="178"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Cidel$<BR>.......<BR>Did you get the information from <FONT color=#a82424>a reliable person</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-j" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-k" mid="181"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$Charti$<BR>Yes. <FONT color=#a82424>I have gotten some help from him</FONT>.<BR>As he said, my grandpa has been kidnapped because he knows something as the chief of the Natives.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-k" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-l" mid="183"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$Cidel$<BR>
+You're quite reliant on him....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-l" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-m" mid="185"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Charti$<BR>
+Of course. If he didn't help me, I would be kidnapped like the village people. Anyway I'll investigate Riverwort Village Ruins.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-m" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-n" mid="187"><![CDATA[<html>Got it.</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$Cidel$<BR><FONT color=#7e12d2>(Cidel seems awkward)<BR></FONT>Okay.... I'll look into there as well.<BR><FONT color=#387206>{user_nick}</FONT>, if you're okay, why don't you help us investigate?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-n" image="" itemindex="">
+      <talk_answer link_index="n468_empty_place-3-o" mid="189"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="188"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n468_empty_place-3-o" image="QW_51.dds" itemindex="">
+      <talk_question mid="191"><![CDATA[<html>$Cidel$<BR>
+Thanks. Then please look around <FONT color=#a82424>Riverwort Village Ruins</FONT>.<BR>
+You should be careful as there might be dangerous monsters in the jungle.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">704</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>파티원 중 1번 스텝 유저 없으면 NPC 705 삭제</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7041,7041,7042,7043,7044,7045,7046</exe>
+         <exe type="complete">704</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n705_sidel" sub="b">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="f" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="g" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="h" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n468_empty_place" sub="b" />
+   <exelink qstep="3" npc="n468_empty_place" sub="c" />
+   <exelink qstep="3" npc="n468_empty_place" sub="d" />
+   <exelink qstep="3" npc="n468_empty_place" sub="e" />
+   <exelink qstep="3" npc="n468_empty_place" sub="f" />
+   <exelink qstep="3" npc="n468_empty_place" sub="g" />
+   <exelink qstep="3" npc="n468_empty_place" sub="h" />
+   <exelink qstep="3" npc="n468_empty_place" sub="i" />
+   <exelink qstep="3" npc="n468_empty_place" sub="j" />
+   <exelink qstep="3" npc="n468_empty_place" sub="k" />
+   <exelink qstep="3" npc="n468_empty_place" sub="l" />
+   <exelink qstep="3" npc="n468_empty_place" sub="m" />
+   <exelink qstep="3" npc="n468_empty_place" sub="n">0</exelink>
+   <exelink qstep="3" npc="n468_empty_place" sub="o">1</exelink>
+   <journal_data recompense="1:7041,2:7042,3:7043,4:7044,5:7045,6:7046" quest_title="사라지는 원주민들" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n705</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>705</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[Cidel's Worry]]></title>
+         <contents mid="96"><![CDATA[<html>Cidel is worried about the stranger whom Charti is in contact with. Continue to talk to Cidel.<BR>
+<BR><FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[Talk to Cidel]]></destination>
+         <todo_msg mid="98"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[Karacule's Worry]]></title>
+         <contents mid="102"><![CDATA[<html>Cidel will go to Ancient Library to meet Charti in person. <BR>
+Talk to Karacule at Karacule's Hut.<BR><BR><FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82424>→ Lady Karacule</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[Talk to Karacule]]></destination>
+         <todo_msg mid="104"><![CDATA[Move to Karacule's Hut and talk to Karacule.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>521,n468</destination_pos>
+         <destination_mode>custom:521@1</destination_mode>
+         <statemark_npcid>468</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[mysterious Helper]]></title>
+         <contents mid="106"><![CDATA[<html>Karacule is certain that Charti's mysterious helper is coming inbetween her and the Natives. Meet Cidel and Charti and find out who is the helper.<BR><BR><FONT color=#086171>Riverwort Wharf(Entrance of Ancient Armory)</FONT> <FONT color=#a82424>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[Talk to Cidel at Ancient Library]]></destination>
+         <todo_msg mid="108"><![CDATA[Meet Cidel at Ancient Library]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>703</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

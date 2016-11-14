@@ -1,0 +1,533 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9319_about_dragon</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9319</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc>다크엘프의 목걸이	300253
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9320</nextqid>
+      <nextqname>mq11_9320_legacy</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[드래곤에 대하여]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1155</npcid>
+         <npcename>n1155_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>523</npcid>
+         <npcename>n523_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(낯선 항아리가 수상한 소리를 내며 눈길을 끈다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-1-" mid="1846" select_type="5" />
+      <talk_question mid="1845"><![CDATA[<html>$문장학자 스타쉬$<BR>흐음?<BR>
+그 꼬마 모험자는 왜 안 오는 거지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-1-a" mid="1848" select_type="2" />
+      <talk_question mid="1847"><![CDATA[<html>$벨스커드$<BR>...미쳐버린 세상에서 망령이 떠돌아다니는 것은 어쩌면 당연하겠지.<BR>동료도 적도 아닌 녀석.<BR><FONT color=#7e12d2>(벨스커드가 중얼거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n523_velskud-1-" mid="1850" select_type="5" />
+      <talk_question mid="1849"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(더 얻을 정보는 없으니 그만 세인트헤이븐으로 돌아갈까.<BR>다른 정보가 들어오지 않았나 알아보는 편이 나을지도...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="1852" select_type="5" />
+      <talk_question mid="1851"><![CDATA[<html>$루나리아$<BR>
+세인트헤이븐으로 가는 것 아니었어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-1-" mid="1854" select_type="5" />
+      <talk_question mid="1853"><![CDATA[<html>$루나리아$<BR>뭘 하고 있는 거야?<BR>지금은 나와 대화할 때가 아니야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="1857" select_type="2" />
+      <talk_question mid="1856"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(또 코멜리나의 메모가 놓여 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-1-b" mid="1859" select_type="2" />
+      <talk_question mid="1858"><![CDATA[<html>$코멜리나의 메모$<BR><FONT color=#7e12d2>(저, {user_nick} 님.</FONT><BR>
+<FONT color=#7e12d2>혹시 이 메모를 보신다면, 문장학자 스타쉬 님께 가 주실 수 없을까요?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-1-c" mid="1861" select_type="2" />
+      <talk_question mid="1860"><![CDATA[<html>$코멜리나의 메모$<BR><FONT color=#7e12d2>(의뢰를 받았지만, 전 그분의 약을 빨리 완성하고 싶습니다.<BR>저 대신 스타쉬 님의 이야기를 들어 주십시오.</FONT><BR>
+<FONT color=#7e12d2>물론... 어려운 부탁이라면 이 메모를 무시하셔도 괜찮아요.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-c" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-2" mid="1863" select_type="2" />
+      <talk_question mid="1862"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(이상한 아이지만, 이럴 때 보면 조금 기특하기도 하고...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Academic_Station.dds" center_image="">
+      <talk_answer link_index="n393_academic_station-2-" mid="1866" select_type="5" />
+      <talk_question mid="1865"><![CDATA[<html>$코멜리나의 메모$<BR><FONT color=#7e12d2>(문장학자 스타쉬 님께 저 대신 가 주신다면 정말 감사하겠습니다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="1868" select_type="2" />
+      <talk_question mid="1867"><![CDATA[<html>$문장학자 스타쉬$<BR>이야기한 게 언젠데 아직도 안 오는 게야? 설마 어디로 빼돌린 건......<BR>
+<FONT color=#7e12d2>(투덜거리던 스타쉬가 그제서야 앞을 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="1870" select_type="2" />
+      <talk_question mid="1869"><![CDATA[<html>$문장학자 스타쉬$<BR>아이쿠, 이제야 오셨군 그래! 목이 빠지게 기다리고 있었네!<BR>음? 그런데 그 쪼그만 모험자는 어디로 갔는가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="1874" select_type="0"><![CDATA[<html>그보다 무슨 의뢰죠?</html>]]></talk_answer>
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="1875" select_type="0"><![CDATA[<html>용건이 뭔가요?</html>]]></talk_answer>
+      <talk_question mid="1871"><![CDATA[<html>$문장학자 스타쉬$<BR>아, 다른 바쁜 일로 자네에게 맡겼다고?<BR>알았네. 누구든 마찬가지지. 이번 전쟁에 참가한 모험자 가운데 한 사람이기만 하다면 됐네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-d" mid="1877" select_type="2" />
+      <talk_question mid="1876"><![CDATA[<html>$문장학자 스타쉬$<BR>아직 시중에는 정보가 많이 안 풀렸지만, 나는 예전 드래곤 레이드 때 참여한 것도 있고 왕성에도 자주 드나들다 보니 웬만큼 이야기가 들어 온다네. 그래, 듣자하니 지금 왕성에...<BR>
+<FONT color=#7e12d2>(스타쉬가 주위를 두리번거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-e" mid="1880" select_type="2" />
+      <talk_question mid="1879"><![CDATA[<html>$문장학자 스타쉬$<BR>음... <FONT color=#7e12d2>(목소리를 낮추고 작게 수군거린다) </FONT>내 듣자하니 왕성 지하에 골드 드래곤이 있다던데.<BR>
+골드 드래곤이 선지자를 수호하고 있다고. 그게 사실인가...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-f" mid="1883" select_type="2" />
+      <talk_question mid="1882"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>알고 계셨군요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-g" mid="1885" select_type="2" />
+      <talk_question mid="1884"><![CDATA[<html>$문장학자 스타쉬$<BR>내게도 소식통이 여럿 있지. 아직 소문이 나진 않았네.<BR>
+검은 대군주의 관문으로 떠났던 병사들 사이에선 목격담이 제법 전해지고 있지만, 나름대로 군과 왕성이 통제를 하고 있어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-g" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-h" mid="1887" select_type="2" />
+      <talk_question mid="1886"><![CDATA[<html>$문장학자 스타쉬$<BR>아마, 스튜어트 공작이 그럴싸한 미담으로 포장한 후에나 공표하겠지.어리석은 자들이야.<BR>
+드래곤은 인간의 잣대로는 잴 수 없는 존재인데 말일세. 50년 전의 여섯 영웅조차 그랬지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-h" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-i" mid="1891" select_type="0"><![CDATA[<html>(제레인트 이야기구나)</html>]]></talk_answer>
+      <talk_answer link_index="n088_scholar_starshy-2-i" mid="1892" select_type="0"><![CDATA[<html>(골드 드래곤이라면...)</html>]]></talk_answer>
+      <talk_question mid="1888"><![CDATA[<html>$문장학자 스타쉬$<BR>블랙 드래곤 카라스의 레이드 때, 그들은 눈 앞에서 골드 드래곤이 모습을 보이자 크게 동요했어.<BR>방금 전까지 함께 싸운 동료인데도 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-i" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-j" mid="1894" select_type="0"><![CDATA[<html>아, 당신도 참전했던 거군요</html>]]></talk_answer>
+      <talk_answer link_index="n088_scholar_starshy-2-j" mid="1895" select_type="0"><![CDATA[<html>당신도 그때 함께했나요?</html>]]></talk_answer>
+      <talk_question mid="1893"><![CDATA[<html>$문장학자 스타쉬$<BR>카라큘과 바르낙은 배신 당했다며 분노했네.<BR>혼란에 빠진 인간들은 여섯 영웅의 리더였던 제레인트가 바로 골드 드래곤이라는 사실을 은폐해 버렸지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-k" mid="1897" select_type="2" />
+      <talk_question mid="1896"><![CDATA[<html>$문장학자 스타쉬$<BR>물론이지! 이래봬도 역전의 용사란 말일세. 껄껄.<BR>하지만 나 역시, 내 눈을 믿을 수가 없었네. 그 뒤로 열심히 드래곤에 관한 연구를 해왔지만, 연구할 수록 안개 속으로 빠져 들더군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-l" mid="1899" select_type="2" />
+      <talk_question mid="1898"><![CDATA[<html>$문장학자 스타쉬$<BR>아무래도 손에 잡히는 정보가 없었으니 당연한 일이겠지.<BR>나는 골드 드래곤과는 달리 <FONT color=#a82424>블랙 드래곤은 인공적으로 만들어진 존재</FONT>라는 가설을 세웠으나, 검증을 할 방도가 없어서...... 흠흠!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-m" mid="1901" select_type="2" />
+      <talk_question mid="1900"><![CDATA[<html>$문장학자 스타쉬$<BR>흠흠. 저쪽에 정예병사들이 왔다갔다 하는 게 아무래도 신경 쓰이는군.<BR><FONT color=#7e12d2>(스타쉬가 경계심 어린 표정으로 주위를 살핀다)</FONT><BR>내가 요즘 <FONT color=#a82424>용추종자</FONT>라는 혐의를 받고 있거든. 나 참... 세상이 흉흉하니 별 일이 다 생기네 그래.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-2-n" mid="1903" select_type="2" />
+      <talk_question mid="1902"><![CDATA[<html>$문장학자 스타쉬$<BR>흠흠. 저쪽에 정예병사들이 왔다갔다 하는 게 아무래도 신경 쓰이는군.<BR>간단히 뭐 필요한 게 있는게, 그 부탁부터 좀 들어주게. 의심을 살 수는 없으니 말일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-3" mid="1905" select_type="2" />
+      <talk_question mid="1904"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(흠. 떠맡기는 것 같은 기분이 들지만, 별 수 없지.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QW_38.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-3-" mid="1908" select_type="5" />
+      <talk_question mid="1907"><![CDATA[<html>$문장학자 스타쉬$<BR><FONT color=#a82424>죽은 도시의 길목</FONT>에서 다크엘프의 목걸이를 하나 구해다 주게.<BR>그렇고 그런 다크엘프 말고, 기만자 카렌에게서 얻은 거면 좋겠군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-3" image="QW_38.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-3-" mid="1910" select_type="5" />
+      <talk_question mid="1909"><![CDATA[<html>$루나리아$<BR>죽은 도시의 길목으로 가야만 한다고?<BR>
+알았어. 그럼 바로 그곳으로 가.<BR>
+왜 여기까지 온 거지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-a" mid="1912" select_type="2" />
+      <talk_question mid="1911"><![CDATA[<html>$루나리아$<BR>무슨 생각을 하고 있어? <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-b" mid="1914" select_type="2" />
+      <talk_question mid="1913"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>드래곤에 대해서...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-b" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-c" mid="1916" select_type="2" />
+      <talk_question mid="1915"><![CDATA[<html>$루나리아$<BR>드래곤?<BR>제레인트와 아르젠타? 아니면 그 검은 기사에 대해서?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-c" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-d" mid="1919" select_type="2" />
+      <talk_question mid="1918"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>벨스커드가 블랙 드래곤이었지. 그가 에이션트들이라고 말했는데, 그건 제레인트와 아르젠타를 지칭하는 걸까?<BR>그리고 문장학자 스타쉬 님이 무슨 이야기를 했냐면...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-e" mid="1921" select_type="2" />
+      <talk_question mid="1920"><![CDATA[<html>$루나리아$<BR><FONT color=#7e12d2>(루나리아가 고요한 시선으로 바라본다)<BR></FONT>태초에 이 세계의 조정자로서 태어난 것이 에이션트와 케이어스. 두 드래곤.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-f" mid="1923" select_type="2" />
+      <talk_question mid="1922"><![CDATA[<html>$루나리아$<BR>그러나 아르테아 여신이 타락의 독을 마시자, 알체린가는 어둠에 오염되어 점점 타락해 갔어.<BR>그리고, <FONT color=#a82424>베스티넬</FONT>의 미스트랜드가 낳은 사념이 사악한 <FONT color=#a82424>비욘드 드래곤</FONT>으로 변해 알체린가에 스며들었지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-g" mid="1925" select_type="2" />
+      <talk_question mid="1924"><![CDATA[<html>$루나리아$<BR>에인션트와 케이어스가 가까스로 비욘드 드래곤을 쓰러트렸지만, 비욘드의 사악한 기운에 케이어스 드래곤이 오염되고 말았어.<BR>
+한때는 같은 조정자였지만 적이 되어 버린 두 드래곤은 서로를 물어뜯었고...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-h" mid="1928" select_type="2" />
+      <talk_question mid="1927"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그래서 누가 승리했어?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-i" mid="1930" select_type="2" />
+      <talk_question mid="1929"><![CDATA[<html>$루나리아$<BR>승자는 없었어. 그 싸움으로 케이어스의 육신은 여러갈래로 찢겨져 세계로 흩어졌고, 에인션트 드래곤 역시 그 힘이 다해 죽어 떨어졌어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-j" mid="1932" select_type="2" />
+      <talk_question mid="1931"><![CDATA[<html>$루나리아$<BR>마지막 힘으로 에이션트 드래곤은 제 보옥을 갈랐지. 한 조각은 <FONT color=#a82424>골드 드래곤</FONT>, 다른 한 조각은 <FONT color=#a82424>실버 드래곤</FONT>이 되어 알체린가를 수호하기 위해서.<BR>
+그 외의 남은 <FONT color=#a82424>부스러기</FONT>들은 드래곤이 되지 못한 채 세계 곳곳에 묻혀 버렸어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-k" mid="1934" select_type="2" />
+      <talk_question mid="1933"><![CDATA[<html>$루나리아$<BR>그리고 찢겨진 케이어스의 육신도, 여러 조각의 보옥이 되었어.<BR>
+어떤 것은 스스로 드래곤으로 각성했지만 어떤 것은 그저 지고의 보물로 깊은 잠에 빠져 들었지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-k" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-l" mid="1936" select_type="2" />
+      <talk_question mid="1935"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>잠... 잠깐, 그러면 역시 아르젠타도 드래곤이었던 거야?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-m" mid="1938" select_type="2" />
+      <talk_question mid="1937"><![CDATA[<html>$루나리아$<BR>그들은 <FONT color=#a82424>에이션트의 분리물</FONT>. 한 몸에서 난 두 개야.<BR>형제 같은 거라고 할 수 있지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-n" mid="1941" select_type="2" />
+      <talk_question mid="1940"><![CDATA[<html>$루나리아$<BR>그들의 의무는 케이어스의 편린들이 깨어나지 못하도록 저지하며, 알체린가의 균형을 유지하는 것.<BR>아르젠타는 힘을 나눠 모노리스를 수호하고......<BR><FONT color=#7e12d2>(루나리아가 말끝을 흐린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-o" mid="1943" select_type="2" />
+      <talk_question mid="1942"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아. 왜 그래?<BR>그 모노리스라는 건 또 뭐고?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-p" mid="1945" select_type="2" />
+      <talk_question mid="1944"><![CDATA[<html>$루나리아$<BR>...아무 것도 아니야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-q" mid="1947" select_type="2" />
+      <talk_question mid="1946"><![CDATA[<html>$루나리아$<BR>블랙 드래곤은 <FONT color=#a82424>케이어스의 부서진 사념체</FONT> 가운데 하나야.<BR>
+어떤 인간들이 억지로 깨워 완성해 낸 존재.<BR>만들어진 드래곤.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-r" mid="1950" select_type="2" />
+      <talk_question mid="1949"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>드래곤도 만들 수 있는 줄은 몰랐어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-r" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-s" mid="1952" select_type="2" />
+      <talk_question mid="1951"><![CDATA[<html>$루나리아$<BR>벨스커드가 그 드래곤을 죽이고, 보옥을 손에 넣어 <FONT color=#a82424>새로운 블랙 드래곤</FONT>이 된 거야.<BR><FONT color=#a82424>드래곤은 보옥이 남는 한 결코 사라지지 않으니까</FONT>. 몇 번이고 식어버린 재 속에서 다시 태어나지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-t" mid="1954" select_type="2" />
+      <talk_question mid="1953"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>웬일로 말을 많이 해주네.<BR>그런데, 루나리아가 그런 걸 어떻게 알아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-t" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-u" mid="1956" select_type="2" />
+      <talk_question mid="1955"><![CDATA[<html>$루나리아$<BR>...으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-u" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-v" mid="1958" select_type="2" />
+      <talk_question mid="1957"><![CDATA[<html>$루나리아$<BR>......봤으니까.<BR>
+내가, 직접, 봤기 때문이야.<BR><FONT color=#7e12d2>(루나리아의 목소리가 지워질 듯이 가느다랗다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-v" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-4-w" mid="1960" select_type="2" />
+      <talk_question mid="1959"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>봤... 다고...?<BR>그, 그렇구나. 루나리아는 시간을 제멋대로 뛰어 넘으니까, 그 오랜 옛날에도 가본 적이 있는 거겠지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-4-w" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-5" mid="1962" select_type="2" />
+      <talk_question mid="1961"><![CDATA[<html>$루나리아$<BR>
+.......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-5-a" mid="1967" select_type="2" />
+      <talk_question mid="1965"><![CDATA[<html>$루나리아$<BR>...그만 돌아가자.<BR>너무 긴 시간을 허비했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1155_lunaria-5-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1155_lunaria-5-" mid="1969" select_type="5" />
+      <talk_question mid="1968"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아, 그래.</FONT><BR>
+<FONT color=#662500>세인트헤이븐의 문장학자 스타쉬에게 돌아가야겠다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-5-" mid="1971" select_type="5" />
+      <talk_question mid="1970"><![CDATA[<html>$루나리아$<BR>
+세인트헤이븐으로 가.<BR>
+난 더 할 말 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="QS_Default.dds" itemindex="300253" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-a" mid="1973" select_type="2" />
+      <talk_question mid="1972"><![CDATA[<html>$문장학자 스타쉬$<BR>오, 자네 왔나?<BR>부탁한 걸 가지고 와 주어서 고맙네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-b" mid="1975" select_type="2" />
+      <talk_question mid="1974"><![CDATA[<html>$문장학자 스타쉬$<BR>자네에게 부탁하려던 것은, 다른 모험자에게 맡겼네.<BR>나는 50년 전의 그 전투 이후 내내 의문을 품고 살아 왔지. 평생의 연구과제라고 해도 좋겠지만, 그보다는 미련이나 후회가 아닐까 싶기도 하네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5-b" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-c" mid="1977" select_type="2" />
+      <talk_question mid="1976"><![CDATA[<html>$문장학자 스타쉬$<BR>...모든 이들의 리더였던 제레인트가 종적을 감췄을 때 나는 분노했지. 허탈했어.<BR>모두가 그를 원망하는 와중에 힘이 되어 주거나, 하다못해 현실을 직시하며 공표하지도 못했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5-c" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-d" mid="1979" select_type="2" />
+      <talk_question mid="1978"><![CDATA[<html>$문장학자 스타쉬$<BR>학자로서 그래서는 안 되었네. 모두가 이해하기 어려운 현상은 멋대로 은폐하고, 잊고...<BR>
+그리하여 여섯 영웅이라는 허상만이 남았을 때 내가 본 것을 말했어야만 하네.<BR>
+...그때 그랬어야만 했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-e" mid="1981" select_type="2" />
+      <talk_question mid="1980"><![CDATA[<html>$문장학자 스타쉬$<BR>나는 지금부터라도 내가 아는 것과 알아내야 할 것을 똑바로 바라보려고 하네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-f" mid="1983" select_type="2" />
+      <talk_question mid="1982"><![CDATA[<html>$문장학자 스타쉬$<BR>아, 그런데 말일세.<BR><FONT color=#a82424>50년 전의 그늘</FONT>에서 빠져나오지 못한 건 나만이 아니라네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-g" mid="1988" select_type="4" />
+      <talk_question mid="1987"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-5-!next" mid="2011" select_type="2" />
+      <talk_question mid="2010"><![CDATA[<html>$문장학자 스타쉬$<BR>그래서 자네에게 부탁하고 싶은 것이 있네만.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9319</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1028</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201028</exe>
+         <exe type="addquestitem" num="1">300253</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300253</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93190,,,,,,,</exe>
+         <exe type="complete" true="">9319</exe>
+         <exe type="delquestitem" num="-1">300253</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n523_velskud" sub="" />
+   <exelink qstep="1" npc="n393_academic_station" sub="b" />
+   <exelink qstep="1" npc="n393_academic_station" sub="c" />
+   <exelink qstep="1" npc="n393_academic_station" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="h" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="i" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="i" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="j" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="j" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="k" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="l" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="m" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="n" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="3">0,1,2,3,5</exelink>
+   <exelink qstep="4" npc="n1155_lunaria" sub="b" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="c" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="d" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="e" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="f" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="g" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="h" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="i" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="j" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="k" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="l" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="m" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="n" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="o" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="p" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="q" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="r" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="s" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="t" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="u" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="v" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="w" />
+   <exelink qstep="4" npc="n1155_lunaria" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n1155_lunaria" sub="" />
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="f">0</exelink>
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="g">1,2</exelink>
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="!next" />
+   <journal_data recompense="93190" quest_title="드래곤에 대하여" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="300253">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1990"><![CDATA[드래곤에 대하여I]]></title>
+         <contents mid="1991"><![CDATA[<html>벨스커드의 이야기를 들었다. 일루전은 50여년 전 그와 함께 누군가의 가신으로 지내다 사라졌던 것 같다.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT><FONT color=#a82424> - 아카데믹 스테이션</FONT></html>]]></contents>
+         <destination mid="1992"><![CDATA[세인트헤이븐의 아카데믹 스테이션 확인]]></destination>
+         <todo_msg mid="1993"><![CDATA[세인트헤이븐의 아카데믹 스테이션을 다시 확인해 보세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1994"><![CDATA[드래곤에 대하여II]]></title>
+         <contents mid="1995"><![CDATA[<html>아카데믹 코멜리나를 대신해 문장학자 스타쉬의 의뢰를 들어 보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT><FONT color=#a82424> - 문장학자 스타쉬</FONT></html>]]></contents>
+         <destination mid="1996"><![CDATA[세인트헤이븐의 문장학자 스타쉬와 대화]]></destination>
+         <todo_msg mid="1997"><![CDATA[문장학자 스타쉬를 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_38.dds</contents_image>
+         <destination_pos>384,0,0</destination_pos>
+         <destination_mode>custom:381@3,382@3,384@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1998"><![CDATA[드래곤에 대하여III]]></title>
+         <contents mid="1999"><![CDATA[<html>문장학자 스타쉬가 말을 돌리며 다른 심부름을 시켰다. 조용할 때 이야기하고 싶은 모양이다. 우선 그의 부탁대로 죽은 도시의 길목에서 다크엘프의 목걸이를 구하자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(검은 광산 입구)</FONT> <FONT color=#a82424>- 죽은 도시의 길목</FONT></html>]]></contents>
+         <destination mid="2000"><![CDATA[죽은 도시의 길목]]></destination>
+         <todo_msg mid="2001"><![CDATA[죽은 도시의 길목으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>384,n1155</destination_pos>
+         <destination_mode>custom:381@1,382@1,384@1</destination_mode>
+         <statemark_npcid>1155</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2002"><![CDATA[드래곤에 대하여IV]]></title>
+         <contents mid="2003"><![CDATA[<html>의뢰품을 손에 넣었다.<BR>
+루나리아와 잠시 이야기를 나눠 보자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(검은 광산 입구)</FONT> <FONT color=#a82424>- 죽은 도시의 길목(루나리아)</FONT></html>]]></contents>
+         <destination mid="2004"><![CDATA[죽은 도시의 길목에서 루나리아와 대화]]></destination>
+         <todo_msg mid="2005"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2006"><![CDATA[드래곤에 대하여V]]></title>
+         <contents mid="2007"><![CDATA[<html>문장학자 스타쉬에게 돌아가 다크엘프의 목걸이를 전달하자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 문장학자 스타쉬</FONT></html>]]></contents>
+         <destination mid="2008"><![CDATA[세인트헤이븐의 문장학자 스타쉬와 대화]]></destination>
+         <todo_msg mid="2009"><![CDATA[문장학자 스타쉬에게 돌아가 보고하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9318</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

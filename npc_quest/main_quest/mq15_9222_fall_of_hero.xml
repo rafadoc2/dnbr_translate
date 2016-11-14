@@ -1,0 +1,296 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9222_fall_of_hero</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9222</qid>
+      <designer>곽노찬</designer>
+      <qlevel>58</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9223</nextqid>
+      <nextqname>mq15_9223_lost_objective</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <qkname mid="1"><![CDATA[Fall of a Hero]]></qkname>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>836</npcid>
+         <npcename>n836_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="6"><![CDATA[<html>How is Velskud?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Terrence Terramai$<BR>Welcome...,<FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-2" mid="8"><![CDATA[<html>Where is he now?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Terrence Terramai$<BR>He's a bit better but he would need continuous treatment.<BR>Since he lost the dragon's jewel which had been supporting him, we don't know what side effects there might be.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Velskud$<BR>Are you here to see how badly I'm doing...? Keke.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Terrence Terramai$<BR>
+He's resting at <FONT color=#a82424>Royal Palace Underground</FONT>.<BR>
+That was the only place in Royal Palace which was hidden from others' views....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2" image="" itemindex="">
+      <talk_answer link_index="n836_velskud-2-a" mid="13"><![CDATA[<html>I just came to see if you're okay....</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Velskud$<BR>Are you here to see how badly I'm doing...? Keke.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-2-b" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Velskud$<BR>All right, so do you think I look okay?<BR>
+<FONT color=#7e12d2>(Velskud smiles bitterly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-b" image="" itemindex="">
+      <talk_answer link_index="n836_velskud-2-c" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Velskud$<BR>It was a stupid mistake.<BR>Saying that I could use Geraint's sword to get rid of Barnac was the bait for me....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-c" image="" itemindex="">
+      <talk_answer link_index="n836_velskud-2-d" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Velskud$<BR>I didn't believe that the Ancient kid was freed from him from the beginning. I thought she was just a bait...<BR>But to think that the kid had become the new apostle....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-d" image="" itemindex="">
+      <talk_answer link_index="n836_velskud-3" mid="37"><![CDATA[<html>Velskud....</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Velskud$<BR>Since I've lost the dragon's power, I'm nothing....<BR>
+The revenge I dreamed of for 50 years ends in futility. Isn't it wretched?<BR>
+Keke...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Velskud$<BR>
+I want to rest now.... Go away.<BR>
+<FONT color=#7e12d2>(Velskud looks pale. Go back to Terramai)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-3-cklevel_1" mid="40"><![CDATA[<html>Do you need any help?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Terrence Terramai$<BR>The shock must be big, Velskud....<BR>Though I have scores to settle with him, I'll concentrate on his recovery for the time being.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-a" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Terrence Terramai$<BR>I'm looking at some books and asking the palace physician to get herbs that are good for recovery.<BR>
+I might need your help.<BR>
+ <BR>
+※ <FONT color=#7e12d2>You need to be above Lv.58 to proceed with this quest.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-b" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-3-c" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Terrence Terramai$<BR>It'd be great if you can help.<BR>
+I gave him some emergency treatment, but the wound is deep so it must be very painful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-c" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4" mid="88"><![CDATA[<html>What herb is it?</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Terrence Terramai$<BR>
+Maybe I could use some herb....<BR>
+Can you get it for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4" image="QW_62.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Terrence Terramai$<BR>Go to <FONT color=#a82424>Encroached Temple Ruins</FONT> and get some <FONT color=#a82424>Jungle Bluemellow</FONT>.<BR>
+It's a herb used for relieving pain.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5" image="QS_Default.dds" itemindex="400323">
+      <talk_answer link_index="n822_teramai-5-a" mid="51"><![CDATA[<html>(Tell him what you saw at Encroached Temple Ruins)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Terrence Terramai$<BR>Welcome back.<BR>
+Hmm... good. This looks like it's enough.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-a" image="QN_Npc_Death_Knight.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-5-b" mid="53"><![CDATA[<html>What could be happening?</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Terrence Terramai$<BR>You saw <FONT color=#a82424>Barnac</FONT>...?<BR>
+Why would he be at Encroached Temple Ruins....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-b" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-5-c" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Terrence Terramai$<BR>
+What the apostle was after was Velskud's jewel....<BR>
+She must have left right after she attained her goal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-c" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-5-!next" mid="57"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9222</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">58</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7,8">600014</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7,8">700014</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400323</exe>
+         <exe type="addquestitem" num="1">400323</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="conexe" true="10" false="11">0</exe>
+         <exe type="talk" npc="n822_teramai">b</exe>
+         <exe type="talk" npc="n822_teramai">a</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92221,92221,92222,92223,92224,92225,92226</exe>
+         <exe type="complete">9222</exe>
+         <exe type="delquestitem" num="-1">400323</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n822_teramai" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n836_velskud" sub="b" />
+   <exelink qstep="2" npc="n836_velskud" sub="c" />
+   <exelink qstep="2" npc="n836_velskud" sub="d" />
+   <exelink qstep="2" npc="n836_velskud" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="cklevel_1">9</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="c" />
+   <exelink qstep="3" npc="n822_teramai" sub="4">0,1,2,3,4</exelink>
+   <exelink qstep="5" npc="n822_teramai" sub="b" />
+   <exelink qstep="5" npc="n822_teramai" sub="c">0</exelink>
+   <exelink qstep="5" npc="n822_teramai" sub="!next">1,2</exelink>
+   <journal_data recompense="1:92221,2:92222,3:92223,4:92224,5:92225,6:92226" quest_title="영웅의 몰락" chapterid="9" quest_level="58" quest_mark_type="1" use_item_list="400323">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Fall of a Hero I]]></title>
+         <contents mid="60"><![CDATA[<html>Apostle Rozalinde stabbed Velskud and ran away with the Black Dragon jewel. Terramai took Velskud to the Royal Palace.<BR>
+Meet Terramai inside the Royal Palace and ask about Velskud's condition.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Terramai inside the Royal Palace]]></destination>
+         <todo_msg mid="62"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13014,n836</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>836</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Fall of a Hero II]]></title>
+         <contents mid="64"><![CDATA[<html>Velskud is resting at Royal Palace Underground.<BR>
+Go to Royal Palace Underground and meet Velskud.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Royal Palace Underground)</FONT> <FONT color=#a82424>→ Velskud</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Talk to Velskud at Royal Palace Underground]]></destination>
+         <todo_msg mid="66"><![CDATA[Talk to Velskud at Royal Palace Underground.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Fall of a Hero III]]></title>
+         <contents mid="68"><![CDATA[<html>Velskud looks pale.<BR>Go back to Terramai and ask him if there's anything you can do to help Velskud.<BR>
+ <BR>
+※ <FONT color=#7e12d2>You must be above Lv.58 to proceed.</FONT><BR><BR><FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk to Terramai inside the Royal Palace]]></destination>
+         <todo_msg mid="70"><![CDATA[Go back to Terrence Terramai.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_62.dds</contents_image>
+         <destination_pos>622,0,0</destination_pos>
+         <destination_mode>custom:621@1,622@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Fall of a Hero IV]]></title>
+         <contents mid="73"><![CDATA[<html>Terramai asked you to get some herbs from Encroached Temple Ruins.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Encroached Temple Ruins</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Encroached Temple Ruins]]></destination>
+         <todo_msg mid="75"><![CDATA[Get herbs at Encroached Temple Ruins.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Fall of a Hero V]]></title>
+         <contents mid="79"><![CDATA[<html>While you were getting herbs from Encroached Temple Ruins, you saw Barnac wandering around the area. Go back to the Royal Palace and report to Terramai.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Talk to Terramai inside the Royal Palace]]></destination>
+         <todo_msg mid="81"><![CDATA[Go back to the Royal Palace and report to Terramai.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9221</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,187 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9221_unpleased_successor</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9221</qid>
+      <designer>곽노찬</designer>
+      <qlevel>58</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9222</nextqid>
+      <nextqname>mq15_9222_fall_of_hero</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Unwelcomed Successor]]></qkname>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>827</npcid>
+         <npcename>n827_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>835</npcid>
+         <npcename>n835_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Terrence Terramai$<BR>With the Mirror of Truth, we're ready to save Barnac now. Let's leave with the Prophet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Terrence Terramai$<BR>Go to Royal Palace Underground and bring the Prophet.<BR>It's time to save Barnac from the torment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1" image="" itemindex="">
+      <talk_answer link_index="n827_rose-1-a" mid="11"><![CDATA[<html>Oh, this is the Mirror of Truth.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Rose$<BR>
+<FONT color=#387206>{user_nick}</FONT>, you're here.<BR>
+Welcome. And what is this...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1-a" image="QS_Default.dds" itemindex="400321">
+      <talk_answer link_index="n827_rose-1-b" mid="13"><![CDATA[<html>(Explain about the Mirror of Truth)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Rose$<BR>
+<FONT color=#a82424>Mirror of Truth</FONT>...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n827_rose-2" mid="15"><![CDATA[<html>Where is that?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Rose$<BR>
+It must be the object that was requested by Terramai. It's magical.<BR>
+<FONT color=#7e12d2>(Rose looks at it for a while and turns away)</FONT><BR>
+And I just found out where Barnac is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-2" image="QW_63.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Rose$<BR>He's at <FONT color=#a82424>Meteor Crash Site Core</FONT>.<BR>He seems to be fighting with the Black Knight so you must hurry.<BR>I'll follow you with Terramai so <FONT color=#387206>{user_nick}</FONT>, please go to Meteor Crash Site Core first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n835_teramai-3" image="" itemindex="">
+      <talk_answer link_index="n835_teramai-3-a" mid="23"><![CDATA[<html>Terramai, Velskud is in danger!</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Terrence Terramai$<BR>
+Oh my....<BR>
+How did this happen...?<BR>
+The Prophet... Why did the Prophet...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n835_teramai-3-a" image="" itemindex="">
+      <talk_answer link_index="n835_teramai-3-b" mid="25"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Terrence Terramai$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n835_teramai-3-b" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Terrence Terramai$<BR>
+<FONT color=#7e12d2>(Terramai bites his lip)</FONT><BR>
+I'll bring Velskud... to the Royal Palace to treat him.<BR>
+Hope you come to Saint Haven Royal Palace too.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9221</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92211,92211,92212,92213,92214,92215,92216</exe>
+         <exe type="complete">9221</exe>
+         <exe type="delquestitem" num="-1">400320</exe>
+         <exe type="delquestitem" num="-1">400321</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n827_rose" sub="b" />
+   <exelink qstep="1" npc="n827_rose" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n835_teramai" sub="a">0</exelink>
+   <exelink qstep="3" npc="n835_teramai" sub="b">1,2,3</exelink>
+   <journal_data recompense="1:92211,2:92212,3:92213,4:92214,5:92215,6:92216" quest_title="반갑지 않은 후임" chapterid="9" quest_level="58" quest_mark_type="1" use_item_list="400320,400321">
+      <journal index="1">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n827</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>827</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Unwelcomed Successor I]]></title>
+         <contents mid="30"><![CDATA[<html>Terramai says that since the preparation to save Barnac is over, go to Royal Palace Underground and find Rose and get ready to leave to purify Barnac. Go to Saint Haven Royal Palace Underground and talk to Rose.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Talk with Rose]]></destination>
+         <todo_msg mid="32"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_63.dds</contents_image>
+         <destination_pos>632,0,0</destination_pos>
+         <destination_mode>custom:631@1,632@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Unwelcomed Successor II]]></title>
+         <contents mid="34"><![CDATA[<html>Rose says that she saw a prophecy of Barnac fighting with Velskud at Meteor Crash Site Core.<BR>Go to Meteor Crash Site Core.<BR><BR><FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Meteor Crash Site Core</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Meteor Crash Site Core]]></destination>
+         <todo_msg mid="36"><![CDATA[Find Barnac at Meteor Crash Site Core.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>632,n835</destination_pos>
+         <destination_mode>custom:631@1,632@1</destination_mode>
+         <statemark_npcid>835</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Unwelcomed Successor III]]></title>
+         <contents mid="38"><![CDATA[<html>Surprisingly, the new Kaleon's Knight was Rose.<BR>Her name was Rozalinde. Rozalinde stabbed Velskud with Geraint's sword and ran away after absorbing the Black Dragon's jewel.<BR>Talk to Terramai.<BR><BR><FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Meteor Crash Site Core(Terrence Terramai)</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Terramai at Meteor Crash Site Core]]></destination>
+         <todo_msg mid="40"><![CDATA[Talk to Terramai.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9220</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,244 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_732_medicines</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>732</qid>
+      <designer>곽노찬</designer>
+      <qlevel>42</qlevel>
+      <qdesc>검은 재버섯	300382
+부패한 늪지이끼	300383
+정글 미나리	300384
+카라한의 치료약	300385</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>733</nextqid>
+      <nextqname>mq15_733_charty_grandfather</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Medicines]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>724</npcid>
+         <npcename>n724_karahan</npcename>
+         <npckname>카라한 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>725</npcid>
+         <npcename>n725_charty</npcename>
+         <npckname>차티</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+※ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Talk with Karahan in Riverwort Wharf.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n724_karahan-1-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Karahan$<BR>You're hot-tempered unlike your appearance.<BR>I just finished telling about <FONT color=#a82424>my story</FONT>'s <FONT color=#a82425>first part</FONT>.<BR>Well, the way to treat is so simple.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-1-a" image="" itemindex="">
+      <talk_answer link_index="n724_karahan-2" mid="12"><![CDATA[<html>Where can I get those ingredients?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Karahan$<BR>Treatment mixed with three ingredients is all I need.<BR><FONT color=#a82424>Black mushroom</FONT>, <FONT color=#a82424>rotten moss</FONT>, and <FONT color=#a82424>jungle waterparsley</FONT>are necessary.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Charti$<BR>Karahan said he will make a medicine for us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-2" image="QW_55.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Karahan$<BR><FONT color=#a82424>Black Mushroom </FONT>is found in <FONT color=#a82424>East Ancient Armory</FONT>, and <FONT color=#a82424>Rotten Moss </FONT>is found in <FONT color=#a82424>Ancient Library</FONT>, and <FONT color=#a82424>Jungle Waterparsley </FONT>is found in <FONT color=#a82424>Riverwort Village Ruins</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Collect three ingredients to make a medicine.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-3" image="QS_Default.dds" itemindex="300385">
+      <talk_answer link_index="n724_karahan-4" mid="17"><![CDATA[<html>(Give ingredients)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Karahan$<BR>You seem to have all ingredients.<BR>If you give me those, I'll make it in<FONT color=#a82424>three seconds</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.</FONT><BR>※ <FONT color=#7e12d3>Go to Riverwort Wharf to meet Karahan.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n724_karahan-4" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Karahan${action:Talk}<BR>It took<FONT color=#a82424>1.5 seconds</FONT>. Huhu...<BR>now, you deliver them to the natives. The natives are in the place <FONT color=#a82425>Charti </FONT>knows.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-4" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n725_charty-4-a" mid="22"><![CDATA[<html>What's it?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Charti${action:Talk2}<BR><FONT color=#a82425>Karahan</FONT>is amazing!<BR>He made the medicine in the twinkle of an eye~.<BR>By the way...can you do me a favor?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-4-a" image="QN_Npc_Lucita.dds" itemindex="">
+      <talk_answer link_index="n725_charty-4-b" mid="24"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Charti$<BR>I want you to go to <FONT color=#a82424>Merchant Rucita</FONT>instead of me to buy a present for Cidel.<BR>Cidel likes studying, so something like writable... the, <FONT color=#a82425>pen</FONT>. I'm kind of reluctant to go there because I made troubles before....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-4-b" image="" itemindex="">
+      <talk_answer link_index="n725_charty-4-c" mid="26"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n725_charty-4-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Charti$<BR>
+<FONT color=#7e12d3>(Charti smiles)</FONT><BR>
+Thank you. Cidel must be disappointed because of me. I hope he's fine.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">732</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="2" op="]=">300382</chk>
+         <chk type="questitem" num="3" op="]=">300383</chk>
+         <chk type="questitem" num="1" op="]=">300384</chk>
+         <chk type="prob">500</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="3" exe="" onexe="">300383</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">300382</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300384</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="5,6,7" false="">0 and 1 and 2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="18">1559</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="18">201559</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="19">1402</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="19">201402</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="20">1391</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="20">201391</exe>
+         <exe type="addquestitem" num="1">300382</exe>
+         <exe type="addquestitem" num="1">300383</exe>
+         <exe type="addquestitem" num="1">300384</exe>
+         <exe type="conexe" true="8" false="15,8">0</exe>
+         <exe type="conexe" true="8" false="21">1</exe>
+         <exe type="conexe" true="8" false="17,8">2</exe>
+         <exe type="conexe" true="16,8" false="">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300382</exe>
+         <exe type="delquestitem" num="-1">300383</exe>
+         <exe type="delquestitem" num="-1">300384</exe>
+         <exe type="addquestitem" num="1">300385</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7320,,,,,,</exe>
+         <exe type="complete">732</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n724_karahan" sub="2">0,1,2,3,4,9,10,11,12,13,14</exelink>
+   <exelink qstep="3" npc="n724_karahan" sub="4">0,1,2,3,4,5</exelink>
+   <exelink qstep="4" npc="n725_charty" sub="b">0</exelink>
+   <exelink qstep="4" npc="n725_charty" sub="c">1</exelink>
+   <journal_data recompense="7320" quest_title="치료제를 만듭니다" chapterid="6" quest_level="42" quest_mark_type="1" use_item_list="300382,300383,300384,300385">
+      <journal index="1">
+         <contents_image>QN_Npc_karahan.dds</contents_image>
+         <destination_pos>14,n724</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>724</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Medicines I]]></title>
+         <contents mid="34"><![CDATA[<html>Talk with Karahan to find how to treat the natives.<BR><BR><FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82425>→ Karahan</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Talk with Karahan in Riverwort Wharf]]></destination>
+         <todo_msg mid="36"><![CDATA[Talk with Karahan in Riverwort Wharf]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>14,0,0</destination_pos>
+         <destination_mode>custom:14@4,521@3,522@3,523@3,511@3,551@3,552@3,553@3,554@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Medicines II]]></title>
+         <contents mid="38"><![CDATA[<html>Karahan said he needed three ingredients to make a treatment. Black mushroom is found in East Ancient Armory. Rotten moss is found in Ancient Library. Jungle waterparsley is found in Riverwort Village Ruins.<BR><BR><FONT color=#086171>Riverwort Wharf (Entrance to Ancient Warehouse)</FONT> <FONT color=#a82425>→ Ancient Library</FONT><BR><FONT color=#086171>Riverwort Wharf (Entrance to Ancient Warehouse)</FONT> <FONT color=#a82424>→ East Ancient Armory<BR></FONT><FONT color=#086171>Riverwort Wharf (Riverwort Ruins)</FONT> <FONT color=#a82424>→ Riverwort Village Ruins</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Collecting Ingredients]]></destination>
+         <todo_msg mid="40"><![CDATA[Collect ingredients of treatment.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_karahan.dds</contents_image>
+         <destination_pos>14,n724</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>724</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Medicines III]]></title>
+         <contents mid="42"><![CDATA[<html>I just collected all ingredients.<BR>Go back to Riverwort Wharf and deliver them to Karahan.<BR><BR><FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82425>→ Karahan</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk with Karahan in Riverwort Wharf]]></destination>
+         <todo_msg mid="44"><![CDATA[Deliver them to Riverwort Wharf's Karahan.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Charty.dds</contents_image>
+         <destination_pos>14,n725</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>725</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Medicines IV]]></title>
+         <contents mid="46"><![CDATA[<html>Let's talk about how to deliver the medicine to Charti and the natives.<BR><BR><FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82425>→ Charti</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Talk with Riverwort Wharf's Charti]]></destination>
+         <todo_msg mid="48"><![CDATA[Talk with Charti.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>731</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

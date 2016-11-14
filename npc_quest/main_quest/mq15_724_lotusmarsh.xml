@@ -1,0 +1,208 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_724_lotusmarsh</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>724</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>725</nextqid>
+      <nextqname>mq15_725_karakule</nextqname>
+      <nextqnpc>n754_cian</nextqnpc>
+      <qkname mid="1"><![CDATA[Here is Lotus Marsh]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>754</npcid>
+         <npcename>n754_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Warrior Xian$<BR>... If I hadn't been there, Geraint wouldn't have died.<BR>I'm so foolish.<BR>※ <FONT color=#7e12d3>You can get a quest in Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>I arrived at Lotus Marsh.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_02.ogg}<BR><FONT color=#387206>{user_nick}</FONT>.<BR><FONT color=#7e12d3>(Jasmine's voice sounds tired)</FONT><BR>How are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-1-a" mid="10"><![CDATA[<html>I arrived at Lotus Marsh.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_02.ogg}<BR><FONT color=#387206>{user_nick}</FONT>.<BR><FONT color=#7e12d3>(Jasmine's voice sounds tired)</FONT><BR>How are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-1-b" mid="12"><![CDATA[<html>What...? Didn't you say the prophet appeared in Lotus Marsh?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Academic Jasmine$<BR>It's useless. It's already late....<BR>Even I tried to imagine all kinds of ways, at that moment, there wasn't any possibility to get the prophet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-1-c" mid="14"><![CDATA[<html>No way.... What should I do now...?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Academic Jasmine${sound:npc_LM_Jasmin_sp_08.ogg}<BR>No. We need to give up.<BR>
+It's better to give up....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-1-d" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Academic Jasmine$<BR>We're discussing what to do next.<BR>As soon as decision is made, I'll tell you.<BR>Then....<BR><FONT color=#7e12d3>(Jasmine turns off the communication)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1-d" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d3>(Communication with Jasmine is turned off. Go to Riverwort Wharf and meet with Warrior Xian)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Warrior Xian$<BR>... If I hadn't been there, Geraint wouldn't have died.<BR>I'm so foolish.<BR>※ <FONT color=#7e12d3>You can get a quest in Academic Station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Academic Station$<BR>
+※ Mission Object.<BR>
+※ <FONT color=#7e12d3>Go to Riverwort Wharf to meet with Warrior Xian.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n754_cian-2-a" mid="25"><![CDATA[<html>No. Do you feel better...?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Warrior Xian$<BR>Ah, <FONT color=#387206>{user_nick}</FONT>, I'm sorry!<BR><FONT color=#7e12d3>(Xian lowers his head)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n754_cian-2-b" mid="27"><![CDATA[<html>Did you bring a jewel to Argenta?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Warrior Xian$<BR>I never feel better because I'm still thinking that I'm a fool.<BR>... but I can't just do nothing.<BR>To repay<FONT color=#a82425>Geraint</FONT>, I'll do everything.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n754_cian-2-c" mid="29"><![CDATA[<html>Yeah....so what're you going to do?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Warrior Xian$<BR>Yes.... <FONT color=#a82425>Argenta</FONT>looked so angry.<BR>He might be so sad about the loss because Geraint was like a sister for him.<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-c" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n754_cian-2-d" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Warrior Xian$<BR>After Geraint's death, dragon's seal was broken so I need to stop spreading it.... And I have to treat Triana who got injured because of me.<BR><FONT color=#7e12d3>(Xian says in a low tone)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-d" image="" itemindex="">
+      <talk_answer link_index="n754_cian-2-e" mid="33"><![CDATA[<html>I had things to do..., but it seems failed....</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Warrior Xian$<BR>In fact, I was wondering if I can ask <FONT color=#387207>{user_nick}</FONT> to help me. If you don't have things to do, can you help me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-e" image="" itemindex="">
+      <talk_answer link_index="n754_cian-2-f" mid="35"><![CDATA[<html>You're not afraid of seeing failure in front of you?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Warrior Xian$<BR>Seems failed...? You don't look confident.<BR>I might be out of line but.... You haven't seen the end but you said it seems failed. It's too early to say that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-f" image="" itemindex="">
+      <talk_answer link_index="n754_cian-2-g" mid="37"><![CDATA[<html>I also... want to check it by myself.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Warrior Xian$<BR>
+No. It's maybe because that I'm foolish.<BR>
+I couldn't believe anything until I checked by myself.<BR>
+So I ignored <FONT color=#387207>{user_nick}</FONT>'s advice....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-g" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n754_cian-2-h" mid="39"><![CDATA[<html>Thank you.... but, where is Argenta now?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Warrior Xian$<BR>
+Haha~.<BR>
+<FONT color=#7e12d3>(Xian scratches his head)</FONT><BR>
+I think that doing the best whatever it takes is better than doing nothing with regrets! At least, you won't feel shame.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-h" image="QW_Karakule_House.dds" itemindex="">
+      <talk_answer link_index="n754_cian-2-i" mid="42"><![CDATA[<html>I'd better meet Argenta and ask her advice.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#a82424>Argenta </FONT>is still in <FONT color=#a82425>Karacule's Hut</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-i" image="" itemindex="">
+      <talk_answer link_index="n754_cian-2-!next" mid="44"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">724</exe>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n394_academic_station-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7240,,,,,,</exe>
+         <exe type="complete">724</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n394_academic_station" sub="b" />
+   <exelink qstep="1" npc="n394_academic_station" sub="c" />
+   <exelink qstep="1" npc="n394_academic_station" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n754_cian" sub="b" />
+   <exelink qstep="2" npc="n754_cian" sub="c" />
+   <exelink qstep="2" npc="n754_cian" sub="d" />
+   <exelink qstep="2" npc="n754_cian" sub="e" />
+   <exelink qstep="2" npc="n754_cian" sub="f" />
+   <exelink qstep="2" npc="n754_cian" sub="g" />
+   <exelink qstep="2" npc="n754_cian" sub="h" />
+   <exelink qstep="2" npc="n754_cian" sub="i">0</exelink>
+   <exelink qstep="2" npc="n754_cian" sub="!next">1</exelink>
+   <journal_data recompense="7240" quest_title="로터스마쉬 입니다" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>15,n394</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>394</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Lotus Marsh I]]></title>
+         <contents mid="48"><![CDATA[<html>I just arrived at Lotus Marsh. Connect to Academic Station and call Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Connect to Lotus Marsh's Academic Station]]></destination>
+         <todo_msg mid="50"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>14,n754</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>754</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Lotus Marsh II]]></title>
+         <contents mid="53"><![CDATA[<html>Jasmine said that the mission was failed, and told me that she will call me later when the next plan settles. Go to Riverwort Wharf to meet Warrior Xian.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf</FONT> <FONT color=#a82425>→ Warrior Xian</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[In Riverwort Wharf, talk with Warrior Xian]]></destination>
+         <todo_msg mid="55"><![CDATA[In Riverwort Wharf, meet with Warrior Xian.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>399</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

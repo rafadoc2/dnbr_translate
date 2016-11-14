@@ -1,0 +1,405 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9306_plate_of_eggs</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>9306</qid>
+      <designer>김인정</designer>
+      <qlevel>28</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9307</nextqid>
+      <nextqname>mq11_9307_nest_manifest</nextqname>
+      <nextqnpc>n518_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[한 접시의 달걀]]></qkname>
+      <qnpc>
+         <npcid>1147</npcid>
+         <npcename>n1147_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1148</npcid>
+         <npcename>n1148_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>518</npcid>
+         <npcename>n518_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>520</npcid>
+         <npcename>n520_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="359" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>$더글라스 장군$<BR>금발머리의 검사가 검은기사를 쫓아 검은 영지 수비대 거점 쪽으로 진입했다는 보고를 받았네.<BR>우리들의 정보는 아직 부족해서 대규모 병력을 그 안쪽까지는 이동시킬 수가 없었지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="361" select_type="3" />
+      <talk_question mid="360"><![CDATA[<html>$더글라스 장군$<BR>하지만 모험자길드의 협조로 내부 지도의 일부도 입수했고, 지금도 정찰대를 파견해 두었으니 곧 안까지 진입할 수 있을걸세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-" mid="561" select_type="5" />
+      <talk_question mid="560"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(헤르말테 포구에서 소서리스 안젤리카와 대화하던 중이었지?</FONT><BR>
+<FONT color=#662500>우선 대화를 마치고 올까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-1-" mid="563" select_type="5" />
+      <talk_question mid="562"><![CDATA[<html>$워리어 시안$<BR>어서 선지자를 구출해서 모두모두 행복해지면 좋겠습니다! 하하!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-1-" mid="565" select_type="5" />
+      <talk_question mid="564"><![CDATA[<html>$루나리아$<BR>저기에 있는 소서리스에게 말을 걸 거지?<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-1-" mid="567" select_type="5" />
+      <talk_question mid="566"><![CDATA[<html>$소서리스 안젤리카$<BR>
+힘 내라고~!<BR>
+내가 뒤에서 잘 지켜봐 줄테니깐~ 우후훗~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-1" image="QW_32.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n520_angelica-1-a" mid="570" select_type="2" />
+      <talk_question mid="569"><![CDATA[<html>$소서리스 안젤리카$<BR>내가 받은 의뢰가 뭐냐면, <FONT color=#a82424>강하류 폐허</FONT>로 가는 거야.<BR>뭘 찾아와 달라는 의뢰를 받았거든?<BR>
+이런 비상시국에 귀족 아가씨의 한가한 의뢰라 마음에 안 들긴 하지만...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-1-a" image="QW_32.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n520_angelica-2" mid="572" select_type="2" />
+      <talk_question mid="571"><![CDATA[<html>$소서리스 안젤리카$<BR>으응? 뭘 찾느냐고? 우후후후~ 그건 이 안젤리카 님이 알아서 할게.<BR>당신은 <FONT color=#a82424>{monster:913}</FONT> 퇴치를 도와주기만 하면 돼.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2" image="QW_32.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n520_angelica-2-" mid="576" select_type="5" />
+      <talk_question mid="575"><![CDATA[<html>$소서리스 안젤리카$<BR>
+자, 어서 <FONT color=#a82424>강하류 폐허</FONT>로 가자고.<BR>
+앞장 서~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-a" mid="580" select_type="2" />
+      <talk_question mid="579"><![CDATA[<html>$소서리스 안젤리카$<BR>휴~ 덕분에 의뢰를 무사히 마쳤어.<BR>돌아가서 보고만 하면 되겠네. 호호호~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-a" image="QN_Npc_Edan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-b" mid="583" select_type="2" />
+      <talk_question mid="582"><![CDATA[<html>$소서리스 안젤리카$<BR>에단 녀석은 무슨 의뢰를 받아서 어딜 싸돌아다니길래 그림자도 안 보인담?<BR>나 참... 파문을 당했다더니 여전히 <FONT color=#a82424>교단</FONT>에 질질 끌려다니는 꼴 하고는.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-b" image="QN_Npc_Edan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-c" mid="585" select_type="2" />
+      <talk_question mid="584"><![CDATA[<html>$소서리스 안젤리카$<BR>이래서 클레릭들은 안 된다니까?<BR>
+태생이 도련님이라 그런지, 꽉 막혀서 쓸모가 없어.<BR><FONT color=#7e12d2>(안젤리카가 투덜거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-c" image="QW_ManaRidge.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-d" mid="587" select_type="2" />
+      <talk_question mid="586"><![CDATA[<html>$소서리스 안젤리카$<BR>...뭐, 마나리지에서 여기까지 동행한 정이 있으니까 마음 넓은 내가 봐 줘야지.<BR>서로 돕고 살아야 하는 거잖아. 안 그래? 이런 것도 다 인연이라면 인연이니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-e" mid="590" select_type="2" />
+      <talk_question mid="589"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(인연이라...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-e" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-f" mid="592" select_type="0"><![CDATA[<html>그 아가씨?</html>]]></talk_answer>
+      <talk_answer link_index="n1148_angelica-3-f" mid="593" select_type="0"><![CDATA[<html>루나리아 말인가요?</html>]]></talk_answer>
+      <talk_question mid="591"><![CDATA[<html>$소서리스 안젤리카$<BR>다른 모험자들도 그래. 뭐... 모처럼 같은 목적 아래 모인 거니까, 다들 정보도 나누고 격려하면서 일을 하면 좋지.<BR>다칠 확률도 줄어들고 마음도 든든하고. 당신도 그래서 <FONT color=#a82424>그 아가씨</FONT>와 함께 다니는 것 아냐?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-f" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-g" mid="595" select_type="2" />
+      <talk_question mid="594"><![CDATA[<html>$소서리스 안젤리카$<BR>이름은 잘 모르겠지만... 계속 같이 다니는 그 아가씨.<BR><FONT color=#7e12d2>(안젤리카가 어깨를 으쓱거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-h" mid="597" select_type="2" />
+      <talk_question mid="596"><![CDATA[<html>$소서리스 안젤리카$<BR><FONT color=#a82424>동료</FONT>잖아? 소중하게 대해 주라고.<BR>그치만 언제까지나 그렇게 단 둘이 다니는 것 피곤할 텐데, 괜찮으면 이쪽에 끼워 줄게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-h" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-3-i" mid="599" select_type="2" />
+      <talk_question mid="598"><![CDATA[<html>$소서리스 안젤리카$<BR>뭐 당장 그러라는 건 아니고. 일단은 <FONT color=#a82424>검은 기사</FONT>를 쫓는 게 먼저니까 슬슬 돌아가서 상황을 좀 볼까나~<BR>다른 모험자들하고는 <FONT color=#a82424>검은 산자락</FONT>에서 만나기로 했거든. 당신도 같이 갈래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-3-i" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-4" mid="602" select_type="2" />
+      <talk_question mid="601"><![CDATA[<html>${user_nick}$<BR>아, 저는 일단은 동행이 있으니까...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1148_angelica-4" image="QW_HermaltePort.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n1148_angelica-4-" mid="605" select_type="5" />
+      <talk_question mid="604"><![CDATA[<html>$소서리스 안젤리카$<BR>아, 그래. 당신에겐 그 아가씨가 있었지?<BR><FONT color=#a82424>헤르말테 포구</FONT>의 그 아가씨에게 돌아가는 거로구나~ 착실하네. 후후후.<BR>
+그럼 다음에 보자구~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-4-" mid="607" select_type="5" />
+      <talk_question mid="606"><![CDATA[<html>$더글라스 장군$<BR>
+음? <FONT color=#a82424>헤르말테 포구</FONT>로 갔던 일은 잘 끝났는가?<BR>
+내 눈에는 아직인 것 같군 그래.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-4" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n520_angelica-4-" mid="609" select_type="5" />
+      <talk_question mid="608"><![CDATA[<html>$소서리스 안젤리카$<BR>
+틀렸어! 대화 상태가 틀렸다구!<BR>
+내가 아니라 저쪽에 서 있는 당신 동행 아가씨에게 말을 걸어야지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-a" mid="615" select_type="0"><![CDATA[<html>너도 같이 가야지.</html>]]></talk_answer>
+      <talk_answer link_index="n1147_lunaria-4-a" mid="616" select_type="0"><![CDATA[<html>너와 함께 가려고.</html>]]></talk_answer>
+      <talk_question mid="610"><![CDATA[<html>$루나리아$<BR>검은 기사를 쫓는다고?<BR>흐음... 이해했어. 그러면, 혼자서 가지 그래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-b" mid="613" select_type="2" />
+      <talk_question mid="612"><![CDATA[<html>$루나리아${action:Talk}<BR>나하고?<BR><FONT color=#387206>{user_nick}</FONT>, 말 했지만... 다른 사람들과 있을 때 시간이동 하게 되면 네가 곤란해 질 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-c" mid="619" select_type="2" />
+      <talk_question mid="618"><![CDATA[<html>$루나리아$<BR>네가 자리를 비운 틈에 내가 사라질까 봐 걱정하는 거라면, 그럴 필요는 없어.<BR>이 세계에서 너만큼 나와 가까운 존재는 없으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-d" mid="621" select_type="0"><![CDATA[<html>너는 내 동료니까.</html>]]></talk_answer>
+      <talk_answer link_index="n1147_lunaria-4-e" mid="622" select_type="0"><![CDATA[<html>우린 한 팀이잖아?</html>]]></talk_answer>
+      <talk_answer link_index="n1147_lunaria-4-f" mid="623" select_type="0"><![CDATA[<html>너를 혼자 둘 수 없어.</html>]]></talk_answer>
+      <talk_question mid="620"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그런 게 아니라......</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-f" mid="625" select_type="2" />
+      <talk_question mid="624"><![CDATA[<html>$루나리아$<BR>동료?<BR>......너하고 내가?<BR><FONT color=#7e12d2>(루나리아가 모호한 표정을 짓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-g" mid="627" select_type="2" />
+      <talk_question mid="626"><![CDATA[<html>$루나리아$<BR>한 팀? 흐음... 글쎄. 너와 나는 목적이 같아서 함께 있는 것 아냐?<BR>보통은 이해하기 힘든 비밀을 공유하고 있기 때문에.<BR>
+단지 그 이유잖아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-g" mid="629" select_type="2" />
+      <talk_question mid="628"><![CDATA[<html>$루나리아$<BR>나는 언제나 혼자서 살아 왔어.<BR>...네가 상상할 수 있는 것보다 더 긴 세월을.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-h" mid="631" select_type="2" />
+      <talk_question mid="630"><![CDATA[<html>$루나리아$<BR>그러니까 네 기준으로 판단할 필요는 없어.<BR>
+걱정할 필요도 없고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-i" mid="634" select_type="2" />
+      <talk_question mid="633"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그래도 말야, 생각해 봤는데...... 뭐랄까...</FONT><BR>
+<FONT color=#662500>루나리아 너도 좋아서 그런 건 아닐 거잖아. 너나 나나 어쩔 수 없다는 건 마찬가지야.</FONT><BR>
+<FONT color=#662500>같은 신세... 그러니까...... 음...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-j" mid="636" select_type="2" />
+      <talk_question mid="635"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>같은 종류</FONT>... 라고 말하고 싶은 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-4-k" mid="638" select_type="2" />
+      <talk_question mid="637"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아, 그래. 뭐 그 비슷한 거.<BR>너하고 나는 한 접시에 담긴 달걀 같은 거야. 그러니까...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-4-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-5" mid="640" select_type="2" />
+      <talk_question mid="639"><![CDATA[<html>$루나리아$<BR>그러니까 <FONT color=#a82424>같이 가자</FONT>...<BR>그렇게 말하려는 거로구나?<BR>
+이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-5" image="QW_SkirtOfBlackMountain.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-5-a" mid="643" select_type="2" />
+      <talk_question mid="642"><![CDATA[<html>$루나리아$<BR>그러면, <FONT color=#a82424>검은 산자락</FONT>으로 가는 거라고 했지?<BR>앞장 서도록 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1147_lunaria-5-a" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1147_lunaria-5-" mid="645" select_type="5" />
+      <talk_question mid="644"><![CDATA[<html>$루나리아$<BR>출발하기 전에 한가지 더. 혹시 세인트헤이븐에 갈 일이 있으면, 미리 다녀와.<BR>
+왠지 한 번 길을 떠나면 금방 돌아오지 못할 것 같거든.<BR>
+...아닐 수도 있지만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-5-a" mid="647" select_type="2" />
+      <talk_question mid="646"><![CDATA[<html>$워리어 시안$<BR>어? <FONT color=#387206>{user_nick}</FONT> 님!<BR>역시 소서리스 안젤리카 님 말씀대로, <FONT color=#387206>{user_nick}</FONT> 님도 오셨군요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-5-b" mid="651" select_type="4" />
+      <talk_question mid="650"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-5-!next" mid="670" select_type="2" />
+      <talk_question mid="669"><![CDATA[<html>$워리어 시안$<BR>장군 더글라스 님께서 정예병사들을 파견했습니다. 다른 모험자들도 출발했고, 저도 가려던 중입니다.<BR><FONT color=#387206>{user_nick}</FONT> 님도 서두르세요!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9306</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="4,5,6" onexe="">913</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200913</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 913);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93060,,,,,,,</exe>
+         <exe type="complete" true="">9306</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n520_angelica" sub="2">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n1148_angelica" sub="b" />
+   <exelink qstep="3" npc="n1148_angelica" sub="c" />
+   <exelink qstep="3" npc="n1148_angelica" sub="d" />
+   <exelink qstep="3" npc="n1148_angelica" sub="e" />
+   <exelink qstep="3" npc="n1148_angelica" sub="f" />
+   <exelink qstep="3" npc="n1148_angelica" sub="f" />
+   <exelink qstep="3" npc="n1148_angelica" sub="g" />
+   <exelink qstep="3" npc="n1148_angelica" sub="h" />
+   <exelink qstep="3" npc="n1148_angelica" sub="i" />
+   <exelink qstep="3" npc="n1148_angelica" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n1147_lunaria" sub="b" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="c" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="d" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="e" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="f" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="f" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="g" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="g" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="h" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="i" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="j" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="k" />
+   <exelink qstep="4" npc="n1147_lunaria" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n1147_lunaria" sub="" />
+   <exelink qstep="5" npc="n518_cian" sub="a">0</exelink>
+   <exelink qstep="5" npc="n518_cian" sub="b">1</exelink>
+   <exelink qstep="5" npc="n518_cian" sub="!next" />
+   <journal_data recompense="93060" quest_title="한 접시의 달걀" chapterid="4" quest_level="28" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Angelica.dds</contents_image>
+         <destination_pos>12,n520</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>520</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="342"><![CDATA[한 접시의 달걀I]]></title>
+         <contents mid="343"><![CDATA[<html>헤르말테 포구에서 소서리스 안젤리카와 대화하세요.<BR><BR><FONT color=#086171>헤르말테 포구</FONT> <FONT color=#a82424>- 소서리스 안젤리카</FONT></html>]]></contents>
+         <destination mid="344"><![CDATA[헤르말테 포구에서 소서리스 안젤리카와 대화]]></destination>
+         <todo_msg mid="345"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_32.dds</contents_image>
+         <destination_pos>324,0,0</destination_pos>
+         <destination_mode>custom:322@3,323@3,324@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="652"><![CDATA[한 접시의 달걀II]]></title>
+         <contents mid="653"><![CDATA[<html>강하류 폐허로 가서 마물을 퇴치하자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(강하류 폐허 입구)</FONT> <FONT color=#a82424>- 강하류 폐허</FONT></html>]]></contents>
+         <destination mid="654"><![CDATA[강하류 폐허]]></destination>
+         <todo_msg mid="655"><![CDATA[강하류 폐허로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_32.dds</contents_image>
+         <destination_pos>324,n1148</destination_pos>
+         <destination_mode>custom:322@1,323@1,324@1</destination_mode>
+         <statemark_npcid>1148</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="656"><![CDATA[한 접시의 달걀III]]></title>
+         <contents mid="657"><![CDATA[<html>마물 퇴치를 끝냈다.<BR>
+소서리스 안젤리카와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구(강하류 폐허 입구)</FONT> <FONT color=#a82424>- 강하류 폐허(소서리스 안젤리카)</FONT></html>]]></contents>
+         <destination mid="658"><![CDATA[강하류 폐허에서 소서리스 안젤리카와 대화]]></destination>
+         <todo_msg mid="659"><![CDATA[마물 퇴치를 마쳤습니다. 소서리스 안젤리카와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>12,n1147</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1147</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="661"><![CDATA[한 접시의 달걀IV]]></title>
+         <contents mid="662"><![CDATA[<html>소서리스 안젤리카와 헤어졌다. 루나리아에게 돌아가자.<BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="663"><![CDATA[헤르말테 포구에서 루나리아와 대화]]></destination>
+         <todo_msg mid="664"><![CDATA[헤르말테 포구에서 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_SkirtOfBlackMountain.dds</contents_image>
+         <destination_pos>13,n518</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>518</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="665"><![CDATA[한 접시의 달걀V]]></title>
+         <contents mid="666"><![CDATA[<html>루나리아와 함께 검은 대군주의 영지 방향으로 가야한다.<BR>검은 산자락으로 나가자.<BR><BR><FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="667"><![CDATA[검은 산자락에서 워리어 시안과 대화]]></destination>
+         <todo_msg mid="668"><![CDATA[검은 산자락으로 가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9305</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

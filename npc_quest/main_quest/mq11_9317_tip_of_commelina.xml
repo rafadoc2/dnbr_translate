@@ -1,0 +1,296 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9317_tip_of_commelina</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9317</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc>정령의 눈물	300246
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9318</nextqid>
+      <nextqname>mq11_9318_fade_off_disciple</nextqname>
+      <nextqnpc>n1151_academic</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[코멜리나의 정보]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1151</npcid>
+         <npcename>n1151_academic</npcename>
+         <npckname>아카데믹 코멜리나 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$상급 아처 이실리엔$<BR>일 년도 십 년도 똑 같은 과거일뿐.<BR>중요한 것은, 무엇을 기억하고 있는가 하는 거예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-" mid="1660" select_type="5" />
+      <talk_question mid="1659"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(아참. 그러고보니 아카데믹 코멜리나와 검은 산자락에서 대화해야 한다는 걸 잊고 있었다.<BR>병사들의 후유증을 치료하기 위한 약 이야기를 했었는데...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="1663" select_type="5" />
+      <talk_question mid="1662"><![CDATA[<html>$루나리아$<BR>저쪽의 꼬마 모험자를 만나려는 거지?<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-1-a" mid="1667" select_type="2" />
+      <talk_question mid="1666"><![CDATA[<html>$아카데믹 코멜리나$<BR>연구에 따라 밝혀진 증세억제제의 재료는, 정령의 눈물을 다른 진통제와 섞어 사용하는 겁니다.<BR><FONT color=#387206>{user_nick}</FONT> 님께서 정령의 눈물을 구해와 주신다면, 저는 다른 재료를 구하겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-1-b" mid="1669" select_type="2" />
+      <talk_question mid="1668"><![CDATA[<html>$아카데믹 코멜리나$<BR>정령의 눈물을 구해서 조금 번거로우시겠지만, 마을의 <FONT color=#a82424>상급 아처 이실리엔</FONT> 님께 전해 주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1-b" image="QS_Default.dds" itemindex="300246" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2" mid="1671" select_type="2" />
+      <talk_question mid="1670"><![CDATA[<html>$아카데믹 코멜리나$<BR>정령의 눈물을 구할 수 있는 곳은... 음......<BR><FONT color=#7e12d2>(코멜리나가 슬쩍 손에 들고 있는 것을 들여다 본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2" image="QW_38.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-a" mid="1673" select_type="2" />
+      <talk_question mid="1672"><![CDATA[<html>$아카데믹 코멜리나$<BR>정령의 눈물이란 <FONT color=#a82424>죽은 도시의 길목</FONT>에서 구할 수 있다고 데이터에... 아차! 조사 결과에 나와 있습니다.<BR>부탁드리겠습니다.<BR><FONT color=#7e12d2>(코멜리나가 몹시 공손하게 고개를 숙인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-a" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-" mid="1675" select_type="5" />
+      <talk_question mid="1674"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(데이터? 무슨 소린지... </FONT><FONT color=#662500>아무튼 특이한 여자아이야.</FONT><BR>
+<FONT color=#662500>루나리아도 만만치 않게 특이하긴 하지만.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="QW_38.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-" mid="1677" select_type="5" />
+      <talk_question mid="1676"><![CDATA[<html>$루나리아$<BR>죽은 도시의 길목?<BR>멀리 가네...<BR>수고가 많아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-3" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-3-" mid="1679" select_type="5" />
+      <talk_question mid="1678"><![CDATA[<html>$루나리아$<BR>왜 여기로 왔어? 상급 아처 이실리엔에게 가는 거 아니었어?<BR>저런, 잊어버린 모양이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-3" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-3-" mid="1681" select_type="5" />
+      <talk_question mid="1680"><![CDATA[<html>$아카데믹 코멜리나$<BR>정령의 눈물을 구하셨군요.<BR>조금 번거로우시겠지만, 그것을 마을의 <FONT color=#a82424>상급 아처 이실리엔</FONT> 님께 전해 주십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="1686" select_type="2" />
+      <talk_question mid="1684"><![CDATA[<html>$상급 아처 이실리엔$<BR>이건...?<BR>아하, 스타쉬 님께서 말씀하신 그 치료제로군요.<BR>
+의외의 분이 가져와 주셔서 놀랐습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="QS_Default.dds" itemindex="300246" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-b" mid="1688" select_type="2" />
+      <talk_question mid="1687"><![CDATA[<html>$상급 아처 이실리엔$<BR>이거라면 병사들도 조금은 병의 고통에서 벗어날 수 있겠지요.<BR>감사합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-b" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-4" mid="1690" select_type="2" />
+      <talk_question mid="1689"><![CDATA[<html>$상급 아처 이실리엔$<BR>아카데믹 코멜리나 님께서는 조금 전에 다른 재료들을 모아 오셨답니다.<BR>당신이 도착하면 "<FONT color=#a82424>번거로우시겠지만 검은 산자락으로 한 번 더 와 주십시오</FONT>" 라고 전해 달라더군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-a" mid="1692" select_type="2" />
+      <talk_question mid="1691"><![CDATA[<html>$상급 아처 이실리엔$<BR><FONT color=#a82424>아카데믹 코멜리나</FONT> 양이 어떤 사람이냐고요?<BR>글쎄요... 중요한 건, 지금 무엇을 하는 사람인가 하는 점이 아닐까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-a" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-" mid="1694" select_type="5" />
+      <talk_question mid="1693"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(검은 산자락으로 가서 다시 한 번 그 소녀를 만나 보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-a" mid="1696" select_type="2" />
+      <talk_question mid="1695"><![CDATA[<html>$아카데믹 코멜리나$<BR>여러 번 성가시게 만들어서 정말 죄송합니다.<BR>부탁을 들어 주신 덕분에 다른 분들께도 도움이 될 수 있어서 기뻤어요.<BR><FONT color=#7e12d2>(코멜리나가 몹시 공손하게 고개를 숙인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-b" mid="1698" select_type="2" />
+      <talk_question mid="1697"><![CDATA[<html>$아카데믹 코멜리나$<BR>갑작스러운 이야기겠지만, 여쭙고 싶은 게 있습니다.<BR>지난 번에 <FONT color=#387206>{user_nick}</FONT> 님께서는 <FONT color=#a82424>블랙 드래곤의 행방</FONT>을 알고 싶다고 하셨죠?<BR>
+그 이유를 여쭤도 될까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-b" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-c" mid="1700" select_type="2" />
+      <talk_question mid="1699"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>블랙 드래곤.</FONT><BR>
+<FONT color=#662500>그러니까 벨스커드라는 사람을 만나고 싶어서...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-c" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-d" mid="1702" select_type="2" />
+      <talk_question mid="1701"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#7e12d2>(코멜리나가 잔뜩 긴장한다)<BR></FONT>어째서 그분을... 만나고 싶으신 거죠?<BR>
+그분은 당신들의... 아니... 저... 그, 드래곤 레이드에 참가한 분들께는 적처럼 보이지 않나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-e" mid="1704" select_type="0"><![CDATA[<html>그가 적일지도 모른다. 하지만...</html>]]></talk_answer>
+      <talk_answer link_index="n1151_academic-4-e" mid="1705" select_type="0"><![CDATA[<html>물론 그가 전쟁의 원흉이지만...</html>]]></talk_answer>
+      <talk_question mid="1703"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그분...?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-f" mid="1707" select_type="2" />
+      <talk_question mid="1706"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그렇지만, 그는 나를 아는 것 같았거든요.<BR>저는 어떤 이유 때문에 저 자신에 대해 더 알아야만 합니다. 정보가 필요해요.<BR>마땅한 단서가 별로 없어요. 지금은 그가 혹 제게 정보를 줄 수 있을지도 모른다는 것이 희망입니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-f" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-g" mid="1709" select_type="2" />
+      <talk_question mid="1708"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(엄밀히 말하자면 나라기보다는 일루전을 아는 거겠지만.</FONT><BR>
+<FONT color=#662500>아마도.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-h" mid="1711" select_type="2" />
+      <talk_question mid="1710"><![CDATA[<html>$아카데믹 코멜리나$<BR>당신의 정체......?<BR><FONT color=#7e12d2>(코멜리나가 고개를 갸웃거리며 심각한 표정으로 고민에 잠긴다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-i" mid="1714" select_type="2" />
+      <talk_question mid="1713"><![CDATA[<html>$아카데믹 코멜리나$<BR>당신은 나쁜 분이 아니라는 것 알아요. 그러니까 비밀이지만...<BR>다른 누구에게도 말하지 않겠지만, 당신에게는 제가 아는 것을 말씀드릴게요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-j" mid="1718" select_type="4" />
+      <talk_question mid="1717"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-4-!next" mid="1737" select_type="2" />
+      <talk_question mid="1736"><![CDATA[<html>$아카데믹 코멜리나$<BR>대신, 한 가지만 더 제 부탁을 들어 주신다면요.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9317</exe>
+         <exe type="talk" npc="n39n044_archer_master_ishilien">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1028</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201028</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300246</exe>
+         <exe type="addquestitem" num="1">300246</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300246</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93170,,,,,,,</exe>
+         <exe type="complete" true="">9317</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1151_academic" sub="b" />
+   <exelink qstep="1" npc="n1151_academic" sub="2">0,1,2,3,4</exelink>
+   <exelink qstep="2" npc="n1151_academic" sub="" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="" />
+   <exelink qstep="4" npc="n1151_academic" sub="b" />
+   <exelink qstep="4" npc="n1151_academic" sub="c" />
+   <exelink qstep="4" npc="n1151_academic" sub="d" />
+   <exelink qstep="4" npc="n1151_academic" sub="e" />
+   <exelink qstep="4" npc="n1151_academic" sub="e" />
+   <exelink qstep="4" npc="n1151_academic" sub="f" />
+   <exelink qstep="4" npc="n1151_academic" sub="g" />
+   <exelink qstep="4" npc="n1151_academic" sub="h" />
+   <exelink qstep="4" npc="n1151_academic" sub="i">0</exelink>
+   <exelink qstep="4" npc="n1151_academic" sub="j">1</exelink>
+   <exelink qstep="4" npc="n1151_academic" sub="!next" />
+   <journal_data recompense="93170" quest_title="코멜리나의 정보" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="300246">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>13,n1151</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1151</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1719"><![CDATA[코멜리나의 정보I]]></title>
+         <contents mid="1720"><![CDATA[<html>아카데믹 코멜리나에게 병사들의 병을 억제하게 위한 치료제 이야기를 듣자.<BR><BR><FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 아카데믹 코멜리나</FONT></html>]]></contents>
+         <destination mid="1721"><![CDATA[검은 산자락에서 코멜리나와 대화]]></destination>
+         <todo_msg mid="1722"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_38.dds</contents_image>
+         <destination_pos>384,0,0</destination_pos>
+         <destination_mode>custom:381@3,382@3,384@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1723"><![CDATA[코멜리나의 정보II]]></title>
+         <contents mid="1724"><![CDATA[<html>죽은 도시의 길목에서 정령들의 눈물을 구하도록 하자.<BR><BR><FONT color=#086171>헤르말테 포구(검은 광산 입구)</FONT> - 죽은 도시의 길목</html>]]></contents>
+         <destination mid="1725"><![CDATA[죽은 도시의 길목]]></destination>
+         <todo_msg mid="1726"><![CDATA[죽은 도시의 길목에서 정령들의 눈물을 구하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1727"><![CDATA[코멜리나의 정보III]]></title>
+         <contents mid="1728"><![CDATA[<html>정령의 눈물을 상급 아처 이실리엔에게 전달하자. 이것을 이용하면 병사들의 증세를 완화시킬 수 있다고 한다.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 아처 이실리엔</FONT></html>]]></contents>
+         <destination mid="1729"><![CDATA[세인트헤이븐의 상급 아처 이실리엔과 대화]]></destination>
+         <todo_msg mid="1730"><![CDATA[상급 아처 이실리엔에게 보고하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>13,n1151</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1151</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1732"><![CDATA[코멜리나의 정보IV]]></title>
+         <contents mid="1733"><![CDATA[<html>아카데믹 코멜리나가 용건이 있는 모양이다. 만나러 가 보자.<BR><BR><FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 아카데믹 코멜리나</FONT></html>]]></contents>
+         <destination mid="1734"><![CDATA[검은 산자락에서 코멜리나와 대화]]></destination>
+         <todo_msg mid="1735"><![CDATA[검은 산자락으로 가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9316</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

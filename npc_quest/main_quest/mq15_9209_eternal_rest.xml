@@ -1,0 +1,294 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9209_eternal_rest</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9209</qid>
+      <designer>곽노찬</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9210</nextqid>
+      <nextqname>mq15_9210_return_of_pope</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Conditions for Resting]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>811</npcid>
+         <npcename>n811_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>813</npcid>
+         <npcename>n813_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>818</npcid>
+         <npcename>n818_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>You failed in purifying <FONT color=#a82424>Barnac</FONT>?<BR>I knew that it wasn't going to be easy but... What should we do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Cidel$<BR>First, let's ask <FONT color=#a82424>Terramai</FONT> if he has any plans.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-a" mid="9"><![CDATA[<html>Why did Barnac appear in such a state?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Terrence Terramai$<BR>I hoped Barnac could be purified... But indeed, it was not an easy thing.<BR><FONT color=#7e12d2>(Terramai sighs with a sorrowful face)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Terrence Terramai$<BR>50 years ago, Barnac fought the <FONT color=#a82424>Black Dragon</FONT> at the front line<BR>I was in charge of supporting the party at the back so I escaped unscathed, but Nerwin, Karacule, and Barnac all became poisoned by the Black Dragon's blood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-b" image="" itemindex="">
+      <talk_answer link_index="n811_teramai-1-c" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Terrence Terramai$<BR>Nerwin returned to the hometown of the elves, Anu Arendel, and Karacule treated herself in Lotus Marsh and started looking for cures. <FONT color=#a82424>Barnac</FONT> left for <FONT color=#a82424>Tel Numara</FONT>.<BR>He was trying to look for cures too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-c" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Terrence Terramai$<BR>However, he died there unfortunately.<BR>I hurried to Tel Numara after hearing that his health was not good, but he had left for the world of Goddess Altea before I could do anything....<BR><FONT color=#7e12d2>(Terramai touches his Goddess's coat of arms)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-d" image="" itemindex="">
+      <talk_answer link_index="n811_teramai-1-e" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Terrence Terramai$<BR>I recovered his body and had his funeral and remained there.<BR>I was tormented by the fact that I sat on the pope's seat and shamelessly lived on while the others were all in pain....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-e" image="" itemindex="">
+      <talk_answer link_index="n811_teramai-1-f" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Terrence Terramai$<BR>And one day, I found a <FONT color=#a82424>girl</FONT> surrounded by the Dragon Followers and calling out for help.<BR>When I had saved the girl, her mind and body were both very weak.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-f" image="" itemindex="">
+      <talk_answer link_index="n811_teramai-1-g" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Terrence Terramai$<BR>The first things that she said when she became conscious was about the movement of the Dragon Followers raging in Tel Numara.<BR>
+Her words proved to be true later, and I came to know that it actually was a prophecy and that she was the <FONT color=#a82424>prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-g" image="" itemindex="">
+      <talk_answer link_index="n811_teramai-1-h" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Terrence Terramai$<BR>That was Goddess's blessing....<BR>
+All the prophecies of the prophet were accurate and I used her powers to uproot the evil heretics. But....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-h" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-i" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Terrence Terramai$<BR>Recently, the prophet made a new prophecy....<BR>It was about <FONT color=#a82424>Barnac</FONT>. That he was going to be resurrected by evil powers... It was a prophecy that was hard to believe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-i" image="QW_LotusMarshTown.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-j" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Terrence Terramai$<BR>Unfortunately, the prophecy came true.<BR>Barnac's grave was dug up and the prophet said that he will move to Lotus Marsh. So without hesitation, we came to <FONT color=#a82424>Lotus Marsh</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-j" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-k" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Terrence Terramai$<BR>I don't know who is doing this and for what reason <FONT color=#a82424>Barnac</FONT> is being used but...<BR>I can't leave my friend to wander in this world.<BR>
+I need to return him to peace soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-k" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Terrence Terramai$<BR>
+He spent all his life in saving this world but died all by himself... I can't let him be sacrificed like this again. I will no matter what... give him salvation.<BR>
+Luckily we have the <FONT color=#a82424>prophet</FONT> with us so I believe Goddess's grace is by our side.<BR>
+<FONT color=#7e12d2>(Talk to Rose)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Rose$<BR>...I'm sorry. I couldn't be of much help because my powers were not strong enough. I'm really sorry.<BR><FONT color=#a82424>Terramai</FONT> must be sad....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n813_teramai-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$Terrence Terramai$<BR>Let's go back to Karacule's Hut first and discuss what to do next.<BR>Since Barnac is gone, we have no business here anymore....<BR><FONT color=#7e12d2>(Terramai walks away)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-2" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Terrence Terramai$<BR>I will help Barnac rest in peace no matter what.<BR>Listen to the <FONT color=#a82424>prophet</FONT> and find out if she hears anything else from the Goddess.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2" image="" itemindex="">
+      <talk_answer link_index="n818_rose-2-a" mid="35"><![CDATA[<html>Why would the Dragon Followers have done such thing...?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Rose$<BR>To have used a dead body who is supposed to rest in peace in such evil acts... It's a pity. Barnac himself and Terramai too would feel agonized...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-b" mid="37"><![CDATA[<html>What?! What's that?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Rose$<BR>That's... I'm not sure. I'm sorry. My powers are not strong...<BR><FONT color=#7e12d2>(Rose looks down like she is ashamed)</FONT><BR>But, I think I know what Barnac is after.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-c" mid="39"><![CDATA[<html>Velskud...?!</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Rose$<BR>The Black Knight....<BR><FONT color=#a82424>Velskud</FONT>....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-d" mid="41"><![CDATA[<html>Why Velskud...?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Rose$<BR>...Well, actually I'm scared to even mention his name....<BR><FONT color=#7e12d2>(Rose bites her lip)<BR></FONT>But it's true.<BR>My dream says so.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-d" image="" itemindex="">
+      <talk_answer link_index="n818_rose-2-e" mid="43"><![CDATA[<html>(Terramai speaks)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Rose$<BR>That... I'm not sure too.<BR>
+I just dream....<BR>I saw a scene with Barnac chasing after the Black Knight in my dream so I told you about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-e" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-f" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Terrence Terramai$<BR>I'm not entirely sure but I heard that he worked as an apostle with the name <FONT color=#a82424>Kaleon's Knight</FONT>. Dragon Followers are notorious for being cruel to the betrayers so it might be a plan to punish the betrayer, or maybe trying to take Velskud's power again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-f" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-g" mid="47"><![CDATA[<html>A greater power...?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Rose$<BR>Anyway, I think it'd be impossible to purify Barnac with the method we used just now.<BR>It'd be good if we have a greater power to overpower him....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-g" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-h" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Rose$<BR>We need a medium or a great power that can cut the evil powers that surround Barnac. For example, something like <FONT color=#a82424>dragon's power</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-h" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-i" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Terrence Terramai$<BR>Dragon's power....<BR><FONT color=#7e12d2>(Terramai speaks like he suddenly thought of something)</FONT><BR><FONT color=#387206>{user_nick}</FONT>, I have something to ask you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-i" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-j" mid="53"><![CDATA[<html>Geraint's sword... (tell him where the sword is)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Terrence Terramai$<BR>Yes, <FONT color=#a82424>Geraint's sword</FONT>... Do you have it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-j" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-k" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Terrence Terramai$<BR>What...?! Velskud has that sword?<BR>Oh my Goddess... Hmm.<BR><FONT color=#7e12d2>(Terramai frowns)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-k" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-l" mid="57"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Terrence Terramai$<BR>What a pity....<BR>In this case, we would have to look for <FONT color=#a82424>Velskud</FONT> to try to get the sword back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-l" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-m" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Rose$<BR>
+I think that would be good too.<BR>
+Geraint's sword would be able to overpower the evil powers that control Barnac.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-m" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-n" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Terrence Terramai$<BR>I think we have reached a conclusion.<BR>Since <FONT color=#a82424>Velskud</FONT> is in Lotus Marsh, we should investigate.<BR>We can't stand around doing nothing and just waiting for the next prophecy....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-n" image="" itemindex="">
+      <talk_answer link_index="n818_rose-2-p" mid="65"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-o" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Rose$<BR>Then, I will walk around the hut and pray for the Goddess's prophecy.<BR>And also pray for the salvation of that poor soul....<BR>
+<FONT color=#7e12d2>(Rose politely puts her hands together and prays)</FONT><BR>
+※ <FONT color=#7e12d2>[Chapter 8. Faded Glory] has all been completed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-p" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n818_rose-2-q" mid="79"><![CDATA[<html>I will follow you.</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Terrence Terramai$<BR>To find Velskud, we need the help of the Temple Knights.<BR>I think it's time to go back to the <FONT color=#a82424>Royal Palace</FONT>....<BR>Why don't you come along too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-q" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Terrence Terramai$<BR>Good. Then let's meet at <FONT color=#a82424>Saint Haven</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9209</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92090,,,,,,</exe>
+         <exe type="complete">9209</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n811_teramai" sub="b" />
+   <exelink qstep="1" npc="n811_teramai" sub="c" />
+   <exelink qstep="1" npc="n811_teramai" sub="d" />
+   <exelink qstep="1" npc="n811_teramai" sub="e" />
+   <exelink qstep="1" npc="n811_teramai" sub="f" />
+   <exelink qstep="1" npc="n811_teramai" sub="g" />
+   <exelink qstep="1" npc="n811_teramai" sub="h" />
+   <exelink qstep="1" npc="n811_teramai" sub="i" />
+   <exelink qstep="1" npc="n811_teramai" sub="j" />
+   <exelink qstep="1" npc="n811_teramai" sub="k">0,1</exelink>
+   <exelink qstep="2" npc="n818_rose" sub="b" />
+   <exelink qstep="2" npc="n818_rose" sub="c" />
+   <exelink qstep="2" npc="n818_rose" sub="d" />
+   <exelink qstep="2" npc="n818_rose" sub="e" />
+   <exelink qstep="2" npc="n818_rose" sub="f" />
+   <exelink qstep="2" npc="n818_rose" sub="g" />
+   <exelink qstep="2" npc="n818_rose" sub="h" />
+   <exelink qstep="2" npc="n818_rose" sub="i" />
+   <exelink qstep="2" npc="n818_rose" sub="j" />
+   <exelink qstep="2" npc="n818_rose" sub="k" />
+   <exelink qstep="2" npc="n818_rose" sub="l" />
+   <exelink qstep="2" npc="n818_rose" sub="m" />
+   <exelink qstep="2" npc="n818_rose" sub="n">0</exelink>
+   <exelink qstep="2" npc="n818_rose" sub="p">1</exelink>
+   <exelink qstep="2" npc="n818_rose" sub="q" />
+   <journal_data recompense="92090" quest_title="안식의 조건" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>14,n811</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>811</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Conditions for Resting I]]></title>
+         <contents mid="69"><![CDATA[<html>Purifying Barnac has failed. At Karacule's Hut, talk to Terramai about what to do.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk with Terrence Terramai]]></destination>
+         <todo_msg mid="71"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>14,n818</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>818</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Conditions for Resting II]]></title>
+         <contents mid="73"><![CDATA[<html>Terramai shows strong will to purify Barnac. Try talking to Rose.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk to Rose]]></destination>
+         <todo_msg mid="75"><![CDATA[Talk to Rose.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9208</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

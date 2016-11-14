@@ -1,0 +1,189 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9225_greed_flame</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9225</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9226</nextqid>
+      <nextqname>mq15_9226_ngiveupwoman</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[Flames of Desire]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>872</npcid>
+         <npcename>n872_academic</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="6"><![CDATA[<html>What's up?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Stella$<BR>This time it's for sure…!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="8"><![CDATA[<html>Some information…?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh it's you.<BR>Actually, I've obtained a seriously useful information a few days ago!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="QW_69.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Stella$<BR>You know that recently there was a fuss about Professor K, right?<BR>There's a rumour now that the restrictions on the development at <FONT color=#a82424>Miracle Altar Conservation Area</FONT>, which is where that crazy old man lived, will be lifted soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="12"><![CDATA[<html>(She's still interested in real estate business?)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Stella$<BR>When the development begins… all the real estate agents across the continent will flock for that land.<BR>So I'm going to buy the land first and sell it off at high prices!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="14"><![CDATA[<html>That's right.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR>But rumours are rumours and it would be safer to look at the land before deciding.<BR>It's better to be safe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-f" mid="16"><![CDATA[<html>Me?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Stella$<BR>So quickly go and take a look at the land.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="18"><![CDATA[<html>(I think she's just lazy….)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Stella$<BR>Why of course. I'm very busy.<BR>I'm not the master sorceress of the capital city for no reason.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QW_69.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Stella$<BR>What are you waiting for?<BR>You can go to <FONT color=#a82424>Miracle Altar Conservation Area</FONT> from Riverwort Wharf so be quick.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n872_academic-1" image="" itemindex="">
+      <talk_answer link_index="n872_academic-2" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html><FONT color=#7e12d2>(There is a dead body. </FONT><FONT color=#7e12d2>It seems like the person died not long ago)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-a" mid="23"><![CDATA[<html>There was a dead body.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Master Sorceress Stella$<BR>So how was it?<BR><FONT color=#7e12d2>(Stella asks you excitedly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-b" mid="25"><![CDATA[<html>I said there was a dead body.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Master Sorceress Stella$<BR>……… What?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-c" mid="27"><![CDATA[<html>Yeah. It seemed like the person died not long ago….</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Sorceress Stella$<BR>A corpse?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-c" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-d" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Sorceress Stella$<BR>……….<BR><FONT color=#7e12d2>(Stella doesn't look too good)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-e" mid="31"><![CDATA[<html>…Huh?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Sorceress Stella$<BR>It's ominous….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-f" mid="33"><![CDATA[<html>(What nonsense…)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Master Sorceress Stella$<BR>Mana is whispering to me….<BR>It says the land is unlucky!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-f" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-g" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Sorceress Stella$<BR>Phew, too bad.<BR>No matter how much I want the money, it seems like a bad idea to get unnecessarily involved if death is involved.<BR>I should just leave that land alone.<BR><FONT color=#7e12d2>(Stella heaves a sigh. It seems like she still wants the land though)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-!next" mid="37"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n872_academic-2" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html><FONT color=#7e12d2>(There is nothing else special. </FONT><FONT color=#7e12d2>Go back to Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9225</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92250,,,,,,</exe>
+         <exe type="complete" true="">9225</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n872_academic" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="g">0</exelink>
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="!next">1</exelink>
+   <journal_data recompense="92250" quest_title="욕망의 불꽃" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_69.dds</contents_image>
+         <destination_pos>691,n872</destination_pos>
+         <destination_mode>custom:691@1</destination_mode>
+         <statemark_npcid>872</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Flames of Desire I]]></title>
+         <contents mid="43"><![CDATA[<html>Stella's obsession for land has not subsided.<BR>Investigate whether the Miracle Altar area is good enough to be bought.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Numara Village)</FONT> <FONT color=#a82424>→ Miracle Altar Conservation Area</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Investigate Miracle Altar Conservation Area]]></destination>
+         <todo_msg mid="45"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Flames of Desire II]]></title>
+         <contents mid="47"><![CDATA[<html>There was an unknown dead body at the Miracle Altar. Report to Stella.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="49"><![CDATA[Go to Saint Haven and report to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9224</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

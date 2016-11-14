@@ -1,0 +1,301 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9215_looking_for_reunion</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9215</qid>
+      <designer>곽노찬</designer>
+      <qlevel>54</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9216</nextqid>
+      <nextqname>mq15_9216_unreliable_informer</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <qkname mid="1"><![CDATA[Waiting for Reunion]]></qkname>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>827</npcid>
+         <npcename>n827_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-noquest" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Rose$<BR>I'm sorry. I'm not being of any help.<BR><BR>
+※ <FONT color=#7e12d2>You can get the quest from Terrence Terramai inside the Saint Haven Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-a" mid="6"><![CDATA[<html>The Prophet?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Terrence Terramai$<BR>Okay. I guess we have to search Meteor Crash Site thoroughly.<BR>I'll leave the search to the temple knights so can you go and see the <FONT color=#a82424>Prophet</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-b" mid="8"><![CDATA[<html>What would it be about?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Terrence Terramai$<BR>Maybe meeting Velskud last time gave her a shock. Her face remained gloomy from that time onwards. But she suddenly looked for you today. She says she has something to ask you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="10"><![CDATA[<html>I got it.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Terrence Terramai$<BR>Well, I won't say until that.<BR>
+You'll know when you see the Prophet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Terrence Terramai$<BR>Though she may be the Prophet, she's just a little girl. Sometimes I pity her situation. You may make her better if you talk to her once in a while so go to Royal Palace Underground and meet Rose.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1" image="" itemindex="">
+      <talk_answer link_index="n827_rose-1-a" mid="14"><![CDATA[<html>I heard that you have something to ask me.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Rose$<BR>You're here....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1-a" image="" itemindex="">
+      <talk_answer link_index="n827_rose-1-b" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Rose$<BR>I was worried about grandpa and Lily so I asked around for news about how they were doing in Prairie Town.... My grandpa's health seems to be failing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1-b" image="QS_Default.dds" itemindex="400317">
+      <talk_answer link_index="n827_rose-1-c" mid="75"><![CDATA[<html>Old vine?</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Rose$<BR>I heard that there's a herb that's good for his condition in Lotus Marsh. Could you get some <FONT color=#a82424>old vine</FONT> for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1-c" image="" itemindex="">
+      <talk_answer link_index="n827_rose-1-d" mid="20"><![CDATA[<html>Where can I find it?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Rose$<BR>I know this is not a good time..., But I'm so worried about my grandpa, I can't stand it....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1-d" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n827_rose-2" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Rose$<BR><FONT color=#7e12d2>(Rose's face brightens a little)</FONT><BR><FONT color=#a82424>Old vine</FONT> could be easily found in Lotus Marsh in the past. But for some reason, it can only be obtained from the monsters at <FONT color=#a82424>Meteor Crash Site Core</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-2" image="QW_63.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Rose$<BR>Please go to <FONT color=#a82424>Meteor Crash Site Core</FONT> and get 3 lumps of <FONT color=#a82424>old vine</FONT>. I think that would be enough to make my grandpa feel better.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3" image="" itemindex="">
+      <talk_answer link_index="n827_rose-3-a" mid="27"><![CDATA[<html>A doll?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Rose$<BR>Thank you so much. And if I finish making this doll, I'll send the old vine together with this doll.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n827_rose-3-b" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Rose$<BR>It's a present for Lily.<BR>
+I think she must be having a hard time because I'm gone.<BR>
+<FONT color=#7e12d2>(Rose tears up)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-b" image="" itemindex="">
+      <talk_answer link_index="n827_rose-3-c" mid="51"><![CDATA[<html>I'm not useless even when I don't have the powers.</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Rose$<BR>I want to go back to Prairie Town right away…, but since I owe my life to Terramai, I need to repay his kindness. And there are people who still need my powers.<BR>
+Until they disappear and become useless….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-c" image="" itemindex="">
+      <talk_answer link_index="n827_rose-3-d" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Rose$<BR>Really?<BR>I always knew that I was different from other people.<BR>
+While I was being used by the Black Knight, I wished to be normal. So I hid inside my own self too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-d" image="" itemindex="">
+      <talk_answer link_index="n827_rose-3-e" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Rose$<BR>But after I met Terramai, I realised that I was being cowardly.<BR>
+Terramai told me that I could give strength to many people who were in agony.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n827_rose-3-f" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Rose$<BR>So I'm not going to run away anymore. <BR>
+But as I started to accept these powers, ironically they are getting weaker.<BR>
+<FONT color=#7e12d2>(Rose smiles sadly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-f" image="" itemindex="">
+      <talk_answer link_index="n827_rose-3-g" mid="52"><![CDATA[<html>You can always go back if you want to.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Rose$<BR>You know....<BR>
+If my powers get weaker and weaker and finally disappear, would I be able to go back to Prairie Town?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-g" image="" itemindex="">
+      <talk_answer link_index="n827_rose-3-h" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Rose$<BR>It's still dangerous. As long as I have the power, there will be people trying to make use of it. So if I go back to Prairie Town now, I may put the town into danger.<BR>So... when those bad people disappear, or....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-h" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n827_rose-3-i" mid="54"><![CDATA[<html>Are you okay?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Rose$<BR>If all my powers are gone and I become an ordinary girl, I will go back. <BR><FONT color=#7e12d2>(Tears drop from Rose's eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-i" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n827_rose-4" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Rose$<BR>I'm sorry to make you listen to all this. I'm just... having a hard time so don't worry.<BR><FONT color=#7e12d2>(Rose wipes her tears)</FONT><BR>I'll feel better if I cry a little.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-4" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Rose$<BR>If I find something out, I'll tell you. Right now, I just want to stay alone.<BR><FONT color=#7e12d2>(It'd be better to leave Rose alone for a while. Talk to Terramai)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-a" mid="56"><![CDATA[<html>She seems stronger than before.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Terramai$<BR>Though she may be the Prophet, she's still a little girl.<BR>
+I'm proud to see her trying to endure all this with faith.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-a" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-b" mid="57"><![CDATA[<html>I think that would be good.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Terramai$<BR>Humans are like that.... If we go through a hardship, we will somehow survive in one way or another.<BR>
+I think it'd be better to leave her alone until she feels better.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-b" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-c" mid="80"><![CDATA[<html>How about asking help from Cidel?</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Terramai$<BR>
+Then while the Prophet is taking a rest, shall we do our own work?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-c" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-4-d" mid="44"><![CDATA[<html>Got it.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Terramai$<BR>That's a good idea.<BR>Since the temple knights would be unfamiliar with Lotus Marsh, Fairystar members who know this place well would be of great help.<BR>Please go to <FONT color=#a82424>Cidel</FONT> and ask for help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-d" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-!next" mid="46"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9215</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="3" op="]=">400317</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">600202</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">700202</exe>
+         <exe type="huntitem" num="3" exe="" onexe="">400317</exe>
+         <exe type="addquestitem" num="1">400317</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="6,7,8" false="5,10">0</exe>
+         <exe type="conexe" true="6,7,8" false="">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">9215</exe>
+         <exe type="recompense">92151,92151,92152,92153,92154,92155,92156</exe>
+         <exe type="delquestitem" num="-1">400317</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n827_rose" sub="b" />
+   <exelink qstep="1" npc="n827_rose" sub="c" />
+   <exelink qstep="1" npc="n827_rose" sub="d" />
+   <exelink qstep="1" npc="n827_rose" sub="2">0,1,2,3,4</exelink>
+   <exelink qstep="3" npc="n827_rose" sub="b" />
+   <exelink qstep="3" npc="n827_rose" sub="c" />
+   <exelink qstep="3" npc="n827_rose" sub="d" />
+   <exelink qstep="3" npc="n827_rose" sub="e" />
+   <exelink qstep="3" npc="n827_rose" sub="f" />
+   <exelink qstep="3" npc="n827_rose" sub="g" />
+   <exelink qstep="3" npc="n827_rose" sub="h" />
+   <exelink qstep="3" npc="n827_rose" sub="i" />
+   <exelink qstep="3" npc="n827_rose" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="b" />
+   <exelink qstep="4" npc="n822_teramai" sub="c" />
+   <exelink qstep="4" npc="n822_teramai" sub="d">1</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="!next">0</exelink>
+   <journal_data recompense="1:92151,2:92152,3:92153,4:92154,5:92155,6:92156" quest_title="재회를 기다리며" chapterid="9" quest_level="54" quest_mark_type="1" use_item_list="400317">
+      <journal index="1">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n827</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>827</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Waiting for Reunion I]]></title>
+         <contents mid="60"><![CDATA[<html>Terramai says that Rose has something to ask you. Go to Royal Palace Underground and talk to Rose.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Royal Palace Underground)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Rose at Royal Palace Underground]]></destination>
+         <todo_msg mid="62"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_63.dds</contents_image>
+         <destination_pos>632,0,0</destination_pos>
+         <destination_mode>custom:631@3,632@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Waiting for Reunion II]]></title>
+         <contents mid="65"><![CDATA[<html>Rose says that her grandpa in Prairie Town is not feeling well and asked you to get some herbs for him. Go to Meteor Crash Site Core and get some Old Vine.<BR><BR><FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Meteor Crash Site Core</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Meteor Crash Site Core]]></destination>
+         <todo_msg mid="67"><![CDATA[Find old vine at Meteor Crash Site Core.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n827</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>827</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Waiting for Reunion III]]></title>
+         <contents mid="69"><![CDATA[<html>You have obtained old vine from Meteor Crash Site Core. Go back to Saint Haven and give them to Rose.<BR><BR><FONT color=#086171>Saint Haven(Royal Palace Underground)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk to Rose at Royal Palace Underground]]></destination>
+         <todo_msg mid="71"><![CDATA[You have obtained old vine. Give them to Rose.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Waiting for Reunion IV]]></title>
+         <contents mid="83"><![CDATA[<html>Rose waits for the day she can return to her hometown and tries to drown her sadness.<BR>
+Talk with Terrence Terramai.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Talk to Terramai inside the Royal Palace]]></destination>
+         <todo_msg mid="85"><![CDATA[Talk with Terrence Terramai.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9214</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

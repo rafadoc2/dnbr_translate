@@ -1,0 +1,219 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9210_return_of_pope</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9210</qid>
+      <designer>곽노찬</designer>
+      <qlevel>52</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9211</nextqid>
+      <nextqname>mq15_9211_awkward_encounter</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <qkname mid="1"><![CDATA[Pope's Return ]]></qkname>
+      <qnpc>
+         <npcid>811</npcid>
+         <npcename>n811_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-noquest" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Terrence Terramai$<BR>This place still looks the same....<BR>
+ <BR>
+※ <FONT color=#7e12d2>You can get the quest from Riverwort Wharf's Terrence Terramai.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-accepting" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Terrence Terramai$<BR>To get Geraint's sword back, we need to know where <FONT color=#a82424>Velskud</FONT> is.<BR>Since Velskud is said to be in Lotus Marsh, we should investigate.<BR>We can't just sit around and wait for the next prophecy....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n811_teramai-1-a" mid="12"><![CDATA[<html>I'll follow you.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Terrence Terramai$<BR>To find Velskud, we need the help of the Temple Knights.<BR>I think it's time to go back to the <FONT color=#a82424>Royal Palace</FONT>....<BR>Won't you go with me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Terrence Terramai$<BR>Good. Then see you at <FONT color=#a82424>Saint Haven Royal Palace</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Terrence Terramai$<BR>This place still looks the same....<BR>
+ <BR>
+<FONT color=#7e12d2>(Terramai smiles bitterly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-2-a" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Terrence Terramai$<BR>This place still looks the same....<BR><BR><FONT color=#7e12d2>(Terramai smiles bitterly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-a" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-2-b" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Terrence Terramai$<BR>
+I hope you take note of something.<BR>
+I hope not many people would know about what happened to <FONT color=#a82424>Barnac</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-b" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-2-c" mid="19"><![CDATA[<html>I got it.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Terrence Terramai$<BR>I want my friend Barnac to continue to be a hero in the minds of other people.<BR>Do you understand?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-c" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-3" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Terrence Terramai$<BR>Thank you.<BR>
+Now let's start the search with the help of the temple knights.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3" image="QW_59.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Terrence Terramai$<BR>I will send the temple knights to all the other parts so please search <FONT color=#a82424>Mutant's Habitat</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-4-a" mid="33"><![CDATA[<html>(Tell him what you saw in Mutant's Habitat)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Terrence Terramai$<BR>Just in time. The temple knights must have found where <FONT color=#a82424>Velskud</FONT> is.<BR>But... You seem like you have something to tell me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-a" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-4-b" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Terrence Terramai$<BR><FONT color=#a82424>Barnac</FONT> was there...? With someone...?<BR>Indeed, Barnac must be being controlled by someone else.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-b" image="QP_Geraint_sword.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-4-c" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Terrence Terramai$<BR>Let's meet Velskud first.<BR>
+We need to get <FONT color=#a82424>Geraint's sword</FONT> from him to purify Barnac.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-c" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-!next" mid="39"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9210</exe>
+         <exe type="talk" npc="n811_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>왕성 내부 카메라 워크씬</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92101,92101,92102,92103,92104,92105,92106</exe>
+         <exe type="complete">9210</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n811_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="2" npc="n822_teramai" sub="b" />
+   <exelink qstep="2" npc="n822_teramai" sub="c" />
+   <exelink qstep="2" npc="n822_teramai" sub="3">0,1</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="b" />
+   <exelink qstep="4" npc="n822_teramai" sub="c">0</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="!next">1</exelink>
+   <journal_data recompense="1:92101,2:92102,3:92103,4:92104,5:92105,6:92106" quest_title="교황의 귀환" chapterid="9" quest_level="52" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_SaintHaven.dds</contents_image>
+         <destination_pos>21,0,0</destination_pos>
+         <destination_mode>custom:21@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Pope's Return I]]></title>
+         <contents mid="42"><![CDATA[<html>Terrence Terramai is going to Saint Haven Royal Palace to dispatch the temple knights. Go to Saint Haven Royal Palace.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Inside Royal Palace</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Go to Inside the Saint Haven Royal Palace]]></destination>
+         <todo_msg mid="44"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Pope's Return II]]></title>
+         <contents mid="47"><![CDATA[<html>Talk to Terrence Terramai.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk with Terrence Terramai]]></destination>
+         <todo_msg mid="49"><![CDATA[Talk to Terrence Terramai.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_59.dds</contents_image>
+         <destination_pos>591,0,0</destination_pos>
+         <destination_mode>custom:591@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Pope's Return III]]></title>
+         <contents mid="52"><![CDATA[<html>Find Velskud at Mutant's Habitat.<BR><BR><FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Mutant's Habitat</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Search Mutant's Habitat]]></destination>
+         <todo_msg mid="54"><![CDATA[Search Mutant's Habitat.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Pope's Return IV]]></title>
+         <contents mid="56"><![CDATA[<html>You unexpectedly witnessed Barnac with someone else at Mutant's Habitat. Go back to Saint Haven and report to Terramai.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk with Terrence Terramai]]></destination>
+         <todo_msg mid="58"><![CDATA[Go back to Terrence Terramai.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9209</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,580 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9321_fight_fire_with_fire</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9321</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc>블랙 드래곤의 파편	300026
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9322</nextqid>
+      <nextqname>mq11_9322_no_one_there</nextqname>
+      <nextqnpc>n776_darklair_mardlen</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[이열치열]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1156</npcid>
+         <npcename>n1156_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1193</npcid>
+         <npcename>n1193_illusion</npcename>
+         <npckname>일루전</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>287</npcid>
+         <npcename>n287_blackdragons_wing</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>776</npcid>
+         <npcename>n776_darklair_mardlen</npcename>
+         <npckname>어둠의 여신관 마들렌</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$상급 아처 이실리엔$<BR>당신의 이야기를 들으면 들을수록 알게 되는 건 한 가지예요.<BR>제레인트 님은 여전히 미워할 수 없는 분이라는 사실 말이죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="2169" select_type="2" />
+      <talk_question mid="2168"><![CDATA[<html>$상급 아처 이실리엔$<BR>어째서 이렇게 된 걸까요?<BR>
+엘프들에게 50년은 그다지 긴 세월이 아니지만, 그날의 광경은 정말이지 바로 어제 같답니다.<BR>강렬하고, 서글프고, 그리고 곱씹을 수록 그리워지죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="QW_SkirtOfBlackMountain.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-" mid="2171" select_type="5" />
+      <talk_question mid="2170"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...이만 검은 산자락으로 가서 루나리아에게 있었던 일을 전해주자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-1-" mid="2177" select_type="5" />
+      <talk_question mid="2172"><![CDATA[<html>$루나리아$<BR>여기서 뭘 하고 있어?<BR>네가 가야할 곳, 모르겠어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-1" image="QS_Default.dds" itemindex="300026" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n287_blackdragons_wing-1-" mid="2178" select_type="5" />
+      <talk_question mid="2173"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(검고 사악한 힘으로 둘러싸인 날개 조각.<BR>주변에 핏자국처럼 보이는 것이 흩뿌려져 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-1-" mid="2175" select_type="5" />
+      <talk_question mid="2174"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>시공의 틈새에 오래 머물지는 마십시오.<BR>
+다시는 되돌아갈 수 없는 미아가 될 뿐이니.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-a" mid="2180" select_type="2" />
+      <talk_question mid="2179"><![CDATA[<html>$루나리아$<BR>......모노리스. <FONT color=#a82424>여신과 세계를 잇는 매개체</FONT>.<BR>그렇구나. 제레인트가 그렇게 말했구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-a" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-b" mid="2182" select_type="2" />
+      <talk_question mid="2181"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>블랙 드래곤이 케이어스의 조각 중 하나라면, 다른 조각들도 드래곤으로 깨어난다는 건가?<BR>난 그런 것에는 큰 흥미 없이 살았기 때문에 블랙 드래곤 말고는 잘 모르거든.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-c" mid="2184" select_type="2" />
+      <talk_question mid="2183"><![CDATA[<html>$루나리아$<BR>다른 드래곤들도 있어.<BR>지금 당장은 제레인트가 봉인해 두어서 모습을 보이지 않고 있지만...<BR>지금이 아니라면 언제든, 있어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-d" mid="2187" select_type="2" />
+      <talk_question mid="2186"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>지금이 아니라면?<BR>...이상한 말이네.<BR>옛날을 말하는 거야 아니면......</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-e" mid="2190" select_type="2" />
+      <talk_question mid="2189"><![CDATA[<html>$루나리아$<BR>과거든 미래든 지금이 아니라면 내게는 똑 같아.<BR>나는 알 수 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-f" mid="2192" select_type="2" />
+      <talk_question mid="2191"><![CDATA[<html>$루나리아$<BR>지금은 그런 것보다 다른 것을 고민해야 할 것 같은데.<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-g" mid="2194" select_type="2" />
+      <talk_question mid="2193"><![CDATA[<html>$루나리아$<BR>순백의 오브의 조각도 더는 내 시간을 고정해 둘 수 없어.<BR>힘이 다했어.<BR>
+아마 곧 엉망진창으로 시간을 뛰어넘게 될 지도 몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-h" mid="2196" select_type="0"><![CDATA[<html>수고해... 가 아니지!</html>]]></talk_answer>
+      <talk_answer link_index="n1139_lunaria-1-h" mid="2197" select_type="0"><![CDATA[<html>루나리아, 너 말야.</html>]]></talk_answer>
+      <talk_answer link_index="n1139_lunaria-1-h" mid="2198" select_type="0"><![CDATA[<html>각오해... 겠지.</html>]]></talk_answer>
+      <talk_answer link_index="n1139_lunaria-1-i" mid="2199" select_type="0"><![CDATA[<html>잠깐! 그 말은...</html>]]></talk_answer>
+      <talk_question mid="2195"><![CDATA[<html>$루나리아$<BR>수고해.<BR><FONT color=#7e12d2>(루나리아가 담담하게 떠넘긴다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-h" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-i" mid="2201" select_type="2" />
+      <talk_question mid="2200"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내가 수고 한다고 어떻게 될 문제야, 그게?<BR>난 지금 일루전이 멋대로 분리되어서 날 노리는 것만 해도 골치가 아픈데...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-i" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-j" mid="2203" select_type="2" />
+      <talk_question mid="2202"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>잠깐. 순백의 오브의 조각이 더 힘을 발휘하지 못한다면...<BR>그건 일루전도 앞으로 더 날뛸 거라는 의미 아냐?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-k" mid="2205" select_type="2" />
+      <talk_question mid="2204"><![CDATA[<html>$루나리아$<BR>그럴 지도.<BR>...아마도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-l" mid="2208" select_type="2" />
+      <talk_question mid="2207"><![CDATA[<html>$루나리아$<BR>고생이 많네.<BR>
+수고해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-m" mid="2210" select_type="2" />
+      <talk_question mid="2209"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>......그래 수고는 기꺼이 하고 있고, 앞으로도 할 테니까.</FONT><BR>
+<FONT color=#662500>뭔가 힌트라도 없어? 루나리아.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-n" mid="2212" select_type="2" />
+      <talk_question mid="2211"><![CDATA[<html>$루나리아$<BR>으음... 힌트......?<BR><FONT color=#7e12d2>(루나리아가 고개를 갸웃거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-o" mid="2214" select_type="2" />
+      <talk_question mid="2213"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>고민도 해 주고 대단한 발전이다.<BR>눈물이 앞을 가리는군.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-p" mid="2216" select_type="0"><![CDATA[<html>(...여자를 때리면 안 되겠지?)</html>]]></talk_answer>
+      <talk_answer link_index="n1139_lunaria-1-p" mid="2217" select_type="0"><![CDATA[<html>(나는 왜 얘랑 다니는 걸까?)</html>]]></talk_answer>
+      <talk_answer link_index="n1139_lunaria-1-p" mid="2218" select_type="0"><![CDATA[<html>루나리아... 제발... 좀...</html>]]></talk_answer>
+      <talk_answer link_index="n1139_lunaria-1-p" mid="2219" select_type="0"><![CDATA[<html>(이제 아무래도 좋아.)</html>]]></talk_answer>
+      <talk_question mid="2215"><![CDATA[<html>$루나리아$<BR>저런. 울지 마.<BR>고민은 해 봤지만, 역시 몰라. 기억 안 나.<BR>
+수고해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-q" mid="2221" select_type="2" />
+      <talk_question mid="2220"><![CDATA[<html>$루나리아$<BR>아, 그러고 보니... 한 가지 생각 났어.<BR>
+<FONT color=#a82424>시공의 정원</FONT>이라는 곳 알아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-r" mid="2224" select_type="2" />
+      <talk_question mid="2223"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>시공의 정원</FONT>에서 어둠의 여신관을 찾아 봐.<BR>그들은 시공의 틈새에서 오래 살아왔기 때문에 네가 바라는 힌트를 줄 수 있을지도 몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-s" mid="2226" select_type="2" />
+      <talk_question mid="2225"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>놀랍다.</FONT><BR>
+<FONT color=#662500>루나리아가 제대로 된 힌트를 주다니.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-t" mid="2228" select_type="2" />
+      <talk_question mid="2227"><![CDATA[<html>$루나리아$<BR>아, 네 기대를 저버렸어?<BR>저런. 안 됐네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-t" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-u" mid="2230" select_type="2" />
+      <talk_question mid="2229"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>심지어 농담까지!<BR>루나리아, 맞아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1-u" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2" mid="2232" select_type="2" />
+      <talk_question mid="2231"><![CDATA[<html>$루나리아$<BR>유감이지만 맞아. 나는 언제나 나 자신이니까.<BR>다른 것은 될 수 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-" mid="2234" select_type="5" />
+      <talk_question mid="2233"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>시공의 정원</FONT>으로 가도록 해.<BR>네가 바라는 힌트를 얻으면 좋겠네.<BR>
+...난 아무래도 상관 없지만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-a" mid="2237" select_type="2" />
+      <talk_question mid="2236"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>순백의 오브의 조각과 비견되는 힘이 필요하다는 말씀은 알겠습니다.<BR>그렇지만... 자세한 사정을 설명해 주시지 않는 한 조언은 어렵군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-b" mid="2239" select_type="0"><![CDATA[<html>(루나리아 이야기를 적당히 한다)</html>]]></talk_answer>
+      <talk_answer link_index="n776_darklair_mardlen-2-c" mid="2240" select_type="0"><![CDATA[<html>(일루전 이야기를 적당히 한다)</html>]]></talk_answer>
+      <talk_question mid="2238"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>곤란하시다는 건 이해합니다만...<BR>좀 더 자세히 말해, 어떤 문제가 있으신 거죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-b" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-d" mid="2242" select_type="2" />
+      <talk_question mid="2241"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>제 동행이 시간의 혼란을 느끼고 있다고 할까...?</FONT><BR>
+<FONT color=#662500>지금 다음이 미래가 아니기도 하고 뭐... 그런 이상한...</FONT><BR>
+<FONT color=#662500>아무튼, 그런 류의 문제가 있습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-c" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-d" mid="2244" select_type="2" />
+      <talk_question mid="2243"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러니까...</FONT><BR>
+<FONT color=#662500>저 자신이 혼란을 겪고 있어서, 말하자면 제가 저이면서 제가 아닌...</FONT><BR><FONT color=#662500>그런... 뭐 그런... 문제라고 할까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-e" mid="2246" select_type="2" />
+      <talk_question mid="2245"><![CDATA[<html>$어둠의 여신관 마들렌$<BR><FONT color=#7e12d2>(마들렌이 의아한 표정을 짓는다)<BR></FONT>어렵군요. 에클레르 님이라도 계신다면 도움이 되겠지만...<BR><FONT color=#7e12d2>(마들렌이 중얼거리다 고개를 들어 올린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-f" mid="2251" select_type="2" />
+      <talk_question mid="2250"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>아, 한 가지 떠올랐습니다.<BR>어느 쪽의 혼란이든, 강대한 독을 제어하고 정화할 도구를 바라시는 거라면요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-f" image="QW_40.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-2-g" mid="2253" select_type="2" />
+      <talk_question mid="2252"><![CDATA[<html>$어둠의 여신관 마들렌$<BR><FONT color=#a82424>검은 대군주의 탑</FONT>에서 검은 코어를 회수해 보시는 게 어떨까요? 블랙 드래곤의 찢겨져나간 날개가 그곳에 남아 있을텐데, 거기에서 파편을 구해 오는 겁니다.<BR>그것은 세상 무엇과도 비교하기 어려울 만큼 지독한 독입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-3" mid="2255" select_type="2" />
+      <talk_question mid="2254"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>그러나, 독은 독으로 제어할 수 있는 법이지요.<BR>여신의 어둠은 여신의 어둠으로 붙잡아 놓을 수 있는 것과 같이.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-" mid="2248" select_type="5" />
+      <talk_question mid="2247"><![CDATA[<html>$상급 아처 이실리엔$<BR>어둠의 여신관이라면, 시공의 정원으로 가면 만나실 수 있을 겁니다.<BR>저는 그쪽으로는 갈 일이 없군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3" image="QW_40.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-3-" mid="2258" select_type="5" />
+      <talk_question mid="2256"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>블랙 드래곤과의 격렬한 싸움 이후, 그 일대는 상당한 독으로 오염되고 말았죠.<BR>그러니 <FONT color=#a82424>검은 대군주의 탑</FONT>에서 구한 블랙 드래곤의 날개 파편이라면, 당신의 혼란을 제어할 만한 독이 되어줄 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-3" image="QW_40.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-3-" mid="2260" select_type="5" />
+      <talk_question mid="2259"><![CDATA[<html>$루나리아$<BR>
+검은 대군주의 탑으로 가는 거지?<BR>
+이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n287_blackdragons_wing-3-a" mid="2263" select_type="2" />
+      <talk_question mid="2262"><![CDATA[<html><BR><FONT color=#7e12d2>(기괴한 조직으로 이루어진 날개 조각.<BR>주변에 핏자국처럼 보이는 것이 흩뿌려져 있다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-3-a" image="QS_Default.dds" itemindex="300026" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n287_blackdragons_wing-4" mid="2265" select_type="2" />
+      <talk_question mid="2264"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(피가 묻지 않게 조심해서 파편을 채집했다.<BR>강력한 힘이 느껴진다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-3-" mid="2267" select_type="5" />
+      <talk_question mid="2266"><![CDATA[<html>$루나리아$<BR>
+어째서 블랙 드래곤의 날개에서 파편을 채집하지 않았어?<BR>
+곤란하게 됐네. 순서가 틀렸어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-4" image="QS_Default.dds" itemindex="300026" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n287_blackdragons_wing-4-a" mid="2269" select_type="2" />
+      <talk_question mid="2268"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(날개 파편을 채집하자, 낯선 목소리가 들린 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-4-a" image="QS_Default.dds" itemindex="300026" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n287_blackdragons_wing-4-" mid="2271" select_type="5" />
+      <talk_question mid="2270"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(블랙 드래곤의 날개 파편을 손에 넣자, 어쩐지 몸이 뜨거워지는 것 같다.<BR>기분 탓일까...?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-4-" mid="2273" select_type="5" />
+      <talk_question mid="2272"><![CDATA[<html>$루나리아$<BR>
+난 지금 할 수 있는 이야기가 별로 없어.<BR>
+눈 앞의 전투에 집중하는 게 좋지 않을까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-a" mid="2275" select_type="2" />
+      <talk_question mid="2274"><![CDATA[<html>$루나리아$<BR><FONT color=#387206>{user_nick}</FONT>...?<BR>
+아니, 일루전... 인가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-a" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-b" mid="2277" select_type="2" />
+      <talk_question mid="2276"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>나는 일루전이 아니야. 나는...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-b" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-c" mid="2279" select_type="2" />
+      <talk_question mid="2278"><![CDATA[<html>$일루전$<BR>...정말 너는 내가 아닌가?<BR>그럴 리가 없지. 너는 나다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-c" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-d" mid="2282" select_type="2" />
+      <talk_question mid="2281"><![CDATA[<html>$일루전$<BR>다른 그 무엇도 될 수 없지. 너는 덧없는 시간을 흘려보내고 결국 먼 길을 돌아 내가 될 예정이지.<BR>내게 그 무의미한 육신을 넘겨라. 그것이 시간낭비를 하지 않는 길이 될 테니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-d" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-e" mid="2284" select_type="2" />
+      <talk_question mid="2283"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(말도 안 되는 소리...!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-f" mid="2286" select_type="2" />
+      <talk_question mid="2285"><![CDATA[<html>$루나리아$<BR>..일루전. 이제 그만 포기해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-f" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-g" mid="2288" select_type="2" />
+      <talk_question mid="2287"><![CDATA[<html>$일루전$<BR>루나리아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-g" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-h" mid="2290" select_type="2" />
+      <talk_question mid="2289"><![CDATA[<html>$일루전$<BR>루나리아... 너는 내 것이다.<BR>결코 포기할 수 없어. 두고 봐라. 이 몸을......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-h" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-i" mid="2292" select_type="2" />
+      <talk_question mid="2291"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(점점 의식이 멀어진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-j" mid="2294" select_type="2" />
+      <talk_question mid="2293"><![CDATA[<html>$루나리아$<BR>......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-k" mid="2296" select_type="2" />
+      <talk_question mid="2295"><![CDATA[<html>$루나리아$<BR>......돌아왔어?<BR>
+<FONT color=#387206>{user_nick}</FONT>...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-l" mid="2298" select_type="2" />
+      <talk_question mid="2297"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>...루나리아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-l" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-m" mid="2301" select_type="2" />
+      <talk_question mid="2300"><![CDATA[<html>$루나리아$<BR>돌아왔구나.<BR>...일루전이 나타났었어. 알아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-5-n" mid="2303" select_type="2" />
+      <talk_question mid="2302"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그래. 나한테 뻔뻔스럽게 선언도 하던데. 내 몸을 차지하겠다고.<BR>곧 대화라도 할 지경인데...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-5-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-6" mid="2305" select_type="2" />
+      <talk_question mid="2304"><![CDATA[<html>$루나리아$<BR>......<BR>검은 코어가 도움이 되면 좋겠네.<BR>
+어서 시공의 정원으로, 가지고 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1156_lunaria-6" image="QN_darklair_castia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1156_lunaria-6-" mid="2307" select_type="5" />
+      <talk_question mid="2306"><![CDATA[<html>$루나리아$<BR>시공의 정원에서 <FONT color=#a82424>어둠의 여신관 마들렌</FONT>을 만나도록 해.<BR>내 힘도, 네 안의 그 사람도, 조금쯤은 제어할 수 있게 되겠지. 아주 잠깐이겠지만...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-6" image="QS_Default.dds" itemindex="300026" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-6-a" mid="2309" select_type="2" />
+      <talk_question mid="2308"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>블랙 드래곤의 날개 파편을 가져오셨군요.<BR>그걸 습득한 후, 괜찮은 결과가 나오던가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-6-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-6-b" mid="2311" select_type="2" />
+      <talk_question mid="2310"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>...흠.<BR>
+보아하니, 별로 달라진 것이 없는 모양이군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-6-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-6-c" mid="2313" select_type="4" />
+      <talk_question mid="2312"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-6-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Darklair_Castia.dds" center_image="">
+      <talk_answer link_index="n776_darklair_mardlen-6-!next" mid="2341" select_type="2" />
+      <talk_question mid="2340"><![CDATA[<html>$어둠의 여신관 마들렌$<BR>역시, 그걸 단순히 지니는 것만으로는 의미가 없는 걸까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9321</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300026</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7">201078</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7">1078</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93210,,,,,,,</exe>
+         <exe type="complete" true="">9321</exe>
+         <exe type="delquestitem" num="-1">300026</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="b" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="c" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="d" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="e" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="f" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="g" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="h" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="h" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="h" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="i" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="i" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="j" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="k" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="l" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="m" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="n" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="o" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="p" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="p" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="p" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="p" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="q" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="r" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="s" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="t" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="u" />
+   <exelink qstep="1" npc="n1139_lunaria" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="b" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="c" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="d" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="d" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="e" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="f" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="g" />
+   <exelink qstep="2" npc="n776_darklair_mardlen" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n287_blackdragons_wing" sub="4">0,1,2,3,4</exelink>
+   <exelink qstep="4" npc="n287_blackdragons_wing" sub="" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="b" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="c" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="d" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="e" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="f" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="g" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="h" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="i" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="j" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="k" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="l" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="m" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="n" />
+   <exelink qstep="5" npc="n1156_lunaria" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n776_darklair_mardlen" sub="b">0</exelink>
+   <exelink qstep="6" npc="n776_darklair_mardlen" sub="c">1,2</exelink>
+   <exelink qstep="6" npc="n776_darklair_mardlen" sub="!next" />
+   <journal_data recompense="93210" quest_title="이열치열" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="300026">
+      <journal index="1">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>13,n1139</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1139</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2314"><![CDATA[이열치열I]]></title>
+         <contents mid="2315"><![CDATA[<html>검은 산자락으로 가서 루나리아와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="2316"><![CDATA[검은 산자락에서 루나리아와 대화]]></destination>
+         <todo_msg mid="2317"><![CDATA[검은 산자락의 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_SaintHaven_NestWorldZone01.dds</contents_image>
+         <destination_pos>28,n776</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>776</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2324"><![CDATA[이열치열II]]></title>
+         <contents mid="2325"><![CDATA[<html>루나리아의 힘을 제어하고 있던 순백의 오브의 조각이 그 역할을 다한 것 같다. 다른 무엇인가가 필요한 것 같은데, 루나리아는 시공의 정원에 있는 어둠의 여신관을 만나 보라고 말했다.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(시공의 정원)</FONT> <FONT color=#a82424>- 어둠의 여신관 마들렌</FONT></html>]]></contents>
+         <destination mid="2326"><![CDATA[시공의 정원에서 마들렌과 대화]]></destination>
+         <todo_msg mid="2327"><![CDATA[시공의 정원에서 어둠의 여신관 마들렌을 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>403,n287</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1</destination_mode>
+         <statemark_npcid>287</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2319"><![CDATA[이열치열III]]></title>
+         <contents mid="2320"><![CDATA[<html>검은 대군주의 탑에서 블랙 드래곤의 날개 파편을 가져오자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 대군주의 탑</FONT></html>]]></contents>
+         <destination mid="2321"><![CDATA[검은 대군주의 탑에서 날개 파편 채집]]></destination>
+         <todo_msg mid="2322"><![CDATA[검은 대군주의 탑에서 날개 파편을 채집하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>404,0,0</destination_pos>
+         <destination_mode>custom:401@3,402@3,403@3,404@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2328"><![CDATA[이열치열IV]]></title>
+         <contents mid="2329"><![CDATA[<html>검은 대군주의 탑에서 블랙 드래곤의 날개 파편을 채집했다.<BR>
+탑을 수색한 후 돌아가자.<BR><BR><FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 대군주의 탑</FONT></html>]]></contents>
+         <destination mid="2330"><![CDATA[검은 대군주의 탑]]></destination>
+         <todo_msg mid="2331"><![CDATA[검은 대군주의 탑에서 날개 파편을 채집했습니다.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>404,n1156</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1,404@1</destination_mode>
+         <statemark_npcid>1156</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2332"><![CDATA[이열치열V]]></title>
+         <contents mid="2333"><![CDATA[<html>루나리아의 표정이 심각해 보인다.<BR>무슨 일이라도 있었던 것인지, 그녀와 대화해 보자.<BR><BR><FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 대군주의 탑(루나리아)</FONT></html>]]></contents>
+         <destination mid="2334"><![CDATA[검은 대군주의 탑에서 루나리아와 대화]]></destination>
+         <todo_msg mid="2335"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QW_SaintHaven_NestWorldZone01.dds</contents_image>
+         <destination_pos>28,n776</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>776</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2336"><![CDATA[이열치열VI]]></title>
+         <contents mid="2337"><![CDATA[<html>시공의 정원의 어둠의 여신관 마들렌에게 가자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(시공의 정원)</FONT> <FONT color=#a82424>- 어둠의 여신관 마들렌</FONT></html>]]></contents>
+         <destination mid="2338"><![CDATA[시공의 정원에서 마들렌과 대화]]></destination>
+         <todo_msg mid="2339"><![CDATA[어둠의 여신관 마들렌에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9320</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

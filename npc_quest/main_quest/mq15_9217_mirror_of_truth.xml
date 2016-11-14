@@ -1,0 +1,216 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9217_mirror_of_truth</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9217</qid>
+      <designer>곽노찬</designer>
+      <qlevel>54</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9218</nextqid>
+      <nextqname>mq15_9218_how_to_see_the_truth</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <qkname mid="1"><![CDATA[Mirror of Truth]]></qkname>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>833</npcid>
+         <npcename>n833_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="6"><![CDATA[<html>(Tell him about the talk with Velskud)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Terrence Terramai$<BR>So, did you ask for help from <FONT color=#a82424>Cidel</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n833_velskud-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Velskud$<BR>Go and tell <FONT color=#a82424>Terrence Terramai</FONT>.<BR>Don't interfere in this matter anymore....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-1-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Terrence Terramai$<BR>Hmm, so <FONT color=#a82424>Velskud</FONT> is saying he'll personally take care of Barnac?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-a" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-1-b" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Terrence Terramai$<BR>Velskud…. Though he may have been thinking of something else at the back of his mind, a part of me still regarded him as an old friend whom I fought alongside with 50 years ago….<BR>I was a fool to expect anything from him….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-b" image="QN_Npc_Death_Knight.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-1-c" mid="22"><![CDATA[<html>Terramai....</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Terrence Terramai$<BR><FONT color=#a82424>Barnac</FONT> was a hero who saved Alteia....<BR>He has sacrificed himself for this world and the world should at least let him rest in peace.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-c" image="QP_Geraint_sword.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-1-d" mid="16"><![CDATA[<html>Did you find another way?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Terrence Terramai$<BR>While you went to meet Cidel, we investigated some things here too. We looked for things other than <FONT color=#a82424>Geraint's sword</FONT> that could suppress the evil curse on Barnac.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-d" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-1-e" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Terrence Terramai$<BR>That's right. Although it's only a myth that was passed down in Lotus Marsh... We have to try if there is even a small possibility. According to that myth, the good Ancients made an artifact with the Goddess's powers to purify the evil Ancients during the War of the Ancients.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-e" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-1-f" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Terrence Terramai$<BR>That object's name is <FONT color=#a82424>Mirror of Truth</FONT>.<BR>When you look into the Mirror of Truth, the fake self is seen in the mirror and is absorbed by the mirror.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-f" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-2" mid="26"><![CDATA[<html>Where can we find the Mirror of Truth?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Terrence Terramai$<BR>If the myth is true, we'd be able to trap those who are controlling Barnac inside the mirror. If we do that, we'll be able to purify Barnac with the Prophet's power.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="QW_61.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Terrence Terramai$<BR>The temple knights are searching for it in various places. You can go to <FONT color=#a82424>Shadow of Evil Spirits</FONT>. And if you find a mirror that seems holy, immediately retrieve it.<BR>That should be the <FONT color=#a82424>Mirror of Truth</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3" image="QW_61.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-3-lv_check" mid="32"><![CDATA[<html>There was nothing there.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Terrence Terramai$<BR>Did you find anything at <FONT color=#a82424>Shadow of Evil Spirits</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-a" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-3-b" mid="54"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-b" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-3-c" mid="34"><![CDATA[<html>Wouldn't the Lotus Marsh natives know something?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Terrence Terramai$<BR>Hmm... This is not as easy as I thought.<BR><FONT color=#7e12d2>(Terramai strokes his chin)</FONT><BR>It must be in somewhere in Lotus Marsh....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-c" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-3-!next" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Terrence Terramai$<BR>That's right. The natives might know something.<BR>Since Cidel said that he knows some natives well, I think it'd be better to ask for Cidel's help in getting some information about the Mirror of Truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-d" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Terrence Terramai$<BR>Go to Karacule's Hut and ask <FONT color=#a82424>Cidel</FONT> for help in getting some information about the Mirror of Truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-e" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Terrence Terramai$<BR>Hmm...it's not as easy as I thought it would be.<BR><FONT color=#7e12d2>(Terramai strokes his chin)</FONT><BR>We should get more information. I will call you soon. Until then, concentrate on training.<BR>
+※ <FONT color=#7e12d2>You must be above Lv.55 to proceed with the next quest.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9217</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">600117</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">700117</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">55</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">92171,92171,92172,92173,92174,92175,92176</exe>
+         <exe type="complete">9217</exe>
+         <exe type="conexe" true="0,3" false="4">0</exe>
+         <exe type="talk" npc="n822_teramai">a</exe>
+         <exe type="talk" npc="n822_teramai">e</exe>
+         <exe type="setquest">9218</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n822_teramai" sub="b" />
+   <exelink qstep="1" npc="n822_teramai" sub="c" />
+   <exelink qstep="1" npc="n822_teramai" sub="d" />
+   <exelink qstep="1" npc="n822_teramai" sub="e" />
+   <exelink qstep="1" npc="n822_teramai" sub="f" />
+   <exelink qstep="1" npc="n822_teramai" sub="2">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="lv_check">2</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="b">1</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="c" />
+   <exelink qstep="3" npc="n822_teramai" sub="!next" />
+   <journal_data recompense="1:92171,2:92172,3:92173,4:92174,5:92175,6:92176" quest_title="진실의 거울" chapterid="9" quest_level="54" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Mirror of Truth I]]></title>
+         <contents mid="41"><![CDATA[<html>Velskud obtained some information from Yuvenciel and said that he will take care of this situation by himself and ordered you to tell Terramai not to interfere.<BR>
+Go to Saint Haven Royal Palace and talk to Terramai.<BR>
+<BR>
+<FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Talk to Terramai inside the Royal Palace]]></destination>
+         <todo_msg mid="43"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_61.dds</contents_image>
+         <destination_pos>612,0,0</destination_pos>
+         <destination_mode>custom:611@1,612@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Mirror of Truth II]]></title>
+         <contents mid="46"><![CDATA[<html>Terramai explained to you about the Mirror of Truth and asked you to search Shadow of Evil Spirits.<BR><BR><FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Shadow of Evil Spirits</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Search Shadow of Evil Spirits ]]></destination>
+         <todo_msg mid="48"><![CDATA[Find the Mirror of Truth at the Shadow of Evil Spirits.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Mirror of Truth III]]></title>
+         <contents mid="50"><![CDATA[<html>You searched Shadow of Evil Spirits but couldn't find the Mirror of Truth. Go back and report to Terramai.<BR>
+<BR>
+<FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk to Terramai inside the Royal Palace]]></destination>
+         <todo_msg mid="52"><![CDATA[You could not find the Mirror of Truth. Please go back to Terramai.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9216</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

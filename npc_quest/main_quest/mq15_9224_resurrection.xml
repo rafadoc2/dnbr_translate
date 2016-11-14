@@ -1,0 +1,258 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9224_resurrection</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9224</qid>
+      <designer>곽노찬</designer>
+      <qlevel>58</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Resurrection]]></qkname>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>836</npcid>
+         <npcename>n836_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Terrence Terramai$<BR><FONT color=#7e12d2>(Terrence Terramai looks distressed)</FONT><BR>So... in the end, I couldn't do anything for Barnac....<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Terrence Terramai$<BR>I see.... I will get the temple knights to retrieve Barnac's body. I will let him rest deep inside the monastery so that no one can disturb him anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Terrence Terramai$<BR>I should investigate about the man who struck Barnac.<BR>If you meet Velskud, please ask him if he knows anything about that man.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-a" mid="12"><![CDATA[<html>I came to ask you something.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Velskud$<BR><FONT color=#7e12d2>(Velskud looks pale)</FONT><BR>Irritating.... What is it again?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-class_check" mid="14"><![CDATA[<html>(Explain what happened at Encroached Temple Ruins)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Velskud$<BR>
+..........<BR>
+<FONT color=#7e12d2>(Velskud looks irritated)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-b" image="QN_NPC_Warrior_Lambert.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-c" mid="16"><![CDATA[<html>What is father trying to do...?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Velskud$<BR>You must have met <FONT color=#a82424>Rambert</FONT>.<BR>He rarely shows himself... but Barnac would be someone special to him so it's understandable that he came.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-c" image="QN_NPC_Warrior_Lambert.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-d" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Velskud$<BR>
+How would I know what your father was doing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-d" image="QN_NPC_Warrior_Lambert.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-e" mid="21"><![CDATA[<html>What...? My father is... an apostle?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Velskud$<BR>Rambert is a man who likes honour.<BR>
+That should be the reason why he's following him as an <FONT color=#a82424>apostle</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-e" image="QN_NPC_Warrior_Lambert.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-f" mid="23"><![CDATA[<html>It can't be!</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Velskud$<BR>I thought you knew...?<BR>I don't know how <FONT color=#a82424>Rambert</FONT> remains in your memory but he's the most cold-hearted and cruel person that I know.<BR>He's someone who can even sever ties with his family to make a name for himself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-f" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-wstep_2" mid="25"><![CDATA[<html>Velskud...?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Velskud$<BR>
+There's nothing that will change even if you deny.<BR>
+Get rid of vain expectations and hope about your father. That will... keuuu.<BR>
+<FONT color=#7e12d2>(Velskud grabs his chest)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-g" image="QN_NPC_Warrior_Lambert.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-h" mid="33"><![CDATA[<html>Rambert...? Who is he?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Velskud$<BR>You must have met <FONT color=#a82424>Rambert</FONT>.<BR>He rarely shows himself... but Barnac would be someone special to him so it's understandable that he came.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-h" image="QN_NPC_Warrior_Lambert.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-i" mid="35"><![CDATA[<html>Barnac's disciple?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Velskud$<BR>
+Barnac's last disciple.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-i" image="QN_NPC_Warrior_Lambert.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-k" mid="37"><![CDATA[<html>Apostle...? You mean he is an apostle?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Velskud$<BR>Yes. He was Barnac's disciple but took a different path from him.<BR>Rambert, he's someone who likes honour.<BR>That must be the reason why he's following him as an <FONT color=#a82424>apostle</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-j" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-step_2_kali" mid="39"><![CDATA[<html>Velskud...?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Velskud$<BR>
+I thought you had at least guessed it, but you're more stupid than I knew you'd be.... He is the most cold-hearted and cruel even among the apostles.<BR>
+For honour, he will even sever ties with his family... keuuu.<BR>
+<FONT color=#7e12d2>(Velskud grabs his chest)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1-k" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n836_velskud-1-step_2" mid="83"><![CDATA[<html>Velskud…?</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Velskud$<BR>I thought you might have guessed by now but you're more stupid than I thought…. He is the most cold blooded person even among the apostles.<BR>He's someone who would abandon his family for fame and honour for himself… *Kueegh*<BR><FONT color=#7e12d2>(Velskud seems to be in pain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Velskud$<BR>Keuuuu...<BR><FONT color=#7e12d2>(Velskud is groaning in pain. Let Terramai know about this)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-2-a" mid="47"><![CDATA[<html>Wouldn't there be a way...?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Terrence Terramai$<BR>Velskud has deteriorated?<BR>Hmm, the after effects must be worse than I thought....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-a" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-2-b" mid="49"><![CDATA[<html>A power of life that is as powerful as the dragon... Is there such a thing?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Terrence Terramai$<BR>His body is rapidly ageing after he lost the dragon's jewel. If this goes on, he'll not be able to withstand it and die. To save him, we need a power of life that is as powerful as the dragon's jewel.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-b" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-2-c" mid="51"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Terrence Terramai$<BR>There's one thing....<BR>Something that has enormous amount of life energy....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-c" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-2-d" mid="54"><![CDATA[<html>The tree of life....</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Terrence Terramai$<BR>
+That is...<BR>
+The mother of all the elves in the world and the home of spirits of forest and wind.<BR>
+The object that has the strongest life energy is none other than the <FONT color=#a82424>tree of life</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-d" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-2-e" mid="64"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-e" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-2-cutscene" mid="57"><![CDATA[<html>I got it.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Terrence Terramai$<BR>Prepare to leave for <FONT color=#a82424>Anu Arendel</FONT>.<BR>We would need the help of Nerwin.... I mean, Queen <FONT color=#a82424>Narcilia</FONT>.<BR><BR>※ <FONT color=#7e12d2>[Chapter 9. Ressurection] has been completed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9224</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">6</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n836_velskud">2</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n836_velskud">b</exe>
+         <exe type="talk" npc="n836_velskud">g</exe>
+         <exe type="conexe" true="8" false="7">1</exe>
+         <exe type="talk" npc="n836_velskud">i</exe>
+         <exe type="talk" npc="n836_velskud">j</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92241,92241,92242,92243,92244,92245,92246</exe>
+         <exe type="complete" true="">9224</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13514,1);</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n836_velskud" sub="class_check">3</exelink>
+   <exelink qstep="1" npc="n836_velskud" sub="c" />
+   <exelink qstep="1" npc="n836_velskud" sub="d" />
+   <exelink qstep="1" npc="n836_velskud" sub="e" />
+   <exelink qstep="1" npc="n836_velskud" sub="f" />
+   <exelink qstep="1" npc="n836_velskud" sub="wstep_2">0,1,2</exelink>
+   <exelink qstep="1" npc="n836_velskud" sub="h" />
+   <exelink qstep="1" npc="n836_velskud" sub="i">6</exelink>
+   <exelink qstep="1" npc="n836_velskud" sub="k" />
+   <exelink qstep="1" npc="n836_velskud" sub="step_2_kali">0,1,2</exelink>
+   <exelink qstep="1" npc="n836_velskud" sub="step_2">0,1,2</exelink>
+   <exelink qstep="2" npc="n822_teramai" sub="b" />
+   <exelink qstep="2" npc="n822_teramai" sub="c" />
+   <exelink qstep="2" npc="n822_teramai" sub="d">0</exelink>
+   <exelink qstep="2" npc="n822_teramai" sub="e">1</exelink>
+   <exelink qstep="2" npc="n822_teramai" sub="cutscene">2</exelink>
+   <journal_data recompense="1:92241,2:92242,3:92243,4:92244,5:92245,6:92246" quest_title="부활" chapterid="9" quest_level="58" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13014,n836</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>836</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Resurrection I]]></title>
+         <contents mid="69"><![CDATA[<html>Go to Velskud at Royal Palace Underground Velskud and talk to him about the man who killed Barnac.<BR>
+<BR>
+<FONT color=#086171>Saint Haven(Royal Palace Underground)</FONT> <FONT color=#a82424>→ Velskud</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk with Velskud]]></destination>
+         <todo_msg mid="71"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Resurrection II]]></title>
+         <contents mid="73"><![CDATA[<html>Velskud seems unwell. Go back and tell Terramai.<BR><BR><FONT color=#086171>Saint Haven (Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk with Terramai]]></destination>
+         <todo_msg mid="75"><![CDATA[Velskud is in pain. Tell Terramai.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[[Chapter 9. Resurrection] Complete]]></title>
+         <contents mid="79"><![CDATA[<html><FONT color=#7e12d2>※ [Chapter 9. Resurrection] has been completed.</FONT><BR>
+<FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>※ Please wait for the next update.</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[[Chapter 9. Resurrection] Complete]]></destination>
+         <todo_msg mid="81"><![CDATA[[Chapter 9. Resurrection] has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9223</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

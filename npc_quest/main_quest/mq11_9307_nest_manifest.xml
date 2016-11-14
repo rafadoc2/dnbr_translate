@@ -1,0 +1,278 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9307_nest_manifest</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>9307</qid>
+      <designer>김인정</designer>
+      <qlevel>28</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9308</nextqid>
+      <nextqname>mq11_9308_collecting_rune</nextqname>
+      <nextqnpc>n518_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[네스트의 현현]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1149</npcid>
+         <npcename>n1149_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>37</npcid>
+         <npcename>n037_geraint</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>518</npcid>
+         <npcename>n518_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$장군 더글라스$<BR>자넨가? 준비가 끝나 조금 전 출정을 마친 상태라네.<BR>다른 모험자들도 연락을 받고  먼저 떠났지.<BR>
+이번에야말로 선지자를 되찾아야만 하네!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_43.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-" mid="673" select_type="5" />
+      <talk_question mid="672"><![CDATA[<html>$장군 더글라스$<BR>자네도 어서 <FONT color=#a82424>검은 영지 수비대 거점</FONT>으로 출발하게나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="QW_43.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="676" select_type="5" />
+      <talk_question mid="675"><![CDATA[<html>$루나리아$<BR>
+...<FONT color=#a82424>검은 영지 수비대 거점</FONT>으로 가는 거지?<BR>이해했어. 따를게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-1" image="QW_43.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-1-" mid="678" select_type="5" />
+      <talk_question mid="677"><![CDATA[<html>$워리어 시안$<BR>검은 영지 수비대 거점으로, 출발!!<BR><FONT color=#7e12d2>(워리어 시안이 시원시원한 동작으로 팔을 뻗는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint.dds" center_image="">
+      <talk_answer link_index="n037_geraint-1-" mid="680" select_type="5" />
+      <talk_question mid="679"><![CDATA[<html>$금발 머리의 검사$<BR>...한 발 늦었다.<BR><FONT color=#7e12d2>(그는 더 이상 대화할 생각이 없어 보인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1149_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1149_cian-1-a" mid="683" select_type="2" />
+      <talk_question mid="681"><![CDATA[<html>$워리어 시안$<BR><FONT color=#a82424>제레인트</FONT> 님께서, 한 발 늦었다고 하시는군요.<BR>꼭 닿을 듯 닿지 않으니, 정말 괴롭습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1149_cian-1-a" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1149_cian-1-b" mid="685" select_type="2" />
+      <talk_question mid="684"><![CDATA[<html>$워리어 시안$<BR>아... <FONT color=#a82424>제레인트</FONT> 님을 처음 만나시던가요? 저쪽의 금발 검사가 바로 제레인트 님입니다.<BR><FONT color=#a82424>아르젠타</FONT> 님의 친구... 이신 것 같습니다.<BR>
+대단히 훌륭한 실력을 가지고 계시다는 건, 이미 아시겠죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1149_cian-1-b" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1149_cian-1-c" mid="687" select_type="2" />
+      <talk_question mid="686"><![CDATA[<html>$워리어 시안$<BR>어쨌거나 검은 기사는 도망쳐 버렸습니다.<BR>
+선지자를 데리고 영지 깊숙한 곳에 틀어박힌 것 같습니다.<BR><FONT color=#387206>{user_nick}</FONT> 님도 조금 전의 그 엄청난 힘의 기운을 느끼셨겠지만요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1149_cian-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1149_cian-1-d" mid="690" select_type="0"><![CDATA[<html>네스트...?</html>]]></talk_answer>
+      <talk_answer link_index="n1149_cian-1-d" mid="691" select_type="0"><![CDATA[<html>그게 뭐죠?</html>]]></talk_answer>
+      <talk_question mid="689"><![CDATA[<html>$워리어 시안$<BR>제레인트 님 말씀으로는 이미 저 안쪽에 네스트가 형성되었다고 합니다.<BR>그래서 접근할 수가 없다고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1149_cian-1-d" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1149_cian-1-e" mid="693" select_type="2" />
+      <talk_question mid="692"><![CDATA[<html>$워리어 시안$<BR>저도 그런 건 잘 알 수 없습니다.<BR>제레인트 님께서도 더는 대답을 하지 않으시고...<BR>
+곤란하네요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1149_cian-1-e" image="QW_SkirtOfBlackMountain.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1149_cian-1-" mid="696" select_type="5" />
+      <talk_question mid="695"><![CDATA[<html>$워리어 시안$<BR>일단 <FONT color=#a82424>검은 산자락</FONT>으로 돌아가, 이후의 일을 논의하려 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1149_cian-2" image="QW_SkirtOfBlackMountain.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1149_cian-2-" mid="699" select_type="5" />
+      <talk_question mid="698"><![CDATA[<html>$워리어 시안$<BR>네스트라... 도대체 그게 뭘까요?<BR>어서 <FONT color=#a82424>검은 산자락</FONT>으로 돌아가야겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-" mid="702" select_type="5" />
+      <talk_question mid="701"><![CDATA[<html>$루나리아$<BR>일단 저 모험자와 대화하는 게 어때?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-2-" mid="704" select_type="5" />
+      <talk_question mid="703"><![CDATA[<html>$더글라스 장군$<BR>
+으음... 검은 산자락에서 대책을 논의 중이라고 들었네.<BR>
+자네도 가 보게나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-a" mid="707" select_type="2" />
+      <talk_question mid="705"><![CDATA[<html>$워리어 시안$<BR>아르젠타 님께 네스트에 대한 설명을 들었습니다.<BR>네스트는 <FONT color=#a82424>압도적인 힘을 지닌 존재가 자신의 영역을 지키기 위해 치는 결계</FONT>라고 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-b" mid="709" select_type="2" />
+      <talk_question mid="708"><![CDATA[<html>$워리어 시안$<BR>그 내부는 네스트를 형성한 자의 영역권에 들어가게 되며, <FONT color=#a82424>주인을 제외한 다른 존재들에게 강한 거부력을 행사</FONT>한다는 군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-c" mid="711" select_type="2" />
+      <talk_question mid="710"><![CDATA[<html>$워리어 시안$<BR>...즉, 네스트 안으로 들어가려면 <FONT color=#a82424>특별한 힘과 도구를 사용하거나, 혹은 네스트의 주인을 살해해 결계를 해제</FONT>하는 수밖에 없는 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-c" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-d" mid="714" select_type="2" />
+      <talk_question mid="713"><![CDATA[<html>$워리어 시안$<BR>아르젠타 님께서 말씀하시길, 저 네스트는... 바로 <FONT color=#a82424>블랙 드래곤</FONT>의 네스트라고 하셨습니다.<BR>블랙 드래곤이 다시 깨어난 것이 틀림없다고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-e" mid="716" select_type="2" />
+      <talk_question mid="715"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>깨어났다고요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-e" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-f" mid="719" select_type="0"><![CDATA[<html>50년 전?</html>]]></talk_answer>
+      <talk_answer link_index="n518_cian-2-f" mid="720" select_type="0"><![CDATA[<html>여섯 영웅?!</html>]]></talk_answer>
+      <talk_answer link_index="n518_cian-2-f" mid="721" select_type="0"><![CDATA[<html>...그게 뭐죠?</html>]]></talk_answer>
+      <talk_question mid="718"><![CDATA[<html>$워리어 시안$<BR>네. <FONT color=#a82424>50년 전 여섯 영웅</FONT>께서 겨우 퇴치했던 블랙 드래곤이 다시 깨어나고 말다니...<BR>이 사실이 알려지면 왕국 전역이 동요할 겁니다. 당분간 비밀로 해 두는 편이 좋겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-f" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-g" mid="723" select_type="2" />
+      <talk_question mid="722"><![CDATA[<html>$워리어 시안$<BR>네?! 헉... 여섯 영웅에 대해서 모르세요?!<BR>어어~ 그건 아주 유명한 이야긴데요. 으음, 어디서부터 어떻게 설명을 해야 하려나~<BR><FONT color=#7e12d2>(시안이 머리를 벅벅 긁는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-g" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-h" mid="726" select_type="2" />
+      <talk_question mid="725"><![CDATA[<html>$워리어 시안$<BR><FONT color=#a82424>블랙 드래곤 카라스</FONT>는 현자에 의해 치명상을 입었지만, 그 후로도 이따금씩 세계를 위협해 오던 몹쓸 드래곤이었습니다. 세상은 언제나 사악한 블랙 드래곤 카라스에 의해 공포에 떨었지요.<BR>그리고 50년 전...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-h" image="QN_Npc_Geraint_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-i" mid="728" select_type="2" />
+      <talk_question mid="727"><![CDATA[<html>$워리어 시안$<BR>그 사악한 블랙 드래곤 카라스에게 대항하기 위해 전 대륙에서 여섯 명의 영웅들이 뭉쳤습니다.<BR>금발의 검사이며, 드래곤 슬레이어즈의 리더였던 <FONT color=#a82424>제레인트</FONT> 님. ...아르젠타 님의 벗과는 성함이 같죠?<BR>사실 워낙 유명한 이름이라 흔해졌거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-i" image="QN_archer_nerwin_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-j" mid="730" select_type="2" />
+      <talk_question mid="729"><![CDATA[<html>$워리어 시안$<BR>그리고 왕국 최고의 기사였던 <FONT color=#a82424>벨스커드</FONT> 님과, 용병대장 <FONT color=#a82424>바르낙</FONT> 님.<BR>은빛 초승달 궁수단을 이끌고 아누 아렌델에서 찾아온, 엘프 왕녀 <FONT color=#a82424>네르윈</FONT> 님.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-j" image="QN_Npc_Karakule_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-k" mid="732" select_type="2" />
+      <talk_question mid="731"><![CDATA[<html>$워리어 시안$<BR>신전기사단의 리더였으며 테라마이 교단의 교황이 되신 <FONT color=#a82424>테렌스 테라마이</FONT> 님과 페어리스타의 후계자이신 <FONT color=#a82424>카라큘 페어리스타</FONT> 님까지 여섯 분이 바로 그때의 대표들입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-l" mid="735" select_type="2" />
+      <talk_question mid="734"><![CDATA[<html>$워리어 시안$<BR>그 여섯 분의 활약으로 인해 블랙 드래곤 카라스는 쓰러졌고, 세상은 평화로워졌습니다.<BR>그렇게 알았는데, 어째서 블랙 드래곤의 네스트가 또 다시 나타난 것인지...<BR><FONT color=#7e12d2>(시안의 표정이 흐려진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-l" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-m" mid="737" select_type="2" />
+      <talk_question mid="736"><![CDATA[<html>$워리어 시안$<BR>하지만 아르젠타 님께서 <FONT color=#a82424>50년 전 블랙 드래곤 레이드 때 사용한 방법</FONT>이 있다며, 비책을 알려 주셨습니다.<BR>그것이 있다면 네스트 안으로 침입이 가능할 지도 모른다고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-n" mid="740" select_type="2" />
+      <talk_question mid="739"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그것? 어떤 거죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-o" mid="744" select_type="4" />
+      <talk_question mid="743"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n518_cian-2-!next" mid="757" select_type="2" />
+      <talk_question mid="756"><![CDATA[<html>$워리어 시안$<BR>고대 제사장의 룬이라는 문장을 이용하는 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9307</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93070,,,,,,,</exe>
+         <exe type="complete" true="">9307</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1149_cian" sub="b" />
+   <exelink qstep="1" npc="n1149_cian" sub="c" />
+   <exelink qstep="1" npc="n1149_cian" sub="d" />
+   <exelink qstep="1" npc="n1149_cian" sub="d" />
+   <exelink qstep="1" npc="n1149_cian" sub="e">0,1</exelink>
+   <exelink qstep="1" npc="n1149_cian" sub="" />
+   <exelink qstep="2" npc="n518_cian" sub="b" />
+   <exelink qstep="2" npc="n518_cian" sub="c" />
+   <exelink qstep="2" npc="n518_cian" sub="d" />
+   <exelink qstep="2" npc="n518_cian" sub="e" />
+   <exelink qstep="2" npc="n518_cian" sub="f" />
+   <exelink qstep="2" npc="n518_cian" sub="f" />
+   <exelink qstep="2" npc="n518_cian" sub="f" />
+   <exelink qstep="2" npc="n518_cian" sub="g" />
+   <exelink qstep="2" npc="n518_cian" sub="h" />
+   <exelink qstep="2" npc="n518_cian" sub="i" />
+   <exelink qstep="2" npc="n518_cian" sub="j" />
+   <exelink qstep="2" npc="n518_cian" sub="k" />
+   <exelink qstep="2" npc="n518_cian" sub="l" />
+   <exelink qstep="2" npc="n518_cian" sub="m" />
+   <exelink qstep="2" npc="n518_cian" sub="n">0</exelink>
+   <exelink qstep="2" npc="n518_cian" sub="o">1</exelink>
+   <exelink qstep="2" npc="n518_cian" sub="!next" />
+   <journal_data recompense="93070" quest_title="네스트의 현현" chapterid="4" quest_level="28" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_43.dds</contents_image>
+         <destination_pos>432,-150,116</destination_pos>
+         <destination_mode>custom:431@3,432@4</destination_mode>
+         <statemark_npcid>1149</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="747"><![CDATA[네스트의 현현I]]></title>
+         <contents mid="748"><![CDATA[<html>검은 영지 수비대 거점으로 가서 검은기사의 행방을 추적하자.<BR><BR><FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 영지 수비대 거점(워리어 시안)</FONT></html>]]></contents>
+         <destination mid="749"><![CDATA[검은 영지 수비대 거점]]></destination>
+         <todo_msg mid="750"><![CDATA[검은 영지 수비대 거점으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>13,n518</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>518</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="752"><![CDATA[네스트의 현현II]]></title>
+         <contents mid="753"><![CDATA[<html>검은 기사가 네스트를 형성해, 더 쫓을 수 없다고 한다.<BR>검은 산자락으로 가서 이후의 일을 논의하자.<BR><BR><FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="754"><![CDATA[검은 산자락에서 시안과 대화]]></destination>
+         <todo_msg mid="755"><![CDATA[검은 산자락에서 워리어 시안과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9306</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

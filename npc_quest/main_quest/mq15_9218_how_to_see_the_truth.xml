@@ -1,0 +1,277 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9218_how_to_see_the_truth</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9218</qid>
+      <designer>곽노찬</designer>
+      <qlevel>56</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9219</nextqid>
+      <nextqname>mq15_9219_mask_other_world</nextqname>
+      <nextqnpc>n703_book_doctor</nextqnpc>
+      <qkname mid="1"><![CDATA[How to see the truth]]></qkname>
+      <qnpc>
+         <npcid>703</npcid>
+         <npcename>n703_book_doctor</npcename>
+         <npckname>수다쟁이 책 닥터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-noquest" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Hey hey, I'm a busy book.<BR>Go away if you came here to joke around with me.<BR><BR>
+※ <FONT color=#7e12d2>You can get the quest from Saint Haven's Terrence Terramai.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-noquest" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Cidel$<BR>How is Terramai doing?<BR>Tell him that if there's anything that I can help with, I'd be happy.<BR><BR>
+※ <FONT color=#7e12d2>You can get the quest from Saint Haven's Terrence Terramai.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Terrence Terramai$<BR>That's right. The natives might know something.<BR>Since Cidel said that he knows some natives well, I think it'd be better to ask for Cidel's help in getting some information about the Mirror of Truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Terrence Terramai$<BR>Go to Karacule's Hut and ask <FONT color=#a82424>Cidel</FONT> for help in getting some information about the Mirror of Truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Hey hey, I'm a busy book.<BR>Go away if you came here to joke around with me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Death_Knight.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-a" mid="12"><![CDATA[<html>(Tell him what Terrence Terramai said)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Cidel$<BR>Come on in, <FONT color=#387206>{user_nick}</FONT>.<BR>How's it going with <FONT color=#a82424>Barnac</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-1-b" mid="14"><![CDATA[<html>(Chatterbox Book Doctor interferes)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Cidel$<BR><FONT color=#a82424>Mirror of Truth</FONT>...?<BR>
+Well... I've never heard of it before....<BR>
+If you want, I can ask the natives...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Hey, did you just say <FONT color=#a82424>Mirror of Truth</FONT>?!<BR>You should ask <FONT color=#a82424>Doctor</FONT> about such things!<BR><FONT color=#7e12d2>(Doctors shouts while flapping his pages)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Cidel$<BR>That's great. <FONT color=#a82424>Doctor</FONT> must know something about the Mirror of Truth.<BR>
+Let's go and see.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-a" mid="20"><![CDATA[<html>(Look at the records)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Let's see.<BR>Hmm.... Truth or dare... not this. Truth of lie... not this either. The inconvenient truth? Not this. What the heck is the sword of truth....<BR>The Mirror of Tr... Oh, it's here.<BR><FONT color=#a82424>Mirror of Truth</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-a" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-b" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Mirror of Truth$<BR><FONT color=#7e12d2>The long War of the Ancients ended with the </FONT> <FONT color=#a82424>Evil Ancients' Leader</FONT><FONT color=#7e12d2> being caught. The leader had evil energy spread all over his body and his original good self could not be found.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-b" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Mirror of Truth$<BR><FONT color=#7e12d2>The good ancients tried their best to return him to his good self. However, they failed after many tries.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-c" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-d" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Mirror of Truth$<BR><FONT color=#7e12d2>Opinions about how to deal with him was split.</FONT><BR>
+<FONT color=#7e12d2>If Nereid did not find the Mirror of Truth, he would have been recorded as the evil man who had thrust the world into chaos.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-d" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-e" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Mirror of Truth$<BR><FONT color=#7e12d2>The leader of the evil ancients, Bishas Arnobius.</FONT><BR><FONT color=#7e12d2>Wise Arno, who was Nereid's lover and the saviour of the world who single-handedly defeated the Black Dragon, could return to his good self again.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-e" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-f" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Mirror of Truth$<BR><FONT color=#7e12d2>The evil spirit that was used to control Wise Arno was sealed deeply inside the Mirror of Truth. Nereid decided to hide the mirror somewhere in the Encroached Temple Ruins until the evil energy was neutralized and dissolved.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-f" image="QW_62.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-g" mid="26"><![CDATA[<html>Encroached Temple Ruins...?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Hmm... according to the records, the place where you can find the Mirror of Truth is <FONT color=#a82424>Encroached Temple Ruins</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-g" image="QS_Default.dds" itemindex="400321">
+      <talk_answer link_index="n703_book_doctor-2-h" mid="28"><![CDATA[<html>Then how can I find it...?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Yes. The important thing is that only those with a fake self can see the <FONT color=#a82424>Mirror of Truth</FONT>.<BR>Those who are their true self can't see nor feel the mirror.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-h" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-i" mid="30"><![CDATA[<html>What? How...?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Since the fake ones can see it, you can change yourself into a fake self.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-i" image="QS_Default.dds" itemindex="400320">
+      <talk_answer link_index="n703_book_doctor-2-j" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Why do I need to explain every single thing....<BR>You can use <FONT color=#a82424>Mask of Distortion</FONT>.<BR>You can make it by using meteor fragments and mutated eye.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-j" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-3" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Chatterbox Book Doctor$<BR>If you wear that mask, the Mirror of Truth will see you as a fake one, so you'll be able to see the Mirror of Truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-3" image="QW_63.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Chatterbox Book Doctor$<BR>First, go and find the materials needed to make the mask of distortion.<BR><FONT color=#a82424>Meteor fragment</FONT> can be found at <FONT color=#a82424>Meteor Crash Site Core</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QW_63.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Cidel$<BR>Don't be too offended by Doctor's way of speaking.<BR><FONT color=#a82424>Meteor Crash Site Core</FONT> has fierce monsters so be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4" image="QS_Default.dds" itemindex="400318">
+      <talk_answer link_index="n703_book_doctor-4-a" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Chatterbox Book Doctor$<BR>You're slow!<BR>You brought the <FONT color=#a82424>meteor fragments</FONT> only now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4-a" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-4-!next" mid="56"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9218</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">600214</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400318</exe>
+         <exe type="addquestitem" num="1">400318</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">700214</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92181,92181,92182,92183,92184,92185,92186</exe>
+         <exe type="complete">9218</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n703_book_doctor" sub="b" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="c" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="d" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="e" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="f" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="g" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="h" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="i" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="j" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="3">2,3,8,0,1</exelink>
+   <exelink qstep="4" npc="n703_book_doctor" sub="a">0</exelink>
+   <exelink qstep="4" npc="n703_book_doctor" sub="!next">1</exelink>
+   <journal_data recompense="1:92181,2:92182,3:92183,4:92184,5:92185,6:92186" quest_title="진실을 보는 법" chapterid="9" quest_level="56" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[How to see the truth I]]></title>
+         <contents mid="60"><![CDATA[<html>Terramai requested Cidel for information about Mirror of Truth.<BR>
+Go to Karacule's Hut and talk to Cidel.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk with Cidel]]></destination>
+         <todo_msg mid="62"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[How to see the truth II]]></title>
+         <contents mid="64"><![CDATA[<html>While you were talking to Cidel about the Mirror of Truth, Chatterbox Book Doctor interfered.<BR>
+Talk to Chatterbox Book Doctor.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Chatterbox Book Doctor</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Talk to Chatterbox Book Doctor]]></destination>
+         <todo_msg mid="66"><![CDATA[Talk to Chatterbox Book Doctor.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_63.dds</contents_image>
+         <destination_pos>632,0,0</destination_pos>
+         <destination_mode>custom:631@1,632@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[How to see the truth III]]></title>
+         <contents mid="68"><![CDATA[<html>Chatterbox Book Doctor says that mask of distortion is needed to find the Mirror of Truth. To make the mask of distortion, obtain meteor fragments from Meteor Crash Site Core.<BR><BR><FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Meteor Crash Site Core</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Meteor Crash Site Core]]></destination>
+         <todo_msg mid="70"><![CDATA[Find meteor fragments from Meteor Crash Site Core.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[How to see the truth IV]]></title>
+         <contents mid="72"><![CDATA[<html>You have obtained meteor fragments from Meteor Crash Site Core. Go back to Karacule's Hut and talk to Chatterbox Book Doctor.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's Hut)</FONT> <FONT color=#a82424>→ Chatterbox Book Doctor</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to Chatterbox Book Doctor]]></destination>
+         <todo_msg mid="74"><![CDATA[Go back to Chatterbox Book Doctor.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>55:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9217</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

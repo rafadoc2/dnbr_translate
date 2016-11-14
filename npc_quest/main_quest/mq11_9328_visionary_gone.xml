@@ -1,0 +1,356 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9328_visionary_gone</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9328</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9329</nextqid>
+      <nextqname>mq11_9329_clue_of_curse</nextqname>
+      <nextqnpc>n519_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[사라진 선지자]]></qkname>
+      <qnpc>
+         <npcid>1166</npcid>
+         <npcename>n1166_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1167</npcid>
+         <npcename>n1167_academic</npcename>
+         <npckname>아카데믹 코멜리나 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>519</npcid>
+         <npcename>n519_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>532</npcid>
+         <npcename>n532_rambert</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder" center_image="">
+      <talk_answer link_index="n209_elite_soldier-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$정예병사 클림드$<BR>도대체 뭐가 어떻게 돌아가는 건지 모르겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="QW_HermaltePort.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder" center_image="">
+      <talk_answer link_index="n209_elite_soldier-1-" mid="2721" select_type="5" />
+      <talk_question mid="2720"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(헤르말테 포구 쪽으로 가 보자. 다른 모험자들을 만나 상황을 알 수 있을지도 몰라.)</FONT><BR><BR><FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-1-" mid="2783" select_type="5" />
+      <talk_question mid="2782"><![CDATA[<html>$워리어 시안$<BR>제레인트가... 나 때문에...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-1-" mid="2786" select_type="5" />
+      <talk_question mid="2785"><![CDATA[<html>$아카데믹 코멜리나$<BR>선지자를... 되찾지 않으면... 으윽...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-1-" mid="2789" select_type="5" />
+      <talk_question mid="2788"><![CDATA[<html>$건장한 모험자$<BR>...흠. 운이 없는 풋내기로군.<BR><FONT color=#7e12d2>(씁쓸한 미소를 지으며 한 남자가 {user_nick} 쪽을 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1166_lunaria-1" image="QW_HermaltePort.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1166_lunaria-1-" mid="2792" select_type="5" />
+      <talk_question mid="2791"><![CDATA[<html>$루나리아$<BR>...<FONT color=#a82424>헤르말테 포구</FONT> 쪽으로 가는 거구나.<BR>이해했어.<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-2-a" mid="2794" select_type="2" />
+      <talk_question mid="2793"><![CDATA[<html>$건장한 모험자$<BR>...성가시군.<BR><FONT color=#7e12d2>(씁쓸한 미소를 지으며 한 남자가 {user_nick} 쪽을 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-2-b" mid="2796" select_type="2" />
+      <talk_question mid="2795"><![CDATA[<html>$건장한 모험자$<BR>내 상사가 선지자에게 용건이 있으시다셔서 말이야. 양해 좀 해 줘.<BR>야~ 이거 참 이래서 말단은 힘들다니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-2-c" mid="2798" select_type="2" />
+      <talk_question mid="2797"><![CDATA[<html>$건장한 모험자$<BR>운이 없는 것 같지만... 그것도 약해빠진 자의 숙명이겠지.<BR>너무 서운하게 생각 말게, 젊은 친구.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-2-d" mid="2800" select_type="2" />
+      <talk_question mid="2799"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신은 나를 모르는 건가?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-2-e" mid="2802" select_type="2" />
+      <talk_question mid="2801"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(이그나시오와 같은 패라면...</FONT><BR>
+<FONT color=#662500>그 사도인가 하는 무리의 일원일 지도 모르는데.<BR>일루전에 대해서 모르는 건가?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-2-f" mid="2804" select_type="2" />
+      <talk_question mid="2803"><![CDATA[<html>$건장한 모험자$<BR>나는 자네같이 약해빠진 자의 이름은 기억하지 않아.<BR>옛날 이야길 하고 싶다면 노인네들에게나 묻지 그러나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-3" mid="2806" select_type="2" />
+      <talk_question mid="2805"><![CDATA[<html>$건장한 모험자$<BR>자, 이만 작별할 시간이군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n532_rambert-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Warrior_Lambert.dds" center_image="">
+      <talk_answer link_index="n532_rambert-3-" mid="2808" select_type="5" />
+      <talk_question mid="2807"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(더 이상 대화할 수 없다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-a" mid="2810" select_type="2" />
+      <talk_question mid="2809"><![CDATA[<html>$아카데믹 코멜리나$<BR>선지자를... 되찾지 않으면... 으윽...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-b" mid="2812" select_type="2" />
+      <talk_question mid="2811"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어떻게 된 거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3-b" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-c" mid="2815" select_type="2" />
+      <talk_question mid="2814"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#a82424>선지자</FONT>를...... 이그나시오가 납치하려는 걸 막으려고 했는데......<BR>
+그 뒤를 쫓아왔다가, 조금 전의 그 남자에게 당하고 말았습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3-c" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-d" mid="2817" select_type="2" />
+      <talk_question mid="2816"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>선지자를?</FONT><BR>
+<FONT color=#662500>로제를 이그나시오가 선지자를 납치했다고?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-e" mid="2819" select_type="2" />
+      <talk_question mid="2818"><![CDATA[<html>$아카데믹 코멜리나$<BR>네. 저는 그걸 저지하려고 했는데, 여기까지 쫓아와서 조금 전의 그 남자에게 당하는 바람에 그만...<BR>
+면목이 없습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-f" mid="2822" select_type="2" />
+      <talk_question mid="2821"><![CDATA[<html>$아카데믹 코멜리나$<BR>겨우 붙잡았는데... 간신히 제 사명을 다할 수 있게 되었다고 믿었는데... 으으...<BR>
+앞으로 저는 어떻게 하면 좋을지 모르겠습니다.<BR><FONT color=#7e12d2>(코멜리나가 머리를 감싸 쥔다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-g" mid="2824" select_type="2" />
+      <talk_question mid="2823"><![CDATA[<html>$아카데믹 코멜리나$<BR>...저는 앞으로의 일을 <FONT color=#a82424>언니</FONT>와 상의해 봐야겠습니다.<BR><FONT color=#7e12d2>(코멜리나가 어깨를 축 늘어뜨린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-h" mid="2826" select_type="2" />
+      <talk_question mid="2825"><![CDATA[<html>$아카데믹 코멜리나$<BR>먼저 실례하겠습니다.<BR><FONT color=#7e12d2>(코멜리나가 공손히 고개를 숙인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-3-h" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-3-" mid="2828" select_type="5" />
+      <talk_question mid="2827"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(선지자가 사라졌다고? 왕성 지하는 제레인트의 네스트여서 안전하다고 들었는데?! 어째서지?<BR>왕성 지하로 가서 상황을 확인해 보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1167_academic-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1167_academic-4-" mid="2830" select_type="5" />
+      <talk_question mid="2829"><![CDATA[<html>$아카데믹 코멜리나$<BR>먼저 실례하겠습니다.<BR><FONT color=#7e12d2>(코멜리나가 공손히 고개를 숙인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-a" mid="2832" select_type="2" />
+      <talk_question mid="2831"><![CDATA[<html>$워리어 시안$<BR>제레인트 님이... 나 때문에...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-b" mid="2834" select_type="2" />
+      <talk_question mid="2833"><![CDATA[<html>$워리어 시안$<BR>{user_nick} 님, 어떻게 하죠?!<BR>
+<FONT color=#7e12d2>(워리어 시안의 얼굴이 어둡다)</FONT><BR>
+저 때문에, 저 때문에 제레인트 님이...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-c" mid="2836" select_type="0"><![CDATA[<html>어떻게 된 겁니까?</html>]]></talk_answer>
+      <talk_answer link_index="n519_cian-4-c" mid="2837" select_type="0"><![CDATA[<html>진정하세요.</html>]]></talk_answer>
+      <talk_answer link_index="n519_cian-4-c" mid="2838" select_type="0"><![CDATA[<html>무슨 일이 있었습니까?</html>]]></talk_answer>
+      <talk_question mid="2835"><![CDATA[<html>$워리어 시안$<BR><FONT color=#7e12d2>(목이 메는지 말을 잇지 못한다)</FONT><BR>으으~ 전부 내 탓이에요...!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-d" mid="2840" select_type="2" />
+      <talk_question mid="2839"><![CDATA[<html>$워리어 시안$<BR>서펜트라는 주교 이그나시오가 만들어낸 마물이었습니다. 세인트헤이븐을 위협해 제레인트를 네스트에서 끌어내기 위해서였죠. 그리고 결국 서펜트라와의 싸움에서... 제레인트는...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-e" mid="2843" select_type="2" />
+      <talk_question mid="2842"><![CDATA[<html>$워리어 시안$<BR>제가 어리석어서 제레인트 님은 돌아가시고 말았습니다.<BR><FONT color=#7e12d2>(시안이 흐느끼는 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-e" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-f" mid="2847" select_type="0"><![CDATA[<html>당신 탓이라고 할 수는 없죠.</html>]]></talk_answer>
+      <talk_answer link_index="n519_cian-4-f" mid="2848" select_type="0"><![CDATA[<html>자책하는 기분은 알겠지만...</html>]]></talk_answer>
+      <talk_question mid="2844"><![CDATA[<html>$워리어 시안$<BR>저 때문에 서펜트라가 부활한 거고, 제가 아무 것도 모르고 거기까지 모셔 간 탓에 제레인트 님이 죽은... 거예요...<BR>
+저를 감싸다가... 도우려다가... 그만... 흑...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-f" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-g" mid="2850" select_type="2" />
+      <talk_question mid="2849"><![CDATA[<html>$워리어 시안$<BR>결국 로제도 잃고 말았어요.<BR>
+이그나시오가 그런 사악한 자일 거라고는 상상도 못했는데...<BR>
+제가 조금만 더 주의 깊었더라면... 으으...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-g" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-h" mid="2852" select_type="2" />
+      <talk_question mid="2851"><![CDATA[<html>$워리어 시안$<BR>저 자신이 원망스러울 뿐입니다.<BR>이그나시오의 행적을 쫓으려고 했지만, 완전히 놓치고 말았고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-i" mid="2856" select_type="4" />
+      <talk_question mid="2855"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-4-!next" mid="2875" select_type="2" />
+      <talk_question mid="2874"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러면 이제 어떻게 하실 생각입니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9328</exe>
+         <exe type="talk" npc="n209_elite_soldier">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93280,,,,,,,</exe>
+         <exe type="complete" true="">9328</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n209_elite_soldier" sub="acceptted">0,1</exelink>
+   <exelink qstep="2" npc="n532_rambert" sub="b" />
+   <exelink qstep="2" npc="n532_rambert" sub="c" />
+   <exelink qstep="2" npc="n532_rambert" sub="d" />
+   <exelink qstep="2" npc="n532_rambert" sub="e" />
+   <exelink qstep="2" npc="n532_rambert" sub="f" />
+   <exelink qstep="2" npc="n532_rambert" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n1167_academic" sub="b" />
+   <exelink qstep="3" npc="n1167_academic" sub="c" />
+   <exelink qstep="3" npc="n1167_academic" sub="d" />
+   <exelink qstep="3" npc="n1167_academic" sub="e" />
+   <exelink qstep="3" npc="n1167_academic" sub="f" />
+   <exelink qstep="3" npc="n1167_academic" sub="g" />
+   <exelink qstep="3" npc="n1167_academic" sub="h">0,1</exelink>
+   <exelink qstep="3" npc="n1167_academic" sub="" />
+   <exelink qstep="4" npc="n519_cian" sub="b" />
+   <exelink qstep="4" npc="n519_cian" sub="c" />
+   <exelink qstep="4" npc="n519_cian" sub="c" />
+   <exelink qstep="4" npc="n519_cian" sub="c" />
+   <exelink qstep="4" npc="n519_cian" sub="d" />
+   <exelink qstep="4" npc="n519_cian" sub="e" />
+   <exelink qstep="4" npc="n519_cian" sub="f" />
+   <exelink qstep="4" npc="n519_cian" sub="f" />
+   <exelink qstep="4" npc="n519_cian" sub="g" />
+   <exelink qstep="4" npc="n519_cian" sub="h">0</exelink>
+   <exelink qstep="4" npc="n519_cian" sub="i">1</exelink>
+   <exelink qstep="4" npc="n519_cian" sub="!next" />
+   <journal_data recompense="93280" quest_title="사라진 선지자" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,0,0</destination_pos>
+         <destination_mode>custom:12@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2858"><![CDATA[사라진 선지자I]]></title>
+         <contents mid="2859"><![CDATA[<html>헤르말테 포구 쪽으로 가서 상황을 파악해 보자.<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT><BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구</FONT></html>]]></contents>
+         <destination mid="2860"><![CDATA[(1인) 헤르말테 포구]]></destination>
+         <todo_msg mid="2861"><![CDATA[헤르말테 포구로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n532</destination_pos>
+         <destination_mode>custom:12@1</destination_mode>
+         <statemark_npcid>532</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2862"><![CDATA[사라진 선지자II]]></title>
+         <contents mid="2863"><![CDATA[<html>헤르말테 포구에서 쓰러진 여자아이를 위협하는 듯 하던 이그나시오와 낯선 모험자. 그러나 몸이 완전히 회복되지 않아, 그들의 뒤를 쫓을 수는 없었다. 낯선 모험자와 이야기 해 보자.<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT><BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구</FONT> <FONT color=#a82424>- ???</FONT></html>]]></contents>
+         <destination mid="2864"><![CDATA[(1인) 헤르말테 포구에서 모험자와 대화]]></destination>
+         <todo_msg mid="2865"><![CDATA[낯선 모험자와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n1167</destination_pos>
+         <destination_mode>custom:12@1</destination_mode>
+         <statemark_npcid>1167</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2866"><![CDATA[사라진 선지자III]]></title>
+         <contents mid="2867"><![CDATA[<html>낯선 모험자도 사라져 버렸다. 아카데믹 코멜리나와 대화하자.<BR>
+ <BR>
+<FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT><BR>
+ <BR>
+<FONT color=#086171>헤르말테 포구</FONT> <FONT color=#a82424>- 아카데믹 코멜린</FONT></html>]]></contents>
+         <destination mid="2868"><![CDATA[(1인) 헤르말테 포구에서 코멜리나와 대화]]></destination>
+         <todo_msg mid="2869"><![CDATA[아카데믹 코멜리나와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>13014,n519</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>519</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2870"><![CDATA[사라진 선지자IV]]></title>
+         <contents mid="2871"><![CDATA[<html>선지자가 사라졌다? 왕성 지하는 제레인트의 네스트여서 안전한 게 아니었나?<BR>왕성 지하로 가서 상황을 확인하자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성(지하 비밀구역)</FONT> <FONT color=#a82424>- ???</FONT></html>]]></contents>
+         <destination mid="2872"><![CDATA[왕성 지하에서 워리어 시안과 대화]]></destination>
+         <todo_msg mid="2873"><![CDATA[왕성 지하 비밀구역으로 가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9327</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

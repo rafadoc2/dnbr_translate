@@ -1,0 +1,505 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9200_lament_for_farewell1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9200</qid>
+      <designer>김인정</designer>
+      <qlevel>50</qlevel>
+      <qdesc>300504 페어리스타의 근조 공문
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9201</nextqid>
+      <nextqname>mq15_9201_lament_for_farewell2</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <qkname mid="1"><![CDATA[A Lament for Her I]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>801</npcid>
+         <npcename>n801_sorceress_tessa</npcename>
+         <npckname>소서리스 텟사</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Master Sorceress Cynthia$<BR>...Lotus Marsh?<BR>Well, you never know the life.<BR>
+ <BR>
+<FONT color=#7e12d2>※ Need to accept quest from Cidel at Karacule's hut, Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-noquest" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Master Sorceress Tiana$<BR>How are you?<BR>...All the way to Lotus Marsh? Wow!!<BR>
+ <BR>
+<FONT color=#7e12d2>※ Need to accept quest from Cidel at Karacule's hut, Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-noquest" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Sorceress Kayleen$<BR>What's up?<BR>Well, I'm busy but I can afford a minute.<BR>
+ <BR>
+<FONT color=#7e12d2>※Need to accept quest from Cidel at Karacule's hut, Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-noquest" image="QN_Npc_Karakule.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Master Sorceress Stella$<BR>Listen. I went to see a land to build Karacule Wonderland but monsters...huh?<BR>Are you listening?<BR>
+ <BR>
+<FONT color=#7e12d2>※ Need to accept quest from Cidel at Karacule's hut, Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Master Sorceress Tamara$<BR>I'm busy so come back later.<BR>You should be with Cidel.<BR>
+ <BR>
+<FONT color=#7e12d2>※ Need to accept quest from Cidel at Karacule's hut, Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-noquest" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="75"><![CDATA[<html>$Sorceress Tysha$<BR>Karacule has died....<BR>I can't believe it....<BR>
+ <BR>
+<FONT color=#7e12d2>※ Need to accept quest from Cidel at Karacule's hut, Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="6"><![CDATA[<html>(Cidel takes a big breath)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>I have lots of work to take care of. Well first Karacule's funeral....<BR>I don't want to do it but I have to let her go.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$Cidel$<BR>Releasing the news that I'm the next Fairystar can be done after the funeral.<BR>Hey, <FONT color=#387206>{user_nick}</FONT>, can you go to <FONT color=#a82424>Master Sorceress Tamara</FONT> and talk about the funeral please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-1" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Sorceress Tysha$<BR>I can't believe Karacule has passed away...<BR><FONT color=#7e12d2>(Tysha sobs)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Master Sorceress Stella$<BR>Listen. I went to see a land to build Karacule Wonderland but monsters....<BR>Are you listening, it's getting important now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Master Sorceress Cynthia$<BR>...Lotus Marsh?<BR>
+I don't know what but can you move?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Master Sorceress Tiana${action:Talk}<BR>How are you?<BR>...All the way to Lotus Marsh? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Sorceress Kayleen${action:Talk}<BR>What's up?<BR>
+I'm busy but I can afford a minute~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-1-a" mid="85"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Master Sorceress Tamara$<BR>...I can't believe it.<BR><FONT color=#7e12d2>(Tamara bows her head sadly)</FONT><BR><FONT color=#a82424>Karacule</FONT>... She was our mentor... How could she leave....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-1-b" mid="87"><![CDATA[<html>(Tamara's eyes are red)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#7e12d2>(Tamara bites her lips to hold back her tears)</FONT><BR>
+...We don't time for this. Her last word was to make <FONT color=#a82424>Cidel</FONT> the Fairystar.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-1-c" mid="89"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Master Sorceress Tamara$<BR>It will be hard for sorceresses to take <FONT color=#a82424>Cidel</FONT> as a leader.<BR>It's because all Fairystar leaders were women in past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-c" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-1-d" mid="91"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Master Sorceress Tamara$<BR>Well he just has to show his abilities in due time.<BR>...I will take care of the funeral so don't worry too much.<BR>
+Cidel must be busy taking care of the organization work.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-d" image="QS_Default.dds" itemindex="300504">
+      <talk_answer link_index="n713_soceress_tamara-2" mid="93"><![CDATA[<html>(Ok)</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Master Sorceress Tamara$<BR>Other Master Sorceresses need to be informed....<BR>I'll write you a <FONT color=#a82424>letter</FONT>, can you deliver them?<BR>Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-e" image="" itemindex="">
+      <talk_question mid="195"><![CDATA[<html>$Master Sorceress Tamara$<BR>…I can't believe this.<BR><FONT color=#7e12d2>(Tamara's face turns dark and she looks down)</FONT><BR><FONT color=#a82424>Karacule</FONT>… The spiritual pillar of the sorceresses has left us….<BR>
+<FONT color=#7e12d2>※Talk to Tamara after becoming Level 50.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>Thanks for helping out.<BR>Well, go to <FONT color=#a82424>Sorceress Kayleen</FONT> in <FONT color=#a82424>Saint Haven</FONT> first.<BR>I'll add the list in the letter.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-a" mid="98"><![CDATA[<html>(Deliver the letter)</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Sorceress Kayleen${action:Talk}<BR>Oh~ It's <FONT color=#387206>{user_nick}</FONT>, who left without saying good bye.<BR>I'm busy but I'll spare you a minute. Hohoho~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-b" mid="101"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Sorceress Kayleen$<BR>What?! Karacule...?!<BR>
+<FONT color=#7e12d2>(Her voice is shaking)</FONT><BR>Oh my Goddess....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-c" mid="103"><![CDATA[<html>Calm down...</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Sorceress Kayleen$<BR>...I can't believe it. How come I'm not the successor! <FONT color=#a82424>Cidel</FONT>? Cidel?!<BR>Never heard of the name!<BR>
+I don't know who that is but I don't understand the succession!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-c" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3" mid="106"><![CDATA[<html>(Kayleen shakes her hand)</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Sorceress Kayleen$<BR>Hoo... Nothing is going to be solved talking to you, <FONT color=#387206>{user_class}</FONT>.<BR>Well go, I'll say goodbye to Karacule by myself!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="108"><![CDATA[<html>$Sorceress Kayleen$<BR>Mumble... Ridiculous... Mumble....<BR>Hmm? What are you looking at? If you have spare time, go and see <FONT color=#a82424>Master Sorceress Stella</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="111"><![CDATA[<html>(Deliver the letter and news)</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Master Sorceress Stella$<BR>Long time no see! Hey, listen up.<BR>I went to see a land to build Karacule Wonderland but monsters... Huh? What is this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="QN_Npc_Karakule.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="113"><![CDATA[<html>(Stella is out of her mind)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Master Sorceress Stella$<BR>What!! My <FONT color=#a94407>respectable </FONT><FONT color=#086171>beautiful </FONT><FONT color=#a94407>kind </FONT><FONT color=#086171>perfect</FONT> <FONT color=#a82424>Karacule</FONT> has passed away?!<BR>
+<FONT color=#7e12d2>(Stella's face turns pale)</FONT><BR>Oh my Goddess... My plan to build a statue of her in the middle of Lotus Marsh....!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="QN_Npc_Karakule.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-c" mid="118"><![CDATA[<html>(Stella starts to cry)</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Master Sorceress Stella$<BR>Karacule!! Oh... I should have gone to Lotus Marsh to visit her...<BR>My day was going good...<BR>
+I'm going to build Wonderland, but how can you not come Karacule~!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4" mid="120"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh... I'm so sad, go away.<BR>My make up is ruined....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh... I should change my plan and build the cemetery.<BR>...Ah, have you heard about <FONT color=#a82424>Master Sorceress Tiana</FONT> in Calderock Village?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="125"><![CDATA[<html>(Tiana stares sky)</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Master Sorceress Tiana${action:Talk}<BR>I was so sad when my Master died.<BR>But our mentor <FONT color=#a82424>Karacule</FONT> has also left us...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-b" mid="127"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Master Sorceress Tiana$<BR>Thank you for the news.<BR>I have never heard of the name <FONT color=#a82424>Cidel</FONT>...<BR>
+It was unexpected that a man succeeded Fairystar.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-b" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-5" mid="129"><![CDATA[<html>(Tiana looking through her files)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Master Sorceress Tiana$<BR>Well I would still respect her choice.<BR>Hmm... I better leave soon if I were to attend the funeral. What should I do?<BR>I'd better think about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="130"><![CDATA[<html>$Master Sorceress Tiana$<BR>Oh... Have you been to <FONT color=#a82424>Master Sorceress Cynthia</FONT> in Mana Ridge?<BR>Don't fOgret to give her the letter.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-class_cynthia" mid="132"><![CDATA[<html>(Deliver the letter)</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Master Sorceress Cynthia$<BR>What do you want from me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-a" image="QS_Default.dds" itemindex="300504">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-b" mid="134"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Let's see what it says... oh, ok.<BR>Rest in peace.<BR>I have nothing more to say.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-b" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-c" mid="136"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Master Sorceress Cynthia$<BR><FONT color=#7e12d2>(Cynthia stares far away, hiding her feelings)</FONT><BR>...Time has passed.<BR>I believe I'll be there with her someday.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-c" image="QS_Default.dds" itemindex="300504">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-d" mid="138"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Master Sorceress Cynthia$<BR>I'll let the other sorceress know.<BR>Do you have anthing else to do? Go back to Lotus Marsh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-d" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-6" mid="140"><![CDATA[<html>(Cynthia takes the letter)</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Master Sorceress Cynthia$<BR>As a Sorceress I thank and ask you a favor.<BR>Stay close to the new Fairystar, take care of him please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-e" image="" itemindex="">
+      <talk_question mid="189"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Return to <FONT color=#a82424>Lotus Marsh</FONT>.<BR>Anyway how could a kid like you meet her?<BR>Life is so unexpected.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-a" mid="191"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="190"><![CDATA[<html>$Master Sorceress Cynthia$<BR>...Long time no see, <FONT color=#387206>{user_nick}</FONT>. You went to Lotus Marsh in such a short time.<BR>Huh! I never expected that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-g" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-a" mid="193"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="192"><![CDATA[<html>$Master Sorceress Cynthia$<BR>
+<FONT color=#7e12d2>(Cynthia is silent for a while after reading the letter)<BR></FONT>...Assigning this important job to a kid like you, {user_class}?<BR>
+I don't know what Tamara is thinking. Anyway welcome.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-6" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$Master Sorceress Stella$<BR>Return to <FONT color=#a82424>Lotus Marsh</FONT>.<BR>
+<FONT color=#7e12d2>(Cynthia mumbles)</FONT><BR>Life is so unexpected.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-6" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="143"><![CDATA[<html>$Master Sorceress Tamara$<BR>Preparation for the funeral is going good.<BR>Go back to <FONT color=#a82424>Cidel</FONT> and stay with him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-6" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n801_sorceress_tessa-6-a" mid="145"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$Sorceress Tysha$<BR>I can't believe Karacule has passed away....<BR><FONT color=#7e12d2>(Tysha is crying)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-6-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n801_sorceress_tessa-6-b" mid="147"><![CDATA[<html>(Tysha starts to cry)</html>]]></talk_answer>
+      <talk_question mid="146"><![CDATA[<html>$Sorceress Tysha$<BR>Aren't you that <FONT color=#387206>{user_class}</FONT> kid that we've been seeing around lately?<BR>I can't believe Karacule passed away before I got proper lessons from her.<BR>
+I'm so unfortunate....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-6-b" image="QW_Karakule_House.dds" itemindex="">
+      <talk_answer link_index="n801_sorceress_tessa-7" mid="149"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Sorceress Tysha$<BR>Also the successor is a kid!!<BR>I can't believe this. I can't agree with that decision!<BR><FONT color=#7e12d2>(Tysha stares at the hut)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-7" image="QW_Karakule_House.dds" itemindex="">
+      <talk_question mid="150"><![CDATA[<html>$Sorceress Tysha${action:Talk}<BR>I'll grief myself a little bit more so please leave....<BR>
+Karacule! Why did you leave me behind?...<BR><FONT color=#7e12d2>(Tysha cries her heart out while looking at the hut)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-7" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-7-a" mid="153"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$Cidel$<BR>How was the trip?<BR>I heard from <FONT color=#a82424>Tamara</FONT> that you delivered the letters.<BR>Thank you so much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-7-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-7-b" mid="155"><![CDATA[<html>Cidel...</html>]]></talk_answer>
+      <talk_question mid="154"><![CDATA[<html>$Cidel$<BR>Tamara is helping me out a lot.<BR>Thanks to her, we can manage the funeral well but Charti....<BR><FONT color=#7e12d2>(Cidel did not finish the sentence)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-7-b" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-7-c" mid="157"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="156"><![CDATA[<html>$Cidel$<BR><FONT color=#7e12d2>(Cidel changes the topic)</FONT><BR>Natives who escaped from Dragon Followers are hidden somewhere...<BR>I'm not sure if they are capable of having a funeral for Charti.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-7-c" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-7-!next" mid="159"><![CDATA[<html><FONT color=#a94407>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9200</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">50</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300504</exe>
+         <exe type="delquestitem" num="-1">400070</exe>
+         <exe type="conexe" true="5" false="6">0</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+         <exe type="talk" npc="n713_soceress_tamara">e</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="delquestitem" num="-1">300504</exe>
+         <exe type="conexe" true="6" false="4">0</exe>
+         <exe type="conexe" true="6" false="5">1</exe>
+         <exe type="conexe" true="6" false="7">2</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">f</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">g</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92000,,,,,,</exe>
+         <exe type="complete" true="">9200</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n713_soceress_tamara">4</exelink>
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="d" />
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="2">0,1,2,3</exelink>
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="class_cynthia">3</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="6">0,1,2</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="a" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="a" />
+   <exelink qstep="6" npc="n801_sorceress_tessa" sub="b" />
+   <exelink qstep="6" npc="n801_sorceress_tessa" sub="7">0,1</exelink>
+   <exelink qstep="7" npc="n707_sidel" sub="b" />
+   <exelink qstep="7" npc="n707_sidel" sub="c">0</exelink>
+   <exelink qstep="7" npc="n707_sidel" sub="!next">1</exelink>
+   <journal_data recompense="92000" quest_title="그녀에게 바치는 만가Ⅰ" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="300504">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="160"><![CDATA[News]]></title>
+         <contents mid="161"><![CDATA[<html>Meet Master Sorceress Tamara to prepare the funeral for Karacule.<BR>
+<BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="162"><![CDATA[Conversation with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="163"><![CDATA[Talk to Master Sorceress Tamara.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="164"><![CDATA[To Sorceress Kayleen]]></title>
+         <contents mid="165"><![CDATA[<html>Need to inform about Karacule's death. Deliver the letters to Sorceresses.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="166"><![CDATA[Conversation with Sorceress Kayleen]]></destination>
+         <todo_msg mid="167"><![CDATA[Deliver the letter to Sorceress Kayleen.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="168"><![CDATA[To Master Sorceress Stella]]></title>
+         <contents mid="169"><![CDATA[<html>Need to inform about Karacule's death. Deliver the letters to Sorceresses.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="170"><![CDATA[Conversation with Master Sorceress Stella]]></destination>
+         <todo_msg mid="171"><![CDATA[Deliver the letter to Sorceress Stella.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom:11@4,15@4,27@0,28@0</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="173"><![CDATA[To Master Sorceress Tiana]]></title>
+         <contents mid="174"><![CDATA[<html>Need to inform about Karacule's death. Deliver the letters to Sorceresses.<BR>
+ <BR>
+<FONT color=#086171>Calderock Gates</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="175"><![CDATA[Conversation with Master Sorceress Tiana]]></destination>
+         <todo_msg mid="176"><![CDATA[Deliver the letter to Sorceress Tiana]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom:11@4,15@4</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="177"><![CDATA[To Master Sorceress Cynthia]]></title>
+         <contents mid="178"><![CDATA[<html>Need to inform about Karacule's death. Deliver the letters to Sorceresses.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="179"><![CDATA[Conversation with Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="180"><![CDATA[Deliver the letter to Master Sorceress Cynthia]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n801</destination_pos>
+         <destination_mode>custom:5@4,8@4</destination_mode>
+         <statemark_npcid>801</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="181"><![CDATA[To Riverwort Wharf]]></title>
+         <contents mid="182"><![CDATA[<html>Finished delivery. Return to Lotus Marsh.<BR><BR><FONT color=#086171>Riverwort Wharf</FONT></html>]]></contents>
+         <destination mid="183"><![CDATA[Return to Riverwort Wharf]]></destination>
+         <todo_msg mid="184"><![CDATA[Go back to Lotus Marsh]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:14@1</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="185"><![CDATA[Return]]></title>
+         <contents mid="186"><![CDATA[<html>Return to Cidel.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="187"><![CDATA[Conversation with Cidel in Karacule's hut]]></destination>
+         <todo_msg mid="188"><![CDATA[Talk to Cidel in Karacule's hut]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>723,744</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

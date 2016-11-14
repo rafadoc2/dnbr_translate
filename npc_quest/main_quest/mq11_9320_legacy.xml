@@ -1,0 +1,509 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9320_legacy</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9320</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9321</nextqid>
+      <nextqname>mq11_9321_fight_fire_with_fire</nextqname>
+      <nextqnpc>n044_archer_master_ishilien</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[긴 세월이 남긴 것]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$문장학자 스타쉬$<BR>50년 전의 그 전투 이후, 나는 내내 과거에 사로잡혀왔던 것 같네.<BR>하지만 50년 전의 그늘에서 빠져나오지 못한 건 나만이 아니라네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="2013" select_type="0"><![CDATA[<html>그녀? 누구 말입니까?</html>]]></talk_answer>
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="2014" select_type="0"><![CDATA[<html>누구를 만나면 됩니까?</html>]]></talk_answer>
+      <talk_question mid="2012"><![CDATA[<html>$문장학자 스타쉬$<BR>모처럼의 기회이니, 그녀에게도 질문할 차례를 돌려주고 싶군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Starshy.dds" center_image="">
+      <talk_answer link_index="n088_scholar_starshy-1-" mid="2016" select_type="5" />
+      <talk_question mid="2015"><![CDATA[<html>$문장학자 스타쉬$<BR><FONT color=#a82424>상급 아처 이실리엔</FONT>일세. 그녀는 네르윈 님을 따라 50년 전의 전투에 참가했다네.<BR>그녀 역시 나름대로 풀리지 않는 의문을 품고 있을테니, 자네가 그 이야기를 들어 주게나. 부탁하네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-1-" mid="2019" select_type="5" />
+      <talk_question mid="2018"><![CDATA[<html>$제레인트$<BR>...지금 네가 해야할 일은 여기에 머무는 것이 아니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="2021" select_type="2" />
+      <talk_question mid="2020"><![CDATA[<html>$상급 아처 이실리엔$<BR>스타쉬 님을 통해 이야기를 들었습니다. 오랫동안 만나고 싶었던 그 분이 세인트헤이븐의 왕성에 와 있다는 것도.<BR>
+그리고... 몇 명의 모험자만이 그분을 뵐 수 있다는 것도요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="QN_archer_nerwin_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-b" mid="2023" select_type="2" />
+      <talk_question mid="2022"><![CDATA[<html>$상급 아처 이실리엔$<BR>50년 전, 저는 <FONT color=#a82424>나르실리아</FONT> 여왕님...<BR>그러니까, 당시에는 <FONT color=#a82424>네르윈</FONT>이라고 불린 분을 따라 블랙 드래곤과의 전투에 참가했습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-c" mid="2025" select_type="2" />
+      <talk_question mid="2024"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(모두들 옛날 이야기를 하는구나.<BR>이런 이야기를 듣자면 50년 전도 바로 얼마 전의 일인 것처럼 느껴져.</FONT><BR>
+<FONT color=#662500>지금 여기로부터는 아주 오래 전인데도 말이지.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-d" mid="2028" select_type="2" />
+      <talk_question mid="2027"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...내가 원래 있던 때에 비하면 50년 전조차 미래이긴 하지만.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-d" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-e" mid="2030" select_type="2" />
+      <talk_question mid="2029"><![CDATA[<html>$상급 아처 이실리엔$<BR>고대 제사장의 룬을 구해 <FONT color=#a82424>블랙 드래곤 카라스의 네스트</FONT>로 향할 때까지는 순조로운 편이었습니다.<BR>그러나 인간과 엘프 연합군으로 이루어졌다 믿었던 그 군대는, 갑작스런 드래곤의 등장으로 혼란에 빠지고 말았죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-e" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-f" mid="2032" select_type="2" />
+      <talk_question mid="2031"><![CDATA[<html>$상급 아처 이실리엔$<BR>골드 드래곤... 우리가 리더로 추대했던 <FONT color=#a82424>제레인트</FONT> 님께서 드래곤으로 변했을 때, 모두들 크게 놀랐습니다.<BR>전쟁이 끝난 후 카라큘 님이나 바르낙 님은 그를 배신자라고 비난하셨죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-f" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-g" mid="2034" select_type="2" />
+      <talk_question mid="2033"><![CDATA[<html>$상급 아처 이실리엔$<BR>여러 사람이 죽고 큰 부상을 입었습니다. 이 근처까지 전부... 아비규환의 현장만이 남겨져 있었죠.<BR>블랙 드래곤은 쓰러졌지만, 그야말로 상처뿐인 영광. 허울에 불과한 승리.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-h" mid="2036" select_type="2" />
+      <talk_question mid="2035"><![CDATA[<html>$상급 아처 이실리엔$<BR>그런데 제레인트 님은 아르젠타 님과 함께 어떠한 사과도, 해명도 없이 떠나 버리셨습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-h" image="QN_archer_nerwin_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-i" mid="2039" select_type="2" />
+      <talk_question mid="2038"><![CDATA[<html>$상급 아처 이실리엔$<BR>네르윈 님은 블랙 드래곤의 피에 오염되어 큰 상처를 입으셨고, 아누 아렌델로 급히 이송되셨습니다.<BR>가시기 직전까지도 그분은 알고 싶어 하셨어요. 그 두 분이 무엇을 하려했던 것인지를...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-i" image="QN_archer_nerwin_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-2" mid="2041" select_type="2" />
+      <talk_question mid="2040"><![CDATA[<html>$상급 아처 이실리엔$<BR>부탁 드립니다. 저와 네르윈 님의 오랜 의문을 풀어 주세요.<BR>과연 두 분은 그동안 무엇을 하고 계셨는지 제 대신 여쭤봐 주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-" mid="2043" select_type="5" />
+      <talk_question mid="2042"><![CDATA[<html>$상급 아처 이실리엔$<BR><FONT color=#a82424>제레인트</FONT> 님께 제 말을 전해 주세요.<BR>은빛 초승달 궁수단의 일원이었던 엘프가, 지난 50년 간 과연 무엇을 하셨는지 알고 싶어 여쭙더라고 말입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-a" mid="2045" select_type="2" />
+      <talk_question mid="2044"><![CDATA[<html>$제레인트$<BR>...또 50년 전의 관계자인가.<BR>시간이 지났어도 모두가 그때의 망령에서 벗어나지 못한 것 같군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-b" mid="2048" select_type="2" />
+      <talk_question mid="2047"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>또... 라고요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-c" mid="2050" select_type="2" />
+      <talk_question mid="2049"><![CDATA[<html>$제레인트$<BR>문장학자의 질문을 가지고 다른 모험자가 왔었다.<BR>이번에는 생명의 나무의 딸이라는 거군.<BR>
+엘프조차 과거로부터 자유로울 수는 없는 모양이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-d" mid="2052" select_type="2" />
+      <talk_question mid="2051"><![CDATA[<html>$제레인트$<BR>50년 전의 싸움 후, 나와 아르젠타가 무엇을 했는지 물었나?<BR>그에 답하겠다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-d" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-e" mid="2054" select_type="2" />
+      <talk_question mid="2053"><![CDATA[<html>$제레인트$<BR>50년 전, 블랙 드래곤 카라스를 쓰러뜨린 후 벨스커드는 블랙 드래곤의 보옥을 지닌 채 사라졌다.<BR>나는 그를 추적하며 알테이아 대륙을 떠돌았고, 케이어스 드래곤의 파편들을 찾아내어 봉인하는 일도 해야 했지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-e" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-f" mid="2056" select_type="2" />
+      <talk_question mid="2055"><![CDATA[<html>$제레인트$<BR>그리고 아르젠타는 점점 쇠약해져만 가는 모노리스를 지탱하기 위해 거의 모든 힘을 소비해야만 했다.<BR>여신의 꿈이 타락의 독에 의해 오염된 후, 세계는 점점 더 불안정해지고 있었으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-g" mid="2058" select_type="2" />
+      <talk_question mid="2057"><![CDATA[<html>$제레인트$<BR>지금도 그렇듯 오염은 확산되고 마물들은 더욱 강해져 가고 있다.<BR>언제 모노리스마저 그 균형을 완전히 잃게 될 지 모를 일이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-h" mid="2060" select_type="0"><![CDATA[<html>모노리스가 뭡니까?</html>]]></talk_answer>
+      <talk_answer link_index="n216_geraint_wounded-2-h" mid="2061" select_type="0"><![CDATA[<html>(모노리스에 대해 물어볼까?)</html>]]></talk_answer>
+      <talk_question mid="2059"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(모노리스... 루나리아가 얼핏 이야기했던 이름이다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-i" mid="2063" select_type="2" />
+      <talk_question mid="2062"><![CDATA[<html>$제레인트$<BR>모노리스. <FONT color=#a82424>여신과 이 세계를 잇는 매개체</FONT>. 세계를 재는 저울이며 여신에게 닿는 층계.<BR>...그것이 무엇인지 인간의 언어로 정확히 전달할 방법을 나는 모른다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-j" mid="2065" select_type="2" />
+      <talk_question mid="2064"><![CDATA[<html>$제레인트$<BR>다만 알고 있는 것은, 우리들의 의무.<BR>이 세계가 깨어지지 않게 하기 위해서 모노리스를 지켜야만 한다는 것.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-k" mid="2067" select_type="2" />
+      <talk_question mid="2066"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그런 게 있었구나. 몰랐네.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-k" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-l" mid="2069" select_type="2" />
+      <talk_question mid="2068"><![CDATA[<html>$제레인트$<BR>아르젠타는 당시 큰 부상을 입었지만, 그것을 회복하지 못하고 계속해서 힘을 쏟아 부어야 했다.<BR>그러다 두 번째 태고의 별을 보고 고대인의 후예를 찾아 캐더락 관문으로 갔지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-l" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-2-m" mid="2071" select_type="2" />
+      <talk_question mid="2070"><![CDATA[<html>$제레인트$<BR>점점 세계는 불안정해지고 있다. 아직 완전히 회복되지 못한 나로서는 아르젠타를 도울 수 없었다.<BR>그녀의 강인함과 현명함에는 감탄할 뿐이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-3" mid="2073" select_type="2" />
+      <talk_question mid="2072"><![CDATA[<html>$제레인트$<BR>이제 네 의문은 풀렸나?<BR>...내 말을 어떻게 생각하든 그건 듣는 자의 자유다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-3-" mid="2076" select_type="5" />
+      <talk_question mid="2075"><![CDATA[<html>$제레인트$<BR>이만 <FONT color=#a82424>질문한 자</FONT>에게 돌아가는 게 좋을 것 같군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="2078" select_type="2" />
+      <talk_question mid="2077"><![CDATA[<html>$상급 아처 이실리엔$<BR>자아, 듣고 있을테니 제게 그분의 대답을 들려 주세요.<BR>저는 50년 동안 한결같이 그 의문을 품고 있었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-b" mid="2080" select_type="2" />
+      <talk_question mid="2079"><![CDATA[<html>$상급 아처 이실리엔$<BR><FONT color=#7e12d2>(제레인트의 이야기를 들은 이실리엔이 생각에 잠겨 중얼거린다)</FONT><BR>세계의 균형을 지키기 위해서...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-c" mid="2082" select_type="2" />
+      <talk_question mid="2081"><![CDATA[<html>$상급 아처 이실리엔$<BR>그렇군요.<BR>두 분은 세계를 지키기 위해 존재하는 분들이니까요.<BR>여러가지 고난이 있었을 거라고 생각은 했었습니다. 하지만...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-c" image="QN_archer_nerwin_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-d" mid="2084" select_type="0"><![CDATA[<html>그는 인간이 아니니까요.</html>]]></talk_answer>
+      <talk_answer link_index="n044_archer_master_ishilien-3-e" mid="2085" select_type="0"><![CDATA[<html>제레인트 나름의 배려였을지도...</html>]]></talk_answer>
+      <talk_question mid="2083"><![CDATA[<html>$상급 아처 이실리엔$<BR>하지만, 역시 드래곤에게 감정을 이해해 달라는 건 무리였을까요?<BR>
+우정이나 사랑 같은 어려운 말을 하는 게 아닙니다.<BR>저도, 네르윈 님도...... 아니, 모두들 마찬가지였을 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-f" mid="2087" select_type="2" />
+      <talk_question mid="2086"><![CDATA[<html>$상급 아처 이실리엔$<BR>인간이 아니다...? 그렇지요. 드래곤은 인간과는 다른 존재이지요.<BR>하지만 이를테면 저도 엘프입니다. 인간의 감정을 똑 같이 느끼지는 않아요.<BR>
+그래도 틀림없이 그때 우리들 사이에는 무엇인가가 있었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-f" mid="2089" select_type="2" />
+      <talk_question mid="2088"><![CDATA[<html>$상급 아처 이실리엔$<BR>드래곤의 배려라...? 클레릭들은 이따금 여신의 뜻이란 참 알 수 없다고 말씀하시더군요.<BR>드래곤의 배려 역시 그런 종류의 것일까요? 우리들은 쉽게 알 수 없는......<BR>
+<FONT color=#7e12d2>(이실리엔이 쓸쓸한 표정을 짓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-g" mid="2091" select_type="2" />
+      <talk_question mid="2090"><![CDATA[<html>$상급 아처 이실리엔$<BR>제레인트 님은 우리의 리더였습니다. 모두가 그를 신뢰했고, 좋아했어요.<BR>그렇기에 그분의 정체를 보고 카라큘 님이나 바르낙 님이 화를 냈으리라 생각해요.<BR>동료라고 생각했는데, <FONT color=#a82424>배신 당했다</FONT>... 그런 생각에.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-g" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-h" mid="2093" select_type="2" />
+      <talk_question mid="2092"><![CDATA[<html>$상급 아처 이실리엔$<BR>그러나 제레인트 님과 아르젠타 님은 그 어떤 변명도 없이 떠났습니다.<BR>남겨진 자들은 지독한 병보다도 차가운 배신감에 고통 받았죠.<BR>
+이용당했다고, 버려졌다고 생각했습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-h" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-i" mid="2096" select_type="2" />
+      <talk_question mid="2095"><![CDATA[<html>$상급 아처 이실리엔$<BR>...더는 묻지 않겠어요. 지난 시간동안 두 분이 자신들의 숙명에 충실한 삶을 살았다니, 저는 그걸로 됐어요.<BR>그 누구도 숙명을 배반할 수는 없는 것이니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-j" mid="2098" select_type="2" />
+      <talk_question mid="2097"><![CDATA[<html>$상급 아처 이실리엔$<BR>이제 괜찮아요. 지나간 일은 이만 바람에 실어 떠나 보내기로 하지요.<BR>
+제게는 제 숙명이 있으니까요.<BR><FONT color=#7e12d2>(이실리엔이 부드러운 눈으로 웃고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-a" mid="2100" select_type="2" />
+      <talk_question mid="2099"><![CDATA[<html>$상급 아처 이실리엔$<BR>이번 전쟁의 부상병 중 일부가 병에 걸렸다는 이야기는 드렸죠?<BR>
+그 증세는 블랙 드래곤의 피에 오염되었기 때문입니다.<BR>치료약은 없지만, 최선을 다해서 도우려고 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-b" mid="2102" select_type="2" />
+      <talk_question mid="2101"><![CDATA[<html>$상급 아처 이실리엔$<BR>50년 전의 전쟁에서도 같은 일이 있었습니다.<BR>
+그때를 기억하는 제가 여기에 있다는 것.<BR>그것이야말로 숙명이라고 부를만 하지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-" mid="2104" select_type="5" />
+      <talk_question mid="2103"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그것이 엘프들이 말하는 텔레지아라는 건가? 잘 모르겠지만...</FONT><BR>
+<FONT color=#662500>어쩐지 미진한 기분이 드는데, 제레인트를 다시 한 번만 만나볼까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-a" mid="2106" select_type="2" />
+      <talk_question mid="2105"><![CDATA[<html>$제레인트$<BR>동료들이 나를 배신자라고 여겨도 변명할 말은 없다.<BR>그들이 그 싸움으로 돌이킬 수 없는 부상을 입은 것 역시 사실이고, 내게는 그걸 치료할 능력이 없었으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-a" image="QN_six_heroes_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-b" mid="2108" select_type="0"><![CDATA[<html>(뭐라고 해야 할지 모르겠다)</html>]]></talk_answer>
+      <talk_answer link_index="n216_geraint_wounded-4-b" mid="2109" select_type="0"><![CDATA[<html>(...누구의 이야기일까?)</html>]]></talk_answer>
+      <talk_answer link_index="n216_geraint_wounded-4-b" mid="2110" select_type="0"><![CDATA[<html>(그 말이 인상 깊었나 보다)</html>]]></talk_answer>
+      <talk_question mid="2107"><![CDATA[<html>$제레인트$<BR>그들을 구해줄 수 없었으니, 마음껏 증오할 만한 대상으로라도 남는 편이 낫지 않을까?<BR>증오 역시 인간을 살게 하는 힘이라고... 그렇게 말했던 자가 있었다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-b" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-c" mid="2112" select_type="2" />
+      <talk_question mid="2111"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>정말로 동료들을 배신한 것은 벨스커드 쪽 아닙니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-c" image="QN_knight_velskud_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-d" mid="2114" select_type="2" />
+      <talk_question mid="2113"><![CDATA[<html>$제레인트$<BR>그가 어떤 마음으로 다른 동료들을 배신한 것인지 나는 모른다. 또한 그 이후 어떤 마음으로 살아왔는지도.<BR>인간의 곧은 의지는 때로 이해할 수 없을 만큼 강렬한 악의가 되기도 한다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-d" image="QN_knight_velskud_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-e" mid="2116" select_type="2" />
+      <talk_question mid="2115"><![CDATA[<html>$제레인트$<BR>때로 신념이 도리어 인간을 파멸시키지.<BR>그는 배신자인가?<BR>
+아니면 다른 대의에 의거해 옳은 선택을 했는가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-e" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-f" mid="2118" select_type="2" />
+      <talk_question mid="2117"><![CDATA[<html>$제레인트$<BR>내게 있어 그는 해치워야 할 적이다. 케이어스의 편린이 세계를 위협하게 둘 수 없으니까.<BR>그러나 인간들에게 있어서 그가 어떤 자인가는 모르겠다. 내가 알 수 있는 바가 아니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-f" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-g" mid="2120" select_type="2" />
+      <talk_question mid="2119"><![CDATA[<html>$제레인트$<BR>50년 전, 벨스커드가 블랙 드래곤의 보옥을 가지고 도망친 후 비로소 나는 보옥을 노리는 다른 누군가가 있다는 걸 깨달았다.<BR>
+벨스커드는 그의 명을 받고 잠입해 있었던 것이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-g" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-h" mid="2122" select_type="0"><![CDATA[<html>그게 누구죠...?</html>]]></talk_answer>
+      <talk_answer link_index="n216_geraint_wounded-4-h" mid="2123" select_type="0"><![CDATA[<html>당신은 그가 누군지 아세요?</html>]]></talk_answer>
+      <talk_question mid="2121"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그건 틀림없이 '사도'들의 군주겠지?</FONT><BR>
+<FONT color=#662500>벨스커드가 '그자'라고 말했던...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-i" mid="2125" select_type="2" />
+      <talk_question mid="2124"><![CDATA[<html>$제레인트$<BR>나도 모른다. 짐작은 하고 있지만...<BR>확실하지 않는 일로 추정을 반복해도 의미가 없다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-4-j" mid="2127" select_type="2" />
+      <talk_question mid="2126"><![CDATA[<html>$제레인트$<BR>...자. 그만 돌아가라.<BR>과거의 그림자를 붙들고 있어도 현재의 인간인 네게는 아무런 도움이 되지 않을 테니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-5" mid="2129" select_type="2" />
+      <talk_question mid="2128"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(사실 나야말로 과거의 인간인데...</FONT><BR>
+<FONT color=#662500>드래곤이라고 해도 그런 것까지는 알 수 없는 모양이구나.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="2132" select_type="2" />
+      <talk_question mid="2131"><![CDATA[<html>$제레인트$<BR>...네게는 너무 많은 말을 한 것 같군.<BR>나와 과거의 일에 끌려다니는 것보다, 밝은 세계로 나가서 다른 일을 하도록 해라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-5-" mid="2134" select_type="5" />
+      <talk_question mid="2133"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(상급 아처 이실리엔에게 가 볼까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-a" mid="2136" select_type="2" />
+      <talk_question mid="2135"><![CDATA[<html>$상급 아처 이실리엔$<BR>제레인트 님께 다시 다녀오셨다구요?<BR>이런... 당신은 정말 상냥한 분이시군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-b" mid="2138" select_type="2" />
+      <talk_question mid="2137"><![CDATA[<html>$상급 아처 이실리엔$<BR><FONT color=#a82424>차라리 증오하여서라도 살기를 바랐다</FONT>... 라.<BR>그래요. 저는 여섯 영웅의 일원도 아니었니 그분을 아주 잘 알지는 못합니다.<BR>
+그래도 제레인트 님이라면 이런 대답을 하시리라고 어렴풋이 생각했어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-c" mid="2140" select_type="2" />
+      <talk_question mid="2139"><![CDATA[<html>$상급 아처 이실리엔$<BR>하지만 적어도 전 그분을 증오하고 있지 않습니다.<BR>아마, 다른 분들도 그럴 거라고 생각해요.<BR><FONT color=#7e12d2>(이실리엔이 부드럽게 웃고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-d" mid="2144" select_type="4" />
+      <talk_question mid="2143"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-d" image="QN_Npc_Geraint_Closeeye.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-!next" mid="2167" select_type="2" />
+      <talk_question mid="2166"><![CDATA[<html>$상급 아처 이실리엔$<BR>...제레인트 님은 여전히 미워할 수 없는 분이군요.<BR>차라리 그분이 진짜 배신을 했더라면 모두들 편해졌을텐데...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9320</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93200,,,,,,,</exe>
+         <exe type="complete" true="">9320</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="e" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="f" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="g" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="h" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="i" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="g" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="i" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="j" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="k" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="l" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="m" />
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="e" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="f" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="f" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="g" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="h" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="i" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="j">0,1</exelink>
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="g" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="i" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="j" />
+   <exelink qstep="4" npc="n216_geraint_wounded" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="" />
+   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="c">0</exelink>
+   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="d">1</exelink>
+   <exelink qstep="5" npc="n044_archer_master_ishilien" sub="!next" />
+   <journal_data recompense="93200" quest_title="긴 세월이 남긴 것" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2146"><![CDATA[긴 세월이 남긴 것I]]></title>
+         <contents mid="2147"><![CDATA[<html>50년 전의 싸움에 참여했던 상급 아처 이실리엔에게 가서, 그녀의 이야기를 들어 보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 아처 이실리엔</FONT></html>]]></contents>
+         <destination mid="2148"><![CDATA[세인트헤이븐의 상급 아처 이실리엔과 대화]]></destination>
+         <todo_msg mid="2149"><![CDATA[상급 아처 이실리엔에게 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2150"><![CDATA[긴 세월이 남긴 것II]]></title>
+         <contents mid="2151"><![CDATA[<html>상급 아처 이실리엔은 50년 동안의 의문을 품고 있었던 것 같다. 그녀의 질문을 제레인트에게 전해 주자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성(지하 비밀구역)</FONT> <FONT color=#a82424>- 제레인트</FONT></html>]]></contents>
+         <destination mid="2152"><![CDATA[왕성 지하의 제레인트와 대화]]></destination>
+         <todo_msg mid="2153"><![CDATA[왕성 지하의 제레인트를 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2154"><![CDATA[긴 세월이 남긴 것III]]></title>
+         <contents mid="2155"><![CDATA[<html>상급 아처 이실리엔에게 돌아가 제레인트의 대답을 전하자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 아처 이실리엔</FONT></html>]]></contents>
+         <destination mid="2156"><![CDATA[세인트헤이븐의 상급 아처 이실리엔과 대화]]></destination>
+         <todo_msg mid="2157"><![CDATA[상급 아처 이실리엔에게 들은 것을 전하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2158"><![CDATA[긴 세월이 남긴 것IV]]></title>
+         <contents mid="2159"><![CDATA[<html>상급 아처 이실리엔은 더 이상 질문할 생각이 없는 것 같다.<BR>
+다시 제레인트에게 돌아가 다른 이야기를 들어 보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성(지하 비밀구역)</FONT> <FONT color=#a82424>- 제레인트</FONT></html>]]></contents>
+         <destination mid="2160"><![CDATA[왕성 지하의 제레인트와 대화]]></destination>
+         <todo_msg mid="2161"><![CDATA[다시 한 번 왕성 지하의 제레인트를 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="2162"><![CDATA[긴 세월이 남긴 것V]]></title>
+         <contents mid="2163"><![CDATA[<html>50년 전의 관계자는 누구나 그때의 일에서 자유롭지 못한 모양이다. 벨스커드가 블랙 드래곤의 보옥을 탈취한 일은 역시 사도로서, 그들의 군주를 위해 한 일 같다.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 아처 이실리엔</FONT></html>]]></contents>
+         <destination mid="2164"><![CDATA[세인트헤이븐의 상급 아처 이실리엔과 대화]]></destination>
+         <todo_msg mid="2165"><![CDATA[상급 아처 이실리엔과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9319</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

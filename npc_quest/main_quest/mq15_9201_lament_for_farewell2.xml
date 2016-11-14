@@ -1,0 +1,192 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9201_lament_for_farewell2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9201</qid>
+      <designer>김인정</designer>
+      <qlevel>50</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9202</nextqid>
+      <nextqname>mq15_9202_lament_for_farewell3</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <qkname mid="1"><![CDATA[A Lament for Her II]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>800</npcid>
+         <npcename>n800_native_taruun</npcename>
+         <npckname>원주민 타룬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-noquest" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="189"><![CDATA[<html>$Native Taroon$<BR>Uhm? Are you the <FONT color=#a82424>Sorceress</FONT> who is supposed to meet me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_LM_Nativeman_A.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cidel$<BR>I heard that Natives who escaped from the Dragon Followers are hiding somewhere, so I'm not sure if they are capable of having a funeral.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QW_58.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-1-a" mid="193"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Cidel${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>, I heard that they are hiding at <FONT color=#a82424>Isla Native Village</FONT>...<BR>Can you make a visit for me? This is not just for Charti but i promised I would help finding Karahan.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_question mid="194"><![CDATA[<html>$Cidel$<BR>We have to find him quick.<BR>Although I'm getting help from other sorceresses but the chain of command is in mess at the moment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n800_native_taruun-1-a" mid="197"><![CDATA[<html>Cidel couldn't make it due to Karacule's funeral.</html>]]></talk_answer>
+      <talk_question mid="195"><![CDATA[<html>$Native Taroon$<BR>Uhm? Are you the Sorceress who's supposed to meet me?<BR>...I heard it was a blonde boy.<BR><FONT color=#7e12d2>(The Native is cautious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-1-a" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n800_native_taruun-1-chkclass" mid="199"><![CDATA[<html>Tell me first please.</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Native Taroon$<BR>That's too bad.<BR>I thought I could trust the Sorceress, a friend of Charti.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-1-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n800_native_taruun-1-d" mid="201"><![CDATA[<html>Yes! That's me!</html>]]></talk_answer>
+      <talk_question mid="200"><![CDATA[<html>$Native Taroon$<BR>Ah. Are you <FONT color=#387206>{user_nick}</FONT>...?<BR>I heard <FONT color=#387206>{user_class}</FONT> is a very close friend of that Sorcerer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-1-c" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n800_native_taruun-1-d" mid="203"><![CDATA[<html>Yes that's right.</html>]]></talk_answer>
+      <talk_question mid="202"><![CDATA[<html>$Native Taroon$<BR>Ah... so you are <FONT color=#387206>{user_nick}</FONT>...?<BR>I heard you guys are all friends.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-1-d" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n800_native_taruun-1-e" mid="205"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Native Taroon$<BR>Since the seal which our tribe has been protecting broke, we were after Karahan.<BR>He had <FONT color=#a82424>Treasure of the Green Dragon</FONT> in his hands.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-1-e" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n800_native_taruun-1-f" mid="207"><![CDATA[<html>That's too bad.</html>]]></talk_answer>
+      <talk_question mid="206"><![CDATA[<html>$Native Taroon$<BR>He didn't transform into a full dragon yet.<BR>
+However, to get its full strength, he is wondering around ancient sites to collect treasures.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-1-f" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n800_native_taruun-1-g" mid="209"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="208"><![CDATA[<html>$Native Taroon$<BR>Yes, if we don't stop him, he will bring a big disaster upon this world.<BR>Please go and tell <FONT color=#a82424>Cidel</FONT> about this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-1-g" image="" itemindex="">
+      <talk_question mid="210"><![CDATA[<html>$Native Taroon$<BR>Please hurry.<BR>According to our judgement, Karahan will show up at <FONT color=#a82424>Ancient Treasure Warehouse</FONT> next.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n800_native_taruun-2" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_question mid="211"><![CDATA[<html>$Native Taroon$<BR>Please do your best.<BR>We must stop <FONT color=#a82424>Karahan</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QN_LM_Nativeman_A.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-a" mid="214"><![CDATA[<html>(Deliver Taroon's word)</html>]]></talk_answer>
+      <talk_question mid="212"><![CDATA[<html>$Cidel${action:Talk}<BR>Ah! You're back, <FONT color=#387206>{user_nick}</FONT>.<BR>What did he tell you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-b" mid="216"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$Cidel$<BR>Ok. Karahan....<BR><FONT color=#7e12d2>(Cidel looks serious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n707_sidel-2-c" mid="218"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Cidel$<BR>To honor my master, and for Charti.<BR>
+We have to stop him in order to halt the sacrifice of any more innocent lives.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-c" image="" itemindex="">
+      <talk_answer link_index="n707_sidel-2-!next" mid="220"><![CDATA[<html><FONT color=#a94407>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="219"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9201</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n800_native_taruun">b</exe>
+         <exe type="talk" npc="n800_native_taruun">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92010,,,,,,</exe>
+         <exe type="complete">9201</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n800_native_taruun" sub="chkclass">2</exelink>
+   <exelink qstep="1" npc="n800_native_taruun" sub="d" />
+   <exelink qstep="1" npc="n800_native_taruun" sub="d" />
+   <exelink qstep="1" npc="n800_native_taruun" sub="e" />
+   <exelink qstep="1" npc="n800_native_taruun" sub="f" />
+   <exelink qstep="1" npc="n800_native_taruun" sub="g">0,1</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="c">0</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="!next">1</exelink>
+   <journal_data recompense="92010" quest_title="그녀에게 바치는 만가Ⅱ" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_58.dds</contents_image>
+         <destination_pos>582,n800</destination_pos>
+         <destination_mode>custom:581@1,582@1</destination_mode>
+         <statemark_npcid>800</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="222"><![CDATA[Trace]]></title>
+         <contents mid="223"><![CDATA[<html>According to Cidel, Charti's tribe is after Karahan. Talk to a Native in Isla Native Village for more information.<BR><BR><FONT color=#086171>Riverwort Wharf (Isla Village Entrance)</FONT> <FONT color=#a82424>→ Isla Native Village</FONT></html>]]></contents>
+         <destination mid="224"><![CDATA[Conversation with a Native in Isla Native Village]]></destination>
+         <todo_msg mid="225"><![CDATA[Talk to a Native in Isla Native Village]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="226"><![CDATA[To Stop Him]]></title>
+         <contents mid="227"><![CDATA[<html>Karahan is collecting treasures around ancient sites. Return to Cidel and deliver the words.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="228"><![CDATA[Conversation with Cidel]]></destination>
+         <todo_msg mid="229"><![CDATA[Return to Karacule's hut and talk to Cidel.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9200</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

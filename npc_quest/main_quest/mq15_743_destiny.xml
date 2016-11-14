@@ -1,0 +1,257 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_743_destiny</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>743</qid>
+      <designer>곽노찬</designer>
+      <qlevel>48</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>744</nextqid>
+      <nextqname>mq15_744_record_end</nextqname>
+      <nextqnpc>n701_oldkarakule</nextqnpc>
+      <qkname mid="1"><![CDATA[Chosen Fate]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>703</npcid>
+         <npcename>n703_book_doctor</npcename>
+         <npckname>수다쟁이 책 닥터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>728</npcid>
+         <npcename>n728_karahan</npcename>
+         <npckname>카라한 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Chatterbox Book Doctor${action:Talk}<BR>Oh on, no~!<BR>Oh my god~!<BR>※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Karahan$<BR>Haha.... Easy....<BR>※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Karacule Fairystar$<BR>Cough Cough...<BR>It is time....<BR>※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Master Sorceress Tamara$<BR>Well, since we are short of time, we have to cure them first and study this later. Thank you, <FONT color=#387206>{user_nick}</FONT>.<BR>Say hello to <FONT color=#a82424>Cidel</FONT> and Karacule please.<BR>
+※ <FONT color=#7e12d2>Need a quest from Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Network Connection is not stable.</FONT><BR>※ <FONT color=#7e12d2>Resetting Mission Objective.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Tamara$<BR>Well, since we are short of time, we have to cure them first and study this later. Thank you, <FONT color=#387206>{user_nick}</FONT>.<BR>Say hello to <FONT color=#a82424>Cidel</FONT> and Karacule please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-1-a" mid="9"><![CDATA[<html>Doctor, what happened? Where's Karacule and Cidel?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Chatterbox Book Doctor${action:Talk}<BR>Oh no, Oh no~!<BR>Oh my god~!<BR><FONT color=#7e12d2>(Chatterbox Book Doctor is jumping around)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-a" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-1-b" mid="11"><![CDATA[<html>What do you mean?!</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Chatterbox Book Doctor$<BR>
+Listen!<BR>
+<FONT color=#a82424>Cidel</FONT> has done it!<BR>
+I knew he would do something like this!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-1-c" mid="13"><![CDATA[<html>What...?!</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Chatterbox Book Doctor$<BR>
+<FONT color=#a82424>Cidel</FONT> robbed Fairystar's warehouse!<BR>
+He stole the <FONT color=#a82424>forbidden magic scroll</FONT> which Karahan studied!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-c" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-1-d" mid="15"><![CDATA[<html>Where did those two go?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Chatterbox Book Doctor${action:Talk}<BR>
+He wants to fight Karahan I think.<BR>
+<FONT color=#a82424>Karacule</FONT> found out and went after her!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-d" image="QW_56.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Chatterbox Book Doctor$<BR>They went to <FONT color=#a82424>West Ancient Armory</FONT>! Go after them hurry!<BR>Uh, is he taking the same step as Karahan?!<BR>This is why I said a male can't be a sorcerer!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-1" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Karahan$<BR>
+Haha... Too easy....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Karacule Fairystar$<BR>
+Cough Cough...<BR>
+Time is coming....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Objective.</FONT><BR>※ <FONT color=#7e12d2>Move to Karacule's hut.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2" image="QW_56.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Chatterbox Book Doctor$<BR>
+Cidel and Karacule have gone to <FONT color=#a82424>West Ancient Armory</FONT>!<BR>
+Hurry!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-2" image="" itemindex="">
+      <talk_answer link_index="n728_karahan-2-a" mid="29"><![CDATA[<html>What did you do to them??</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Karahan$<BR>Haha.... Did you come here to challenge me as well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-2-a" image="" itemindex="">
+      <talk_answer link_index="n728_karahan-2-b" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Karahan$<BR>
+I taught them a lesson since they didn't know who they were dealing with.<BR>
+Do you think you can take on this god-like power?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-2-b" image="" itemindex="">
+      <talk_answer link_index="n728_karahan-3" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Karahan$<BR>
+If you don't want to challenge me, take those rubbish with you.<BR>
+I have work to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-3" image="QW_Karakule_House.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Let's take them back to the hut first)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-3-a" mid="37"><![CDATA[<html>Are you ok?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Karacule Fairystar$<BR>
+Cough Cough...<BR>
+<FONT color=#a82424>Karahan</FONT> is stronger than I expected...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3-a" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-3-b" mid="39"><![CDATA[<html>What do you mean the time is coming?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Karacule Fairystar$<BR>Haha... Do I look ok...?<BR>Anyway... The time is coming.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3-b" image="QN_Npc_Sidel.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-3-c" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Karacule Fairystar$<BR>I have been a Fairystar for a long time..<BR>Now, it's time for me to offload this burden. Cough cough...<BR><FONT color=#a82424>Cidel</FONT>, come close....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3-c" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-3-!next" mid="43"><![CDATA[<html><FONT color=#a94407>(Accept Quest)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">743</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7430,,,,,,</exe>
+         <exe type="complete">743</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n703_book_doctor" sub="b" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="c" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n728_karahan" sub="b" />
+   <exelink qstep="2" npc="n728_karahan" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="3" npc="n701_oldkarakule" sub="c">0</exelink>
+   <exelink qstep="3" npc="n701_oldkarakule" sub="!next">1</exelink>
+   <journal_data recompense="7430" quest_title="정해진 운명입니다" chapterid="7" quest_level="48" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Chosen Fate I]]></title>
+         <contents mid="46"><![CDATA[<html>Delivered Cidel's medication to Tamara. Return to Karacule's hut and talk to Cidel.<BR><BR><FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Cidel</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Karacule's hut]]></destination>
+         <todo_msg mid="48"><![CDATA[Return to Karacule's hut and talk to Cidel.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>562,n728</destination_pos>
+         <destination_mode>custom:561@1,562@1</destination_mode>
+         <statemark_npcid>728</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Chosen Fate II]]></title>
+         <contents mid="50"><![CDATA[<html>Cidel stole the forbidden scroll to find Karahan. ALso Karacule went after him to West Ancient Armory.<BR>Go after them.<BR><BR><FONT color=#086171>Riverwort Wharf(Entrance of Ancient Warehouse)</FONT> <FONT color=#a82424>→ West Ancient Armory</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Find the trace of Cidel in West Ancient Armory]]></destination>
+         <todo_msg mid="52"><![CDATA[Go to West Ancient Armory.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_Karakule_House.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Chose fate III]]></title>
+         <contents mid="54"><![CDATA[<html>Cidel and Karacule are down by Karahan. Take them back to Karahan's hut.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf(Karacule's hut)</FONT> <FONT color=#a82424>→ Karacule Fairystar</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Conversation with Karacule]]></destination>
+         <todo_msg mid="56"><![CDATA[Return to Karacule's hut.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>742</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

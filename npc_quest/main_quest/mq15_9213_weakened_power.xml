@@ -1,0 +1,275 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9213_weakened_power</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9213</qid>
+      <designer>곽노찬</designer>
+      <qlevel>52</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9214</nextqid>
+      <nextqname>mq15_9214_other_footprint</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <qkname mid="1"><![CDATA[Disappearing Power]]></qkname>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>825</npcid>
+         <npcename>n825_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>827</npcid>
+         <npcename>n827_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>829</npcid>
+         <npcename>n829_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-noquest" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Rose$<BR>I saw Barnac in my dream.<BR>Please tell Terramai about this.<BR>※ <FONT color=#7e12d2>You can get the quest from Terrence Terramai inside the Saint Haven Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Terrence Terramai$<BR>
+Like what you have said, the person that Barnac is with is likely to be the Dragon Follower who's controlling him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QW_60.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Terrence Terramai$<BR>
+If we catch that Dragon Follower, we may not need Geraint's sword to purify Barnac. Hurry up and go to <FONT color=#a82424>Meteor Crash Site Boundaries</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-1" image="QW_60.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Rose$<BR>
+Hurry up and go to <FONT color=#a82424>Meteor Crash Site Boundaries</FONT>.<BR>
+I will follow you with Terramai.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n829_rose-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Rose$<BR>
+Th-that is... Black Knight....<BR>
+<FONT color=#7e12d2>(Rose looks pale)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n825_velskud-1-a" mid="15"><![CDATA[<html>(Explain the situation)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Velskud$<BR><FONT color=#a82424>The Ancient</FONT>...?<BR>I thought she was taken by Ignacio?<BR>Why is she with you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-a" image="" itemindex="">
+      <talk_answer link_index="n825_velskud-1-b" mid="17"><![CDATA[<html>What is nonsense...?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Velskud$<BR>So Terramai saved her from the Dragon Followers...?<BR>Hah, that's nonsense....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n825_velskud-1-c" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Velskud$<BR>That man had finally gotten the Ancients' descendent in his hands. He wouldn't have lost her so easily....<BR><FONT color=#7e12d2>(Velskud observes Rose carefully)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n825_velskud-1-d" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Velskud$<BR>Of course....<BR><FONT color=#7e12d2>(Velskud stops looking at Rose)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-d" image="" itemindex="">
+      <talk_answer link_index="n825_velskud-1-e" mid="25"><![CDATA[<html>That can't be true. The Prophet's prophecies are still seen.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Velskud$<BR>I don't feel the power of the Ancients.<BR>This kid must have already lost the power of the Ancients, or is a fake.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-e" image="" itemindex="">
+      <talk_answer link_index="n825_velskud-2" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Velskud$<BR>Then she's likely to be a fake.<BR>It must be a liar who's lying that she's using the power when she isn't.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-2" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Velskud$<BR><FONT color=#7e12d2>(Velskud looks like he doesn't have anything more to say and disappears)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n829_rose-2" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n829_rose-3" mid="32"><![CDATA[<html>What did Velskud mean?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Rose$<BR>
+..........<BR><FONT color=#7e12d2>(Rose looks pale)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n829_rose-3" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Rose$<BR>Let's first go back to <FONT color=#a82424>Saint Haven</FONT>....<BR>I'll tell you there....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3" image="" itemindex="">
+      <talk_answer link_index="n827_rose-3-a" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Rose$<BR>Actually... I have fewer prophetic dreams than before.<BR>
+And what I see in my dreams has become vague too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n827_rose-3-b" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Rose$<BR>I think, maybe…I have lost my power like what the Black Knight has said….<BR>
+<FONT color=#7e12d2>(Rose heaves a sigh)</FONT><BR>I hated having these powers….<BR>
+But when I thought that I didn't have it anymore, I felt weird.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-3-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n827_rose-4" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Rose$<BR>If this power completely disappears and I become a normal girl, would I go back to Prairie Town and live like how I used to?<BR>
+<FONT color=#7e12d2>(Rose wipes her tears)</FONT><BR>
+If I can, then maybe it's not that bad to lose the power....<BR>...... I'm sorry to be like this in front of you....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n827_rose-4" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Rose$<BR>Right now I can't see nor feel anything.<BR>I'm sorry I can't be of any help in finding the Black Knight.<BR><FONT color=#7e12d2>(Talk with Terrence Terramai)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-a" mid="43"><![CDATA[<html>(Tell him about Rose's state)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Terrence Terramai$<BR>How was the Prophet?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-a" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-b" mid="45"><![CDATA[<html>What should we do now?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Terrence Terramai$<BR>It's a pity that the Prophet's powers are diminishing....<BR>
+Hmm, I hope it's just temporary....<BR>
+We still need her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-b" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-c" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Terrence Terramai$<BR>I'm going to get more temple knights to look for Velskud and Barnac.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-c" image="QW_63.dds" itemindex="">
+      <talk_answer link_index="n822_teramai-4-d" mid="49"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Terrence Terramai$<BR>Please search the <FONT color=#a82424>Meteor Crash Site Core</FONT>.<BR>
+Since it's a dangerous place, I think it's better to send someone as well-trained as you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-d" image="" itemindex="">
+      <talk_answer link_index="n822_teramai-4-!next" mid="51"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9213</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92131,92131,92132,92133,92134,92135,92136</exe>
+         <exe type="complete">9213</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n825_velskud" sub="b" />
+   <exelink qstep="1" npc="n825_velskud" sub="c" />
+   <exelink qstep="1" npc="n825_velskud" sub="d" />
+   <exelink qstep="1" npc="n825_velskud" sub="e" />
+   <exelink qstep="1" npc="n825_velskud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n829_rose" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n827_rose" sub="b" />
+   <exelink qstep="3" npc="n827_rose" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="b" />
+   <exelink qstep="4" npc="n822_teramai" sub="c" />
+   <exelink qstep="4" npc="n822_teramai" sub="d">0</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="!next">1</exelink>
+   <journal_data recompense="1:92131,2:92132,3:92133,4:92134,5:92135,6:92136" quest_title="사라져가는 힘" chapterid="9" quest_level="52" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_60.dds</contents_image>
+         <destination_pos>601,n825</destination_pos>
+         <destination_mode>custom:601@1</destination_mode>
+         <statemark_npcid>825</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Disappearing Power I]]></title>
+         <contents mid="54"><![CDATA[<html>Rose said that she saw Barnac with someone else. Go to Meteor Crash Site Boundaries and find the person who was with Barnac.<BR><BR><FONT color=#086171>Riverwort Wharf(Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Meteor Crash Site Boundaries</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Search Meteor Crash Site Boundaries]]></destination>
+         <todo_msg mid="56"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>601,n829</destination_pos>
+         <destination_mode>custom:601@1</destination_mode>
+         <statemark_npcid>829</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Disappearing Power II]]></title>
+         <contents mid="60"><![CDATA[<html>The person you met at Meteor Crash Site Boundaries was Velskud. Velskud said that Rose had lost her power of the Ancients. Talk to Rose.<BR><BR><FONT color=#086171>Riverwort Wharf (Meteor Crash Site Entrance)</FONT> <FONT color=#a82424>→ Meteor Crash Site Boundaries (Rose)</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Rose at Meteor Crash Site Boundaries]]></destination>
+         <todo_msg mid="62"><![CDATA[Talk to Rose.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n827</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>827</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Disappearing Power III]]></title>
+         <contents mid="65"><![CDATA[<html>Talk to Rose at Saint Haven Royal Palace Underground.<BR><BR><FONT color=#086171>Saint Haven(Royal Palace Underground)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk to Rose at Royal Palace Underground]]></destination>
+         <todo_msg mid="67"><![CDATA[Go to Saint Haven Royal Palace Underground and talk to Rose.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Disappearing Power IV]]></title>
+         <contents mid="70"><![CDATA[<html>Rose had felt that her powers were disappearing like what Velskud had said. Tell Terramai about Rose's situation.<BR><BR><FONT color=#086171>Saint Haven(Inside Royal Palace)</FONT> <FONT color=#a82424>→ Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Talk with Terrence Terramai inside the Royal Palace]]></destination>
+         <todo_msg mid="72"><![CDATA[Talk with Terrence Terramai.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>9212</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

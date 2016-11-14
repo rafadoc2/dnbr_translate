@@ -1,0 +1,310 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9312_trace_black_knight</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>9312</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9313</nextqid>
+      <nextqname>mq11_9313_entangled_time</nextqname>
+      <nextqnpc>n1151_academic</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[검은 기사의 행방]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1151</npcid>
+         <npcename>n1151_academic</npcename>
+         <npckname>아카데믹 코멜리나 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>519</npcid>
+         <npcename>n519_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="671" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$장군 더글라스$<BR>으음~ 기껏 구출한 선지자가 잠만 자고 있다는 소식은 들었네.<BR>대체 무엇이 문제일까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="1167" select_type="2" />
+      <talk_question mid="1147"><![CDATA[<html>$장군 더글라스$<BR>...아, 자네인가?<BR>이번에는 정말 수고가 많았네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="1169" select_type="2" />
+      <talk_question mid="1168"><![CDATA[<html>$장군 더글라스$<BR>주교 이그나시오 님의 헌신적인 노력과 모험자들 덕분에 갑작스러운 출병에도 소기의 목적을 달성할 수 있었다고 보네. 훌륭하네.<BR><FONT color=#7e12d2>(더글라스가 어깨를 두들겨 준다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-c" mid="1171" select_type="2" />
+      <talk_question mid="1170"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(저 주교 이그나시오는 틀림없이 사도... 일텐데. 엘레나의 경우를 보자면, 사도는 아마도 인간들에게 우호적이지 않을 테고. 그런데 장군의 입으로 칭찬을 듣고 있으니 기분이 이상하군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-d" mid="1174" select_type="2" />
+      <talk_question mid="1173"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그런데 혹시 블랙 드래곤의 흔적은 찾아 보셨습니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-d" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-e" mid="1176" select_type="2" />
+      <talk_question mid="1175"><![CDATA[<html>$장군 더글라스$<BR>음? 블랙 드래곤? 골드 드래곤과의 싸움에서 큰 부상을 입고 추락한 것은 보고 받았네만...<BR>
+검은 대군주의 영지에서는 모습을 찾지 못했네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-e" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-f" mid="1178" select_type="0"><![CDATA[<html>검은 산자락의 오염?</html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-1-f" mid="1179" select_type="0"><![CDATA[<html>어느 지역에서 그런 것이 확인되었습니까?</html>]]></talk_answer>
+      <talk_question mid="1177"><![CDATA[<html>$장군 더글라스$<BR>다만 블랙 드래곤이 검은 대군주의 영지 상공에서 추락하면서 흘린 피때문인지, 검은 산자락의 오염이 다시 심각해지고 있다네. 그쪽으로 신경 쓸 여유가 없어서 큰일일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-g" mid="1181" select_type="2" />
+      <talk_question mid="1180"><![CDATA[<html>$장군 더글라스$<BR>쓸쓸한 숲길 쪽 말일세. 검은 대군주의 관문은 높은 곳에 위치해 있었으니, 산 아래쪽에 위치한 <FONT color=#a82424>쓸쓸한 숲길</FONT>도 그 영향을 피하기 어렵지. 지리적인 구조상 그럴 수밖에 없네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-g" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-h" mid="1183" select_type="2" />
+      <talk_question mid="1182"><![CDATA[<html>$장군 더글라스$<BR>아 참. 그러고 보니 자네 말고도 비슷한 질문을 하던 모험자가 있었네.<BR>역시 블랙 드래곤의 위용을 눈으로 확인했으니 걱정이 되는 거겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-2" mid="1185" select_type="2" />
+      <talk_question mid="1184"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>다른 모험자...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-1-a" mid="1154" select_type="2" />
+      <talk_question mid="1148"><![CDATA[<html>$워리어 시안$<BR>그럼 <FONT color=#387206>{user_nick}</FONT> 님.<BR>
+먼저 실례하겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n519_cian-1-" mid="1156" select_type="5" />
+      <talk_question mid="1155"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(장군 더글라스에게 인사라도 하고 나서, 나도 다른 곳으로 가 볼까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_King_Casius.dds" center_image="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="1158" select_type="2" />
+      <talk_question mid="1149"><![CDATA[<html>$국왕 카시우스$<BR>보고는 받았노라, <FONT color=#387206>{user_nick}</FONT> 착한 백성이여.<BR>모험자의 신분으로 짐을 위해, 왕국을 위해 충성을 다하다니 장하구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_King_Casius.dds" center_image="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="1160" select_type="2" />
+      <talk_question mid="1159"><![CDATA[<html>$국왕 카시우스$<BR>그리고 다, 다른 모험자들은... 주, 주교의 명을 받아서 열심히... 뭔가... 하는 것 같아.<BR>이번 전, 전쟁으로 병력에 타격을 많이 입어서 장군이 근심하고 있는데, 걱정이야...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="QN_Npc_Duke_Stwart.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_King_Casius.dds" center_image="">
+      <talk_answer link_index="n040_king_casius-1-" mid="1162" select_type="5" />
+      <talk_question mid="1161"><![CDATA[<html>$국왕 카시우스$<BR>숙부님은 왕성 내의 일로 바쁘시고 장군은 병사들의 처우 문제로 정신이 없어. 그, 그래서 다른 일은 주교가...<BR>
+주교가 나서주어서 정말 다, 다행스럽다. 솔선수범하는 좋은 시, 신하야. 그렇... 지...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Geraint_Closeeye.dds" center_image="">
+      <talk_answer link_index="n216_geraint_wounded-1-" mid="1163" select_type="5" />
+      <talk_question mid="1150"><![CDATA[<html>$제레인트$<BR>고대인의 후예는 내가 지키고 있을테니, 너는 너의 일을 하거라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-1-" mid="1164" select_type="5" />
+      <talk_question mid="1151"><![CDATA[<html>$낯선 아카데믹$<BR>어? ...낯선 사람입니다.<BR>으음......?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="1165" select_type="5" />
+      <talk_question mid="1152"><![CDATA[<html>$루나리아$<BR>사람이 많은 곳은 싫어...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_SkirtOfBlackMountain.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-2-a" mid="1188" select_type="2" />
+      <talk_question mid="1187"><![CDATA[<html>$장군 더글라스$<BR><FONT color=#a82424>그 어린 모험자</FONT> 말일세. 허허.<BR><FONT color=#a82424>검은 산자락</FONT> 쪽을 둘러보겠다며 아까 쏜살같이 나갔다네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-a" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-2-" mid="1190" select_type="5" />
+      <talk_question mid="1189"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(신경이 쓰이는데. 한 번 검은 산자락 쪽으로 가 볼까...?</FONT><BR>
+<FONT color=#662500>어차피 루나리아에게도 보고하러 가야 하고.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-" mid="1192" select_type="5" />
+      <talk_question mid="1191"><![CDATA[<html>$루나리아$<BR>
+다른 모험자?<BR>
+흐음... 저기에 있는 저 꼬마 아가씨를 말하는 것 아닐까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-a" mid="1194" select_type="2" />
+      <talk_question mid="1193"><![CDATA[<html>$낯선 아카데믹$<BR>앗...!<BR>다, 당신은... 누구시죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-a" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-b" mid="1196" select_type="2" />
+      <talk_question mid="1195"><![CDATA[<html>$낯선 아카데믹$<BR>음? 다른 모험자들과 함께 이번 블랙 드래곤의 레이드에 참가 하셨다고요?<BR>어어...?! 그, 그런 기록은 보지 못한 것 같은데...?<BR><FONT color=#7e12d2>(소녀가 당황한 얼굴로 허둥거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-b" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-c" mid="1199" select_type="2" />
+      <talk_question mid="1198"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(왠지 어디선가 본 것 같은 얼굴인데? 음...</FONT><BR>
+<FONT color=#662500>캐더락 관문에서 그 순백의 오브에 대해 알려준 아이... 아닌가?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-d" mid="1202" select_type="2" />
+      <talk_question mid="1201"><![CDATA[<html>$낯선 아카데믹$<BR>네? 순백의 오브? ...제가 말입니까?<BR><FONT color=#7e12d2>(소녀가 고개를 갸웃거린다)</FONT><BR>제게는 전혀 기억이 없습니다. 우우~ 어떻게 된 노릇일까요...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-e" mid="1205" select_type="2" />
+      <talk_question mid="1204"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(어떻게 된 거지?<BR>혹 그것도 시간이동으로 일어난 문제 같은 건가? 잘 모르겠다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-f" mid="1208" select_type="2" />
+      <talk_question mid="1207"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그보다 저 역시 당신을 블랙 드래곤 레이드에서 못 본 것 같은데요.<BR>성함이...?</FONT><BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-g" mid="1210" select_type="2" />
+      <talk_question mid="1209"><![CDATA[<html>$낯선 아카데믹$<BR>저는 아카데믹 <FONT color=#a82424>코멜리나</FONT>라고 합니다.<BR>당신은... 아, <FONT color=#387206>{user_nick}</FONT> 님이시군요. 반갑습니다.<BR><FONT color=#7e12d2>(코멜리나가 몹시 공손하게 인사한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-h" mid="1212" select_type="2" />
+      <talk_question mid="1211"><![CDATA[<html>$아카데믹 코멜리나$<BR>으음...?<BR>
+데이터상에 이런 분의 기록은 없었는데... 중얼중얼... 이상하네....<BR><FONT color=#7e12d2>(코멜리나가 혼자 고개를 갸우뚱거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-i" mid="1214" select_type="2" />
+      <talk_question mid="1213"><![CDATA[<html>$아카데믹 코멜리나$<BR>그보다 여기에서 뭘 하고 계신가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-j" mid="1216" select_type="2" />
+      <talk_question mid="1215"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그게 실은, 블랙 드래곤의 행방을 찾고 있습니다.<BR>완전히 사라진 것인지 신경이 쓰여서요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-k" mid="1218" select_type="2" />
+      <talk_question mid="1217"><![CDATA[<html>$아카데믹 코멜리나$<BR>그러셨군요.<BR><FONT color=#7e12d2>(코멜리나가 약간 경계심 어린 시선을 보낸다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-l" mid="1220" select_type="2" />
+      <talk_question mid="1219"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>쓸쓸한 숲길 쪽의 오염이 심각해졌다는 말을 들었는데, 어쩌면 그쪽에 단서가 있을 지도 모른다는 생각이 듭니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-m" mid="1224" select_type="4" />
+      <talk_question mid="1223"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1151_academic-2-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1151_academic-2-!next" mid="1236" select_type="2" />
+      <talk_question mid="1235"><![CDATA[<html>$아카데믹 코멜리나$<BR>네? ...앗!!<BR>그, 그렇네요. 말라버린 마리사의 샘이나 그 근방이라면...!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9312</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93120,,,,,,,</exe>
+         <exe type="complete" true="">9312</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="e" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="f" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="f" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="g" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="h" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="1" npc="n519_cian" sub="" />
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="" />
+   <exelink qstep="2" npc="n1151_academic" sub="b" />
+   <exelink qstep="2" npc="n1151_academic" sub="c" />
+   <exelink qstep="2" npc="n1151_academic" sub="d" />
+   <exelink qstep="2" npc="n1151_academic" sub="e" />
+   <exelink qstep="2" npc="n1151_academic" sub="f" />
+   <exelink qstep="2" npc="n1151_academic" sub="g" />
+   <exelink qstep="2" npc="n1151_academic" sub="h" />
+   <exelink qstep="2" npc="n1151_academic" sub="i" />
+   <exelink qstep="2" npc="n1151_academic" sub="j" />
+   <exelink qstep="2" npc="n1151_academic" sub="k" />
+   <exelink qstep="2" npc="n1151_academic" sub="l">0</exelink>
+   <exelink qstep="2" npc="n1151_academic" sub="m">1</exelink>
+   <exelink qstep="2" npc="n1151_academic" sub="!next" />
+   <journal_data recompense="93120" quest_title="검은 기사의 행방" chapterid="5" quest_level="30" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1227"><![CDATA[검은 기사의 행방I]]></title>
+         <contents mid="1228"><![CDATA[<html>세인트헤이븐 왕성에서 장군 더글라스와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성</FONT> <FONT color=#a82424>- 장군 더글라스</FONT></html>]]></contents>
+         <destination mid="1229"><![CDATA[왕성 내부의 장군 더글라스와 대화]]></destination>
+         <todo_msg mid="1230"><![CDATA[장군 더글라스와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_SkirtOfBlackMountain.dds</contents_image>
+         <destination_pos>13,n1151</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1151</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="1231"><![CDATA[검은 기사의 행방II]]></title>
+         <contents mid="1232"><![CDATA[<html>블랙 드래곤의 행방을 묻던 중, 다른 모험자도 같은 것을 물었다는 사실을 알았다. 검은 산자락으로 간 그 모험자를 만나 보자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락</FONT> <FONT color=#a82424>- ???</FONT></html>]]></contents>
+         <destination mid="1233"><![CDATA[검은 산자락에서 모험자와 대화]]></destination>
+         <todo_msg mid="1234"><![CDATA[검은 산자락에서 모험자와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9311</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

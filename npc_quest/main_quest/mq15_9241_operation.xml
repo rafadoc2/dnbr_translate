@@ -1,0 +1,231 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9241_operation</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9241</qid>
+      <designer>곽노찬</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9242</nextqid>
+      <nextqname>mq15_9242_look_at_the_record</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[The Operation Has Started]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceptted" mid="6"><![CDATA[<html>Great. How's the progress with your construction?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Berlin$<BR>Hey there cute lady. How's it going?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-a" mid="8"><![CDATA[<html>Great. How's the progress with your construction?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Berlin$<BR>Hey there cute lady. How's it going?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-b" mid="18"><![CDATA[<html>That's great. (Berlin Corporation is finally taking its shape…)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Blacksmith Berlin$<BR>The construction is going well with the support from you and all the other adventurers.<BR>
+But we still have some time before it's completed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-c" mid="10"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Berlin$<BR>Well….<BR>I have a favour to ask from you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-d" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Berlin$<BR>We have a new agenda from the last director's board meeting.<BR>It's about building a medical center for fulfilling social responsibility and for the progress in the medical research field as well.<BR>I thought it was something positive so I approved it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-d" image="QW_69.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-e" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Berlin$<BR>So I was looking for a land to build the medical center, and I got a good piece of information.<BR>I heard that <FONT color=#a82424>Miracle Altar Conservation Area</FONT> where Professor K used to live, is going to be on sale.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-e" image="QW_69.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2" mid="16"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Blacksmith Berlin$<BR>The land was originally restricted but the recent incidents must have relaxed the restrictions.<BR>I hope you can go and check if the land is worth buying.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Academic Station$<BR>▶ <FONT color=#086171>Network connection is unstable.</FONT><BR>▷ <FONT color=#7e12d2>Failed to load Mission Object settings.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="QW_69.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Blacksmith Berlin$<BR>Please check if <FONT color=#a82424>Miracle Altar Conservation Area</FONT> has enough space and whether there are many monsters around… those kind of simple things.<BR>I'll leave it to you then.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-a" mid="24"><![CDATA[<html>Well… I think that area is a little dangerous.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Blacksmith Berlin$<BR>
+Oh you're back.<BR>
+So how was it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Berlin$<BR>Really? Hmm…<BR>I should look for another place since you say so.<BR>Thanks for your hard work.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(How did XD-27 come here…?</FONT><BR><FONT color=#7e12d2>Could it be that Jasmine is here too…?</FONT><BR><FONT color=#7e12d2>…No, I can't be too sure yet. I need more information….</FONT><BR><FONT color=#7e12d2>Use XD-27's communicator to log in to Academic Station)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-a" mid="32"><![CDATA[<html>Desert Storm…?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Academic Station$<BR>▶ <FONT color=#086171>Code name XD-27. Access Granted.</FONT><BR><FONT color=#2b2723>▷ </FONT><FONT color=#086171>Checking Data………….</FONT><BR>
+▷ <FONT color=#7e12d2>Operation Desert Storm.</FONT><BR><BR>▷ <FONT color=#7e12d2>Checking for your mission details. Please wait.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-a" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-!next" mid="40"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9241</exe>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n091_trader_bellin-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">21111</exe>
+         <exe type="addquestitem" num="1">400341</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92410,,,,,,</exe>
+         <exe type="complete" true="">9241</exe>
+         <exe type="delquestitem" num="-1">400341</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="2">0,1,2</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="a">0</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="!next">1,2</exelink>
+   <journal_data recompense="92410" quest_title="작전이 시작되었습니다" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="400341">
+      <journal index="1">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[The Operation Has Started I]]></title>
+         <contents mid="42"><![CDATA[<html>Blacksmith Berlin seems to have something to ask from you. Talk to Berlin.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="44"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_69.dds</contents_image>
+         <destination_pos>691,0,0</destination_pos>
+         <destination_mode>custom:691@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[The Operation Has Started II]]></title>
+         <contents mid="48"><![CDATA[<html>Blacksmith Berlin asked you to check if the land he was interested in constructing a new building was safe.<BR>Investigate the Miracle Altar Conservation Area.<BR><BR>
+<FONT color=#086171>Riverwort Wharf (Tel Numara Entrance) </FONT><FONT color=#a82424>→ Miracle Altar Conservation Area</FONT><BR>
+ <BR>
+※ <FONT color=#7e12d2>You cannot proceed in a party.</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[(Solo) Investigate Miracle Altar Conservation Area]]></destination>
+         <todo_msg mid="50"><![CDATA[Please investigate Miracle Altar Conservation Area.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[The Operation Has Started III]]></title>
+         <contents mid="53"><![CDATA[<html>The person you saw in Miracle Altar Conservation Area was surprisingly Academic XD-27. Following XD-27's sudden attack, you have defeated her and obtained her communicator.<BR>
+Tell Blacksmith Berlin that Miracle Altar Conservation Area is not safe.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="55"><![CDATA[Talk to Blacksmith Berlin.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[The Operation Has Started IV]]></title>
+         <contents mid="59"><![CDATA[<html>Use XD-27's communicator to access the Academic Station and find out what she was doing there.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Log on to Academic Station]]></destination>
+         <todo_msg mid="61"><![CDATA[Log on to Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>9224</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>
