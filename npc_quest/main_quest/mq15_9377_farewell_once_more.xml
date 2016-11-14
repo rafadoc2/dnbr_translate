@@ -1,0 +1,586 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9377_farewell_once_more</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9377</qid>
+      <designer>최지은</designer>
+      <qlevel>58</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[다시 한 번 안녕]]></qkname>
+      <qnpc>
+         <npcid>1169</npcid>
+         <npcename>n1169_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1200</npcid>
+         <npcename>n1200_illusion</npcename>
+         <npckname>일루전</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>836</npcid>
+         <npcename>n836_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="8" select_type="3" />
+      <talk_question mid="7"><![CDATA[<html>$테렌스 테라마이$<BR><FONT color=#7e12d2>(테렌스 테라마이가 침통한 표정을 짓는다)</FONT><BR>결국... 바르낙을 위해 아무 것도 하지 못했구나....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(지금은 리버워트 선착장으로 가서 루나리아의 이야기를 듣는 것이 먼저다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds " center_image="">
+      <talk_answer link_index="n836_velskud-1-" mid="13" select_type="5" />
+      <talk_question mid="12"><![CDATA[<html>$벨스커드$<BR><FONT color=#7e12d2>(벨스커드의 안색이 창백하다)</FONT><BR>뭐냐? 또 내 꼴을 보러온 거냐?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-1-" mid="15" select_type="5" />
+      <talk_question mid="14"><![CDATA[<html>$일루전$<BR>너라는 바보 자식에게 더 할 말은 없다.<BR>떠들 생각도 없고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-a" mid="100" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>$루나리아$<BR>아르테움의 진수의 절반은 이제 네 안에 있어.<BR>만약, 네가 용서하지 못해 또 과거로 돌아가기를 바란다면…<BR>그러면 나는 네 뜻을 받아들이겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-b" mid="101" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_01.ogg}<BR>그러나 나를 용서해 준다면, 나는 여기서 너를 떠나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-c" mid="102" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_02.ogg}<BR>작별이야.<BR>…마지막 인사야.<BR>
+다시는 돌아오지 않고 다시는 너와 여행을 함께하지 않아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-d" mid="103" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_03.ogg}<BR>내가 아는 건… 붉은 군대의 왕. 사도들의 주인인 그 남자가 모노리스를 노리고 있다는 것 정도야.<BR>그는 레드 드래곤이고, 모노리스를 통해 또 다른 세계와 접촉하려고 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-e" mid="104" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_04.ogg}<BR>그는 모노리스를 통해 여신 베스티넬의 세계, 즉 미스트 랜드를 이 세계로 불러 들일 거야.<BR>그러면 이 세계는 붕괴해 가겠지.<BR>그가 먼저 문을 열면 이 세계의 시간은 더 이상 회복되지 못해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-f" mid="105" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(사도들의 왕....)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-g" mid="106" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_05.ogg}<BR>만약 내가 먼저 모노리스의 문을 열고, 그 너머로 나아간다면...<BR>나는 사라지겠지만 이 세계는 안정될 수도 있어. 확실하지 않지만 그런 생각이 들어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-h" mid="107" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네가 사라진다고?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-i" mid="108" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_06.ogg}<BR>응. <FONT color=#a82424>나는 사라져</FONT>.<BR>아마 지금의 이 모습으로 더는 머물지 못할 거야. 그건 곧 죽는다는 의미겠지?<BR>죽음이 뭔지는 잘 모르지만, 모두들 죽고 싶어하지 않잖아. 영영 이곳을 떠나는 거니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-j" mid="111" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_07.ogg}<BR>그는... <FONT color=#a82424>일루전</FONT>은 내가 사라질 거라는 사실에 화를 냈어.<BR>미쳐버렸지.<BR>내 손을 잡고, 아르테움의 진수로 시간을 되돌렸어. 후후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-k" mid="112" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_08.ogg}<BR>똑 같은 얼굴을 한 네 앞에서 이런 이야기를 하니까 우습구나.<BR>떠나기 전에, 한 가지 이야기를 더 해줄게. 예언이라고 해도 좋고 먼 과거의 일이라고 해도 좋아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-l" mid="113" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_09.ogg}<BR>아누 아렌델에 모노리스로 가는 문이 있어.<BR><FONT color=#387206>{user_nick},</FONT> 다른 모험자들은 곧 그곳으로 가게 될 거야.<BR>나는 마음 깊이 그들이 세계를 지켜 주기를. 붉은 군대의 주인을 막아 주기를 바라고 있어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-m" mid="114" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_10.ogg}<BR>그렇지 않으면 그 문은 붉은 군대의 주인에 의해 열리게 될 거고, 나는 목적지를 잃게 될 테니까.<BR>이 세계도 망가지고 말겠지. 난 네가 살아가는 이 세계가 평화로워지기를 바라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-n" mid="115" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_11.ogg}<BR>자… 그러면 정말 작별이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-o" mid="116" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_12.ogg}<BR>안녕, <FONT color=#387206>{user_nick}</FONT>.<BR>미안했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-p" mid="117" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>고마웠어, 라고 해야지.<BR>루나리아.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-q" mid="118" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_13.ogg}<BR>그런가....<BR>...그럴지도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-2" mid="119" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9377_14.ogg}<BR>고마워.<BR>네가 행복했으면 좋겠어. 안녕...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-2" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1169_lunaria-2-a" mid="121" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(루나리아, 가 버리는 거구나.<BR>이제 정말 못 만나겠지.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-2-a" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1169_lunaria-2-b" mid="122" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_01.ogg}<BR>......멍청한 감상에 빠져 있기는.<BR>
+정말이지 구제불능의 바보로군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-2-b" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1169_lunaria-2-c" mid="123" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>.......어? 어라?!!<BR>왜 일루전이...?! 또?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-2-c" image="" itemindex="" portrait_left="NPC_Left_Illusion.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1169_lunaria-2-" mid="124" select_type="5" />
+      <talk_question mid="41"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_02.ogg}<BR>나는 너다. 지겹도록 말했지만, 너 자신이 그렇게 쉽게 사라질 것 같냐?<BR>멍청한 자식.<BR><FONT color=#7e12d2>(일루전의 모습을 희미하게 볼 수 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-a" mid="126" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(일루전의 모습을 희미하게 볼 수 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-b" mid="237" select_type="2" />
+      <talk_question mid="236"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_03.ogg}<BR>너라는 바보 자식에게 더 할 말은 없다.<BR>떠들 생각도 없고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-c" mid="128" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>나 자신하고 얘기하는 거 나도 기분 별로 안 좋거든.<BR>이제 루나리아도 가 버렸으니까 포기하는 게 어때?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-d" mid="129" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_02.ogg}<BR>나는 너다. 지겹도록 말했지만, 너 자신이 그렇게 쉽게 사라질 것 같냐?<BR>멍청한 자식.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-e" mid="131" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_04.ogg}<BR>루나리아 그 여자도 끝까지... 멍청한 소리만 늘어놓고 가 버리다니.<BR>큭큭... 한심하기 이를 데 없다. 너무나 한심해서, 떠들 생각조차 들지 않아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-e" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-f" mid="133" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>갈 곳이 있는 루나리아를 방해한 건 너 아닌가?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-g" mid="135" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_05.ogg}<BR>글쎄…?<BR>그렇게 믿고 싶다면 그렇게 믿는 편이 좋겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-h" mid="234" select_type="2" />
+      <talk_question mid="233"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_06.ogg}<BR>결과적으로는 그 여자의 말도 완전히 틀린 건 아닐 테니까. 큭큭큭…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-i" mid="136" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_07.ogg}<BR>그러나 정말 우습군.<BR>루나리아... 그 선택을 한 것은 과연 누구였단 말이냐?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-j" mid="137" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_08.ogg}<BR>모노리스의 문 앞에서 뒤를 돌아본 것은 결코 그때 한 번만이 아니었을 터다.<BR>그 선택이 내 탓이라는 거야? 루나리아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-k" mid="138" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_09.ogg}<BR>어리석은 루나리아......<BR><FONT color=#7e12d2>(목소리가 잦아든다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-l" mid="139" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>.......무슨 의미지?</FONT><BR>
+<FONT color=#662500>그 선택이라니?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1200_illusion-2-m" mid="140" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9377_10.ogg}<BR>가엾은... 가련한... 여신의.......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-m" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1200_illusion-2-n" mid="141" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어이!!!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-n" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1200_illusion-2-o" mid="144" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html><FONT color=#7e12d2>(더 이상 아무런 목소리도 들리지 않는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-2-o" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1200_illusion-3" mid="145" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(우와! 시도 때도 없이 남의 몸을 차지해 놓고 이제는 저 좋을 대로 사라져 버리네?<BR>뭐가 이래?!!!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1200_illusion-3-a" mid="149" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(아, 모르겠다. 신경 쓰이긴 하지만...<BR>일단 왕성으로 돌아갈까?</FONT><BR>
+<FONT color=#662500>루나리아 이야기에 휩쓸린 덕분에 왕성 쪽의 일은 완전히 잊고 있었군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1200_illusion-3-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1200_illusion-3-" mid="150" select_type="5" />
+      <talk_question mid="60"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(테렌스 테라마이 님을 만나 보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-a" mid="152" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$테렌스 테라마이$<BR>꽤 늦었군. 습격이라도 당한 건가?<BR>다른 모험자들에게 <FONT color=#a82424>바르낙</FONT> 소식은 들었네.<BR>자네에게도 무슨 일이 생긴 것 같아 찾아 다녔다는데, 무사하니 다행이군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-b" mid="153" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html>$테렌스 테라마이$<BR>바르낙은... 결국....<BR>
+<FONT color=#7e12d2>(테라마이가 침통한 표정을 짓는다)</FONT><BR>결국 난 이번에도 그 친구에게 아무런 도움이 되어주지 못했군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-c" mid="154" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>$테렌스 테라마이$<BR>바르낙의 시체는 신전기사들을 동원해서 거두도록 했네.<BR>더이상 잠이 든 그를 괴롭힐 수 없도록 수도원 안쪽 깊숙한 곳에 안치시켰지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-d" mid="155" select_type="2" />
+      <talk_question mid="64"><![CDATA[<html>$테렌스 테라마이$<BR>바르낙을 공격한 자에 대해서는 알고 있는가?<BR>다른 모험자들이 말해 주었네. 벨스커드가 그 자를 알고 있었다고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-e" mid="156" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>벨스커드가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-e" image="QN_NPC_Warrior_Lambert.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-f" mid="157" select_type="2" />
+      <talk_question mid="66"><![CDATA[<html>$테렌스 테라마이$<BR>그렇네. 그 자는 바로 바르낙의 마지막 제자였던 램버트.<BR>사막의 푸른 늑대라는 별명으로 유명했던 그 남자였다네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-f" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-g" mid="158" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(워리어 시안의 아버지라던 그 남자란 말인가?<BR>그가 사도라고?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-4" mid="159" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$테렌스 테라마이$<BR>나도 큰 충격을 받았네. 모험자들도 그런 것 같더군.<BR>...자세한 이야기는 벨스커드에게 가서 듣는 것이 어떻겠는가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-4-" mid="162" select_type="5" />
+      <talk_question mid="71"><![CDATA[<html>$테렌스 테라마이$<BR>왕성 지하에 있는 벨스커드의 상태도 별로 좋지가 않다네.<BR>여러모로 걱정이군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-4-a" mid="164" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>$벨스커드$<BR>.........<BR><FONT color=#7e12d2>(벨스커드가 귀찮다는 듯 손바닥으로 이마를 짚는다.<BR>표정이 좋지 않다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-a" image="QN_NPC_Warrior_Lambert.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-4-b" mid="165" select_type="2" />
+      <talk_question mid="74"><![CDATA[<html>$벨스커드$<BR>램버트를 만났다지? 그는 아마 네 얼굴을 모를 테니, 초면일지도 모르겠군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-4-c" mid="166" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>초면은 아닙니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-4-d" mid="167" select_type="2" />
+      <talk_question mid="76"><![CDATA[<html>$벨스커드$<BR>흠. 좀 처럼 모습을 드러내지 않는 자인데…<BR>뭐 중요한 일은 아니지. 어리석게도 그에게 당해 목숨을 잃지는 않았으니, 네 행운을 칭찬해 두지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-d" image="QN_NPC_Warrior_Lambert.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-4-e" mid="168" select_type="2" />
+      <talk_question mid="77"><![CDATA[<html>$벨스커드$<BR>램버트 그는 바르낙의 제자면서도 바르낙과는 전혀 다른 길을 걸었던 사내지.<BR>전사로서 명예를 소중히 여기지만, 바로 그 명예를 위해 무엇이든 버릴 수 있는 사내.<BR>냉혹하고 냉정한........</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-4-f" mid="169" select_type="2" />
+      <talk_question mid="78"><![CDATA[<html>$벨스커드$<BR>램버트는 그자의 명령 때문이 아니라 바르낙의 그 쇠약한 모습이 못마땅했던 걸지도 모르겠군.<BR>큭큭. 거대한 영웅의 몰락이 한심했을 지도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-4-g" mid="170" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그보다, 모노리스에 대해서 알고 있습니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-5" mid="171" select_type="2" />
+      <talk_question mid="80"><![CDATA[<html>$벨스커드$<BR>너는 내가 뭐든지 알고 있고 대답해 줘야 한다고 생각하는 거냐?<BR>어이 없는 녀석.<BR>수다를 떨고 싶으면 다른 모험자 나부랭이들과 하는 게 어떤가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-5" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n836_velskud-5-" mid="174" select_type="5" />
+      <talk_question mid="82"><![CDATA[<html>$벨스커드$<BR>크윽...... <FONT color=#7e12d2>(벨스커드가 가슴을 움켜쥔다)<BR></FONT>...내 망가져가는 꼴을 구경하며 즐기기 위해서라면 또 모르겠지만. 큭큭큭…<BR><FONT color=#7e12d2>(벨스커드가 신음을 흘리며 괴로워하고 있다. 테라마이에게 알리자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-a" mid="177" select_type="2" />
+      <talk_question mid="84"><![CDATA[<html>$테렌스 테라마이$<BR>벨스커드의 상태가 악화되었다는 말인가?<BR>으음, 생각보다 후유증이 심각한 모양인데….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-b" mid="178" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>$테렌스 테라마이$<BR>드래곤의 보옥을 잃은 뒤로 신체가 급속도로 노화되어 가고 있네. 이대로 두면 얼마 버티지 못하고 죽고 말게야…. 그를 살리려면 드래곤의 보옥의 힘에 버금가는 강력한 생명의 힘이 필요하네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-c" mid="179" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그런 것이 있습니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-d" mid="180" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>$테렌스 테라마이$<BR>하나 있지....<BR>어마어마한 생명 에너지를 품고 있는 것이....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-e" mid="181" select_type="2" />
+      <talk_question mid="88"><![CDATA[<html>$테렌스 테라마이$<BR>그것은...<BR>세상 모든 엘프들의 어머니이자, 숲과 바람과 정령의 고향.<BR>알테이아에서 가장 강력한 생명의 힘을 품고 있는 것.<BR>바로, 생명의 나무 일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-f" mid="182" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>생명의 나무!<BR>그건... 아누 아렌델의?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-g" mid="183" select_type="2" />
+      <talk_question mid="90"><![CDATA[<html>$테렌스 테라마이$<BR>그렇네.<BR>나는 네르윈... 아니, 나르실리아 여왕에게 도움을 청하려고 하네.<BR>자네가 다른 모험자들과 함께 가 주겠나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-h" mid="184" select_type="2" />
+      <talk_question mid="91"><![CDATA[<html>$테렌스 테라마이$<BR>아누 아렌델로 떠날 채비를 하게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-i" mid="185" select_type="2" />
+      <talk_question mid="92"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...루나리아는 붉은 군대의 왕이 아누 아렌델을 노릴 거라고 말했지.<BR>그들이 모노리스로 가는 문을 열게 되면 루나리아는 목적을 잃게 된다고.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-j" mid="186" select_type="2" />
+      <talk_question mid="93"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(이 세계 또한 부서지고 만다고.<BR>...그렇다면, 어차피 돌아갈 곳이 없어진 나도 아누 아렌델로 가기로 하자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-k" mid="187" select_type="2" />
+      <talk_question mid="94"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(루나리아를 위해서든 세계를 위해서든, 모노리스로 가는 문이 열리지 않도록 지키는 거야.<BR>그게 바로 내가 갈 수 있는 길. 가야하는 길일 지도 몰라.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-l" mid="228" select_type="2" />
+      <talk_question mid="227"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(루나리아를 위해서든 세계를 위해서든, 모노리스로 가는 문이 열리지 않도록 지키는 거야.<BR>그게 바로 내가 갈 수 있는 길. 가야하는 길일 지도 몰라.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-l" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-5-m" mid="190" select_type="2" />
+      <talk_question mid="97"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(모노리스로 가는 문이 열리지 않도록 지키는 것.<BR>그게 이 얽힌 인연의 올바른 시말일 거야.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-m" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-5-n" mid="229" select_type="2" />
+      <talk_question mid="98"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...안녕, 루나리아.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-n" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-5-cutscene" mid="231" select_type="4" />
+      <talk_question mid="230"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9377</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93770,,,,,,,</exe>
+         <exe type="complete" true="">9377</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13514,1);</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1169_lunaria" sub="b" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="c" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="d" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="e" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="f" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="g" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="h" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="i" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="j" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="k" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="l" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="m" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="n" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="o" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="p" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="q" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1169_lunaria" sub="b" />
+   <exelink qstep="2" npc="n1169_lunaria" sub="c" />
+   <exelink qstep="2" npc="n1169_lunaria" sub="" />
+   <exelink qstep="2" npc="n1200_illusion" sub="b" />
+   <exelink qstep="2" npc="n1200_illusion" sub="c" />
+   <exelink qstep="2" npc="n1200_illusion" sub="d" />
+   <exelink qstep="2" npc="n1200_illusion" sub="e" />
+   <exelink qstep="2" npc="n1200_illusion" sub="f" />
+   <exelink qstep="2" npc="n1200_illusion" sub="g" />
+   <exelink qstep="2" npc="n1200_illusion" sub="h" />
+   <exelink qstep="2" npc="n1200_illusion" sub="i" />
+   <exelink qstep="2" npc="n1200_illusion" sub="j" />
+   <exelink qstep="2" npc="n1200_illusion" sub="k" />
+   <exelink qstep="2" npc="n1200_illusion" sub="l" />
+   <exelink qstep="2" npc="n1200_illusion" sub="m" />
+   <exelink qstep="2" npc="n1200_illusion" sub="n" />
+   <exelink qstep="2" npc="n1200_illusion" sub="o" />
+   <exelink qstep="2" npc="n1200_illusion" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n1200_illusion" sub="" />
+   <exelink qstep="3" npc="n822_teramai" sub="b" />
+   <exelink qstep="3" npc="n822_teramai" sub="c" />
+   <exelink qstep="3" npc="n822_teramai" sub="d" />
+   <exelink qstep="3" npc="n822_teramai" sub="e" />
+   <exelink qstep="3" npc="n822_teramai" sub="f" />
+   <exelink qstep="3" npc="n822_teramai" sub="g" />
+   <exelink qstep="3" npc="n822_teramai" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n836_velskud" sub="b" />
+   <exelink qstep="4" npc="n836_velskud" sub="c" />
+   <exelink qstep="4" npc="n836_velskud" sub="d" />
+   <exelink qstep="4" npc="n836_velskud" sub="e" />
+   <exelink qstep="4" npc="n836_velskud" sub="f" />
+   <exelink qstep="4" npc="n836_velskud" sub="g" />
+   <exelink qstep="4" npc="n836_velskud" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n822_teramai" sub="b" />
+   <exelink qstep="5" npc="n822_teramai" sub="c" />
+   <exelink qstep="5" npc="n822_teramai" sub="d" />
+   <exelink qstep="5" npc="n822_teramai" sub="e" />
+   <exelink qstep="5" npc="n822_teramai" sub="f" />
+   <exelink qstep="5" npc="n822_teramai" sub="g" />
+   <exelink qstep="5" npc="n822_teramai" sub="h" />
+   <exelink qstep="5" npc="n822_teramai" sub="i" />
+   <exelink qstep="5" npc="n822_teramai" sub="j" />
+   <exelink qstep="5" npc="n822_teramai" sub="k" />
+   <exelink qstep="5" npc="n822_teramai" sub="l" />
+   <exelink qstep="5" npc="n822_teramai" sub="m" />
+   <exelink qstep="5" npc="n822_teramai" sub="n">0</exelink>
+   <exelink qstep="5" npc="n822_teramai" sub="cutscene">1,2</exelink>
+   <journal_data recompense="93770" quest_title="다시 한 번 안녕" chapterid="9" quest_level="58" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>14,n1169</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1169</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="197"><![CDATA[다시 한 번 안녕 1]]></title>
+         <contents mid="198"><![CDATA[<html>리버워트 선착장에서 루나리아의 이야기를 듣자.<BR><BR><FONT color=#086171>리버워트 선착장</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="199"><![CDATA[리버워트 선착장에서 루나리아와 대화]]></destination>
+         <todo_msg mid="200"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Illusion.dds</contents_image>
+         <destination_pos>14,n1200</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1200</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="201"><![CDATA[다시 한 번 안녕 2]]></title>
+         <contents mid="202"><![CDATA[<html>루나리아가 가 버린 후 완전히 사라진 줄 알았던 일루전의 목소리가 들렸다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장</FONT> <FONT color=#a82424>-  일루전</FONT></html>]]></contents>
+         <destination mid="203"><![CDATA[리버워트 선착장에서 일루전과 대화]]></destination>
+         <todo_msg mid="204"><![CDATA[일루전이 나타났습니다. 일루전과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="206"><![CDATA[다시 한 번 안녕 3]]></title>
+         <contents mid="207"><![CDATA[<html>루나리아는 아르테움의 진수를 손에 넣고, 모노리스로 향해 가 버렸다.<BR>그리고 떠나면서, 붉은 군대의 주인이 아누 아렌델에 있는 모노리스의 문을 노릴 거라고 말해 주었다.<BR>일단 테렌스 테라마이에게 가 보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(왕성 내부)</FONT> <FONT color=#a82424>- 테렌스 테라마이</FONT></html>]]></contents>
+         <destination mid="208"><![CDATA[세인트헤이븐 왕성에서 테라마이와 대화]]></destination>
+         <todo_msg mid="209"><![CDATA[세인트헤이븐 왕성의 테렌스 테라마이와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13014,n836</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>836</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="211"><![CDATA[다시 한 번 안녕 4]]></title>
+         <contents mid="212"><![CDATA[<html>왕성 지하의 벨스커드와 만나 바르낙을 쓰러트린 자에 대한 이야기를 나눠보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(왕성 지하)</FONT> <FONT color=#a82424>- 벨스커드</FONT></html>]]></contents>
+         <destination mid="213"><![CDATA[왕성 지하에서 벨스커드와 대화]]></destination>
+         <todo_msg mid="214"><![CDATA[세인트헤이븐 왕성 지하의 벨스커드와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="215"><![CDATA[다시 한 번 안녕 5]]></title>
+         <contents mid="216"><![CDATA[<html>벨스커드의 상태가 좋지 않은 것 같다. 테라마이에게 돌아가 알리자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(왕성 내부)</FONT> <FONT color=#a82424>- 테렌스 테라마이</FONT></html>]]></contents>
+         <destination mid="217"><![CDATA[세인트헤이븐 왕성에서 테라마이와 대화]]></destination>
+         <todo_msg mid="218"><![CDATA[세인트헤이븐 왕성의 테렌스 테라마이와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="221"><![CDATA[다시 한 번 안녕 6]]></title>
+         <contents mid="222"><![CDATA[<html><FONT color=#7e12d2>* [챕터 9. 부활]을 모두 완료하였습니다.</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>* [챕터 외전1]은 세인트헤이븐에서 시작됩니다.</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>* </FONT><FONT color=#a82424>상급 소서리스 스텔라</FONT><FONT color=#7e12d2>에게서 메인퀘스트를 받을 수 있습니다.</FONT></html>]]></contents>
+         <destination mid="223"><![CDATA[[챕터 9. 부활] 완료]]></destination>
+         <todo_msg mid="224"><![CDATA[[챕터 9. 부활]이 모두 완료 되었습니다.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9376</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,209 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9246_portent_of_disaster</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9246</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9247</nextqid>
+      <nextqname>mq15_9247_fateful_future</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[Signs of Disaster]]></qkname>
+      <qnpc>
+         <npcid>1021</npcid>
+         <npcename>n1021_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="8"><![CDATA[<html>What's up?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#387206>{user_nick} </FONT><FONT color=#2b2723>!</FONT>You're here at the right time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="10"><![CDATA[<html>Good.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Stella$<BR>You know, the crazy people from the future who are trying to invade the present I told you about earlier? The royal castle has realized how grave the situation is and decided to officially investigate the Tel Numara desert.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="12"><![CDATA[<html>Weird incidents?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Stella$<BR>But! They couldn't get any information and rather, they keep experiencing weird incidents.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="14"><![CDATA[<html>Me?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR>That's right. They have lost contact with all the soldiers who went to Tel Rosa City in the desert. I hope you can go and find out what happened.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="16"><![CDATA[<html>Umm…(Stella's face is full of worries)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Stella$<BR>Don't be cold-hearted. We need the help of everyone. Kayleen is even considering to borrow the name of Fairystar…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="18"><![CDATA[<html>(……) Okay.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Stella$<BR>General Douglas is also busy fighting the monsters. The Duke's forces are too small… And you're very familiar with all these. My mana tells me that you are the right person for this job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QW_73.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Master Sorceress Stella$<BR>You can go to <FONT color=#a82424>Tel Rosa City</FONT> through <FONT color=#a82424>Tel Rosa Gates</FONT>. Good luck.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1" image="" itemindex="">
+      <talk_answer link_index="n1021_academic-1-a" mid="25"><![CDATA[<html>Why are you running away?!</html>]]></talk_answer>
+      <talk_answer link_index="n1021_academic-1-a" mid="52"><![CDATA[<html>Wait up!</html>]]></talk_answer>
+      <talk_answer link_index="n1021_academic-1-a" mid="53"><![CDATA[<html>We can meet whenever but not part whenever!</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#387206>{user_nick}</FONT>?! What are you doing here…?<BR>I should run away first…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1-a" image="" itemindex="">
+      <talk_answer link_index="n1021_academic-1-b" mid="27"><![CDATA[<html>This kind of scene? (What happened?)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Academic Comelina$<BR>…I thought it would be dangerous if we kept bumping into each other….<BR>But fate is cruel. Here we meet again and I have to show you this kind of scene….<BR><FONT color=#7e12d2>(Comelina looks sad)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n1021_academic-1-f" mid="31"><![CDATA[<html>Daisy?! You mean the little girl that I know?!</html>]]></talk_answer>
+      <talk_answer link_index="n1021_academic-1-c" mid="70"><![CDATA[<html>I'm not sure but why was Daisy taken?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Academic Comelina$<BR>Just now, Jasmine... I mean, the leader of the army from the future trying to invade the present kidnapped a girl named Daisy. Do you know her?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1-c" image="" itemindex="">
+      <talk_answer link_index="n1021_academic-1-d" mid="33"><![CDATA[<html>I want to come along.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Shakes her head)</FONT>I don't know. I have no clue at all. But I'm certain she's up to something, so I'll chase after Jasmine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1-d" image="" itemindex="">
+      <talk_answer link_index="n1021_academic-1-e" mid="38"><![CDATA[<html>But I'm here already. I can't back out now.</html>]]></talk_answer>
+      <talk_answer link_index="n1021_academic-1-e" mid="39"><![CDATA[<html>You're fighting alone yourself too. I want to help.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Comelina's face turns stiff)</FONT>Jasmine is dangerous. She killed every one of the soldiers here without a blink. I don't want to put you in danger, <FONT color=#387206>{user_nick}</FONT!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1-e" image="QW_74.dds" itemindex="">
+      <talk_answer link_index="n1021_academic-2" mid="41"><![CDATA[<html>Got it.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Academic Comelina$<BR>Since you say so… I will follow your decision, <FONT color=#387206>{user_nick}</FONT>. Jasmine seems to have gone to <FONT color=#a82424>Arnute Canyon</FONT>. I'll be there. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1-f" image="" itemindex="">
+      <talk_answer link_index="n1021_academic-1-g" mid="72"><![CDATA[<html>Not really. I just got to know her by delivering some stuff for her bird.</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Comelina looks serious)</FONT><BR>So you know the girl...<BR>Is she someone with special powers?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1-g" image="" itemindex="">
+      <talk_answer link_index="n1021_academic-1-h" mid="74"><![CDATA[<html>Yeah, the bird's called Chickie… It seemed like a weak baby bird. (You reminisce the memories)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Comelina looks surprised)</FONT><BR>A pet bird?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-1-h" image="" itemindex="">
+      <talk_answer link_index="n1021_academic-1-c" mid="76"><![CDATA[<html>Do you have any guesses?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Academic Comelina$<BR>Then the girl should be… not that close to you, <FONT color=#387206>{user_nick}</FONT>. <BR>I've never heard that the hero was close to a young girl...<BR>Why did Jasmine take such an ordinary girl...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1021_academic-2" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Academic Comelina$<BR>I never thought I could travel with you, <FONT color=#387206>{user_nick}</FONT>.<BR>I would have been delighted if it was at other times, but I can't be that happy now….<BR><FONT color=#7e12d2>(Comelina seems to have a mixture of feelings. Go back to Saint Haven and report to Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-a" mid="47"><![CDATA[<html>(Tell her what happened)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#387206>{user_nick}</FONT>! So what happened?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-!next" mid="51"><![CDATA[<html><FONT color=#a82424>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9246</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete" true="">9246</exe>
+         <exe type="recompense">92460,,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1,</exelink>
+   <exelink qstep="1" npc="n1021_academic" sub="b" />
+   <exelink qstep="1" npc="n1021_academic" sub="f" />
+   <exelink qstep="1" npc="n1021_academic" sub="c" />
+   <exelink qstep="1" npc="n1021_academic" sub="d" />
+   <exelink qstep="1" npc="n1021_academic" sub="e" />
+   <exelink qstep="1" npc="n1021_academic" sub="e" />
+   <exelink qstep="1" npc="n1021_academic" sub="2">0,1</exelink>
+   <exelink qstep="1" npc="n1021_academic" sub="g" />
+   <exelink qstep="1" npc="n1021_academic" sub="h" />
+   <exelink qstep="1" npc="n1021_academic" sub="c" />
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="a">1</exelink>
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="!next">0</exelink>
+   <journal_data recompense="92460" quest_title="재앙의 전조" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_73.dds</contents_image>
+         <destination_pos>731,n1021</destination_pos>
+         <destination_mode>custom:731@1</destination_mode>
+         <statemark_npcid>1021</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Signs of Disaster 1]]></title>
+         <contents mid="58"><![CDATA[<html>The soldiers deployed to investigate the enemies from the future have gone missing at Tel Rosa City.<BR>Go to Tel Rosa City and look for the soldiers.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Tel Rosa Gates)</FONT> <FONT color=#a82424>- Tel Rosa City</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Investigate Tel Rosa City]]></destination>
+         <todo_msg mid="60"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Signs of Disaster 2]]></title>
+         <contents mid="62"><![CDATA[<html>You have met Academic Comelina at Tel Rosa City.<BR>
+Comelina told you that Jasmine abducted a girl named Daisy. <BR>
+It is unknown why she kidnapped the girl but it is an undeniable fact.<BR>
+Go back to Saint Haven and report to Master Sorceress Stella.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven </FONT><FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="64"><![CDATA[Go back to Saint Haven and report to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>60:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9229</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,388 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9382_by_time_for_time</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9382</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[시대가 시대에게]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>574</npcid>
+         <npcename>n574_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>880</npcid>
+         <npcename>n880_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="155" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$상급 소서리스 스텔라$<BR>
+받으렴. 그림자 냥에게서 온 편지란다.<BR><FONT color=#7e12d2>(스텔라에게 편지를 받는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="" portrait_left="NPC_Left_Shadow_Meow.dds" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="177" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$그림자 냥의 편지$<BR>제자여… 이 스승에게 감사해야 할 것이다 냥!! 편지를 받는 대로 오라냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="158" select_type="0"><![CDATA[<html>전혀요.</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="159" select_type="0"><![CDATA[<html>(사실 물어보지도 않않지만)저도 못봤어요.</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="160" select_type="0"><![CDATA[<html>다른 사람들도 못찾 을정도면 누가 가져간 게 맞는거 아닐까요.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$상급 소서리스 스텔라$<BR>독특한 친구네. 그리고 연구자료 말인데, 다른 녀석들은 아무리 찾아도 보이질 않는데. 누가 먼저 가져간 것 같다고 하는 녀석도 있고. 너... 넌 뭐 들은 것 없니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="178" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$상급 소서리스 스텔라$<BR>어휴, 분해라! 서, 설마 귀신이 가져갔을리도 없고 말이야... 넌 이 그림자 냥인지 뭔지에게 가 보렴.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-1-" mid="179" select_type="5" />
+      <talk_question mid="141"><![CDATA[<html>$아카데믹 코멜리나$<BR>이제 이런 운명은 싫습니다.<BR>언제까지 죽이고, 죽는 것을 보아야 할지….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QN_NPC_Shadow_Meow.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2-" mid="244" select_type="5" />
+      <talk_question mid="18"><![CDATA[<html>$상급 소서리스 스텔라$<BR>하아.. 언제쯤 내 꿈이 이루어지려나.<BR><FONT color=#7e12d2>(세인트헤이븐의 그림자 냥을 찾아가세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-a" mid="181" select_type="2" />
+      <talk_question mid="164"><![CDATA[<html>$그림자 냥$<BR>냥냥! 제자여, 소식이 없었구나 냥. 하지만 이 스승의 감이 워낙 날카로워서 제자에게 충고하지 않고서는 배길 수가 없었다냥. 이걸 보라냥! 여기 이 종이에 그려진 거 아무리 봐도 너랑 네 여자친구 아니냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-a" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-b" mid="182" select_type="2" />
+      <talk_question mid="166"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(하얀 긴 머리의 소녀와 나처럼 생긴 낙서가 있다)…그렇긴 한데, 이건 뭐야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-b" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-c" mid="183" select_type="2" />
+      <talk_question mid="167"><![CDATA[<html>$그림자 냥$<BR>후후후, 머리를 양갈래로 땋고 안경을 쓴 여자애가 들고 있던 종이다 냥. 저런 물건을 들고 왠 항아리 앞에서 주절주절 떠드는 게 아니겠냥? 그래서 내가 그 여자애 떠드는 걸 적어왔다냥. <FONT color=#7e12d2>(그림자 냥이 종이를 내민다) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-c" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-d" mid="184" select_type="2" />
+      <talk_question mid="168"><![CDATA[<html>$그림자 냥의 메모$<BR><FONT color=#086171>본 사실은 수집된 XD시리즈의 증언을 토대로 주장하는 것임을 밝힌다.<BR>아무래도 역사의 기록에 누락된 존재가 있다는 것 같다는 의견이다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-d" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-e" mid="185" select_type="2" />
+      <talk_question mid="169"><![CDATA[<html>$그림자 냥의 메모$<BR><FONT color=#086171>그의 활약을 따지면, 아마 기록된 6영웅과 비슷할 정도임에도 기록이 전혀 되지 않았으며,<BR>가끔 마치 </FONT><FONT color=#a82424>[이 세계에서 사라지는 듯]</FONT><FONT color=#086171>흔적도 없이 사라지는 경우가 있었다고 한다.<BR>그에 대한 자료 역시 어디에서도 찾을 수 없다. 정체불명이다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-e" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-f" mid="186" select_type="2" />
+      <talk_question mid="170"><![CDATA[<html>$그림자 냥의 메모$<BR><FONT color=#086171>그리고 단 한번 그가 데리고 있던 어느 소녀에 대한 기록이 있는데,<BR>그 소녀는 분명 인간이 아닌듯한 느낌이 강했다고 한다.<BR>그들에 관한 연구가 필요하다고 생각되어 의견을 제출하는 바이다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-f" image="QN_Npc_Academic_Shadow.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-g" mid="187" select_type="2" />
+      <talk_question mid="171"><![CDATA[<html>$그림자 냥의 메모$<BR><FONT color=#387206>(다른 목소리)</FONT><BR><FONT color=#387206>글쎄… 우리는 그 시대에 살지 않았으니 왜 그가 기록되지 않았는지는 모르지. 하지만 네가 보고한 바로는 따로 조사할만한 가치가 느껴지지 않아. 그것보다 우리는 우리의 최종계획을 실행해야 할 때야. 그 정도는 별다른 방해가 되지 못할 거야.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-g" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-h" mid="188" select_type="2" />
+      <talk_question mid="172"><![CDATA[<html>$그림자 냥의 메모$<BR><FONT color=#086171>(원래 목소리)<BR>알겠습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-h" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-i" mid="189" select_type="2" />
+      <talk_question mid="173"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(시대나, 그런 말이 나오는 걸로 보아서 코멜리나처럼 미래에서 온 누군가일까? 아무래도 그녀는 나를 목격하고 미래의 누군가에게 보고했지만. 미래의 누군가는 나와 루나리아를 별로 중요하게 생각하지 않은 듯 하군….)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-i" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-j" mid="190" select_type="2" />
+      <talk_question mid="174"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(하지만… 코멜리나도 그랬고, 이 보고를 한 소녀도 같은 말을 한다. 나에 대한 자료가 미래에 남아있지 않다고? </FONT><FONT color=#662500>난 정말 역사에 남지 않는걸까? 왜…??)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-k" mid="192" select_type="0"><![CDATA[<html>어, 뭐, 나름대로.</html>]]></talk_answer>
+      <talk_answer link_index="n574_shadow_meow-2-k" mid="193" select_type="0"><![CDATA[<html>정말 많은 도움이 되었어. 고마워.</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$그림자 냥$<BR>어떠냥? 제법 도움이 되었지냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3" mid="196" select_type="2" />
+      <talk_question mid="195"><![CDATA[<html>$그림자 냥$<BR>후후 뿌듯하다 냥. 제자는 이제 어디로 갈거냥?<BR>여자친구 찾으러 가냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-a" mid="213" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#7e12d2>(망연자실한 표정이다)<BR></FONT><FONT color=#387206>{user_nick}</FONT>님…. 조금 늦으셨네요.. 아, 아니 그것보다, 큰일 났습니다…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-a" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-b" mid="214" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#a82424>데저트 스톰</FONT>이… 성공했다고 합니다…<BR>XD-29가 한 발 빨랐어요…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-c" mid="215" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>뭐라고!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-d" mid="216" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html><FONT color=#2b2723>$아카데믹 코멜리나$<BR>…먼저 오신 다른 영웅님들께… 저도 모르게 부탁드버렸어요. 같이 싸워달라고… 그랬더니 영웅님들은 왕성에 알리겠다고…. 그야, 그게 당연한 일이지만.. 그렇지만… 너무 많이 이 시대의 사람들을 끌여들여 버려서…걱정됩니다....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-e" mid="217" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이 시대를 지키기 위한 싸움인걸. 그렇다면 이 시대의 힘을 빌리는 게 오히려 당연한 거 아닌가?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-f" mid="218" select_type="2" />
+      <talk_question mid="143"><![CDATA[<html>$아카데믹 코멜리나$<BR>하지만 너무, 너무 많이 제가 아는 역사랑 바뀌어 버리면… 곤란합니다. 어떤 일이 벌어질지 전혀 모르는데….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-g" mid="219" select_type="2" />
+      <talk_question mid="146"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…어떤 일이 벌어질 지 모르는 건, 당연하잖아... 점쟁이도 아니고.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-h" mid="220" select_type="2" />
+      <talk_question mid="148"><![CDATA[<html>$아카데믹 코멜리나$<BR>네? 아니, 그래도…. 그렇다면, 대처하거나 해결방법을 찾는데 오래걸리지 않습니까. 저는, 미래에서 왔으니까, 최선의 미래로 가는 길을 예측하여 생각하지 않으면… <FONT color=#387206>{user_nick}</FONT>님도 그렇게 해오신 것 아닌가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-i" mid="221" select_type="2" />
+      <talk_question mid="201"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아니, 난 미래에 대해서는 전혀 몰랐어. 어떤 일이 벌어질지 모른채 닥치는 대로 눈 앞의 일을 해결해왔고 여기에 왔어. 내가 행동했던게 언젠가의 미래인지, 과거인지 구분 안갈 정도로.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-j" mid="222" select_type="2" />
+      <talk_question mid="202"><![CDATA[<html>$아카데믹 코멜리나$<BR>그건 너무 무모한 것 같은데요… 어떻게 될 줄 알고….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-k" mid="223" select_type="2" />
+      <talk_question mid="203"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>하지만 아무것도 안 한다고 더 나은 미래가 있는 게 아니잖아. 바뀌는 걸 두려워하면 아무것도 바뀌지 않는거 아니야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-l" mid="224" select_type="2" />
+      <talk_question mid="204"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#7e12d2>(놀란 눈으로 이쪽을 보고 있다)</FONT><FONT color=#2b2723>…</FONT>그 말이 맞는 것 같습니다… 다만, 걸리는 건… 이 시대의 미래를 바꾸게 된 원인이, 바로 저라는 거에요… 제가 실패하지 않았더라면… 저는… 책임을 지지 않으면 안 됩니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-3-m" mid="225" select_type="2" />
+      <talk_question mid="205"><![CDATA[<html>$아카데믹 코멜리나$<BR>…우선은… <FONT color=#387206>{user_nick}</FONT>님 말씀이 맞아요. 이미 작전은 실행되어버렸지만 전 다른 분들에게 도움이 될 방법을 열심히 찾아보겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-3-m" image="QW_70.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-4" mid="209" select_type="0"><![CDATA[<html>알겠어.</html>]]></talk_answer>
+      <talk_answer link_index="n880_academic-4" mid="210" select_type="0"><![CDATA[<html>맡겨줘!</html>]]></talk_answer>
+      <talk_question mid="206"><![CDATA[<html>$아카데믹 코멜리나$<BR>그럼 전 자료를 찾으러 <FONT color=#a82424>미치광이 연구소</FONT>로 가 있겠습니다. <FONT color=#387206>{user_nick}</FONT>님도 뭔가 일이 생기면 그쪽으로 와 주세요. 참, 스텔라님에게도 이 사실을 전해주시겠어요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3" image="QW_72.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-" mid="198" select_type="5" />
+      <talk_question mid="197"><![CDATA[<html>$그림자 냥$<BR>응? <FONT color=#a82424>텔 누아르 신전</FONT> 냥? 그런 험한 곳에 냥...<BR>알았어 냥. 무사히 다녀오라냥.<BR><FONT color=#7e12d2>(텔 누아르 신전의 아카데믹 코멜리나를 찾아가세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-4-a" mid="229" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html>$상급 소서리스 스텔라$<BR>왔니!! 너도 들었니??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-4-b" mid="230" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어…뭐를요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="231" select_type="2" />
+      <talk_question mid="64"><![CDATA[<html>$상급 소서리스 스텔라$<BR>미래인 말야!! 그 소녀 귀신이 아니라 미래인이었대에~ 게다가 사실은 우리 편이었다니. 역시 그럴 줄 알았어. 귀신이라니 말도 안돼지, 오호호호~ 안젤리카녀석 간만에 좋은 걸 물어왔네. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-4-d" mid="232" select_type="2" />
+      <talk_question mid="66"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>(스텔라님도 알게 되었구나)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-4-e" mid="233" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$상급 소서리스 스텔라$<BR>게다가 클론이라는 것의 침략, 거기에 맞서 싸우는 또 다른 소녀 클론...! 어쩜 이렇게 두근두근 거릴 수가 있니!! 이럴 때가 아냐! 우리 모두 과거는 잊고 미래인의 비밀을 밝히자고. 어때!! 너도 찬성이지??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-e" image="QN_NPC_Shadow_Meow.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-4-f" mid="234" select_type="2" />
+      <talk_question mid="125"><![CDATA[<html>$상급 소서리스 스텔라$<BR>후후후~ 일단 궁중 보고부터야. 칼라엔님도 엄청 놀라시겠지~<BR>
+아 맞다, 그 그림자 냥인지 뭔지가 또 널 찾던데 거기도 가 보던가~<BR><FONT color=#7e12d2>(스텔라가 콧노래를 부르고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-4-g" mid="235" select_type="4" />
+      <talk_question mid="127"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-4-" mid="236" select_type="5" />
+      <talk_question mid="129"><![CDATA[<html>$상급 소서리스 스텔라$<BR>나중에 미래인에 대한 자료를 부탁할지도 모르니까 와 보렴!<BR><BR>
+※ <FONT color=#7e12d2>[챕터 외전Ⅰ. 데저트 스톰] 완료 - 서브퀘스트에서 이어집니다. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n880_academic-4" image="QN_Npc_SoceressStella.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n880_academic-4-" mid="237" select_type="5" />
+      <talk_question mid="78"><![CDATA[<html>$아카데믹 코멜리나$<BR>그럼 부탁드립니다.<BR>
+<FONT color=#7e12d2>(세인트헤이븐의 상급 소서리스 스텔라에게 보고하세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+         <exe type="setquest">9382</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93820,,,,,,,</exe>
+         <exe type="complete" true="">9382</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n574_shadow_meow" sub="b" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="c" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="d" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="e" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="f" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="g" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="h" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="i" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="j" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="k" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="k" />
+   <exelink qstep="2" npc="n574_shadow_meow" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n880_academic" sub="b" />
+   <exelink qstep="3" npc="n880_academic" sub="c" />
+   <exelink qstep="3" npc="n880_academic" sub="d" />
+   <exelink qstep="3" npc="n880_academic" sub="e" />
+   <exelink qstep="3" npc="n880_academic" sub="f" />
+   <exelink qstep="3" npc="n880_academic" sub="g" />
+   <exelink qstep="3" npc="n880_academic" sub="h" />
+   <exelink qstep="3" npc="n880_academic" sub="i" />
+   <exelink qstep="3" npc="n880_academic" sub="j" />
+   <exelink qstep="3" npc="n880_academic" sub="k" />
+   <exelink qstep="3" npc="n880_academic" sub="l" />
+   <exelink qstep="3" npc="n880_academic" sub="m" />
+   <exelink qstep="3" npc="n880_academic" sub="4">0,1</exelink>
+   <exelink qstep="3" npc="n880_academic" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="f">0</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="g">1,2</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="" />
+   <journal_data recompense="93820" quest_title="시대가 시대에게" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="20"><![CDATA[시대가 시대에게 1]]></title>
+         <contents mid="21"><![CDATA[<html>상급 소서리스 스텔라가 줄 것이 있는 모양이다. <BR>스텔라에게 말을 걸어보자.<BR><BR><FONT color=#086171>세인트헤이븐 왕성</FONT> <FONT color=#a82424>- 상급 소서리스 스텔라</FONT></html>]]></contents>
+         <destination mid="22"><![CDATA[상급 소서리스 스텔라와 대화]]></destination>
+         <todo_msg mid="23"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Shadow_Meow.dds</contents_image>
+         <destination_pos>11,n574</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>574</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="24"><![CDATA[시대가 시대에게 2]]></title>
+         <contents mid="25"><![CDATA[<html>스텔라에게 그림자 냥의 편지를 받았다. 그림자 냥에게 가자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성</FONT> <FONT color=#a82424>- 그림자 냥</FONT></html>]]></contents>
+         <destination mid="26"><![CDATA[그림자 냥과 대화]]></destination>
+         <todo_msg mid="27"><![CDATA[세인트헤이븐의 그림자 냥을 찾아가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_72.dds</contents_image>
+         <destination_pos>721,n880</destination_pos>
+         <destination_mode>custom:721@1</destination_mode>
+         <statemark_npcid>880</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[시대가 시대에게 3]]></title>
+         <contents mid="97"><![CDATA[<html><FONT color=#2b2723>그림자 냥에게 수수께끼의 소녀에 대한 것을 들었다.</FONT><BR>
+<FONT color=#2b2723>그녀는 미래인인듯 하고, 루나리아에 대해서도 보고했지만... </FONT><BR>
+<FONT color=#2b2723>미래에서는 그다지 중요하지 않다고 생각한 것 같다.</FONT><BR>
+<FONT color=#2b2723>이제 코멜리나를 만나러 텔 누아르 신전으로 가자.</FONT><BR><BR><FONT color=#086171>리버워트 선착장(텔 누마라 관문)</FONT> <FONT color=#a82424>- 텔 누아르 신전(아카데믹 코멜리나)</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[텔 누아르 신전에서 코멜리나와 대화]]></destination>
+         <todo_msg mid="99"><![CDATA[텔 누아르 신전에서 아카데믹 코멜리나를 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressStella.dds </contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="150"><![CDATA[시대가 시대에게 4]]></title>
+         <contents mid="151"><![CDATA[<html><FONT color=#a82424>데저트 스톰</FONT><FONT color=#2b2723>에 대해 알게되었다.</FONT><BR><FONT color=#2b2723>상급 소서리스 스텔라에게 보고하자.</FONT><BR><BR><FONT color=#086171>세인트헤이븐</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- 상급 소서리스 스텔라</FONT></html>]]></contents>
+         <destination mid="152"><![CDATA[상급 소서리스 스텔라와 대화]]></destination>
+         <todo_msg mid="153"><![CDATA[세인트헤이븐의 상급 소서리스 스텔라에게 보고하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="240"><![CDATA[[챕터 외전Ⅰ. 데저트 스톰] 완료]]></title>
+         <contents mid="241"><![CDATA[<html>※ <FONT color=#7e12d2>[챕터 외전Ⅰ. 데저트 스톰]을 모두 완료하였습니다.</FONT><BR><BR>※ <FONT color=#7e12d2>서브퀘스트에서 아카데믹 코멜리나와 관련된 이야기를 더 진행하실 수 있습니다.</FONT></html>]]></contents>
+         <destination mid="242"><![CDATA[]]></destination>
+         <todo_msg mid="243"><![CDATA[[챕터 외전Ⅰ. 데저트 스톰]이 모두 완료 되었습니다.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9381</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

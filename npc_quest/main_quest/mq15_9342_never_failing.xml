@@ -1,0 +1,324 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9342_never_failing</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>9342</qid>
+      <designer>정진호</designer>
+      <qlevel>44</qlevel>
+      <qdesc>타마라는 고대의 무기고 서쪽에 다녀와 달라고 한다.
+유저는 이미 시간에 대해서는 포기한 상태로 움직인다.
+
+무기고 서쪽으로 갔던 유저는 쓰러진 카라큘과 그 곁의 울고 있는 시델을 본다.
+(페어리스타의 결전마법의 상황을 먼저 보는 것)
+시델은 자신 때문에 스승님이 돌아가신 거라며 울부짖는다.
+유저는 혼란에 빠진다.
+루나와 대화. 카라큘 님이 돌아가시면… 내 그 석판은? 해석은?!
+루나는 담담하게 몇 걸음 사이에 또 시간이 어떻게 될지 모르잖아. 안심하고 나를 믿어. 변하는 건 주위의 모든 것들. 네 세계. 네 자신이 아니야.
+
+오두막으로 돌아와 보면 카라큘은 멀쩡하게 오두막에 있다.
+그녀에게 구한 재료를 전달한다.
+유저는 약을 다 구했는지 확인하러 타마라에게 간다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9343</nextqid>
+      <nextqname>mq15_9343_once_and_future</nextqname>
+      <nextqnpc>n713_soceress_tamara</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[변하지 않는 것]]></qkname>
+      <qnpc>
+         <npcid>1169</npcid>
+         <npcename>n1169_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1180</npcid>
+         <npcename>n1180_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceptted" mid="7" select_type="2" />
+      <talk_question mid="6"><![CDATA[<html>$상급 소서리스 타마라$<BR>당신도 원주민들을 치료할 약의 재료를 모으고 있어?<BR>시델이 모험자들에게서 재료를 받아서 약을 만들어두라고 하던데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-1-a" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$상급 소서리스 타마라$<BR>안 그래도 시델의 약 말고도 한 가지쯤 영양제를 보충해 둘까 했거든.<BR>마침 잘 됐네. 시간 있으면 그걸 좀 도와줄래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-2" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러죠.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="15" select_type="5" />
+      <talk_question mid="14"><![CDATA[<html>$시델$<BR>스승님의 건강이 걱정이에요.<BR>…차티 일도 걱정이고요. 난 왜 이렇게 약할까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-" mid="17" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$카라큘 페어리스타$<BR>페어리스타의 일은 내 스스로 결착을 지어야지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1" image="QW_56.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-" mid="19" select_type="5" />
+      <talk_question mid="18"><![CDATA[<html>$루나리아$<BR>고대의 무기고 서쪽으로 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="QW_56.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-2-" mid="21" select_type="5" />
+      <talk_question mid="20"><![CDATA[<html>$상급 소서리스 타마라$<BR><FONT color=#a82424>고대의 무기고 서쪽</FONT>으로 가서 <FONT color=#a94407>습기 찬 돌가루</FONT>를 구해다 줘.<BR>아마 그곳을 정찰하다 보면 자연스럽게 얻게 되지 않을까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-2-a" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$시델$<BR>스승님이… 스승님이…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-2-b" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무… 무슨 일이 벌어진 거지?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-2-c" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(도대체 이건 또 언제야?<BR>이제 시간을 어떻게든 파악해 보려 해도 마구 뒤엉킬 뿐이군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2-c" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-2-d" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$시델$<BR>스승님이… 다치셨어요. 카라한의 손에…<BR>흐흑… 카라한과 결착을 지으려고 저 혼자 마법서를 훔쳐서 이리로 왔는데...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-2-e" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$시델$<BR>그런데 스승님께서 저를 구하려고 오셨다가, 카라한 손에… 저 대신… 흐흐흑…<BR>저 때문이에요! 저 때문에 스승님께서 이렇게 되신 거라구요… 흑… 스승니임!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-2-f" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>지… 진정해. 우선 오두막으로 돌아가야지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-2-g" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$시델$<BR>스승님… 흑, 흐흑… 스승님이 이대로 눈을 뜨지 않으시면… 그러면 어떡하죠?<BR>흑흑… 스승님 죄송해요… 스승님…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-2-h" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(카라큘 님이 돌아가시면… 모처럼 구한 그 석판은? 해석은?!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-3" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$시델$<BR>…제가 스승님을 모시고 돌아갈게요.<BR>저 때문에 다치신 거니까, 제가 온 힘을 다해서 스승님을 꼭 낫게 해 드릴 거라구요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1180_sidel-3" image="QW_Karakule_House.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n1180_sidel-3-" mid="41" select_type="5" />
+      <talk_question mid="40"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(아무튼 타마라가 부탁한 약재도 구한 것 같으니, 나도 오두막 쪽으로 가는 게 좋겠다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-" mid="43" select_type="5" />
+      <talk_question mid="42"><![CDATA[<html>$시델$<BR>스승님의 건강이 걱정이에요.<BR>…차티 일도 걱정이고요. 난 왜 이렇게 약할까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-3-" mid="45" select_type="5" />
+      <talk_question mid="44"><![CDATA[<html>$루나리아$<BR>아무 것도 변하지 않아. 네 자신은 언제나 그대로잖아.<BR>자, 카라큘의 오두막으로 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-3-a" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$카라큘 페어리스타$<BR>왜 또 그렇게 다 죽어가는 표정으로 들이닥치는 게야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-3-b" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…어라?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3-b" image="QN_Npc_SoceressTamara.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-3-c" mid="51" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>$카라큘 페어리스타$<BR>쯧쯧… 뭘 본 게야? 내가 죽는 거라도 본 게냐?<BR>츳츳츳… 그 손에 들고 있는 건 약재 같은데, 보아하니 타마라가 부탁한 것이로구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3-c" image="QN_Npc_SoceressTamara.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-3-d" mid="53" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>$카라큘 페어리스타$<BR>아까 네 녀석이 떠맡긴 석판은 아직 들여다 보는 중이니 네 녀석은 냉큼 타마라에게나 가 보거라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-4" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(이제 정말 뭐가 뭔지…)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-3-" mid="81" select_type="5" />
+      <talk_question mid="80"><![CDATA[<html>$상급 소서리스 타마라$<BR>
+응? 잠깐만~ 지금은 너무 바빠서...<BR>
+이따가 다시 와 줄래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-4" image="QN_Npc_SoceressTamara.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-4-" mid="58" select_type="5" />
+      <talk_question mid="57"><![CDATA[<html>$카라큘 페어리스타$<BR>쿨럭쿨럭… 눈이 침침하구나. 병 탓인가 나이 탓인가 모를 일이다.<BR>쿨럭… 뭘 꾸물거리느냐? <FONT color=#a82424>타마라</FONT>에게 가 보잖고?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4" image="QS_Default.dds" itemindex="400408" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-4-a" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$상급 소서리스 타마라$<BR>아, 약재를 가지고 왔구나.<BR>이리 줘.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-4-b" mid="82" select_type="4" />
+      <talk_question mid="61"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-4-!next" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>$상급 소서리스 타마라$<BR>생각보다 훨씬 빠른걸?<BR>
+놀랐어. 후후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9342</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>400408 : 습기 찬 돌가루 (제작 필요)</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400408</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">400408</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93420,,,,,,,</exe>
+         <exe type="complete" true="">9342</exe>
+         <exe type="delquestitem" num="-1">400408</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n1180_sidel" sub="b" />
+   <exelink qstep="2" npc="n1180_sidel" sub="c" />
+   <exelink qstep="2" npc="n1180_sidel" sub="d" />
+   <exelink qstep="2" npc="n1180_sidel" sub="e" />
+   <exelink qstep="2" npc="n1180_sidel" sub="f" />
+   <exelink qstep="2" npc="n1180_sidel" sub="g" />
+   <exelink qstep="2" npc="n1180_sidel" sub="h" />
+   <exelink qstep="2" npc="n1180_sidel" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="3" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="3" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="3" npc="n701_oldkarakule" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="a">0</exelink>
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="b">1,2</exelink>
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="!next" />
+   <journal_data recompense="93420" quest_title="변하지 않는 것" chapterid="6" quest_level="44" quest_mark_type="1" use_item_list="400408">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[변하지 않는 것 I]]></title>
+         <contents mid="65"><![CDATA[<html>상급 소서리스 타마라에게 가면 시델이 만들려고 하는 약에 대해 들을 수 있다.<BR>
+ <BR>
+<FONT color=#086171>로터스마쉬</FONT> <FONT color=#a82424>- 상급 소서리스 타마라</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[로터스마쉬의 상급 소서리스 타마라와 대화]]></destination>
+         <todo_msg mid="67"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>562,n1180</destination_pos>
+         <destination_mode>custom:561@1,562@1</destination_mode>
+         <statemark_npcid>1180</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[변하지 않는 것 II]]></title>
+         <contents mid="69"><![CDATA[<html>상급 소서리스 타마라가 부탁한 약재를 수집하자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장 (고대의 창고 입구)</FONT> <FONT color=#a82424>- 고대의 무기고 서쪽</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[고대의 무기고 서쪽]]></destination>
+         <todo_msg mid="71"><![CDATA[고대의 무기고 서쪽에서 부탁한 약재를 수집하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_Karakule_House.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[변하지 않는 것 III]]></title>
+         <contents mid="73"><![CDATA[<html>카라큘은 카라한에게 쓰러졌다고 한다. 카라큘의 오두막으로 가 보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 카라큘 페어리스타</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[카라큘의 오두막에서 카라큘과 대화]]></destination>
+         <todo_msg mid="75"><![CDATA[카라큘의 오두막으로 돌아가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[변하지 않는 것 IV]]></title>
+         <contents mid="77"><![CDATA[<html>상급 소서리스 타마라에게 약재를 전하자.<BR>
+ <BR>
+<FONT color=#086171>로터스마쉬</FONT><FONT color=#a82424> - 상급 소서리스 타마라</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[로터스마쉬의 상급 소서리스 타마라와 대화]]></destination>
+         <todo_msg mid="79"><![CDATA[상급 소서리스 타마라와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9341</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

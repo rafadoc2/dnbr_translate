@@ -1,0 +1,283 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9367_mirror_of_truth1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9367</qid>
+      <designer>최지은</designer>
+      <qlevel>54</qlevel>
+      <qdesc>보스 죽이면 얻음</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9368</nextqid>
+      <nextqname>mq15_9368_mirror_of_truth2</nextqname>
+      <nextqnpc>n703_book_doctor</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[진실의 거울 1]]></qkname>
+      <qnpc>
+         <npcid>703</npcid>
+         <npcename>n703_book_doctor</npcename>
+         <npckname>수다쟁이 책 닥터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-a" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$테렌스 테라마이$<BR>신전기사들을 더 풀어...아니, 더 동원해서 벨스커드와 바르낙를 찾아볼 계획일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-b" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$테렌스 테라마이$<BR>...듣고 있나? 자네.<BR>바르낙을 정화하기 위해 뭐 쓸모있는 정보가 들어오면 부탁한다고 말했네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-c" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네? ...아, 네!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="16" select_type="3" />
+      <talk_question mid="15"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(잠깐... 그러고보니...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-a" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(순전한 거울! 그게 있었지!<BR>그것에 대해 수다쟁이 책 닥터에게 기록해 둔 게 있었어.<BR>어쩌면 그걸 또 사용할 수 있을지도 몰라.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-a" image="QN_Npc_BookDoc.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-" mid="22" select_type="5" />
+      <talk_question mid="21"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(카라큘의 오두막으로 가서 수다쟁이 책 닥터를 만나 보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-a" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$수다쟁이 책 닥터$<BR>어허, 살살 넘기라고!<BR>그러니까 보자, 뭘 물으러 왔다고 했지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-b" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>순전한 거울!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-b" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-c" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>$수다쟁이 책 닥터$<BR>순전한 거울... 아, 여기 있네.<BR>음? 그런데 그 항목이 좀 수정되어 있구만. 시델 녀석… 아니 시델 님의 솜씨는 아니니 <FONT color=#a82424>카라큘</FONT> 님 생전의 것인듯 싶네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-c" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-d" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>카라큘 님이?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-e" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$수다쟁이 책 닥터$<BR>그분은 완전히 해결되지 않은 의문은 손 닿는 데까지 알아내서 기록해 두시곤 했다네. 어흠어흠.<BR>과연 당대 최고의 소서리스 다운 모습이지.<BR><FONT color=#7e12d2>(닥터가 몹시 자랑스러워한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-f" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$수다쟁이 책 닥터$<BR>어디, 카라큘 님이 적어 놓으신 인덱스를 따라 가자면... 으음...<BR><FONT color=#a82424>순전한 거울</FONT>… 상위 개념, 진실, <FONT color=#a82424>진실의 거울</FONT>... 거울... 응?<BR><FONT color=#7e12d2>(팔락팔락 넘어가던 책장이 멈춘다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-g" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$수다쟁이 책 닥터$<BR>여기 있네, 진실의 거울!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-h" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$진실의 거울$<BR><FONT color=#7e12d2>길고 길었던 고대인들 간의 전쟁은 사악한 고대인들의 수장이 사로잡히면서 막을 내리게 되었다.<BR>사로잡힌 사악한 고대인의 수장은 타락의 기운이 전신에 퍼져 본래의 선한 모습은 그 어디에도 남아 있지 않았다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-i" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$진실의 거울$<BR>선한 고대인들은 그에게 씌워진 마성을 벗겨내고 본래의 선한 모습으로 돌리기 위해 많은 노력을 기울였다.<BR>하지만, 끊임없는 노력에도 불구하고 결국 타락의 기운을 몰아내는데는 실패했다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-j" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>$진실의 거울$<BR><FONT color=#7e12d2>그의 처우 문제는 고대인들 내부에서도 의견이 분분하였다.<BR>만약, 네레이드가 진실의 거울을 찾아내지 못했다면 그는 세상을 혼돈으로 몰아넣었던 악인으로 기록되는데 그치고 말았을 것이다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-k" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$진실의 거울$<BR>사악한 고대인의 수장, 비샤스 아르노비우스.<BR>네레이드의 연인이자, 훗날 블랙 드래곤을 단신으로 쓰러트리고 세상을 구한 현자 아르노는 그렇게 본래의 선한 모습을 되찾게 되었다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-l" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$진실의 거울$<BR><FONT color=#7e12d2>현자 아르노를 지배했던 타락의 기운은 진실의 거울 속 깊숙한 곳에 봉인되었다.<BR>네레이드는 봉인된 타락의 기운이 거울 속에서 모두 중화되어 사라질 때까지 잠식당한 신전 폐허 어딘가에 숨겨두기로 하였다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-l" image="QW_62.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-m" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$수다쟁이 책 닥터$<BR>흐음... 기록에 의하면 진실의 거울이 있는 곳은 <FONT color=#a82424>잠식당한 신전 폐허</FONT>로군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-n" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(카라큘 님이... 내가 넘겨드린 불완전한 석판의 해석 이후에, 카라큘 님은 따로 연구를 더 하셨던 거구나.<BR>순전한 거울은 애당초 복제품이었다고 했지. 기록을 기반으로 제조한....)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-o" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(진품의 기록을 찾아 두셨을 줄은 몰랐다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-p" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html>$수다쟁이 책 닥터$<BR>아, 잠깐잠깐. 감상에 젖어 계신 <FONT color=#387206>{user_nick}</FONT> 보게나.<BR>중요한 것은 진실의 거울은 거짓된 모습을 가진 자만이 볼 수 있다고 하네.<BR>진실한 모습을 가진 자는 거울을 볼 수도 느낄 수도 없다는 말일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-q" mid="61" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html>$수다쟁이 책 닥터$<BR>즉! 거짓된 모습을 가진 자는 볼 수 있으니까, 거짓 된 모습으로 바꾸면 되는 것이지. 껄껄~<BR><FONT color=#7e12d2>(닥터가 책장 끝을 까딱거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-r" mid="63" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>...그게 무슨 소린지 모르겠는데....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-1-s" mid="65" select_type="2" />
+      <talk_question mid="64"><![CDATA[<html>$수다쟁이 책 닥터$<BR>쯧쯧. 하나부터 열까지 일일히 설명해줘야 하나....<BR>이계의 가면을 활용하면 가능하다네.<BR>운석 파편과 돌연변이 눈을 조합하면 <FONT color=#a82424>이계의 가면</FONT>을 만들 수 있지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-2" mid="69" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$수다쟁이 책 닥터$<BR>이계의 물질로 이루어진 가면을 쓰면 진실의 거울은 자네를 거짓된 모습으로 판단할 것이 아닌가?<BR>그러면, 진실의 거울을 볼 수 있게 된다네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2" image="QW_63.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-2-" mid="72" select_type="5" />
+      <talk_question mid="70"><![CDATA[<html>$수다쟁이 책 닥터$<BR>먼저 이계의 가면을 만들기 위해 필요한 물건들을 구해 오게나.<BR><FONT color=#a82424>운석 파편</FONT>부터 할까? 으음... 기록에 따르면 운석 파편은 <FONT color=#a82424>운석 낙하지 중심부</FONT>를 둘러보면 구할 수 있을 거라네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-3" image="QS_Default.dds" itemindex="400318" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-3-a" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>$수다쟁이 책 닥터$<BR>느리군, 느려!<BR>운석 파편을 이제서야 가져온 건가?!<BR>할 마음에 있는 겐가 없는 겐가?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-3-b" mid="82" select_type="4" />
+      <talk_question mid="81"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-3-!next" mid="102" select_type="2" />
+      <talk_question mid="101"><![CDATA[<html>$수다쟁이 책 닥터$<BR>
+<FONT color=#7e12d2>(닥터는 투덜거리면서도 책장을 넘기기 시작했다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">93670,,,,,,,</exe>
+         <exe type="setquest">9367</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="3,4,5">400318</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">600214</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">700214</exe>
+         <exe type="addquestitem" num="1">400318</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93670,,,,,,,</exe>
+         <exe type="complete" true="">9367</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n822_teramai" sub="" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="b" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="c" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="d" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="e" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="f" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="g" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="h" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="i" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="j" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="k" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="l" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="m" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="n" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="o" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="p" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="q" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="r" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="s" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="2">0,1,2,6,7</exelink>
+   <exelink qstep="3" npc="n703_book_doctor" sub="a">0</exelink>
+   <exelink qstep="3" npc="n703_book_doctor" sub="b">1</exelink>
+   <exelink qstep="3" npc="n703_book_doctor" sub="!next" />
+   <journal_data recompense="93670" quest_title="진실의 거울 1" chapterid="9" quest_level="54" quest_mark_type="1" use_item_list="400318">
+      <journal index="1">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[그는 진실을 알고있다]]></title>
+         <contents mid="86"><![CDATA[<html>순전한 거울이 다시 떠올랐다. 그거라면 도움이 되지 않을까?<BR>수다쟁이 책 닥터와 대화해 보자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 수다쟁이 책 닥터</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[카라큘의 오두막에서 수다쟁이 책 닥터와 대화]]></destination>
+         <todo_msg mid="88"><![CDATA[수다쟁이 책 닥터와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_63.dds</contents_image>
+         <destination_pos>632,0,0</destination_pos>
+         <destination_mode>custom:631@1,632@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[운석 파편을 찾아서]]></title>
+         <contents mid="92"><![CDATA[<html>수다쟁이 책 닥터는 진실의 거울을 찾기 위해서는 이계의 가면이 필요하다고 한다. 이계의 가면을 만들기 위해 운석 낙하지 중심지에서 운석 파편을 입수하자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 운석 낙하지 중심부</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[운석 낙하지 중심부]]></destination>
+         <todo_msg mid="94"><![CDATA[운석 낙하지 중심부에서 운석 파편을 구하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[운석 파편 입수 성공]]></title>
+         <contents mid="98"><![CDATA[<html>운석 낙하지 중심부에서 운석 파편을 입수했다. 카라큘의 오두막으로 돌아가 수다쟁이 책 닥터와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 수다쟁이 책 닥터</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[카라큘의 오두막에서 수다쟁이 책 닥터와 대화]]></destination>
+         <todo_msg mid="100"><![CDATA[수다쟁이 책 닥터에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9366</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

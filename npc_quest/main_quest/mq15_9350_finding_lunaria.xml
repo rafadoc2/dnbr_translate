@@ -1,0 +1,493 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9350_finding_lunaria</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>9350</qid>
+      <designer>정진호</designer>
+      <qlevel>48</qlevel>
+      <qdesc>유저는 루나를 찾아 나선다. 일루전이 마지막에 남긴 말, 루나의 진심이 궁금했기 때문이다.
+마을 npc와 모험자들에게 루나의 행방을 수소문한다.
+
+고대의 무기고 서쪽에서 벨스를 만나면(아카데믹, 미래에서 전하는 말의 벨스 사용) '또 그녀를 놓친 건가? 너도 참으로 집념이 강한 녀석이군.' 하고 중얼거린다.
+
+유저는 그녀에게 묻고 싶은 게 있다고. 그리고 그녀에게는 도움이 필요한 거라고 말한다.
+'네가 상대에게 필요하리라는 믿음은 그저 착각이며 오만일 뿐이지.' 하고 답하는 벨스커드.
+
+다음 맵으로 가면, 카라한과 그 앞에 쓰러진 시델+카라큘을 발견할 수 있다.
+말을 걸면 (기존 722 참조) 카라큘을 데리고 오두막으로 돌아간다.
+
+카라큘과 대화.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9351</nextqid>
+      <nextqname>mq15_9351_stray_sheep</nextqname>
+      <nextqnpc>n701_oldkarakule</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[루나리아를 찾아서]]></qkname>
+      <qnpc>
+         <npcid>1188</npcid>
+         <npcename>n1188_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>575</npcid>
+         <npcename>n575_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>715</npcid>
+         <npcename>n715_adventurer_guildmaster_hose</npcename>
+         <npckname>모험자 길드장 호세</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>721</npcid>
+         <npcename>n721_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>728</npcid>
+         <npcename>n728_karahan</npcename>
+         <npckname>카라한 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-accepting-acceptted" mid="9" select_type="2" />
+      <talk_question mid="8"><![CDATA[<html>$그림자 냥$<BR>…응? 저번에 무서워져서 막 찾던 그 여자를 아직도 못 찾은 거냥?<BR>어휴… <FONT color=#387206>{user_nick}</FONT> 뭘 모른다냥. 그렇게 집착하면 여자가 도망가는 거라고 우리 열 둘째 누나가 그랬다냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-1" image="QN_npc_Master_Jose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-1-" mid="10" select_type="5" />
+      <talk_question mid="5"><![CDATA[<html>$그림자 냥$<BR><FONT color=#a82424>모험자 길드장 호세</FONT>가 허구헌날 사라진 사람 찾고 그러는 걸 봤다냥.<BR>제자도 저기 가서 물어보는 게 어떠냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$상인 루시타$<BR>저어… 제게 무슨 볼일이 있으신가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n728_karahan-1-" mid="15" select_type="5" />
+      <talk_question mid="14"><![CDATA[<html>$카라한$<BR>큭큭…. 가소로운 것 들….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-1-" mid="17" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$벨스커드$<BR>너를 상대할 시간이 없다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-" mid="19" select_type="5" />
+      <talk_question mid="18"><![CDATA[<html>$카라큘 페어리스타$<BR>콜록콜록…<BR>때가 되어 가는 군….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Jose.dds" center_image="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-a" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$모험자 길드장 호세$<BR>나도 마누라만 아니면 이름 크게 한 번 날리는 건데…<BR>…응? 자네, 무슨 일 있나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Jose.dds" center_image="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-b" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$모험자 길드장 호세$<BR>사람을 찾는다고?<BR>어디, 인상착의를 좀 불러 보게나.<BR><FONT color=#7e12d2>(호세가 의뢰서를 뒤적이며 묻는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Jose.dds" center_image="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-c" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$모험자 길드장 호세$<BR>음? <FONT color=#a82424>은백색이 도는 긴 머리에 하늘거리는 옷을 걸친 미인</FONT>?<BR>으으으음… 그런 미인을 목격했다면 기록이 있을 터인데, 미안하지만 그런 보고는 없군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-c" image="QN_Npc_Lucita.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Jose.dds" center_image="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-d" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$모험자 길드장 호세$<BR>단서가 너무 없으면 찾는 사람도 힘이 빠지게 마련이지.<BR>기운 내게나. 으음~ 막막하다면 <FONT color=#a82424>상인 루시타</FONT>에게도 한 번 가 보는 게 어떤가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-d" image="QN_Npc_Lucita.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Jose.dds" center_image="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-" mid="150" select_type="5" />
+      <talk_question mid="149"><![CDATA[<html>$모험자 길드장 호세$<BR>당장 도움은 안 될 수도 있지만, <FONT color=#a82424>루시타</FONT>에게는 수많은 모험자들이 방문하니 그 중에 쓸만한 정보가 있었을 지도 모른다네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2" image="QN_Npc_Lucita.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Master_Jose.dds" center_image="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-" mid="30" select_type="5" />
+      <talk_question mid="29"><![CDATA[<html>$모험자 길드장 호세$<BR><FONT color=#a82424>상인 루시타</FONT>는 눈썰미가 좋으니, 도움이 될 걸세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-a" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>$상인 루시타$<BR>아… 아앗! 안, 안녕하세요?<BR>찾으시는 물건이 있으신가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-b" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$상인 루시타$<BR>네? 으응… 그렇군요. 사람을 찾고 계신 거군요.<BR>음~ 하얗고 투명한 피부에 신비로운 미인이라면… 음…<BR>죄, 죄송해요. 역시 그런 분을 봤다는 소식은 못 들었어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-c" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>$상인 루시타$<BR>다른 모험자님들은 차티 언니를 잃고 몹시 힘들어 하시더라고요.<BR>그래서인지, 요즘은 제게 별 다른 이야기를 해 주지 않으세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-d" mid="38" select_type="0"><![CDATA[<html>괜찮아.</html>]]></talk_answer>
+      <talk_answer link_index="n709_trader_lucita-2-d" mid="39" select_type="0"><![CDATA[<html>…….</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$상인 루시타$<BR>…다들 행복해지면 좋을 텐데.<BR>모험자님도 좋아하는 분과 함께 있을 수 있으면 좋을 텐데…<BR>
+앗! 제가 주제 넘었군요. 죄, 죄송해요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-e" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(좋아하는 사람과 같이 있기 위해서… 같은 이유는 확실히 아니지?<BR>루나리아는 내게 원망하냐고 물었지만….)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-f" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(원망한다든가, 좋아한다든가, 뭐 그런 문제가 아니잖아.<BR>나는 그저 루나리아의 마지막 말들이 신경이 쓰일 뿐이야. 도대체 무슨 의미인지 모르겠다고.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-g" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(만나서 제대로 이야기를 듣고 싶을 것 뿐이니까….)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-h" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$상인 루시타$<BR>저, 확실한 건 아니지만 고대의 창고 쪽으로 가 보시는 건 어떨까요?<BR>얼마 전에 이상한 사람을 그쪽에서 목격했단 소식을 들었거든요.<BR>
+어떤 이상한 사람인지 모르겠지만요….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-h" image="QW_56.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-3" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$상인 루시타$<BR>아, 어느 쪽이냐고요?<BR><FONT color=#a82424>고대의 무기고 서쪽</FONT>이었어요. 아주 괴상한 옷을 입은 사람을 봤다더라고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-3" image="QW_56.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-3-" mid="52" select_type="5" />
+      <talk_question mid="51"><![CDATA[<html>$상인 루시타$<BR>저도 만나고 싶은 사람이 있거든요. 언제나, 다 같이 행복하게 사는 꿈을 꾼답니다.<BR>…제가 찾는 사람도 <FONT color=#a82424>고대의 무기고 서쪽</FONT>에 있다면 위험해도 당장 가 볼 텐데….<BR><FONT color=#7e12d2>(루시타가 쓸쓸한 얼굴로 웃는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-a" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>$벨스커드$<BR>…한가한 모양이군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-b" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>$벨스커드$<BR>보아하니 지금은 일루전이 아니라 다른 모험자 멍청이들과 어울리던 그 녀석인가?<BR>무슨 일로 또 혼자 방황하고 계신가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-c" mid="61" select_type="0"><![CDATA[<html>그녀에게 묻고 싶은 게 있을뿐.</html>]]></talk_answer>
+      <talk_answer link_index="n1188_velskud-3-c" mid="62" select_type="0"><![CDATA[<html>신경이 쓰일뿐.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$벨스커드$<BR>흠. 여자를 찾고 있다?<BR>…또 그녀를 놓친 건가.너라는 녀석도 참으로 집념이 강하군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-d" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…그리고 그 여자한테는 분명히 도움이 필요할 테니까.<BR>내 도움이.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-e" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(의지해 왔다고 말했잖아. 루나리아는 거짓말을 하지 않으니까.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-f" mid="68" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>$벨스커드$<BR><FONT color=#a82424>자신이 상대에게 필요하리라는 믿음</FONT>은 그저 착각이며 오만일 뿐이지.<BR>아직 그걸 깨닫지 못한 걸 보면 너도 아직 풋내기로군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-g" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>$벨스커드$<BR>과거의 그림자 따위에 집착하는 것도 마찬가지로 어리석음을 증거해 줄 뿐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-h" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신에게 그런 말을 할 자격이 있을까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-i" mid="74" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>$벨스커드$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-j" mid="76" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신은 카라한을 찾고 있지 않던가?<BR>대체 그와는 어떤 관계지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-k" mid="78" select_type="2" />
+      <talk_question mid="77"><![CDATA[<html>$벨스커드$<BR>그런가. 일루전은 모르는 일이던가…<BR>썩어빠질 만큼 오래된 이야기라고 생각했건만, 시간이란 몹시 덧없는 거로군.<BR>너는 사도에 대해 알고 있겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-l" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>$벨스커드$<BR>그래. <FONT color=#a82424>왕</FONT>이라고 불리는 <FONT color=#a82424>그 남자</FONT>의 일곱 가신 말이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-m" mid="153" select_type="2" />
+      <talk_question mid="152"><![CDATA[<html>$벨스커드$<BR>어차피 대부분은 자기 목적 때문에 <FONT color=#a82424>그 남자</FONT>의 곁에 머물고 있는 녀석들이니, 별로 그 수에 의미도 없지.<BR>네가 잠시 차지했던 그 네 번째 사도 자리 역시 금세 다른 녀석으로 대치 되었으니.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-n" mid="82" select_type="2" />
+      <talk_question mid="81"><![CDATA[<html>$벨스커드$<BR>그 남자는 <FONT color=#a82424>드래곤의 보옥</FONT>을 원했다. 블랙 드래곤 카라스의 것을.<BR>그래서 나는 50년 전의 블랙 드래곤 레이드에 참가했고, 보옥을 회수했지만…<BR>
+그것은 내게 흡수되어 꺼낼 수 없었다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-o" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>$벨스커드$<BR>그는 카라한에게 드래곤의 보옥을 꺼내거나, 드래곤이 되는 방법에 대한 연구를 지시했지.<BR>카라한은 드래곤이 되는 방법과 보옥을 꺼내는 방법 모두를 알아내었다.<BR>
+그리고, 내게서 블랙 드래곤의 보옥을 꺼내어 스스로 드래곤이 되려 했지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-p" mid="86" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>$벨스커드$<BR>난 그 기회를 틈타 카라한의 연구실에서 탈출했다.<BR>그리고 오래도록 고대인의 후예를 찾아 다녔지.<BR>드래곤의 힘을 얻기 위해, 그리고 복수를 위해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-3-q" mid="88" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>$벨스커드$<BR>…네 말대로 과거의 그림자로부터 벗어나지 못한 걸지도 모르지.<BR>흥… 피차 같은 신세로군.<BR>
+해묵은 인연을 질질 끌고 다녀봤자 끝이 별로 좋지 못할 텐데, 우스운 일이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-3-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n1188_velskud-4" mid="90" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>$벨스커드$<BR>……네게 쓸데없는 말을 너무 늘어 놓았군.<BR>비켜라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1188_velskud-4" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1188_velskud-4-" mid="94" select_type="5" />
+      <talk_question mid="92"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(앞으로 더 나가 보자.<BR>다른 무언가가 있을지도 모르니까…)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n728_karahan-4-a" mid="96" select_type="2" />
+      <talk_question mid="95"><![CDATA[<html>$카라한$<BR>큭큭…. 가소로운 것 들….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n728_karahan-4-b" mid="98" select_type="2" />
+      <talk_question mid="97"><![CDATA[<html>$카라한$<BR>호오… 또 일루전, 네 녀석인가?<BR>미물들은 학습능력조차 떨어지는 모양이지? 이 위대한 천재, 카라한 님께 분수를 모르고 달려들다니.<BR>마치 불 속으로 뛰어드는 나방떼 같구나! 하하하하핫!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n728_karahan-4-c" mid="100" select_type="2" />
+      <talk_question mid="99"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>시델과 카라큘 님…?<BR>…이런, 지금은 이 시간대 였던 건가…?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n728_karahan-4-d" mid="102" select_type="2" />
+      <talk_question mid="101"><![CDATA[<html>$카라한$<BR><FONT color=#a82424>시간대</FONT>…?<BR>아하~ 그렇지. 네 녀석은 옛날에도 시간을 뛰어넘는다는 둥 하는 헛소리를 늘어놓곤 했다.<BR>그 남자가 잘도 그런 헛소리에 귀를 기울여 주셨다만…. 한심한 녀석.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n728_karahan-4-e" mid="104" select_type="2" />
+      <talk_question mid="103"><![CDATA[<html>$카라한$<BR>시간을 뛰어넘어도 미물은 미물.<BR>이몸처럼 시간을 초월한 존재가 되지 않는 한 벌레 같은 쓰레기는 언제까지나 그 모양 그 꼴일 테지.<BR>어디로 가도, 어느 시대로 가도 말이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n728_karahan-4-f" mid="106" select_type="2" />
+      <talk_question mid="105"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(지금은 이 자와 싸우고 있을 때가 아니지.<BR>우선은 시델과 카라큘 님을 오두막으로 옮기는 편이 좋겠다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n728_karahan-5" mid="108" select_type="2" />
+      <talk_question mid="107"><![CDATA[<html>$카라한$<BR>내게 도전할 생각이 없다면, 그 폐품들을 끌고 돌아가라.<BR>난 마무리할 게 있어서 말이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n728_karahan-5" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n728_karahan-5-" mid="111" select_type="6" />
+      <talk_question mid="110"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(일단 두 사람을 데리고 오두막으로 돌아가자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-5-a" mid="113" select_type="2" />
+      <talk_question mid="112"><![CDATA[<html>$카라큘 페어리스타$<BR>세월을 이길 수는 없군… 쿨럭….<BR>후후후… 그 어떤 강대한 힘에도 끝은 닥치는 법.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-5-b" mid="115" select_type="2" />
+      <talk_question mid="114"><![CDATA[<html>$카라큘 페어리스타$<BR>콜록콜록…<BR>카라한은 예상보다 더 강하더구나….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-5-c" mid="117" select_type="2" />
+      <talk_question mid="116"><![CDATA[<html>$카라큘 페어리스타$<BR>클클… 아무래도… 이 무거운 몸뚱이에도 드디어 때가 된 듯 하구나.<BR>페어리스타라는 짐을 너무 오랫동안 짊어져 왔어.<BR>
+…모두 늙은이의 욕심에 불과했음이니… 쿨럭…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5-c" image="" itemindex="" portrait_left="NPC_Left_Sidel.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n701_oldkarakule-5-d" mid="119" select_type="2" />
+      <talk_question mid="118"><![CDATA[<html>$시델$<BR>스… 스승님! 스승님, 정신 차리세요…<BR>으흐흑…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-5-e" mid="121" select_type="2" />
+      <talk_question mid="120"><![CDATA[<html>$카라큘 페어리스타$<BR>저런. 소란을 부리지 마라, 시델.<BR>이제는 그 짐을 벗을 때가 온 것 뿐이다, 콜록콜록…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-5-f" mid="123" select_type="4" />
+      <talk_question mid="122"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-5-!next" mid="125" select_type="2" />
+      <talk_question mid="124"><![CDATA[<html>$카라큘 페어리스타$<BR>시델… 이리 가까이 오거라.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9350</exe>
+         <exe type="talk" npc="n575_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93500,,,,,,,</exe>
+         <exe type="complete" true="">9350</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n575_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="b" />
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="c" />
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="d">0,1</exelink>
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="b" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="c" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="d" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="d" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="e" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="f" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="g" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="h" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n1188_velskud" sub="b" />
+   <exelink qstep="3" npc="n1188_velskud" sub="c" />
+   <exelink qstep="3" npc="n1188_velskud" sub="c" />
+   <exelink qstep="3" npc="n1188_velskud" sub="d" />
+   <exelink qstep="3" npc="n1188_velskud" sub="e" />
+   <exelink qstep="3" npc="n1188_velskud" sub="f" />
+   <exelink qstep="3" npc="n1188_velskud" sub="g" />
+   <exelink qstep="3" npc="n1188_velskud" sub="h" />
+   <exelink qstep="3" npc="n1188_velskud" sub="i" />
+   <exelink qstep="3" npc="n1188_velskud" sub="j" />
+   <exelink qstep="3" npc="n1188_velskud" sub="k" />
+   <exelink qstep="3" npc="n1188_velskud" sub="l" />
+   <exelink qstep="3" npc="n1188_velskud" sub="m" />
+   <exelink qstep="3" npc="n1188_velskud" sub="n" />
+   <exelink qstep="3" npc="n1188_velskud" sub="o" />
+   <exelink qstep="3" npc="n1188_velskud" sub="p" />
+   <exelink qstep="3" npc="n1188_velskud" sub="q" />
+   <exelink qstep="3" npc="n1188_velskud" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n728_karahan" sub="b" />
+   <exelink qstep="4" npc="n728_karahan" sub="c" />
+   <exelink qstep="4" npc="n728_karahan" sub="d" />
+   <exelink qstep="4" npc="n728_karahan" sub="e" />
+   <exelink qstep="4" npc="n728_karahan" sub="f" />
+   <exelink qstep="4" npc="n728_karahan" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="5" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="5" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="5" npc="n701_oldkarakule" sub="e">0</exelink>
+   <exelink qstep="5" npc="n701_oldkarakule" sub="f">1</exelink>
+   <exelink qstep="5" npc="n701_oldkarakule" sub="!next" />
+   <journal_data recompense="93500" quest_title="루나리아를 찾아서" chapterid="7" quest_level="48" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_npc_Master_Jose.dds</contents_image>
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[루나리아를 찾아서 I]]></title>
+         <contents mid="128"><![CDATA[<html>로터스마쉬의 모험자 길드장 호세와 대화해 보자.<BR>
+ <BR>
+<FONT color=#086171>로터스마쉬</FONT><FONT color=#a82424> - 모험자 길드장 호세</FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[로터스마쉬의 모험자 길드장 호세와 대화]]></destination>
+         <todo_msg mid="130"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lucita.dds</contents_image>
+         <destination_pos>15,n709</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>709</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="131"><![CDATA[루나리아를 찾아서 II]]></title>
+         <contents mid="132"><![CDATA[<html>로터스마쉬의 상인 루시타와 대화해 보자.<BR>
+ <BR>
+<FONT color=#086171>로터스마쉬</FONT> <FONT color=#a82424>- 상인 루시타</FONT></html>]]></contents>
+         <destination mid="133"><![CDATA[로터스마쉬의 상인 루시타와 대화]]></destination>
+         <todo_msg mid="134"><![CDATA[상인 루시타와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>561,n1188</destination_pos>
+         <destination_mode>custom:561@1</destination_mode>
+         <statemark_npcid>1188</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[루나리아를 찾아서 III]]></title>
+         <contents mid="136"><![CDATA[<html>고대의 무기고 서쪽으로 가서 루나리아를 찾아 보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(고대의 창고 입구)</FONT> <FONT color=#a82424>- 고대의 무기고 서쪽</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[고대의 무기고 서쪽에서 누군가와 대화]]></destination>
+         <todo_msg mid="138"><![CDATA[고대의 무기고 서쪽으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>562,n728</destination_pos>
+         <destination_mode>custom:561@1,562@1</destination_mode>
+         <statemark_npcid>728</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="139"><![CDATA[루나리아를 찾아서 IV]]></title>
+         <contents mid="140"><![CDATA[<html>고대의 무기고 서쪽을 더 탐색해 보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(고대의 창고 입구)</FONT> <FONT color=#a82424>- 고대의 무기고 서쪽</FONT></html>]]></contents>
+         <destination mid="141"><![CDATA[고대의 무기고 서쪽에서 누군가와 대화]]></destination>
+         <todo_msg mid="142"><![CDATA[고대의 무기고 서쪽을 더 탐색하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_Karakule_House.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="144"><![CDATA[루나리아를 찾아서 IV]]></title>
+         <contents mid="145"><![CDATA[<html>시델과 카라큘은 카라한에게 쓰러진 채였다. 일단은 두 사람을 데리고 카라큘의 오두막으로 돌아가자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT><FONT color=#a82424> - 카라큘 페어리스타</FONT></html>]]></contents>
+         <destination mid="146"><![CDATA[카라큘의 오두막으로]]></destination>
+         <todo_msg mid="147"><![CDATA[카라큘의 오두막으로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9349</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

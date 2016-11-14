@@ -1,0 +1,463 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9386_shadow_for_you</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9386</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9387</nextqid>
+      <nextqname>mq15_9387_choice_of_history</nextqname>
+      <nextqnpc />
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[너의 그림자]]></qkname>
+      <qnpc>
+         <npcid>574</npcid>
+         <npcename>n574_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1038</npcid>
+         <npcename>n1038_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1050</npcid>
+         <npcename>n1050_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1204</npcid>
+         <npcename>n1204_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-accepting-a" mid="93" select_type="0"><![CDATA[<html>벌써?</html>]]></talk_answer>
+      <talk_answer link_index="n574_shadow_meow-accepting-a" mid="94" select_type="0"><![CDATA[<html>빠르네.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$그림자 냥$<BR>맞다, 제자여 냥! 나 이 편지 가져왔어 냥.<BR>아카데믹 코멜리나라는 아이에게서 온 편지다 냥!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-accepting-a" image="" itemindex="" portrait_left="NPC_Left_Academic_Commelina.dds" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-accepting-b" mid="95" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$아카데믹 코멜리나의 편지$<BR><FONT color=#086171>리버워트 선착장, 텔 로사 진입로 옆에, 고대사원 옆, 파헤쳐진 곳, 자스민, 먼저 도착. 절대 아무에게도, 알리지 말아주세요. [자스민 원정기지], 그 곳 이름, 알려지면, 우리가 당할지도, 조심.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-accepting-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-accepting-c" mid="96" select_type="2" />
+      <talk_question mid="8"><![CDATA[<html>$그림자 냥$<BR>뭐냥뭐냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-accepting-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-accepting-d" mid="97" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>코멜리나에게 연락이 왔어. 고대사원 근처 파헤쳐진 곳이라면, </FONT><BR>
+<FONT color=#662500>전에 네가 말했던 그 커다란 고대인의 연구시설 중 일부일까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-accepting-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-accepting-acceptted" mid="99" select_type="3" />
+      <talk_question mid="10"><![CDATA[<html>$그림자 냥$<BR>엇 그럴지도 냥. 하지만 그런 위험한 곳에 또 가냥? 정말 못말린다 냥. 어쩔 수 없지. 얼른 갔다 와라 냥. 하지만 유적이란 곳 너무 깊숙이 들어가면 안된다냥? 무슨 일이 벌어질지 몰라 냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1" image="QW_81.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-" mid="102" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$그림자 냥$<BR>갔다 와라 냥~!<BR><FONT color=#7e12d2>(텔 로사 진입로의 자스민 원정기지로 </FONT><FONT color=#7e12d2>가세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1204_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1204_lunaria-1-" mid="104" select_type="5" />
+      <talk_question mid="12"><![CDATA[<html>$루나리아$<BR>….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-a" mid="105" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#387206>{user_nick}</FONT>님! 무사히 도착하셔서 다행입니다. 다행이네요. 자스민이 먼저 나서지 않아서… 자스민이 먼저 공격할까봐 조마조마 했습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-a" image="QM_Jasmin_Black.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-b" mid="106" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>나도 놀랐어. 자스민이 갑자기 나타날 줄은 몰랐는데. </FONT><FONT color=#662500>게다가 저 모습... 꼭 몬스터같네.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-c" mid="107" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$아카데믹 코멜리나$<BR>네. 지금 자스민과 싸우면 안됩니다. 제 뒤에 있는 곳이 보이세요? 고대사원의 일부였던 곳입니다. 아무래도 이 고대사원에는 이상한 힘이 있는 것 같아요. 자스민은 이 곳의 힘을 이용해 보옥을 활성화하고 발키리를 만들고 있는 것 같습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-d" mid="108" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>역시 자스민은 이 고대사원의 힘을 이용하려고 이 근방에서 계속 활동했던 거구나.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-d" image="QM_Jasmin_Black.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-e" mid="109" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>$아카데믹 코멜리나$<BR>…네. 자스민은 이 사원의 힘을 이용해서 발키리와 노르넨을 쉽게 만들뿐만 아니라, 자신을… 마치 드래곤처럼, 왠만한 데미지에는 끄떡없는 몸으로 바꾸어놓았어요. 웬만한 공격으로는 손끝 하나 못건드릴거에요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-e" image="QM_nornen_valkiri.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-f" mid="110" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$아카데믹 코멜리나$<BR>하지만 방법이 없는 건 아닙니다. 이 고대사원 안에서 자스민에게 에너지를 보내고 있는 발키리나 노르넨을 찾아서 물리치면, 자스민에게 가는 에너지 공급을 끊을 수 있어요. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-g" mid="111" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그렇군. 그럼 이 안으로 들어가면 되는 거구나.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-h" mid="112" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$아카데믹 코멜리나$<BR>…네?! 잠시만요, <FONT color=#387206>{user_nick}</FONT>님. 이 아래는 위험해요. 적을 제물로도 바쳤다는 소리도 있고, 영원한 미아가 되었다는 소문도 있고요. 직접 들어가는 것 보다 밖에서 어떻게든 하는 게 좋을 것 같습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-i" mid="113" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>나라면 괜찮지 않을까? 여차하면 난 다른 시간대로 이동하면 돼.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-1-j" mid="114" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$아카데믹 코멜리나$<BR>그 루나리아라는게 없어도 그런 게 가능한 겁니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-2" mid="115" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아마도. (나도 시간을 이동하는 게 될지는 모르지만… 아르테움의 정수도 있으니까 쉽게 유적에 말려들지는 않겠지)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1038_academic-2-" mid="116" select_type="5" />
+      <talk_question mid="24"><![CDATA[<html>$아카데믹 코멜리나$<BR>...알겠습니다. 그럼 <FONT color=#387206>{user_nick}</FONT>님을 믿고 맏길께요.<BR>아까 얼핏 들었는데, 아무래도 유적 안에 방어용 장치가 있는 모양이에요. 조심하세요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1204_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1204_lunaria-3-a" mid="119" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$루나리아$<BR>….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1204_lunaria-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1204_lunaria-3-b" mid="120" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html><FONT color=#2b2723>${user_nick}$</FONT><FONT color=#662500><BR>루나리아?! 왜 여기에? 분명 모노리스로 간다고 했었는데...<BR>(루나리아에게 손을 뻗는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1204_lunaria-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1204_lunaria-3-c" mid="121" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$루나리아$<BR>….<BR><FONT color=#7e12d2>(루나리아가 만져지지 않는다. 루나리아의 표정은 왠지 </FONT><FONT color=#7e12d2>어둡다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1204_lunaria-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1204_lunaria-3-d" mid="122" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어, 잠깐,  넌… 루나리아가 아냐?<BR>만져지지도 않고, 흔들리는 것 같은데... 이건 환상?</FONT><BR>
+<FONT color=#662500>루나리아, 무슨 일 있어?</FONT><BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1204_lunaria-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1204_lunaria-3-e" mid="123" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>$루나리아$<BR>….<FONT color=#7e12d2>(뭔가를 말하는 것 같지만, 잘 들리지 않는다. 알아들을 방법이 </FONT><FONT color=#7e12d2>없을까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1204_lunaria-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1204_lunaria-4" mid="124" select_type="3" />
+      <talk_question mid="30"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아 본인도 아닌 것 같고, 그저 환상… 아무것도 말하지 않는다면, 지금은 신경 쓸 때가 아니야. 모든 일이 끝나면 다시 올께. 그 때까지 기다려 줄 수 있어? 루나리아.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1204_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1204_lunaria-4-" mid="125" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>$루나리아$<BR>….<FONT color=#7e12d2>(루나리아가 작게 고개를 끄덕인다</FONT><FONT color=#7e12d2>. 어서 유적 밖으로 나가자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-5-a" mid="128" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$아카데믹 코멜리나$<BR>...해, 해냈어요...?<FONT color=#387206> {user_nick}</FONT>님이 자스민을 물리치셨습니다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-5-b" mid="129" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#662500>좋았어! 해낸거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-5-c" mid="130" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$아카데믹 코멜리나$<BR>…아직 확실히 사망이 확인된 건 아니지만, 새로운 클론들도 물리치고 이 기지도 <FONT color=#387206>{user_nick}</FONT>님이 손에 넣으셨으니… 더 이상 자스민은 전쟁 같은 걸 하지 못할 거에요. <FONT color=#387206>{user_nick}</FONT>님대단하세요. 해낸거에요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-5-d" mid="131" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>$아카데믹 코멜리나$<BR>…더 이상, 더 이상…미래에 의해 자매들이 이용당하는 비극도, 마을이 불타는 비극도 없을 거에요. 정말 감사합니다. <FONT color=#387206>{user_nick}</FONT>님. <FONT color=#387206>{user_nick}</FONT>님이 이 시대를 구하신 거에요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-5-e" mid="132" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내가… 이 시대를?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-5-f" mid="133" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>$아카데믹 코멜리나$<BR>그럼요. <FONT color=#387206>{user_nick}</FONT>님은 이 시대의 영웅이십니다! 틀림없어요!<BR>아, 그러고 보니 한가지 드릴 말씀이... 저, 우선 저기 드래곤의 보옥을 맡아주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-6" mid="134" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$아카데믹 코멜리나$<BR>자스민을 물리치신 건 <FONT color=#387206>{user_nick}</FONT>님이시니까요! 이 승리의 주역은 <FONT color=#387206>{user_nick}</FONT>님이에요. 그러니까, <FONT color=#387206>{user_nick}</FONT>님의 손으로 저 보옥을 잡아주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-6-" mid="136" select_type="5" />
+      <talk_question mid="39"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>좋아. 알겠어. (보옥으로 가까이 가서 보옥을 잡자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7" image="QN_knight_velskud_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-a" mid="163" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#7e12d2>(코멜리나는 살짝 미소 띈 얼굴을 했다</FONT>)<BR>아름다운 보옥이네요. 그건 여신이 창조한 드래곤 중 선한 마음을 간직했던 드래곤인, 에인션트 드래곤의 보옥이었습니다... 언제나 다정한 영웅이 가지고 있던 보옥이었죠. 제레인트님, 아르젠타님... 미래의 수호자가 되실 그 분…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-b" mid="140" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>미래의 수호자?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-c" mid="141" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$아카데믹 코멜리나$<BR>네. 비록 그 세 분이 한자리에 모인 적은 없었지만, 에인션트 드래곤의 선한 마음만은 그 영웅들에게 그대로 계승되었겠죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-d" mid="142" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>미래의 수호자라면, 드래곤 말이야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-e" mid="143" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>$아카데믹 코멜리나$<BR>...어...저...그게...말해도 상관..있을지 없을지...<BR>아니, 역사가 바뀌었으니 말해도 상관없을 것 같고...으음....<BR>아니아니, 말하겠습니다! 대신 절대 다른 분에게 말해서는 안 됩니다?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-f" mid="145" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(왜 이렇게 뜸을 들이지?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-f" image="QN_knight_velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-g" mid="146" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$아카데믹 코멜리나$<BR>미래의 수호자는… 벨스커드님이십니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-g" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-h" mid="147" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>에??????? 벨스커드는 사도인데?!?!??!?!?!?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-h" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-i" mid="150" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$아카데믹 코멜리나$<BR>…무, 물론 그런 적도 있었지만요… 사실 지금의 벨스커드님은, 미래의 벨스커드님과 많이 다르긴 해도... 다정하신 분... 이라고요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-j" mid="151" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…지금 나더러 그걸 믿……(코멜리나의 눈빛이 매섭게 빛난다)</FONT><BR>
+<FONT color=#662500>……………뭐…………………… 천성이 악한 사람처럼 보이진 않았지…만…말야…</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-j" image="QN_Npc_Daisy.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-k" mid="152" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>$아카데믹 코멜리나$<BR>흠흠, 어쨌든 그건 미래의 일이고, 지금 그 보옥은... 원래 역사대로라면 데이지가 가지고 있어야 하지만, 데이지는 없어졌죠. 정해진 주인이 없는 셈입니다. 어디에 둘 지 확실하지도 않아서… 부탁이 있습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-k" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-l" mid="156" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#387206>{user_nick}</FONT>님은 테라마이님과 친분이 있으시죠? 혹시 테라마이님께 이 보옥을 어디에 써야 할 지 물어봐 주시지 않겠습니까? 블랙드래곤 레이드의 6영웅중 하나인 테라마이님이라면 이 보옥을 어디에 써야 하는지 알지도 모릅니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-l" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-7-m" mid="157" select_type="4" />
+      <talk_question mid="52"><![CDATA[<html>$퀘스트 완료$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1050_academic-7-!next" mid="165" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$아카데믹 코멜리나$<BR>…부탁드립니다. 여기서 기다릴게요. 나중에 결과를 알려주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9386</exe>
+         <exe type="talk" npc="n574_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>특공형 물리치면 저널 변경, 
+저널 변경된 상태에서 아포칼립스랑 싸우면 루나리아 생성.
+루나리아에게 줌 하면서 스텝 변경.</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93860,,,,,,,</exe>
+         <exe type="complete" true="">9386</exe>
+         <exe type="setjornal">9</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n574_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1038_academic" sub="b" />
+   <exelink qstep="1" npc="n1038_academic" sub="c" />
+   <exelink qstep="1" npc="n1038_academic" sub="d" />
+   <exelink qstep="1" npc="n1038_academic" sub="e" />
+   <exelink qstep="1" npc="n1038_academic" sub="f" />
+   <exelink qstep="1" npc="n1038_academic" sub="g" />
+   <exelink qstep="1" npc="n1038_academic" sub="h" />
+   <exelink qstep="1" npc="n1038_academic" sub="i" />
+   <exelink qstep="1" npc="n1038_academic" sub="j" />
+   <exelink qstep="1" npc="n1038_academic" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n1204_lunaria" sub="b" />
+   <exelink qstep="3" npc="n1204_lunaria" sub="c" />
+   <exelink qstep="3" npc="n1204_lunaria" sub="d" />
+   <exelink qstep="3" npc="n1204_lunaria" sub="e" />
+   <exelink qstep="3" npc="n1204_lunaria" sub="4">0,1</exelink>
+   <exelink qstep="5" npc="n1050_academic" sub="b" />
+   <exelink qstep="5" npc="n1050_academic" sub="c" />
+   <exelink qstep="5" npc="n1050_academic" sub="d" />
+   <exelink qstep="5" npc="n1050_academic" sub="e" />
+   <exelink qstep="5" npc="n1050_academic" sub="f" />
+   <exelink qstep="5" npc="n1050_academic" sub="6">0,1</exelink>
+   <exelink qstep="7" npc="n1050_academic" sub="b" />
+   <exelink qstep="7" npc="n1050_academic" sub="c" />
+   <exelink qstep="7" npc="n1050_academic" sub="d" />
+   <exelink qstep="7" npc="n1050_academic" sub="e" />
+   <exelink qstep="7" npc="n1050_academic" sub="f" />
+   <exelink qstep="7" npc="n1050_academic" sub="g" />
+   <exelink qstep="7" npc="n1050_academic" sub="h" />
+   <exelink qstep="7" npc="n1050_academic" sub="i" />
+   <exelink qstep="7" npc="n1050_academic" sub="j" />
+   <exelink qstep="7" npc="n1050_academic" sub="k" />
+   <exelink qstep="7" npc="n1050_academic" sub="l">0</exelink>
+   <exelink qstep="7" npc="n1050_academic" sub="m">1,2</exelink>
+   <exelink qstep="7" npc="n1050_academic" sub="!next" />
+   <journal_data recompense="93860" quest_title="너의 그림자" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_81.dds</contents_image>
+         <destination_pos>811,n1038</destination_pos>
+         <destination_mode>custom:811@1</destination_mode>
+         <statemark_npcid>1038</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[너의 그림자 1]]></title>
+         <contents mid="55"><![CDATA[<html>아카데믹 코멜리나로부터 연락이 왔다.<BR>아무래도 텔 로사 진입로에 자스민의 기지가 있는 모양인데…<BR>코멜리나가 알려준 곳으로 가 보자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT> <FONT color=#a82424>- 자스민 원정기지</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[자스민 원정기지로]]></destination>
+         <todo_msg mid="57"><![CDATA[코멜리나의 편지가 알려준 곳으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_nornen_valkiri.dds</contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[너의 그림자 2]]></title>
+         <contents mid="59"><![CDATA[<html>자스민 원정기지 안에는 고대의 유적이 있었다.<BR>일단 고대의 유적으로 들어가서 자스민에게 이어진 에너지 연결을 끊고 코멜리나에게 돌아가자. 특공형이라고 이름 붙은 몬스터를 처치하면 에너지 연결을 끊을 수 있다. <BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT> <FONT color=#a82424>- 자스민 원정기지</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[특공형이라고 이름 붙은 클론 퇴치]]></destination>
+         <todo_msg mid="61"><![CDATA[특공형이라고 이름붙은 클론을 물리치세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>811,n1204</destination_pos>
+         <destination_mode>custom:811@1</destination_mode>
+         <statemark_npcid>1204</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[너의 그림자 3]]></title>
+         <contents mid="63"><![CDATA[<html>자스민 원정기지의 유적에서 만난 것은 뜻밖에도 루나리아였다. 루나리아와 대화하자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT><FONT color=#a82424> - 자스민 원정기지(루나리아)</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[자스민 원정기지의 루나리아와 대화]]></destination>
+         <todo_msg mid="65"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[너의 그림자 4]]></title>
+         <contents mid="67"><![CDATA[<html>유적 안에서 뜻밖에도 루나리아를 만났다.<BR>하지만 만져지지도 않고, 대화도 되지 않았는데… <BR>일단 유적을 빠져나가자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT><FONT color=#a82424> - 자스민 원정기지</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[자스민 원정기지의 유적 탈출]]></destination>
+         <todo_msg mid="69"><![CDATA[다음을 기약하며 우선 유적을 빠져나가세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QM_Jasmin_Black.dds</contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[너의 그림자 5]]></title>
+         <contents mid="71"><![CDATA[<html>자스민의 연구실 문이 열렸다.<BR>미래에서 온 적과 최종 결전이다.<BR>그 안으로 들어가자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT> <FONT color=#a82424>- 자스민 원정기지</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[자스민과의 결전]]></destination>
+         <todo_msg mid="73"><![CDATA[자스민을 물리치세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>811,n1050</destination_pos>
+         <destination_mode>custom:811@1</destination_mode>
+         <statemark_npcid>1050</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[너의 그림자 6]]></title>
+         <contents mid="75"><![CDATA[<html>자스민을 물리치는데 성공했다.<BR>코멜리나와 대화하자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT> <FONT color=#a82424>- 자스민 원정기지</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[자스민 원정기지의 아카데믹 코멜리나와 대화]]></destination>
+         <todo_msg mid="77"><![CDATA[자스민을 물리쳤습니다. 아카데믹 코멜리나와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[너의 그림자 7]]></title>
+         <contents mid="79"><![CDATA[<html>코멜리나는 보옥을 가져달라고 부탁했다.<BR>에인션트 드래곤의 보옥을 가져가도록 하자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT> <FONT color=#a82424>- 자스민 원정기지</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[에인션트 드래곤의 보옥 회수]]></destination>
+         <todo_msg mid="81"><![CDATA[에인션트 드래곤의 보옥을 집으세요.]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>811,n1050</destination_pos>
+         <destination_mode>custom:811@1</destination_mode>
+         <statemark_npcid>1050</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[너의 그림자 8]]></title>
+         <contents mid="83"><![CDATA[<html>에인션트 드래곤의 보옥을 회수했다.<BR>아카데믹 코멜리나와 대화하자.<BR><BR><FONT color=#086171>자스민 원정기지</FONT> <FONT color=#a82424>- 아카데믹 코멜리나</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[자스민 원정기지의 아카데믹 코멜리나와 대화]]></destination>
+         <todo_msg mid="85"><![CDATA[에인션트 드래곤의 보옥을 회수했습니다. 아카데믹 코멜리나와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9385</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

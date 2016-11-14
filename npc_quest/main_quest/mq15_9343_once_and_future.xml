@@ -1,0 +1,419 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9343_once_and_future</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>9343</qid>
+      <designer>정진호</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9344</nextqid>
+      <nextqname>mq15_9344_irregular_time</nextqname>
+      <nextqnpc>n754_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[과거이거나 미래]]></qkname>
+      <qnpc>
+         <npcid>1177</npcid>
+         <npcename>n1177_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1181</npcid>
+         <npcename>n1181_novice_man</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>754</npcid>
+         <npcename>n754_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceptted" mid="6" select_type="2" />
+      <talk_question mid="5"><![CDATA[<html>$상급 소서리스 타마라$<BR>약재를 가져와 줬구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-1-a" mid="9" select_type="2" />
+      <talk_question mid="8"><![CDATA[<html>$상급 소서리스 타마라$<BR>고마워. 덕분에 한 시름 놨어.<BR>아, 그러고보니 다른 모험자들은 <FONT color=#a82424>리버워트 선착장</FONT> 쪽으로 가던데… 만났어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-a" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-1-" mid="11" select_type="5" />
+      <talk_question mid="10"><![CDATA[<html>$상급 소서리스 타마라$<BR>계속 혼자서 움직이는 것보다는, 동료가 있는 편이 좋을 거야.<BR>마음 든든하고. 지금은 모두들 힘든 시기니까 말이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-1-" mid="13" select_type="5" />
+      <talk_question mid="12"><![CDATA[<html>$루나리아$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1181_novice_man-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Novice_Assassin.dds" center_image="">
+      <talk_answer link_index="n1181_novice_man-1-" mid="15" select_type="5" />
+      <talk_question mid="14"><![CDATA[<html>$???$<BR>…루나리아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1" image="QN_Npc_charty_grandfather.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-1-a" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>$워리어 시안$<BR><FONT color=#a82424>차티의 할아버지</FONT>가 무사해야 할텐데…<BR>빨리 찾아내고 싶지만, 쉽지가 않네요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1-a" image="QN_Npc_charty_grandfather.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-1-b" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그 노인은… 내 눈 앞에서 죽었는데…<BR>차티에게 부족의 성소가 어디인지 알려주고는 그대로….)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-1-c" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(시간이 뒤죽박죽인 걸 알면서도 적응이 안 되는군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1-c" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-1-d" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$워리어 시안$<BR>원주민들이 납치되어 끌려간 곳은 용추종자 점거지라고 들었습니다.<BR>차티가 할아버지의 흔적을 쫓아서 그쪽으로 향하는 걸 봤다는군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1-d" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-1-e" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$워리어 시안$<BR>저는 지금 출발할 생각이니까, <FONT color=#387206>{user_nick}</FONT> 님도 그쪽으로 와 주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1-e" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-1-f" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$워리어 시안$<BR>뜻을 같이 하는 동료는 한 사람이라도 더 있는 편이 좋잖아요.<BR>지금은… 지금은 모두가 힘든 시기니까요.<BR><FONT color=#7e12d2>(시안이 잠깐 쓸쓸한 표정을 짓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1-f" image="QN_Npc_charty_grandfather.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$워리어 시안$<BR>차티의 할아버지를 무사히 구할 수 있다면 좋겠습니다.<BR>더 이상 이 손이 닿지 않아 아쉽게 죽는 사람을 보고 싶지 않으니까요.<BR><FONT color=#7e12d2>(시안이 주먹을 꽉 쥐어 보인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-" mid="32" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>$워리어 시안$<BR><FONT color=#a82424>용추종자 점거지</FONT>로 어서 출발하죠.<BR>차티는 몸이 재빠른 아이라서, 빨리 쫓지 않으면 놓칠 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1181_novice_man-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Novice_Assassin.dds" center_image="">
+      <talk_answer link_index="n1181_novice_man-3-a" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$???$<BR>…루나리아.<BR><FONT color=#7e12d2>(남자가 환하게 웃으며 루나리아를 향해 손을 뻗는 것이 보인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1181_novice_man-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Novice_Assassin.dds" center_image="">
+      <talk_answer link_index="n1181_novice_man-3-b" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$???$<BR>루나리아, 이제 멀지 않았어.<BR>조금만 기다리면 네가 바라는 대로 문이 열리고………….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1181_novice_man-3-b" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1181_novice_man-3-c" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$루나리아$<BR>…….아니야. <FONT color=#387206>{user_nick}</FONT> 우리들은 결코 그곳에 갈 수 없어.<BR>가지 않아야 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1181_novice_man-3-c" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1181_novice_man-3-d" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$루나리아$<BR>이제 충분해. 이제…<BR>멈추는 편이 좋아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1181_novice_man-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Novice_Assassin.dds" center_image="">
+      <talk_answer link_index="n1181_novice_man-4" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$???$<BR>루나… 리아…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1181_novice_man-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Novice_Assassin.dds" center_image="">
+      <talk_answer link_index="n1181_novice_man-4-" mid="46" select_type="5" />
+      <talk_question mid="45"><![CDATA[<html><FONT color=#7e12d2>(남자의 모습이 흐려진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-a" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$루나리아$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-b" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>대답 안 할 것 알지만 일단 묻겠는데.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-c" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$루나리아$<BR>방금 전 남자 말이야?<BR>나도 봤어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-d" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네가 대답을 해 주다니 의외로군.<BR>그럼 혹시 친절하게 설명도 해 주려나?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-e" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$루나리아$<BR>그것 역시 과거이거나 미래.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-f" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러니까, 대체 그건 누구고 뭐가 어떻게 된 거냐고.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-g" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$루나리아$<BR>몰라.<BR>나는 언제나 이렇게 살아 왔으니까, 설명할 수 없어.널 이해시킬 수도 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-h" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$루나리아$<BR>몇 걸음 사이에 또 시간이 어떻게 될지 나도 몰라.<BR>그러나 변하는 건 주위의 모든 것들. 네 세계. 네 자신이 아니야.<BR>네 자신만은, 언제나 그대로야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-i" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>$루나리아$<BR>시간이 어떻게 흐르건, 지금 여기에서의 선택은 지금 여기의 네가 내리는 것.<BR>네가 행하지 않은 것은 일어나지 않아. 너 자신을 믿어. 지금 여기에 있는, 네가 아는 너 자신만을.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-j" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>$루나리아$<BR>내가 말해줄 수 있는 건 그게 다야.<BR>…그때에도 이렇게 말했다면 좋았을 텐데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-k" mid="68" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…그때?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-l" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>$루나리아$<BR>내게는 과거가 되어버린, 언젠가.<BR>너이면서 네가 아닌, 누군가에게.<BR><FONT color=#7e12d2>(루나리아가 투명한 시선으로 허공을 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-m" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(…해답을 기대한 것도 아니지만, 역시 루나리아의 말은 알아들을 수가 없어.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-4-n" mid="74" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>$루나리아$<BR>시간의 혼란이 지나치게 심각해진 것은 사실이야. 한 걸음마다 수백 년이 지나쳐 가고, 다시 되돌아 오는 것만 같아.<BR>네가 완전히 시간의 미아가 되기를 바라지는 않아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-4-n" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-5" mid="76" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>$루나리아$<BR>그러니 <FONT color=#387206>{user_nick},</FONT> 카라큘에게 돌아가.<BR>그녀에게 건네준 석판에는 고대인의 도구 이야기가 쓰여 있을 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-5" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-5-a" mid="79" select_type="2" />
+      <talk_question mid="78"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>카라큘</FONT>의 지식이 너를 도울 수 있다면 좋겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-5-a" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-5-" mid="81" select_type="5" />
+      <talk_question mid="80"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러면 리버워트 선착장 쪽으로 돌아가야겠군.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-a" mid="83" select_type="2" />
+      <talk_question mid="82"><![CDATA[<html>$워리어 시안$<BR>왜 또 이런 일이….<BR><FONT color=#7e12d2>(시안이 괴로운 표정으로 이마를 짚는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-a" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-b" mid="85" select_type="2" />
+      <talk_question mid="84"><![CDATA[<html>$워리어 시안$<BR>아. <FONT color=#387206>{user_nick}</FONT> 님.<BR>차티 일로 시델이… 몹시 상심한 것 같습니다. 그야 당연히 상심하겠죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-c" mid="87" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(지난 번에 들은 이야기 같은데?<BR>적당히 시간을 거슬러 버렸군.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-c" image="QN_Npc_Charty.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-d" mid="91" select_type="2" />
+      <talk_question mid="90"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>카라한이 차티의 몸에서 보옥을 꺼내 달아났다… 그 말씀이시죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-d" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-e" mid="93" select_type="2" />
+      <talk_question mid="92"><![CDATA[<html>$워리어 시안$<BR>아, 알고 계셨군요.<BR>우선 이 일을 카라큘 님께 알리긴 했습니다만, 시델의 충격이 이만저만이 아닙니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-f" mid="95" select_type="2" />
+      <talk_question mid="94"><![CDATA[<html>$워리어 시안$<BR>너무 크게 상심해서 무슨 일이 벌어질까 두렵네요.<BR>제 힘이 얼마나 부족한지 통감했습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-g" mid="97" select_type="2" />
+      <talk_question mid="96"><![CDATA[<html>$워리어 시안$<BR>차티의 죽음에도 책임을 느낍니다. 왜 자꾸만 눈 앞에서 손에 닿을듯 말듯 모든 것이 사라지고 마는 걸까요?<BR>…단지 구해주고 싶었을 뿐인데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-g" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-h" mid="99" select_type="2" />
+      <talk_question mid="98"><![CDATA[<html>$워리어 시안$<BR>…아. 그렇지, 신경 쓰이는 정보가 하나 더 있습니다.<BR><FONT color=#a82424>벨스커드</FONT>가 이 근처에 나타났다는 소문을 들었거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-i" mid="103" select_type="2" />
+      <talk_question mid="102"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그가 왜 이런 곳에?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-j" mid="105" select_type="2" />
+      <talk_question mid="104"><![CDATA[<html>$워리어 시안$<BR>그것까지는 저도 잘 모르겠습니다.<BR>목격 되었다는 곳으로 가서 확인해 보려고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-k" mid="133" select_type="4" />
+      <talk_question mid="106"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-5-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-5-!next" mid="135" select_type="2" />
+      <talk_question mid="134"><![CDATA[<html>$워리어 시안$<BR>
+단순한 소문이거나, 잘못 본 것일 지도 모르니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9343</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">22016</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93430,,,,,,,</exe>
+         <exe type="complete" true="">9343</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="" />
+   <exelink qstep="1" npc="n754_cian" sub="b" />
+   <exelink qstep="1" npc="n754_cian" sub="c" />
+   <exelink qstep="1" npc="n754_cian" sub="d" />
+   <exelink qstep="1" npc="n754_cian" sub="e" />
+   <exelink qstep="1" npc="n754_cian" sub="f" />
+   <exelink qstep="1" npc="n754_cian" sub="2">0,1,2</exelink>
+   <exelink qstep="3" npc="n1181_novice_man" sub="b" />
+   <exelink qstep="3" npc="n1181_novice_man" sub="c" />
+   <exelink qstep="3" npc="n1181_novice_man" sub="d" />
+   <exelink qstep="3" npc="n1181_novice_man" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n1177_lunaria" sub="b" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="c" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="d" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="e" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="f" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="g" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="h" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="i" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="j" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="k" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="l" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="m" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="n" />
+   <exelink qstep="4" npc="n1177_lunaria" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n1177_lunaria" sub="" />
+   <exelink qstep="5" npc="n754_cian" sub="b" />
+   <exelink qstep="5" npc="n754_cian" sub="c" />
+   <exelink qstep="5" npc="n754_cian" sub="d" />
+   <exelink qstep="5" npc="n754_cian" sub="e" />
+   <exelink qstep="5" npc="n754_cian" sub="f" />
+   <exelink qstep="5" npc="n754_cian" sub="g" />
+   <exelink qstep="5" npc="n754_cian" sub="h" />
+   <exelink qstep="5" npc="n754_cian" sub="i" />
+   <exelink qstep="5" npc="n754_cian" sub="j">0</exelink>
+   <exelink qstep="5" npc="n754_cian" sub="k">1</exelink>
+   <exelink qstep="5" npc="n754_cian" sub="!next" />
+   <journal_data recompense="93430" quest_title="과거이거나 미래" chapterid="6" quest_level="44" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>14,n754</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>754</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[과거이거나 미래 I]]></title>
+         <contents mid="111"><![CDATA[<html>리버워트 선착장으로 가서 모험자를 만나 보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장</FONT><FONT color=#a94407> </FONT><FONT color=#a94407>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[리버워트 선착장의 워리어 시안과 대화]]></destination>
+         <todo_msg mid="113"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,0,0</destination_pos>
+         <destination_mode>custom:541@1,542@3</destination_mode>
+         <statemark_npcid>1181</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[과거이거나 미래 II]]></title>
+         <contents mid="115"><![CDATA[<html>워리어 시안은 용추종자 점거지로 와 달라고 한다.<BR><BR><FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT> <FONT color=#a82424>- 용추종자 점거지</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[용추종자 점거지]]></destination>
+         <todo_msg mid="117"><![CDATA[용추종자 점거지로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Illusion.dds</contents_image>
+         <destination_pos>542,n1181</destination_pos>
+         <destination_mode>custom:541@1,542@4</destination_mode>
+         <statemark_npcid>1181</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="118"><![CDATA[과거이거나 미래 III]]></title>
+         <contents mid="119"><![CDATA[<html>또 등장한 일루전을 겨우 막아내자, 낯설면서도 낯익은 인물이 눈에 보인다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT><FONT color=#a94407> - 용추종자 점거지</FONT></html>]]></contents>
+         <destination mid="120"><![CDATA[용추종자 점거지에서 일루전과 대화]]></destination>
+         <todo_msg mid="121"><![CDATA[일루전과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>542,n1177</destination_pos>
+         <destination_mode>custom:541@1,542@1</destination_mode>
+         <statemark_npcid>1177</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="123"><![CDATA[과거이거나 미래 IV]]></title>
+         <contents mid="124"><![CDATA[<html>뭐가 어떻게 된 거지? 루나리아에게 묻자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT> <FONT color=#a82424>- 용추종자 점거지(루나리아)</FONT></html>]]></contents>
+         <destination mid="125"><![CDATA[용추종자 점거지에서 루나리아와 대화]]></destination>
+         <todo_msg mid="126"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>14,n754</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>754</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="128"><![CDATA[과거이거나 미래 V]]></title>
+         <contents mid="129"><![CDATA[<html>리버워트 선착장으로 돌아가자.<BR><BR><FONT color=#086171>리버워트 선착장</FONT> <FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="130"><![CDATA[리버워트 선착장의 워리어 시안과 대화]]></destination>
+         <todo_msg mid="131"><![CDATA[리버워트 선착장으로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9342</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,492 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9285_doubtful_encounter</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9285</qid>
+      <designer>강지영</designer>
+      <qlevel>63</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9286</nextqid>
+      <nextqname>mq34_9286_dissonance</nextqname>
+      <nextqnpc>n1055_elf_guard_basha</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[미심쩍은 만남]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1054</npcid>
+         <npcename>n1054_azelia</npcename>
+         <npckname>아젤리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1055</npcid>
+         <npcename>n1055_elf_guard_basha</npcename>
+         <npckname>엘프 경비병 바샤</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1056</npcid>
+         <npcename>n1056_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1083</npcid>
+         <npcename>n1083_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1084</npcid>
+         <npcename>n1084_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타$<BR>독이 진해서 좀 위험할 수도 있겠어. 아누 아렌델에 있는 엘프들에게 독에 대해 알려야겠는데?<BR><FONT color=#7e12d2>(신월의 숲 입구에 와 있는 아처 트리아나와 대화하세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-accepting-chk_j1" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$아처 트리아나$<BR>안녕하세요.<FONT color=#387206> {user_nick}</FONT>님.<BR>사도들이 아누 아렌델 근처에서 나타났다고 하더군요. 혹시 알고 계신가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-accepting-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-accepting-acceptted" mid="106" select_type="3" />
+      <talk_question mid="9"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>응. 나도 그것 때문에 왔어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-accepting-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-accepting-acceptted" mid="107" select_type="3" />
+      <talk_question mid="11"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네. 그것 때문에 찾아왔습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="14" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>$아르젠타$<BR>왜 서성거리는거야? 엘프들한테 말을 걸기가 그렇게 어려워?<BR>저기, 너랑 친한 엘프가 하나 있는 것 같은데?<BR><FONT color=#7e12d2>(아누 아렌델 관문에 와 있는 아처 트리아나와 대화하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-1" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-1-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$아처 트리아나$<BR>오랜만에 돌아온 신월의 숲을 산책하던 중이었습니다.<BR>알려드릴 말이 있는데, 여기는 <FONT color=#387206>{user_nick}</FONT>님께 불편할 테니 신월의 숲 입구로 돌아가죠.<BR><FONT color=#7e12d2>(아누 아렌델 관문에서 아처 트리아나와 다시 대화를 해보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-1-" mid="18" select_type="5" />
+      <talk_question mid="17"><![CDATA[<html>$아처 유벤시엘$<BR>당신과 따로 나눌 얘긴 없을 것 같군요.<BR><FONT color=#7e12d2>(유벤시엘은 별로 관심을 보이지 않는 듯 하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-" mid="20" select_type="5" />
+      <talk_question mid="19"><![CDATA[<html>$아젤리아$<BR>쉿. 지금은 저희에게 굉장히 중요한 시기입니다. 소란은 삼가주세요.<BR><FONT color=#7e12d2>(아누 아렌델 관문에서 아처 트리아나와 대화하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-1" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-1-" mid="22" select_type="5" />
+      <talk_question mid="21"><![CDATA[<html>$엘프 경비병 바샤$<BR>어라? 처음보는 모험자잖아? <BR>너, 좀 수상한데? 여기서 뭐 고 있는거지? 여기 온 목적은 뭐고?<BR><FONT color=#7e12d2>(질문이 계속 된다. 다른 사람과 대화를 하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-l" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$아처 트리아나$<BR>아, 신월의 숲에 위험을 걱정해서 찾아와 주신거군요. <BR>저희 종족의 일에 이렇게 도움을 주신다니 항상 감사합니다. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-a" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-c" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어라? 난 이그나시오</FONT><FONT color=#662500>를 만났는 걸?<BR>독극물 가마니를 사막에서부터 운반하는 걸 보고 쫓아갔는데, 놓쳐버렸지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-b" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-c" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>전 이그나시오</FONT><FONT color=#662500>를 만났어요.<BR>독극물 가마니를 사막에서부터 운반하는 걸 보고 쫓아갔는데, 놓쳐버렸죠.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-job3" mid="36" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$아처 트리아나$<BR>독? 캐더락에서 사용했던 그런 독 말인가요?<BR>그건 괜찮습니다. 엘프의 숲은 여왕님의 보호를 받고 있어서, 인간들의 숲보다 훨씬 재생 능력이 뛰어납니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-f" mid="38" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그건 들었어.<BR>하지만 아르젠타님이 맛보고 위험할 것 같다고 하던데?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-f" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그건 들었지만, 아르젠타님이 맛보시고 위험할 것 같다고 하셨어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-f" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-g" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9285_02.ogg}<BR>그런가요? 아르젠타님의 말이라면 사실이겠지요.<BR><FONT color=#7e12d2>(아처 트리아나가 몸을 돌려 아젤리아를 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-h" mid="147" select_type="2" />
+      <talk_question mid="146"><![CDATA[<html>$아처 트리아나$<BR>아젤리아님. <FONT color=#387206>{user_nick}</FONT>님과의 이야기 들으셨나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-h" image="" itemindex="" portrait_left="NPC_Left_Azelia.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1083_triana-1-i" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9267_02.ogg}<BR>그렇게 악독한 자들이 아누 아렌델을 활개치고 다닌단 말인가요!?<BR><FONT color=#7e12d2>(아젤리아가 몹시 놀란 눈치다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-i" image="" itemindex="" portrait_left="NPC_Left_Azelia.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1083_triana-1-j" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$아젤리아$<BR>이럴 때가 아닙니다. 일단 장로님께 알려야....<BR><FONT color=#7e12d2>(잠시 생각에 잠겼다)<BR></FONT>음음. 장로님은 지금 몹시 바쁘실 테니 더 자세한 상황을 알아보죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-j" image="" itemindex="" portrait_left="NPC_Left_Azelia.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1083_triana-1-k" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$아젤리아$<BR><FONT color=#387206>{user_nick} </FONT>님 말을 못 믿어서가 아닙니다.<BR>그들이 이 숲 어디까지 악영향을 끼치고 있는지 확인은 하고 말씀드려야 할 것 같아서예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-k" image="QW_77.dds" itemindex="" portrait_left="NPC_Left_Azelia.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1083_triana-1-" mid="50" select_type="5" />
+      <talk_question mid="49"><![CDATA[<html>$아젤리아$<BR>숲이 넓으니 나누어서 확인하죠. <BR>저는 황금 초원으로 가보겠습니다. 트리아나님과 <FONT color=#387206>{user_nick}</FONT>님은 <FONT color=#a82424>사라지는 반달 사막</FONT>을 확인해주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1-l" image="QN_Npc_Rosalin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-job2" mid="143" select_type="2" />
+      <talk_question mid="142"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9285_01.ogg}<BR>저는 숲을 산책하다가 로잘린데를 봤어요. 무언가를 찾고 있는 걸 보고 이 레인저님께 알리던 중이였습니다.<BR><FONT color=#7e12d2>(트리아나가 옆에 있는 엘프 레인저 아젤리아를 가리킨다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2" image="QW_77.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-" mid="51" select_type="5" />
+      <talk_question mid="34"><![CDATA[<html>$아처 트리아나$<BR>어서 출발하죠. <FONT color=#a82424>사라지는 반달 사막</FONT>이라....<BR>그들을 발견할 수 있을까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2" image="QW_77.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-" mid="53" select_type="5" />
+      <talk_question mid="52"><![CDATA[<html>$아젤리아$<BR>제 걱정은 하지 마세요. 제 몸 하나쯤 지킬 수 있는 숲의 레인저이니까요.<BR><FONT color=#7e12d2>(사라지는 반달 사막으로 출발하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="QW_77.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_question mid="54"><![CDATA[<html>$아르젠타$<BR>엘프들이랑 뭘 더 찾으러 가나보지? 우르르 몰려다니는게 너희 답네.<BR><FONT color=#7e12d2>(사라지는 반달 사막으로 출발하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-a" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$아처 유벤시엘$<BR><FONT color=#2b2723>트리아나</FONT>님? 이렇게 만날 줄은 생각치 못했습니다.<BR><FONT color=#7e12d2>(유벤시엘이 트리아나의 얼굴을 뚫어져라 보고있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-a" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-b" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9285_03.ogg}<BR>유벤시엘님이시군요. 여긴 어쩐 일이신가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-c" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$아처 유벤시엘$<BR>제 숙명때문이지요. 과거의 제가 놓아버렸던 마음을 대가로 제가 만든 숙명이요.<BR>하지만 당신을 만나면 그 모든 일이 다 없었던 것 같습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-d" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(어라? 뭐...뭐지? 저 남자. 나는 쳐다도 보지 않고...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-d" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-e" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>$아처 트리아나$<BR>당신은...<BR><FONT color=#7e12d2>(트리아나의 얼굴이 조금 붉어졌다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-e" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-f" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(트리아나에게 대놓고 추근대잖아?</FONT><BR>
+<FONT color=#662500> 왠지... 자리를 비켜줘야 할 것 같은데?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-g" mid="68" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>$아처 유벤시엘$<BR>당신에게도 <FONT color=#a82424>숙명</FONT>이 다가오겠지요. 제게 그랬듯, 그 숙명이 잔인할지도 모릅니다.<BR>당신이 어떤 선택을 할까요. 그녀처럼...<BR><FONT color=#7e12d2>(유벤시엘이 안타까운 눈빛으로 트리아나를 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-h" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>$아처 유벤시엘$<BR>당신의 선택이 제 생각과 다르다면 전 또 후회할지도 모릅니다.<BR>이런 때 당신이 나타난 것은 절 정말 혼란스럽게 하는군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-h" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-i" mid="151" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>$아처 트리아나$<BR>제 숙명이 무엇인지 저 조차 모르는데 유벤시엘님은 아는것처럼 말씀하시는군요.<BR>하지만 그건 지금 중요한 일이 아닙니다. 전 여기서 <FONT color=#a82424>용 추종자의 흔적</FONT>을 찾고 있습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-j" mid="152" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>$아처 유벤시엘$<BR>트리아나님은 항상 다른 자들의 일에 더 관심을 가지시는군요.<BR>제겐 당신의 일이 중요한데...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-3-" mid="154" select_type="5" />
+      <talk_question mid="153"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9285_01.ogg}<BR>이미 그들은 이곳을 지나가 숲을 향했습니다. 제가 알려드릴 것은 그것뿐입니다.<BR><FONT color=#7e12d2>(유벤시엘이 시선을 돌려 외면한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-3-" mid="76" select_type="5" />
+      <talk_question mid="75"><![CDATA[<html>$아처 트리아나$<BR>저분은....<BR><FONT color=#7e12d2>(트리아나가 정체모를 남자 엘프를 바라보고 있다. 그에게 말을 걸어보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1056_yuvenciel-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1056_yuvenciel-4-" mid="78" select_type="5" />
+      <talk_question mid="77"><![CDATA[<html>$아처 유벤시엘$<BR><FONT color=#7e12d2>(유벤시엘은 트리아나와의 대화에 상처받은 듯 아무 말이 없다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-4" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-4-job4_2" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9285_04.ogg}<BR>음…. 개인적인 대화가 길었군요. 죄송합니다.<BR>어쨌든 그들이 이미 지나갔다는 것은 알았으니 <FONT color=#a82424>아젤리아</FONT>님을 만나러 가죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-4-a" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-4-c" mid="82" select_type="2" />
+      <talk_question mid="81"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>유벤시엘이라... 언젠가 만난 적은 있지만 좀 이상한 엘프던데, 친한가 봐?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-4-b" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-4-c" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저 분은 언젠가 벨스커드 님과 같이 만난 적 있어요.<BR>트리아나님도 아시는 분인가 봐요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-4-job4_3" mid="86" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>$아처 트리아나$<BR>아닙니다. 여행중에 좀 도움을 받은 적이 있는 동족분이지요.<BR>조금 신출귀몰 하셔서 어떤 분인지는 저도 잘 알지 못합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-4-f" mid="88" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>너한테 관심 있어 보였는데? 인기 많은걸~</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-4-f" mid="90" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신에게 관심이 있는 것 같았어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-4-g" mid="92" select_type="2" />
+      <talk_question mid="91"><![CDATA[<html>$아처 트리아나$<BR>제가 유벤시엘님의 이전 연인분과 닮아 보이나 봅니다. 저에 대한 관심은 아닙니다.<BR>그리고 이런 이야기보다, 독극물에 대한 조사가 우선인 것 같습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-4-g" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-4-" mid="94" select_type="5" />
+      <talk_question mid="93"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9285_05.ogg}<BR>어쨌든 그들이 이미 지나갔다는 것은 알았으니 <FONT color=#a82424>아누 아렌델 관문</FONT>으로 돌아가 <FONT color=#a82424>아젤리아</FONT>님과 의논하는 게 좋겠군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-5-" mid="96" select_type="5" />
+      <talk_question mid="95"><![CDATA[<html>$아처 트리아나$<BR>아젤리아님은 아직 돌아오지 않았나봅니다.<BR>그 엘프분과 대화하느라 저희가 더 늦게 왔을 줄 알았는데요.<BR>저기 계신 <FONT color=#a82424>경비병</FONT>분께 아젤리아님이 혹시 왔다가 다른 곳에 갔는지 여쭤볼까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-5" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-5-job5_2" mid="98" select_type="2" />
+      <talk_question mid="97"><![CDATA[<html>$엘프 경비병 바샤$<BR>아젤리아를 찾는다고?<BR>아까 너희랑 뭔가를 확인하러 간다고 한거 아니었어? 못 만난 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-5-c" mid="100" select_type="2" />
+      <talk_question mid="99"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이 곳에서 다시 만나기로 했어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-5-c" mid="102" select_type="2" />
+      <talk_question mid="101"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이곳에서 다시 만나기로 했어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-5-d" mid="133" select_type="2" />
+      <talk_question mid="103"><![CDATA[<html>$엘프 경비병 바샤$<BR>그럼 무슨 일이라도 생긴 건가?<BR>황금 초원이라면 그녀의 실력으로 벌써 두 번은 샅샅이 뒤지고 돌아왔을 시간인걸.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-5-!next" mid="135" select_type="4" />
+      <talk_question mid="134"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1084_triana-5" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1084_triana-5-" mid="111" select_type="5" />
+      <talk_question mid="110"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9285_05.ogg}<BR>어쨌든 그들이 이미 지나갔다는 것은 알았으니 <FONT color=#a82424>아누 아렌델 관문</FONT><FONT color=#2b2723>으로</FONT><FONT color=#a82424> </FONT>돌아가 <FONT color=#a82424>아젤리아</FONT>님과 의논하는 게 좋겠군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>0번 조건 - 소서리스 구분</comment>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="setquest">9285</exe>
+         <exe type="talk" npc="n1083_triana">1</exe>
+         <exe type="talk" npc="n1083_triana">a</exe>
+         <exe type="talk" npc="n1083_triana">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>2, 3 : 소서리스 반말 말투 구분 (a, d) </comment>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="conexe" true="6" false="7">0</exe>
+         <exe type="talk" npc="n1083_triana">a</exe>
+         <exe type="talk" npc="n1083_triana">b</exe>
+         <exe type="talk" npc="n1083_triana">d</exe>
+         <exe type="talk" npc="n1083_triana">e</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>2, 3 : 소서리스 직업체크 (결과 a, d)</comment>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="conexe" true="6" false="7">0</exe>
+         <exe type="talk" npc="n1084_triana">a</exe>
+         <exe type="talk" npc="n1084_triana">b</exe>
+         <exe type="talk" npc="n1084_triana">d</exe>
+         <exe type="talk" npc="n1084_triana">e</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment>2 : 소서리스 직업 체크 (결과  a)</comment>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">92850,92851,,92853,92854,92855,92856,92857</exe>
+         <exe type="complete" true="">9285</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n1055_elf_guard_basha">a</exe>
+         <exe type="talk" npc="n1055_elf_guard_basha">b</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">1</exelink>
+   <exelink qstep="accepting" npc="n1083_triana" sub="chk_j1">0</exelink>
+   <exelink qstep="accepting" npc="n1083_triana" sub="acceptted">1,2</exelink>
+   <exelink qstep="accepting" npc="n1083_triana" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n1083_triana" sub="c" />
+   <exelink qstep="1" npc="n1083_triana" sub="c" />
+   <exelink qstep="1" npc="n1083_triana" sub="job3">3</exelink>
+   <exelink qstep="1" npc="n1083_triana" sub="f" />
+   <exelink qstep="1" npc="n1083_triana" sub="f" />
+   <exelink qstep="1" npc="n1083_triana" sub="g" />
+   <exelink qstep="1" npc="n1083_triana" sub="h" />
+   <exelink qstep="1" npc="n1083_triana" sub="i" />
+   <exelink qstep="1" npc="n1083_triana" sub="j" />
+   <exelink qstep="1" npc="n1083_triana" sub="k">0,1</exelink>
+   <exelink qstep="1" npc="n1083_triana" sub="" />
+   <exelink qstep="1" npc="n1083_triana" sub="job2">2</exelink>
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="b" />
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="c" />
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="d" />
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="e" />
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="f" />
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="g" />
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="h" />
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="i" />
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="j">0,1</exelink>
+   <exelink qstep="3" npc="n1056_yuvenciel" sub="" />
+   <exelink qstep="4" npc="n1084_triana" sub="job4_2">2</exelink>
+   <exelink qstep="4" npc="n1084_triana" sub="c" />
+   <exelink qstep="4" npc="n1084_triana" sub="c" />
+   <exelink qstep="4" npc="n1084_triana" sub="job4_3">3</exelink>
+   <exelink qstep="4" npc="n1084_triana" sub="f" />
+   <exelink qstep="4" npc="n1084_triana" sub="f" />
+   <exelink qstep="4" npc="n1084_triana" sub="g">0,1</exelink>
+   <exelink qstep="4" npc="n1084_triana" sub="" />
+   <exelink qstep="5" npc="n1055_elf_guard_basha" sub="job5_2">2</exelink>
+   <exelink qstep="5" npc="n1055_elf_guard_basha" sub="c" />
+   <exelink qstep="5" npc="n1055_elf_guard_basha" sub="c" />
+   <exelink qstep="5" npc="n1055_elf_guard_basha" sub="d">0</exelink>
+   <exelink qstep="5" npc="n1055_elf_guard_basha" sub="!next">1</exelink>
+   <journal_data recompense="1:92851,3:92853,4:92854,5:92855,6:92856,7:92857" quest_title="미심쩍은 만남" chapterid="12" quest_level="63" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Triana.dds</contents_image>
+         <destination_pos>34,n1083</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1083</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="113"><![CDATA[미심쩍은 만남 I]]></title>
+         <contents mid="114"><![CDATA[<html>트리아나에게 이그나시오가 옮기던 독에 대해 이야기하자. <BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아처 트리아나</FONT><BR>
+ </html>]]></contents>
+         <destination mid="115"><![CDATA[아누 아렌델 관문의 트리아나와 대화]]></destination>
+         <todo_msg mid="116"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_77.dds</contents_image>
+         <destination_pos>771,0,0</destination_pos>
+         <destination_mode>custom:771@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="117"><![CDATA[미심쩍은 만남 II]]></title>
+         <contents mid="118"><![CDATA[<html>엘프들과 사도들의 움직임을 쫓기로 했다. 트리아나와 함께 사라지는 반달사막으로 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 사라지는 반달사막(???)</FONT></html>]]></contents>
+         <destination mid="119"><![CDATA[사라지는 반달 사막 탐색]]></destination>
+         <todo_msg mid="120"><![CDATA[사라지는 반달 사막으로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>771,n1056</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1056</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="121"><![CDATA[미심쩍은 만남 III]]></title>
+         <contents mid="122"><![CDATA[<html>용 추종자에 대한 단서를 찾던 중 황금 초원 끝자락에서 아처 유벤시엘을 발견했다.<BR>그와 이야기를 나눠보자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 사라지는 반달사막(아처 유벤시엘)</FONT><BR>
+<BR>
+ </html>]]></contents>
+         <destination mid="123"><![CDATA[사라지는 반달 사막의 유벤시엘과 대화]]></destination>
+         <todo_msg mid="124"><![CDATA[유벤시엘과 대화를 나누세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Triana.dds</contents_image>
+         <destination_pos>771,n1084</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1084</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="125"><![CDATA[미심쩍은 만남 IV]]></title>
+         <contents mid="126"><![CDATA[<html>유벤시엘이라는 수상한 남자와 만났다. 트리아나는 그를 아는 것 같았는데, 그녀와 대화해보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 사라지는 반달사막(아처 트리아나)</FONT></html>]]></contents>
+         <destination mid="127"><![CDATA[사라지는 반달 사막의 트리아나와 대화]]></destination>
+         <todo_msg mid="128"><![CDATA[트리아나와 대화를 나누세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Azelia.dds</contents_image>
+         <destination_pos>34,n1055</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="129"><![CDATA[미심쩍은 만남 V]]></title>
+         <contents mid="130"><![CDATA[<html>사라지는 반달사막에서는 별 수확이 없었다.<BR>
+아누 아렌델 관문으로 돌아가 다른 방향으로 향한 아젤리아와 만나자. <BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- ???</FONT><BR>
+<BR>
+<BR>
+<BR>
+ </html>]]></contents>
+         <destination mid="131"><![CDATA[아누 아렌델 관문으로 귀환]]></destination>
+         <todo_msg mid="132"><![CDATA[아누 아렌델 관문으로 돌아가 보고하세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Basha.dds</contents_image>
+         <destination_pos>34,n1055</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1055</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="138"><![CDATA[미심쩍은 만남 VI]]></title>
+         <contents mid="139"><![CDATA[<html>아누 아렌델 관문에 돌아왔으나 아젤리아는 보이지 않았다. 도착할 시간이 된 것 같은데... 혹시 경비병은 그녀의 행방에 대해 알까?<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 엘프 경비병 바샤</FONT></html>]]></contents>
+         <destination mid="140"><![CDATA[아누 아렌델 관문의 엘프 경비병 바샤와 대화]]></destination>
+         <todo_msg mid="141"><![CDATA[아젤리아가 보이지 않습니다. 경비병과 대화 하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9284</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

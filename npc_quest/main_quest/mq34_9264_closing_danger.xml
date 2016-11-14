@@ -1,0 +1,319 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9264_closing_danger</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9264</qid>
+      <designer>강지영</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9265</nextqid>
+      <nextqname>mq34_9265_encounter_the_enemy</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[다가오는 위험]]></qkname>
+      <qnpc>
+         <npcid>101</npcid>
+         <npcename>n101_event_tracey</npcename>
+         <npckname>워프 도우미 트레이시</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1046</npcid>
+         <npcename>n1046_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-a" mid="9" select_type="2" />
+      <talk_question mid="8"><![CDATA[<html>$테렌스 테라마이${sound:npc_AN_Teramai_qu_9261_01.ogg}<BR>이제 출발할 준비가 다 된겐가??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-a" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-b" mid="11" select_type="2" />
+      <talk_question mid="10"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네. 슬슬 아누 아렌델로 가야겠어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-c" mid="13" select_type="2" />
+      <talk_question mid="12"><![CDATA[<html>$테렌스 테라마이$<BR>그래, 모험가 시절엔 사건이 생기는 곳을 찾아 다니는 법이지.<BR>인간의 시간을 살다 보니, 이젠 늙고 별 쓸모 없는 몸뚱이가 되어 자네처럼 훌훌 떠날 수 없는 게 아쉽구먼...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-c" image="QN_Npc_Elf_Narsilia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-d" mid="15" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>$테렌스 테라마이$<BR>하지만 자네도 몸 상태를 좀 돌봐야 하지 않겠나.<BR>마침 가는 곳이 아누 아렌델이라니... <FONT color=#387206>엘프의 여왕</FONT>에게 치료법을 물어보도록 하게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-e" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>모든 엘프가 여왕님을 뵐 수는 없는데요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-e" image="QS_Default.dds" itemindex="400381" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-f" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$테렌스 테라마이$<BR>음. 하긴 그녀가 여왕이 된 후로는....<BR><FONT color=#7e12d2>(테라마이가 잠시 생각에 잠긴다)<BR></FONT>내가 서신을 하나 써주지. 분명 도움이 될 걸세. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="21" select_type="3" />
+      <talk_question mid="20"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>감사합니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting" image="QS_Default.dds" itemindex="400381" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-a" mid="93" select_type="2" />
+      <talk_question mid="91"><![CDATA[<html>$워프 도우미 트레이시$<BR>잠깐만요~ 깜빡할 뻔했군요!<BR><FONT color=#387206>{user_nick}</FONT>님께 전해야 하는 서신이 하나 도착해 있답니다. 짜잔~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-a" image="" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-b" mid="95" select_type="2" />
+      <talk_question mid="94"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>누가 보낸 건데요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-b" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-c" mid="97" select_type="0"><![CDATA[<html>테라마이님이 계속 날 신경 쓰셨구나...</html>]]></talk_answer>
+      <talk_answer link_index="n101_event_tracey-accepting-c" mid="98" select_type="0"><![CDATA[<html><FONT size=2 face=Arial>뭘까? 좀 궁금한데...</FONT></html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$워프 도우미 트레이시$<BR>왕성에 계시는 <FONT color=#a82424>테라마이</FONT>님이 보내셨어요. 여기서 여행자들을 잘 지켜보다가 <FONT color=#387206>{user_nick}</FONT>님께서 아누 아렌델로 가려 하시면 이걸 꼭 전하라고 하셨거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-c" image="" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-d" mid="100" select_type="2" />
+      <talk_question mid="99"><![CDATA[<html>$워프 도우미 트레이시$<BR>어? 여기서 뜯어보시면 안 돼요. 필요할 때가 있을 테니, 바로 뜯지 말라고 하셨거든요.<BR>남겨주신 전언을 제가 받아적었으니 읽어드릴게요.<BR><FONT color=#7e12d2>(트레이시가 생긋 웃더니 주머니를 뒤적거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-d" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-e" mid="102" select_type="2" />
+      <talk_question mid="101"><![CDATA[<html>$테라마이의 서신$<BR><FONT color=#086171>이제야 출발할 준비가 된 모양이군. 본디 모험가들이란 사건이 생기는 곳을 찾아다니는 법이지. <BR>이젠 늙고 별 쓸모없는 몸뚱이가 되어 자네처럼 훌훌 떠날 수 없는 게 아쉬울 뿐이라네.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-e" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-f" mid="104" select_type="2" />
+      <talk_question mid="103"><![CDATA[<html>$테라마이의 서신$<BR><FONT color=#086171>여행의 선배로써 충고를 하나 하자면, 자네의 몸 상태를 좀 돌보라는 거라네. 마침 향하는 곳이 아누아렌델이니.. 엘프의 여왕을 만나 치료법을 물어보면 도움이 될 걸세.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-f" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-g" mid="106" select_type="2" />
+      <talk_question mid="105"><![CDATA[<html>$테라마이의 서신$<BR><FONT color=#086171>하지만 네르윈이 엘프들이 여왕이 되어 아무나 만날 수 없다고 들었네.<BR>네르윈에게 전하는 이 서신이 도움될 것 같아 자네에게 전하네.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-g" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-h" mid="108" select_type="2" />
+      <talk_question mid="107"><![CDATA[<html>$테라마이의 서신$<BR><FONT color=#086171>간만에 자네 같은 동료가 생겨 즐거웠다네. <BR>여행엔 위험이 따르는 법이지만, 여신님께서 자넬 지켜줄 걸세. 행운을…</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-h" image="" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-i" mid="110" select_type="0"><![CDATA[<html>네 맞아요.</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$워프 도우미 트레이시$<BR>이렇게 적혀있네요. <BR>아, 근데 제가 물어보지도 않았군요. 지금 <FONT color=#2b2723>아누 아렌델로</FONT> 가시려는 것 맞죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-accepting-i" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-accepting-" mid="112" select_type="5" />
+      <talk_question mid="111"><![CDATA[<html>$워프 도우미 트레이시$<BR>다행이네요! 그럼 서신은 확실히 전해드렸습니다. <BR><FONT color=#a82424>아누 아렌델</FONT>은 참 아름다운 곳이라던데. 행복한 여행 되세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-" mid="23" select_type="5" />
+      <talk_question mid="22"><![CDATA[<html>$테렌스 테라마이$<BR>간만에 동료가 생긴 것 같아 너무 오래 지체시켰군. 아누 아렌델로 어서 출발하게. <BR>여행엔 위험이 따르는 법이지만... 여신님이 자넬 지켜줄걸세. 행운을...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="25" select_type="5" />
+      <talk_question mid="24"><![CDATA[<html>$아르젠타$<BR>쓸모없는 노예들...<BR><FONT color=#7e12d2>(아르젠타가 상대해주지 않는다. 데이비드와 대화를 해보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-a" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$데이비드$<BR>너... 너!! 대체 무슨 짓을 하고 다니는 거냐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-b" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$데이비드$<BR>아르젠타님이 이제 귀찮은 인간 따위랑 얽히지 않겠다면서 <FONT color=#a82424>노예의 증표</FONT>도 가져가 버리셨다구!!<BR>이게 다 너 때문이야!<BR><FONT color=#7e12d2>(데이비드가 울 것 같은 표정을 짓고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-c" mid="89" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$데이비드$<BR>다른 사람들과는 다른 이 몸의 매력을 알아주시는 줄 알았는데, <BR>웬 <FONT color=#a82424>금발 애송이</FONT>랑만 붙어 다니시고….<BR><FONT color=#7e12d2>(하소연이 길어질 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-d" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>...그래서 용건이 뭐야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-e" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$데이비드$<BR>그래도 넌 아르젠타 님에게 버림 받은 후에도 종종 말 걸면 대답은 해주시지 않았어?<BR>그래, 나도 너처럼 될 수 있을까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-f" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>글쎄....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-g" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$데이비드$<BR>이렇게 버려질 순 없어!<BR>네가...아르젠타님께 내 매력에 대해 다시 한번 어필해주면 안될까?<BR><FONT color=#7e12d2>(데이비드가 급기야 바닥에 쭈그려 앉아 땅을 쿡쿡 파고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-h" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아르젠타 님이 여기에 계셔?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-i" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$데이비드$<BR>저기 생명의 나무 앞에 계시잖아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-j" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(아르젠타 님과 대화해 보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-1-j" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-1-" mid="47" select_type="5" />
+      <talk_question mid="46"><![CDATA[<html>$데이비드$<BR>그럼 어서 가서 <FONT color=#a82424>아르젠타</FONT><FONT color=#387206> </FONT>님께 이 몸을 다시 노예로 쓰라고 말씀드리고 와.<BR>뭐 해?! 안 가고!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n101_event_tracey-1" image="" itemindex="" portrait_left="" portrait_right="Npc_Right_Event_SchoolLook.dds" center_image="">
+      <talk_answer link_index="n101_event_tracey-1-" mid="114" select_type="5" />
+      <talk_question mid="113"><![CDATA[<html>$워프 도우미 트레이시$<BR><FONT color=#a82424>아누 아렌델</FONT>은 참 아름다운 곳이라던데. 행복한 여행 되세요.<BR><FONT color=#7e12d2>(트레이시가 미소지으며 손을 흔든다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1046_slave_david-2" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n1046_slave_david-2-" mid="50" select_type="5" />
+      <talk_question mid="49"><![CDATA[<html>$데이비드$<BR>그럼 어서 가서 <FONT color=#a82424>아르젠타</FONT><FONT color=#387206> </FONT>님께 이 몸을 다시 노예로 쓰라고 말씀드리고 와.<BR>
+뭐 해?! 안 가고!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-a" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아르젠타$<BR><FONT color=#7e12d2>(아르젠타가 심각한 표정을 짓고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-b" mid="87" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9261_01.ogg}<BR><FONT color=#2b2723>또 너야? 제 몸 하나 치료하지 못했으면서 또 무슨 사고를 치러 여길 온 거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-c" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이곳에서 위험한 일이 생길 것이라고 들었습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-d" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$아르젠타$<BR><FONT color=#2b2723>너 같은 게 상관할 일은 아니니 신경 쓰지 말고 꺼져.</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-e" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>$아르젠타$<BR><FONT color=#2b2723>아... 귀찮게. 널 대체 누가 여기로 보낸 거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-e" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-f" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>벨스커드 님이 알려줬어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-g" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9261_02.ogg}<BR><FONT color=#2b2723>그놈이 네게? 블랙드래곤의 힘이 사라진 건 느꼈어.<BR>네가 벨스커드를 죽였다니... 그래도 제법 쓸만해 졌나 보군.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-h" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#662500>그게 아니라....<BR></FONT><FONT color=#7e12d2>(그간의 일을 얘기한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-i" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>$아르젠타$<BR><FONT color=#2b2723>뭐? 보옥으로 벨스커드를 살려냈다고? 게다가 블랙드래곤의 보옥은 뺏기고 말야.<BR>인간들이 하는 짓이란 정말 어이가 없군.</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-!next" mid="84" select_type="4" />
+      <talk_question mid="67"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>지급은 3번으로 하면 됨.</comment>
+      <conditions>
+         <chk type="questitem" num="1" op="[">400381</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">9264</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+         <exe type="addquestitem" num="1">400381</exe>
+         <exe type="conexe" true="2" false="">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>QW_73.dds 이미지는 더미입니다. 추가 필요
+
+단계 b는 테스트를 위해 대사창을 추가한 상태
+실제로는 계속 버튼으로 c 창으로 이동하면 됩니다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92640,,,,,,,</exe>
+         <exe type="complete" true="">9264</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="f">3</exelink>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="accepting" npc="n101_event_tracey" sub="h">3</exelink>
+   <exelink qstep="accepting" npc="n101_event_tracey" sub="i">0</exelink>
+   <exelink qstep="1" npc="n1046_slave_david" sub="b" />
+   <exelink qstep="1" npc="n1046_slave_david" sub="c" />
+   <exelink qstep="1" npc="n1046_slave_david" sub="d" />
+   <exelink qstep="1" npc="n1046_slave_david" sub="e" />
+   <exelink qstep="1" npc="n1046_slave_david" sub="f" />
+   <exelink qstep="1" npc="n1046_slave_david" sub="g" />
+   <exelink qstep="1" npc="n1046_slave_david" sub="h" />
+   <exelink qstep="1" npc="n1046_slave_david" sub="i" />
+   <exelink qstep="1" npc="n1046_slave_david" sub="j">0,1</exelink>
+   <exelink qstep="1" npc="n1046_slave_david" sub="" />
+   <exelink qstep="2" npc="n1047_argenta" sub="b" />
+   <exelink qstep="2" npc="n1047_argenta" sub="c" />
+   <exelink qstep="2" npc="n1047_argenta" sub="d" />
+   <exelink qstep="2" npc="n1047_argenta" sub="e" />
+   <exelink qstep="2" npc="n1047_argenta" sub="f" />
+   <exelink qstep="2" npc="n1047_argenta" sub="g" />
+   <exelink qstep="2" npc="n1047_argenta" sub="h" />
+   <exelink qstep="2" npc="n1047_argenta" sub="i">0</exelink>
+   <exelink qstep="2" npc="n1047_argenta" sub="!next">1</exelink>
+   <journal_data recompense="92640" quest_title="다가오는 위험" chapterid="12" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_AnuarendelGateway.dds</contents_image>
+         <destination_pos>34,n1046</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1046</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[아누 아렌델로]]></title>
+         <contents mid="71"><![CDATA[<html>아누 아렌델에 무슨 일이 생긴 것인지 확인해 보자.<BR><BR><FONT color=#086171>세인트헤이븐 - 아누 아렌델 관문</FONT><FONT color=#a82424> - ????</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[아누 아렌델 관문으로 이동]]></destination>
+         <todo_msg mid="73"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[재회]]></title>
+         <contents mid="75"><![CDATA[<html>아르젠타가 생명의 나무 앞에 서 있다. 무슨 일이 생긴건지 물어보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[아르젠타와 대화]]></destination>
+         <todo_msg mid="77"><![CDATA[아르젠타와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>60:-1</user_level>
+      <user_class>2</user_class>
+      <prev_quest />
+      <have_quest>9258,9263</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

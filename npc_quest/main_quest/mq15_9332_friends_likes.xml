@@ -1,0 +1,274 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9332_friends_likes</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>9332</qid>
+      <designer>정진호</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9333</nextqid>
+      <nextqname>mq15_9333_hatred_of_charty</nextqname>
+      <nextqnpc>n709_trader_lucita</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[친구가 좋아하는 것]]></qkname>
+      <qnpc>
+         <npcid>1169</npcid>
+         <npcename>n1169_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1170</npcid>
+         <npcename>n1170_light_pole</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>462</npcid>
+         <npcename>n462_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>705</npcid>
+         <npcename>n705_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="7" select_type="3" />
+      <talk_question mid="6"><![CDATA[<html>$시델$<BR>제 친구를 위해서 정글 고사리를 구해다 주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QS_Default.dds" itemindex="300379" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-a" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$시델$<BR>그건 리버워트 마을폐허에서 구할 수 있는 나물이에요.<BR>분명, 길가에 자라고 있을 테니까… 모험자시라면 식은 죽 먹기처럼 쉬우실 걸요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QW_51.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$시델$<BR>부탁 드릴게요.<BR><FONT color=#a82424>리버워트 마을폐허</FONT>에서 자라는 정글 고사리를 구해 와 주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n462_sidel-1" image="QS_Default.dds" itemindex="300379" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n462_sidel-1-a" mid="15" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$시델$<BR><FONT color=#a82424>리버워트 마을폐허</FONT>에서 구할 수 있는 나물이에요.<BR>분명, 길가에 자라고 있을 테니까… 모험자시라면 식은 죽 먹기처럼 쉬우실 걸요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n462_sidel-1-a" image="QW_51.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n462_sidel-1-" mid="17" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$시델$<BR>부탁 드릴게요.<BR>리버워트 마을폐허에서 자라는<FONT color=#a82424> 정글 고사리</FONT>를 구해 와 주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1" image="QW_51.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-" mid="21" select_type="5" />
+      <talk_question mid="20"><![CDATA[<html>$루나리아$<BR>뭘 하고 있어?<BR><FONT color=#a82424>리버워트 마을폐허</FONT>로 가는 거 아니야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="QW_51.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-1-" mid="23" select_type="5" />
+      <talk_question mid="22"><![CDATA[<html>$상인 루시타$<BR>네? 리버워트 마을폐허요?<BR>그곳은… 저 문 밖으로 나가셔야 갈 수 있어요.위험한 곳이랍니다. 몸 조심 하세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1170_light_pole-1" image="QS_Default.dds" itemindex="300379" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1170_light_pole-1-a" mid="28" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html><FONT color=#7e12d2>(보통 풀처럼 보이는 것이 자라고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1170_light_pole-1-a" image="QS_Default.dds" itemindex="300379" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1170_light_pole-2" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(이게 정글 고사리인가?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1170_light_pole-2" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1170_light_pole-2-" mid="32" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(정글 고사리를 찾았으니 시델에게 전하자.<BR>아마 카라큘의 오두막으로 돌아가면 만날 수 있지 않을까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QS_Default.dds" itemindex="300379" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-a" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$시델$<BR>아, 다녀오셨어요?<BR>부탁드린 정글 고사… 흠흠, 아무튼 잘 가지고 와 주셨군요.<BR><FONT color=#7e12d2>(시델이 난처한 표정으로 카라큘의 눈치를 보는 듯하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-b" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>$시델${action:Talk}<BR>으음, 그게….<BR><FONT color=#7e12d2>(시델이 목소리를 낮춘다)</FONT><BR>제 친구는 이름이 <FONT color=#a82424>차티</FONT>인데요, 조금 전에 여길 습격하러 왔었거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-c" mid="38" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>습격?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-d" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>$시델$<BR>쉿!!! 모, 목소리가 커요!<BR>어휴, 평소엔 정말 온순하고 착하고 귀엽고 예쁜 애예요. 그런 애가 아닌데…<BR>뭐, 뭔가 오해가 있었던 거라구요. 틀림없어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-e" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>$시델$<BR>아무튼 차티는 스승님께 덤벼들었다가 도망쳤다는데, 다치지나 않았을지 모르겠어.<BR>안 그래도 몸도 조그마한데…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-e" image="" itemindex="" portrait_left="NPC_Left_OldKarakule.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-2-f" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$카라큘$<BR>다 들린다, 시델!<BR>그 건방진 계집아이를 찾으러 갈 생각은 꿈에도 하지 말아라!<BR><FONT color=#7e12d2>(카라큘이 성난 목소리로 소리친다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-g" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$시델$<BR>이크! 들으셨구나!<BR><FONT color=#7e12d2>(시델이 몸을 움츠린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-h" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$시델$<BR>네! 알겠습니다! 스승님, 찾으러 가지 않을 게요.<BR><FONT color=#7e12d2>(시델이 다시 목소리를 낮춘다)</FONT><BR>에휴, 지금 제가 나갔다가는 스승님께 단단히 혼날 거 같아요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$시델$<BR>죄송합니다만, 제 대신에 차티가 괜찮은지 보고 그 정글 고사리를 전해주실래요?<BR>부탁 드릴게요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_Lucita.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-" mid="53" select_type="5" />
+      <talk_question mid="52"><![CDATA[<html>$시델$<BR>고마워요. 차티는 마을쪽으로 달아난 것 같아요.<BR><FONT color=#a82424>상인 루시타</FONT>하고 친하니까 한 번 만나 보세요.<BR>
+분명, 그애는 차티의 행방을 알고 있을 거예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-3" image="QN_Npc_Charty.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-3-a" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$상인 루시타$<BR>네?! 차티 언니요?<BR>저는 잘 몰… 몰라요. 왜 물으시는 건데요…?<BR><FONT color=#7e12d2>(루시타가 뭔가를 감추는 기색이다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-3-a" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-3-b" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>시델이 정글 고사리를 전해 달라고 해서.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-3-c" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$상인 루시타$<BR>하아, 그렇군요.<BR><FONT color=#7e12d2>(루시타가 안심한 듯 가슴을 쓸어 내린다)</FONT><BR>방금 전에 모험자들이 차티 언니의 행방을 물어서 걱정했었거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-3-d" mid="79" select_type="4" />
+      <talk_question mid="78"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-3-d" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-3-!next" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$상인 루시타$<BR>시델 님이 뭔가를 전하라고 했구나~!<BR>
+후후후. 정말 사이가 좋은 분들이세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9332</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300379</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93320,,,,,,,</exe>
+         <exe type="complete" true="">9332</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="" />
+   <exelink qstep="1" npc="n462_sidel" sub="" />
+   <exelink qstep="1" npc="n1170_light_pole" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="c" />
+   <exelink qstep="2" npc="n707_sidel" sub="d" />
+   <exelink qstep="2" npc="n707_sidel" sub="e" />
+   <exelink qstep="2" npc="n707_sidel" sub="f" />
+   <exelink qstep="2" npc="n707_sidel" sub="g" />
+   <exelink qstep="2" npc="n707_sidel" sub="h" />
+   <exelink qstep="2" npc="n707_sidel" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n709_trader_lucita" sub="b" />
+   <exelink qstep="3" npc="n709_trader_lucita" sub="c">0</exelink>
+   <exelink qstep="3" npc="n709_trader_lucita" sub="d">1</exelink>
+   <exelink qstep="3" npc="n709_trader_lucita" sub="!next" />
+   <journal_data recompense="93320" quest_title="친구가 좋아하는 것" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,n1170</destination_pos>
+         <destination_mode>custom:511@1</destination_mode>
+         <statemark_npcid>1170</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[친구가 좋아하는 것 I]]></title>
+         <contents mid="67"><![CDATA[<html>시델이 리버워트 마을폐허에서 자라는 정글 고사리를 구해 달라고 한다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(리버워트 폐허) </FONT><FONT color=#a82424>- 리버워트 마을 폐허</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[리버워트 마을 폐허]]></destination>
+         <todo_msg mid="69"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[친구가 좋아하는 것 II]]></title>
+         <contents mid="71"><![CDATA[<html>정글 고사리를 찾았다. 이것들을 시델에게 전달하자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막) </FONT><FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="73"><![CDATA[정글 고사리를 찾았습니다. 시델에게 돌아가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_LotusMarshTown.dds</contents_image>
+         <destination_pos>15,n709</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>709</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[친구가 좋아하는 것 III]]></title>
+         <contents mid="75"><![CDATA[<html>로터스마쉬의 상인 루시타에게 차티의 행방에 대해 물어보자.<BR>
+ <BR>
+<FONT color=#086171>로터스마쉬 </FONT><FONT color=#a82424>- 상인 루시타</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[로터스마쉬의 상인 루시타와 대화]]></destination>
+         <todo_msg mid="77"><![CDATA[로터스마쉬의 상인 루시타를 찾아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9331</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

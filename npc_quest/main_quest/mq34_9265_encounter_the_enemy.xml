@@ -1,0 +1,217 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9265_encounter_the_enemy</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9265</qid>
+      <designer>강지영</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9266</nextqid>
+      <nextqname>mq34_9266_suffered_new_moon_forest</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[조우]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타$<BR>뭐? 보옥으로 벨스커드를 살려냈다고? 게다가 블랙드래곤의 보옥은 뺏기고 말야.<BR>인간들이 하는 짓이란 정말 어이가 없군. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-a" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9265_01.ogg}<BR>그래서 엘프의 여왕을 만나겠다고 여기에 온 거야?<BR>사고만 치고 다니는 너를 여왕이 만나줄 것 같아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-b" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여왕님을 만날 방법이 있나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-b" image="QS_Default.dds" itemindex="400381" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-c" mid="12" select_type="0"><![CDATA[<html>테라마이의 서신을 보여준다</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$아르젠타$<BR>물론이지. 하지만 너한테 알려줄 이유는 없으니까. 이제 그만 이 일에서 빠져.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-d" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$아르젠타$<BR><FONT color=#7e12d2>(아르젠타가 서신을 읽고 인상을 찌푸린다)<BR></FONT>하! 인간들은 왜 몇십 년 만에 세상 모든 일을 아는 것처럼 구는 거지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-d" image="QN_cleric_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-e" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$아르젠타$<BR>뭐 과거에 이 맷집 좋은 꼬마가 했던 일을 봐서 조언 정도는 해주지.<BR>너랑은 다르게 케이어스 후예를 막는 일에 조금은 도움을 준 녀석이니까, 호의를 베푸는 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-f" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9265_02.ogg}<BR>하지만 아쉽게도 지금은 여왕을 만날 수가 없어.<BR>생명의 나무가 이렇게 약해져서 내가 직접 와서 지켜줘야 할 지경이잖아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-g" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럼 어쩌죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-h" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$아르젠타$<BR>너 도대체 혼자 할 수 있는 일이 뭐니? 일일이 알려줘야 해?<BR>네르윈이 숲을 지키느라 힘을 빼지 않게 심부름이나 다녀오면 좀 도움이 될 거 아냐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-i" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어떻게 뭘 하라는 건지 잘....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-i" image="QW_76.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="26" select_type="5" />
+      <talk_question mid="25"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9265_03.ogg}<BR><FONT color=#a82424>모래먼지 바다</FONT>를 통해서 숲에 들어오는 마물들을 좀 처치하라고.<BR>나는 혹시 모를 일을 위해서 여길 지켜야 하니까, 당연히 네가 갔다 와야 하는 거야.<BR>
+냉큼 가봐!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="QW_76.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-" mid="56" select_type="5" />
+      <talk_question mid="27"><![CDATA[<html>$아르젠타$<BR>뭐야. 아직도 안 갔어?<BR>내가 친절하게 <FONT color=#a82424>모래먼지 바다</FONT>라고 알려줬는데도 못알아 듣는 건 아니지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-a" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$아르젠타$<BR>왜 그렇게 다급한 얼굴로 뛰어와? 정신없게.<BR>그런 간단한 일도 못하고 마물들한테 당한 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-a" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-b" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>모래먼지 바다에 <FONT color=#a82424>이그나시오</FONT><FONT color=#662500>가 있었어요.</FONT></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-c" mid="33" select_type="0"><![CDATA[<html>세인트헤이븐에서의 일을 알린다</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9265_04.ogg}<BR>그게 누군데? 네가 만나고 다니는 친구들 소식까지 알아야 해?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-d" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$아르젠타$<BR>
+역시... 그놈들도 여길 왔군.<BR>혹시 너, <FONT color=#a82424>용 추종자</FONT>인가 하는 것들을 꼬리에 달고 다니는 거 아냐? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-e" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>전 꼬리가 없는걸요...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-f" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$아르젠타$<BR>알아, 안다구.<BR>
+너희 엘프들에게 꼬리가 없다는 것 정도는 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-!next" mid="54" select_type="4" />
+      <talk_question mid="40"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9265</exe>
+         <exe type="talk" npc="n1047_argenta">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">400381</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>이그나시오 컷신 보면 3단계로 넘어감</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92650,,,,,,,</exe>
+         <exe type="complete" true="">9265</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="b" />
+   <exelink qstep="1" npc="n1047_argenta" sub="c">2</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="d" />
+   <exelink qstep="1" npc="n1047_argenta" sub="e" />
+   <exelink qstep="1" npc="n1047_argenta" sub="f" />
+   <exelink qstep="1" npc="n1047_argenta" sub="g" />
+   <exelink qstep="1" npc="n1047_argenta" sub="h" />
+   <exelink qstep="1" npc="n1047_argenta" sub="i">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="3" npc="n1047_argenta" sub="b" />
+   <exelink qstep="3" npc="n1047_argenta" sub="c" />
+   <exelink qstep="3" npc="n1047_argenta" sub="d" />
+   <exelink qstep="3" npc="n1047_argenta" sub="e" />
+   <exelink qstep="3" npc="n1047_argenta" sub="f">0</exelink>
+   <exelink qstep="3" npc="n1047_argenta" sub="!next">1</exelink>
+   <journal_data recompense="92650" quest_title="조우" chapterid="12" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[조우 I]]></title>
+         <contents mid="43"><![CDATA[<html>아르젠타는 이곳에서 무슨 일이 생긴 건지 알고 있었다. 조금 더 대화를 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 아르젠타</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[아르젠타와 대화]]></destination>
+         <todo_msg mid="45"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_76.dds</contents_image>
+         <destination_pos>761,0,0</destination_pos>
+         <destination_mode>custom:761@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[조우 II]]></title>
+         <contents mid="47"><![CDATA[<html>사막에서부터 엘프의 숲으로 접근하는 마물들을 처치하면 생명의 나무를 지키는 여왕을 도울 수 있다고 한다. 모래먼지 바다로 가보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 모래먼지 바다</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[모래먼지 바다의 마물 처치]]></destination>
+         <todo_msg mid="49"><![CDATA[모래먼지 바다에 나타난 마물들을 처치하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[조우 III]]></title>
+         <contents mid="51"><![CDATA[<html>모래먼지 바다에서 독극물을 옮기는 이그나시오를 발견했다. 아르젠타에게 상황을 전달하자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[아르젠타에게 보고]]></destination>
+         <todo_msg mid="53"><![CDATA[신월의 숲의 아르젠타에게 보고하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9264</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

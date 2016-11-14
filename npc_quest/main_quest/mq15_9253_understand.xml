@@ -1,0 +1,157 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9253_understand</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9253</qid>
+      <designer>곽노찬</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[I Can Understand]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>- <FONT color=#086171>Network is unstable.</FONT><BR>- <FONT color=#7e12d2>Mission Objective is being refreshed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>- <FONT color=#086171>Mission Objective.</FONT><BR>- <FONT color=#7e12d2>Go to Occupied Ancient Temple.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-a" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Jasmine... Who is Daisy to you?</FONT><BR>
+<FONT color=#7e12d2>XD-30 said that I'm the sister that you wanted… the one who will follow Daisy's mission)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-a" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-b" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#7e12d2>(But I understand you.</FONT><BR>
+<FONT color=#7e12d2>Because you have a duty and things that you must protect. </FONT><FONT color=#7e12d2>But...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-b" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-c" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(But is this the best that you can do?</FONT><BR><FONT color=#7e12d2>Must you sacrifice so many people… and use your own mother who created you as well...?</FONT><BR>
+<FONT color=#7e12d2>Is it... irrevocable...?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-c" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-d" mid="22"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-d" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Jasmine, maybe I'm the same as you .<BR>Then... I hope you understand.</FONT><BR><FONT color=#7e12d2>That we each have a mission from Daisy...)</FONT><BR>
+<FONT color=#7e12d2></FONT> <BR>
+※ <FONT color=#7e12d2>Look out for the last story of [Extra Chapter 2. Code Name Zero]!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9253</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92530,,,,,,</exe>
+         <exe type="complete" true="">9253</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="2" npc="n393_academic_station" sub="b" />
+   <exelink qstep="2" npc="n393_academic_station" sub="c">0</exelink>
+   <exelink qstep="2" npc="n393_academic_station" sub="d">1</exelink>
+   <journal_data recompense="92530" quest_title="이해할 수 있습니다" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_75.dds</contents_image>
+         <destination_pos>751,0,0</destination_pos>
+         <destination_mode>custom:751@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[I Can Understand 1]]></title>
+         <contents mid="29"><![CDATA[<html>Jasmine is at Occupied Ancient Temple. Go there and meet Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Tel Rosa Gates)</FONT> <FONT color=#a82424>- Occupied Ancient Temple</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[Search Occupied Ancient Temple]]></destination>
+         <todo_msg mid="31"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[I Can Understand 2]]></title>
+         <contents mid="33"><![CDATA[<html>Jasmine eventually took the jewel from Daisy and disappeared. Now the final battle with Jasmine is the only option left.<BR>
+Go back to Saint Haven.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Academic Station</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Log in to Academic Station]]></destination>
+         <todo_msg mid="35"><![CDATA[Go back to town and log in to Academic Station.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_jasmine.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[[Extra Chapter 2. Code Name Zero] Part 1 Completed]]></title>
+         <contents mid="37"><![CDATA[<html>* <FONT color=#7e12d2>You have completed Part 1 of [Extra Chapter 2. Code Name Zero].</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[]]></destination>
+         <todo_msg mid="39"><![CDATA[[Extra Chapter 2. Code Name Zero] Part 1 has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>9252</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

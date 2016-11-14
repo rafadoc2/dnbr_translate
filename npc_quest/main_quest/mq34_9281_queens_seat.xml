@@ -1,0 +1,595 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9281_queens_seat</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9281</qid>
+      <designer>강지영</designer>
+      <qlevel>69</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[여왕의 자리]]></qkname>
+      <qnpc>
+         <npcid>1061</npcid>
+         <npcename>n1061_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1067</npcid>
+         <npcename>n1067_elder_elf</npcename>
+         <npckname>엘프 장로</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1079</npcid>
+         <npcename>n1079_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1080</npcid>
+         <npcename>n1080_elf_queen</npcename>
+         <npckname>여왕 나르실리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1081</npcid>
+         <npcename>n1081_elf_queen</npcename>
+         <npckname>여왕 아마릴리스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1082</npcid>
+         <npcename>n1082_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-accepting-party_check" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$엘프 장로$<BR>유벤시엘은 처음부터 이 곳에 들어가기 위해 콘클라베에 끼어든겁니다.<BR>저 자를 막아야....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-accepting-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="129"><![CDATA[<html>$엘프 장로$<BR>유벤시엘은 처음부터 이 곳에 들어가기 위해 콘클라베에 끼어든겁니다.<BR>저 자를 막아야....<BR><FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-" mid="8" select_type="5" />
+      <talk_question mid="7"><![CDATA[<html>$엘프 장로$<BR><FONT color=#a82424>유벤시엘</FONT>이 이미 생명의 나무 안으로 들어갔습니다.<BR>여왕님이 위험하니. 서두르세요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$워리어 시안$<BR>저자를 막아야 해요!!<BR><FONT color=#7e12d2>(유벤시엘과 대화를 해 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1061_yuvenciel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1061_yuvenciel-1-a" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$아처 유벤시엘$<BR>.......<BR><FONT color=#7e12d2>(유벤시엘이 고요한 시선으로 {user_nick} 쪽을 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1061_yuvenciel-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1061_yuvenciel-1-b" mid="172" select_type="0"><![CDATA[<html>여기에서 나가세요!</html>]]></talk_answer>
+      <talk_answer link_index="n1061_yuvenciel-1-b" mid="173" select_type="0"><![CDATA[<html>이게 무슨 짓입니까?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>유벤시엘 님!</FONT><BR>
+<FONT color=#662500>당신은 이곳에 들어와서는 안 됩니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1061_yuvenciel-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1061_yuvenciel-1-c" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9281_01.ogg}<BR>역시... 그대를 피해 갈 수는 없나 보군요.<BR><FONT color=#7e12d2>(유벤시엘의 시선이 잠시 흔들리는 듯하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1061_yuvenciel-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1061_yuvenciel-1-d" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이 곳엔 왜 오신거죠?</FONT><BR>
+<FONT color=#662500>전 잠시나마 당신을 믿었습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1061_yuvenciel-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1061_yuvenciel-1-e" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$아처 유벤시엘$<BR>말씀 드리지 않았나요. 제겐 다른 목적이 있었다고요.<BR>저 여왕을 보세요.<BR>
+나무에 얽매여 행동의 자유도 선택의 기쁨도 빼앗긴 채 다만 죽음을 기다리는 가련한 존재를....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1061_yuvenciel-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1061_yuvenciel-1-f" mid="148" select_type="2" />
+      <talk_question mid="147"><![CDATA[<html>$아처 유벤시엘$<BR>모든 엘프에게 드리워진 숙명의 사슬은 오늘로 사라질 겁니다.<BR>모든 속박의 근원인 이 생명의 나무와 함께.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1061_yuvenciel-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1061_yuvenciel-1-" mid="22" select_type="5" />
+      <talk_question mid="21"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9281_02.ogg}<BR>그러니 더 이상 제 일에 끼어들지 마십시오.<BR>나는 결코 그대를... 해치고 싶지 않습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-2-a" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9281_03.ogg}<BR>이곳은?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-2-b" mid="175" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저도 모르겠습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-2-" mid="177" select_type="5" />
+      <talk_question mid="176"><![CDATA[<html>$아처 유벤시엘$<BR>
+...로잘린데에게 습격을 받았을 때, 당신이 저를 감싸 주시려는 듯 보였습니다.<BR>
+이런 때에 그런 것으로 기뻐하는 저를 용서하십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1061_yuvenciel-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_question mid="137"><![CDATA[<html>$아처 유벤시엘$<BR>으윽....<BR><FONT color=#7e12d2>(유벤시엘이 상처를 잡고 신음을 하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-3-a" mid="178" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$아처 유벤시엘$<BR>우리는 아무래도 생명의 나무에 빨려들어 온 것 같군요.<BR>저기 누군가 있는 것 같습니다. 가 볼까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_question mid="179"><![CDATA[<html>$아처 유벤시엘$<BR>...제게는 <FONT color=#a82424>여왕 나르실리아</FONT> 님처럼 보이는 군요.<BR>
+그녀가 우리에게 할 말이 있는 게 아닐까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-a" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(유독 강한 빛이 일렁이고 있다. 이 빛은 뭘까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-b" mid="151" select_type="2" />
+      <talk_question mid="150"><![CDATA[<html>$여왕 나르실리아$<BR>또 만나는구나. 나의 아이야.<BR>너희가 위험에 빠진 것 같아 일단 이곳으로 데려왔단다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-c" mid="153" select_type="2" />
+      <talk_question mid="152"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여긴 어디인가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-d" mid="155" select_type="2" />
+      <talk_question mid="154"><![CDATA[<html>$여왕 나르실리아${sound:npc_Queen_Narsilia_qu_9281_01.ogg}<BR>이곳은 생명의 나무 내부... <FONT color=#a82424>여왕의 제단</FONT>이다.<BR>생명력을 다 한 여왕의 영혼이 잠드는 안식처이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-e" mid="180" select_type="0"><![CDATA[<html>여왕님은 돌아가신 건가요?</html>]]></talk_answer>
+      <talk_answer link_index="n1080_elf_queen-3-e" mid="181" select_type="0"><![CDATA[<html>생명의 나무는 죽은 겁니까?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여왕님 모습이….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-f" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$여왕 나르실리아$<BR>아직 아니다.<BR>하지만 이제 내 의지만으로는 이 깊고 고요한 곳조차 다스리지 못하는구나. <BR>곧 여길 밝히는 생명의 빛조차 사라지게 되겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-g" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이 마물들은 뭐죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3-g" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-h" mid="38" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>$여왕 나르실리아$<BR>고통받은 여왕의 기억과 슬픔이 이런 마물들을 끌어들인단다.<BR>
+너희를 구하는데 힘을 쓰고 나니, 이젠 이런 마물들 조차 막을 수 없는 몸이 되었구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1080_elf_queen-3-h" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1080_elf_queen-3-" mid="42" select_type="5" />
+      <talk_question mid="41"><![CDATA[<html>$여왕 나르실리아${sound:npc_Queen_Narsilia_qu_9281_02.ogg}<BR>이 나무 아래에서 목숨을 잃은 엘프의 여왕은 나무도 흙도 되지 못하고 이렇게....<BR>앗. 안 돼! 다시 저들이....<BR><FONT color=#7e12d2>(나르실리아의 모습이 희미해지면서 뒤틀린 자가 나타난다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-a" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$여왕 아마릴리스${sound:npc_AN_Queen Amalilis_qu_9281_01.ogg}<BR>유벤시엘…. 유벤시엘….<BR>네가 이곳에 돌아왔구나.<BR><FONT color=#7e12d2>(유벤시엘을 부르는 목소리가 애처롭게 들린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-a" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-b" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$아처 유벤시엘$<BR>세렌시엘… 나의 세렌시엘!<BR>
+정말 너야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-c" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$여왕 아마릴리스$<BR>그래. 나야, 세렌시엘…. 여왕 <FONT color=#a82424>아마릴리스</FONT>가 된 너의 단짝.<BR>내가 선택한 여왕의 길이, 네겐 우리 엘프들을 떠나갈 정도의 고통이 되다니.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-d" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$여왕 아마릴리스${sound:npc_AN_Queen Amalilis_qu_9281_02.ogg}<BR>하지만 그것이야말로 너에게 주어진 <FONT color=#a82424>텔레지아</FONT>리라 믿었어, 유벤시엘….<BR>언젠가는 이렇게 다시 너와 만나는 때가 올 것이라고 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-d" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-e" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아처 유벤시엘$<BR>세렌시엘. 이렇게 널 다시 만날 수 있다니….<BR>
+어떻게 이런 일이….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-f" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$여왕 아마릴리스$<BR>유벤시엘. 아직도 모르겠니?<BR>자꾸 외면하지 말고 네 텔레지아에 귀를 기울여 봐.<BR><FONT color=#7e12d2>(아마릴리스의 시선이 {user_nick}에게 향한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-f" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-g" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$아처 유벤시엘$<BR>세렌시엘… 너 지금 누구를 보고 있는거야?<BR><FONT color=#7e12d2>(유벤시엘이 놀란 눈동자로 {user_nick} 쪽을 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-g" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-h" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(유벤시엘 님의 텔레지아?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-h" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-i" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$아처 유벤시엘$<BR>오래 전 나는 결심을 굳혔다.<BR>영원히 너와 함께 하기 위해서, 동족에게 자유를 주기 위해서, 나는 내 길을 택하겠다고.<BR>그리고…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-i" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-j" mid="198" select_type="2" />
+      <talk_question mid="197"><![CDATA[<html>$아처 유벤시엘$<BR>그리고 <FONT color=#387206>{user_nick} </FONT>님에게, 너와는 다른 길을… 주기 위해….<BR><FONT color=#7e12d2>(유벤시엘의 얼굴이 종잇장처럼 하얗게 변해간다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-j" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-k" mid="183" select_type="2" />
+      <talk_question mid="182"><![CDATA[<html>$여왕 아마릴리스$<BR>
+네가 언젠가 진정 평화를 얻기를 나는 쭉 기도했단다. 유벤시엘.<BR>
+진정한 평화, 진정한 자유를…. 네 선택이 네게 기쁨을 가져오기를.<BR>
+이제 네게도 가야할 길이 보이니? 유벤시엘.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-k" image="" itemindex="" portrait_left="NPC_Left_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-l" mid="185" select_type="2" />
+      <talk_question mid="184"><![CDATA[<html>$아처 유벤시엘$<BR>진정한 자유….<BR>…이 열렬한 감정의 결말이 어디를 향하고 있는지 나는 이제야 알았다.<BR>
+나의 세렌시엘. 나의 여왕이여.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-4-l" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-4-" mid="125" select_type="5" />
+      <talk_question mid="63"><![CDATA[<html>$여왕 아마릴리스$<BR>드디어 유벤시엘이 숙명의 길을 바라보는 것 같구나. 너로 인해 말이다.<BR>고맙구나. 나르실리아의 아이야.<BR><FONT color=#7e12d2>(아마릴리스가 환한 미소를 짓는 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-a" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9281_04.ogg}<BR>이 모든 것이 내 텔레지아…?<BR><FONT color=#7e12d2>(아처 유벤시엘이 혼란스러워 보인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-b" mid="187" select_type="0"><![CDATA[<html>괜찮으세요?</html>]]></talk_answer>
+      <talk_answer link_index="n1079_yuvenciel-5-b" mid="188" select_type="0"><![CDATA[<html>점점 희미해지는 것 같아요.</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>유벤시엘 님, 당신...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-c" mid="161" select_type="2" />
+      <talk_question mid="160"><![CDATA[<html>$아처 유벤시엘$<BR><FONT color=#7e12d2>(고요히 바라보던 유벤시엘이 문득 고개를 끄덕이며 {user_nick}의 뺨에 손을 대려 한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-d" mid="68" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9281_05.ogg}<BR>그렇습니다, 소중한 분. 저는 지금 죽어가고 있습니다.<BR>허나 그대에게 걱정을 끼칠 일은 없을 겁니다.<BR>그대를 통해 이제야 제가 거부했던 숙명이 뭐였는지 알겠군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-e" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>$아처 유벤시엘$<BR>나르실리아 여왕의 힘이 다하면, 세렌시엘처럼 그대가 여왕의 숙명을 짊어지게 되겠죠.<BR>소중한 이의 앞날이 나무 뿌리에 송두리째 묶이는 모습을 저는 또 지켜 보아야만 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-f" mid="163" select_type="2" />
+      <talk_question mid="162"><![CDATA[<html>$아처 유벤시엘$<BR>이번에는 그럴 수 없습니다.<BR>제 과오로 잃어버린 그대의 미래를 구하는 것, 그것이 세렌시엘에게 남은 제 미련과 그대를 향한 속죄가 될 것입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-g" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>속죄라니요?</FONT><BR>
+<FONT color=#662500>무엇을 하시려는거죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-h" mid="165" select_type="2" />
+      <talk_question mid="164"><![CDATA[<html>$아처 유벤시엘$<BR>모든 엘프의 어머니를 대신할 아버지가 되어 그대를 지켜볼 것입니다.<BR>그대의 앞날을….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-i" mid="167" select_type="2" />
+      <talk_question mid="166"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어머니를 대신할 아버지요?</FONT><BR><FONT color=#662500>왕이… 된다는 말씀이신가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-j" mid="168" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9281_06.ogg}<BR>세렌시엘을 닮은 그대에게는 여왕이 아닌 다른 길이 준비되어 있군요.<BR>저 자유로운 세상의 수많은 길들을 다시 걸으십시오.<BR><FONT color=#7e12d2>(아처 유벤시엘의 말과 함께 나무뿌리가 그의 몸을 휘감기 시작한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-k" mid="191" select_type="2" />
+      <talk_question mid="190"><![CDATA[<html>$아처 유벤시엘$<BR>그저 두 손 놓고 빼앗기는 것이 아니라, 그대를 위해 이 짐을 짊어지는 것.<BR>그대에게 저 천연한 생의 무수한 가능성을 돌려주는 것.<BR>그것이 내 자유로운 선택입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-5-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-5-" mid="170" select_type="5" />
+      <talk_question mid="169"><![CDATA[<html>$아처 유벤시엘$<BR>이것으로 저는 진정한 평화를 얻을 수 있게 되었습니다.<BR>당신이 걷는 길이 언제나 자유롭기를….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-5" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-5-a" mid="193" select_type="2" />
+      <talk_question mid="138"><![CDATA[<html>$아마릴리스$<BR>
+나는 언제나 유벤시엘이 평화를 얻기를 기원해 왔단다.<BR>
+이제야, 그 기원이 이루어진 것 같아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-5-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-5-b" mid="200" select_type="2" />
+      <talk_question mid="199"><![CDATA[<html>$아마릴리스$<BR>
+유벤시엘은 이제 그의 숙명을 깨달았구나.<BR>정말… 언제나 느리다니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1081_elf_queen-5-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1081_elf_queen-5-" mid="195" select_type="5" />
+      <talk_question mid="194"><![CDATA[<html>$아마릴리스$<BR>나르실리아의 아이야. 다시 그와 얘기를 해 보렴.<BR>
+네게 할 말이 있는 것 같으니.<BR><FONT color=#7e12d2>(여왕 아마릴리스가 미소를 짓고 있는 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-a" mid="76" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>$워리어 시안$<BR><FONT color=#387206>{user_nick} </FONT>님! 어떻게 된 건가요?<BR>그 엘프, 유벤시엘과 함께 사라지셨었는데....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-b" mid="78" select_type="2" />
+      <talk_question mid="77"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여긴 다시 생명의 나무...?</FONT><BR><FONT color=#7e12d2>(여왕의 옥좌에 나르실리아의 모습이 보이지 않는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-c" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>나르실리아 님은 곧 영면을 맞으실거예요.</FONT><BR>
+<FONT color=#662500>그리고 다음 여왕은, 아니 왕이라고 해야 겠군요.<BR>유벤시엘, 그 분이 생명의 나무의 다음 왕이 되었어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-d" mid="82" select_type="2" />
+      <talk_question mid="81"><![CDATA[<html>$워리어 시안$<BR>어..? 어? 그럼 엘프 최초로 남성 여왕... 아니 왕이 탄생한 건가요?<BR>이거 축하해야 하는...... 거죠?<BR><FONT color=#7e12d2>(시안이 멋쩍은 듯 웃고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-e" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>로잘린데는 어찌 되었나요?</FONT><BR>
+<FONT color=#662500>그리고 아르젠타 님과 제레인트 님은...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-f" mid="86" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>$워리어 시안$<BR>아! 맞다. 좀 골치 아프게 되었어요.<BR>로잘린데가 선지자의 힘을 되찾았거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-g" mid="88" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>$워리어 시안$<BR>새 여왕... 아니 왕이 생겼다니 좀 다행이지만, 아직 생명의 나무가 불안정한 상태잖아요?<BR>
+이럴 때 선지자의 힘으로 <FONT color=#a82424>모노리스로 가는 통로</FONT>를 열어 버릴 지도 모른대요.<BR>아르젠타님과 제레인트님은 일단 그들을 막으러 갔죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-h" mid="90" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어디로 가셨나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-6-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-6-" mid="92" select_type="5" />
+      <talk_question mid="91"><![CDATA[<html>$워리어 시안$<BR>생명의 나무가 시작된 곳. 숲의 경계에 모노리스로 가는 길 통로가 있대요.<BR>장로님이 가는 길을 아신다고 하니까, 우리도 서두르죠!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1079_yuvenciel-6" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1079_yuvenciel-6-" mid="143" select_type="5" />
+      <talk_question mid="142"><![CDATA[<html>$아처 유벤시엘$<BR>세렌시엘을 닮은 그대에게는 여왕이 아닌 다른 길이 준비되어 있군요.<BR>저 자유로운 세상의 수많은 길들을 다시 걸으십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-7" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-7-a" mid="94" select_type="2" />
+      <talk_question mid="93"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9281_01.ogg}<BR>생명의 나무가 시작된 곳. 모든 엘프들의 뿌리를 찾는다는 말인가요?<BR><FONT color=#387206>{user_nick} </FONT>님, 당신은 그곳이 어떤 곳인지 알면서도 제게 말해 달라는 거로군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-7-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-7-b" mid="96" select_type="4" />
+      <talk_question mid="95"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-7-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-7-" mid="98" select_type="5" />
+      <talk_question mid="97"><![CDATA[<html>$엘프 장로$<BR><FONT color=#2b2723>모노리스, 생명의 나무가 시작된 곳... 당신에게 알려줘도 좋을지 저는 아직 모르겠습니다.</FONT><BR><BR><FONT color=#7e12d2>(Chapter 10. 텔레지아의 이야기는 여기까지 입니다. 다음 이야기를 기대해주세요!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1082_cian-7" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1082_cian-7-" mid="146" select_type="5" />
+      <talk_question mid="145"><![CDATA[<html>$워리어 시안$<BR>생명의 나무가 시작된 곳. 숲의 경계에 모노리스로 가는 길 통로가 있대요.<BR>장로님이 가는 길을 아신다고 하니까, 우리도 서두르죠!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">9281</exe>
+         <exe type="talk" npc="n1067_elder_elf">1</exe>
+         <exe type="conexe" true="0,1" false="">0</exe>
+         <exe type="talk" npc="n1067_elder_elf">a</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">8</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92810,,,,,,,</exe>
+         <exe type="complete" true="">9281</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1067_elder_elf" sub="party_check">2</exelink>
+   <exelink qstep="1" npc="n1061_yuvenciel" sub="b" />
+   <exelink qstep="1" npc="n1061_yuvenciel" sub="b" />
+   <exelink qstep="1" npc="n1061_yuvenciel" sub="c" />
+   <exelink qstep="1" npc="n1061_yuvenciel" sub="d" />
+   <exelink qstep="1" npc="n1061_yuvenciel" sub="e" />
+   <exelink qstep="1" npc="n1061_yuvenciel" sub="f">0,1</exelink>
+   <exelink qstep="1" npc="n1061_yuvenciel" sub="" />
+   <exelink qstep="2" npc="n1079_yuvenciel" sub="b" />
+   <exelink qstep="2" npc="n1079_yuvenciel" sub="" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="b" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="c" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="d" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="e" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="e" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="f" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="g" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="h" />
+   <exelink qstep="3" npc="n1080_elf_queen" sub="" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="b" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="c" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="d" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="e" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="f" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="g" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="h" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="i" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="j" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="k" />
+   <exelink qstep="4" npc="n1081_elf_queen" sub="l">0,1</exelink>
+   <exelink qstep="4" npc="n1081_elf_queen" sub="" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="b" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="b" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="c" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="d" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="e" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="f" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="g" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="h" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="i" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="j" />
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="k">0,1</exelink>
+   <exelink qstep="5" npc="n1079_yuvenciel" sub="" />
+   <exelink qstep="5" npc="n1081_elf_queen" sub="b" />
+   <exelink qstep="5" npc="n1081_elf_queen" sub="" />
+   <exelink qstep="6" npc="n1082_cian" sub="b" />
+   <exelink qstep="6" npc="n1082_cian" sub="c" />
+   <exelink qstep="6" npc="n1082_cian" sub="d" />
+   <exelink qstep="6" npc="n1082_cian" sub="e" />
+   <exelink qstep="6" npc="n1082_cian" sub="f" />
+   <exelink qstep="6" npc="n1082_cian" sub="g" />
+   <exelink qstep="6" npc="n1082_cian" sub="h">0,1</exelink>
+   <exelink qstep="6" npc="n1082_cian" sub="" />
+   <exelink qstep="7" npc="n1067_elder_elf" sub="a">0</exelink>
+   <exelink qstep="7" npc="n1067_elder_elf" sub="b">1</exelink>
+   <exelink qstep="7" npc="n1067_elder_elf" sub="" />
+   <journal_data recompense="92810" quest_title="여왕의 자리" chapterid="12" quest_level="69" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>34,n1061</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1061</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[여왕의 자리 I]]></title>
+         <contents mid="100"><![CDATA[<html>유벤시엘이 생명의 나무로 이미 들어간 것 같다. 장로와 대화를 나누자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 여왕의 옥좌(유벤시엘)</FONT><BR><BR><FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[(1인) 유벤시엘과 대화]]></destination>
+         <todo_msg mid="102"><![CDATA[유벤시엘을 쫓아 베일 안으로 들어가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>34,n1061</destination_pos>
+         <destination_mode>custom:34@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[여왕의 자리 II]]></title>
+         <contents mid="104"><![CDATA[<html>유벤시엘은 이미 마음을 굳힌 듯 한 표정이다.<BR>그가 생명의 나무, 엘프의 여왕을 향하지 않게 저지해야 한다.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 여왕의 옥좌</FONT><BR><BR><FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[(1인) 유벤시엘 저지]]></destination>
+         <todo_msg mid="106"><![CDATA[유벤시엘을 막아야 합니다. 그를 저지하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>11110,n1079</destination_pos>
+         <destination_mode>custom:34@2,11110@1</destination_mode>
+         <statemark_npcid>1079</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="132"><![CDATA[여왕의 자리 III]]></title>
+         <contents mid="133"><![CDATA[<html>생명의 나무를 통해 알 수 없는 곳에 이동된 것 같다.<BR>유벤시엘과 대화를 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문 - 여왕의 옥좌</FONT> <FONT color=#a82424>- 알 수 없는 공간(아처 유벤시엘)</FONT><BR><BR><FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="134"><![CDATA[(1인) 유벤시엘과 대화]]></destination>
+         <todo_msg mid="135"><![CDATA[유벤시엘과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Elf_Narsilia.dds</contents_image>
+         <destination_pos>11110,n1080</destination_pos>
+         <destination_mode>custom:34@2,11110@1</destination_mode>
+         <statemark_npcid>1080</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[여왕의 자리 IV]]></title>
+         <contents mid="108"><![CDATA[<html>생명의 나무를 통해 알 수 없는 곳에 이동된 것 같다.<BR>이 공간에 나타난 엘프의 실루엣과 대화를 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문 - 여왕의 옥좌 </FONT><FONT color=#a82424>- 알 수 없는 공간(여왕 나르실리아)</FONT><BR><BR><FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[(1인) 여왕 나르실리아와 대화]]></destination>
+         <todo_msg mid="110"><![CDATA[여왕 나르실리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image />
+         <destination_pos>11110,n1081</destination_pos>
+         <destination_mode>custom:34@2,11110@1</destination_mode>
+         <statemark_npcid>1081</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="111"><![CDATA[여왕의 자리 V]]></title>
+         <contents mid="112"><![CDATA[<html>생명의 나무를 통해 알 수 없는 곳에 이동된 것 같다.<BR>이 공간에 나타난 엘프의 실루엣과 대화를 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문 - 여왕의 옥좌 </FONT><FONT color=#a82424>- 알 수 없는 공간(여왕 아마릴리스)</FONT><BR><BR><FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="113"><![CDATA[(1인) 여왕 아마릴리스와 대화]]></destination>
+         <todo_msg mid="114"><![CDATA[여왕 아마릴리스와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>11110,n1079</destination_pos>
+         <destination_mode>custom:34@2,11110@4</destination_mode>
+         <statemark_npcid>1079</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="115"><![CDATA[여왕의 자리 VI]]></title>
+         <contents mid="116"><![CDATA[<html>유벤시엘이 죽어가는 것 같다.<BR>그의 숙명에 대해 더 들어보자.<BR><BR><FONT color=#086171>아누 아렌델 관문 - 여왕의 옥좌 </FONT><FONT color=#a82424>- 알 수 없는 공간(아처 유벤시엘)</FONT><BR><BR><FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[(1인) 아처 유벤시엘과 대화]]></destination>
+         <todo_msg mid="118"><![CDATA[유벤시엘의 숙명에 대해 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>34,n1082</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1082</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="119"><![CDATA[여왕의 자리 VII]]></title>
+         <contents mid="120"><![CDATA[<html>다시 생명의 나무 앞으로 온 것 같다.<BR>나무 앞에서 기다리고 있는 워리어 시안과 대화를 나누자. <BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 여왕의 옥좌(워리어 시안)</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="121"><![CDATA[(1인) 워리어 시안과 대화]]></destination>
+         <todo_msg mid="122"><![CDATA[여왕의 옥좌로 돌아가 시안을 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="123"><![CDATA[여왕의 자리 VIII]]></title>
+         <contents mid="124"><![CDATA[<html>모노리스의 길이 열리는 것을 막아야 한다.<BR>아르젠타와 제레인트가 향한 방향을 엘프 장로에게 듣자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 생명의 나무 앞(엘프 장로)</FONT><BR><BR><FONT color=#7e12d2>(Chapter 10. 텔레지아의 이야기는 여기까지 입니다. 다음 이야기를 기대해주세요!)</FONT></html>]]></contents>
+         <destination mid="127"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="128"><![CDATA[생명의 나무 바깥의 엘프 장로에게 찾아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9280</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,288 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9248_smiling_promise</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9248</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[A Smiling Promise]]></qkname>
+      <qnpc>
+         <npcid>1023</npcid>
+         <npcename>n1023_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="8"><![CDATA[<html>(Tell her what happened at Arnute Canyon)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Stella$<BR>…You don't look too good.<BR>Tell me what happened slowly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="10"><![CDATA[<html>I didn't hear the details.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Stella$<BR>Daisy is the original form of the clones?<BR>And what jewel… jewel fragment? A clone?<BR>What the heck is this all about...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#7e12d2>(Stella sighs quietly)</FONT><BR>More and more puzzles to solve… What on earth happened in the future? It's beyond my capacity to catch up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="14"><![CDATA[<html>(She seems angry)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR>Well, anyway… If it's the ancient temple near Arnute Canyon, it must be where the <FONT color=#a82424>Hero Barnac</FONT>'s grave is. Who would have known they were at a place like that? No wonder we couldn't find them even when we searched the entire desert!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="16"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Stella$<BR>Hmm, I get angrier when I think about it.<BR>Go and investigate the Ancient Temple with Comelina.<BR>If we're certain that Jasmine is there, we'll send you support.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-1" image="" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(She looks pale. Seems like she didn't rest at all since you saw her for the last time)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_75.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Stella$<BR>What a nerve to use that place as a base.<BR>Since it's occupied by them now, maybe it should be called the <FONT color=#a82424>Occupied Ancient Temple</FONT>...<BR>Be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(She looks pale. Seems like she didn't rest since you saw her for the last time)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-3" image="" itemindex="">
+      <talk_answer link_index="n1023_academic-3-a" mid="20"><![CDATA[<html>What happened? Where's Jasmine...?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Academic Comelina$<BR>Oh no…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-3-a" image="" itemindex="">
+      <talk_answer link_index="n1023_academic-3-b" mid="22"><![CDATA[<html>Is there anything you can do with the jewel alone? Like becoming a dragon or...</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Academic Comelina$<BR>Jasmine was eyeing Daisy's jewel right from the start…!<BR>If Daisy is our original model, she must have the whole jewel since me and my sisters weren't born yet at the present time. So she must have tremendous power... but I don't understand why Jasmine is here only now…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-3-b" image="" itemindex="">
+      <talk_answer link_index="n1023_academic-3-c" mid="24"><![CDATA[<html>Make clones?!??!</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Shakes her head)</FONT><FONT color=#2b2723>There are too many uncertainties. There are no proven cases either... </FONT>Even if she takes the jewel now, she can only make clones like us… Oh!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-3-c" image="" itemindex="">
+      <talk_answer link_index="n1023_academic-3-d" mid="26"><![CDATA[<html>(Seems like it would be better to change the topic) Er… Comelina?</html>]]></talk_answer>
+      <talk_answer link_index="n1023_academic-3-d" mid="27"><![CDATA[<html>Wait a minute, I have something to ask you.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Academic Comelina$<BR>That seems to be the case. And since she has tried making us already, she would be able to create more powerful clones. How many more sisters are going to be created and be killed...<FONT color=#7e12d2>(Comelina looks at the direction Jasmine went to with a sad face)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-3-d" image="" itemindex="">
+      <talk_answer link_index="n1023_academic-3-e" mid="29"><![CDATA[<html>…I understand that Daisy is a jewel but… how is she a dragon's jewel?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Academic Comelina$<BR>…Hmm? Oh, what is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-3-e" image="" itemindex="">
+      <talk_answer link_index="n1023_academic-4" mid="31"><![CDATA[<html>Okay, I'll leave it to you.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Academic Comelina$<BR>…I don't know. But it seems like there's a need for investigation.<BR>If it is a dragon that has been recorded in books, we can find out  about its weaknesses.<BR>Leave the investigation to me. I can use the technology from the future to do a good job!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-4" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Academic Comelina$<BR>I'll search this place first.<BR>Since this place was chosen to extract the jewel, there must be some records about the jewel here.<BR><FONT color=#387206>{user_nick}</FONT>, don't worry about me!<BR><FONT color=#7e12d2>(Comelina seems determined. Go back to Saint Haven and report to Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-a" mid="34"><![CDATA[<html>(Tell her what happened)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Master Sorceress Stella$<BR>I waited forever. So what happened?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-b" mid="36"><![CDATA[<html>Yes...</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Master Sorceress Stella$<BR>Whaaaaaaat!?!??!?!<BR>Jasmine took the jewel from Daisy?<BR>A shining dragon's jewel??!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="38"><![CDATA[<html>What puzzle?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Master Sorceress Stella$<BR>My head is aching now... Tell me a story that I can follow.<BR>Yeah I understand that she can make a few more clones.<BR>But the puzzle gets more complicated if she does that...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-d" mid="40"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Master Sorceress Stella$<BR>
+Think about it...<BR>
+<FONT color=#a82424>Jasmine knows that Daisy is the original model for the clones...</FONT><BR>
+and Jasmine made the clones with her own hands or at least participated in the creation.<BR>
+This is a fact since Comelina mentioned something about it too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-e" mid="42"><![CDATA[<html>That's right.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Master Sorceress Stella$<BR>But <FONT color=#a82424>what made her certain that Daisy would appear at Tel Rosa City? </FONT>Usually a little girl wouldn't go to a burning city, yeah? And it can't be that someone as cautious as Jasmine went there based on luck.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-e" image="QN_Npc_Charty.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-f" mid="44"><![CDATA[<html>(She's talking about Charty...)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Master Sorceress Stella$<BR>And there's more. <FONT color=#a82424>Why did Daisy have the jewel but not turn into a dragon?</FONT>Jewels are dangerous. A weak person would have their body and heart swallowed by the jewel's powers. And moreover, Daisy is a little girl. You know that it's impossible.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-g" mid="46"><![CDATA[<html>No, she disappeared too quickly...</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Sorceress Stella$<BR>More puzzles but no way to solve them. I'm so frustrated.<BR>I hope Comelina has some progress on the investigation.<BR>Oh, have you seen where Jasmine went to?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-h" mid="48"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Sorceress Stella$<BR>She must be up to something bigger... I get headaches thinking about it but we should at least be relieved that she has paused for a while.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-h" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-i" mid="50"><![CDATA[<html><FONT color=#a82424>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-i" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Master Sorceress Stella$<BR>Don't leave everything to Comelina. Why don't you go and look around too?<BR>You might find something.<BR><BR><FONT color=#7e12d2>* [Extra Chapter 2. Code Name Zero] Part 1 completed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9248</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>영상 재생후 3스텝, 3저널로 넘어감</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete" true="">9248</exe>
+         <exe type="recompense">92480,,,,,,</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n1023_academic" sub="b" />
+   <exelink qstep="3" npc="n1023_academic" sub="c" />
+   <exelink qstep="3" npc="n1023_academic" sub="d" />
+   <exelink qstep="3" npc="n1023_academic" sub="d" />
+   <exelink qstep="3" npc="n1023_academic" sub="e" />
+   <exelink qstep="3" npc="n1023_academic" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="g" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="h">1</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="i">0,2</exelink>
+   <journal_data recompense="92480" quest_title="미소짓는 약속" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[A Smiling Promise 1]]></title>
+         <contents mid="53"><![CDATA[<html>Tell Master Sorceress Stella what happened at Arnute Canyon. <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="55"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_75.dds</contents_image>
+         <destination_pos>751,0,0</destination_pos>
+         <destination_mode>custom:751@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[A Smiling Promise 2]]></title>
+         <contents mid="57"><![CDATA[<html>Jasmine is at Occupied Ancient Temple. <BR>Look for Jasmine at Occupied Ancient Temple.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Gates)</FONT> <FONT color=#a82424>- Occupied Temple Ruins</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Investigate Occupied Ancient Temple]]></destination>
+         <todo_msg mid="59"><![CDATA[Find Jasmine at Occupied Ancient Temple.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>751,n1023</destination_pos>
+         <destination_mode>custom:751@1</destination_mode>
+         <statemark_npcid>1023</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[A Smiling Promise 3]]></title>
+         <contents mid="62"><![CDATA[<html>Too late.<BR>
+Jasmine plucked the jewel from Daisy and ran away.<BR>
+Ask Academic Comelina about this situation.<BR>
+ <BR>
+<FONT color=#086171>Occupied Ancient Temple</FONT> <FONT color=#a82424>- Academic Comelina</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Academic Comelina]]></destination>
+         <todo_msg mid="64"><![CDATA[Talk to Academic Comelina.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[A Smiling Promise 4]]></title>
+         <contents mid="66"><![CDATA[<html>Academic Comelina made a deduction that Jasmine took the jewel to make new clones. However, it is unknown what dragon Daisy was, and she promised to investigate on it. Report to Master Sorceress Stella.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk Master Sorceress Stella]]></destination>
+         <todo_msg mid="68"><![CDATA[Go back to Saint Haven and report to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Academic_jasmine.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[[Extra Chapter 2. Code Name Zero] Part 1 Completed]]></title>
+         <contents mid="70"><![CDATA[<html>* <FONT color=#7e12d2>[Extra Chapter 2. Code Name Zero] Part 1 had been completed.</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[]]></destination>
+         <todo_msg mid="72"><![CDATA[[Extra Chapter 2. Code Name Zero] Part 1 has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9247</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

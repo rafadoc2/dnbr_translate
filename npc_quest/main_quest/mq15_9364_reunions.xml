@@ -1,0 +1,180 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9364_reunions</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9364</qid>
+      <designer>최지은</designer>
+      <qlevel>52</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9365</nextqid>
+      <nextqname>mq15_9365_pitiful_reality</nextqname>
+      <nextqnpc>n824_teramai</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[해후의 형태]]></qkname>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>824</npcid>
+         <npcename>n824_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>825</npcid>
+         <npcename>n825_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="40" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$테렌스 테라마이$<BR>마침 잘 왔네. 드디어 신전기사단이 <FONT color=#a82424>벨스커드</FONT>의 행방을 찾아낸 모양이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QW_60.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-" mid="42" select_type="5" />
+      <talk_question mid="7"><![CDATA[<html>$테렌스 테라마이$<BR>보고에 따르면, 벨스커드가 모습을 드러낸 곳은 <FONT color=#a82424>운석 낙하지 경계지역</FONT>이라고 하네. 자, 어서 출발하세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n825_velskud-1-a" mid="44" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$벨스커드$<BR><FONT color=#7e12d2>(테라마이와 벨스커드 사이에 묘한 긴장감이 흐르고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n825_velskud-1-b" mid="45" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$벨스커드$<BR>오랜만이군, 테라마이.<BR>…구면이 또 있군 그래. 큭큭.<BR><FONT color=#7e12d2>(벨스커드가 흘깃 {user_nick} 쪽을 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-b" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n825_velskud-1-c" mid="48" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$벨스커드$<BR>그 늙어빠진 모습을 보자니 우리가 얼마나 징그러운 세월을 보냈는지 알 것 같군.<BR>오랫동안 자취를 감췄던 네가 모습을 드러낸 것은 <FONT color=#a82424>바르낙</FONT> 때문이겠지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-c" image="QP_Geraint_sword.dds" itemindex="" portrait_left="NPC_Left_Teramai.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n825_velskud-1-d" mid="49" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$테라마이$<BR>………….<BR>벨스커드, 오래 마주하고 있어봐야 서로에게 득될 것이 없으니 본론만 말하겠네.<BR>자네가 가지고 있는 <FONT color=#a82424>제레인트의 검</FONT>. 그것을 건네주었으면 하네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-d" image="QP_Geraint_sword.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n825_velskud-1-e" mid="51" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>$벨스커드$<BR>제레인트의 검은 왜 찾는 거지?<BR>후후후. 그 나이에 갑자기 칼부림 따위에 흥미가 생긴 것은 아닐 텐데…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-e" image="" itemindex="" portrait_left="NPC_Left_Teramai.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n825_velskud-1-f" mid="53" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$테라마이$<BR>빈정거리는 그 말투는 50년이 지나도 변함이 없군 그래.<BR>자네에게 일일이 설명해 줄 여유따윈 없네. 주지 않겠다면, 빼앗으면 그 뿐….<BR><FONT color=#7e12d2>(테라마이가 무기에 손을 뻗는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n825_velskud-2" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$벨스커드$<BR>큭큭, 가진 거라곤 맷집밖에 없는 놈이 말만은 그럴싸하구나. <BR>오랜만에 만난 회포를 좀 풀고 싶지만, 선약이 있어서 이만 실례하지.<BR><FONT color=#7e12d2>(벨스커드가 등을 돌린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n824_teramai-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n824_teramai-1-" mid="57" select_type="5" />
+      <talk_question mid="20"><![CDATA[<html>$테렌스 테라마이$<BR><FONT color=#7e12d2>(테라마이와 벨스커드 사이에 묘한 긴장감이 흐르고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n825_velskud-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n825_velskud-2-" mid="60" select_type="5" />
+      <talk_question mid="21"><![CDATA[<html>$벨스커드$<BR><FONT color=#7e12d2>(벨스커드는 이야기를 마치고 다른 곳으로 이동한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n824_teramai-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n824_teramai-2-a" mid="63" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$테라마이$<BR>벨스커드.......<BR><FONT color=#7e12d2>(테라마이의 얼굴에 복잡한 표정이 떠오른다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n824_teramai-2-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n824_teramai-2-b" mid="64" select_type="4" />
+      <talk_question mid="24"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n824_teramai-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n824_teramai-2-!next" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#662500>(이 둘이 힘을 합쳐서 싸웠다는게 도저히 믿기지 않는다...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9364</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93640,,,,,,,</exe>
+         <exe type="complete" true="">9364</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n825_velskud" sub="b" />
+   <exelink qstep="1" npc="n825_velskud" sub="c" />
+   <exelink qstep="1" npc="n825_velskud" sub="d" />
+   <exelink qstep="1" npc="n825_velskud" sub="e" />
+   <exelink qstep="1" npc="n825_velskud" sub="f" />
+   <exelink qstep="1" npc="n825_velskud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n824_teramai" sub="a">0</exelink>
+   <exelink qstep="2" npc="n824_teramai" sub="b">1</exelink>
+   <exelink qstep="2" npc="n824_teramai" sub="!next" />
+   <journal_data recompense="93640" quest_title="해후의 형태" chapterid="9" quest_level="52" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_60.dds</contents_image>
+         <destination_pos>601,n825</destination_pos>
+         <destination_mode>custom:601@1</destination_mode>
+         <statemark_npcid>825</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[해후의 형태 1]]></title>
+         <contents mid="28"><![CDATA[<html>테라마이는 벨스커드가 운석 낙하지 경계지역에서 모습을 나타냈다고 한다.<BR>운석 낙하지 경계지역으로 이동하여 벨스커드를 찾아보자.<BR><BR><FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 운석 낙하지 경계지역</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[운석 낙하지 경계지역에서 벨스커드와 대화]]></destination>
+         <todo_msg mid="30"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>601,n824</destination_pos>
+         <destination_mode>custom:601@1</destination_mode>
+         <statemark_npcid>824</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[해후의 형태 2]]></title>
+         <contents mid="32"><![CDATA[<html>벨스커드는 테라마이와 이야기를 나누던 중 모습을 감췄다. 테렌스 테라마이와 대화를 나눠보자.<BR><BR><FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 운석 낙하지 경계지역(테렌스 테라마이)</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[운석 낙하지 경계지역에서 테라마이와 대화]]></destination>
+         <todo_msg mid="34"><![CDATA[테렌스 테라마이와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9363</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

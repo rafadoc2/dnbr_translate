@@ -1,0 +1,398 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9351_stray_sheep</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>9351</qid>
+      <designer>정진호</designer>
+      <qlevel>48</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9352</nextqid>
+      <nextqname>mq15_9352_i_need_you</nextqname>
+      <nextqnpc>n1179_sorceress_karakule</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[시간의 미아]]></qkname>
+      <qnpc>
+         <npcid>1179</npcid>
+         <npcename>n1179_sorceress_karakule</npcename>
+         <npckname>소서리스 카라큘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>575</npcid>
+         <npcename>n575_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-accepting-acceptted" mid="7" select_type="2" />
+      <talk_question mid="6"><![CDATA[<html>$그림자 냥$<BR>카라큘의 상태가 많이 안 좋으냥?<BR>걱정이냥…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-1" image="QW_Karakule_House.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-1-" mid="9" select_type="5" />
+      <talk_question mid="8"><![CDATA[<html>$그림자 냥$<BR><FONT color=#a82424>카라큘의 오두막</FONT>으로 가는 편이 낫지 않냥?<BR>여기서 이러고 있는 것 보다는 생산적이다냥~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-a" mid="11" select_type="2" />
+      <talk_question mid="10"><![CDATA[<html>$카라큘 페어리스타$<BR>이게 네게 주는 마지막 가르침이 되겠구나….<BR>페어리스타는 이제 너에게로 계승 될 게다, 시델.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-a" image="" itemindex="" portrait_left="NPC_Left_Sidel.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-b" mid="13" select_type="2" />
+      <talk_question mid="12"><![CDATA[<html>$시델$<BR>스승님… 스승니임…! 아, 안 돼요. 저, 저는…<BR>저는 페어리스타의 이름을 이을 자격이 없습니다….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-b" image="" itemindex="" portrait_left="NPC_Left_Sidel.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-c" mid="15" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>$시델$<BR>저는 아직 약하고, 흑… 배움도 부족, 하고… 훌쩍…<BR>스승… 님처럼… 훌륭한 비전 마법 같은 걸, 할 수도 없… 으니까... 흑… 그, 러니까…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-d" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>$카라큘 페어리스타$<BR>그래서 도망치겠다는 게냐?<BR>과거의 실수나 후회로부터 도망치는 건 누구나 할 수 있는 거란다.<BR>하지만, 그것을 바로잡는 것은 용기있는 자 만이 할 수 있는 일이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-e" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$카라큘 페어리스타$<BR>바로잡는 것. 다시 제 자리로 돌아와 올바른 길을 걷는 것.<BR>그것이 바로 진정한 용기다. 내가 믿고 살아온 페어리스타의 긍지…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-f" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$카라큘 페어리스타$<BR>시델…. 너를 처음 보았을 때, 나는 놀라움과 두려움을 동시에 느꼈단다.<BR>
+네게서 느껴지는 그 어마어마한 잠재력에 놀랐고, 그 재능이 무서우리만치 카라한과 닮아 있다는 것에 두려움을 느꼈지….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-f" image="" itemindex="" portrait_left="NPC_Left_Sidel.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-g" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$시델$<BR>…스승님….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-h" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$카라큘 페어리스타$<BR>그 놀라운 재능이 사내들의 야심과 결합되면 얼마나 무서운 일이 벌어지는 지를 곁에서 지켜봐 왔단다.<BR>카라한이 어머님과 나를 배신한 후, 나는 페어리스타의 선조들이 어째서 남자 소서러들을 멀리했는 지를 깨달았다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-i" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$카라큘 페어리스타$<BR>너를 거둬 들이고도 선뜻 마음을 열지 못했던 것도, 네게 필요 이상의 마법을 가르치지 않은 것도 모두 그 때문이란다.<BR>카라한에게 받은 그 상처로부터… 나도 도망치고 있었던 게지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-j" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$카라큘 페어리스타$<BR>하지만, 이제야 알겠구나.<BR>너는 그와 다른 인간이란 것을 말이다, 시델….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-j" image="" itemindex="" portrait_left="NPC_Left_Sidel.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-k" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$시델$<BR>하지만, 저는 스승님의 가르침을 어겼어요.<BR>금지된 마법에 손을 대고…, 스승님을 다치게 만들고…, 차티를… 지켜주지 못하고… 친, 친구를… 멀리하고…<BR>저, 는… 저는 너무 나약합니다…! 흐흑, 흑….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-l" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$카라큘 페어리스타$<BR>스스로의 나약함을 깨닫는 것이야 말로 진정 용기있는 자만이 할 수 있는 일이란다, 시델.<BR>대부분의 사람들은 자신들의 부족함을 이해하려 하지 않고, 자신의 잘못을 남의 탓으로 돌리거나 자신에게 처한 환경을 탓하기 마련이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-m" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$카라큘 페어리스타$<BR>너는 강한 아이다. 길이란 끝이 없는 것.<BR>잘못 들어섰다면 되돌아 오면 된다.<BR>
+제대로 나아갈 길을 선택해 다시 앞으로 걸어가면 되는 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-n" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$카라큘 페어리스타$<BR>카라한이 너 처럼 자신의 잘못에 눈물 흘릴 줄 아는 자였다면… 페어리스타는 지금과는 많이 달랐을텐데….<BR>시델…. 너라면 잘 해낼 수 있을 게다.<BR>나는… 그리 믿는단다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n701_oldkarakule-1-o" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$카라큘 페어리스타$<BR>…윽, 쿨럭… 쿨럭쿨럭…<BR><FONT color=#7e12d2>(카라큘이 괴로운 듯 숨을 몰아쉰다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1-o" image="" itemindex="" portrait_left="NPC_Left_Sidel.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n701_oldkarakule-2" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$시델$<BR>스… 스승님!! 스승님!!<BR><FONT color=#7e12d2>(시델이 다급한 목소리로 카라큘을 부른다. 그가 {user_nick} 쪽을 향해 호소하듯 시선을 보낸다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="44" select_type="5" />
+      <talk_question mid="43"><![CDATA[<html>$시델$<BR>스승님… 스승니임… 흑….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-1-" mid="46" select_type="5" />
+      <talk_question mid="45"><![CDATA[<html>$카라큘 페어리스타$<BR>또 만났네~? 후후후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_OldKarakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-2-" mid="49" select_type="5" />
+      <talk_question mid="48"><![CDATA[<html>$카라큘 페어리스타$<BR>쿨럭… 정말이지 이제 멀지 않았구나…<BR>…내 역할을 다 하고 끝낼 수 있을 것 같아 기쁘… 쿨럭쿨럭…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-a" mid="51" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>$시델$<BR>스승님… 스승니임…!!<BR>정신 차리세요, 스승… 스승님!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-b" mid="53" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>$시델$<BR>도와줘, <FONT color=#387206>{user_nick}</FONT> …!<BR>도와주세요! 제발, 스승님이 이대로… 이대로… 흐윽… 나는 더 이상 누군가를 잃고 싶지 않은데...!<BR>그럴 수 없다구!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-c" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(말이 엉망진창이다. 시델, 정말로 당황한 것 같다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-d" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>$시델$<BR>부탁 드려요!!<BR>
+치료약을… 치료약을 만들 테니까, 제발… 도와주세요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-d" image="" itemindex="" portrait_left="NPC_Left_OldKarakule.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-2-e" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html>$카라큘 페어리스타$<BR>쿨럭… 으으…… 시델, 괜한 짓 하지 말아라. 내 몸은 내가 잘 안단다.<BR>시델, 자… 가까이 오렴. 쿨럭쿨럭…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-f" mid="61" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html>$시델$<BR>스승님을 구하는 일이에요!! 어디가 괜한 짓이라는 거예요?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-g" mid="63" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>뭘 구하면 되는 거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-g" image="QW_55.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-" mid="119" select_type="5" />
+      <talk_question mid="64"><![CDATA[<html>$시델$<BR>제발… 검은 재버섯은 <FONT color=#a82424>고대의 무기고 동쪽</FONT>에서 찾을 수 있어요!<BR>그, 그것이라도 있으면… 그러면…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QW_55.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-" mid="68" select_type="5" />
+      <talk_question mid="67"><![CDATA[<html>$시델$<BR><FONT color=#a82424>고대의 무기고 동쪽</FONT>입니다.<BR>검은 재버섯을… 부탁해요! 제발, 부탁 드려요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-a" mid="71" select_type="2" />
+      <talk_question mid="70"><![CDATA[<html>$카라큘 페어리스타$<BR>어머나~ 안녕? 모험자님~<BR>시간을 뛰어넘어, 또 만났네?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-b" mid="73" select_type="2" />
+      <talk_question mid="72"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신은……!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-c" mid="75" select_type="2" />
+      <talk_question mid="74"><![CDATA[<html>$카라큘 페어리스타$<BR>어때? 열심히 찾던 길은… 이제는 찾은 거야?<BR>아니면 여전히 잃어버린 채로 시간 속을 헤매고 있어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-d" mid="77" select_type="2" />
+      <talk_question mid="76"><![CDATA[<html>$카라큘 페어리스타$<BR>나는 말이지~ 이제 내가 찾아야 했던 것을 찾았어.<BR>어디로 가야 하는지 그 언제보다도 선명하게 가야할 길이 보이거든. 후후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-e" mid="79" select_type="2" />
+      <talk_question mid="78"><![CDATA[<html>$카라큘 페어리스타$<BR>하지만 부러워할 필요는 없어.<BR>어린애들은 원래 깨지고, 망가지고, 아주 먼 길을 헤매기도 하면서 자신이 가야할 곳을 발견하는 법이니까.<BR>…때론 엉엉 울기도 하면서 말이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-f" mid="81" select_type="2" />
+      <talk_question mid="80"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내가 또 과거로 돌아온 건가요?<BR>당신은 어디로 가고 있죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-g" mid="83" select_type="2" />
+      <talk_question mid="82"><![CDATA[<html>$카라큘 페어리스타$<BR>지금이 언제인지, 내가 어디로 가는지, 그런 건 중요하지 않아.<BR>네가 어디로 갈 것인가… 그것만이 중요한 거야.<BR><FONT color=#7e12d2>(젊은 카라큘이 손을 내밀다가 웃으며 다시 거두어 들인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-h" mid="85" select_type="2" />
+      <talk_question mid="84"><![CDATA[<html>$카라큘 페어리스타$<BR>그러니 전해 줄래? 저 안에서 울고 있는 사람에게…<BR>나는 많이 울었고, 그걸 들키고 싶지 않아서 완고한 척 했지만, 살아간다는 건 의외로 즐겁고 보람있는 일이었다고 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-i" mid="87" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>$카라큘 페어리스타$<BR>멀기도 했고 이상하기도 한 여행길이었어.<BR>그치만 별로 심심하진 않았단다.<BR>
+…재미있었어. 두근두근 했던 적도 있지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-j" mid="89" select_type="2" />
+      <talk_question mid="88"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…?<BR>당신은 혹시……</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-k" mid="91" select_type="2" />
+      <talk_question mid="90"><![CDATA[<html>$카라큘 페어리스타$<BR><FONT color=#7e12d2>(카라큘이 장난스러운 미소를 짓는다)</FONT><BR>…네게도 언젠가 네 길이 보이기를 기원할게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-l" mid="93" select_type="4" />
+      <talk_question mid="92"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-4-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-4-!next" mid="95" select_type="2" />
+      <talk_question mid="94"><![CDATA[<html>$카라큘 페어리스타$<BR>만나서 반가웠어. <FONT color=#387206>{user_nick},</FONT> 과거의 나를 혹시 또 만나게 되면 잘 부탁해. 알았지?<BR>그럼 안녕~</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9351</exe>
+         <exe type="talk" npc="n575_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>검은 재버섯 아이템 생성 필요 400409</comment>
+      <conditions />
+      <executions>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">3</exe>
+         <exe type="huntitem" num="1" exe="" onexe="3,4,5">300382</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">1576</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201576</exe>
+         <exe type="addquestitem" num="1">300382</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93510,,,,,,,</exe>
+         <exe type="complete" true="">9351</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n575_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="e" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="f" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="g" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="h" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="i" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="j" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="k" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="l" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="m" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="n" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="o" />
+   <exelink qstep="1" npc="n701_oldkarakule" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="c" />
+   <exelink qstep="2" npc="n707_sidel" sub="d" />
+   <exelink qstep="2" npc="n707_sidel" sub="e" />
+   <exelink qstep="2" npc="n707_sidel" sub="f" />
+   <exelink qstep="2" npc="n707_sidel" sub="g">0,1,2,6,7</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="b" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="c" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="d" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="e" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="f" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="g" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="h" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="i" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="j" />
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="k">0</exelink>
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="l">1</exelink>
+   <exelink qstep="4" npc="n1179_sorceress_karakule" sub="!next" />
+   <journal_data recompense="93510" quest_title="시간의 미아" chapterid="7" quest_level="48" quest_mark_type="1" use_item_list="300382">
+      <journal index="1">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[시간의 미아 I]]></title>
+         <contents mid="98"><![CDATA[<html>카라큘은 페어리스타의 후계를 시델에게 위임하려는 것 같다. 카라큘과 대화해 보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT><FONT color=#a82424> - 카라큘 페어리스타</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[카라큘의 오두막의 카라큘과 대화]]></destination>
+         <todo_msg mid="100"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[시간의 미아 II]]></title>
+         <contents mid="102"><![CDATA[<html>카라큘의 상태가 많이 좋지 않은 것 같다.<BR>시델이 할 말이 있는 듯 하니 말을 걸어 보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="104"><![CDATA[시델과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:551@3,552@3,553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[시간의 미아 III]]></title>
+         <contents mid="106"><![CDATA[<html>시델은 카라큘의 치료약을 다급하게 만들려 한다. 고대의 무기고 동쪽에서 검은 재버섯을 구해오자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장 (고대의 창고 입구)</FONT> <FONT color=#a82424>- 고대의 무기고 동쪽</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[고대의 무기고 동쪽]]></destination>
+         <todo_msg mid="108"><![CDATA[고대의 무기고 동쪽에서 검은 재버섯을 구하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_Karakule_House.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom:14@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[시간의 미아 IV]]></title>
+         <contents mid="111"><![CDATA[<html>검은 재버섯을 구했다. 다시 카라큘의 오두막으로 돌아가자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[카라큘의 오두막]]></destination>
+         <todo_msg mid="113"><![CDATA[검은 재버섯을 구했습니다. 카라큘의 오두막으로 돌아가세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Karakule.dds</contents_image>
+         <destination_pos>14,n1197</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1197</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[시간의 미아 V]]></title>
+         <contents mid="115"><![CDATA[<html>카라큘의 오두막 근처에, 젊은 카라큘의 모습이 보인다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 카라큘 페어리스타</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[리버워트 선착장에서 젊은 카라큘과 대화]]></destination>
+         <todo_msg mid="117"><![CDATA[젊은 카라큘의 모습이 보입니다. 그녀와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9350</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

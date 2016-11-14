@@ -1,0 +1,200 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9245_my_mission</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9245</qid>
+      <designer>곽노찬</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[That is My Mission]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>▶ <FONT color=#086171>Network connection is unstable.</FONT><BR>▷ <FONT color=#7e12d2>Mission objective is being refreshed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>▶ <FONT color=#086171>Mission Object.</FONT><BR>▷ <FONT color=#7e12d2>Go to Tel Noir Temple.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-a" mid="10"><![CDATA[<html>(Check the message)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Academic Station$<BR>
+▶ <FONT color=#086171>You have 1 unheard voice message.</FONT><BR>
+▷ <FONT color=#7e12d2>Do you want to hear the message?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-b" mid="12"><![CDATA[<html>(Jasmine…)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Jasmine$<BR>
+<FONT color=#086171>XD-26, I mean {user_nick}.</FONT><BR>
+<FONT color=#086171>It seems like you've been disrupting my plan several times.</FONT><BR>
+<FONT color=#086171>But my plan is going very well without problems.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-c" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Jasmine$<BR><FONT color=#086171>{user_nick}, you were created from me, by me.</FONT><BR><FONT color=#086171>That means, we have the same character and traits.</FONT><BR><FONT color=#086171>I understand why you are standing up against me trying to stop me from the invasion of the past.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-d" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Jasmine$<BR><FONT color=#086171>But I'm not your enemy.</FONT><BR><FONT color=#086171>To me, every life form is precious.</FONT><BR><FONT color=#086171>I don't disregard even the smallest and insignificant creatures.</FONT><BR><FONT color=#086171>Do you know why?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-e" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Jasmine$<BR><FONT color=#086171>It's because preserving lives is my mission. </FONT><FONT color=#086171>The noble and solemn role of protecting lives and being their guardian is my mission.</FONT><BR><FONT color=#086171>I would gladly give my life up in order to save a single life.</FONT><BR>
+<FONT color=#086171>That is the reason why I'm trying to save our world even at the cost of sacrificing you all.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-f" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Jasmine$<BR>
+<FONT color=#086171>{user_nick}, you are from our world.</FONT><BR>
+<FONT color=#086171>You should be protecting the people from YOUR world, not THEM!</FONT><BR>
+<FONT color=#086171>The value of life isn't based on whether they are found in the past or the future.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-f" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-g" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Jasmine$<BR><FONT color=#086171>We get respected because we are alive at the present moment.</FONT><BR><FONT color=#086171>Lives are precious because they are breathing right beside us.</FONT><BR><FONT color=#086171>It is foolish to sacrifice the ones who are alive for the ones who are already dead.</FONT><BR><FONT color=#086171>FOgret about the past and face the present!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-g" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-h" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(You're right, Jasmine….</FONT><BR>
+<FONT color=#7e12d2>A life is precious when it is alive.</FONT><BR><FONT color=#7e12d2>But what should I do…?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-h" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-i" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(The present for me has become the current world.<BR>Not the future in 50 years…)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-i" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-j" mid="34"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-j" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-k" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Jasmine$<BR><FONT color=#086171>{user_nick}, I hope you'll make the right decision.</FONT><BR><FONT color=#086171>But remember this.</FONT><BR><FONT color=#086171>You must bear consequences for your choice….</FONT><BR><FONT color=#086171>You have to bear the weight of countless deaths that will occur when you make the wrong choice.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-k" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-l" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I will never forget that.</FONT><BR><FONT color=#7e12d2>You're the one who told me that we have the same character and traits….)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-l" image="" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Like how you're trying to protect your people by any means, I will do the same for the people here.</FONT><BR><FONT color=#7e12d2>That is the mission given to both you and me.)</FONT><BR><BR>※ <FONT color=#7e12d2>[Extra Chapter 1. Desert Storm] completed</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9245</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>카메라
+- XD 30와 대화를 나누고 숨을 거두는 XD-29
+XD-30 : 네가 전송해준 연구자료로 데저트 스톰 작전은 성공했어. 데저트 드래곤을 제어하기 위해 곧 제로가 도착할거야. 어쩌고 저쩌고</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92450,,,,,,</exe>
+         <exe type="complete">9245</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="2" npc="n393_academic_station" sub="b" />
+   <exelink qstep="2" npc="n393_academic_station" sub="c" />
+   <exelink qstep="2" npc="n393_academic_station" sub="d" />
+   <exelink qstep="2" npc="n393_academic_station" sub="e" />
+   <exelink qstep="2" npc="n393_academic_station" sub="f" />
+   <exelink qstep="2" npc="n393_academic_station" sub="g" />
+   <exelink qstep="2" npc="n393_academic_station" sub="h" />
+   <exelink qstep="2" npc="n393_academic_station" sub="i">0</exelink>
+   <exelink qstep="2" npc="n393_academic_station" sub="j">1</exelink>
+   <exelink qstep="2" npc="n393_academic_station" sub="k" />
+   <exelink qstep="2" npc="n393_academic_station" sub="l" />
+   <journal_data recompense="92450" quest_title="그것이 저의 사명입니다" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_72.dds</contents_image>
+         <destination_pos>721,0,0</destination_pos>
+         <destination_mode>custom:721@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[That is My Mission I]]></title>
+         <contents mid="38"><![CDATA[<html>XD-29 staggered into the Tel Numara desert. Follow her to the Tel Noir Temple자.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Numara Entrance)</FONT> <FONT color=#a82424>→ Tel Noir Temple</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Investigate Tel Noir Temple]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[That is My Mission II]]></title>
+         <contents mid="42"><![CDATA[<html>Professor K's experiment notes ended up in Jasmine's hands and her plans succeeded.<BR>
+Go back to Saint Haven and think about what to do next.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Log on to Academic Station]]></destination>
+         <todo_msg mid="44"><![CDATA[Go back to Saint Haven and log on to Academic Station.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_jasmine.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[[Extra Chapter 1. Desert Storm] Completed]]></title>
+         <contents mid="47"><![CDATA[<html>※ <FONT color=#7e12d2>You have completed [Extra Chapter 1. Desert Storm].</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[]]></destination>
+         <todo_msg mid="49"><![CDATA[[Extra Chapter 1. Desert Storm] has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>9244</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

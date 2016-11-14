@@ -1,0 +1,286 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9379_overlap</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9379</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9380</nextqid>
+      <nextqname>mq15_9380_but_not_equal</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[중첩]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>872</npcid>
+         <npcename>n872_academic</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>873</npcid>
+         <npcename>n873_academic</npcename>
+         <npckname>아카데믹 NPC</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="107" select_type="3" />
+      <talk_question mid="21"><![CDATA[<html>$상급 소서리스 스텔라$<BR>으음….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="200" select_type="0"><![CDATA[<html>(손 뗀다면서요....)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$상급 소서리스 스텔라$<BR>.......<BR>.......<BR>.......아니, 이대로 포기하는 건 나답지 않은 일이야!<BR><FONT color=#7e12d2>(스텔라가 주먹을 불끈 쥔다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="111" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>$상급 소서리스 스텔라$<BR>이가 없으면 잇몸이지. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="112" select_type="0"><![CDATA[<html>아니요... 모르겠어요...</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="113" select_type="0"><![CDATA[<html>그거야 그렇죠...</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="114" select_type="0"><![CDATA[<html>맞아요. 자연은 언제나 소중하죠.</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$상급 소서리스 스텔라$<BR>땅의 가치는 땅값에만 있는게 아니다, 이 말씀이야.<BR>알았니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="117" select_type="0"><![CDATA[<html>뭐가요?!</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="118" select_type="0"><![CDATA[<html>왜죠?!?!?!</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="119" select_type="0"><![CDATA[<html>(난 아직 멀었구나)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$상급 소서리스 스텔라$<BR>휴우… 이렇게 센스가 없어서 어떡하니?<BR>마음을 진정시키기 위한 농담이란다. 농담정도는 익혀두렴.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="QW_69.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="196" select_type="0"><![CDATA[<html>왜요? 이제 그 땅은 포기하신 게...</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$상급 소서리스 스텔라$<BR>아니야 됐어.<BR><FONT color=#7e12d2>(스텔라가 고개를 절레절레 흔든다)</FONT><BR>그런 것 보다 말이지, 다시 <FONT color=#a82424>기적의 제단 보호구역</FONT>에 다녀오렴.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-e" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-f" mid="122" select_type="0"><![CDATA[<html>(이젠... 존경스럽다...)</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-f" mid="123" select_type="0"><![CDATA[<html>(저 집념으로 공부했으면 궁중 소서리스가 되지 않았을까...)</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-f" mid="124" select_type="0"><![CDATA[<html>(역시 사람은 저렇게 살아야 해. 인생 한방이지!)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$상급 소서리스 스텔라$<BR>얼마 전에 <FONT color=#a82424>벨린</FONT>이랑 이야기해보니 생명공학센터를 건립한다지 뭐야?<BR>프로페서 K는 유명한 생명공학박사였으니까 <FONT color=#a82424>연구자료</FONT>가 기적의 제단에 남아있을지도 몰라.<BR>혹시 찾으면 벨린한테 비싼 값에 팔 수 있을 거라구, 오호호~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="203" select_type="0"><![CDATA[<html>(그런데 왜 내가 고생하는거지...?)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$상급 소서리스 스텔라$<BR>그러니까 얼른 가서 찾아오렴.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n872_academic-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n872_academic-1-" mid="187" select_type="5" />
+      <talk_question mid="186"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#662500>(...이미 봤던 얼굴이라도, 시체를 보는 건 정말 싫은 일이다</FONT><BR>
+<FONT color=#662500>...일루전이라면 아무렇지도 않았을까...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_69.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2-" mid="184" select_type="5" />
+      <talk_question mid="48"><![CDATA[<html>$상급 소서리스 스텔라$<BR>딱~ 봐서 어려운 말이 잔뜩 적힌 종이를 들고 오면 된단다.<BR>한 번 가봤으니 어렵지 않지? 오호호~<BR>네게 <FONT color=#a82424>기적의 제단 보호구역</FONT> 정도는 쉽잖아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-a" mid="159" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$아카데믹 코멜리나$<BR>아, 당신은...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-b" mid="160" select_type="2" />
+      <talk_question mid="98"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>코멜리나! 코멜리나 맞지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-c" mid="161" select_type="2" />
+      <talk_question mid="130"><![CDATA[<html>$아카데믹 코멜리나$<BR>아, 네 <FONT color=#387206>{user_nick}</FONT>님 오랜만… 아아아 아니아니!! 아, 아니에요!! 못본걸로 해주세요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-d" mid="164" select_type="2" />
+      <talk_question mid="131"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>잠깐만!(코멜리나를 붙잡는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-e" mid="165" select_type="2" />
+      <talk_question mid="132"><![CDATA[<html>$아카데믹 코멜리나$<BR>그정도로 붙잡히지 않습니다! <BR>으아니?! 꺅!!! <BR><FONT color=#7e12d2>(요란한 소리를 내면서 코멜리나가 바닥의 돌부리에 걸려 넘어진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-f" mid="138" select_type="0"><![CDATA[<html>난 아무짓도 안했는걸...</html>]]></talk_answer>
+      <talk_answer link_index="n873_academic-2-f" mid="139" select_type="0"><![CDATA[<html>영웅이라니?</html>]]></talk_answer>
+      <talk_answer link_index="n873_academic-2-f" mid="140" select_type="0"><![CDATA[<html>(코멜리나는 귀엽구나)</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$아카데믹 코멜리나$<BR>우, 우우우우… 전에 만났을 때부터 <FONT color=#387206>{user_nick}</FONT>님이 엄청난 실력자인 걸 알아봤어야 했습니다. 아까 잠시 영웅을 따돌렸다고 자만하는 게 아니었는데.. 우우우.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-g" mid="166" select_type="2" />
+      <talk_question mid="134"><![CDATA[<html>$아카데믹 코멜리나$<BR>으, 으음. 오랜만이네요. 그보다 무슨 일이십니까? 저한테 무슨 볼 일이라도..?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-h" mid="167" select_type="2" />
+      <talk_question mid="135"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…이 시체…코멜리나랑 얼굴이 똑같은데, 무슨 관계인지 물어도 될까</FONT><FONT color=#662500>…?</FONT><BR><FONT color=#662500>(왠지 물어보기 조심스럽다. 또 울진 않겠지?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-i" mid="148" select_type="0"><![CDATA[<html>(전에 말했던 쌍둥이 자매는 아닌건가?)</html>]]></talk_answer>
+      <talk_answer link_index="n873_academic-2-i" mid="149" select_type="0"><![CDATA[<html>(혹시 귀신!?)</html>]]></talk_answer>
+      <talk_answer link_index="n873_academic-2-i" mid="151" select_type="0"><![CDATA[<html>(코멜리나는 귀엽구나)</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$아카데믹 코멜리나$<BR>….어….그게…. 그러니까….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-j" mid="169" select_type="2" />
+      <talk_question mid="145"><![CDATA[<html>$아카데믹 코멜리나$<BR>…에잇-!! <BR>
+<FONT color=#7e12d2>(코멜리나가 순식간에 옆으로 스쳐지나갔다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-2-k" mid="170" select_type="2" />
+      <talk_question mid="146"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>앗!?!?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n873_academic-3" mid="208" select_type="2" />
+      <talk_question mid="207"><![CDATA[<html><FONT color=#2b2723>$아카데믹 코멜리나$<BR>…하하하! 무릅니다,</FONT><FONT color=#387206> {user_nick}</FONT><FONT color=#2b2723>님! 그럼 이만 다시는 만나지 않기를 바랍니다!<BR></FONT><FONT color=#7e12d2><FONT color=#7e12d2>(코멜리나는 빛과 같은 속도로 시야에서 사라졌다)</FONT></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="174" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>$상급 소서리스 스텔라$<BR>왔구나.<BR>프로페서K의 연구자료는 찾았니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="176" select_type="2" />
+      <talk_question mid="175"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아니요, 찾지 못했어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-3-c" mid="178" select_type="4" />
+      <talk_question mid="87"><![CDATA[<html>$퀘스트 완료$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-3-!next" mid="182" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>$상급 소서리스 스텔라$<BR>흐음… 그거 아쉽네.<BR><FONT color=#7e12d2>(미련이 많이 남은 얼굴이다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n873_academic-3" image="QN_Npc_SoceressStella.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n873_academic-3-" mid="209" select_type="5" />
+      <talk_question mid="100"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>(…저렇게 대놓고 도망치다니 너무 대놓고 수상하잖아... 분명 무슨 일이 있던게 틀림없어. 연구일지도 보이지 않는 것 같으니... 일단 스텔라님께 돌아가자)</FONT><FONT color=#2b2723><BR><BR><FONT color=#7e12d2>*(세인트헤이븐의 상급 소서리스 스텔라에게 돌아가세요)</FONT></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9379</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93790,,,,,,,</exe>
+         <exe type="complete" true="">9379</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n873_academic" sub="b" />
+   <exelink qstep="2" npc="n873_academic" sub="c" />
+   <exelink qstep="2" npc="n873_academic" sub="d" />
+   <exelink qstep="2" npc="n873_academic" sub="e" />
+   <exelink qstep="2" npc="n873_academic" sub="f" />
+   <exelink qstep="2" npc="n873_academic" sub="f" />
+   <exelink qstep="2" npc="n873_academic" sub="f" />
+   <exelink qstep="2" npc="n873_academic" sub="g" />
+   <exelink qstep="2" npc="n873_academic" sub="h" />
+   <exelink qstep="2" npc="n873_academic" sub="i" />
+   <exelink qstep="2" npc="n873_academic" sub="i" />
+   <exelink qstep="2" npc="n873_academic" sub="i" />
+   <exelink qstep="2" npc="n873_academic" sub="j" />
+   <exelink qstep="2" npc="n873_academic" sub="k" />
+   <exelink qstep="2" npc="n873_academic" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b">0</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="c">1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="!next" />
+   <journal_data recompense="93790" quest_title="중첩" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[중첩 1]]></title>
+         <contents mid="59"><![CDATA[<html>이대로 포기할 스텔라가 아니다.<BR>다시 스텔라에게 말을 걸어보자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 소서리스 스텔라</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[상급 소서리스 스텔라와 대화]]></destination>
+         <todo_msg mid="61"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_69.dds</contents_image>
+         <destination_pos>691,n873</destination_pos>
+         <destination_mode>custom:691@1</destination_mode>
+         <statemark_npcid>873</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[중첩 2]]></title>
+         <contents mid="64"><![CDATA[<html>스텔라는 포기하지 않았다.<BR>다시 기적의 제단 보호구역으로 가서 연구일지를 찾아보자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 누마라 관문)</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- 기적의 제단 보호구역</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[기적의 제단 보호구역 탐사]]></destination>
+         <todo_msg mid="66"><![CDATA[기적의 제단 보호구역을 탐색하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[중첩 3]]></title>
+         <contents mid="102"><![CDATA[<html>연구 일지는 찾지 못했으나, <BR>아카데믹 코멜리나를 만났다.<BR>코멜리나는 허둥지둥 도망쳤는데... 무슨 일이 있는걸까?<BR>일단 상급 소서리스 스텔라에게 상황을 전하자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 소서리스 스텔라</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[상급 소서리스 스텔라와 대화]]></destination>
+         <todo_msg mid="104"><![CDATA[세인트헤이븐의 상급 소서리스 스텔라에게 보고하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9378</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

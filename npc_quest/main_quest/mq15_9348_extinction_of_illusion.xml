@@ -1,0 +1,256 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9348_extinction_of_illusion</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>9348</qid>
+      <designer>정진호</designer>
+      <qlevel>46</qlevel>
+      <qdesc>루나와 일루전을 쫓아 '용추종자 점거지'로 가는 유저.
+일루전과 대치하고, 마지막으로 제압한다.
+(몹 처리)
+
+일루전과 대화.(투명 npc 등으로 처리) 그는 '몇 번이고 말했지. 저 여자는 너를 속이고 있다'고 말한다. '나도 속았지. 놓아줄 수 없었기 때문에 나는 시간을...' 중얼거림을 끝으로 목소리가 잦아든다. 유저는 자신이 그를 완전히 제압했음을 깨닫는다.
+
+루나는 '이번에는 누구지? 일루전인가 아니면...' 하고 묻는다. 유저가 자신임을 밝히자, 루나는 그에게 '이제 당신이 계속 살아가는 수밖에 없어.' 하고 중얼거린다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9349</nextqid>
+      <nextqname>mq15_9349_abruptly_farewell</nextqname>
+      <nextqnpc>n1177_lunaria</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[일루전의 소멸]]></qkname>
+      <qnpc>
+         <npcid>1015</npcid>
+         <npcename>n1015_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1207</npcid>
+         <npcename>n1207_illusion</npcename>
+         <npckname>일루전</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1208</npcid>
+         <npcename>n1208_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>575</npcid>
+         <npcename>n575_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-accepting-acceptted" mid="6" select_type="2" />
+      <talk_question mid="5"><![CDATA[<html>$그림자 냥$<BR>냐앙? 다시 착한 제자로 돌아왔구냥?!!<BR>환영한다냥! 환영! 환영이냥! 환! 냥! …응? 이상하냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-1" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$그림자 냥$<BR>그런데 용추종자 점거지까지는 무슨 일로 가냥?<BR>뭐, 무슨 일인지 몰라도 힘 내라냥. 파이팅 냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1015_academic-1" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1015_academic-1-a" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$아카데믹 코멜리나$<BR>그 남자가 달려간 방향은 <FONT color=#a82424>용추종자 점거지</FONT> 쪽입니다.<BR>아마, 확실할 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1015_academic-1-a" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1015_academic-1-" mid="14" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(일루전은 내게서 분리된 게 틀림 없어.<BR>그가 달려갔다면 아마 루나리아가 그곳에 있기 때문이겠지. 가 보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-1-" mid="17" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$루나리아$<BR>네 선택이 네 운명.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1207_illusion-1-a" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$일루전$<BR>어리석은 녀석.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1207_illusion-1-b" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$일루전$<BR>몇 번이고 말했지. 나는 너라고.<BR>나는 미래의 너다. 멍청하게 끌려다닌 끝에 비로소 가야할 길을 깨달은, 좀 더 완성된 너다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1207_illusion-1-c" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>완성이고 뭐고 그건 내가 정해.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1207_illusion-1-d" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$일루전$<BR>저 여자는 너를 속이고 있다고도, 나는 이미 말했다.<BR>누누이 경고했을 터다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1207_illusion-1-e" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$일루전$<BR>나도 속았지.<BR>놓아야 한다는 걸 알았을 때 모든 것은 시간의 흐름에 쓸려 사라져 버리고 말았다.<BR>놓아야만 한다는 걸 알았을 때, 처음부터 붙잡지 않았어야 했다는 걸 깨달았다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1207_illusion-1-f" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$일루전$<BR>저 여자가 그렇듯 우리들에게도 시간은 되돌이킬 수 없는 것이지.<BR>…우리, 라. 내가 방금 우리라고 했나? 마치 형제처럼. 한 가지에서 난 여러 개의 멍청한 나뭇가지처럼.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1207_illusion-1-g" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무슨 말을 하고 있는 건지 아직도 모르겠어.<BR>루나리아가 뭘 속였다는 거야? 그녀를 끌고 억지로 내 앞에 나타난 건 너였잖아!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1207_illusion-1-h" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$일루전$<BR>큭큭큭… 이 나를 완전히 지워 버리는 데 성공했으니, 너도 곧 알게 될 거다.<BR>때가 온 거겠지. 너도 놓아줄 수 없게 되는 때가…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1207_illusion-1-i" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$일루전$<BR>어이, 루나리아.<BR>너는 처음부터 잘못 택했던 거다. 처음부터 완전히 잘못 붙잡았던 거란 말이다.<BR>나는 너를 놓아줄 수 없었고, 너는 또한… 속여서…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1207_illusion-1-j" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>$일루전$<BR>너 자신마저…… 속이고 있을뿐……!<BR>루나리아……!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-1-j" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1207_illusion-2" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…일루전?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1207_illusion-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1207_illusion-2-" mid="40" select_type="5" />
+      <talk_question mid="39"><![CDATA[<html><FONT color=#7e12d2>(일루전의 모습이 투명해지며 완전히 {user_nick} 속으로 사라졌다.<BR>더는 그 어떤 속삭임도 들리지 않는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-a" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>$루나리아$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-b" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-c" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$루나리아$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-d" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-e" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$루나리아$<BR>이번에는… 누구지?<BR>일루전인가, 아니면……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-f" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아니면?<BR>나는 나야, 루나리아.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-g" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$루나리아$<BR>…….<BR>그래. 너는 너. 네 선택이 바로 네 운명.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-h" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$루나리아$<BR><FONT color=#387206>{user_nick},</FONT> 바로 너구나.<BR><FONT color=#7e12d2>(루나리아가 희미한 미소를 띤다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-i" mid="58" select_type="4" />
+      <talk_question mid="57"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1208_lunaria-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1208_lunaria-2-!next" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$루나리아$<BR>이제 네가 계속 살아가는 수밖에 없어.<BR>너는 너로서, 누구도 아닌 너 자신으로서 여기에 있으니.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9348</exe>
+         <exe type="talk" npc="n575_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93480,,,,,,,</exe>
+         <exe type="complete" true="">9348</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n575_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1015_academic" sub="" />
+   <exelink qstep="1" npc="n1207_illusion" sub="b" />
+   <exelink qstep="1" npc="n1207_illusion" sub="c" />
+   <exelink qstep="1" npc="n1207_illusion" sub="d" />
+   <exelink qstep="1" npc="n1207_illusion" sub="e" />
+   <exelink qstep="1" npc="n1207_illusion" sub="f" />
+   <exelink qstep="1" npc="n1207_illusion" sub="g" />
+   <exelink qstep="1" npc="n1207_illusion" sub="h" />
+   <exelink qstep="1" npc="n1207_illusion" sub="i" />
+   <exelink qstep="1" npc="n1207_illusion" sub="j" />
+   <exelink qstep="1" npc="n1207_illusion" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1208_lunaria" sub="b" />
+   <exelink qstep="2" npc="n1208_lunaria" sub="c" />
+   <exelink qstep="2" npc="n1208_lunaria" sub="d" />
+   <exelink qstep="2" npc="n1208_lunaria" sub="e" />
+   <exelink qstep="2" npc="n1208_lunaria" sub="f" />
+   <exelink qstep="2" npc="n1208_lunaria" sub="g" />
+   <exelink qstep="2" npc="n1208_lunaria" sub="h">0</exelink>
+   <exelink qstep="2" npc="n1208_lunaria" sub="i">1</exelink>
+   <exelink qstep="2" npc="n1208_lunaria" sub="!next" />
+   <journal_data recompense="93480" quest_title="일루전의 소멸" chapterid="7" quest_level="46" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>541,0,0</destination_pos>
+         <destination_mode>custom:541@3</destination_mode>
+         <statemark_npcid>1207</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[일루전의 소멸 I]]></title>
+         <contents mid="64"><![CDATA[<html>일루전은 분리되어 달려가 버린 것 같다.<BR>
+아마 루나리아를 쫓아갔을 터. 용추종자 점거지로 가 보자.<BR><BR><FONT color=#086171>리버워트 마을 선착장 (리버워트 폐허)</FONT> <FONT color=#a82424>- 용추종자 점거지</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[용추종자 점거지]]></destination>
+         <todo_msg mid="66"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>541,0,0</destination_pos>
+         <destination_mode>custom:541@4</destination_mode>
+         <statemark_npcid>1208</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[일루전의 소멸 II]]></title>
+         <contents mid="68"><![CDATA[<html>일루전의 모습이 사라졌다. 완전히 통합된 것 같다. 루나리아와 대화해 보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 마을 선착장 (리버워트 폐허)</FONT> <FONT color=#a82424>- 용추종자 점거지(루나리아)</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[용추종자 점거지에서 루나리아와 대화]]></destination>
+         <todo_msg mid="70"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9347</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

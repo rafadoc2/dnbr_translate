@@ -1,0 +1,253 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9352_i_need_you</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>9352</qid>
+      <designer>정진호</designer>
+      <qlevel>48</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9353</nextqid>
+      <nextqname>mq15_9353_telling_farewell1</nextqname>
+      <nextqnpc>n754_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[찾아야만 하는 것]]></qkname>
+      <qnpc>
+         <npcid>1179</npcid>
+         <npcename>n1179_sorceress_karakule</npcename>
+         <npckname>소서리스 카라큘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>575</npcid>
+         <npcename>n575_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>754</npcid>
+         <npcename>n754_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-accepting-acceptted" mid="6" select_type="2" />
+      <talk_question mid="5"><![CDATA[<html>$그림자 냥$<BR>카라큘의 상태가 많이 안 좋으냥?<BR>걱정이냥…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-1" image="QW_Karakule_House.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$그림자 냥$<BR>카라큘의 오두막으로 가는 편이 낫지 않냥?<BR>여기서 이러고 있는 것 보다는 생산적이다냥~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1179_sorceress_karakule-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Karakule.dds" center_image="">
+      <talk_answer link_index="n1179_sorceress_karakule-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$카라큘 페어리스타$<BR>잘 있으렴~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-1-" mid="32" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>$워리어 시안$<BR>몇 번이나 몇 번이나… 누군가를 떠나 보내는군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-a" mid="15" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>$시델$<BR>게다가 그 동안 내가 저지른 어리석은 짓을 생각하면… 지금도 얼굴을 들 수가 없어요.<BR><FONT color=#387206>{user_nick},</FONT> 당신께도 정말… 미안하다는 말 밖에 할 말이 없군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-b" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>$시델$<BR>하지만, 더 이상 내가 저지른 실수와 미숙했던 과거로부터 도망치지 않을 거예요.<BR><FONT color=#7e12d2>(시델이 주먹을 꽉 쥔다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-c" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$시델${action:Talk}<BR>걱정하지 마세요. 이제 복수심에 휘둘려서 바보같은 짓은 하진 않을 테니까요.<BR>대신 스승님께서 소중하게 여기신 페어리스타 마법사단의 명예와 차티가 사랑했던 원주민 부족을 지킬 거에요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-d" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$시델$<BR>진짜 강함이란 드래곤의 보옥이나 복수심 따위에서 오는 게 아니라는 것을 깨달았어요.<BR>누군가를 지키려는 힘이야 말로 진정한 강함이라는 것….<BR>
+그런 마음이 없는 힘은 그저 자신과 남을 해치는 흉기일 뿐이라는 것도.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-e" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$시델$<BR><FONT color=#387206>{user_nick}</FONT>, 그동안 도와줘서 고마웠습니다.<BR>이제 제가 페어리스타 마법사단의 수장이니, 페어리스타의 일은 제가 매듭 지을게요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-f" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>앞으로 어떻게 하려는 건데?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-g" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$시델${action:Talk}<BR>글쎄…. 우선은 각지에 퍼진 소서리스들을 모아 집회를 열 예정입니다.<BR>스승님의 영결식과 페어리스타 마법사단장 임관식, 그리고 원주민들과의 갈등 문제까지…<BR>
+페어리스타의 목소리를 들어보고 결정해야죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$시델$<BR>혹시 내가 바빠서 신경을 쓸 수 없는 사이에 카라한의 소식을 듣는다면 알려 주세요.<BR>페어리스타의 힘을 모으는대로 카라한을 처치할 테니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-" mid="34" select_type="5" />
+      <talk_question mid="33"><![CDATA[<html>$시델$<BR>물론 당장은 여러가지 문제도 있으니까 내가 뭔가 하기는 아직 힘들겠지만….<BR><FONT color=#7e12d2>(시델이 어른스러운 눈으로 바라본다)</FONT><BR>밖에 와 있는 모험자님들께도 걱정해줘서 고맙다고 전해 주십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-a" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$워리어 시안$<BR>카라큘 님은…<BR>결국 돌아가셨군요…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-b" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$워리어 시안$<BR>시델이 충격을 많이 받았겠군요.<BR>카라큘 님, 무사히 회복하길 바랐는데….<BR><FONT color=#7e12d2>(워리어 시안이 침통한 표정을 짓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-c" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$워리어 시안$<BR>시델이 충격을 많이 받았겠군요.<BR>카라큘 님, 무사히 회복하길 바랐는데….<BR><FONT color=#7e12d2>(워리어 시안이 침통한 표정을 짓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-d" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$워리어 시안$<BR>그러나 손을 놓는 순간, 아무 것도 바뀌지 않게 되는 거겠죠.<BR>어서 기운을 내지 않으면…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-e" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>$워리어 시안$<BR><FONT color=#387206>{user_nick}</FONT> 님도 많이 힘드실 텐데, 여러가지로 도와주셔서 감사합니다.<BR>앞으로도 잘 부탁 드릴게요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-f" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(…그래. 손을 놓으면 아무 것도 달라지지 않아.<BR>어차피 아무 것도 모르던 때로는 돌아갈 수 없으니까.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-g" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(루나리아를 만나야 해.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-h" mid="51" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(루나리아를 찾아, 묻는 수밖에 없어.<BR>아직도 다 말해 주지 않은 이야기들을.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-i" mid="53" select_type="4" />
+      <talk_question mid="52"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-3-!next" mid="55" select_type="4" />
+      <talk_question mid="54"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(……그러나 이런 내 마음은 대체 뭘까?<BR>일루전처럼 루나리아에게 무작정 집착하고 있는 것에 불과한 걸까? 그렇다면 나는…<BR>일루전과 같은 인간인 걸까. 본질적으로 그와 똑 같이 흉폭한…)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9352</exe>
+         <exe type="talk" npc="n575_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93520,,,,,,,</exe>
+         <exe type="complete" true="">9352</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n575_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="c" />
+   <exelink qstep="2" npc="n707_sidel" sub="d" />
+   <exelink qstep="2" npc="n707_sidel" sub="e" />
+   <exelink qstep="2" npc="n707_sidel" sub="f" />
+   <exelink qstep="2" npc="n707_sidel" sub="g" />
+   <exelink qstep="2" npc="n707_sidel" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n754_cian" sub="b" />
+   <exelink qstep="3" npc="n754_cian" sub="c" />
+   <exelink qstep="3" npc="n754_cian" sub="d" />
+   <exelink qstep="3" npc="n754_cian" sub="e" />
+   <exelink qstep="3" npc="n754_cian" sub="f" />
+   <exelink qstep="3" npc="n754_cian" sub="g" />
+   <exelink qstep="3" npc="n754_cian" sub="h">0</exelink>
+   <exelink qstep="3" npc="n754_cian" sub="i">1</exelink>
+   <exelink qstep="3" npc="n754_cian" sub="!next" />
+   <journal_data recompense="93520" quest_title="찾아야만 하는 것" chapterid="7" quest_level="48" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_Karakule_House.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[찾아야만 하는 것 I]]></title>
+         <contents mid="59"><![CDATA[<html>카라큘의 상태가 위중하다. 약을 구해 오다, 젊은 시절의 카라큘을 만났지만… 아무래도 그녀는 환상이었던 것 같다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[카라큘의 오두막으로]]></destination>
+         <todo_msg mid="61"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[찾아야만 하는 것 II]]></title>
+         <contents mid="63"><![CDATA[<html>시델은 카라큘에게서 페어리스타의 이름을 계승했다. 시델과 대화해 보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[카라큘의 오두막에서 시델과 대화]]></destination>
+         <todo_msg mid="65"><![CDATA[시델과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>14,n754</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>754</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[찾아야만 하는 것 III]]></title>
+         <contents mid="67"><![CDATA[<html>시델은 카라큘의 오두막 밖의 친구들에게 감사하다는 말을 전해달라고 했다. 오두막 밖의 모험자와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장</FONT><FONT color=#a82424> - 워리어 시안</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[리버워트 선착장에서 워리어 시안과 대화]]></destination>
+         <todo_msg mid="69"><![CDATA[오두막 밖에 있는 워리어 시안과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9351</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

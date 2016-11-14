@@ -1,0 +1,340 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9270_gold_dragon_returns</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9270</qid>
+      <designer>강지영</designer>
+      <qlevel>65</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9271</nextqid>
+      <nextqname>mq34_9271_what_they_want</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[드래곤의 귀환]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1054</npcid>
+         <npcename>n1054_azelia</npcename>
+         <npckname>아젤리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1063</npcid>
+         <npcename>n1063_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9269_02.ogg}<BR>용 추종자의 왕이 여기에 오고 있다고요?<BR>정말 큰일이군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-a" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$아젤리아$<BR>당신이 말한 그 아르젠타라는 분의 도움을 받으면 좋을 텐데<BR>하필 지금 계시지 않으니 어찌해야 할까요?<BR><FONT color=#7e12d2>(그러고 보니 아르젠타가 보이지 않는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-b" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$아젤리아$<BR>아르젠타님은 조금 전까지 계셨지만 어떤 모험가와 이야기를 하고는 떠나셨습니다.<BR>옆에 있던 금발의 검사도 같이요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-level_check" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어디로 가셨는지 모르십니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-d" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$아젤리아$<BR>네. 그분들은 저와의 대화가 달갑지 않으신 모양이에요.<BR>단지, 그 금발의 검사가 <FONT color=#a82424>드래곤을 상대할 수 있는 건 드래곤</FONT>이라고 말씀 하셨습니다.<BR><FONT color=#7e12d2>(아젤리아가 주변을 두리번거리다가 뭔가 발견한 모양이다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1-d" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-" mid="18" select_type="5" />
+      <talk_question mid="17"><![CDATA[<html>$아젤리아$<BR>아! 다행히 그분들과 얘기를 하던 모험가는 출발하지 않았네요.<BR>저기 저 노란 머리를 한 인간분이십니다. 저분은 어디로 가셨는지 알지도 모르지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-" mid="96" select_type="5" />
+      <talk_question mid="95"><![CDATA[<html>$아젤리아$<BR>네. 그분들 저와의 대화를 즐기진 않는 것 같더군요.<BR>하지만 그분들의 행방을 알 만한 단서가 있을 거예요.<BR><BR>
+<FONT color=#7e12d2>(* 65Lv이후에 퀘스트를 진행할 수 있습니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-1" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-1-" mid="20" select_type="5" />
+      <talk_question mid="19"><![CDATA[<html>$워리어 시안$<BR>서둘러 아르젠타 님을 쫓아가야 하는데...<BR><FONT color=#7e12d2>(시안이 바쁜 것 같습니다. 레인저 아젤리아와 대화해보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="22" select_type="5" />
+      <talk_question mid="21"><![CDATA[<html>$아르젠타$<BR><FONT color=#7e12d2>(아르젠타가 급하게 어디론가 출발한다.</FONT><BR><FONT color=#7e12d2>아젤리아와 대화하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-a" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$워리어 시안$<BR>앗! <FONT color=#387206>{user_nick} </FONT>님! <BR>여기서 뵈니 정말 반가운걸요?<BR>음, 그러니까 여기가 엘프의 고향이니까요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-b" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>시안 님도 여기 와 계셨군요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-c" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$워리어 시안$<BR>네. 아버지를 만났거든요. 그런데 아버지가...<BR><FONT color=#7e12d2>(시안이 잠깐 말하기를 머뭇거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-d" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>$워리어 시안$<BR>자세히 말씀드릴 순 없지만 사도에게서 아버지에 대한 단서를 더 찾아야 했어요.<BR>그래서 여행을 하다 보니 여기까지 왔죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-e" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아르젠타님은요?<BR>함께 계셨다고 들었습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-f" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$워리어 시안$<BR>용 추종자들이 이 숲을 오염시키려 하고 있어요. 엘프들의 여왕 승계가 끝나기 전까지는 이 숲의 기운이 약해져서...<BR>
+아. 그러고 보니 <FONT color=#387206>{user_nick}</FONT>님도 이 정돈 알고 있겠군요?<BR><FONT color=#7e12d2>(시안이 멋쩍은 듯 머리를 긁는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-g" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네. 그래서 아르젠타 님은 어디로 가신거예요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-h" mid="38" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>$워리어 시안$<BR>간단히 말씀드리자면, 아르젠타 님은 로잘린데가 선지자의 능력을 회복할까 봐 <FONT color=#a82424>고대인의 유물</FONT>을 둔 곳을 확인하러 가셨어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-i" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네? 고대인의 유물이요??</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-i" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-j" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>$워리어 시안$<BR>아! 이 얘긴 모르시겠군요. <FONT color=#a82424>황금 초원</FONT>에 고대인의 마을에서 가져온 유물이 보관되어 있대요.<BR>로잘린데는 그 유물을 찾고 있는 것 같았어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-k" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>황금 초원이라면 용추종자와 사도들이 이미 그곳에 모이고 있다고 들었어요.<BR>그들의 왕을 맞이하기 위해서...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-l" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$워리어 시안$<BR>그래요? 그럼 큰일이네요.<BR>그들이 이미 유물을 발견한 것일 지도 모르잖아요!?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-2-l" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-2-" mid="48" select_type="5" />
+      <talk_question mid="47"><![CDATA[<html>${user_nick}$<BR><FONT color=#a82424>황금 초원</FONT><FONT color=#662500>으로 어서 가보죠.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-" mid="92" select_type="5" />
+      <talk_question mid="91"><![CDATA[<html>$아젤리아$<BR>아르젠타님과 대화를 나눈 모험자분... 못만나셨습니까?<BR>저기 저 <FONT color=#a82424>노란 머리의 모험자분</FONT>이십니다. 저분은 어디로 가셨는지 알지도 모르지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-3" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-3-" mid="50" select_type="5" />
+      <talk_question mid="49"><![CDATA[<html>$워리어 시안$<BR>유물을 벌써 빼앗겼으면 어쩌죠??<BR><FONT color=#a82424>황금 초원</FONT>으로 어서 가봐요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1063_cian-4" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1063_cian-4-" mid="52" select_type="5" />
+      <talk_question mid="51"><![CDATA[<html>$워리어 시안$<BR>제레인트 님... 이전에 제레인트 님과는 너무 다르셨어요.<BR><FONT color=#7e12d2>(시안은 당황한 듯하다. 아르젠타와 대화하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-a" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9270_01.ogg}<BR>뭐야?<BR>
+안 그래도 기분 나쁜데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-b" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>금발의 검사가 싸우는 걸 봤어요.<BR>레드 드래곤, 그리고 유물은 어떻게 되었나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-c" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>$아르젠타$<BR>난 지금 몹시 기분이 나쁘다구.<BR>
+아무리 시간이 꽤 지났다지만 내가 유물을 거기 놔뒀었는데 그걸 잊고 있었다니.<BR>너희 같은 꼬마들이랑 자주 만나다 보니 내 기억력도 점점 너희들을 닮아가는 모양이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-d" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9270_02.ogg}<BR>유물도 빼앗기고 용 추종자 놈들도 놓치다니.<BR>그 녀석이 레드 드래곤에만 정신이 팔려서 다 놓쳐버렸잖아.<BR>
+아우, 분해!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-d" image="QN_Npc_geraint_Kid.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-e" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$아르젠타$<BR>게다가 레드 드래곤도 놓친 것 같고.<BR><FONT color=#a82424>제레인트</FONT>가 따라가긴 했지만... 이미 따라잡긴 힘들어 보였단 말이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-f" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>제레인트 님이요??</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-g" mid="98" select_type="0"><![CDATA[<html>놀랐어요.</html>]]></talk_answer>
+      <talk_answer link_index="n1047_argenta-4-g" mid="99" select_type="0"><![CDATA[<html>로잘린데를 던져 버리셨거든요.</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9270_03.ogg}<BR>아! 넌 이번 제레인트를 처음 만나던가?<BR>
+좀 놀랐겠군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-h" mid="68" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>많이… 변하셨네요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-i" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>$아르젠타$<BR>그는 옛날 제레인트가 아냐. 우리는 보옥 그 자체의 순수한 힘으로 태어난 존재.<BR>새로 태어난 그에게 옛 기억이나 감정 같은 것은 남아있지 않지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-j" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>$아르젠타$<BR>그러니까 너도 예전 그 녀석만 생각하지 않는 게 좋을 거야.<BR>
+너까지 던져 버릴 지도 모르잖아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-!next" mid="93" select_type="4" />
+      <talk_question mid="73"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9270</exe>
+         <exe type="talk" npc="n1054_azelia">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">65</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n1054_azelia">c</exe>
+         <exe type="talk" npc="n1054_azelia">e</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92700,,,,,,,</exe>
+         <exe type="complete" true="">9270</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1054_azelia" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1054_azelia" sub="b" />
+   <exelink qstep="1" npc="n1054_azelia" sub="level_check">2</exelink>
+   <exelink qstep="1" npc="n1054_azelia" sub="d">0,1</exelink>
+   <exelink qstep="1" npc="n1054_azelia" sub="" />
+   <exelink qstep="1" npc="n1054_azelia" sub="" />
+   <exelink qstep="2" npc="n1063_cian" sub="b" />
+   <exelink qstep="2" npc="n1063_cian" sub="c" />
+   <exelink qstep="2" npc="n1063_cian" sub="d" />
+   <exelink qstep="2" npc="n1063_cian" sub="e" />
+   <exelink qstep="2" npc="n1063_cian" sub="f" />
+   <exelink qstep="2" npc="n1063_cian" sub="g" />
+   <exelink qstep="2" npc="n1063_cian" sub="h" />
+   <exelink qstep="2" npc="n1063_cian" sub="i" />
+   <exelink qstep="2" npc="n1063_cian" sub="j" />
+   <exelink qstep="2" npc="n1063_cian" sub="k" />
+   <exelink qstep="2" npc="n1063_cian" sub="l">0,1</exelink>
+   <exelink qstep="2" npc="n1063_cian" sub="" />
+   <exelink qstep="4" npc="n1047_argenta" sub="b" />
+   <exelink qstep="4" npc="n1047_argenta" sub="c" />
+   <exelink qstep="4" npc="n1047_argenta" sub="d" />
+   <exelink qstep="4" npc="n1047_argenta" sub="e" />
+   <exelink qstep="4" npc="n1047_argenta" sub="f" />
+   <exelink qstep="4" npc="n1047_argenta" sub="g" />
+   <exelink qstep="4" npc="n1047_argenta" sub="g" />
+   <exelink qstep="4" npc="n1047_argenta" sub="h" />
+   <exelink qstep="4" npc="n1047_argenta" sub="i" />
+   <exelink qstep="4" npc="n1047_argenta" sub="j">0</exelink>
+   <exelink qstep="4" npc="n1047_argenta" sub="!next">1</exelink>
+   <journal_data recompense="92700" quest_title="드래곤의 귀환" chapterid="12" quest_level="65" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Azelia.dds</contents_image>
+         <destination_pos>34,n1054</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1054</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[드래곤의 귀환 I]]></title>
+         <contents mid="76"><![CDATA[<html>사도들의 왕에 대해 아젤리아에게 알렸다.<BR>그와 관련해 아젤리아가 할 이야기가 남은 듯 하다. 그녀와 대화해 보자.<BR>
+ <BR>
+<FONT color=#7e12d2>※ 65Lv 이상이 되어야 다음으로 진행할 수 있습니다.</FONT><BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 아젤리아</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[아젤리아와 대화]]></destination>
+         <todo_msg mid="78"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>34,n1063</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1063</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[드래곤의 귀환 II]]></title>
+         <contents mid="80"><![CDATA[<html>사라진 아르젠타가 있던 자리에는 워리어 시안이 서 있다.<BR>아르젠타의 행방에 대해 물어보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[워리어 시안과 대화]]></destination>
+         <todo_msg mid="82"><![CDATA[아르젠타가 사라진 곳에 서 있는 워리어 시안과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_78.dds</contents_image>
+         <destination_pos>781,0,0</destination_pos>
+         <destination_mode>custom:781@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[드래곤의 귀환 III]]></title>
+         <contents mid="84"><![CDATA[<html>아르젠타는 고대인의 유물을 사도에게 빼앗기지 않기 위해 황금 초원으로 향했다고 한다.<BR>아르젠타를 쫓아 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 황금 초원</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[황금 초원 수색]]></destination>
+         <todo_msg mid="86"><![CDATA[아르젠타를 쫓아 황금 초원으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[드래곤의 귀환 III]]></title>
+         <contents mid="88"><![CDATA[<html>황금 초원에서 사도들과 금발의 전사가 전투하는 것을 목격했다.<BR>아르젠타는 그에 대해 알고 있을 것 같다. 아르젠타와 대화를 나눠 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[아르젠타와 대화]]></destination>
+         <todo_msg mid="90"><![CDATA[아누 아렌델 관문으로 돌아가 아르젠타를 만나세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9269</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

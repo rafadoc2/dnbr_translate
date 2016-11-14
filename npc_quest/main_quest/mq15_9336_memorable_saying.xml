@@ -1,0 +1,405 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9336_memorable_saying</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>9336</qid>
+      <designer>정진호</designer>
+      <qlevel>42</qlevel>
+      <qdesc>돌아와서 시델과 대화. 차티의 할아버지를 찾으려 한다고.
+흩어져서 찾아보자고 한다. 유저는 고대의 도서관으로 간다.
+
+그곳으로 갔다가, 어쌔신은 일루전을 본다. 그러나 뭔가 다르다…
+긴장하고 말을 걸면서, 유저는 '이것은 내 기억이다. 그러니까 내 기억을 다시 떠올리고 있는 것이다' 라는 사실을 깨닫는다.
+실체가 있는 일루전이 아니라 과거의 모습인 것 같다.
+
+일루전의 모습을 한 어쌔신은 지금의 어쌔신과 비슷한 어조로, '루나. 아누 아렌델을 통하면 되는 것 맞지? 내가 조사한 바로는 콘클라베가 곧 소집될 것 같으니까 그때…' 하고 열심히 루나에게 토로하고 있다.
+
+이내 일루전의 모습은 사라지고 루나만이 서 있다.
+'한 걸음에 백 년을 오가는 것도 이상하지 않다. 네게는 옛날의 대화겠지만 내게는 지금 방금 나눈 대화이기도 하다.' 고 말한다.
+
+시간이 점점 더 요동치고 있고, 루나는 힘겨운 듯 보인다.
+'만약의 경우 나를 두고 가. 너까지 이 괴상한 시간의 미로에 갇히지 말고'</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9337</nextqid>
+      <nextqname>mq15_9337_the_sibling</nextqname>
+      <nextqnpc>n1173_lunaria</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[기억 속의 말]]></qkname>
+      <qnpc>
+         <npcid>1169</npcid>
+         <npcename>n1169_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1172</npcid>
+         <npcename>n1172_illusion</npcename>
+         <npckname>일루전</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1173</npcid>
+         <npcename>n1173_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-accepting-acceptted" mid="6" select_type="2" />
+      <talk_question mid="5"><![CDATA[<html>$상인 루시타$<BR>어라? 왜 다시 돌아오셨나요?<BR>차티 언니는 못 만나셨어요?<BR><FONT color=#7e12d2>(루시타가 고개를 갸웃거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="QW_Karakule_House.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-1-" mid="9" select_type="5" />
+      <talk_question mid="8"><![CDATA[<html>$상인 루시타$<BR>그러고보니 <FONT color=#a82424>시델</FONT> 님이 아주 어두운 얼굴이셨던 것 같아요.<BR>카라큘 님의 오두막으로 가 보시는 게 어떨까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>카라큘의 오두막</FONT>으로 돌아가서 시델이란 그 아이를 만나는 거지?<BR>흐음~ 수고해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-1-" mid="14" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>$루나리아$<BR>나는 아무 것도 해줄 말이 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1172_illusion-1-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$일루전$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Charty.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-a" mid="19" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>$시델$<BR>차티는 그 믿을 만한 사람을 만나러 가 버린 것 같아요.<BR>…네? 아, <FONT color=#a82424>차티</FONT>를 못 보셨나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-b" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$시델$<BR>시안 님과 트리아나 님이 그 믿을 만한 사람… 이라는 분을 만난 모양인데, 그 사람이 스승님께 편지를 보냈대요.<BR>그 편지를 읽고 카라큘 스승님도 굉장히 심각한 표정이시고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-c" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$시델$<BR>어딜 나갈 모양이신데, 제게는 목적지를 알려주지 않으셨어요.<BR><FONT color=#7e12d2>(시델이 풀이 죽어 고개를 떨군다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-d" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$시델$<BR>거기다 차티도 말 없이 어디론가 가 버렸구요.<BR>또 그 믿을 만한 사람을 만나러 간 거라면… 으으, 전 어떻게 하면 좋죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-e" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$시델$<BR>차티도 그렇고, 스승님도 그렇고, 어디로 간다는 말도 없이…<BR>나만 따돌리는 것 같아요. 으으으...<BR><FONT color=#7e12d2>(시델이 속상하다는 듯 중얼거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-f" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$시델$<BR>스승님께서 따라와도 좋다곤 안 하셨지만, 짚이는 데가 있으니까 가 볼까요…?<BR>들키면 혼나겠지만… 그렇지만 역시 걱정도 되고, 차티도 찾아야 하니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-g" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>선택을 하는 건 너 자신이니까.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-g" image="QN_Npc_Charty.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$시델$<BR>그 말씀이 맞아요.<BR>전 스승님의 뒤를 쫓을테니, <FONT color=#387206>{user_nick}</FONT> 님은 <FONT color=#a82424>차티</FONT>를 찾아 봐 주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_52.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_question mid="37"><![CDATA[<html>$시델$<BR>제 생각에, 차티는 <FONT color=#a94407>고대의 도서관</FONT>에 있을 것 같아요.<BR>그애는 그곳에는 꽤 익숙하거든요.<BR>
+위험한 장치들 사이를 제법 자유롭게 돌아다니곤 하죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1172_illusion-3-a" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html><FONT color=#7e12d2>(일루전의 모습이 어쩐지 평소와는 달라 보인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-a" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1172_illusion-3-b" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html><FONT color=#2b2723>${user_nick}$</FONT><FONT color=#7e12d2><BR></FONT><FONT color=#662500>(가까이 가 볼까?<BR>이건 내게서 분리된 그 일루전이라기 보다는 마치 신기루같은 느낌인데…?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1172_illusion-3-c" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html><FONT color=#2b2723>$일루전$<BR></FONT><FONT color=#2b2723>…이제 멀지 않았어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-c" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1172_illusion-3-d" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>(그렇군. 이건 나를 노리는 일루전이 아니야.<BR>이건 내 기억이다. 아니, 일루전의 기억. 나는 지금 내 안의 일루전의 기억을 다시 떠올리고 있는 거야.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-d" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1172_illusion-3-e" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html><FONT color=#2b2723>$일루전$<BR>듣고 있어? </FONT><FONT color=#a82424>루나</FONT><FONT color=#2b2723>.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-e" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1172_illusion-3-f" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html><FONT color=#2b2723>$루나리아$<BR>듣고 있어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1172_illusion-3-g" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html><FONT color=#2b2723>$일루전$<BR>루나. 아누 아렌델을 통하면 되는 것, 맞지?<BR>내가 조사한 바로는 </FONT><FONT color=#a82424>콘클라베</FONT><FONT color=#2b2723>가 곧 소집될 것 같아. 그러니까 그때에…</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-g" image="" itemindex="" portrait_left="NPC_Left_Lunaria.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1172_illusion-3-h" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>$루나리아$<BR>콘클라베…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-h" image="QN_archer_nerwin_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1172_illusion-3-i" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html><FONT color=#2b2723>$일루전$<BR>엘프 여왕의 승계식 같은 거래.<BR>블랙 드래곤 카라스의 레이드에 참여했던 엘프 왕녀가 부상을 입고 귀환했는데, 그녀가 새 여왕이 될 지도 모른다는 소문이 있어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1172_illusion-3-j" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html><FONT color=#2b2723>$일루전$<BR>그때 생명의 나무의 옥좌가 비게 되니까…<BR></FONT><FONT color=#7e12d2>(일루전이 눈을 빛내며 루나리아에게 무언가를 설명하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1172_illusion-4" mid="61" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html><FONT color=#7e12d2>(목소리가 흐려진다. 회상의 그 다음은 보이지 않는다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-4" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1172_illusion-4-a" mid="65" select_type="2" />
+      <talk_question mid="64"><![CDATA[<html><FONT color=#7e12d2>(더 이상 아무 것도 보이지 않는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1172_illusion-4-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1172_illusion-4-" mid="67" select_type="5" />
+      <talk_question mid="66"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(…루나리아는 뭔가를 알고 있을까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-a" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>$루나리아$<BR>….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-b" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내가 방금 본 기억을 혹시 너도 봤어?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-c" mid="74" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>$루나리아$<BR>아니. 내게는 아무 것도 보이지 않았어.<BR>뭔가를 봤다면, 그건 네 안의 누군가가 지닌 기억이 되살아난 거겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-d" mid="76" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내 안의 누군가라면 일루전 말야?<BR>루나리아. 내가 방금 본 기억 속의 일루전은 지금의 나와 더욱 비슷하게 보였어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-e" mid="78" select_type="2" />
+      <talk_question mid="77"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>일루전은 아누 아렌델을 통해 어딘가로 갈 생각인 것 같았지.<BR>루나리아, 너와 함께 말이야.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-f" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>$루나리아$<BR>….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-g" mid="82" select_type="2" />
+      <talk_question mid="81"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내게 할 말이 없어?<BR>루나리아.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-h" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>$루나리아$<BR>…없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-i" mid="86" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>$루나리아$<BR>한 걸음에 백 년이 흐를지, 천 년이 거슬러 돌아올지, 나는 몰라.<BR>그 어떤 일이 벌어져도 이상하지 않아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-j" mid="88" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>$루나리아$<BR><FONT color=#387206>{user_nick}</FONT> 네게는 옛날의 대화겠지만 내게는 지금 방금 나눈 대화이기도 해.<BR>네게는 기억이지만 내게는 현재일 수도 있겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-k" mid="90" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무슨 의미야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-l" mid="92" select_type="2" />
+      <talk_question mid="91"><![CDATA[<html>$루나리아$<BR>시간은 흘러가는데 모든 것은…<BR>…모든 것은, 예언도 회상도 아닌 채 그냥 여기에 있어. 그래서 나는… 아무 것도….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-m" mid="94" select_type="2" />
+      <talk_question mid="93"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-n" mid="96" select_type="2" />
+      <talk_question mid="95"><![CDATA[<html>$루나리아$<BR>………………..<BR>시간이 마치 물결 같아. 거대한 물결처럼 요동치며 찰나와 찰나를 뒤엎지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-o" mid="98" select_type="2" />
+      <talk_question mid="97"><![CDATA[<html>$루나리아$<BR><FONT color=#662500>{user_nick}</FONT>…. 혹시 무슨 일이 생기면, 나를 두고 가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-p" mid="100" select_type="2" />
+      <talk_question mid="99"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>뭐? 지금까지 충분히 무슨 일 생겼어!<BR>갑자기 무슨 소리를 하는 거야? 루나리아!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-q" mid="102" select_type="4" />
+      <talk_question mid="101"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1173_lunaria-4-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1173_lunaria-4-!next" mid="104" select_type="2" />
+      <talk_question mid="103"><![CDATA[<html>$루나리아$<BR>….너까지 이 괴상한 시간의 미로에 갇히지는 마.<BR>모든 건 내가… 미래도 과거도 아닌 그때 내가… 너를….</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9336</exe>
+         <exe type="talk" npc="n709_trader_lucita">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="4,5,6">1417</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">201417</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93360,,,,,,,</exe>
+         <exe type="complete" true="">9336</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="c" />
+   <exelink qstep="1" npc="n707_sidel" sub="d" />
+   <exelink qstep="1" npc="n707_sidel" sub="e" />
+   <exelink qstep="1" npc="n707_sidel" sub="f" />
+   <exelink qstep="1" npc="n707_sidel" sub="g" />
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n1172_illusion" sub="b" />
+   <exelink qstep="3" npc="n1172_illusion" sub="c" />
+   <exelink qstep="3" npc="n1172_illusion" sub="d" />
+   <exelink qstep="3" npc="n1172_illusion" sub="e" />
+   <exelink qstep="3" npc="n1172_illusion" sub="f" />
+   <exelink qstep="3" npc="n1172_illusion" sub="g" />
+   <exelink qstep="3" npc="n1172_illusion" sub="h" />
+   <exelink qstep="3" npc="n1172_illusion" sub="i" />
+   <exelink qstep="3" npc="n1172_illusion" sub="j" />
+   <exelink qstep="3" npc="n1172_illusion" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n1172_illusion" sub="" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="b" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="c" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="d" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="e" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="f" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="g" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="h" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="i" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="j" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="k" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="l" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="m" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="n" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="o" />
+   <exelink qstep="4" npc="n1173_lunaria" sub="p">0</exelink>
+   <exelink qstep="4" npc="n1173_lunaria" sub="q">1</exelink>
+   <exelink qstep="4" npc="n1173_lunaria" sub="!next" />
+   <journal_data recompense="93360" quest_title="기억 속의 말" chapterid="6" quest_level="42" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[기억 속의 말 I]]></title>
+         <contents mid="107"><![CDATA[<html>다른 소식은 없는 것 같다. 일단 카라큘의 오두막으로 돌아가 시델을 만나보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="109"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>523,0,0</destination_pos>
+         <destination_mode>custom:521@1,522@1,523@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="111"><![CDATA[기억 속의 말 II]]></title>
+         <contents mid="112"><![CDATA[<html><FONT color=#2b2723>시델이 차티를 찾아봐 달라고 한다. 고대의 도서관을 수색해 보자.</FONT><BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(고대의 창고 입구)</FONT><FONT color=#a82424> - 고대의 도서관</FONT><BR>
+ </html>]]></contents>
+         <destination mid="113"><![CDATA[고대의 도서관]]></destination>
+         <todo_msg mid="114"><![CDATA[고대의 도서관을 수색하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>523,n1172</destination_pos>
+         <destination_mode>custom:521@1,522@1,523@4</destination_mode>
+         <statemark_npcid>1172</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="115"><![CDATA[기억 속의 말 II]]></title>
+         <contents mid="116"><![CDATA[<html>일루전이 또 분리된 것 같다. 하지만 무언가 상태가 이상하다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(고대의 창고 입구)</FONT> <FONT color=#a82424>- 고대의 도서관(일루전)</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[고대의 도서관의 일루전과 대화]]></destination>
+         <todo_msg mid="118"><![CDATA[갑자기 나타난 일루전과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>523,n1173</destination_pos>
+         <destination_mode>custom:521@1,522@1,523@4</destination_mode>
+         <statemark_npcid>1173</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="119"><![CDATA[기억 속의 말 II]]></title>
+         <contents mid="120"><![CDATA[<html>일루전의 기억을 엿본 것 같다. 루나리아는 뭔가 알고 있을까?<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(고대의 창고 입구)</FONT> <FONT color=#a82424>- 고대의 도서관(루나리아)</FONT></html>]]></contents>
+         <destination mid="121"><![CDATA[고대의 도서관의 루나리아와 대화]]></destination>
+         <todo_msg mid="122"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9335</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

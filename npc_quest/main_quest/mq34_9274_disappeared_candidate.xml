@@ -1,0 +1,460 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9274_disappeared_candidate</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9274</qid>
+      <designer>강지영</designer>
+      <qlevel>65</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9275</nextqid>
+      <nextqname>mq34_9275_clue_that_she_left</nextqname>
+      <nextqnpc>n1067_elder_elf</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[사라진 후보]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1058</npcid>
+         <npcename>n1058_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1059</npcid>
+         <npcename>n1059_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1067</npcid>
+         <npcename>n1067_elder_elf</npcename>
+         <npckname>엘프 장로</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1074</npcid>
+         <npcename>n1074_azelia_dead</npcename>
+         <npckname>아젤리아의 시체</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$엘프 장로$<BR>그런데도 그들은 왜 돌아오지 않는 것일까요.<BR><FONT color=#7e12d2>(엘프 장로의 표정이 몹시 어둡다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-a" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$엘프 장로$<BR>후보들이... 순례를 떠난 다른 후보들이 아무도 돌아오지 않았습니다.<BR>다녀오기에 충분한 시간이 이미 지났는데도 말입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-b" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>조금 더 기다려 보면 어떨까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-c" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9273_05.ogg}<BR>아닙니다. 몹시 불안한 느낌이 들어요. 무언가 잘못된 것 같습니다.<BR>하지만 콘클라베때문에 경비병을 보내 그들을 찾아볼 수도 없고 난처하군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-d" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럼 제가 그들을 찾아보겠습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-e" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$엘프 장로$<BR>그래 주시겠습니까?<BR><FONT color=#7e12d2>(엘프 장로가 다행스러운 표정을 짓다가 갑자기 표정이 굳어진다)<BR></FONT>아니, 아닙니다. 그러지 마십시오. 그러다 당신까지 돌아오지 않으면....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-f" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저는 괜찮아요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-g" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$엘프 장로$<BR>그들 모두 날렵한 숲의 아이들이었습니다. 문제는 벌어졌지만, 원인은 어둠 속에 감추어져 있지요.<BR>당신까지 휘말릴 수 있는 미지의 위험을 앞에 두고 쉽게 결정할 수는 없습니다.<BR><FONT color=#7e12d2>(옆에 있던 유벤시엘이 말을 건다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-g" image="" itemindex="" portrait_left="NPC_Right_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-h" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$아처 유벤시엘$<BR>걱정하지 마십시오.<BR>
+제가 <FONT color=#387206>{user_nick}</FONT> 님을 지킬 것입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-i" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$엘프 장로$<BR>당신이야말로 가장 의심스러운 자라는 걸 모르겠습니까?<BR>유벤시엘, 당신이 우리에게 등 돌리고 떠났을 때 나도 그 자리에 있었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-j" mid="127" select_type="2" />
+      <talk_question mid="126"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9273_06.ogg}<BR>그대의 실력은 믿지만, 그대의 마음은 믿을 수가 없군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-j" image="" itemindex="" portrait_left="NPC_Right_Yubaensiael.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-k" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$아처 유벤시엘$<BR>절 못 미더워 하시는 건 이해합니다.<BR>하지만 <FONT color=#387206>{user_nick} </FONT>님은 제게 또 한 사람의 그분과 다름없습니다.<BR>전 <FONT color=#387206>그녀</FONT>를 그저 지킬 뿐입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-l" mid="128" select_type="0"><![CDATA[<html>(일단 중재하도록 하자)</html>]]></talk_answer>
+      <talk_answer link_index="n1067_elder_elf-1-l" mid="129" select_type="0"><![CDATA[<html>싸우지 마세요.</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9273_07.ogg}<BR>그녀? 아 아마릴리스님... 어, 어찌 당신이 감히 그분을 입에 담을 수 있습니까!!<BR><FONT color=#7e12d2>(싸움이 계속될 것 같다. 일단 중재하는 게 낫겠다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-m" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>유벤시엘 님과 함께 다녀올게요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-n" mid="130" select_type="0"><![CDATA[<html>저를 해치지는 않을 것 같아요.</html>]]></talk_answer>
+      <talk_answer link_index="n1067_elder_elf-1-n" mid="131" select_type="0"><![CDATA[<html>믿는 것은 아니지만...</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$엘프 장로$<BR><FONT color=#387206>{user_nick} </FONT>님은 이자를 믿으시는 겁니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-o" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이것이 제 텔레지아라면, 저는 무사히 돌아오겠지요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-o" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-" mid="38" select_type="5" />
+      <talk_question mid="37"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9273_08.ogg}<BR><FONT color=#7e12d2>(엘프 장로가 망설이다가 대답한다)<BR></FONT><FONT color=#2b2723>그럼 마음 가는 대로 하세요. 콘클라베때 후보의 판단은 모두 숙명을 향하는 길이니..<BR><FONT color=#a82424>황금 초원</FONT>으로 가면 됩니다. 아젤리아와 함께 모두 무사히 돌아오길....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-1" image="QN_Npc_Elder_elf.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-1-" mid="40" select_type="5" />
+      <talk_question mid="39"><![CDATA[<html>$아처 유벤시엘$<BR>장로가 다른 여왕 후보에 대해 할 말이 있다고 했던 것 같군요.<BR><FONT color=#7e12d2>(엘프 장로와 대화 하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1059_yuvenciel-1" image="QN_Npc_Elder_elf.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1059_yuvenciel-1-" mid="42" select_type="5" />
+      <talk_question mid="41"><![CDATA[<html>$아처 유벤시엘$<BR>장로가 다른 여왕 후보에 대해 할 말이 있다고 했던 것 같군요.<BR><FONT color=#7e12d2>(엘프 장로와 대화 하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1074_azelia_dead-1-" mid="44" select_type="5" />
+      <talk_question mid="43"><![CDATA[<html>$아젤리아의 시체$<BR><FONT color=#7e12d2>(아직 따뜻한 온기가 느껴진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="46" select_type="5" />
+      <talk_question mid="45"><![CDATA[<html>$아르젠타$<BR>콘클라베에 참가한다며? 엘프도 어지간히 쓸만한 자가 없나보군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_question mid="48"><![CDATA[<html>$엘프 장로$<BR>유벤시엘, 그자를 너무 믿지는 마십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1059_yuvenciel-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_question mid="49"><![CDATA[<html>$아처 유벤시엘$<BR>다른 후보들을 찾으러 출발해야 하지 않을까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_question mid="50"><![CDATA[<html>$아처 유벤시엘$<BR>저런... 우리가 너무 늦었군요.<BR>시체를 살펴봐야 하지 않을까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1074_azelia_dead-2-a" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아젤리아의 시체$<BR><FONT color=#7e12d2>(아직 따뜻한 온기가 느껴진다. 누군가에게 찔린 흔적을 발견했다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-2-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1074_azelia_dead-2-b" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아... 아젤리아 님?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-2-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1074_azelia_dead-2-" mid="56" select_type="5" />
+      <talk_question mid="55"><![CDATA[<html>$아젤리아의 시체$<BR><FONT color=#7e12d2>(시체가 대답할 리 없다. 유벤시엘과 대화하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-3-a" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>$아처 유벤시엘$<BR>저런... 우리가 너무 늦었군요.<BR>뭔가 발견한 거라도?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-3-b" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>모르겠어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-3-c" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$아처 유벤시엘$<BR>가엾은 <FONT color=#387206>{user_nick}</FONT> 님.<BR>
+의식하지 못하시는 모양입니다만, 당신은 지금 울음을 터뜨릴 것 같은 표정을 짓고 계시군요.<BR>
+전 이분을 모릅니다만, 그대를 슬프게 할 수 있다는 것이 부럽습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-3-d" mid="134" select_type="0"><![CDATA[<html>차마 더 볼 수 없어요.</html>]]></talk_answer>
+      <talk_answer link_index="n1058_yuvenciel-3-e" mid="135" select_type="0"><![CDATA[<html>(우선 살펴본다)</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$아처 유벤시엘$<BR>더 살펴봐야 하지 않을까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-3-e" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>$아처 유벤시엘$<BR>네. 그러면 제가 살펴보겠습니다.<BR>
+<FONT color=#7e12d2>(유벤시엘이 아젤리아의 시신을 살핀다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-3-f" mid="138" select_type="2" />
+      <talk_question mid="137"><![CDATA[<html>$아처 유벤시엘$<BR>저런저런. 그렇게 인간 여자아이들같은 얼굴로 애쓰실 필요 없습니다.<BR>
+일단 <FONT color=#a82424>장로님</FONT>께 알리도록 하죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-3-f" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-3-" mid="68" select_type="5" />
+      <talk_question mid="67"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(돌아가는 길에 아르젠타 님께 알려야겠다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1074_azelia_dead-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="149"><![CDATA[<html>$아젤리아의 시체$<BR><FONT color=#7e12d2>(시체가 대답할 리 없다. 유벤시엘과 대화하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-a" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>$아르젠타$<BR>콘클라베는 잘 진행되고 있는 거야?<BR>문제의 원흉인 네가 있으니 어지간히 걱정된단 말이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-b" mid="140" select_type="0"><![CDATA[<html>아젤리아 님이...</html>]]></talk_answer>
+      <talk_answer link_index="n1047_argenta-4-b" mid="141" select_type="0"><![CDATA[<html>(고개를 숙인다)</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$아르젠타$<BR>…응? 너 왜 우니. 누가 때렸어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-c" mid="74" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>$아르젠타$<BR>제대로 좀 이야기 해 봐. 아~ 답답해라.<BR>
+아젤리아가 뭐? 그 엘프가 널 때렸어?<BR>
+그 엘프 너랑 친한 줄 알았는데, 아니었나 보네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-d" mid="76" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아젤리아 님이 죽었어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-e" mid="78" select_type="2" />
+      <talk_question mid="77"><![CDATA[<html>$아르젠타$<BR>뭐야. 겨우 그런 일이야? 너희는 원래 죽잖아. 그것 때문에 울고 있었어?<BR>엘프는 인간보다야 오래 산다지만, 그거 한 백년 이백 년쯤 일찍 죽는 게 뭐 어때서?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-f" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그녀도 저처럼 여왕 후보였어요.</FONT><BR>
+<FONT color=#662500>콘클라베 중에 살해 당한 것 같아요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-g" mid="82" select_type="2" />
+      <talk_question mid="81"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9273_01.ogg}<BR>여왕 후보가 살해당했다고? 콘클라베 중에?<BR>그건 좀 문젠데? 그러게 내가 조심하라고 했잖아!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-h" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>$아르젠타$<BR>뭐 하나 맘 놓게 되는 일이 없구나. 귀찮게.<BR>장로한테는 알렸어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-i" mid="86" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>지금 가는 길이에요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-" mid="88" select_type="5" />
+      <talk_question mid="87"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9273_02.ogg}<BR>그럼 어서 가봐. 너도 조심하고. <BR>그러니까 여왕 후보가 한 명도 남지 않으면 곤란하니까 하는 말이야. 알아들어?<BR>딱히 널 걱정해서 하는 소리는 아니니까, 오해는 하지 말고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1058_yuvenciel-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1058_yuvenciel-4-" mid="123" select_type="5" />
+      <talk_question mid="122"><![CDATA[<html>$아처 유벤시엘$<BR>지금 상태로는 더이상 단서를 찾진 못하겠군요.<BR>일단 <FONT color=#a82424>장로님</FONT>께 돌아가도록 하죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-5" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-5-a" mid="90" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>$엘프 장로$<BR><FONT color=#a82424>아젤리아</FONT>가 살해되었다는 말입니까?<BR>어허. 큰일이군요. 신성한 의식 중에 어떻게 이런 비극이...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-5-b" mid="92" select_type="2" />
+      <talk_question mid="91"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9273_09.ogg}<BR>누군가 숲의 결계를 열어줘 의식을 망친 것이 분명합니다.<BR>아젤리아의 주변은 잘 살펴봤나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-5-c" mid="144" select_type="0"><![CDATA[<html>죄송합니다.</html>]]></talk_answer>
+      <talk_answer link_index="n1067_elder_elf-5-c" mid="145" select_type="0"><![CDATA[<html>너무 놀라서, 잘 볼 수 없었어요.</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$엘프 장로$<BR>
+<FONT color=#7e12d2>(상황을 전해 들은 장로가 한숨을 쉰다)</FONT><BR>
+그렇군요. 별 다른 것은 없었지만, 경황이 없었던 모양이군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-5-d" mid="96" select_type="2" />
+      <talk_question mid="95"><![CDATA[<html>$엘프 장로$<BR>이해합니다. 당신은 여왕 후보 중에서도 아젤리아와 친한 편이셨지요.<BR>우리 엘프에게도 동족의 죽음은 익숙하지 않은 일입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-5-e" mid="147" select_type="2" />
+      <talk_question mid="146"><![CDATA[<html>$엘프 장로$<BR>자연스러운 변화를 이해하고 받아 들이는 것과, 재난을 용인하고 체념하는 일은 어디까지나 별개이니까요.<BR>
+엘프에게도 이별의 슬픔은 괴롭지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-5-f" mid="98" select_type="2" />
+      <talk_question mid="97"><![CDATA[<html>$엘프 장로$<BR>하지만 상황이 이렇게 되니, 다른 아이들이 무사할지 더욱 걱정되는군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-5-!next" mid="124" select_type="4" />
+      <talk_question mid="99"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-" mid="152" select_type="5" />
+      <talk_question mid="151"><![CDATA[<html>$아르젠타$<BR>콘클라베 중에 여왕 후보가 여왕 후보가 살해당했다니...<BR>네가 나타나면 항상 이렇군. 보고 해야 한다며, 어서 가봐<BR>
+<FONT color=#7e12d2>(엘프 장로에게 가서 상황을 전하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9274</exe>
+         <exe type="talk" npc="n1067_elder_elf">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92740,,,,,,,</exe>
+         <exe type="complete" true="">9274</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1067_elder_elf" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1067_elder_elf" sub="b" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="c" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="d" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="e" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="f" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="g" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="h" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="i" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="j" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="k" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="l" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="l" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="m" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="n" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="n" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="o">0,1</exelink>
+   <exelink qstep="1" npc="n1067_elder_elf" sub="" />
+   <exelink qstep="2" npc="n1074_azelia_dead" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n1074_azelia_dead" sub="" />
+   <exelink qstep="3" npc="n1058_yuvenciel" sub="b" />
+   <exelink qstep="3" npc="n1058_yuvenciel" sub="c" />
+   <exelink qstep="3" npc="n1058_yuvenciel" sub="d" />
+   <exelink qstep="3" npc="n1058_yuvenciel" sub="e" />
+   <exelink qstep="3" npc="n1058_yuvenciel" sub="e" />
+   <exelink qstep="3" npc="n1058_yuvenciel" sub="f">0,1</exelink>
+   <exelink qstep="3" npc="n1058_yuvenciel" sub="" />
+   <exelink qstep="4" npc="n1047_argenta" sub="b" />
+   <exelink qstep="4" npc="n1047_argenta" sub="b" />
+   <exelink qstep="4" npc="n1047_argenta" sub="c" />
+   <exelink qstep="4" npc="n1047_argenta" sub="d" />
+   <exelink qstep="4" npc="n1047_argenta" sub="e" />
+   <exelink qstep="4" npc="n1047_argenta" sub="f" />
+   <exelink qstep="4" npc="n1047_argenta" sub="g" />
+   <exelink qstep="4" npc="n1047_argenta" sub="h" />
+   <exelink qstep="4" npc="n1047_argenta" sub="i">0,1</exelink>
+   <exelink qstep="4" npc="n1047_argenta" sub="" />
+   <exelink qstep="5" npc="n1067_elder_elf" sub="b" />
+   <exelink qstep="5" npc="n1067_elder_elf" sub="c" />
+   <exelink qstep="5" npc="n1067_elder_elf" sub="c" />
+   <exelink qstep="5" npc="n1067_elder_elf" sub="d" />
+   <exelink qstep="5" npc="n1067_elder_elf" sub="e" />
+   <exelink qstep="5" npc="n1067_elder_elf" sub="f">0</exelink>
+   <exelink qstep="5" npc="n1067_elder_elf" sub="!next">1</exelink>
+   <journal_data recompense="92740" quest_title="사라진 후보" chapterid="12" quest_level="65" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[사라진 후보 I]]></title>
+         <contents mid="103"><![CDATA[<html>순례를 떠난 후보가 돌아오지 않아 엘프 장로가 걱정하고 있다.<BR>엘프 장로와 대화를 더 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 생명의 나무 앞(엘프 장로)</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="105"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_78.dds</contents_image>
+         <destination_pos>781,n1074</destination_pos>
+         <destination_mode>custom:781@4</destination_mode>
+         <statemark_npcid>1074</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[사라진 후보 II]]></title>
+         <contents mid="107"><![CDATA[<html>아젤리아를 찾아 그녀가 순례를 떠난 황금 초원으로 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- 황금 초원(아젤리아)</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[황금 초원 탐색]]></destination>
+         <todo_msg mid="109"><![CDATA[아젤리아를 찾아 황금 초원으로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>781,n1058</destination_pos>
+         <destination_mode>custom:781@1</destination_mode>
+         <statemark_npcid>1058</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[사라진 후보 III]]></title>
+         <contents mid="111"><![CDATA[<html>황금 초원에서 아젤리아의 시체를 발견했다.<BR>유벤시엘과 대화를 해 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- 황금 초원(유벤시엘)</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[유벤시엘과 대화]]></destination>
+         <todo_msg mid="113"><![CDATA[아젤리아의 시체를 발견했습니다. 유벤시엘과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[사라진 후보 IV]]></title>
+         <contents mid="115"><![CDATA[<html>아젤리아의 죽음에 대해 장로에게 알려야 한다. <BR>그 전에 아누 아렌델 관문에 있는 아르젠타에게도 알리자.<BR>
+<BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[아르젠타와 대화]]></destination>
+         <todo_msg mid="117"><![CDATA[아누 아렌델 관문으로 돌아가 다른 이에게 알리세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="118"><![CDATA[사라진 후보 V]]></title>
+         <contents mid="119"><![CDATA[<html>아젤리아의 죽음에 대해 장로에게 알려야 한다. <BR>생명의 나무 앞으로 돌아가 장로와 대화하자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 생명의 나무 앞(엘프 장로)</FONT></html>]]></contents>
+         <destination mid="120"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="121"><![CDATA[생명의 나무의 엘프 장로에게 찾아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9273</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

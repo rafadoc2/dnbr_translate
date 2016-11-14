@@ -1,0 +1,334 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9370_testimony</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9370</qid>
+      <designer>최지은</designer>
+      <qlevel>54</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9371</nextqid>
+      <nextqname>mq15_9371_double_or_quits</nextqname>
+      <nextqnpc>n754_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[또 다른 증언]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>754</npcid>
+         <npcename>n754_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>831</npcid>
+         <npcename>n831_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>858</npcid>
+         <npcename>n858_place_of_trail</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="8" select_type="3" />
+      <talk_question mid="7"><![CDATA[<html>$시델$<BR>진실의 거울… 그게 도움이 되면 좋겠구나.<BR>나는 다른 모험자들을 돕고 있어. 바르낙 님이 어서 편안해지길 바랄 뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QW_59.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="12" select_type="5" />
+      <talk_question mid="10"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(진실의 거울에 비친 것은 돌연변이 서식지 쪽이었지.<BR>그쪽으로 가 보자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-1" image="QW_59.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n858_place_of_trail-1-" mid="15" select_type="5" />
+      <talk_question mid="14"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(거울 속에 떠오르는 영상은 돌연변이 서식지를 가리키고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_question mid="16"><![CDATA[<html>$워리어 시안$<BR>아, 많이 바쁘신 모양이군요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-a" mid="19" select_type="0"><![CDATA[<html>누구세요?</html>]]></talk_answer>
+      <talk_answer link_index="n831_yuvenciel-1-a" mid="20" select_type="0"><![CDATA[<html>나를 아는 건가?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$낯선 남자 엘프$<BR>…이건 또 의외의 만남.<BR>이럴 때면 우리 동족들이 신봉하는 텔레지아라는 것도 믿을만 해 보이는 군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-b" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$낯선 남자 엘프$<BR>그렇게 경계하실 것 없습니다.<BR>마치 낯선 존재를 바라보듯 관찰하는 그 시선… 의외로군요. 후후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-b" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-c" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$낯선 남자 엘프$<BR>오랜만입니다. 일루전.<BR>살아 계셨군요. 인간에게는 꽤나 무거운 세월이었을 터인데, 건강하신 걸 보니 꼭 어제 작별했던 것 같네요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-c" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-d" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(일루전을 알고 있다면 혹시 이 자도 사도의 일원인 건가?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-e" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$낯선 남자 엘프$<BR>이런, 저를 기억하지 못하십니까?<BR>그녀에 관한 것이 아니라면 딱히 기억할 필요가 없다… 고 한다면, 뭐 이해를 못할 일도 아니지만요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-f" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$낯선 남자 엘프$<BR>아직 그녀를 찾고 있습니까?<BR>아니면, 이미 찾았지만 다시 놓치고 말았나요?<BR>손가락 틈새를 빠져나가 다시는 돌아오지 않는 봄바람 같은, 그런 여자였던 거겠지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-f" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-g" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…당신, 루나리아를 아는 건가?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-h" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$낯선 남자 엘프$<BR><FONT color=#a82424>루나리아</FONT>…? 흠, 그런 이름이었군요.<BR>아니오. 저는 당신과 그런 이야기를 나눌 만큼 한가하지 않았으니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-i" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$낯선 남자 엘프$<BR>다만 당신은 저와 아주 닮은 인간이었지요.<BR>같은 냄새. 같은 온도. 같은 속도로 타락하는 마음.<BR>저는 그것을 한 눈에 알아 보았습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-j" mid="139" select_type="2" />
+      <talk_question mid="138"><![CDATA[<html>$낯선 남자 엘프$<BR>.그래서, 당신이 무엇을 바라는지도 금세 이해했던 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-k" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$낯선 남자 엘프$<BR>…일루전. 아직도 그녀를 찾고 있는 거겠죠?<BR>당신이라면 설령 <FONT color=#a82424>왕</FONT>께 내쳐지는 날이 온다 해도 그녀를 놓지 않을 거라는 사실을, 저는 누구보다도 잘 아니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-l" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>묻고 싶은 게 있는데… 당신들의 왕이라는 사람은….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-m" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$낯선 남자 엘프$<BR>…….왕께서 왜 일루전, 당신을 <FONT color=#a82424>사도</FONT>로 받아 들였던 것인지 궁금하다는 겁니까?<BR>이상한 질문을 하시는 군요. 그게 중요합니까?<BR>당신은 이미 많은 것을 잊은 듯 합니다만, 옛 동료의 정으로 대답해 드리지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-n" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$낯선 남자 엘프$<BR>왕께서 당신을 받아들인 것은, 당신이 찾는 그녀가 흥미로웠기 때문입니다.<BR>당신은 그녀가 무엇인가를 알고 있다고 말했지요. 이를테면….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-o" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$낯선 남자 엘프$<BR>이를테면, 세상에는 <FONT color=#a82424>시간을 이동하는 힘을 가진 돌</FONT>이 있으며 <BR>'<FONT color=#a82424>그녀</FONT>'는 그 돌의 제조법을 안다고 말입니다.<BR>왕께서는 그 말에 흥미를 가졌고 당신을 보내 그녀를 데려오라고 명령했습니다.<BR>당신은 왕의 힘을 빌려 온 세상을 헤매며 계속해서 그녀를 찾으려 했지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-p" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…시간을 이동하는 힘을 가진 돌?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-q" mid="53" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>$낯선 남자 엘프$<BR>제게 그런 허무맹랑한 이야기는 별로 값어치가 없었습니다만… 그렇군요. 지금 당신의 모습을 보니, 50여 년이나 세월을 흘려보낸 인간으로는 보이지 않습니다. 혹, 정말로 시간을 뛰어넘는 힘을 사용하고 있는 겁니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-r" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$낯선 남자 엘프$<BR>만약 그렇다면 저도 한 번쯤 그런 기회를 가져보고 싶군요.<BR>수십 년이 아니라 수백 년을 되돌려야 한다는 점이 걸리지만…… 아, 하긴.<BR>
+아무리 시간을 되돌려도, <FONT color=#a82424>나의 그녀</FONT>는 고집이 세서 말이죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-s" mid="142" select_type="2" />
+      <talk_question mid="141"><![CDATA[<html>$낯선 남자 엘프$<BR>무슨 수를 써도 결국은 똑 같은 선택을 하고 말 겁니다.<BR>
+후후후.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-1-t" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(엘프도 저런 인간같은 표정을 짓는 구나.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-1-t" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-2" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$낯선 남자 엘프$<BR>자, 일루전. 이제 의문이 풀렸습니까?<BR>저는 다시 제 몫의 길을 가야하니 이만 실례하도록 하지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-2-a" mid="67" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>$낯선 남자 엘프$<BR>살아 있다면 다시 만날 수도 있을 겁니다. 일루전.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-2-a" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-2-b" mid="69" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(머릿속이 복잡하다. 시간을 이동하는 힘이라니, 그런 걸 가진 돌이 있단 말야?<BR>루나리아가 그런 걸 만들 줄 안다고? …루나리아는 그런 게 없어도 시간을 이동하잖아?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n831_yuvenciel-2-b" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n831_yuvenciel-2-" mid="71" select_type="5" />
+      <talk_question mid="70"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(모르겠다…<BR>일단 리버워트 선착장 쪽으로 이동하자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-" mid="76" select_type="5" />
+      <talk_question mid="73"><![CDATA[<html>$시델$<BR>워리어 시안이 조금 전에 리버워트 선착장 쪽으로 가셨는데… 못 만났니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-a" mid="97" select_type="2" />
+      <talk_question mid="78"><![CDATA[<html>$워리어 시안$<BR>아, 많이 바쁘신 모양이군요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-a" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-b" mid="98" select_type="2" />
+      <talk_question mid="80"><![CDATA[<html>$워리어 시안$<BR>저희들은 바르낙 님을 정화하기 위해, 벨스커드를 만나 <FONT color=#a82424>제레인트 님의 검</FONT>을 회수하려 했습니다.<BR>그런데 역시 쉽지가 않네요. 하하.<BR>애초에 벨스커드가 호락호락 말이 잘 통하는 상대는 아니었으니까, 각오는 돼 있었지만요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-c" mid="99" select_type="2" />
+      <talk_question mid="81"><![CDATA[<html>$워리어 시안$<BR>아무래도 <FONT color=#a82424>바르낙 님을 어떤 녀석이 조종</FONT>하고 있고, 그게 새로운 사도일 것 같습니다.<BR>벨스커드를 만났는데 그도 그런 추측을 하는 듯 하더라고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-c" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-d" mid="100" select_type="2" />
+      <talk_question mid="82"><![CDATA[<html>$워리어 시안$<BR>
+벨스커드는 바르낙 님과 단번에 승부를 겨룰 작정인 것 같은데, 그 태도를 봐서는 사정 안 봐주고 베어 죽일 기세입니다. 이것저것 수상한 점이 한두 가지가 아닌데 말이죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-e" mid="101" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>$워리어 시안$<BR><BR>테라마이 님께서는 벨스커드의 태도 때문에 몹시 우려하고 계시죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-f" mid="102" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>$워리어 시안$<BR><FONT color=#a82424>바르낙 님은 50여 년 전, 등을 맞대고 세상을 위해 함께 싸운 전우</FONT>라고 하시면서...<BR>
+그런 분에게 안식을 돌려주지는 못할 망정 오욕을 맛보게 해선 안 된다고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-lv_check" mid="103" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>하지만 벨스커드가 그 검을 주지 않으면 다른 방법이 없지 않나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-g" image="QN_Npc_Edan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-" mid="104" select_type="5" />
+      <talk_question mid="88"><![CDATA[<html>$워리어 시안$<BR>그것 때문에 지금 클레릭 에단 님과 소서리스 안젤리카 님이 신전기사단 분들과 함께 조사를 진행 중입니다.<BR>곧 좋은 정보가 들어오길 바랍니다.<BR>
+ <BR>
+<FONT color=#7e12d2>* 다음 퀘스트는 55Lv 이상이 되어야 진행할 수 있습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-h" image="QN_Npc_Edan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-i" mid="106" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>$워리어 시안$<BR>네. 그래서 클레릭 에단 님과 소서리스 안젤리카 님이 신전기사단 분들과 함께 따로 조사를 하셨습니다.<BR>제레인트의 검 외에 바르낙에게 가해진 사악한 저주를 억제할 매개체가 없는지를 알아보셨는데, 괜찮은 정보가 나온 모양입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-j" mid="107" select_type="2" />
+      <talk_question mid="92"><![CDATA[<html>$워리어 시안$<BR>이 인근 지역의 전설을 뒤지다 보니 <FONT color=#a82424>사악한 고대인들과의 싸움에 사용된 아티팩트</FONT>에 대한 내용이…<BR>아아, 내 정신 좀 봐! 여기서 이렇게 떠들고 있을 시간이 없죠!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-k" mid="108" select_type="2" />
+      <talk_question mid="93"><![CDATA[<html>$워리어 시안$<BR>이럴 게 아니라 저랑 같이 가시죠.<BR>움직이면서 설명을 하겠습니다. 지금 정말이지 한시가 급하니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-k" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n754_cian-2-l" mid="137" select_type="4" />
+      <talk_question mid="136"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-2-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-2-!next" mid="111" select_type="2" />
+      <talk_question mid="94"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어디로 가면 되는 겁니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9370</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">55</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n754_cian">h</exe>
+         <exe type="talk" npc="n754_cian">g</exe>
+         <exe type="recompense">93700,,,,,,,</exe>
+         <exe type="complete" true="">9370</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n831_yuvenciel" sub="b" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="c" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="d" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="e" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="f" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="g" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="h" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="i" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="j" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="k" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="l" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="m" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="n" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="o" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="p" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="q" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="r" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="s" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="t" />
+   <exelink qstep="1" npc="n831_yuvenciel" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n831_yuvenciel" sub="b" />
+   <exelink qstep="2" npc="n831_yuvenciel" sub="" />
+   <exelink qstep="2" npc="n754_cian" sub="b" />
+   <exelink qstep="2" npc="n754_cian" sub="c" />
+   <exelink qstep="2" npc="n754_cian" sub="d" />
+   <exelink qstep="2" npc="n754_cian" sub="e" />
+   <exelink qstep="2" npc="n754_cian" sub="f" />
+   <exelink qstep="2" npc="n754_cian" sub="lv_check">0</exelink>
+   <exelink qstep="2" npc="n754_cian" sub="" />
+   <exelink qstep="2" npc="n754_cian" sub="i" />
+   <exelink qstep="2" npc="n754_cian" sub="j" />
+   <exelink qstep="2" npc="n754_cian" sub="k">3</exelink>
+   <exelink qstep="2" npc="n754_cian" sub="l">4</exelink>
+   <exelink qstep="2" npc="n754_cian" sub="!next" />
+   <journal_data recompense="93700" quest_title="또 다른 증언" chapterid="9" quest_level="54" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_59.dds</contents_image>
+         <destination_pos>591,n831</destination_pos>
+         <destination_mode>custom:591@1</destination_mode>
+         <statemark_npcid>831</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="119"><![CDATA[또 다른 증언]]></title>
+         <contents mid="120"><![CDATA[<html>진실의 거울 속에는 돌연변이 서식지의 모습이 떠올랐다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 돌연변이 서식지</FONT></html>]]></contents>
+         <destination mid="121"><![CDATA[돌연변이 서식지로]]></destination>
+         <todo_msg mid="122"><![CDATA[돌연변이 서식지로 이동하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>14,n754</destination_pos>
+         <destination_mode>14@1</destination_mode>
+         <statemark_npcid>754</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="132"><![CDATA[뜻밖의 정보]]></title>
+         <contents mid="133"><![CDATA[<html>진실의 거울에 비친 대로 따라간 곳에서, 낯선 남자 엘프를 만났다.<BR>그는 사도들의 왕이 일루전을 받아들였던 것은, 루나리아의 능력에 흥미를 가졌기 때문이라고 말했다.<BR>아직 알 수 있는 다른 정보가 없으니, 당분간 리버워트 선착장으로 가서 고민해 보자.<BR><BR><FONT color=#7e12d2>* 다음 퀘스트는 55Lv 이상이 되어야 진행할 수 있습니다.</FONT><BR><BR><FONT color=#086171>리버워트 선착장</FONT> <FONT color=#a82424>- 워리어 시안</FONT></html>]]></contents>
+         <destination mid="134"><![CDATA[리버워트 선착장에서 워리어 시안과 대화]]></destination>
+         <todo_msg mid="135"><![CDATA[리버워트 선착장에서 워리어 시안과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9369</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

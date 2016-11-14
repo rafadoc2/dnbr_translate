@@ -1,0 +1,455 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9271_what_they_want</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9271</qid>
+      <designer>강지영</designer>
+      <qlevel>65</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9272</nextqid>
+      <nextqname>mq34_9272_night_of_conclave</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[그들이 원하는 것]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1054</npcid>
+         <npcename>n1054_azelia</npcename>
+         <npckname>아젤리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타$<BR>그는 옛날 제레인트와는 달라. 우리는 보옥 그 자체의 순수한 힘으로 태어난 존재..<BR>새로 태어난 그에게 기억이나 감정 같은 것이 남아있진 않거든</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-a" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9271_01.ogg}<BR><FONT color=#a82424>제레인트</FONT>는 케이어스의 후예들로부터 이 세계를 지키기 위한 존재.<BR>
+보옥을 회수할 수 있어서 다행이었어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-a" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-b" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$아르젠타$<BR>그렇다고 너한테 고맙다는 건 아냐. <BR>애당초 너 때문에 <FONT color=#a82424>제레인트</FONT>가 죽은 거잖아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-c" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$아르젠타$<BR>그나저나 너. 아까 <FONT color=#a82424>저쪽에 있는 엘프 레인저</FONT>가 찾던걸?<BR>네가 없는 사이에 나한테도 막 친한 척해서 아주 짜증 났었다구!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-d" mid="130" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여긴 엘프 마을인데요. 누구 말씀이세요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-e" mid="131" select_type="2" />
+      <talk_question mid="122"><![CDATA[<html>$아르젠타$<BR>아젤... 뭐였는데, 내가 엘프 이름 같은걸 일일이 기억할 것 같니?<BR>얼마 전 부터 너랑 독 찾는다고 뛰어다니던 엘프 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-e" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="125" select_type="5" />
+      <talk_question mid="124"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#662500>(아젤리아 말이구나.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-" mid="18" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$아젤리아$<BR>아르젠타 님과 대화를 나누던 중 아니셨나요?<BR><FONT color=#7e12d2>(신월의 숲의 아르젠타와 대화를 마저 진행하세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-" mid="19" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$상급 아처 이실리엔$<BR>우리의 고향, 아누 아렌델을 지켜주세요.<BR><FONT color=#7e12d2>(신월의 숲으로 돌아가 아르젠타와 대화를 마저 진행하세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-" mid="21" select_type="5" />
+      <talk_question mid="20"><![CDATA[<html>$아르젠타$<BR>뭔 일인지 상황에 어울리지 않게 들떠 있던데...<BR>
+엘프들이 언제부터 인간 아이들처럼 요란스러워 진거지?<BR><FONT color=#7e12d2>(아젤리아를 찾아가 대화를 해보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-a" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$아젤리아$<BR>아! <FONT color=#387206>{user_nick} </FONT>님.<BR>
+그렇지 않아도 전할 말이 있어 찾고 있었어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-b" mid="144" select_type="2" />
+      <talk_question mid="143"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9271_01.ogg}<BR>어떤 남성분께서 당신을 찾아오셨답니다.<BR>용 추종자와 관련된 무척 중요한 일이라고 하셨어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-c" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어떤 분이셨는데요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-c" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-d" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$아젤리아$<BR>키는 이렇~게 크시고, 6~700살쯤 되어 보이셨고, 은색에 가까운 금발에 눈코입이 이렇게 요렇게...<BR><FONT color=#7e12d2>(아젤리아가 굉장히 자세하게 묘사하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-e" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>유벤시엘 님?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-e" image="QS_Default.dds" itemindex="400406" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-f" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$아젤리아$<BR>성함은 듣지 못했습니다. 월식의 계곡으로 갔다고 말씀드렸더니 걱정스러운 표정을 지으시며, 당신이 돌아오면 이걸 전해달라고 부탁하셨지요.<BR><FONT color=#7e12d2>(아젤리아가 푸른 꽃 한 송이를 들고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-f" image="QS_Default.dds" itemindex="400406" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-g" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$아젤리아$<BR>벌써 이곳에서 도움을 주는 분이 계신가 보군요.<BR>남자 엘프는 드문데다, 그렇게 출중한 미모의 남자 엘프는 더욱 보기 어려운데 말이에요.<BR><FONT color=#7e12d2>(아젤리아가 꽃을 주지 않고 신기한 듯 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-g" image="QS_Default.dds" itemindex="400406" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-h" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이게 무슨 꽃일까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-h" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-" mid="37" select_type="5" />
+      <talk_question mid="36"><![CDATA[<html>$아젤리아$<BR>글쎄요. 저도 처음 보는 꽃이라 잘 모르겠습니다.<BR>하지만 <FONT color=#a82424>세인트헤이븐</FONT>에 있는 <FONT color=#a82424>상급 아처 이실리엔</FONT>님이라면 이 꽃에 대해 알지도 모르죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$상급 아처 이실리엔$<BR>이쪽에 자주 오시는군요. 이젠 고향의 좋은 소식을 들려주실 거라 믿어도 되나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="QS_Default.dds" itemindex="400406" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-b" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>사실은....<BR></FONT><FONT color=#7e12d2>(꽃을 보여준다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-b" image="QW_77.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-c" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$상급 아처 이실리엔$<BR>이건 새별맞이꽃이군요. 정말 오랜만에 보네요. <BR>이 꽃은 <FONT color=#a82424>사라지는 반달 사막</FONT>에서만 자라나거든요. 그리고 아주 귀해서 찾기도 쉽지 않죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-d" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어떤 분께 받았는데, 중요한 일인 것 같아서요.<BR>이 꽃에 대해 더 아시는 게 있으면 알려주세요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-e" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$상급 아처 이실리엔$<BR>뭐라고요? <FONT color=#a94407>꽃을 받.았.다.고.요?</FONT> 제가 전에도 말씀드리지 않았나요?<BR>우리 엘프들에게 사랑이란 정말 무가치하고 소모적인 감정이에요!<BR>
+사랑을 기반으로 한 연애도 그렇고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-f" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$상급 아처 이실리엔$<BR>얼마나 많은 영웅이 사랑 앞에 무너졌나요.<BR>선배분들의 교훈은 그분들의 실수를 되풀이하지 않기 위해 기억해야 하는 거죠.<BR>그래서. 꽃을 준 상대는 엘프인가요? 다른 종족인가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-g" mid="51" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>엘프예요. 그런데 뭔가 오해가....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-h" mid="53" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>$상급 아처 이실리엔$<BR>남성 엘프라, 그나마 좀 낫군요.<BR>하지만 지금 연애 같은 걸 할 때가 아니잖아요. 아누 아렌델 최대의 위기라고요.<BR><FONT color=#387206>{user_nick} </FONT>님 마저 임무를 잊고 마음 가는 대로 연애 소설 같은 망상에 빠져서는…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-i" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>잠깐만요! 그런 게 아니고요~!<BR>이 꽃은 사도와 관련된 단서예요. 누군가 제게 맡기고 간 단서라구요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-j" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>$상급 아처 이실리엔$<BR>음? 어머나?<BR>
+그렇다면 제가 오해를 했나 보군요.<BR><FONT color=#7e12d2>(이실리엔이 아무 일 없었다는 듯 방긋 웃는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-k" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html>$상급 아처 이실리엔$<BR>꽃이 단서라면, 꽃말 같은 걸 알아봐야 할까요?<BR><FONT color=#7e12d2>(이실리엔이 주머니에서 오래되어 보이는 수첩을 꺼내 든다)<BR></FONT>이 꽃의 꽃말은 음? 여기쯤에... 아! "<FONT color=#a82424>나를 따라오세요</FONT>" 네요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-" mid="61" select_type="5" />
+      <talk_question mid="60"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럼 제게 따라오라는 뜻일까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-3" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-3-" mid="129" select_type="5" />
+      <talk_question mid="128"><![CDATA[<html>$아젤리아$<BR><FONT color=#a82424>세인트헤이븐</FONT>에 있는 <FONT color=#a82424>이실리엔</FONT>님이라면 이 꽃에 대해 알지도 몰라요.<BR>그 분은 많은 곳을 여행한 분이니까요.<BR><FONT color=#7e12d2>(이실리엔에게 찾아가 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="QW_77.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-" mid="63" select_type="5" />
+      <talk_question mid="62"><![CDATA[<html>$상급 아처 이실리엔$<BR><FONT color=#a82424>사라지는 반달 사막</FONT>으로 갈 생각인 거죠?<BR>혹시 모르니 조심하셔야 해요. 음침한 곳이나 위험해 보이는 곳은 근처에도 가지 말고요. 아셨죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5" image="QP_Manufactory.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-a" mid="65" select_type="2" />
+      <talk_question mid="64"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9271_02.ogg}<BR>독을 발견해서 다 제거했다고? 그거 다행이네.<BR>근데 생각해 보니 독 그거... 그렇게 위험하지 않을 지도 모르겠어.<BR><FONT color=#7e12d2>(아르젠타가 웬일로 뾰로통한 표정을 짓고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-b" mid="67" select_type="2" />
+      <talk_question mid="66"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-b" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-5-c" mid="69" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$제레인트${sound:npc_AN_Gereint Young_qu_9271_01.ogg}<BR>생각해 보니가 아니라 내가 알려준 거잖아? 아르젠타.<BR>생명의 나무를 우습게 보지 마.<BR>
+그깟 놈들이 만든 독 따위에 영향을 받을 정도라면 모든 엘프의 중심이 되지도 못했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-c" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-5-d" mid="71" select_type="2" />
+      <talk_question mid="70"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럼 용 추종자들은 왜...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-d" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-5-e" mid="73" select_type="2" />
+      <talk_question mid="72"><![CDATA[<html>$제레인트$<BR>글쎄. 거기까진 알 수 없지. <BR>용추종자도 너도 그저 헛수고 한 거라면 그나마 다행인 거고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-f" mid="75" select_type="2" />
+      <talk_question mid="74"><![CDATA[<html>$아르젠타$<BR>아니면 다른 목적이 있다거나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-g" mid="77" select_type="2" />
+      <talk_question mid="76"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그러고 보니 페더가 이곳에 온다고 했어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-g" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-5-h" mid="81" select_type="2" />
+      <talk_question mid="80"><![CDATA[<html>$제레인트$<BR>페더?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-i" mid="146" select_type="2" />
+      <talk_question mid="145"><![CDATA[<html>$아르젠타$<BR>
+예전에 인간들 나라를 세웠다는 녀석 이름 같은데.<BR>
+인간이 그렇게 오래 살던가?<BR>
+아님, 이름만 비슷한 다른 놈일 지도 모르겠네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-j" mid="83" select_type="2" />
+      <talk_question mid="82"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>음, 잘 모르겠지만 이그나시오가...</FONT><BR><FONT color=#7e12d2>(이그나시오와의 일을 알린다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-k" mid="85" select_type="2" />
+      <talk_question mid="84"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9271_03.ogg}<BR>그럼 그 <FONT color=#a82424>페더</FONT>라는 자가 용추종자의 우두머리겠네?<BR>건국왕의 이름을 쓰다니, 명예니 영광이니 하는 시덥지 않은 가치를 어지간히 동경하는 자로군?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-k" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-5-l" mid="87" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>$제레인트${sound:npc_AN_Gereint Young_qu_9271_02.ogg}<BR>그리고 그 녀석이 바로, 이 기분 나쁜 에이션트 드래곤인 것 같고.<BR>아직도 여기 어딘가 해치워야 할 녀석이 숨죽이고 있는 듯한, 불쾌한 기분이 가시질 않거든.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-m" mid="89" select_type="2" />
+      <talk_question mid="88"><![CDATA[<html>$아르젠타$<BR>생명의 나무와 고대인의 유적이라…. 짜증 나게 뭐가 생각이 날 듯 말 듯하잖아. 뭐더라?<BR><FONT color=#7e12d2>(아르젠타가 뭔가 생각이 났는지 인상을 찌푸리고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-n" mid="91" select_type="2" />
+      <talk_question mid="90"><![CDATA[<html>$아르젠타$<BR>유적... 숲... 콘클라베. 아하! 역시 <FONT color=#a82424>콘클라베</FONT>야. 콘클라베!<BR>야. 너. 엘프! 그러고 보니 너희 콘클라베 준비는 잘하고 있는 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-o" mid="93" select_type="2" />
+      <talk_question mid="92"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네... 네?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-p" mid="95" select_type="2" />
+      <talk_question mid="94"><![CDATA[<html>$아르젠타$<BR>이걸 왜 생각 못했지? 제레인트 네 말대로 멍청한 게 옮았나....<BR>저들이 결국 이곳에서 노리는 게 뭐겠어? <FONT color=#a82424>모노리스</FONT>잖아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-q" mid="97" select_type="2" />
+      <talk_question mid="96"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(모노리스? 언젠가 제레인트님께 들어본 적 있는 것 같아.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-r" mid="99" select_type="2" />
+      <talk_question mid="98"><![CDATA[<html>$아르젠타$<BR>유물의 힘으로 모노리스로 가는 길을 열려면, 선결 조건이 하나 있어.<BR>
+생명의 나무가 힘을 잃는 거지.<BR>
+왜냐하면 그 나무야말로 모노리스로 가는 길을 지키고 있는 문 같은 거니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-s" mid="148" select_type="2" />
+      <talk_question mid="147"><![CDATA[<html>$아르젠타$<BR>그럼 나무의 힘을 빼앗는 가장 쉬운 방법이 뭐겠니?<BR>
+콘클라베를 방해해서, 여왕이 나무를 지키지 못하도록 하는 거잖아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-!next" mid="132" select_type="4" />
+      <talk_question mid="100"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9271</exe>
+         <exe type="talk" npc="n1047_argenta">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92710,,,,,,,</exe>
+         <exe type="complete" true="">9271</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="b" />
+   <exelink qstep="1" npc="n1047_argenta" sub="c" />
+   <exelink qstep="1" npc="n1047_argenta" sub="d" />
+   <exelink qstep="1" npc="n1047_argenta" sub="e">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="2" npc="n1054_azelia" sub="b" />
+   <exelink qstep="2" npc="n1054_azelia" sub="c" />
+   <exelink qstep="2" npc="n1054_azelia" sub="d" />
+   <exelink qstep="2" npc="n1054_azelia" sub="e" />
+   <exelink qstep="2" npc="n1054_azelia" sub="f" />
+   <exelink qstep="2" npc="n1054_azelia" sub="g" />
+   <exelink qstep="2" npc="n1054_azelia" sub="h">0,1</exelink>
+   <exelink qstep="2" npc="n1054_azelia" sub="" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="e" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="f" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="g" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="h" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="i" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="j" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="k">0,1</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="" />
+   <exelink qstep="5" npc="n1047_argenta" sub="b" />
+   <exelink qstep="5" npc="n1047_argenta" sub="c" />
+   <exelink qstep="5" npc="n1047_argenta" sub="d" />
+   <exelink qstep="5" npc="n1047_argenta" sub="e" />
+   <exelink qstep="5" npc="n1047_argenta" sub="f" />
+   <exelink qstep="5" npc="n1047_argenta" sub="g" />
+   <exelink qstep="5" npc="n1047_argenta" sub="h" />
+   <exelink qstep="5" npc="n1047_argenta" sub="i" />
+   <exelink qstep="5" npc="n1047_argenta" sub="j" />
+   <exelink qstep="5" npc="n1047_argenta" sub="k" />
+   <exelink qstep="5" npc="n1047_argenta" sub="l" />
+   <exelink qstep="5" npc="n1047_argenta" sub="m" />
+   <exelink qstep="5" npc="n1047_argenta" sub="n" />
+   <exelink qstep="5" npc="n1047_argenta" sub="o" />
+   <exelink qstep="5" npc="n1047_argenta" sub="p" />
+   <exelink qstep="5" npc="n1047_argenta" sub="q" />
+   <exelink qstep="5" npc="n1047_argenta" sub="r" />
+   <exelink qstep="5" npc="n1047_argenta" sub="s">0</exelink>
+   <exelink qstep="5" npc="n1047_argenta" sub="!next">1</exelink>
+   <journal_data recompense="92710" quest_title="그들이 원하는 것" chapterid="12" quest_level="65" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[그들이 원하는 것 I]]></title>
+         <contents mid="103"><![CDATA[<html>황금 초원에서 사도들과의 전투에 대해 아르젠타가 할 이야기가 남은 것 같다.<BR>그녀와 대화를 더 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[아르젠타와 대화]]></destination>
+         <todo_msg mid="105"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1054</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1054</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[그들이 원하는 것 II]]></title>
+         <contents mid="107"><![CDATA[<html>아젤리아가 전할 말이 있다고 한다. 아젤리아를 찾아가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아젤리아</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[아젤리아와 대화]]></destination>
+         <todo_msg mid="109"><![CDATA[아젤리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n044</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[그들이 원하는 것 III]]></title>
+         <contents mid="111"><![CDATA[<html>유벤시엘이 전달한 꽃에 대해 알아봐야 한다.<BR>세인트헤이븐의 이실리엔에게 꽃에 대해 물어보자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT><FONT color=#a82424> - 상급 아처 이실리엔</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[상급 아처 이실리엔과 대화]]></destination>
+         <todo_msg mid="113"><![CDATA[세인트헤이븐의 이실리엔을 찾아가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_77.dds</contents_image>
+         <destination_pos>771,0,0</destination_pos>
+         <destination_mode>custom:771@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[그들이 원하는 것 IV]]></title>
+         <contents mid="115"><![CDATA[<html>유벤시엘이 남긴 꽃의 꽃말을 따라 사라지는 반달 사막으로 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 사라지는 반달 사막</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[사라지는 반달 사막 탐색]]></destination>
+         <todo_msg mid="117"><![CDATA[단서를 쫓아 사라지는 반달 사막으로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QP_Manufactory.dds</contents_image>
+         <destination_pos>771,0,0</destination_pos>
+         <destination_mode>custom:771@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="118"><![CDATA[그들이 원하는 것 V]]></title>
+         <contents mid="119"><![CDATA[<html><FONT color=#2b2723>이그나시오를 놓쳤지만 제조 중이던 독 가마솥들을 발견했다.<BR>가마솥을 파괴하면 숲의 오염을 더 이상 걱정하지 않아도 될 것 같다.</FONT><BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- 사라지는 반달 사막</FONT></html>]]></contents>
+         <destination mid="120"><![CDATA[독 가마솥 파괴]]></destination>
+         <todo_msg mid="121"><![CDATA[이그나시오가 독 가마솥을 버리고 도망쳤습니다.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="138"><![CDATA[그들이 원하는 것 VI]]></title>
+         <contents mid="139"><![CDATA[<html>사도들이 사용하던 독 가마니를 파괴했다. 아르젠타에게 보고하러 돌아가자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="140"><![CDATA[아르젠타와 대화]]></destination>
+         <todo_msg mid="141"><![CDATA[아르젠타에게 보고하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9270</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

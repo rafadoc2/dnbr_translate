@@ -1,0 +1,279 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9335_karahans_words</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>9335</qid>
+      <designer>정진호</designer>
+      <qlevel>42</qlevel>
+      <qdesc>시델은 시안이 다른 모험자들과 차티를 만나러 갔다고 한다.
+어디로 갔는지 제대로 듣지 못한 유저는 루나리아와 대화.
+용추종자 점거지로 간다.
+유저는 그곳에서 카라한과 마주친다. 카라한은 과거의 동료였던 어쌔신을 기이하다는 듯 바라본다.
+(데이지 퀘스트 체크해서 처음 만난 것/ 아닌 것 구분해서 대사 작성)
+
+그 당시 너는 '한 번 시간을 넘었다'고 했었지. 이번에는 뭐냐? 또 한 번 시간을 넘은 건가? 하는 말.
+유저는 그게 무슨 의미인지 묻지만 카라한은 모르겠다고 답한다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9336</nextqid>
+      <nextqname>mq15_9336_memorable_saying</nextqname>
+      <nextqnpc>n709_trader_lucita</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[카라한의 말]]></qkname>
+      <qnpc>
+         <npcid>1169</npcid>
+         <npcename>n1169_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>762</npcid>
+         <npcename>n762_karahan</npcename>
+         <npckname>카라한 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-accepting-acceptted" mid="6" select_type="2" />
+      <talk_question mid="5"><![CDATA[<html>$상인 루시타$<BR>안 그래도 기다렸어요.<BR>워리어 시안 님께서 <FONT color=#387206>{user_nick}</FONT> 님이 오시거든 전해 달라고 하셨거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-1-a" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$상인 루시타$<BR>시안 님은 차티 언니를 찾아냈다면서… <FONT color=#387206>{user_nick}</FONT> 님께 <FONT color=#a82424>용추종자 점거지</FONT>로 와 달라고 하셨어요.<BR>차티 언니가 할아버지의 흔적을 쫓아 거기로 가는 것 같았대요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-a" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$상인 루시타$<BR>모두들 그곳으로 갔어요.<BR>아주 급하게요. 그럼… 저기, 저는 분명히 전한 거예요…?<BR><FONT color=#7e12d2>(루시타가 겁먹은 얼굴로 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>용추종자 점거지</FONT>로 가는 거야?<BR>흐음… 수고가 많네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-a" mid="15" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>$의문의 남자$<BR>훗, 나한테 함부로 반하지 마라.<BR>네 하트에 금이 갈지도 모른다.<BR><FONT color=#7e12d2>(이상한 사람이 이상한 소리를 하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-675_clear_check" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신은….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-b" image="QN_Npc_Charty.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-c" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…당신이 차티가 말한 '믿을 만한 사람'입니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-d" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$의문의 남자$<BR>으음? 네 녀석, 코스모 뷰티풀한 이몸의 존명을 잊고 말았는가?<BR>어리석은 자로군… 마치 섬광에 눈이 멀어버린 하찮은 벌레와도 같은 기억력이다.<BR>
+쿠쿠쿠쿠…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-e" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(…무슨 소리야?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-f" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$의문의 남자$<BR>이 몸의 이름을 잊었다 한들 이 아름다움은 과거와 미래를 뛰어넘는 것!<BR>나를 3초 이상 바라보았으니, 너도 결국 나의 노예가 되고 말았겠지.<BR><FONT color=#7e12d2>(의문의 남자가 이상한 말을 한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-i" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$의문의 남자$<BR>이 몸의 눈부신 이름, <FONT color=#a94407>카라한!<BR></FONT>이런이런~ 벌써 다리가 풀리는 걸 알 수 있다고. 쯧쯧~ 어리석은 양들이여~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-h" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$카라한$<BR>피차 구구절절한 옛이야기를 나누는 것은 내 미적 감수성에 어긋나니 생략하기로 하지.<BR>엘니뇨를 유발하는 이 아름다움만으로도 다른 건 의미를 잃는 것 아니겠는가? 음하하하하하~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-i" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(…카라한이 왜 여기에?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-j" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$카라한$<BR>너의 열렬한 숭배를 받는 것은 잠시 뒤로 미루도록 하지.<BR>
+오늘은 이몸이 저 사막의 폭풍처럼 분주하니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-k" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신은 여기에서 뭘 하고 있는 거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-l" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>$카라한$<BR>큭큭큭… 눈부신 아름다움 앞에 예의도 잊은 것 같군.<BR>
+안절부절 못하는 것이 꼭 덫에 치인 토끼같은걸?<BR>아아~ 성가시게 굴지 말자고. 나도 바쁜 몸이라서 말이야~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-m" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>$카라한$<BR><FONT color=#a82424>쓸데없이 부지런한 모험자 꼬마</FONT>들과 어울리든, 멍청한 원주민들과 목숨을 걸고 장난을 치든…<BR>어느 쪽이든 결국 이 카라한 님과 다시 만나게 될 것이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-n" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$카라한${action:Talk}<BR>하지만 한 가지, 묻고 싶은 게 있는데.<BR>그 당시 너는 <FONT color=#a82424>한 번 시간을 넘었다</FONT>고 했었지. 이번에는 뭐냐?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-o" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$카라한$<BR>또 한 번 시간을 넘은 건가?<BR>그 우스꽝스러운 헛소리를 증명할 텐가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-p" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…!<BR>당신이 어떻게 그걸 알고 있는 거지?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-q" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$카라한$<BR>이몸에게 증명을 강요하지도, 질문도 마라.<BR>질문은 이몸이 던진다. 너는 그저 대답만 하면 돼.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-r" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이… 이봐!!!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-1-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-1-" mid="81" select_type="5" />
+      <talk_question mid="53"><![CDATA[<html>$카라한$<BR>후후, 내 마력에 매혹되어 아직 발걸음이 떨어지지 않는 모양이지?<BR>
+다 이해한다네, <FONT color=#a82424>옛 숭배자</FONT>여.<BR>조만간 다시 만나지! 음하하하핫~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n762_karahan-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_karahan.dds" center_image="">
+      <talk_answer link_index="n762_karahan-2-" mid="57" select_type="5" />
+      <talk_question mid="56"><![CDATA[<html>$카라한$<BR>후후, 내 마력에 매혹되어 아직 발걸음이 떨어지지 않는 모양이지?<BR>
+다 이해한다네, 옛 숭배자여.<BR>조만간 다시 만나지! 음하하하핫~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-2-a" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html>$루나리아$<BR>이상한 사람을 또 만났다고?<BR>흐음~ 너는 이상한 사람과는 인연이 깊은 모양이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-2-a" image="QN_Npc_Lucita.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-2-" mid="61" select_type="5" />
+      <talk_question mid="60"><![CDATA[<html>$루나리아$<BR>일단 마을로 돌아가는 게 낫지 않을까?<BR>로터스마쉬의 그… <FONT color=#a82424>귀가 달린 여자아이</FONT>를 만나 보면 뭔가 알 수 있겠지. 아닐 수도 있지만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2" image="QN_Npc_Charty.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-a" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>$상인 루시타$<BR>어라? 왜 다시 돌아오셨나요?<BR>차티 언니는 못 만나셨어요?<BR><FONT color=#7e12d2>(루시타가 고개를 갸웃거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-b" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>혹시 그 사이에 다른 소식은 없었어?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-c" mid="68" select_type="4" />
+      <talk_question mid="67"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-2-!next" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>$상인 루시타$<BR>다른 소식이요? 우웅…<BR>그러고 보니…</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9335</exe>
+         <exe type="talk" npc="n709_trader_lucita">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="hascomq">675</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n762_karahan">b</exe>
+         <exe type="talk" npc="n762_karahan">g</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93350,,,,,,,</exe>
+         <exe type="complete" true="">9335</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n709_trader_lucita" sub="" />
+   <exelink qstep="1" npc="n762_karahan" sub="675_clear_check">0</exelink>
+   <exelink qstep="1" npc="n762_karahan" sub="c" />
+   <exelink qstep="1" npc="n762_karahan" sub="d" />
+   <exelink qstep="1" npc="n762_karahan" sub="e" />
+   <exelink qstep="1" npc="n762_karahan" sub="f" />
+   <exelink qstep="1" npc="n762_karahan" sub="i" />
+   <exelink qstep="1" npc="n762_karahan" sub="h" />
+   <exelink qstep="1" npc="n762_karahan" sub="i" />
+   <exelink qstep="1" npc="n762_karahan" sub="j" />
+   <exelink qstep="1" npc="n762_karahan" sub="k" />
+   <exelink qstep="1" npc="n762_karahan" sub="l" />
+   <exelink qstep="1" npc="n762_karahan" sub="m" />
+   <exelink qstep="1" npc="n762_karahan" sub="n" />
+   <exelink qstep="1" npc="n762_karahan" sub="o" />
+   <exelink qstep="1" npc="n762_karahan" sub="p" />
+   <exelink qstep="1" npc="n762_karahan" sub="q" />
+   <exelink qstep="1" npc="n762_karahan" sub="r">3,4</exelink>
+   <exelink qstep="1" npc="n762_karahan" sub="" />
+   <exelink qstep="2" npc="n1169_lunaria" sub="" />
+   <exelink qstep="2" npc="n709_trader_lucita" sub="b">0</exelink>
+   <exelink qstep="2" npc="n709_trader_lucita" sub="c">1</exelink>
+   <exelink qstep="2" npc="n709_trader_lucita" sub="!next" />
+   <journal_data recompense="93350" quest_title="카라한의 말" chapterid="6" quest_level="42" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,0,0</destination_pos>
+         <destination_mode>custom:541@1,542@3</destination_mode>
+         <statemark_npcid>762</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[카라한의 말 I]]></title>
+         <contents mid="73"><![CDATA[<html>차티는 할아버지의 흔적을 쫓아 용추종자 점거지로 갔다고 한다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT><FONT color=#a82424> - 용추종자 점거지</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[용추종자 점거지]]></destination>
+         <todo_msg mid="75"><![CDATA[차티를 쫒아 용추종자 점거지로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lucita.dds</contents_image>
+         <destination_pos>15,n709</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>709</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[카라한의 말 II]]></title>
+         <contents mid="77"><![CDATA[<html><FONT color=#2b2723>차티는 발견하지 못하고, 카라한이라는 이상한 남자를 마주치고 말았다. 아무래도 신경이 쓰인다. 로터스마쉬로 돌아가서 루시타에게 새 정보가 없는지 묻자.</FONT><BR>
+ <BR>
+<FONT color=#086171>로터스마쉬</FONT><FONT color=#a82424> - 상인 루시타</FONT><BR>
+</html>]]></contents>
+         <destination mid="78"><![CDATA[로터스마쉬의 상인 루시타와 대화]]></destination>
+         <todo_msg mid="79"><![CDATA[로터스마쉬로 돌아가 상인 루시타와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9334</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

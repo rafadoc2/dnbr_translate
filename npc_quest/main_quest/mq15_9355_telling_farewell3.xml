@@ -1,0 +1,218 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9355_telling_farewell3</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9355</qid>
+      <designer>최지은</designer>
+      <qlevel>50</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9356</nextqid>
+      <nextqname>mq15_9356_telling_farewell4</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[작별인사 3]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>802</npcid>
+         <npcename>n802_invisible</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n802_invisible-noquest" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="189"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(무언가가 깨지고 부서진 흔적만이 남아 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="272" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$시델$<BR>카라한이 완전한 드래곤이 되기 위해 고대인들의 유물을 모으고 있다니.<BR>그를 꼭 막아야만 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-a" mid="274" select_type="2" />
+      <talk_question mid="230"><![CDATA[<html>$시델${action:Talk}<BR><FONT color=#7e12d2>(시델이 자신의 꼭 쥔 주먹을 내려다본다)</FONT><BR>…때로 나의 이 마음이 정당한 분노가 아닌, 사적인 감정이 섞인 증오라는 생각이 들어.<BR>스승님은 내가 이런 사적인 원한에 치우치는 것을 경계하셨을텐데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-b" mid="275" select_type="0"><![CDATA[<html>너는 그 사람과는 달라.</html>]]></talk_answer>
+      <talk_answer link_index="n707_sidel-1-b" mid="276" select_type="0"><![CDATA[<html>나는 너를 믿어.</html>]]></talk_answer>
+      <talk_question mid="233"><![CDATA[<html>$시델$<BR>아마도 스승님께서는 내가 카라한의 전철을 밟지 않을까 걱정하셨던 거겠지.<BR>정말 걱정이 돼. 나도 카라한처럼 되면 어떻게 하지? 이 마음이 거대한 힘을 향한 욕망으로 변해 버리면, 나는 페어리스타의 이름을 망치게 될지도 몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-c" mid="277" select_type="2" />
+      <talk_question mid="235"><![CDATA[<html>$시델$<BR>정말 그럴까.<BR>…하긴, 지금은 이런 생각을 하고 있을 때가 아니지. 그 어떤 것도 일어나기 전까지는 모두 가능성에 불과한 거니까.<BR>나는 그저 평생 노력하고 경계하는 수밖에 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-d" mid="278" select_type="2" />
+      <talk_question mid="237"><![CDATA[<html>$시델$<BR>항상 고마워, <FONT color=#387206>{user_nick}</FONT>.<BR>네 덕분에 용기를 낼 수 있어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-d" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-e" mid="279" select_type="2" />
+      <talk_question mid="239"><![CDATA[<html>$시델$<BR>나, 카라한을 반드시 쓰러뜨리겠어.<BR>그래서 차티의 복수도 하고, 내가 그와는 다른 인간이란 걸 증명해 보일거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-e" image="QW_57.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2" mid="280" select_type="2" />
+      <talk_question mid="241"><![CDATA[<html>$시델$<BR>차티의 부족 사람의 말로는, <FONT color=#a82424>카라한</FONT>이 <FONT color=#a82424>고대의 보물창고</FONT>로 올 거라고 했다지?<BR>확실한 정보인지 모르겠지만 확인해 보는 게 좋겠다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n802_invisible-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="243"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(무언가가 깨지고 부서진 흔적만이 남아 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_57.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-" mid="293" select_type="5" />
+      <talk_question mid="244"><![CDATA[<html>$시델${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>, 내 대신 <FONT color=#a82424>고대의 보물창고</FONT>로 가서 확인해 줘.<BR>고대인들의 유물이 아직 무사하면 좋을텐데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n802_invisible-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n802_invisible-2-a" mid="282" select_type="2" />
+      <talk_question mid="245"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(바닥에 기이한 기운이 느껴지는 돌조각이 흩어져 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n802_invisible-2-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n802_invisible-3" mid="283" select_type="2" />
+      <talk_question mid="248"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(깨어진 조각에 고대의 문양이 새겨져 있다.<BR>아무래도 바로 얼마 전에 파괴된 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n802_invisible-3" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n802_invisible-3-" mid="294" select_type="5" />
+      <talk_question mid="250"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(아무래도 카라한은 이미 목적을 달성하고 사라진 것 같다.<BR>시델에게 돌아가 보고하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-a" mid="284" select_type="2" />
+      <talk_question mid="251"><![CDATA[<html>$시델${action:Talk}<BR>이런! 카라한이 벌써 다녀간 것 같다고?<BR>한 발 늦었구나... 큰일이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-a" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-b" mid="285" select_type="2" />
+      <talk_question mid="254"><![CDATA[<html>$시델$<BR>조금 전에 정찰을 나섰던 소서리스들에게 전해들었어. <FONT color=#a82424>카라한</FONT>의 힘이 점점 강해지는 것과 별개로, 그가 고대인들의 유물과 원주민들이 봉인한 토템에 손을 대기 시작한 덕분에 불길한 일들이 계속 늘어나고 있는 모양이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-b" image="QW_57.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-c" mid="286" select_type="2" />
+      <talk_question mid="257"><![CDATA[<html>$시델$<BR>마물들이 더욱 강해진 지역이 나타나기 시작했어.<BR>본디 많은 토템이 묻혀 있었던 <FONT color=#a82424>이슬라 토착민 촌락</FONT>과 <FONT color=#a82424>고대의 보물창고</FONT>는 전보다 훨씬 더 위험해졌고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-c" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-d" mid="287" select_type="2" />
+      <talk_question mid="259"><![CDATA[<html>$시델$<BR>응. 소서리스들의 회의에서 그 안건도 논의해야겠어.<BR>갑자기 나타난 강대한 마물들을 제어하기 위해 소서리스들도 파견해야할 것 같아.<BR>우선은... <FONT color=#a82424>스승님의 장례식</FONT>을 마치고 말이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-e" mid="298" select_type="4" />
+      <talk_question mid="297"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-e" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-!next" mid="290" select_type="2" />
+      <talk_question mid="261"><![CDATA[<html>$시델$<BR>...페어리스타의 지주셨던 분을 이렇게 혼란한 때에 보내야만 한다니 슬플 뿐이야.<BR>그러나 그분의 뜻은 내 마음 속에 살아 있으니까.... <BR>절대로 잊지 않고, 그분의 기대에 부응하기 위해 노력할테니까.<BR>스승님도 부디 너그럽게 용서해 주셨으면 좋겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9355</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93550,,,,,,,</exe>
+         <exe type="complete" true="">9355</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="c" />
+   <exelink qstep="1" npc="n707_sidel" sub="d" />
+   <exelink qstep="1" npc="n707_sidel" sub="e" />
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n802_invisible" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="b" />
+   <exelink qstep="3" npc="n707_sidel" sub="c" />
+   <exelink qstep="3" npc="n707_sidel" sub="d">0</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="e">1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="!next" />
+   <journal_data recompense="93550" quest_title="작별인사 3" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="226"><![CDATA[불안]]></title>
+         <contents mid="227"><![CDATA[<html>시델과 카라한 추적에 대해 대화하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="228"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="229"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_57.dds</contents_image>
+         <destination_pos>572,n800</destination_pos>
+         <destination_mode>custom:571@3,572@4</destination_mode>
+         <statemark_npcid>802</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="222"><![CDATA[유물]]></title>
+         <contents mid="223"><![CDATA[<html>고대의 보물창고로 가서 고대인들의 유물이 아직 무사한지 확인해 보자.<BR><BR><FONT color=#086171>리버워트 선착장(고대의 창고 입구)</FONT> <FONT color=#a82424>- 고대의 보물창고</FONT></html>]]></contents>
+         <destination mid="224"><![CDATA[고대의 보물창고 정찰]]></destination>
+         <todo_msg mid="225"><![CDATA[고대의 보물창고로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="266"><![CDATA[한 발 늦었다]]></title>
+         <contents mid="267"><![CDATA[<html>카라한은 이미 목적을 달성하고 사라진 것 같다. 고대의 유물로 보이는 파괴된 흔적을 발견했다. 시델에게 돌아가 본 것을 전하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="268"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="269"><![CDATA[카라큘의 오두막으로 돌아가 시델과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9354</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

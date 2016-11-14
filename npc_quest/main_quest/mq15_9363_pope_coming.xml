@@ -1,0 +1,216 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9363_pope_coming</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9363</qid>
+      <designer>최지은</designer>
+      <qlevel>52</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9364</nextqid>
+      <nextqname>mq15_9364_reunions</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[세인트헤이븐의 교황]]></qkname>
+      <qnpc>
+         <npcid>811</npcid>
+         <npcename>n811_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-noquest" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-noquest-" mid="110" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$테렌스 테라마이$<BR>시간이 지나도 이 곳은 변함이 없군….<BR><BR>※ <FONT color=#7e12d2>리버워트 선착장의 테렌스 테라마이에게서 퀘스트를 받을 수 있습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-accepting" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-accepting-acceptted" mid="61" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$테렌스 테라마이$<BR>제레인트의 검을 돌려받기 위해서는 <FONT color=#a82424>벨스커드</FONT>의 행적을 파악해야 하네.<BR>마침 벨스커드가 로터스마쉬에 있다니, 조사를 해 봐야겠군.<BR>선지자의 예언이 있을 때까지 손 놓고 있을 수만은 없으니 말이야....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-a" mid="64" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$테렌스 테라마이$<BR>벨스커드를 찾으려면 신전기사단의 힘이 필요하네.<BR>아무래도 <FONT color=#a82424>왕성</FONT>으로 돌아가야 할 때가 된 듯 하군....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-a" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-" mid="66" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$테렌스 테라마이$<BR>그럼, <FONT color=#387206>{user_nick}</FONT>.<BR>세인트헤이븐 왕성에서 보도록 하세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-" mid="95" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>$테렌스 테라마이$<BR>시간이 지나도 이 곳은 변함이 없군...<BR><FONT color=#7e12d2>(테라마이가 씁쓸한 미소를 짓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-a" mid="72" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>$테렌스 테라마이$<BR>시간이 지나도 이 곳은 변함이 없군....<BR><BR><FONT color=#7e12d2>(테라마이가 씁쓸한 미소를 짓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-a" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-b" mid="73" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>$테렌스 테라마이$<BR>자네에게 당부할 말이 있네.<BR><FONT color=#a82424>바르낙</FONT>에 대한 일은... 가급적 다른 사람들의 귀에 들어가지 않도록 조심해 주었으면 하네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-b" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-c" mid="74" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$테렌스 테라마이$<BR>나는 바르낙, 그 친구가 사람들의 추억속에 영원히 영웅으로 남아있기를 바란다네.<BR>내 말 무슨 뜻인지 알겠는가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-c" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-d" mid="75" select_type="2" />
+      <talk_question mid="70"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>알겠습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3" mid="76" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$테렌스 테라마이$<BR>고맙군.<BR>자, 그럼 본격적으로 애들을 풀어..., 아니 신전기사단을 동원해서 수색을 시작하도록 하지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3" image="QW_59.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-" mid="78" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>$테렌스 테라마이$<BR>다른 곳에는 신전기사들을 파견할테니, 자네는 <FONT color=#a82424>돌연변이 서식지</FONT>를 돌아봐 주게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-4-a" mid="81" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$테렌스 테라마이$<BR>마침 잘 왔네. 드디어 신전기사단이 <FONT color=#a82424>벨스커드</FONT>의 행방을 찾아낸 모양이야.<BR>그런데… 뭔가 할 말이 있는 표정이군?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-a" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-4-b" mid="82" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$테렌스 테라마이$<BR>그곳에 <FONT color=#a82424>바르낙</FONT>이 나타났단 말인가...? 누군가와 함께...?<BR>역시, 바르낙이 스스로의 의지로 움직이는 것은 아닌게 확실한가 보군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-4-c" mid="86" select_type="4" />
+      <talk_question mid="38"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-c" image="QP_Geraint_sword.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-4-!next" mid="106" select_type="2" />
+      <talk_question mid="103"><![CDATA[<html>$테렌스 테라마이$<BR>일단은 벨스커드부터 만나보도록 하세.<BR>그에게서 <FONT color=#a82424>제레인트의 검</FONT>을 얻어내야만 바르낙을 정화할 수 있을테니.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9363</exe>
+         <exe type="talk" npc="n811_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93630,,,,,,,</exe>
+         <exe type="complete" true="">9363</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n811_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n811_teramai" sub="" />
+   <exelink qstep="2" npc="n822_teramai" sub="b" />
+   <exelink qstep="2" npc="n822_teramai" sub="c" />
+   <exelink qstep="2" npc="n822_teramai" sub="d" />
+   <exelink qstep="2" npc="n822_teramai" sub="3">0,1</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="b">0</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="c">1</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="!next" />
+   <journal_data recompense="93630" quest_title="세인트헤이븐의 교황" chapterid="9" quest_level="52" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_SaintHaven.dds</contents_image>
+         <destination_pos>21,0,0</destination_pos>
+         <destination_mode>custom:21@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[교황의 귀환 1]]></title>
+         <contents mid="42"><![CDATA[<html>테렌스 테라마이는 신전기사단을 움직이기 위해 세인트헤이븐 왕성으로 이동하려한다. 세인트헤이븐 왕성으로 이동하자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 왕성 내부</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[세인트헤이븐 왕성 내부로 이동]]></destination>
+         <todo_msg mid="44"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[교황의 귀환 2]]></title>
+         <contents mid="47"><![CDATA[<html>테렌스 테라마이와 대화하자.<BR><BR><FONT color=#086171>세인트헤이븐(왕성 내부)</FONT> <FONT color=#a82424>- 테렌스 테라마이</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[왕성 내부의 테라마이와 대화]]></destination>
+         <todo_msg mid="49"><![CDATA[테렌스 테라마이와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_59.dds</contents_image>
+         <destination_pos>591,0,0</destination_pos>
+         <destination_mode>custom:591@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[교황의 귀환 3]]></title>
+         <contents mid="52"><![CDATA[<html>돌연변이 서식지에서 벨스커드의 행방을 찾아보자.<BR><BR><FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 돌연변이 서식지</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[돌연변이 서식지 탐색]]></destination>
+         <todo_msg mid="54"><![CDATA[돌연변이 서식지를 탐색하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[교황의 귀환 4]]></title>
+         <contents mid="56"><![CDATA[<html>뜻밖에 돌연변이 서식지에서 바르낙과 또 다른 누군가가 함께 있는 것을 목격했다. 세인트헤이븐으로 돌아가 테라마이에게 보고하자.<BR><BR><FONT color=#086171>세인트헤이븐(왕성 내부)</FONT> <FONT color=#a82424>- 테렌스 테라마이</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[왕성 내부의 테라마이와 대화]]></destination>
+         <todo_msg mid="58"><![CDATA[테렌스 테라마이에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9362</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

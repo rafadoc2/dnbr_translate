@@ -1,0 +1,253 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9247_fateful_future</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9247</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9248</nextqid>
+      <nextqname>mq15_9248_smiling_promise</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[Fateful Future]]></qkname>
+      <qnpc>
+         <npcid>1022</npcid>
+         <npcename>n1022_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1026</npcid>
+         <npcename>n1026_academic</npcename>
+         <npckname>XD-30</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Academic Comelina$<BR>…Why should this happen...<BR><FONT color=#7e12d2>(You can get the quest from Saint Haven's Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1026_academic-noquest" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$XD-30$<BR>…Keke…Why are you regretting only now?<BR>Do you want to pretend that you're not a betrayer?<BR><FONT color=#7e12d2>(You can get the quest from Saint Haven's Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="11"><![CDATA[<html>(Explain what happened)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Stella$<BR>Tell me. What happened?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="15"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Stella$<BR>What?! Are you sure?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="17"><![CDATA[<html>(It seems strange that no one knew it when a whole army was moving)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Sorceress Stella$<BR>I'm speechless. They secretly invaded the city and abducted a girl. They may have come from the future, but they're more  swift than I expected... Where did such an army come from?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="19"><![CDATA[<html>I guess so?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Sorceress Stella$<BR>Moreover, they wouldn't have burnt down a whole city just to get a girl. There must be something more.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="21"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Stella$<BR>We wouldn't get an answer by brooding over it here...<BR><FONT color=#7e12d2>(Stella sighs quietly)</FONT><BR>So this woman called Jasmine went to <FONT color=#a82424>Arnute Canyon</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="QW_74.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="23"><![CDATA[<html>(Magic using relics?)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Master Sorceress Stella$<BR>I think I heard that there's a monster who casts magic using relics at <FONT color=#a82424>Arnute Canyon</FONT>.<BR>It also seemed like there are more thieves around that area now...<BR>But it wouldn't be a problem to you. Be quick.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-1" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Academic Comelina$<BR>
+....Why…why...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1026_academic-1" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Someone is staring at you with eyes of vengeance. It's a little scary.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_74.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Sorceress Stella$<BR>A monster wouldn't be able to win me even with magic!<BR>Hohoho~ Go to <FONT color=#a82424>Arnute Canyon</FONT> and show the prowess of the great sorceress Stella's student.<BR>You can go to <FONT color=#a82424>Arnute Canyon</FONT> via <FONT color=#a82424>Tel Rosa Gates</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1026_academic-2" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$XD-30$<BR>…Hahaha… what are… you looking at?<BR>I… don't have… anything to say to the… hero<BR>So… talk to that… betrayer instead.<BR><FONT color=#7e12d2>(Talk to Academic Comelina)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2" image="QN_Npc_Academic_Commelina.dds" itemindex="">
+      <talk_answer link_index="n1022_academic-2-a" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Academic Comelina$<BR>XD-30. What is Jasmine trying to do in the ancient temple?<BR>Why was the girl kidnapped?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-a" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_answer link_index="n1022_academic-2-b" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$XD-30$<BR>Oh my… You're a betrayer and you don't know anything… That's funny.<BR>Kekeke… I'll tell you. Daisy is not… a human.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-b" image="QN_Npc_Academic_Commelina.dds" itemindex="">
+      <talk_answer link_index="n1022_academic-2-c" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Academic Comelina$<BR>Not a human...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-c" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_answer link_index="n1022_academic-2-d" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$XD-30$<BR>Both you and me… all the clones… you know that we're jewel fragments…? The original form is… none other than… Daisy…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-d" image="QN_Npc_Academic_Commelina.dds" itemindex="">
+      <talk_answer link_index="n1022_academic-2-e" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Academic Comelina$<BR>What do you mean?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-e" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_answer link_index="n1022_academic-2-f" mid="39"><![CDATA[<html>Tell me!</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$XD-30$<BR>*Coughs* I don't… want to tell a… betrayer. I'm going to… die anyway. <BR>Try figuring it out… Betrayer and… the hero of the past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-f" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_answer link_index="n1022_academic-2-g" mid="41"><![CDATA[<html>(XD-30 screams like she's in pain.)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$XD-30$<BR>Kekeke… Your ugly efforts are not going to change anything…!<BR>XD-26, don't think that you'll be the first one who will escape the fate… Hahaha…! Argh…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-g" image="" itemindex="">
+      <talk_answer link_index="n1022_academic-2-h" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(She seems to have died. She's not moving.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-h" image="" itemindex="">
+      <talk_answer link_index="n1022_academic-2-i" mid="46"><![CDATA[<html>I see... Then let's hurry...</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Comelina's voice is trembling)</FONT>Jasmine seems to be at <FONT color=#a82424>Occupied Ancient Temple</FONT> which is across this canyon. You'd still be able to make it if you go now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-i" image="" itemindex="">
+      <talk_answer link_index="n1022_academic-3" mid="48"><![CDATA[<html>Comelina…</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Academic Comelina$<BR>No, please go first. I wish to stay here a little more.<BR><FONT color=#7e12d2>(She's looking at XD-30's body. She seems to be agonized)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-3" image="" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Academic Comelina$<BR>I'll catch up soon so don't worry. Oh, <FONT color=#387206>{user_nick}</FONT>, you should report to Stella first. It would be better if Stella knew where we were going too...<BR><FONT color=#7e12d2>(It seems like it would be better to leave Comelina alone for now. Go back to Saint Haven and report to Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1026_academic-3" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$XD-30$<BR><FONT color=#7e12d2>(You can see a corpse with agonized face. You don't want to look at it anymore. Go back and report to Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="53"><![CDATA[<html>(Tell her what happened at Arnute Canyon)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Sorceress Stella$<BR>Come here. So what happened? Did you find out anything?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-!next" mid="55"><![CDATA[<html><FONT color=#a82424>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9247</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92470,,,,,,</exe>
+         <exe type="complete" true="">9247</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">1,0</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1022_academic" sub="b" />
+   <exelink qstep="2" npc="n1022_academic" sub="c" />
+   <exelink qstep="2" npc="n1022_academic" sub="d" />
+   <exelink qstep="2" npc="n1022_academic" sub="e" />
+   <exelink qstep="2" npc="n1022_academic" sub="f" />
+   <exelink qstep="2" npc="n1022_academic" sub="g" />
+   <exelink qstep="2" npc="n1022_academic" sub="h" />
+   <exelink qstep="2" npc="n1022_academic" sub="i" />
+   <exelink qstep="2" npc="n1022_academic" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="a">0</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="!next">1</exelink>
+   <journal_data recompense="92470" quest_title="운명적인 미래" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Fateful Future 1]]></title>
+         <contents mid="59"><![CDATA[<html>Tell Stella what happened at Tel Rosa City.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="61"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_74.dds</contents_image>
+         <destination_pos>741,n1022</destination_pos>
+         <destination_mode>custom:741@1</destination_mode>
+         <statemark_npcid>1022</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Fateful Future 2]]></title>
+         <contents mid="63"><![CDATA[<html>Jasmine seems to have headed towards <FONT color=#a82424>Arnute Canyon</FONT>.<BR>Join Comelina at <FONT color=#a82424>Arnute Canyon</FONT> and look for Jasmine.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Gates)</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- Arnute Canyon</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Investigate Arnute Canyon]]></destination>
+         <todo_msg mid="65"><![CDATA[Meet Academic Comelina at Arnute Canyon.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Fateful Future 3]]></title>
+         <contents mid="67"><![CDATA[<html>You have found out that Jasmine is at <FONT color=#a82424>Occupied Ancient Temple</FONT>.<BR>
+Report to Stella.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="69"><![CDATA[Go back to Saint Haven and report to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>60:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9246</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

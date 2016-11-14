@@ -1,0 +1,350 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9340_chaotic_voice</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>9340</qid>
+      <designer>정진호</designer>
+      <qlevel>44</qlevel>
+      <qdesc>(714 용추종자 점거지 참조)
+유저는 용추종자 점거지에서 모든 상황이 끝는 것을 본다. 할아버지를 안고 울고 있는 차티를 목격한다.
+충격을 받은 유저. 혼란스럽다.
+그때 일루전이 나타난다.
+'내가 말했지. 그녀는 너를 속이고 있다고.
+그녀는 네가 시간의 미아가 되지 않도록 하는 법을 알고 있어. 알면서도 네게 숨기고 있는 거다. 미쳐버리도록.'
+사라지는 일루전.
+루나와 대화. 루나는 '나는 네 생각까지 들을 수는 없어.' 라고 답한다.
+그가 본 일루전은 내면의 일루전이었다. 유저는 점점 혼란해진다.
+'나도 너도 시간혼란이 심해지고 있다. 네 세계에서 시간을 순행구조로 살아내고 있는 건 지금 너 자신뿐이다.'
+루나는 순백의 오브와 에클레르가 만들어준 도구의 힘도 다했다며, 더 강력한 무언가가 필요하다고 말한다.
+카라큘에게 돌아가 보자.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9341</nextqid>
+      <nextqname>mq15_9341_crisscross</nextqname>
+      <nextqnpc>n1177_lunaria</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[혼란 속의 목소리]]></qkname>
+      <qnpc>
+         <npcid>1169</npcid>
+         <npcename>n1169_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1176</npcid>
+         <npcename>n1176_illusion</npcename>
+         <npckname>일루전</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1177</npcid>
+         <npcename>n1177_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>492</npcid>
+         <npcename>n492_charty</npcename>
+         <npckname>차티</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>493</npcid>
+         <npcename>n493_charty_grandfather</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-accepting-acceptted" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$상인 루시타$<BR>안녕하세요. 모험자님.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-1-a" mid="11" select_type="2" />
+      <talk_question mid="10"><![CDATA[<html>$상인 루시타$<BR>차티 언니의 할아버지는… 아직인가요?<BR>다들 사이 좋게 지낼 수 있다면 좋을 텐데…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-a" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-1-" mid="13" select_type="5" />
+      <talk_question mid="12"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(루나리아는 모험자들이 용추종자 점거지로 가는 것을 봤다고 했어.<BR>시간이 또 어떻게 꼬여 있는지, 거기에 간다고 누굴 만날 수 있을지는 모르지만… 그래도 가 보는 편이 좋겠지.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1" image="QW_54.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$루나리아$<BR><FONT color=#a82424>용추종자 점거지</FONT>.<BR>가든 가지 않든, 결정은 네가 해. 나는 네 뜻을 따를 뿐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-1-" mid="18" select_type="5" />
+      <talk_question mid="17"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9340_01.ogg}<BR>
+아직도 모르겠나?<BR>어리석은 과거의 존재여.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-1-" mid="20" select_type="5" />
+      <talk_question mid="19"><![CDATA[<html>$루나리아$<BR>…내게는 더 할 말이 없어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-a" mid="23" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$차티$<BR>흑흑… 할아버지…. 너무 늦게 와서 죄송해요….<BR>제가… 제가 좀 더 빨리 왔어야 했는데….<BR>할아버지…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-a" image="" itemindex="" portrait_left="NPC_Left_Chartygrandfather.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-b" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$차티의 할아버지${action:Stand}<BR>아, 아니다… 얘야. 더 늦기 전에 네가 온 걸 선조님들께 감사드리고 싶구나.<BR>콜록콜록… 이제 이 할애비는 선조님들께… 가야겠구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-b" image="" itemindex="" portrait_left="NPC_Left_Chartygrandfather.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-c" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(뭐가 어떻게 된 거지? 이건… 차티는 죽었다고 했는데…?<BR>그러면 또 시간을 거슬러 온 건가…?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-d" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$차티$<BR>싫어요! 안돼요! 차티를 혼자 두고 가지 마세요!<BR>제겐 할아버지가 필요하단 말이에요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-d" image="" itemindex="" portrait_left="NPC_Left_Chartygrandfather.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-e" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$차티의 할아버지$<BR>미안하구나, 차티야…. 콜록콜록… 이제 네가 우리 부족을 맡아줘야 한단다….<BR>네게 우리 부족의 성소를… 알려주마….<BR><FONT color=#7e12d2>(차티의 할아버지가 차티의 귓가에 뭔가를 속삭인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-e" image="" itemindex="" portrait_left="NPC_Left_Chartygrandfather.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-f" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$차티의 할아버지$<BR>콜록콜록… 용추종자 놈들이 나를 고문해서 성소의 위치를 알아내려 했지만…<BR>헉헉… 이 할애비는… 선조들의 비밀을… 헉헉… 지킬 수 있었단다….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-f" image="" itemindex="" portrait_left="NPC_Left_Chartygrandfather.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-g" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$차티의 할아버지${action:Die}<BR>차티야… 너도 그 비밀을… 부디…<BR>
+드래곤의 보옥을 지키거… 라…<BR><FONT color=#7e12d2>(차티 할아버지의 눈이 감긴다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-h" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$차티$<BR>안돼~! 할아버지! 제발… 제발 눈을 떠요!<BR>제발… 저를 두고 혼자 가지 마세요… 제발… 흑흑…<BR><FONT color=#7e12d2>(차티가 슬프게 흐느낀다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-i" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-1-j" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$차티$<BR>저리 가… 가 버려. 제발, 잠시… 내가 할아버지와 단 둘이 있게 해줘….<BR>흑흑… 할아버지… 흐윽…<BR><FONT color=#7e12d2>(차티가 몸을 조그맣게 웅크리고 할아버지에게 고개를 파묻는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-2" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>차티, 저기…</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n493_charty_grandfather-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n493_charty_grandfather-2-" mid="46" select_type="5" />
+      <talk_question mid="45"><![CDATA[<html>$차티$<BR><FONT color=#7e12d2>(차티는 식어가는 할아버지의 시신을 안고 울먹이고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-2-a" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9340_01.ogg}<BR>아직도 모르겠나? 어리석은 과거의 존재여.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-2-b" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>너는 누구지? 내 안에서 나타난 환상인가, 아니면 실체를 가진 분신인가?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-2-c" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9340_02.ogg}<BR>…나는 너다.<BR>너 또한 과거의 나. 시간을 허비해 버린 후에야 비로소 너는 내가 되겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-2-d" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9340_03.ogg}<BR>내가 말하지 않았나?<BR>저 여자는 너를 속이고 있다고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-2-e" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무슨 소리지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-2-f" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9340_04.ogg}<BR>저 여자는 네가 시간의 미아가 되지 않도록 하는 법을 알고 있다.<BR>그러나 알면서도 네게 숨기는 거다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-2-g" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9340_05.ogg}<BR>네가 미쳐버리도록.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-2-h" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>뭐라고?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-3" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9340_06.ogg}<BR>어리석은 녀석….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1176_illusion-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Illusion.dds" center_image="">
+      <talk_answer link_index="n1176_illusion-3-" mid="67" select_type="5" />
+      <talk_question mid="66"><![CDATA[<html>$일루전${sound:npc_Illusion_qu_9340_07.ogg}<BR>미쳐버린 후에야 네가 낭비해 버린 시간을 되돌이켜 생각하겠지.<BR>후회하며 시간의 미아가 되어 버린 다음에 말이다.<BR>
+어리석은 과거의 나여….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-a" mid="69" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$루나리아$<BR>일루전을 봤냐고?<BR>내게, 지금 그의 목소리를 들었냐고 물었어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-b" mid="71" select_type="2" />
+      <talk_question mid="70"><![CDATA[<html>$루나리아$<BR>아니. 나는 볼 수 없어.<BR>네 생각을 어떻게 내가 볼 수 있지? 네 내면에 깃든 그가 보여주는 환상을.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-c" mid="73" select_type="2" />
+      <talk_question mid="72"><![CDATA[<html>$루나리아${action:Stand1}<BR>너는 결국은 너 자신과 대화를 나누는 거야.<BR>그걸 나는 알 수 없지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-d" mid="75" select_type="2" />
+      <talk_question mid="74"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그렇게나 생생했는데, 분리된 것이 아니라 내 안의 그였다고?<BR>…모르겠어. 점점 더 여기가 어디고 언제쯤인지, 내가 누구고 그가 누구인지….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-e" mid="77" select_type="2" />
+      <talk_question mid="76"><![CDATA[<html>$루나리아$<BR>나도 너도 시간혼란이 심해지고 있는 거야.<BR>네 세계에서 시간을 순행구조로 살아내고 있는 건 지금 너 자신뿐이니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-f" mid="79" select_type="2" />
+      <talk_question mid="78"><![CDATA[<html>$루나리아$<BR>어둠의 여신관 에클레르가 만들어 준 도구의 힘도 다한 모양이네.<BR>더 강력한 무엇인가를 찾아내지 않으면 안 돼.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-g" mid="103" select_type="2" />
+      <talk_question mid="102"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>더 강력한 무엇인가…?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-h" mid="105" select_type="2" />
+      <talk_question mid="104"><![CDATA[<html>$루나리아$<BR><FONT color=#2b2723>그래. 강력한 힘을 가진 무언가.<BR>너와 나를 이 시간의 흐름에 붙들어 매어 줄 수 있는 것이… 필요해.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-i" mid="98" select_type="4" />
+      <talk_question mid="82"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-3-i" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-3-!next" mid="100" select_type="2" />
+      <talk_question mid="99"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어쨌든 리버워트 선착장 쪽으로 나가 보자.<BR>뭐든, 가만히 멈춰 서 있으면 아무 것도 바뀌지 않으니까.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9340</exe>
+         <exe type="talk" npc="n709_trader_lucita">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93400,,,,,,,</exe>
+         <exe type="complete" true="">9340</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n709_trader_lucita" sub="" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="b" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="c" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="d" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="e" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="f" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="g" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="h" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="i" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="j" />
+   <exelink qstep="1" npc="n493_charty_grandfather" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1176_illusion" sub="b" />
+   <exelink qstep="2" npc="n1176_illusion" sub="c" />
+   <exelink qstep="2" npc="n1176_illusion" sub="d" />
+   <exelink qstep="2" npc="n1176_illusion" sub="e" />
+   <exelink qstep="2" npc="n1176_illusion" sub="f" />
+   <exelink qstep="2" npc="n1176_illusion" sub="g" />
+   <exelink qstep="2" npc="n1176_illusion" sub="h" />
+   <exelink qstep="2" npc="n1176_illusion" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n1177_lunaria" sub="b" />
+   <exelink qstep="3" npc="n1177_lunaria" sub="c" />
+   <exelink qstep="3" npc="n1177_lunaria" sub="d" />
+   <exelink qstep="3" npc="n1177_lunaria" sub="e" />
+   <exelink qstep="3" npc="n1177_lunaria" sub="f" />
+   <exelink qstep="3" npc="n1177_lunaria" sub="g" />
+   <exelink qstep="3" npc="n1177_lunaria" sub="h">0</exelink>
+   <exelink qstep="3" npc="n1177_lunaria" sub="i">1</exelink>
+   <exelink qstep="3" npc="n1177_lunaria" sub="!next" />
+   <journal_data recompense="93400" quest_title="혼란 속의 목소리" chapterid="6" quest_level="44" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,n493</destination_pos>
+         <destination_mode>custom:541@1,542@1</destination_mode>
+         <statemark_npcid>493</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[혼란 속의 목소리 I]]></title>
+         <contents mid="86"><![CDATA[<html>모험자들이 용추종자 점거지로 가는 것을 봤다고 한다. 시간이 또 어떻게 꼬여 있는지, 거기에 간다고 누굴 만날 수 있을지는 모르지만 가 보는 편이 좋겠다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT> <FONT color=#a82424>- 용추종자 점거지</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[용추종자 점거지]]></destination>
+         <todo_msg mid="88"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Illusion.dds</contents_image>
+         <destination_pos>542,n1176</destination_pos>
+         <destination_mode>custom:541@1,542@1</destination_mode>
+         <statemark_npcid>1176</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[혼란 속의 목소리 II]]></title>
+         <contents mid="91"><![CDATA[<html>시간을 또 거슬러 온 것인지, 차티의 할아버지가 눈 앞에서 죽어가는 모습을 목격하고 말았다.<BR>그리고 일루전이 나타났다. 분리된 환상인가, 아니면 실체를 가진 분신인가?<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT> <FONT color=#a94407>- 용추종자 점거지(일루전)</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[용추종자 점거지에서 일루전과 대화]]></destination>
+         <todo_msg mid="93"><![CDATA[갑자기 나타난 일루전과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>542,n1177</destination_pos>
+         <destination_mode>custom:541@1,542@1</destination_mode>
+         <statemark_npcid>1177</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[혼란 속의 목소리 III]]></title>
+         <contents mid="95"><![CDATA[<html>루나리아와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT> <FONT color=#a94407>- 용추종자 점거지(루나리아)</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[용추종자 점거지에서 루나리아와 대화]]></destination>
+         <todo_msg mid="97"><![CDATA[루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class>7</user_class>
+      <prev_quest>9339</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

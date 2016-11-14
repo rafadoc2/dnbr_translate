@@ -1,0 +1,217 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9368_mirror_of_truth2</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9368</qid>
+      <designer>최지은</designer>
+      <qlevel>54</qlevel>
+      <qdesc>보스 죽이면 얻음</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9369</nextqid>
+      <nextqname>mq15_9369_where_of_truth</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[진실의 거울 2]]></qkname>
+      <qnpc>
+         <npcid>703</npcid>
+         <npcename>n703_book_doctor</npcename>
+         <npckname>수다쟁이 책 닥터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-accepting" image="QS_Default.dds" itemindex="400318" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-accepting-acceptted" mid="33" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$수다쟁이 책 닥터$<BR>느리군, 느려!<BR><FONT color=#a82424>운석 파편</FONT>을 이제서야 가져온 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1" image="QS_Default.dds" itemindex="400319" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-2" mid="35" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$수다쟁이 책 닥터$<BR>그럼 이계의 가면의 주 재료인 운석 파편은 얻었으니, 다음 재료인 <FONT color=#a82424>돌연변이의 눈</FONT>을 구해올 차례군.<BR><FONT color=#7e12d2>(닥터가 책장을 넘긴다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="41" select_type="5" />
+      <talk_question mid="40"><![CDATA[<html>$시델$<BR>요즘 분주해 보이네.<BR>나도 도움이 될 수 있도록 열심히 공부하는 중이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2" image="QW_59.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-2-" mid="38" select_type="5" />
+      <talk_question mid="10"><![CDATA[<html>$수다쟁이 책 닥터$<BR>돌연변이의 눈은 <FONT color=#a82424>돌연변이 서식지</FONT>에서 구할 수 있다네.<BR>그곳에 서식하는 돌연변이들을 닥치는대로 잡다보면 나올 것 같구만. 껄껄~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-3-a" mid="44" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$수다쟁이 책 닥터$<BR>헉! 으헉… 그 무슨 냄샌가?!<BR>저리 치우지 못할까?! 이 닥터 님은 섬세한 책이란 말일세!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-3-b" mid="45" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$수다쟁이 책 닥터$<BR>으으… 그 구역질 나는 냄새가 책장에 배어들면 하면 어쩔 건가?<BR>차라리 타마라 님의 요리로 목욕을 하는 게 낫지!<BR><FONT color=#7e12d2>(닥터가 오한이 드는지 벌벌 떤다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-3-b" image="QS_Default.dds" itemindex="400319" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-4" mid="46" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$수다쟁이 책 닥터$<BR>어디보자….<BR><FONT color=#7e12d2>(닥터가 멀찍이에서 {user_nick}의 손을 바라본다)</FONT><BR>흠. 어쨌든 돌연변이의 눈까지 제대로 챙겨왔구먼.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_BookDoctor.dds" center_image="">
+      <talk_answer link_index="n703_book_doctor-4-" mid="51" select_type="5" />
+      <talk_question mid="50"><![CDATA[<html>$수다쟁이 책 닥터$<BR>자, 그럼 그 물건들을 시델 님께 전해 드리게나.<BR><FONT color=#7e12d2>(닥터가 정말로 손을 대기 싫은지 얼른 책장을 덮는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-4-a" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$시델$<BR>으... 오한이 드는데... 뭐 지독한 거라도 들고 왔어?<BR>...그 손에 든 건 뭐야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-4-b" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>$시델$<BR>스승님께서 생전에 따로 연구하시던 것은 백 가지도 넘어. 그런데 진실의 가면이라는 것도 있었구나.<BR>몰랐어. 혹시 모르니까 나도 내용을 챙겨 둬야겠다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-4-c" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$시델$<BR><FONT color=#7e12d2>(시델이 닥터를 억지로 열고 책갈피를 꽂는다)</FONT><BR>...내용은 알 것 같아. 하지만 정말 이런 게 소용이 있을지 모르겠네.<BR>음, 일단 그 재료들을 줘 볼래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-4-d" mid="72" select_type="4" />
+      <talk_question mid="61"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-4-!next" mid="74" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>$시델$<BR>
+<FONT color=#7e12d2>(시델이 재료들을 꼼꼼하게 살펴본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9368</exe>
+         <exe type="talk" npc="n703_book_doctor">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">600061</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400319</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">400319</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">700061</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93680,,,,,,,</exe>
+         <exe type="complete" true="">9368</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n703_book_doctor" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n703_book_doctor" sub="2">0,1,2,3,8</exelink>
+   <exelink qstep="3" npc="n703_book_doctor" sub="b" />
+   <exelink qstep="3" npc="n703_book_doctor" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n707_sidel" sub="b" />
+   <exelink qstep="4" npc="n707_sidel" sub="c">0</exelink>
+   <exelink qstep="4" npc="n707_sidel" sub="d">1</exelink>
+   <exelink qstep="4" npc="n707_sidel" sub="!next" />
+   <journal_data recompense="93680" quest_title="진실의 거울 2" chapterid="9" quest_level="54" quest_mark_type="1" use_item_list="400319">
+      <journal index="1">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="17"><![CDATA[돌연변이의 눈]]></title>
+         <contents mid="18"><![CDATA[<html>이계의 가면을 만들기 위해 두번째 재료인 돌연변이의 눈을 구해야 한다. 수다쟁이 책 닥터와 대화하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 수다쟁이 책 닥터</FONT></html>]]></contents>
+         <destination mid="19"><![CDATA[카라큘의 오두막에서 수다쟁이 책 닥터와 대화]]></destination>
+         <todo_msg mid="20"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_59.dds</contents_image>
+         <destination_pos>591,0,0</destination_pos>
+         <destination_mode>custom:591@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="22"><![CDATA[돌연변이의 눈을 찾아서]]></title>
+         <contents mid="23"><![CDATA[<html>돌연변이 서식지에서 돌연변이의 눈을 입수하자.<BR><BR><FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 돌연변이 서식지</FONT></html>]]></contents>
+         <destination mid="24"><![CDATA[돌연변이 서식지]]></destination>
+         <todo_msg mid="25"><![CDATA[돌연변이 서식지에서 돌연변이의 눈을 입수하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[돌연변이의 눈 입수 성공]]></title>
+         <contents mid="27"><![CDATA[<html>돌연변이의 눈을 입수했다. 카라큘의 오두막으로 돌아가 수다쟁이 책 닥터와 대화하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 수다쟁이 책 닥터</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[카라큘의 오두막에서 수다쟁이 책 닥터와 대화]]></destination>
+         <todo_msg mid="29"><![CDATA[수다쟁이 책 닥터에게 돌아가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[만드는 사람은 따로 있었다]]></title>
+         <contents mid="68"><![CDATA[<html>구한 것을 시델에게 전하자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[카라큘의 오두막에서 시델과 대화]]></destination>
+         <todo_msg mid="70"><![CDATA[시델과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9367</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

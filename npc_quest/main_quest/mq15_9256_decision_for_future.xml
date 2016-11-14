@@ -1,0 +1,387 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9256_decision_for_future</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9256</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9257</nextqid>
+      <nextqname>mq15_9257_turning_point_of_history</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <uistyle>0</uistyle>
+      <qkname mid="1"><![CDATA[Decision for the Future]]></qkname>
+      <qnpc>
+         <npcid>1038</npcid>
+         <npcename>n1038_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1050</npcid>
+         <npcename>n1050_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="8" select_type="0"><![CDATA[<html>What's up?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#387206>{user_nick}</FONT>! You're here at the right time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="10" select_type="0"><![CDATA[<html>A letter?! From Comelina?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Stella$<BR>Look, Academic Comelina sent you a letter.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="12" select_type="0"><![CDATA[<html>(Receive the letter)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Stella$<BR>I never thought I would ever receive a letter from someone from the future~ Here you go.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="QW_81.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="14" select_type="0"><![CDATA[<html>(Seems like she wrote it in a hurry)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Academic Comelina's Letter$<BR>Riverwort Wharf, next to Tel Rosa Entrance. Next to the Ancient Temple. Jasmine is already there. Please don't tell anyone. [<FONT color=#a82424>Jasmine's Expedition Base</FONT>], trouble for us if people get to know about this place. Be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="16" select_type="0"><![CDATA[<html>(Come up with any story)Well, it's a personal matter between me and Comelina…</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Stella$<BR>What does it say?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="77" select_type="0"><![CDATA[<html>Huh? What are you talking about?</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="78" select_type="0"><![CDATA[<html>Well, I can't control my attractiveness too.</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="79" select_type="0"><![CDATA[<html>(I don't feel like talking to her anymore)</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Master Sorceress Stella$<BR>What? P.E.R.S.O.N.A.L?<BR>Oh my oh my! You two must be getting along VERY WELL~<BR>Friendship before a war~ How romantic!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="82" select_type="0"><![CDATA[<html>(Quickly go to Tel Rosa Entrance and look for Jasmine's Expedition Base)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Master Sorceress Stella$<BR>Hohoho~ How cute. Well, it's normal for girls around that age. When I was young, I…<FONT color=#7e12d2> (Stella is reminiscing her younger days)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="73"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Face is full of determination.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_81.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="17"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I feel bad to have lied to Stella, but I have no choice. I should go to Jasmine's Expedition Base at Tel Rosa Entrance)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1038_academic-2-a" mid="84" select_type="0"><![CDATA[<html>I was shocked too. I never thought Jasmine would appear out of a sudden…</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html><FONT color=#2b2723>$Academic Comelina$<BR><FONT color=#387206>{user_nick}</FONT>! I'm glad you're here safe and sound. It's a relief that Jasmine did not act first… I was worried she might launch an attack.</FONT><FONT color=#7e12d2></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-2-a" image="QN_Npc_Academic_jasmine.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1038_academic-2-b" mid="86" select_type="0"><![CDATA[<html>Huh? Why?</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Academic Comelina$<BR>You can't fight with Jasmine yet. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-2-b" image="QM_nornen_valkiri.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1038_academic-2-c" mid="88" select_type="0"><![CDATA[<html>So the thing I fought with just now was Valkyrie.</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Academic Comelina$<BR>Do you see that behind me? That place used to be part of the ancient temple. Jasmine seems to be using the power in this area to activate the jewel and create new clones - Valkyrie and Nornen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-2-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1038_academic-2-d" mid="90" select_type="0"><![CDATA[<html>Oh my god...</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Academic Comelina$<BR>…Yes. Jasmine has not only made use of this temple's power to easily create Valkyrie and Nornen, she… she has also transformed herself to somewhat like a dragon. It would be hard to give her any damage with normal attacks.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-2-d" image="QM_nornen_valkiri.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1038_academic-2-e" mid="92" select_type="0"><![CDATA[<html>I see. Leave it to me.</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Academic Comelina$<BR>But we still have hope. If we find and destroy Valkyrie or Nornen that are transferring energy to Jasmine, energy source to Jasmine can be cut.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-2-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1038_academic-2-f" mid="157" select_type="0"><![CDATA[<html>Got it. (I think I heard something scary just now)</html>]]></talk_answer>
+      <talk_question mid="156"><![CDATA[<html>$Academic Comelina$<BR>…Thank you. This ancient temple used to trap enemies in the past and use them as sacrificial offe… Nevermind… it is like a maze. Please be careful not to lose your way. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-2-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1038_academic-3" mid="94" select_type="0"><![CDATA[<html>OK. (Comelina seems more energetic than before)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html><FONT color=#2b2723>$Academic Comelina$<BR>…Meanwhile, I will think of ways to enter the laboratory. If Jasmine does anything suspicious, I will attack… I mean I will inform you.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1038_academic-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="19"><![CDATA[<html>$Academic Comelina$<BR>Jasmine seems to have installed some defence systems on the relics. It wouldn't be hard for you to get past them, but please be careful, <FONT color=#387206>{user_nick}</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-4" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-4-a" mid="98" select_type="0"><![CDATA[<html>It's over!</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Academic Comelina$<BR>You… you did it...? <FONT color=#387206>{user_nick}</FONT>, you have defeated Jasmine!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-4-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-4-b" mid="100" select_type="0"><![CDATA[<html>Of course, I'm strong.</html>]]></talk_answer>
+      <talk_answer link_index="n1050_academic-4-b" mid="101" select_type="0"><![CDATA[<html>It's all thanks to your help.</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Academic Comelina$<BR>…Well, we can't be sure that she really is dead yet. But the new clones have been destroyed, and this base is now under you, <FONT color=#387206>{user_nick}</FONT>. Jasmine wouldn't be able to wage a war anymore. You've done it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-4-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-4-c" mid="103" select_type="0"><![CDATA[<html>(I can't really believe that I saved the world)</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Academic Comelina$<BR>Heheh… Now, there will no longer be tragedies of my sisters being used by Jasmine, and towns burning down. Thank you so much, <FONT color=#387206>{user_nick}</FONT>. <FONT color=#387206>{user_nick}</FONT>, you have saved the world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-4-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-5" mid="105" select_type="0"><![CDATA[<html>Me?</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Academic Comelina$<BR>Oh, come to think of it, I have something to tell you... First, would you take that dragon's jewel over there?<BR>When you take the jewel, I will tell you what kind of jewel it is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-5" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="108"><![CDATA[<html>$Academic Comelina$<BR>…I believe it is only right for you to have this jewel.<BR>Please take the jewel and listen to my story.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-6-a" mid="110" select_type="0"><![CDATA[<html>(A friendly hero...)</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Comelina smiles)</FONT><BR>It's a beautiful jewel. It was the jewel of Ancient Dragon, the good dragon created by the Goddess. It was always taken care of by a friendly hero. Geraint, Argenta, …… and the one who will become the guardian of the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-6-b" mid="112" select_type="0"><![CDATA[<html>I was always curious… Who is that hero of the future?</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Academic Comelina$<BR>Though the three of them never came together at one place, the kind soul of Ancient Dragon must have been passed on to those heroes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-6-c" mid="114" select_type="0"><![CDATA[<html>Sure.</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Comelina's face hardens and she starts to mumble to herself)</FONT><BR>…Er…Well…I'm not sure… Would it be okay if I tell you...<BR>No, the history has changed so maybe it doesn't matter... Hmm...<BR>Okay! I'll tell you. But you must not tell anyone else. Promise?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6-c" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-6-d" mid="116" select_type="0"><![CDATA[<html>WHAAAAT?!!?</html>]]></talk_answer>
+      <talk_answer link_index="n1050_academic-6-d" mid="161" select_type="0"><![CDATA[<html>HUH!??!? The Velskud that I know?</html>]]></talk_answer>
+      <talk_answer link_index="n1050_academic-6-d" mid="162" select_type="0"><![CDATA[<html>Haha, well, Velskud is a common name~</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Academic Comelina$<BR>…It's Velskud.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-6-e" mid="118" select_type="0"><![CDATA[<html>...(I'm too stunned to say anything)</html>]]></talk_answer>
+      <talk_answer link_index="n1050_academic-6-e" mid="166" select_type="0"><![CDATA[<html>...(My mind is in a mess. FOgret about thinking too hard.)</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Academic Comelina$<BR>…Yes, I'm talking about Velskud who is at Royal Castle Underground right now… Though the current Velskud seems a lot different from him in the future… He really is a friendly person!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-6-f" mid="120" select_type="0"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Academic Comelina$<BR>Ehem, anyway, that is a thing of the future. Now about the jewel… by right, Daisy should be the one who owns it, but she's no longer here. It belongs to no one now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-6-g" mid="124" select_type="0"><![CDATA[<html>…My shoulders are heavy.</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Academic Comelina$<BR>So I would like you to take care of this jewel. You are someone from the present, and I have seen with my own eyes that you have requisites of a hero. I believe you will use this where it is needed the most.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-6-g" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1050_academic-7" mid="127" select_type="0"><![CDATA[<html>I got it.</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Academic Comelina$<BR>…I will support whatever decision you make.<BR>But please tell me how you have used it.<BR>I am partly responsible for recording down the new history.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1050_academic-7" image="QN_Npc_SoceressStella.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="134"><![CDATA[<html>$Academic Comelina$<BR>…Thank you. I will be waiting here. Please tell me the results later.<BR><FONT color=#7e12d2>(First, go back to Master Sorceress Stella and tell her you have defeated Jasmine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-7-a" mid="136" select_type="0"><![CDATA[<html>(Tell her what happened)</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Master Sorceress Stella$<BR>Hmm? What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-7-!next" mid="138" select_type="0"><![CDATA[<html><FONT color=#a82424>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9256</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>보스전에 아카데믹 코멜리나가 잡혀있음. 코멜리나, 자스민과의 대화 보여준 후 스텝 및 저널 옮김.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment>프랍 클릭하면 바로 코멜리나랑 대화하도록.</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">8</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92560,,,,,,,</exe>
+         <exe type="complete" true="">9256</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1038_academic" sub="b" />
+   <exelink qstep="2" npc="n1038_academic" sub="c" />
+   <exelink qstep="2" npc="n1038_academic" sub="d" />
+   <exelink qstep="2" npc="n1038_academic" sub="e" />
+   <exelink qstep="2" npc="n1038_academic" sub="f" />
+   <exelink qstep="2" npc="n1038_academic" sub="3">0,1</exelink>
+   <exelink qstep="4" npc="n1050_academic" sub="b" />
+   <exelink qstep="4" npc="n1050_academic" sub="b" />
+   <exelink qstep="4" npc="n1050_academic" sub="c" />
+   <exelink qstep="4" npc="n1050_academic" sub="5">0,1</exelink>
+   <exelink qstep="6" npc="n1050_academic" sub="b" />
+   <exelink qstep="6" npc="n1050_academic" sub="c" />
+   <exelink qstep="6" npc="n1050_academic" sub="d" />
+   <exelink qstep="6" npc="n1050_academic" sub="d" />
+   <exelink qstep="6" npc="n1050_academic" sub="d" />
+   <exelink qstep="6" npc="n1050_academic" sub="e" />
+   <exelink qstep="6" npc="n1050_academic" sub="e" />
+   <exelink qstep="6" npc="n1050_academic" sub="f" />
+   <exelink qstep="6" npc="n1050_academic" sub="g" />
+   <exelink qstep="6" npc="n1050_academic" sub="7">0,1</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="a">0</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="!next">1</exelink>
+   <journal_data recompense="92560" quest_title="미래를 위한 결정" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Decision for the Future 1]]></title>
+         <contents mid="53"><![CDATA[<html>Master Sorceress Stella seems to have something to say to you. Talk to Stella.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="55"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_81.dds</contents_image>
+         <destination_pos>811,n1038</destination_pos>
+         <destination_mode>custom:811@1</destination_mode>
+         <statemark_npcid>1038</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Decision for the Future 2]]></title>
+         <contents mid="57"><![CDATA[<html>Jasmine's Expedition Base was mentioned in Comelina's letter.<BR>Go to Jasmine's Expedition Base at Tel Rosa Entrance.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Entrance)</FONT> <FONT color=#a82424>- Jasmine's Expedition Base</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Explore Jasmine's Expedition Base]]></destination>
+         <todo_msg mid="59"><![CDATA[Meet Academic Comelina at Jasmine's Expedition Base.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_nornen_valkiri.dds </contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Decision for the Future 3]]></title>
+         <contents mid="62"><![CDATA[<html>There were ancient relics inside Jasmine's Expedition Base.<BR>First, go into the ancient relics and cut Jasmine's energy source then go back to Comelina. You can cut the energy source when you defeat monsters named Commando. <BR><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Entrance)<FONT color=#2b2723> </FONT><FONT color=#a82424>- Jasmine's Expedition Base</FONT></FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Defeat Commando clones]]></destination>
+         <todo_msg mid="64"><![CDATA[Defeat clones that are named Commando.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QM_Jasmin_Black.dds </contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Decision for the Future 4]]></title>
+         <contents mid="66"><![CDATA[<html>Doors to Jasmine's lab have opened.<BR>It is a final battle with the enemy from the future.<BR>Enter the lab.<BR><FONT color=#086171><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Entrance)<FONT color=#2b2723> </FONT><FONT color=#a82424>- Jasmine's Expedition Base</FONT></FONT><BR><BR></FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Defeat Jasmine.]]></destination>
+         <todo_msg mid="68"><![CDATA[Defeat Jasmine.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>811,n1050</destination_pos>
+         <destination_mode>custom:811@1</destination_mode>
+         <statemark_npcid>1050</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Decision for the Future 5]]></title>
+         <contents mid="70"><![CDATA[<html>You have defeated Jasmine.<BR>Talk to Comelina.<BR><BR><FONT color=#086171><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Entrance)<FONT color=#2b2723> </FONT><FONT color=#a82424>- Jasmine's Expedition Base</FONT></FONT><BR></FONT><FONT color=#7e12d2></FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Talk with Academic Comelina]]></destination>
+         <todo_msg mid="72"><![CDATA[You have successfully defeated Jasmine. Talk to Comelina.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="142"><![CDATA[Decision for the Future 6]]></title>
+         <contents mid="143"><![CDATA[<html>Comelina has asked you to keep the jewel.<BR>Take the Ancient Dragon's jewel.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Entrance)<FONT color=#2b2723> </FONT><FONT color=#a82424>- Jasmine's Expedition Base</FONT></FONT></html>]]></contents>
+         <destination mid="144"><![CDATA[Retrieve Ancient Dragon's jewel]]></destination>
+         <todo_msg mid="145"><![CDATA[Pick up the Ancient Dragon's jewel.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>811,n1050</destination_pos>
+         <destination_mode>custom:811@4</destination_mode>
+         <statemark_npcid>1050</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="147"><![CDATA[Decision for the Future 7]]></title>
+         <contents mid="148"><![CDATA[<html>You have retrieved the Ancient Dragon's jewel.<BR>Talk to Academic Comelina.<BR><BR><FONT color=#086171>Jasmine's Expedition Base<FONT color=#2b2723> </FONT><FONT color=#a82424>- Academic Comelina</FONT></FONT></html>]]></contents>
+         <destination mid="149"><![CDATA[Talk with Academic Comelina]]></destination>
+         <todo_msg mid="150"><![CDATA[You have retrieved the Ancient Dragon's jewel. Talk to Academic Comelina.]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="151"><![CDATA[Decision for the Future 8]]></title>
+         <contents mid="152"><![CDATA[<html>Comelina left the Ancient Dragon's jewel under your care, and said that she will follow whatever decision you make.<BR>Your shoulders are heavy. First, report to Master Sorceress Stella.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="153"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="154"><![CDATA[Report to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9248</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+   </condition_data>
+</quest>

@@ -1,0 +1,236 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9369_where_of_truth</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9369</qid>
+      <designer>최지은</designer>
+      <qlevel>54</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9370</nextqid>
+      <nextqname>mq15_9370_testimony</nextqname>
+      <nextqnpc>n858_place_of_trail</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[진실이 가리키는 곳]]></qkname>
+      <qnpc>
+         <npcid>1189</npcid>
+         <npcename>n1189_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>858</npcid>
+         <npcename>n858_place_of_trail</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="52" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$시델$<BR>진실의 거울... 그게 도움이 되면 좋겠구나.<BR>나는 다른 모험자들을 돕고 있어. 바르낙 님이 어서 편안해지길 바랄 뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-a" mid="57" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$시델$<BR><FONT color=#7e12d2>(시델이 주문을 외우자 운석 파편과 돌연변이의 눈이 합쳐진다)</FONT><BR><FONT color=#2b2723>...된 건가?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="QS_Default.dds" itemindex="400320" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-b" mid="58" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$시델$<BR>음... 제대로 만들어진 것 같아.<BR>자, 여기 있어.<BR><FONT color=#7e12d2>(시델이 완성된 이계의 가면을 내민다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="QS_Default.dds" itemindex="400320" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-c" mid="59" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>$시델$<BR>잘 된 건지 모르겠네.<BR>그러니까, 진실의 거울을 찾아내서 이걸 쓰고 들여다 보면 뭔가가... 보일 거란 말이지?<BR>네가 찾고자 하는 걸 찾길 바랄게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2" mid="60" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$시델$<BR>닥터에게 쓰여 있는 스승님의 해석을 보면, 진실의 거울이 본디 위치했다고 전해지는 곳은...<BR>...아, 여기 있다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="65"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(특별한 것은 없다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1189_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_question mid="66"><![CDATA[<html>$루나리아$<BR>.......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_62.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-" mid="63" select_type="5" />
+      <talk_question mid="10"><![CDATA[<html>$시델$<BR>...<FONT color=#a82424>잠식당한 신전 폐허</FONT>에 그 거울이 있다고 해.<BR>부디 행운이 따르길 빌게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1189_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1189_lunaria-2-a" mid="67" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$루나리아$<BR>......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1189_lunaria-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1189_lunaria-2-b" mid="69" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...루나리아?!<BR>정말 루나리아...?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1189_lunaria-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1189_lunaria-2-c" mid="71" select_type="2" />
+      <talk_question mid="70"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1189_lunaria-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1189_lunaria-3" mid="73" select_type="2" />
+      <talk_question mid="72"><![CDATA[<html>$루나리아$<BR>........<BR><FONT color=#7e12d2>(루나리아가 시선을 돌린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1189_lunaria-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1189_lunaria-3-a" mid="77" select_type="2" />
+      <talk_question mid="12"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>루나리아!!!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1189_lunaria-3-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1189_lunaria-3-" mid="78" select_type="5" />
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(어째서 도망치는 거야?<BR>난 그저 진실을 알고 싶을 뿐인데!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n858_place_of_trail-3-a" mid="83" select_type="2" />
+      <talk_question mid="80"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(무언가 있는 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-3-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n858_place_of_trail-3-b" mid="85" select_type="2" />
+      <talk_question mid="84"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(이게 진실의 거울인가?<BR>우선 이계의 가면을 쓰고, 거울을 보도록 하자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-3-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n858_place_of_trail-3-c" mid="87" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(거울 속에서 목소리가 들리는 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-3-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n858_place_of_trail-3-d" mid="90" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>거울이여, 나는 진실을 알고 싶다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-3-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n858_place_of_trail-3-e" mid="109" select_type="4" />
+      <talk_question mid="91"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n858_place_of_trail-3-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n858_place_of_trail-3-!next" mid="111" select_type="2" />
+      <talk_question mid="110"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>...응?<BR>거울 속에 무언가가 비치는데... 뭐지...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9369</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">400320</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">400318</exe>
+         <exe type="delquestitem" num="-1">400319</exe>
+         <exe type="addquestitem" num="1">400320</exe>
+         <exe type="conexe" true="" false="4">0</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400321</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93690,,,,,,,</exe>
+         <exe type="complete" true="">9369</exe>
+         <exe type="addquestitem" num="1">400321</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="c" />
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1,2,3,4,5,6</exelink>
+   <exelink qstep="2" npc="n1189_lunaria" sub="b" />
+   <exelink qstep="2" npc="n1189_lunaria" sub="c" />
+   <exelink qstep="2" npc="n1189_lunaria" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n1189_lunaria" sub="" />
+   <exelink qstep="3" npc="n858_place_of_trail" sub="b">2</exelink>
+   <exelink qstep="3" npc="n858_place_of_trail" sub="c" />
+   <exelink qstep="3" npc="n858_place_of_trail" sub="d">0</exelink>
+   <exelink qstep="3" npc="n858_place_of_trail" sub="e">1</exelink>
+   <exelink qstep="3" npc="n858_place_of_trail" sub="!next" />
+   <journal_data recompense="93690" quest_title="진실이 가리키는 곳" chapterid="9" quest_level="54" quest_mark_type="1" use_item_list="400318,400319">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[진실이 드러나는 곳 1]]></title>
+         <contents mid="32"><![CDATA[<html>시델에게 운석 파편과 돌연변이의 눈을 전달하여 이계의 가면을 완성하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[카라큘의 오두막에서 시델과 대화]]></destination>
+         <todo_msg mid="34"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_62.dds</contents_image>
+         <destination_pos>622,n1189</destination_pos>
+         <destination_mode>custom:621@1,622@1</destination_mode>
+         <statemark_npcid>1189</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[진실이 드러나는 곳 2]]></title>
+         <contents mid="36"><![CDATA[<html>이계의 가면을 완성했다.<BR>잠식당한 신전 폐허로 이동하여 진실의 거울을 찾아보자.<BR><BR><FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 잠식당한 신전 폐허</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[잠식당한 신전 폐허]]></destination>
+         <todo_msg mid="38"><![CDATA[잠식당한 신전 폐허에서 진실의 거울을 찾으세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_62.dds</contents_image>
+         <destination_pos>622,n858</destination_pos>
+         <destination_mode>custom:621@1,622@1</destination_mode>
+         <statemark_npcid>858</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[진실이 드러나는 곳 3]]></title>
+         <contents mid="106"><![CDATA[<html>루나리아의 모습을 발견했지만, 가까이 다가가자 그녀는 말 없이 모습을 감춰 버렸다.<BR>우선 진실의 거울을 회수하자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 잠식당한 신전 폐허</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[잠식당한 신전폐허에서 진실의 거울 회수]]></destination>
+         <todo_msg mid="108"><![CDATA[루나리아는 사라졌습니다. 진실의 거울을 회수하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9368</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

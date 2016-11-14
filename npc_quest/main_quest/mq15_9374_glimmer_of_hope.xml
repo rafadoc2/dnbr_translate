@@ -1,0 +1,182 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9374_glimmer_of_hope</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9374</qid>
+      <designer>최지은</designer>
+      <qlevel>58</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9375</nextqid>
+      <nextqname>mq15_9375_au_revoir</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[희미한 기척]]></qkname>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="7" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$테렌스 테라마이$<BR>아, 마침 잘왔군.<BR>벨스커드의 상태가 나빠져서 약초가 필요하던 참이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-a" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$테렌스 테라마이$<BR><FONT color=#a82424>정글 블루멜로우</FONT>란 약초인데 응급진통제로 자주 쓰인다네.<BR>아마 그거라면 조금은 고통을 완화하는 데 도움이 될 걸세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$테렌스 테라마이$<BR>뭐, 임시변통에 지나지 않겠지만....<BR>도대체 그 무엇이 있어 드래곤의 보옥을 대신하겠나? 인간의 노력이란 겨우 이런 정도인 것이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="QW_62.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$테렌스 테라마이$<BR><FONT color=#a82424>정글 블루멜로우</FONT>는 <FONT color=#a82424>잠식당한 신전 폐허</FONT>에서 구할 수 있는 약초니, 자네는 어서 다녀오게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-a" mid="26" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$테렌스 테라마이$<BR>어서오게.<BR>흠... 좋아. 약초는 이정도면 충분한 것 같군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-b" mid="27" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$테렌스 테라마이$<BR>음? 그런데 자네 뭐라고 했나?!<BR>그곳에서 바르낙을 목격했다고...?<BR>잠식당한 신전 폐허에 왜 바르낙이....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-c" mid="28" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(분명히 그 모습은 바르낙 님이셨어.<BR>그리고 또 하나의 낯익은 시선이 느껴졌는데... 내 착각일까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-c" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-d" mid="29" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그 시선은 분명히... 아니, 확신할 수는 없지만... 내 예감이 맞다면, 그건 루나리아였어.<BR>거기에 루나리아가 있었던 것 같아. 도대체 어째서지?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-3-e" mid="55" select_type="4" />
+      <talk_question mid="54"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-3-!next" mid="30" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$테렌스 테라마이$<BR>으음... 사도의 목적은 벨스커드가 가진 보옥이었지....<BR>아마도 목적을 달성하자마자 바로 떠나버린 모양이군.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9374</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7,8">600014</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7,8">700014</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400323</exe>
+         <exe type="addquestitem" num="1">400323</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93740,,,,,,,</exe>
+         <exe type="complete" true="">9374</exe>
+         <exe type="delquestitem" num="-1">400323</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n822_teramai" sub="2">0,1,2,3,4</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="b" />
+   <exelink qstep="3" npc="n822_teramai" sub="c" />
+   <exelink qstep="3" npc="n822_teramai" sub="d">0</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="e">1,2</exelink>
+   <exelink qstep="3" npc="n822_teramai" sub="!next" />
+   <journal_data recompense="93740" quest_title="희미한 기척" chapterid="9" quest_level="58" quest_mark_type="1" use_item_list="400323">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[희미한 기척 1]]></title>
+         <contents mid="39"><![CDATA[<html>왕성 내부에서 테라마이와 대화하자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(왕성 내부)</FONT> <FONT color=#a82424>- 테렌스 테라마이</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[세인트헤이븐 왕성에서 테라마이와 대화]]></destination>
+         <todo_msg mid="41"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_62.dds</contents_image>
+         <destination_pos>622,0,0</destination_pos>
+         <destination_mode>custom:621@1,622@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[희미한 기척 2]]></title>
+         <contents mid="44"><![CDATA[<html>테라마이는 잠식당한 신전 폐허에서 진통에 좋은 약재를 구해달라고 한다.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT><FONT color=#a82424> - 잠식당한 신전 폐허</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[잠식당한 신전 폐허]]></destination>
+         <todo_msg mid="46"><![CDATA[잠식당한 신전 폐허로 가서 약재를 구하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[희미한 기척 3]]></title>
+         <contents mid="50"><![CDATA[<html>잠식당한 신전 폐허에서 약초를 구하는 중, 주변을 떠도는 바르낙을 목격했다.<BR>그리고 또 하나의 낯익은 시선….<BR>우선 왕성으로 돌아가 테라마이에게 보고하자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(왕성 내부)</FONT> <FONT color=#a82424>- 테렌스 테라마이</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[세인트헤이븐 왕성에서 테라마이와 대화]]></destination>
+         <todo_msg mid="52"><![CDATA[왕성으로 돌아가 테라마이에게 보고하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9373</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

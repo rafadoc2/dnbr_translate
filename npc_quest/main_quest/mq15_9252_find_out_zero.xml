@@ -1,0 +1,213 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9252_find_out_zero</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9252</qid>
+      <designer>곽노찬</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9253</nextqid>
+      <nextqname>mq15_9253_understand</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Found Out About Zero]]></qkname>
+      <qnpc>
+         <npcid>1029</npcid>
+         <npcename>n1029_academic</npcename>
+         <npckname>XD-30</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Daisy.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(The little girl taken by Jasmine was...</FONT><BR><FONT color=#7e12d2>...</FONT><BR><FONT color=#7e12d2>...</FONT><BR><FONT color=#7e12d2>Chickie... </FONT><FONT color=#7e12d2>Yes, she's </FONT><FONT color=#7e12d2>Daisy!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QW_74.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Why did she take Daisy?</FONT><BR>
+<FONT color=#7e12d2>Jasmine, what are you trying to do…?</FONT><FONT color=#7e12d2>)</FONT><BR><BR><FONT color=#7e12d2>* Go to Arnute Canyon.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_answer link_index="n1029_academic-1-a" mid="10"><![CDATA[<html>Where is Daisy? Why did you kidnap her?!</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$XD-30$<BR>(Panting)… We should all have the same power…<BR>But why are you stronger than the others?<BR>
+<FONT color=#7e12d2>(XD-30 is staggering)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-a" image="" itemindex="">
+      <talk_answer link_index="n1029_academic-1-b" mid="12"><![CDATA[<html>Don't tell me… Was Daisy really created by Professor K?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$XD-30$<BR>
+Hahaa.. Well... You probably know the reason.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-b" image="" itemindex="">
+      <talk_answer link_index="n1029_academic-1-c" mid="14"><![CDATA[<html>Zero? Didn't our numbers start from XD-01?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$XD-30$<BR>
+Yes, that girl is the original form of the jewel fragments that make up who we are, and she is the mother of <FONT color=#a82424>XD-00 (Zero)</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-c" image="" itemindex="">
+      <talk_answer link_index="n1029_academic-1-d" mid="16"><![CDATA[<html>Well… I thought she accidentally found a jewel fragment and…</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$XD-30$<BR>
+(Coughs)… You really don't know anything, do you?<BR>
+It is true that Jasmine created us.<BR>
+But do you know how she made us?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-d" image="" itemindex="">
+      <talk_answer link_index="n1029_academic-1-e" mid="18"><![CDATA[<html>Same as us...?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$XD-30$<BR>Accidentally?<BR>
+No… Jasmine had everything she needed to create us from the time she was born.<BR>Because she is the same as us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-e" image="" itemindex="">
+      <talk_answer link_index="n1029_academic-1-f" mid="20"><![CDATA[<html>Jasmine... Was created...? Why?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$XD-30$<BR>
+Jasmine is <FONT color=#a82424>XD-00</FONT>, the product of <FONT color=#a82424>Code Name Zero</FONT>.<BR>
+She was the first final product of the Academic Project which took place together with the Apocalypse Project.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-f" image="QN_Npc_Daisy.dds" itemindex="">
+      <talk_answer link_index="n1029_academic-1-g" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$XD-30$<BR>
+The person who created Jasmine is <FONT color=#a82424>Daisy</FONT>.<BR>
+The little girl abducted by Jasmine will grow up to create Jasmine in the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-g" image="QN_Npc_Daisy.dds" itemindex="">
+      <talk_answer link_index="n1029_academic-1-h" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$XD-30$<BR>
+In Daisy's original form, she should have never aged or died because of the immense power of her jewel.<BR>
+However, Professor K could not create her perfectly, and in her incomplete form, she died slowly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-h" image="QN_Npc_Daisy.dds" itemindex="">
+      <talk_answer link_index="n1029_academic-1-i" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$XD-30$<BR>
+One day, she realized that her death was near.<BR>
+She must have not had any fear about death.<BR>
+She could still be born again from her original jewel form when time passed. However...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-i" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n1029_academic-1-j" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$XD-30$<BR>What she feared was all the pain that was to befall on the lives of humans without her.<BR>So she took half of her jewel's powers to create a successor with her memory, knowledge, and a sense of duty as well. And that is <FONT color=#a82424>Jasmine</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-j" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n1029_academic-1-k" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$XD-30$<BR>Not long after Jasmine was born, Daisy died. With half of the jewel left behind by Daisy, Jasmine created us.<BR>But unlike Jasmine, we all failed in our mission. Do you know why?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-k" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n1029_academic-1-l" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$XD-30$<BR>Jasmine gave us too much emotions and memory.<BR>Like how Daisy created Jasmine, Jasmine also duplicated herself to create us… but her sense of mission didn't reach us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-l" image="" itemindex="">
+      <talk_answer link_index="n1029_academic-1-m" mid="41"><![CDATA[<html>Daisy's mission...</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$XD-30$<BR>But… It seems different for you.<BR>You must have... Jasmine and Daisy's sense of mission in you.<BR>What we thought of as tasks to do must have came to you as your calling... And I guess that was the difference between us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-m" image="" itemindex="">
+      <talk_answer link_index="n1029_academic-1-n" mid="46"><![CDATA[<html>Where is Dai... Where is Jasmine?!</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$XD-30$<BR>
+Huhu… Yes, you're the one Jasmine wanted.<BR>
+Ironically, you are the only one who is standing up against her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-n" image="" itemindex="">
+      <talk_answer link_index="n1029_academic-1-o" mid="50"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1029_academic-1-o" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$XD-30$<BR>Go to the Occupied Ancient Temple.<BR>A war between the two sisters left behind by Daisy from the future...<BR>Huhu... interesting… so interesting... huhu....<BR><FONT color=#7e12d2>(XD-30's breathing quietens away)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9252</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92520,,,,,,</exe>
+         <exe type="complete" true="">9252</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1029_academic" sub="b" />
+   <exelink qstep="1" npc="n1029_academic" sub="c" />
+   <exelink qstep="1" npc="n1029_academic" sub="d" />
+   <exelink qstep="1" npc="n1029_academic" sub="e" />
+   <exelink qstep="1" npc="n1029_academic" sub="f" />
+   <exelink qstep="1" npc="n1029_academic" sub="g" />
+   <exelink qstep="1" npc="n1029_academic" sub="h" />
+   <exelink qstep="1" npc="n1029_academic" sub="i" />
+   <exelink qstep="1" npc="n1029_academic" sub="j" />
+   <exelink qstep="1" npc="n1029_academic" sub="k" />
+   <exelink qstep="1" npc="n1029_academic" sub="l" />
+   <exelink qstep="1" npc="n1029_academic" sub="m" />
+   <exelink qstep="1" npc="n1029_academic" sub="n">0</exelink>
+   <exelink qstep="1" npc="n1029_academic" sub="o">1</exelink>
+   <journal_data recompense="92520" quest_title="제로에 대해 알았습니다" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_74.dds</contents_image>
+         <destination_pos>741,0,0</destination_pos>
+         <destination_mode>custom:741@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Found Out About Zero 1]]></title>
+         <contents mid="56"><![CDATA[<html>Go to Arnute Canyon to find Jasmine.<BR>
+ <BR>
+* <FONT color=#7e12d2>You cannot proceed in a party.</FONT><BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Tel Rosa Gates)</FONT> <FONT color=#a82424>- Arnute Canyon</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[(Solo) Search Arnute Canyon]]></destination>
+         <todo_msg mid="58"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Academic_Normal.dds</contents_image>
+         <destination_pos>741,n1029</destination_pos>
+         <destination_mode>custom:741@1</destination_mode>
+         <statemark_npcid>1029</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Found Out About Zero 2]]></title>
+         <contents mid="60"><![CDATA[<html>Talk to XD-30.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Tel Rosa Gates)</FONT> <FONT color=#a82424>- Arnute Canyon (XD-30)</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to XD-30 at Arnute Canyon]]></destination>
+         <todo_msg mid="62"><![CDATA[Talk to XD-30.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>9251</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

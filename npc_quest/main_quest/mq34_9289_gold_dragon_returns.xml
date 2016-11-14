@@ -1,0 +1,331 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9289_gold_dragon_returns</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9289</qid>
+      <designer>강지영</designer>
+      <qlevel>65</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9290</nextqid>
+      <nextqname>mq34_9290_the_secret_of_anu_arendel</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[드래곤의 귀환]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1065</npcid>
+         <npcename>n1065_geraint_kid</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타$<BR>그래? 쓸만한 내용이 아니면 가만두지 않겠어.<BR><FONT color=#7e12d2>(아르젠타가 주먹을 쥐었다 폈다 하며 내려다본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-" mid="8" select_type="5" />
+      <talk_question mid="7"><![CDATA[<html>$???$<BR>기분 나쁜 느낌이... 가깝군.<BR><FONT color=#7e12d2>(금발의 검사가 인상을 찡그리며 혼잣말을 하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-levelcheck" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$아르젠타$<BR>어디 말해봐. 뭔데?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-b" mid="86" select_type="0"><![CDATA[<html>그냥 잘못했다고 빌자</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>로잘린데가 레드드래곤을... 왕이 페더라고, 그러니까... 음. 그, 그랬다고요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-c" mid="88" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>$아르젠타$<BR>뭐라고 하는 거니. 고대어야? 가만두지 않는다니까 겁먹어서는... 쯧쯧.<BR><FONT color=#7e12d2>(아르젠타의 얼굴이 좀 풀어진 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-d" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$아르젠타$<BR>그런데, <FONT color=#a82424>페더</FONT>라고?<BR>예전에 인간들 나라를 세웠다는 녀석 이름 같은데. 인간이 그렇게 오래 살진 않을테니...<BR>명예니 영광이니 하는 시덥지 않은 가치를 어지간히 동경하는 자로군?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-e" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그건 잘 모르겠지만 로잘린데 말로는 곧 여기에 올 거라고 했어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-e" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-f" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>$???${sound:npc_AN_Gereint Young_qu_9289_01.ogg}<BR>그거 참 잘됐군. 일부러 찾으러 가지 않아도 되니 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-f" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-g" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>전부터 좀 맘에 걸렸는데, 당신은 누군데 자꾸 끼어드는 거죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-h" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$아르젠타$<BR>제레인트다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-i" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-j" mid="90" select_type="0"><![CDATA[<html>제, 제레인트 님이라구요?!</html>]]></talk_answer>
+      <talk_answer link_index="n1047_argenta-1-j" mid="91" select_type="0"><![CDATA[<html>그러고보니 금발이고…</html>]]></talk_answer>
+      <talk_answer link_index="n1047_argenta-1-j" mid="92" select_type="0"><![CDATA[<html>비슷한 것 같기도 하고…?!</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9289_02.ogg}<BR>제레인트라고 했잖아. 자꾸 두 번 말하게 할래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-k" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그때 그 보옥으로 살아나신 건가요?</FONT><BR>
+<FONT color=#662500>이렇게 다시 만날 수 있을 줄이야….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-k" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-l" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>$제레인트$<BR>시끄럽고 성가신 인간이군.<BR><FONT color=#7e12d2>(제레인트는 {user_nick}에게 별 관심을 가지지 않는 듯하다)<BR></FONT>아르젠타. 그래서 다른 유물을 둔 곳은 어디지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-l" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-m" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>$아르젠타$<BR><FONT color=#a82424>황금 초원.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-m" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-n" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$제레인트$<BR>그래서였군. 저쪽 방향에서 스멀거리는 기분 나쁜 기운이 느껴지는 건.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-n" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-o" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>$제레인트${sound:npc_AN_Gereint Young_qu_9289_02.ogg}<BR>드래곤을 상대하는 건 드래곤이다. 넌 끼어들지 마! 인간.<BR><FONT color=#7e12d2>(제레인트가 몸을 돌려 빠른 속도로 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-o" image="QW_78.dds" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="38" select_type="5" />
+      <talk_question mid="37"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(황금초원이라고? 따라가 봐야겠어)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="85" select_type="5" />
+      <talk_question mid="84"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>으...음.. 다시 알아보고 올게요!</FONT><BR><FONT color=#7e12d2>(65Lv이후에 이 퀘스트를 진행할 수 있습니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-" mid="41" select_type="5" />
+      <talk_question mid="40"><![CDATA[<html>$아르젠타$<BR><FONT color=#a82424>황금 초원</FONT>에 가겠다고? 괜히 끼어들어서 방해하지 말고 그냥 얌전히 있지 그래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-2-" mid="43" select_type="5" />
+      <talk_question mid="42"><![CDATA[<html>$제레인트$<BR>그렇지 않아도 황금 초원 쪽에서 기분 나쁜 기운이 느껴지더니, 그게 레드인건가?<BR><FONT color=#7e12d2>(금발의 검사가 인상을 찡그리며 혼잣말을 하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-3-" mid="45" select_type="5" />
+      <talk_question mid="44"><![CDATA[<html>$제레인트$<BR>레드드래곤....<BR><FONT color=#7e12d2>(제레인트가 인상을 찡그리며 혼잣말을 하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_question mid="46"><![CDATA[<html>$아르젠타$<BR>다 잡은 사도를 그냥 두고 왔다고? 돌아가서 이그나시오가 챙긴 유물이라도 가져오든지 해!<BR>
+<FONT color=#7e12d2>(황금 초원으로 다시 가 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-a" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9289_03.ogg}<BR>왜 이제야 와? 저놈들이 내뺀 지 한참이나 지났는데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-a" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-b" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이그나시오를 쫓아가느라고요.</FONT><BR><FONT color=#662500>하지만 이미 황금초원을 떠난 것 같았어요. 유물도 가져갔고....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-c" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아르젠타$<BR>그랬겠지. 어째서 제대로 하는 게 하나도 없어?<BR>사도들도 놓쳤고, 유물도 제대로 회수하지 못했고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-d" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$아르젠타$<BR>내가 분명 제레인트한데 용 추종자 놈들도 잡아야 한다고 말했는데,<BR>그 녀석은 레드 드래곤에만 정신이 팔려서 다 놓쳐버렸잖아. 아~ 분해!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-d" image="QN_Npc_geraint_Kid.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-e" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>$아르젠타$<BR>레드 드래곤도 놓친 것 같단 말이지.<BR>제레인트가 쫓긴 했지만, 이미 따라잡긴 힘들어 보였다구.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-f" mid="94" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그런데 저, 제레인트님의 전투를 봤어요.<BR>좀...과격 하시더라고요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-chk_j_04" mid="60" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9289_04.ogg}<BR>그는 옛날 제레인트와는 달라. 우리는 보옥 그 자체의 순수한 힘으로 태어난 존재..<BR>새로 태어난 그에게 옛 기억이나 감정 같은 것은 남아있지 않지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-g" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-h" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>전의 제레인트님은 친절하고 참 좋으셨는데, 닮았지만 너무 다른 분이시군요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-i" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>$아르젠타$<BR>그러니까 너도 예전 그 녀석만 생각하지 않는 게 좋을 거야.<BR>너까지 던져 버릴 지도 모르잖아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-!next" mid="66" select_type="4" />
+      <talk_question mid="65"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-4-j" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-4-h" mid="96" select_type="2" />
+      <talk_question mid="95"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>예전의 그분은 훨씬 더 인간답게 보였는데….</FONT><BR>
+<FONT color=#662500>모습은 닮았지만, 정말이지 전혀 다른 사람 같군요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9289</exe>
+         <exe type="talk" npc="n1047_argenta">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">65</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n1047_argenta">a</exe>
+         <exe type="talk" npc="n1047_argenta">p</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">4</chk>
+         <chk type="class" op="=">7</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">92891,92891,,92893,92894,92895,92896,92897</exe>
+         <exe type="complete" true="">9289</exe>
+         <exe type="conexe" true="5" false="3">0</exe>
+         <exe type="conexe" true="5" false="4">1</exe>
+         <exe type="talk" npc="n1047_argenta">g</exe>
+         <exe type="talk" npc="n1047_argenta">j</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="levelcheck">2</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="b" />
+   <exelink qstep="1" npc="n1047_argenta" sub="c" />
+   <exelink qstep="1" npc="n1047_argenta" sub="d" />
+   <exelink qstep="1" npc="n1047_argenta" sub="e" />
+   <exelink qstep="1" npc="n1047_argenta" sub="f" />
+   <exelink qstep="1" npc="n1047_argenta" sub="g" />
+   <exelink qstep="1" npc="n1047_argenta" sub="h" />
+   <exelink qstep="1" npc="n1047_argenta" sub="i" />
+   <exelink qstep="1" npc="n1047_argenta" sub="j" />
+   <exelink qstep="1" npc="n1047_argenta" sub="j" />
+   <exelink qstep="1" npc="n1047_argenta" sub="j" />
+   <exelink qstep="1" npc="n1047_argenta" sub="k" />
+   <exelink qstep="1" npc="n1047_argenta" sub="l" />
+   <exelink qstep="1" npc="n1047_argenta" sub="m" />
+   <exelink qstep="1" npc="n1047_argenta" sub="n" />
+   <exelink qstep="1" npc="n1047_argenta" sub="o">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="4" npc="n1047_argenta" sub="b" />
+   <exelink qstep="4" npc="n1047_argenta" sub="c" />
+   <exelink qstep="4" npc="n1047_argenta" sub="d" />
+   <exelink qstep="4" npc="n1047_argenta" sub="e" />
+   <exelink qstep="4" npc="n1047_argenta" sub="f" />
+   <exelink qstep="4" npc="n1047_argenta" sub="chk_j_04">2</exelink>
+   <exelink qstep="4" npc="n1047_argenta" sub="h" />
+   <exelink qstep="4" npc="n1047_argenta" sub="i">0</exelink>
+   <exelink qstep="4" npc="n1047_argenta" sub="!next">1</exelink>
+   <exelink qstep="4" npc="n1047_argenta" sub="h" />
+   <journal_data recompense="1:92891,3:92893,4:92894,5:92895,6:92896,7:92897" quest_title="드래곤의 귀환" chapterid="12" quest_level="65" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[드래곤의 귀환 I]]></title>
+         <contents mid="69"><![CDATA[<html>사도에 대해 알아낸 것을 아르젠타에게 이야기 하자. <BR><BR>
+<FONT color=#7e12d2>※ 65Lv 이상이 되어야 다음으로 진행할 수 있습니다.</FONT><BR>
+<BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="71"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_78.dds</contents_image>
+         <destination_pos>781,0,0</destination_pos>
+         <destination_mode>custom:781@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[드래곤의 귀환 II]]></title>
+         <contents mid="73"><![CDATA[<html>황금 초원에 있는 숲의 근원을 얻기 위해 사도들이 모이고 있다. 제레인트를 쫓아 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 황금 초원</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[황금 초원 탐색]]></destination>
+         <todo_msg mid="75"><![CDATA[제레인트를 쫓아 황금 초원으로 가 보세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_78.dds</contents_image>
+         <destination_pos>781,0,0</destination_pos>
+         <destination_mode>custom:781@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[드래곤의 귀환 III]]></title>
+         <contents mid="77"><![CDATA[<html>이그나시오가 떨어진 유물을 가지고 도망쳤다. 그를 쫓아 황금 초원 안으로 더 들어가자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 황금 초원</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[황금 초원에서 이그나시오 추적]]></destination>
+         <todo_msg mid="79"><![CDATA[황금 초원에서 이그나시오를 쫓아 가세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[드래곤의 귀환 IV]]></title>
+         <contents mid="81"><![CDATA[<html>황금 초원에서 이그나시오의 뒤를 쫓아봤으나 그의 흔적을 발견하지 못했다.<BR>
+아르젠타에게 돌아가 보고해야 겠다.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="83"><![CDATA[이그나시오를 놓친 것 같습니다. 아누 아렌델 관문으로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9288</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

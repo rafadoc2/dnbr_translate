@@ -1,0 +1,299 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9262_moment_of_turning_point</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9262</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9263</nextqid>
+      <nextqname>mq15_9263_new_start</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <uistyle>0</uistyle>
+      <qkname mid="1"><![CDATA[A Moment of Historical Change]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>836</npcid>
+         <npcename>n836_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="6" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>${user_nick}$<BR>
+<FONT color=#7e12d2>(Quickly go to Velskud)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="114" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I wonder how he is now. I guess it would be better to go there unnoticed...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-2" mid="118" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I hope everything is well)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="116"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I hope everything is well)</FONT><BR><FONT color=#7e12d2></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="59"><![CDATA[<html>$Velskud$<BR>Urrrgh...<BR><FONT color=#7e12d2>(He seems to be in tremendous pain)</FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2>(You can get the quest from Academic Station)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-a" mid="10" select_type="0"><![CDATA[<html>Velskud?!</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Velskud$<BR>It's you again... Urrgh! Haah....<BR><FONT color=#7e12d2>(Velskud clenches his fist and brings it to his chest)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-b" mid="83" select_type="0"><![CDATA[<html>How… How did your state worsen so much...?</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Velskud$<BR>Krrgh… Get out, kid.<BR>Out! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-c" mid="87" select_type="0"><![CDATA[<html>Of course it matters to me too! Velskud, in the future, you are the...</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Velskud$<BR>
+<FONT color=#7e12d2>(Velskud is staring with forbidding eyes)</FONT><BR>It's none of your business.<BR>Stop interfering with other people's affairs and get lost!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-d" mid="89" select_type="0"><![CDATA[<html>(It seems like you have to tell him all the truth in order to persuade him)</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Velskud$<BR>Kekeke…What nonsense are you talking about...?<BR><FONT color=#7e12d2>(Velskud sneers)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-f" mid="91" select_type="0"><![CDATA[<html>Er… Velskud… (Tell Velskud about Jasmine and Velskud in the future)</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Velskud$<BR>Kek... Keke... Like this… At a place like this... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-f" mid="94" select_type="0"><![CDATA[<html>...?</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Velskud$<BR>Kek... Keke... Like this… At a place like this... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-g" mid="96" select_type="0"><![CDATA[<html>Everything I told you is the truth.</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Velskud$<BR>…Kekeke what? So I'm a hero in the future, and you came to save me? And a jewel? Are you trying to turn me into a dragon again? You must be very confused. You were spouting nonsense the last time I saw you too...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-g" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-h" mid="121" select_type="0"><![CDATA[<html>…It doesn't matter. I trust the Velskud that I have seen so far. </html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Velskud$<BR>…And according to what you said, future has already changed. I don't know what the future Velskud has done, but he must be different from the current me! No matter what power I get, I don't intend to change my initial goal. And it's none of a young kid's business!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-h" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-i" mid="123" select_type="0"><![CDATA[<html>Velskud, I trust you.</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Velskud$<BR>Keke… You're a daring kid...<BR>…But you better understand this.<BR>I will not become a guardian that you were talking about. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-2-i" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-2-cutscene" mid="125" select_type="0"><![CDATA[<html>…Okay.</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Velskud$<BR>…Don't regret your choice.<BR>I'm not someone who will change my path because of a little girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="126"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Go quickly)</FONT><BR><BR>(Look for Velskud at Royal Castle Underground)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="97"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(The jewel shined brightly when you gave it to Velskud)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4" image="QN_Npc_Geraint_silhouette.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-4-a" mid="162" select_type="0"><![CDATA[<html>Velskud?</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$Velskud$<BR>…It's a warm light.<BR>…But it feels like...<BR>…Don't tell me it's him...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-4-b" mid="164" select_type="0"><![CDATA[<html>...?</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Velskud$<BR>It's nothing. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-4-c" mid="166" select_type="0"><![CDATA[<html>What!? </html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$Velskud$<BR>…I should get going now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-4-d" mid="169" select_type="0"><![CDATA[<html>But you just got that jewel... </html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$Velskud$<BR>Don't be so surprised. The reason I was stuck here was because of Terramai. Now I don't have to depend on him so I will leave. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-4-e" mid="171" select_type="0"><![CDATA[<html>It can't be...</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Velskud$<BR>…I need to leave as soon as possible. I have no time for rest. I can only do as Terramai pleases if I stay here. But I don't have to go to Anu Arendel anymore. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-4-f" mid="173" select_type="0"><![CDATA[<html>Something...?</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$Velskud$<BR>…You should go to Anu Arendel. Something will happen there soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-5" mid="176" select_type="0"><![CDATA[<html>…Okay. </html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Velskud$<BR>…You will get to know the details when you get there. I will explain it to Terramai… You should go and do your own preparations.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-5" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="179"><![CDATA[<html>$Velskud$<BR>…I owe you a debt.<BR><FONT color=#7e12d2>(Talk to Academic Station) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-5-a" mid="181" select_type="0"><![CDATA[<html>(…Now I don't have to be connected to a network...)</html>]]></talk_answer>
+      <talk_question mid="180"><![CDATA[<html><FONT color=#2b2723>$Academic Station$<BR>- </FONT><FONT color=#086171>Network connection is unstable.</FONT><BR><FONT color=#2b2723>- </FONT><FONT color=#7e12d2>Mission Objective should be....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-5-b" mid="183" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(The history has really changed… Velskud never got the jewel this early. But there is no way I can double check this… It's frustrating) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-5-c" mid="185" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Has the history of this place changed so much from what I learnt in historical records?...Then the future from now on will be a new history that has never been recorded… I am responsible for this history. I won't choose drastic measures like Jasmine, but I will do my best to protect this world.) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-5-d" mid="187" select_type="0"><![CDATA[<html><FONT color=#a82424>(Receive Reward) </FONT></html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$Quest Reward$ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-5-!next" mid="189" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="188"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Come to think of it… That file was… Should I open it?) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9262</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,811,1);</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="talk" npc="n393_academic_station">a</exe>
+         <exe type="talk" npc="n393_academic_station">b</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13516,1);</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92620,,,,,,,</exe>
+         <exe type="complete" true="">9262</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="2">4,5</exelink>
+   <exelink qstep="2" npc="n836_velskud" sub="b" />
+   <exelink qstep="2" npc="n836_velskud" sub="c" />
+   <exelink qstep="2" npc="n836_velskud" sub="d" />
+   <exelink qstep="2" npc="n836_velskud" sub="f" />
+   <exelink qstep="2" npc="n836_velskud" sub="f" />
+   <exelink qstep="2" npc="n836_velskud" sub="g" />
+   <exelink qstep="2" npc="n836_velskud" sub="h" />
+   <exelink qstep="2" npc="n836_velskud" sub="i" />
+   <exelink qstep="2" npc="n836_velskud" sub="cutscene">0,1</exelink>
+   <exelink qstep="4" npc="n836_velskud" sub="b" />
+   <exelink qstep="4" npc="n836_velskud" sub="c" />
+   <exelink qstep="4" npc="n836_velskud" sub="d" />
+   <exelink qstep="4" npc="n836_velskud" sub="e" />
+   <exelink qstep="4" npc="n836_velskud" sub="f" />
+   <exelink qstep="4" npc="n836_velskud" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n393_academic_station" sub="b" />
+   <exelink qstep="5" npc="n393_academic_station" sub="c">0</exelink>
+   <exelink qstep="5" npc="n393_academic_station" sub="d">1</exelink>
+   <exelink qstep="5" npc="n393_academic_station" sub="!next" />
+   <journal_data recompense="92620" quest_title="역사가 바뀌는 순간입니다" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[A Moment of Historical Change 1]]></title>
+         <contents mid="38"><![CDATA[<html>Log on to Academic Station.<BR><BR><FONT color=#086171>Saint Haven<FONT color=#2b2723> </FONT><FONT color=#a82424>- Academic Station</FONT></FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Academic Station]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13014,n836</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>836</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[A Moment of Historical Change 2]]></title>
+         <contents mid="42"><![CDATA[<html>You're worried about Velskud.<BR>Go to Royal Castle Underground to meet Velskud.<BR><BR><FONT color=#086171>Saint Haven (Royal Castle Underground)</FONT> <FONT color=#a82424>- Velskud</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk with Velskud]]></destination>
+         <todo_msg mid="44"><![CDATA[Talk to Velskud at Royal Castle Underground.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13014,n836</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>836</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[A Moment of Historical Change 3]]></title>
+         <contents mid="47"><![CDATA[<html><FONT color=#2b2723>Velskud recovered after using Daisy's jewel.</FONT><BR><FONT color=#2b2723>Talk to Velskud.</FONT><BR><FONT color=#2b2723></FONT><BR><FONT color=#086171>Saint Haven (Royal Castle Underground)</FONT> <FONT color=#a82424>- Velskud</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk with Velskud]]></destination>
+         <todo_msg mid="49"><![CDATA[Talk to Velskud at Royal Castle Underground.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="158"><![CDATA[A Moment of Historical Change 4]]></title>
+         <contents mid="159"><![CDATA[<html>Velskud left the Royal Castle right away.<BR>Log on to Academic Station.<BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- Academic Station</FONT></html>]]></contents>
+         <destination mid="160"><![CDATA[Log on to Academic Station]]></destination>
+         <todo_msg mid="161"><![CDATA[Log on to Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>5</user_class>
+      <prev_quest>9261</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+   </condition_data>
+</quest>

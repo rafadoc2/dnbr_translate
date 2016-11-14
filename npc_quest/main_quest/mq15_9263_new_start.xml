@@ -1,0 +1,275 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9263_new_start</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9263</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <uistyle>0</uistyle>
+      <qkname mid="1"><![CDATA[It is a New Beginning]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="6" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(What was that file just now?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QW_81.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="59" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html><FONT color=#2b2723>${user_nick}$</FONT><BR><FONT color=#7e12d2>(The sum of all the warp coordinates in Jasmine's Expedition Base… Maybe it's not hard to calculate it. I should go there one more time.)</FONT><BR><FONT color=#2b2723></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-2" mid="61" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(So there's a warp point that I didn't pass through? Or did I miss out one? Hmm...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QW_81.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_question mid="9"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Go to Jasmine's Expedition Base one more time. Investigate every corner of the place)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-a" mid="77" select_type="0"><![CDATA[<html>(Continue) </html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Data collection complete. Value has been entered and refreshed. Opening file… File Name : [Only Hope]. Author : ...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-a" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-b" mid="79" select_type="0"><![CDATA[<html>(Ancient Dragon?) </html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Someone's Text File$<BR>This data is about the Ancient Dragon.<BR>It is top secret, and will not be revealed unless the map data of our base is refreshed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-b" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-c" mid="81" select_type="0"><![CDATA[<html>(Continue) </html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Someone's Text File$<BR>The Ancient Dragon divided its own jewel into 3. Ancient Dragon used to be a guardian who protected Lagendia. Each of the 3 jewels bears that role and mission.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-c" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-d" mid="83" select_type="0"><![CDATA[<html>(Of course)</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Someone's Text File$<BR>Two of the jewels are the well known Geraint and Argenta… In our time, Velskud holds the jewel, but it is only recent that he got a hold of it. Each of them are in charge of maintaining harmony in the continent and eliminating the enemies.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-d" image="QN_Npc_Daisy.dds " itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-e" mid="85" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Someone's Text File$<BR>The last jewel used to be Daisy's. That jewel held a mission too. That mission was to…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-e" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-f" mid="87" select_type="0"><![CDATA[<html>(All the lives in Lagendia?) </html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Someone's Text File$<BR><FONT color=#a82424>[Protect all lives in Lagendia]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-f" image="QN_Npc_Academic_jasmine.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-g" mid="89" select_type="0"><![CDATA[<html>(What... Then I am...) </html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Someone's Text File$<BR><FONT color=#2b2723>Jasmine is a successful clone. She bears the mission and she will do anything to accomplish it. That was the same case for Daisy. That was why she took the extreme decision to make clones.</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-g" image="QN_Npc_Academic_jasmine.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-h" mid="91" select_type="0"><![CDATA[<html>(.....)</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Someone's Text File$<BR><FONT color=#2b2723>As Jasmine created clones too, she hoped to create clones that shared her mission, but she failed. </FONT><BR><FONT color=#2b2723>It was found out that XD-26 was the closest she got of herself but....</FONT><BR><FONT color=#2b2723>That was only after she had been completely betrayed. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-h" image="QM_Jasmin_Black.dds " itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-i" mid="95" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Someone's Text File$<BR><FONT color=#2b2723>And Jasmine predicted that her plan would succeed even without her.</FONT><BR><FONT color=#2b2723>...Actually the chances of success was 50/50... She was her own clone. But what she didn't expect was...</FONT><BR><FONT color=#2b2723>...</FONT><BR><BR><FONT color=#7e12d2>(The text stops here. This seems to be the end)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-i" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-j" mid="99" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(…I never knew… So this is what happened. It was Daisy's mission, Jasmine's mission,…and my mission....)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-j" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-k" mid="101" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Protect all lives in this world… Yes, I don't want anyone in this world to die. But that is not only because of my mission.)</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-k" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-l" mid="103" select_type="0"><![CDATA[<html>(Continue) </html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(It is because I know how hard all the lives in this world are trying to survive, so I thought it was only unfair for them to die.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-l" image="QN_Npc_Academic_Normal.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-3-m" mid="105" select_type="0"><![CDATA[<html>(Continue) </html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Though Jasmine followed her mission loyally, the thought of invading another world was wrong. We all belong to the same continent. It's wrong to sacrifice an era for your own. And… creating clones too...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-m" image="QN_Npc_Academic_jasmine.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n393_academic_station-4" mid="107" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I will not take the path that Jasmine took. But I will share her mission.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_question mid="108"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Now I should go to Royal Castle's Pope Terramai)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n822_teramai-4-a" mid="113" select_type="0"><![CDATA[<html>(Seems like he didn't explain very well)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Terrence Terramai$<BR><FONT color=#387206>{user_nick}</FONT>, welcome. Velskud left. He suddenly recovered, and left. His life was at peril just a day ago. He's always like this and I'm always clueless about what happened.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-a" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n822_teramai-4-b" mid="115" select_type="0"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Terrence Terramai$<BR>And Velskud wanted to tell you to go to Anu Arendel. I don't know why but… it's up to you to decide.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-b" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_answer link_index="n822_teramai-4-c" mid="117" select_type="0"><![CDATA[<html><FONT color=#a82424>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-4-c" image="" itemindex="" portrait_left="" portrait_right="">
+      <talk_question mid="118"><![CDATA[<html>$Terrence Terramai$<BR>I could never tell what Velskud was thinking about.<BR>Anu Arendel… Humans rarely go there. I wonder what is happening.<BR><BR><FONT color=#7e12d2>*[Extra Chapter 2. Code Name Zero] has been completed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9263</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>비밀기지에 들어갔다가 나오면 자동으로 메인퀘스의 스텝이 넘어가도록.</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92630,,,,,,,</exe>
+         <exe type="complete" true="">9263</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="b" />
+   <exelink qstep="3" npc="n393_academic_station" sub="c" />
+   <exelink qstep="3" npc="n393_academic_station" sub="d" />
+   <exelink qstep="3" npc="n393_academic_station" sub="e" />
+   <exelink qstep="3" npc="n393_academic_station" sub="f" />
+   <exelink qstep="3" npc="n393_academic_station" sub="g" />
+   <exelink qstep="3" npc="n393_academic_station" sub="h" />
+   <exelink qstep="3" npc="n393_academic_station" sub="i" />
+   <exelink qstep="3" npc="n393_academic_station" sub="j" />
+   <exelink qstep="3" npc="n393_academic_station" sub="k" />
+   <exelink qstep="3" npc="n393_academic_station" sub="l" />
+   <exelink qstep="3" npc="n393_academic_station" sub="m" />
+   <exelink qstep="3" npc="n393_academic_station" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="b">0</exelink>
+   <exelink qstep="4" npc="n822_teramai" sub="c">1,2</exelink>
+   <journal_data recompense="92630" quest_title="새로운 시작입니다" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[It is a New Beginning 1]]></title>
+         <contents mid="38"><![CDATA[<html>Recall whether there is a warp point that you did not pass through at Jasmine's Expedition Base.<BR><BR><FONT color=#086171>Saint Haven<FONT color=#2b2723> </FONT><FONT color=#a82424>- Academic Station</FONT></FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Log on to Academic Station]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_81.dds</contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[It is a New Beginning 2]]></title>
+         <contents mid="42"><![CDATA[<html>Don't miss out any area of Jasmine's Expedition Base.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Entrance)<FONT color=#2b2723> </FONT><FONT color=#a82424>- Jasmine's Expedition Base</FONT></FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Explore Jasmine's Expedition Base]]></destination>
+         <todo_msg mid="44"><![CDATA[Explore Jasmine's Expedition Base.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[It is a New Beginning 3]]></title>
+         <contents mid="47"><![CDATA[<html>All the warp devices at Jasmine's Expedition Base have been checked.<BR>Go back to Academic Station and enter the password.<BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- Academic Station</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Log on to Academic Station]]></destination>
+         <todo_msg mid="49"><![CDATA[All the warp devices have been cleared. Log on to Academic Station.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="123"><![CDATA[It is a New Beginning 4]]></title>
+         <contents mid="124"><![CDATA[<html>The file said that <BR>Daisy's jewel was in fact Ancient Dragon's jewel, <BR>and the holder of the jewel should <FONT color=#a82424>[Protect all lives in Lagendia]</FONT>.<BR>It seems like a trustworthy source of information.<BR>Go to Terramai. Velskud must have left already.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven (Inside the Royal Castle)</FONT> <FONT color=#a82424>- Terrence Terramai<BR></FONT></html>]]></contents>
+         <destination mid="125"><![CDATA[Talk to Terrence Terramai]]></destination>
+         <todo_msg mid="126"><![CDATA[Talk to Terrence Terramai at Saint Haven Royal Castle.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QM_Jasmin_Black.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="132"><![CDATA[[Extra Chapter 2. Code Name Zero] Complete]]></title>
+         <contents mid="133"><![CDATA[<html>Terrence Terramai said Velskud left a message that something will happen at Anu Arendel. Get ready to leave for Anu Arendel.<BR>
+ <BR>
+* <FONT color=#7e12d2>[Extra Chapter 2. Code Name Zero] has been completed.</FONT></html>]]></contents>
+         <destination mid="134"><![CDATA[]]></destination>
+         <todo_msg mid="135"><![CDATA[[Extra Chapter 2. Code Name Zero] has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>9262</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

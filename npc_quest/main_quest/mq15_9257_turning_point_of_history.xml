@@ -1,0 +1,461 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9257_turning_point_of_history</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9257</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9258</nextqid>
+      <nextqname>mq15_9258_restart</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <uistyle>0</uistyle>
+      <qkname mid="1"><![CDATA[A Turning Point in History]]></qkname>
+      <qnpc>
+         <npcid>1048</npcid>
+         <npcename>n1048_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>836</npcid>
+         <npcename>n836_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="8" select_type="0"><![CDATA[<html>(Tell her what happened)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Stella$<BR>Hmm? What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QM_Jasmin_Black.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="10" select_type="0"><![CDATA[<html>I defeated Jasmine. </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Stella$<BR>Did something happen to you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="12" select_type="0"><![CDATA[<html>Well… (Tell her what happened)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Stella$<BR>…What…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="QW_81.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="14" select_type="0"><![CDATA[<html>(Of course, it would be hard for her to believe it) That's right.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR>…WHAT??? SERIOUSLY!?? REALLY!!??? So... Inside Tel Rosa Entrance, you found <FONT color=#a82424>Jasmine's Expedition Base</FONT>, and just you and Comelina defeated all of the enemies there?!!?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="QM_Jasmin_Black.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="16" select_type="0"><![CDATA[<html>I'm speaking the truth. Look at this (show her the jewel)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Stella$<BR>…But… BUT! Jasmine was powerful enough to burn down a whole city. How did she succumb so easily? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="77" select_type="0"><![CDATA[<html>Well that's what I'm telling you. (Tell her what Comelina said)</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh my! This is a dragon's jewel!<BR>Then you really...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-e" image="QM_Jasmin_Black.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-f" mid="79" select_type="0"><![CDATA[<html>Haha it's nothing.</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-1-f" mid="80" select_type="0"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Master Sorceress Stella$<BR>If you have concrete proof like this one, it's hard not to believe you. Wow you're something, <FONT color=#387206>{user_nick}</FONT>. You defeated that Jasmine... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-f" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-g" mid="82" select_type="0"><![CDATA[<html>Well, I'm worried about that too.</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Master Sorceress Stella$<BR>Leave reporting to the superiors to me. We're lucky it ended so easily. What are you going to do with that jewel?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-g" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="84" select_type="0"><![CDATA[<html>(She makes sense)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Master Sorceress Stella$<BR>…My advice is to take it to Pope Terramai.<BR>Though I hate clerics, he participated in the Black Dragon Raid,<BR>and he should know more about jewels.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-h" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="183"><![CDATA[<html>$Master Sorceress Stella$<BR>What...? What nonsense are you talking about?<BR>I'm not in the mood for a joke. Hah...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1048_academic-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="73"><![CDATA[<html>$Academic Comelina$<BR>Velskud... Why did you become like this...<BR><FONT color=#7e12d2>(You can get the quest from Saint Haven's Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="87"><![CDATA[<html>$Velskud$<BR>Krrgh...<BR><FONT color=#7e12d2>(He looks like he is in much pain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QN_Npc_SoceressStella.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="88"><![CDATA[<html>$Terrence Terramai$<BR>Phew… How did this happen...<BR><FONT color=#7e12d2>(You can get the quest from Saint Haven's Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Stella$<BR>You really surprise me sometimes.<BR>This is a serious matter that should not be known to many,<BR>but it is a fact that you have done something great. Well done.<BR><FONT color=#7e12d2>(Go to Royal Castle and meet Terramai)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-2-a" mid="90" select_type="0"><![CDATA[<html>Is there anything wrong?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Terrence Terramai$<BR>Ah, it's you! I was about to call for you...<BR><FONT color=#7e12d2>(Terramai looks pale)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-a" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-2-b" mid="92" select_type="0"><![CDATA[<html>What!?</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Terrence Terramai$<BR>…Listen carefully... Velskud's ageing is much faster than I thought. He may not hold up much longer… it will be at most… a few days.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-b" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-2-c" mid="94" select_type="0"><![CDATA[<html>Can't be...</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Terrence Terramai$<BR>His state suddenly turned worse, I didn't have time to do anything. I'm suspicious that he might have even been attacked again. But you know Velskud... He won't mention anything about that. <FONT color=#7e12d2>(Terramai sighs quietly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-c" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-3" mid="96" select_type="0"><![CDATA[<html>OK.</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Terrence Terramai$<BR>I wanted to tell you about Velskud's state since you know him too.<BR>…Go and visit him before it's too late.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-3" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="19"><![CDATA[<html>$Terrence Terramai$<BR>…Though I can't say we were good friends, but he still was once my comrade and I can't do anything… I'm feeling helpless once again. Go and see him before it's too late...<BR><FONT color=#7e12d2>(Look for Velskud at Royal Castle Underground)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-a" mid="99" select_type="0"><![CDATA[<html>Comelina? What are you doing here...?</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Velskud$<BR>Urrgh...<BR><FONT color=#7e12d2>(Velskud seems to be in much pain. Comelina beside him looks anxious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-a" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-b" mid="102" select_type="0"><![CDATA[<html>(Why do you have to speak like that)</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Velskud$<BR>Hey kid, you knew this girl too…? No wonder I could find some similarities between you two. She keeps meddling with other people's business… Krrgh…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-b" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-c" mid="104" select_type="0"><![CDATA[<html>(Not in history?)</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Academic Comelina$<BR>H-how did you become like this…? This did not exist in the historical records! What happened?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-c" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-d" mid="107" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Velskud$<BR>You're so noisy...<BR>Urrgh… Mind your own business. It's not something you can handle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-d" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-e" mid="109" select_type="0"><![CDATA[<html>Comelina...</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#7e12d2>(Comelina looks flustered)</FONT><BR>Wh-what should I do... If I don't do anything, Velskud will...<BR><FONT color=#387206>{user_nick}</FONT>, if you still have that jewel...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-e" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-f" mid="111" select_type="0"><![CDATA[<html>...(I should save Velskud first)</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Academic Comelina$<BR>I'm so afraid we might lose the only hero who will protect this world in the future… Though I knew that history would change, I never expected it to take this turn… I'm sorry to ask for the jewel after telling you that you can do whatever you want with it...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-f" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-g" mid="113" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Velskud$<BR>You're a nuisance.<BR>What has my life got to do with you two? It's none of your business. Get lost!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-g" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-h" mid="115" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Academic Comelina$<BR>Of course it matters to us!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-h" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-i" mid="117" select_type="0"><![CDATA[<html>(Comelina starts talking about the future and the hero of the future world)</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Velskud$<BR>What...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-i" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-j" mid="119" select_type="0"><![CDATA[<html>It’s not a laughing matter!</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Velskud$<BR>Hahaha... So the only remaining hero in the future would be me?<BR>Hahahahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-j" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-k" mid="124" select_type="0"><![CDATA[<html>Comelina did all she could to save you!</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Academic Comelina$<BR><FONT color=#387206>{user_nick}</FONT>…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-k" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-l" mid="126" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Velskud$<BR>Useless. I'm different from that Velskud of the future!<BR>I have no intentions of playing the hero again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-l" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-m" mid="128" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Academic Comelina$<BR>Velskud… Please… The future that I came from no longer exists.<BR>…If I can't even protect you… I'm afraid my little hope might vanish too... We may not be able to do anything in the collapsing world in the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-m" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-n" mid="132" select_type="0"><![CDATA[<html>(You can't read his face)</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Velskud$<BR>......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-n" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-o" mid="135" select_type="0"><![CDATA[<html>(…That's right...)</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Velskud$<BR>…Don't regret it.<BR>Though I may recover....<BR>It is not certain that I will be on your side.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-o" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-p" mid="138" select_type="0"><![CDATA[<html>Comelina...</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Academic Comelina$<BR>I'm… fine with that. As long as you stay alive....<BR>
+I trust you, Velskud.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-p" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-q" mid="140" select_type="0"><![CDATA[<html>I'm fine too. I don't think it's right for you to die like this.</html>]]></talk_answer>
+      <talk_answer link_index="n836_velskud-3-q" mid="141" select_type="0"><![CDATA[<html>Oh no~ I'll get a big scolding if Argenta finds out about this.</html>]]></talk_answer>
+      <talk_answer link_index="n836_velskud-3-q" mid="142" select_type="0"><![CDATA[<html>…But please don't disappear as and when you like. Be responsible for your life.</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Velskud$<BR>......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-q" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-3-cutscene" mid="145" select_type="0"><![CDATA[<html>…Okay.</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$Velskud$<BR>…I will repay… this debt.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-3-r" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="146"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Give the Ancient Dragon's jewel to Velskud.</FONT><BR><FONT color=#7e12d2>The jewel starts to shine brightly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1048_academic-3" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="211"><![CDATA[<html>$Academic Comelina$<BR>
+Ah... Why did it become like this?<BR>
+<FONT color=#7e12d2>(He looks pale. Talk to Velskud)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-4" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="32"><![CDATA[<html><FONT color=#2b2723><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#7e12d2>(Give the Ancient Dragon's jewel to Velskud.</FONT><BR><FONT color=#7e12d2>The jewel starts to shine brightly)</FONT></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-5" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-5-a" mid="185" select_type="0"><![CDATA[<html>(Velskud looks better)</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html><FONT color=#2b2723>$Velskud$<BR>It is a warm light. But this feeling... </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-5-a" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-5-b" mid="187" select_type="0"><![CDATA[<html>Comelina...</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$Academic Comelina$<BR>…I'm so relieved... Velskud... *Sobs*</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-5-b" image="QN_Npc_Velskud.dds " itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-5-c" mid="189" select_type="0"><![CDATA[<html>(He's so cold. I thought he might at least say something nice) </html>]]></talk_answer>
+      <talk_answer link_index="n836_velskud-5-c" mid="190" select_type="0"><![CDATA[<html>(I really can't imagine him being friendly)</html>]]></talk_answer>
+      <talk_answer link_index="n836_velskud-5-c" mid="191" select_type="0"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="188"><![CDATA[<html>$Velskud$<BR>You're noisy... Get out. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-5-c" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n836_velskud-6" mid="193" select_type="0"><![CDATA[<html>Okay. See you there. </html>]]></talk_answer>
+      <talk_question mid="192"><![CDATA[<html>$Academic Comelina$<BR>*Sob*…*Hiccup* <FONT color=#387206>{user_nick}</FONT>, thank you so much…<BR>I hope I can see you again at Jasmine's Expedition Base and have a little talk... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n836_velskud-6" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="165"><![CDATA[<html>$Velskud$<BR>….Phew.<BR><FONT color=#7e12d2>(He looks much better than before. Tell Terrence Terramai at the Royal Castle that Velskud has recovered) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-6" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-6-a" mid="195" select_type="0"><![CDATA[<html>Well… He has recovered.</html>]]></talk_answer>
+      <talk_question mid="176"><![CDATA[<html>$Terrence Terramai$<BR>So... How was he?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-6-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-7" mid="197" select_type="0"><![CDATA[<html>Erm… (How do I explain this...)</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Terrence Terramai$<BR>What??? He was about to take his last breath yesterday. What on earth happened?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1048_academic-6" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="198"><![CDATA[<html>$Academic Comelina$<BR>Though history may have changed... *hiccup*<BR>It would be better if I lie low.<BR>I will see you at Jasmine's Expedition Base.<BR><FONT color=#7e12d2>(Look for Terrence Terramai at the Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-7" image="QN_Npc_SoceressStella.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="201"><![CDATA[<html>$Terrence Terramai$<BR>No... Velskud couldn't have told you what really happened. I will go and see him myself. Oh yes, <FONT color=#a82424>Master Sorceress Stella</FONT> was looking for you. Why don't you go and talk to her?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-7-a" mid="203" select_type="0"><![CDATA[<html>(Tell her what happened)</html>]]></talk_answer>
+      <talk_question mid="202"><![CDATA[<html>$Master Sorceress Stella$<BR>So how did things go?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-7-b" mid="205" select_type="0"><![CDATA[<html>(I hope so)</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Master Sorceress Stella$<BR>Hmm… You gave it to someone based on Comelina's decisions? Well, Comelina is from the future and she is a good kid… So she wouldn't have given it to someone who might misuse it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-7-c" mid="207" select_type="0"><![CDATA[<html><FONT color=#a82424>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="206"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-7-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-7-!next" mid="209" select_type="0"><![CDATA[<html>Investigation?</html>]]></talk_answer>
+      <talk_question mid="208"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh yes, the reason I asked for you to come here was because of the investigation.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9257</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">a</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">h</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13516,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete" true="">9257</exe>
+         <exe type="recompense">92570,,,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="g" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n822_teramai" sub="b" />
+   <exelink qstep="2" npc="n822_teramai" sub="c" />
+   <exelink qstep="2" npc="n822_teramai" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n836_velskud" sub="b" />
+   <exelink qstep="3" npc="n836_velskud" sub="c" />
+   <exelink qstep="3" npc="n836_velskud" sub="d" />
+   <exelink qstep="3" npc="n836_velskud" sub="e" />
+   <exelink qstep="3" npc="n836_velskud" sub="f" />
+   <exelink qstep="3" npc="n836_velskud" sub="g" />
+   <exelink qstep="3" npc="n836_velskud" sub="h" />
+   <exelink qstep="3" npc="n836_velskud" sub="i" />
+   <exelink qstep="3" npc="n836_velskud" sub="j" />
+   <exelink qstep="3" npc="n836_velskud" sub="k" />
+   <exelink qstep="3" npc="n836_velskud" sub="l" />
+   <exelink qstep="3" npc="n836_velskud" sub="m" />
+   <exelink qstep="3" npc="n836_velskud" sub="n" />
+   <exelink qstep="3" npc="n836_velskud" sub="o" />
+   <exelink qstep="3" npc="n836_velskud" sub="p" />
+   <exelink qstep="3" npc="n836_velskud" sub="q" />
+   <exelink qstep="3" npc="n836_velskud" sub="q" />
+   <exelink qstep="3" npc="n836_velskud" sub="q" />
+   <exelink qstep="3" npc="n836_velskud" sub="cutscene">2,0</exelink>
+   <exelink qstep="5" npc="n836_velskud" sub="b" />
+   <exelink qstep="5" npc="n836_velskud" sub="c" />
+   <exelink qstep="5" npc="n836_velskud" sub="c" />
+   <exelink qstep="5" npc="n836_velskud" sub="c" />
+   <exelink qstep="5" npc="n836_velskud" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n822_teramai" sub="7">0,1</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="b">1</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="c">0</exelink>
+   <exelink qstep="7" npc="n045_soceress_master_stella" sub="!next" />
+   <journal_data recompense="92570" quest_title="역사의 분기점" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[A Turning Point in History 1]]></title>
+         <contents mid="53"><![CDATA[<html>You have successfully defeated Jasmine. Inform Master Sorceress Stella. <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="55"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[A Turning Point in History 2]]></title>
+         <contents mid="57"><![CDATA[<html>To find out what to do with the Ancient Dragon's jewel, <BR>look for Terramai at the Saint Haven Royal Castle.<BR><BR><FONT color=#086171>Saint Haven (Inside the Royal Castle)</FONT> <FONT color=#a82424>- Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to Terrence Terramai]]></destination>
+         <todo_msg mid="59"><![CDATA[Talk to Terrence Terramai at Saint Haven Royal Castle.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13014,n836</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>836</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[A Turning Point in History 3]]></title>
+         <contents mid="62"><![CDATA[<html>Terramai informed you that Velskud's state is grave.<BR>Look for Velskud at Royal Castle Underground.<BR><BR><FONT color=#086171>Saint Haven (Royal Castle Underground)</FONT> <FONT color=#a82424>- Velskud</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk with Velskud]]></destination>
+         <todo_msg mid="64"><![CDATA[Talk to Velskud.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13014,n836</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>836</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[A Turning Point in History 4]]></title>
+         <contents mid="66"><![CDATA[<html>With Comelina's continuous persuasion,<BR>Velskud took the Ancient Dragon's jewel and recovered himself.<BR>Talk with Velskud.<BR><BR><FONT color=#086171>Saint Haven (Royal Castle Underground)<FONT color=#2b2723> </FONT><FONT color=#a82424>- Velskud</FONT></FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk with Velskud]]></destination>
+         <todo_msg mid="68"><![CDATA[Talk to Velskud.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[A Turning Point in History 5]]></title>
+         <contents mid="70"><![CDATA[<html><FONT color=#2b2723>Inform Terrence Terramai that Velskud has recovered.</FONT><BR><FONT color=#2b2723></FONT><BR><FONT color=#086171>Saint Haven (Inside the Royal Castle)</FONT> <FONT color=#a82424>- Terrence Terramai</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Talk to Terrence Terramai]]></destination>
+         <todo_msg mid="72"><![CDATA[Talk to Terrence Terramai at Saint Haven Royal Castle.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="179"><![CDATA[A Turning Point in History 6]]></title>
+         <contents mid="180"><![CDATA[<html>Terrence Terramai seemed surprised but relieved.<BR>Master Sorceress Stella is looking for you so go and find her.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="181"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="182"><![CDATA[Talk to Master Sorceress Stella at Saint Haven.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>1:2:3:4:6</user_class>
+      <prev_quest>9256</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

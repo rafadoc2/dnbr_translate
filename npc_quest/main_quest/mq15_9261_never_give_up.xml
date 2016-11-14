@@ -1,0 +1,290 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9261_never_give_up</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9261</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9262</nextqid>
+      <nextqname>mq15_9262_moment_of_turning_point</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <uistyle>0</uistyle>
+      <qkname mid="1"><![CDATA[Never Give Up]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>836</npcid>
+         <npcename>n836_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-accepting-a" mid="6" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Look for Jasmine's base)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-accepting-b" mid="58" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(It seems like looking through the data is useless. Jasmine couldn't have left the data on her base to be found so easily)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-accepting-c" mid="60" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I don't think this will work. I can't do anything if I keep doing this… But I can't just search the entire continent… I feel so powerless)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting-c" image="QN_Npc_SoceressStella.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="62" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(It feels like someone is staring at me… It must be Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_SoceressStella.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="7"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I seem to be hallucinating after being in front of the Academic Station for too long. Go and find Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="65" select_type="0"><![CDATA[<html>N-nothing.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Master Sorceress Stella$<BR>Hey what were you doing over there? You look listless, sitting in front of that pot all day long… You don’t seem to be waiting for something. What were you doing there?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="67" select_type="0"><![CDATA[<html>(Why those two out of all places!) </html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Master Sorceress Stella$<BR>Phew. I feel bad to see a young kid like you looking so sad...<BR>
+It's me who should be sad! All the lands I buy end up being wrought with misfortune. <BR>I thought the Meteor Crash Site and the desert were safe investments!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="69" select_type="0"><![CDATA[<html>Why?</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Master Sorceress Stella$<BR>Meteor Crash Site is full of ghosts... Tel Numara desert is… Phew…<BR>And the temple at Tel Rosa Entrance can't even be entered…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="71" select_type="0"><![CDATA[<html>A base!??!? </html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh maybe you don't know about it… It's a top secret. There's a rumour that a major construction work has been done near the ancient temple. They say a base has been built there. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="73" select_type="0"><![CDATA[<html>(Maybe Jasmine's base is at Tel Rosa Entrance) </html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Master Sorceress Stella$<BR>Hey don't shout… Why are you so shocked? Anyway, I don't know the details but I'm not going anywhere near there for the time being. Huhu are there any other lands worth buying…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="76" select_type="0"><![CDATA[<html>I'm sorry! I just realised that I have something to do!</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#7e12d2>(Stella starts to mumble to herself)</FONT>Angelica said she had something to do… I wonder where she went to… Hey where are you going? If you have time, can you look out for some land...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_81.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Stella$<BR>Seriously...<BR><FONT color=#7e12d2>(Go to Tel Rosa Entrance's Jasmine's Expedition Base)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-3-a" mid="82" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Is this thing that I got really a Dragon's jewel? I can't believe it. And did I just defeat Jasmine? It all doesn't feel real...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-3-b" mid="84" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(And what should I do with this jewel? By right, Daisy should have this...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-3-c" mid="86" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I don't know what to do.</FONT><BR><FONT color=#7e12d2>…Ah, yes… Maybe this might help Velskud?</FONT><BR><FONT color=#7e12d2>When did Velskud obtain a jewel in the history books…?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-4" mid="88" select_type="0"><![CDATA[<html>(Log on to the Academic Station)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I hope the Academic Station is still working even when Jasmine is gone...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="89"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#2b2723>Ah… The world of real estate investment is endless... Where is Angelica? And Edan is not around too...</FONT><BR>
+<FONT color=#7e12d2>(Log on to Academic Station)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-4-a" mid="92" select_type="0"><![CDATA[<html>(Search for internal data)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Academic Station$<BR>- <FONT color=#086171>Network connection is unstable.</FONT><BR>- <FONT color=#7e12d2>Please reset the Mission Objective.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-a" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-4-b" mid="94" select_type="0"><![CDATA[<html>Partly matches?</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Academic Station$<BR>- <FONT color=#086171>No data matches the search keyword by 100%. Do you want to view the search results that partly matches the search keywords?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-4-c" mid="96" select_type="0"><![CDATA[<html>So do I just enter the coordinates of where the warp zones were located?</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Academic Station$<BR><FONT color=#086171><FONT color=#2b2723>- </FONT><FONT color=#086171>The file is locked.</FONT><FONT color=#086171> </FONT></FONT><BR><FONT color=#086171><FONT color=#086171><FONT color=#2b2723>- </FONT>Password Hint : Sum of all the warp coordinates in Jasmine's Expedition Base.</FONT></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-c" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-4-d" mid="99" select_type="0"><![CDATA[<html>Can't be! Is there anywhere that I missed out?</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Academic Station$<BR><FONT color=#2b2723>- </FONT><FONT color=#086171>Wrong password.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-d" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-4-e" mid="123" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Hmm... Which one did I miss out? No, rather than gathering data once again, I should go and see how Velskud is and predict when I can give the jewel to him.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-4-f" mid="101" select_type="0"><![CDATA[<html><FONT color=#a82424>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-f" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n393_academic_station-4-!next" mid="107" select_type="0"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Velskud... I will see you at Royal Castle Underground.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9261</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>여기서 자스민과 싸운 후, 프랍과 대화.
+여기서 프랍을 임시로 아카데믹 스테이션으로. 
+프랍과 대화하면 카메라 워크- 저널 변경.</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92610,,,,,,,</exe>
+         <exe type="complete" true="">9261</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="b" />
+   <exelink qstep="3" npc="n393_academic_station" sub="c" />
+   <exelink qstep="3" npc="n393_academic_station" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="b" />
+   <exelink qstep="4" npc="n393_academic_station" sub="c" />
+   <exelink qstep="4" npc="n393_academic_station" sub="d" />
+   <exelink qstep="4" npc="n393_academic_station" sub="e">0</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="f">1</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="!next" />
+   <journal_data recompense="92610" quest_title="포기하면 안됩니다" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Never Give Up 1]]></title>
+         <contents mid="38"><![CDATA[<html>You spent too much time in front of the Academic Station.<BR>Master Sorceress Stella seems to be suspicious of what you are doing.<BR>Talk to Master Sorceress Stella.<BR><BR><FONT color=#086171>Saint Haven<FONT color=#2b2723> </FONT><FONT color=#a82424>- Master Sorceress Stella</FONT></FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_81.dds</contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Never Give Up 2]]></title>
+         <contents mid="42"><![CDATA[<html>You have found out that Jasmine's base is at Tel Rosa Entrance after talking to Stella.<BR>Go to  Jasmine's Expedition Base at Tel Rosa Entrance.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Rosa Entrance)<FONT color=#2b2723> </FONT><FONT color=#a82424>- Jasmine's Expedition Base</FONT></FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[To Jasmine's Expedition Base]]></destination>
+         <todo_msg mid="44"><![CDATA[Go to Jasmine's Expedition Base at Tel Rosa Entrance.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_Jasmin_Black.dds </contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Never Give Up 3]]></title>
+         <contents mid="47"><![CDATA[<html>Jasmine was already preparing for a battle.<BR>Get ready for the final battle with Jasmine.<BR><BR><FONT color=#086171>Tel Rosa Entrance (Jasmine's Expedition Base)</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- Academic Jasmine</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Battle with Jasmine]]></destination>
+         <todo_msg mid="49"><![CDATA[Defeat Jasmine.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Daisy.dds </contents_image>
+         <destination_pos>811,0,0</destination_pos>
+         <destination_mode>custom:811@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="111"><![CDATA[Never Give Up 4]]></title>
+         <contents mid="112"><![CDATA[<html>You have defeated Jasmine.<BR>Retrieve Daisy's jewel left behind by Jasmine.<BR><BR><FONT color=#086171>Tel Rosa Entrance (Jasmine's Expedition Base)</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- Jasmine's Jewel Energy Extractor</FONT></html>]]></contents>
+         <destination mid="113"><![CDATA[Retrieve Daisy's jewel]]></destination>
+         <todo_msg mid="114"><![CDATA[Retrieve Daisy's jewel from the Jewel Energy Extractor.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="116"><![CDATA[Never Give Up 5]]></title>
+         <contents mid="117"><![CDATA[<html>You have retrieved the jewel.<BR>Go back to Academic Station.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- Academic Station</FONT></html>]]></contents>
+         <destination mid="118"><![CDATA[To Academic Station]]></destination>
+         <todo_msg mid="119"><![CDATA[Go back to Saint Haven's Academic Station.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="124"><![CDATA[Never Give Up 6]]></title>
+         <contents mid="125"><![CDATA[<html>Academic Station seems faulty. It looks like it has to be fixed, but there is no time for that now. First, search how you should use the jewel.<BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- Academic Station</FONT></html>]]></contents>
+         <destination mid="126"><![CDATA[Log on to Academic Station]]></destination>
+         <todo_msg mid="127"><![CDATA[Search the internal data saved on Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>5</user_class>
+      <prev_quest>9253</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+   </condition_data>
+</quest>

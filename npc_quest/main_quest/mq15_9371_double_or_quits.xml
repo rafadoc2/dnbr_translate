@@ -1,0 +1,206 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9371_double_or_quits</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>9</qchapter>
+      <qid>9371</qid>
+      <designer>최지은</designer>
+      <qlevel>56</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9372</nextqid>
+      <nextqname>mq15_9372_show_the_cloven_hoof</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[승부수]]></qkname>
+      <qnpc>
+         <npcid>1190</npcid>
+         <npcename>n1190_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>754</npcid>
+         <npcename>n754_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="10" select_type="3" />
+      <talk_question mid="9"><![CDATA[<html>$시델$<BR>워리어 시안은 만났지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QW_61.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="14" select_type="5" />
+      <talk_question mid="12"><![CDATA[<html>$시델$<BR><FONT color=#a82424>악령의 그늘</FONT>로 무슨 보물을 찾으러 간다던데, 아주 급해 보였어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QW_61.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-" mid="17" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$테렌스 테라마이$<BR>워리어 시안에게 <FONT color=#a82424>악령의 그늘</FONT>로 가 달라고 했다네.<BR>만나지 못했는가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n754_cian-1" image="QW_61.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n754_cian-1-" mid="19" select_type="5" />
+      <talk_question mid="18"><![CDATA[<html>$워리어 시안$<BR>악령의 그늘!<BR><FONT color=#a82424>악령의 그늘</FONT>에 그 보물이 있을 거라고 합니다. 어서 가시죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1190_cian-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1190_cian-1-a" mid="30" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$워리어 시안$<BR>으음... 이 근천데?<BR>없나...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1190_cian-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1190_cian-1-b" mid="31" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$워리어 시안$<BR>아, 뭘 찾냐고요?<BR>로터스마쉬에 전해지는 전설인데요, 오래전 고대인들간의 전쟁이 있을 당시에 사로잡은 타락한 고대인들을 정화하기 위해 선한 고대인들이 여신의 힘이 담긴 아티팩트를 만들었다고 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1190_cian-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1190_cian-1-c" mid="32" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$워리어 시안$<BR>그 물건의 이름을 진실의 거울이라고 부른다더군요.<BR>진실의 거울을 바라보면 자신의 거짓된 모습이 비친 후, 거울 속으로 빨려들어 사라진다고….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1190_cian-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1190_cian-1-d" mid="33" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>...진실의 거울?!!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1190_cian-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1190_cian-1-e" mid="35" select_type="0"><![CDATA[<html>(거울에 대해 말한다)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$워리어 시안$<BR>어, 왜 그러세요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1190_cian-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1190_cian-1-f" mid="37" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$워리어 시안$<BR>그럴 수가!<BR>아아, 이런... 제가 진작 말씀 드렸더라면 여기까지 오는 수고를 덜 수 있었는데... 죄송합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1190_cian-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1190_cian-2" mid="39" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$워리어 시안$<BR>어쨌든 진실의 거울을 손에 넣었으니 잘 됐네요.<BR>어서 테라마이 님께 돌아가서 보고 해야겠습니다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1190_cian-2" image="QW_SaintHaven.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1190_cian-2-" mid="45" select_type="5" />
+      <talk_question mid="43"><![CDATA[<html>$워리어 시안$<BR>자, 빨리 왕성으로 돌아가죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-a" mid="55" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>$테렌스 테라마이$<BR>오오... 이미 진실의 거울이 손에 들어와 있었다니, 이거야말로 여신의 안배일세.<BR><FONT color=#7e12d2>(테라마이가 성물을 손에 쥐고 고개를 숙여 보인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-b" mid="56" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>$테렌스 테라마이$<BR>...그런데 거울이 어디 있다는 겐가?<BR><FONT color=#7e12d2>(테라마이가 두리번거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-b" image="QS_Default.dds" itemindex="400320" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-c" mid="57" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이계의 가면을 써야 제대로 볼 수 있는 것 같습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-c" image="QS_Default.dds" itemindex="400321" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-d" mid="58" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$테렌스 테라마이$<BR><FONT color=#7e12d2>(테라마이가 이계의 가면을 쓴다)</FONT><BR>과연.... 훌륭하네. 이런 물건이었군!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-d" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n822_teramai-2-e" mid="61" select_type="4" />
+      <talk_question mid="52"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-!next" mid="77" select_type="2" />
+      <talk_question mid="76"><![CDATA[<html>$테렌스 테라마이$<BR>이제 바르낙을 구원하기 위한 준비는 모두 되었으니, 선지자와 함께 출발하도록 하세.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9371</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93710,,,,,,,</exe>
+         <exe type="complete" true="">9371</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1190_cian" sub="b" />
+   <exelink qstep="1" npc="n1190_cian" sub="c" />
+   <exelink qstep="1" npc="n1190_cian" sub="d" />
+   <exelink qstep="1" npc="n1190_cian" sub="e" />
+   <exelink qstep="1" npc="n1190_cian" sub="f" />
+   <exelink qstep="1" npc="n1190_cian" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n822_teramai" sub="b" />
+   <exelink qstep="2" npc="n822_teramai" sub="c" />
+   <exelink qstep="2" npc="n822_teramai" sub="d">0</exelink>
+   <exelink qstep="2" npc="n822_teramai" sub="e">1</exelink>
+   <exelink qstep="2" npc="n822_teramai" sub="!next" />
+   <journal_data recompense="93710" quest_title="승부수" chapterid="9" quest_level="56" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_61.dds</contents_image>
+         <destination_pos>612,n1190</destination_pos>
+         <destination_mode>custom:611@1,612@1</destination_mode>
+         <statemark_npcid>1190</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[승부수]]></title>
+         <contents mid="67"><![CDATA[<html>워리어 시안이 악령의 그늘에 있다고 한다. 뒤따라가자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(운석 낙하지 입구)</FONT> <FONT color=#a82424>- 악령의 그늘</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[악령의 그늘로]]></destination>
+         <todo_msg mid="69"><![CDATA[악령의 그늘로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[진작 말하지]]></title>
+         <contents mid="73"><![CDATA[<html>악령의 그늘을 살펴보던 중, 워리어 시안은 진실의 거울을 찾고 있었음을 알게 되었다.<BR>진실의 거울은 이미 가지고 있으니 테렌스 테라마이에게 가서 이야기하자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐(왕성 내부)</FONT> <FONT color=#a82424>- 테렌스 테라마이</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[왕성 내부의 테라마이와 대화]]></destination>
+         <todo_msg mid="75"><![CDATA[세인트헤이븐 왕성의 테렌스 테라마이에게 가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9370</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

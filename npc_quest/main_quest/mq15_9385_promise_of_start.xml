@@ -1,0 +1,286 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9385_promise_of_start</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9385</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[시작의 약속]]></qkname>
+      <qnpc>
+         <npcid>1023</npcid>
+         <npcename>n1023_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>574</npcid>
+         <npcename>n574_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-accepting-acceptted" mid="88" select_type="3" />
+      <talk_question mid="46"><![CDATA[<html>$그림자 냥$<BR>후음~생각이 날 것 같은데 냥. 아르누트 협곡 근처의 고대사원이라면…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-a" mid="89" select_type="0"><![CDATA[<html>그 영웅이 누군데?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$그림자 냥$<BR>아, 생각났다 냥. 그거 분명히 그… 영웅과 영웅의 추종자가 묻혀있었다고 하는 사원이었냥. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-a" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2" mid="92" select_type="0"><![CDATA[<html>그러게.</html>]]></talk_answer>
+      <talk_answer link_index="n574_shadow_meow-2" mid="93" select_type="0"><![CDATA[<html>(거기에 자스민이 와 있으니 어쩔 수 없지...)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$그림자 냥$<BR>으음, 누구인지는 잘 몰라냥. 하지만 이미 죽은 영웅을 수호하기 위해서 추종자들이 목숨을 건 맹세를 한 사원이라고 들었어냥. 그 코멜리나라는 아가씨는 왜 그런 험한 곳만 골라가냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-1-" mid="90" select_type="5" />
+      <talk_question mid="50"><![CDATA[<html>$아카데믹 코멜리나$<BR>…괜찮아요. 괜찮아. <FONT color=#387206>{user_nick}</FONT>님도 있고, 분명 해낼 수 있을거에요…<BR><FONT color=#7e12d2>(세인트헤이븐의 그림자 냥에게서 퀘스트를 받을 수 </FONT><FONT color=#7e12d2>있습니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2" image="QW_75.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-" mid="97" select_type="5" />
+      <talk_question mid="51"><![CDATA[<html>$그림자 냥$<BR>뭐 그래도 지금 와서 별다른 위험은 없을 거 같지만 냥. 이 스승이 제자가 걱정되는 건 어쩔 수 없구냥. 조심해서 갔다오냥…<BR><FONT color=#7e12d2>(텔 로사 시가지의 점령당한 고대사원으로 가세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-2-a" mid="99" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>$아카데믹 코멜리나$<BR>이, 이건…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2-a" image="QN_Npc_Academic_jasmine.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-2-b" mid="101" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>코멜리나, 이게 어떻게 된 거야? 방금… 자스민이… 데이지의 보옥을!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-2-c" mid="102" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>$아카데믹 코멜리나$<BR>네. 자스민은 처음부터 데이지의 보옥을 노리고 있었던 겁니다…!<BR>데이지가 저희의 원형이라고 한다면...아직 저와 자매들이 태어나지 않았을 때이니, 보옥은 완전할 테고, 분명 강대한 힘을 가지고 있을 터..이지만, 왜 지금 와서 보옥만을 가져가는지 알 수 없네요…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-2-d" mid="103" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>보옥만으로는 할 수 있는 일이 없어? 드래곤이 된다든가.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-2-e" mid="104" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#7e12d2>(고개를 </FONT><FONT color=#7e12d2>가로젓는다)</FONT>너무 불확실한 요소가 많은 일입니다. 제대로 검증된 사례도 없고... 지금 보옥을 가져가 봤자 확실히 할 수 있는 일이라고는 우리 같은 클론을 만드는 것뿐… 아!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-2-f" mid="108" select_type="0"><![CDATA[<html><FONT color=#2b2723>(화제를 돌리는 게 좋을 것 같다)어, 저기, 코멜리나…</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n1023_academic-2-f" mid="109" select_type="0"><![CDATA[<html><FONT color=#2b2723>잠깐만, 코멜리나. 묻고 싶은 게 있어.</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$아카데믹 코멜리나$<BR>그게 확실하겠네요. 게다가 이미 저희를 만들어봤으니, 자스민은 더욱 강력한 클론을 만들 수 있을 겁니다. 또 얼마나 많은 자매들이 만들어지고, 죽게 될까요...<FONT color=#7e12d2>(코멜리나가 슬픈 표정으로 자스민이 사라진 </FONT><FONT color=#7e12d2>방향을 본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-2-g" mid="111" select_type="2" />
+      <talk_question mid="59"><![CDATA[<html>$아카데믹 코멜리나$<BR>...예? 아, 무엇입니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-2-h" mid="112" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>데이지가 보옥인 건 알겠는데... 그래서 어떤 드래곤의 보옥인거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-3" mid="113" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$아카데믹 코멜리나$<BR>...모르겠습니다. 하지만 조사할 필요는 있어 보여요.<BR>문헌에 남은 드래곤이라면 약점도 알 수 있을 테니까요.<BR>조사는 제게 맡겨주세요. 미래의 기술로 확실히 알아보겠습니다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1023_academic-3" image="QN_NPC_Shadow_Meow.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1023_academic-3-" mid="116" select_type="5" />
+      <talk_question mid="62"><![CDATA[<html>$아카데믹 코멜리나$<BR>일단 이곳부터 샅샅이 뒤져보겠습니다.<BR>보옥을 빼기 위해 고른 장소이니 보옥에 대한 자료가 남아있겠죠.<BR><FONT color=#387206>{user_nick}</FONT>님은 걱정하지 말고 기다리세요!<BR><FONT color=#7e12d2>(코멜리나가 결의를 다진 것 같다. 세인트헤이븐의 </FONT><FONT color=#7e12d2>그림자냥에게 알려주자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3" image="QW_75.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-a" mid="118" select_type="0"><![CDATA[<html>그게 무슨 말이야?</html>]]></talk_answer>
+      <talk_answer link_index="n574_shadow_meow-3-a" mid="119" select_type="0"><![CDATA[<html>더 커다란 사원이라니?</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$그림자 냥$<BR>아아아! 왔구나 냥!! 나 또 놀라운 자료를 찾아냈다 냥. 그 바르낙이 묻혔다는 고대사원 말이냥. 원래는 더 커다란 사원의 일부였던 것 같아 냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-b" mid="121" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>$그림자 냥$<BR>후후, 고대에 무지무지 커다란 사원이 있었던거냥. 거긴 고대인들의 연구시설이었어냥. 무슨 연구인지는 정확히 모르지만, 여신의 힘과 관련된 연구였던 것 같아 냥. 연구도 컸고 시설도 컸어냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-c" mid="122" select_type="2" />
+      <talk_question mid="66"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>흠…(그렇다면, 자스민이라는 여자는 그 안에 있던 고대인의 연구시설을 이용했을 수도 있겠구나)</FONT><BR><FONT color=#662500>하지만 그곳에 그런 커다란 연구시설 같은 건 없었는데.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-d" mid="124" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html>$그림자 냥$<BR>후후, 고대인들의 기술을 얕보면 안되냥. 겉보기와 달리 그 사원 전체가 뭔가 마나의 흐름을 이상하게 한다든가 그런 작용을 했던 거 같아 냥. 그래서 여신의 힘이 더 크게 발동될 수 있었다고 했다냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-d" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-e" mid="125" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$그림자 냥$<BR>근데 너 왜 이렇게 그 코멜리나란 아가씨를 챙기냥? 보통 아가씨가 아닌 것 같던데. 그 전에 여자친구는 어떻게 한거냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-f" mid="126" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여자친구 아니야. 그리고 코멜리나는 사정이 있어서 도와주고 있을 뿐이고.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-g" mid="127" select_type="2" />
+      <talk_question mid="70"><![CDATA[<html>$그림자 냥$<BR>후움~<FONT color=#7e12d2>(수상한 눈으로 이쪽을 </FONT><FONT color=#7e12d2>노려보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-g" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-h" mid="130" select_type="4" />
+      <talk_question mid="129"><![CDATA[<html>$퀘스트 완료$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-h" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-i" mid="131" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>${user_nick}$<FONT color=#662500><BR>(자신이 왔던 시대와 싸운다는 말도 안 되는 사정을 가지고 있는 아이야.<BR>그 아이가 어떤 힘을 지녔다고 해도, 혼자서 맞서는 건 말이 안돼)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-i" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-j" mid="132" select_type="2" />
+      <talk_question mid="72"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(나는 어느 시대에도 제대로 있던 적이 없는 것 같으니까, </FONT><BR><FONT color=#662500>그 애가 말했던 역사에 별다른 영향을 끼치지 않을 거 같고... </FONT><BR><FONT color=#662500>다른 사람들보다는 그 애에게 더 많은 도움을 줄 수 있겠지)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-j" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-" mid="133" select_type="5" />
+      <talk_question mid="73"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(…하지만 정말 이상해. 난 왜 역사에 남아있지 않은거지? 나름대로 6영웅도 만나고, 다른 모험자들을 돕기도 했다구. 심지어 일루전은 사도였는데, 그 정도로는 역사에 남을 일이 아닌가?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9385</exe>
+         <exe type="talk" npc="n574_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93850,,,,,,,</exe>
+         <exe type="complete" true="">9385</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n574_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n574_shadow_meow" sub="2">0,1</exelink>
+   <exelink qstep="1" npc="n574_shadow_meow" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1023_academic" sub="b" />
+   <exelink qstep="2" npc="n1023_academic" sub="c" />
+   <exelink qstep="2" npc="n1023_academic" sub="d" />
+   <exelink qstep="2" npc="n1023_academic" sub="e" />
+   <exelink qstep="2" npc="n1023_academic" sub="f" />
+   <exelink qstep="2" npc="n1023_academic" sub="f" />
+   <exelink qstep="2" npc="n1023_academic" sub="g" />
+   <exelink qstep="2" npc="n1023_academic" sub="h" />
+   <exelink qstep="2" npc="n1023_academic" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n574_shadow_meow" sub="b" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="c" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="d" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="e" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="f" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="g">0</exelink>
+   <exelink qstep="3" npc="n574_shadow_meow" sub="h">2,1</exelink>
+   <exelink qstep="3" npc="n574_shadow_meow" sub="i" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="j" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="" />
+   <journal_data recompense="93850" quest_title="시작의 약속" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Shadow_Meow.dds</contents_image>
+         <destination_pos>11,n574</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>574</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[시작의 약속 1]]></title>
+         <contents mid="75"><![CDATA[<html>그림자 냥과 대화하자.<BR>점령당한 고대사원에 대한 정보를 알고 있는 것 같다.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 그림자 냥</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[퀘스트가 추가되었습니다.]]></destination>
+         <todo_msg mid="77"><![CDATA[그림자 냥과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_75.dds</contents_image>
+         <destination_pos>751,n1023</destination_pos>
+         <destination_mode>custom:751@1</destination_mode>
+         <statemark_npcid>1023</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[시작의 약속 2]]></title>
+         <contents mid="79"><![CDATA[<html>점령당한 고대사원으로 가서 아카데믹 코멜리나와 대화하자.<BR>그 곳에 자스민이 있다.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT> <FONT color=#a82424>- 점령당한 고대사원(아카데믹 코멜리나)</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[점령당한 고대사원 탐색]]></destination>
+         <todo_msg mid="81"><![CDATA[점령당한 고대사원으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_Commelina.dds</contents_image>
+         <destination_pos>751,n1023</destination_pos>
+         <destination_mode>custom:751@1</destination_mode>
+         <statemark_npcid>1023</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[시작의 약속 3]]></title>
+         <contents mid="83"><![CDATA[<html>자스민이 데이지의 보옥을 추출해서 가져가버렸다.<BR>
+코멜리나에게 이 상황에 대한 설명을 듣자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>- 점령당한 고대사원(아카데믹 코멜리나)</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[아카데믹 코멜리나와 대화]]></destination>
+         <todo_msg mid="85"><![CDATA[아카데믹 코멜리나와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_NPC_Shadow_Meow.dds</contents_image>
+         <destination_pos>11,n574</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>574</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[시작의 약속 4]]></title>
+         <contents mid="136"><![CDATA[<html>자스민은 고대사원에서 데이지의 보옥을 추출하는 데 성공했다. 코멜리나의 말에 따르면 그 보옥으로 다시 클론을 만들지도 모른다고 하는데…. 세인트헤이븐의 그림자 냥에게 가서 고대사원에 대한 정보를 수집하자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 그림자 냥</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[세인트헤이븐의 그림자 냥과 대화]]></destination>
+         <todo_msg mid="138"><![CDATA[세인트헤이븐의 그림자 냥과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Academic_jasmine.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="145"><![CDATA[[Extra Chapter 2. Code Name Zero] Part 1 Complete]]></title>
+         <contents mid="146"><![CDATA[<html>* <FONT color=#7e12d2>[Extra Chapter 2. Code Name Zero] Part 1 has been completed.</FONT></html>]]></contents>
+         <destination mid="147"><![CDATA[]]></destination>
+         <todo_msg mid="148"><![CDATA[[Extra Chapter 2. Code Name Zero] Part 1 has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9384</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

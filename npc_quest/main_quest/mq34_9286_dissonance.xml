@@ -1,0 +1,446 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9286_dissonance</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9286</qid>
+      <designer>강지영</designer>
+      <qlevel>63</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9287</nextqid>
+      <nextqname>mq34_9287_the_men_of_question</nextqname>
+      <nextqnpc>n822_teramai</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[불협화음]]></qkname>
+      <qnpc>
+         <npcid>1054</npcid>
+         <npcename>n1054_azelia</npcename>
+         <npckname>아젤리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1055</npcid>
+         <npcename>n1055_elf_guard_basha</npcename>
+         <npckname>엘프 경비병 바샤</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1062</npcid>
+         <npcename>n1062_azelia</npcename>
+         <npckname>아젤리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1083</npcid>
+         <npcename>n1083_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-accepting" image="QN_Npc_Azelia.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-accepting-acceptted" mid="7" select_type="3" />
+      <talk_question mid="6"><![CDATA[<html>$엘프 경비병 바샤$<BR>아젤리아에게 무슨 일이라도 생긴 건가?<BR>황금 초원이라면 그녀의 실력으로 벌써 두 번은 샅샅이 뒤지고 돌아왔을 시간인걸.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1" image="QN_Npc_Basha.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-" mid="9" select_type="5" />
+      <talk_question mid="8"><![CDATA[<html>$아젤리아$<BR><FONT color=#7e12d2>(아젤리아는 바쁜 듯 하다. 엘프 경비병 바샤와 대화하자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1062_azelia-1" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1062_azelia-1-" mid="11" select_type="5" />
+      <talk_question mid="10"><![CDATA[<html>$아젤리아$<BR>이 쪽은 제가 맡겠습니다.<BR><FONT color=#a82424>아누 아렌델 관문</FONT>에서 탐색 결과를 전하기로 하죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1" image="QN_Npc_Basha.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-" mid="13" select_type="5" />
+      <talk_question mid="12"><![CDATA[<html>$아처 트리아나$<BR>아젤리아님이 안보이시네요.<BR>저기 계신 <FONT color=#387206>경비병</FONT>분께 아젤리아님이 혹시 왔다가 다른 곳에 갔는지 여쭤볼까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-" mid="15" select_type="5" />
+      <talk_question mid="14"><![CDATA[<html>$테렌스 테라마이$<BR><FONT color=#a82424>아누 아렌델</FONT>에 간 이야기를 전해주러 온 겐가?<BR><FONT color=#7e12d2>(아직 할 말이 없다. 아누 아렌델 관문으로 돌아가 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_King_Casius.dds" center_image="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>$국왕 카시우스$<BR>네...네가 아누 아렌델에 갔다는 얘기는 들었다. 여왕은 어... 어찌 생겼는지 짐에게도 알려주겠는가?<BR>아...아니! 궁금해서 그런 것이 아니다. 엘프와는 교류... 교류가 오래 끊기지 않았는가...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_King_Casius.dds" center_image="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>만나지 못했습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_King_Casius.dds" center_image="">
+      <talk_answer link_index="n040_king_casius-1-" mid="21" select_type="5" />
+      <talk_question mid="20"><![CDATA[<html>$국왕 카시우스$<BR>에...엘프가 아니면 만나지 않겠다고.... 그, 그런 이유인가? 참으로 거...거만 한 종족이도다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Stwart.dds" center_image="">
+      <talk_answer link_index="n041_duke_stwart-1-" mid="23" select_type="5" />
+      <talk_question mid="22"><![CDATA[<html>$공작 스튜어트$<BR><FONT color=#a82424>아누 아렌델</FONT>의 위험을 돕기위해 왔다고? 참으로 제멋대로인 자들이로군.<BR>블랙드래곤 레이드때에도 양국 관계를 발전시킬 것 처럼 굴다가 멋대로 자기네 숲에 다시 틀어박히지 않았더냐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Kalaen.dds" center_image="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-" mid="25" select_type="5" />
+      <talk_question mid="24"><![CDATA[<html>$궁정 소서리스 칼라엔$<BR>엘프? 그 종족의 마을엔 한발짝도 가까이 가고 싶지 않다고!<BR>타고난 몸매 운운하는 엘프들 보다, 우리 소서리스들이 더 아름다운 몸매를 유지하고 있지 않니?<BR><FONT color=#7e12d2>(칼라엔이 몸을 여러 각도로 틀어본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-" mid="27" select_type="5" />
+      <talk_question mid="26"><![CDATA[<html>$장군 더글라스$<BR>블랙드래곤에 의해 왕성이 부서져 수리하는 데에도 많은 병력이 투입된 상태일세.<BR>엘프의 마을을 돕는 일이라? 글쎄, 힘들 것 같네만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-1-job1" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$엘프 경비병 바샤$<BR>아젤리아는 콘클라베의 여왕 후보 중 한 명인데, 난 그녀를 지킬 의무가 있다구.<BR>안 되겠다. 내가 찾으러 가 봐야겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-1-c" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>내가 찾으러 가볼까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-1-c" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>제가 찾아볼게요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-1-c" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-1-d" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$엘프 경비병 바샤$<BR>그래줄래? 휴~ 다행이다.<BR>내가 이곳에서 모두를 지키는 일을 하고는 있지만 엘프 숲에 누가 쳐들어 올 일도 없고..<BR><FONT color=#a82424>황금 초원</FONT>은 마물들이 많은 지역이라 좀 무서웠거든. 대신 가준다니 고마워!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-1-d" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-1-" mid="37" select_type="5" />
+      <talk_question mid="36"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(트리아나에게 출발하자고 말해야겠다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1055_elf_guard_basha-2" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1055_elf_guard_basha-2-" mid="40" select_type="5" />
+      <talk_question mid="39"><![CDATA[<html>$엘프 경비병 바샤$<BR>아? 아직 출발하지 않은거야? 설마 나보고 다시 가라고 말하려는건 아니지?<BR><FONT color=#7e12d2>(트리아나에게 출발하자고 말해야겠다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-" mid="42" select_type="5" />
+      <talk_question mid="41"><![CDATA[<html>$아처 트리아나$<BR>저희와 엇갈린걸 수도 있으니 저는 사라지는 반달사막으로 다시 다녀오겠습니다. <BR><FONT color=#387206>{user_nick}</FONT>님은 <FONT color=#a82424>황금 초원</FONT>을 확인해주세요.<BR><FONT color=#7e12d2>(황금 초원으로 가서 아젤리아를 찾아보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1062_azelia-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1062_azelia-2-d" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$아젤리아$<BR>아아.... 다행입니다. <FONT color=#387206>{user_nick}</FONT>님이시군요. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1062_azelia-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1062_azelia-2-next2" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>다쳤잖아! 괜찮아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1062_azelia-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1062_azelia-2-next3" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>앗! 다치셨군요... 괜찮으신가요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1062_azelia-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1062_azelia-2-" mid="50" select_type="5" />
+      <talk_question mid="49"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9268_02.ogg}<BR>상처는 별것 아닙니다. 독에 중독되어서 잠시 움직이지 못할 뿐이죠.<BR>그것보다... 서둘러주세요. 저들을.... <BR><FONT color=#7e12d2>(아젤리아가 문 너머를 가리키고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1062_azelia-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1062_azelia-2-job" mid="123" select_type="2" />
+      <talk_question mid="122"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9268_01.ogg}<BR>그들이에요. 당신이 말한 그 <FONT color=#a82424>용추종자</FONT>들이 있었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1062_azelia-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1062_azelia-3-" mid="55" select_type="5" />
+      <talk_question mid="54"><![CDATA[<html>$아젤리아$<BR>그들... 용추종자들을 쫓아야 하지 않을까요?<BR>그들이 저 안쪽으로 향하는 것을 봤습니다. 서둘러 주세요.<BR><FONT color=#7e12d2>(황금 초원에서 용 추종자들의 흔적을 쫓자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-3" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-3-" mid="57" select_type="5" />
+      <talk_question mid="56"><![CDATA[<html>$아젤리아$<BR>그들... 용추종자들을 쫓지 않고 돌아오셨나요? <BR>그들이 <FONT color=#a82424>황금 초원</FONT>으로 향하는 것을 봤습니다. 서둘러 주세요.<BR><FONT color=#7e12d2>(황금 초원에서 용 추종자들의 흔적을 쫓자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-3" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-3-" mid="59" select_type="5" />
+      <talk_question mid="58"><![CDATA[<html>$아처 트리아나$<BR>아젤리아님이 쫓던 자들은 어떻게 되었나요?<BR><FONT color=#7e12d2>(황금 초원에서 용 추종자들의 흔적을 쫓자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-o" mid="61" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html>$아젤리아$<BR>돌아오셨군요, <FONT color=#387206>{user_nick}</FONT>님 마저 그들에게 당하는 게 아닌지 걱정했는데....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-c" mid="63" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>너무 늦었더라고.<BR>도착했더니 이미 도망가고 있어서 잡을 수가 없었어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-c" mid="65" select_type="2" />
+      <talk_question mid="64"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네, 한발 늦었어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-d" mid="67" select_type="2" />
+      <talk_question mid="66"><![CDATA[<html>$아젤리아$<BR>당신을 기다렸어야 했는데,<BR>제가 경솔하게 그들을 따라가려 하다가 들켜서 그들을 도망치게 했군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-job4_3" mid="69" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$아젤리아$<BR>지금 아누 아렌델에 모인 이들만으로는 저들을 막기 힘들 것 같습니다.<BR>트리아나님처럼 여행을 떠나있는 동족 분들의 도움을 받아야 할 것 같군요.<BR><FONT color=#7e12d2>(트리아나가 아젤리아의 말에 고개를 끄덕인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-e" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-g" mid="71" select_type="2" />
+      <talk_question mid="70"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럼, 나는 세인트헤이븐으로 가볼게.<BR>왕성에 계신</FONT> <FONT color=#662500>테라마이님께 알리면 분명 도와줄거야.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-f" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-g" mid="73" select_type="2" />
+      <talk_question mid="72"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>왕성에 계신 </FONT><FONT color=#662500>테라마이님도 그 들을 쫓는데 도움을 줄 거예요.<BR>저는 세인트헤이븐으로 가볼게요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-job4_4" mid="75" select_type="2" />
+      <talk_question mid="74"><![CDATA[<html>$아젤리아$<BR>인간들의 힘을 빌리고 싶진 않습니다.<BR>이건 신월의 숲, 아누 아렌델의 일. 저희 힘으로 해결하고 싶습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-j" mid="77" select_type="2" />
+      <talk_question mid="76"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무슨 소리야? 이미 내 힘을 빌리고 있잖아. <BR>우리들도 이 세계를 걱정하는 마음은 너희와 같다구.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-j" mid="79" select_type="2" />
+      <talk_question mid="78"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>우리도 역시 그들에게 받아야 할 빚이 있습니다.<BR>그리고 이 세계를 걱정하는 마음은 엘프들과 다르지 않아요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-k" mid="81" select_type="2" />
+      <talk_question mid="80"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9286_01.ogg}<BR>그렇지만 인간들은 야만적인 자입니다. 그들이 끼어들면 숲에 어떤 피해가 갈 지 알 수 없습니다.<BR>트리아나님도 그렇게 생각하지 않나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-k" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1054_azelia-4-job4_5" mid="83" select_type="2" />
+      <talk_question mid="82"><![CDATA[<html>$아처 트리아나$<BR>글쎄요. 모험을 하면서 느낀 점은 그들이 참 다양하다는 것. <FONT color=#387206>{user_nick}</FONT>님과 같이 선한 마음을 가진 자들도 있다는 걸 알았습니다.<BR>전 <FONT color=#387206>{user_nick}</FONT>님 판단에 맡기고 싶습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-l" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1054_azelia-4-n" mid="85" select_type="2" />
+      <talk_question mid="84"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>역시 트리아나~. 같이 모험한 보람이 있다니까?<BR>그럼 난 왕성에 가서 테라마이를 만나고 올께!</FONT><BR><FONT color=#7e12d2>(아젤리아가 조금 못마땅한 눈치다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-m" image="" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1054_azelia-4-n" mid="87" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그렇죠? 그럼 전 왕성으로 가볼게요.</FONT><BR>
+<FONT color=#7e12d2>(아젤리아가 조금 못마땅한 눈치다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-n" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="NPC_Left_Triana.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1054_azelia-4-" mid="89" select_type="5" />
+      <talk_question mid="88"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9286_01.ogg}<BR>네. 저는 바깥 세상에 있는 자들께 알릴 방법을 의논하러 이실리엔님을 뵈야겠어요.<BR><FONT color=#a82424>세인트헤이븐 왕성</FONT>에 있는 <FONT color=#a82424>테라마이</FONT>님께 제 안부를 전해주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-4-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-4-job4_2" mid="127" select_type="2" />
+      <talk_question mid="126"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9268_03.ogg}<BR>그들은 어찌 되었나요? 아... 놓쳤나 보군요. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-5-" mid="91" select_type="5" />
+      <talk_question mid="90"><![CDATA[<html><FONT size=2 face=Arial>$아젤리아$<BR></FONT><FONT color=#a82424>세인트헤이븐 왕성</FONT><FONT size=2 face=Arial>에 간다고요? 그들이 도와줄 거라고 전 생각하지 않아요!<BR></FONT><FONT color=#7e12d2>(아젤리아가 조금 못마땅한 눈치다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-5" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-5-" mid="93" select_type="5" />
+      <talk_question mid="92"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9286_01.ogg}<BR>아직 <FONT color=#a82424>세인트헤이븐</FONT>으로 출발하지 않으셨나요?<BR><FONT color=#a82424>테라마이</FONT>님께서도 이 곳의 소식을 궁금해 할 텐데요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-a" mid="95" select_type="2" />
+      <talk_question mid="94"><![CDATA[<html>$테렌스 테라마이$<BR>아누 아렌델에서 사도들이 또 무슨 일을 꾸미는 것인지 모르겠군.<BR>아직 뚜렷이 보이진 않지만, 왕국 밖에서 일어난 일이라고 외면해선 안 될 것 같네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-b" mid="118" select_type="2" />
+      <talk_question mid="96"><![CDATA[<html>$테렌스 테라마이$<BR>게다가 이번 일을 돕는다면 다시 엘프들과의 신뢰를 쌓을 수 있을지도 모르니....<BR>정말 좋은 기회가 될 것 아닌가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-5-!next" mid="120" select_type="4" />
+      <talk_question mid="119"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9286</exe>
+         <exe type="talk" npc="n1055_elf_guard_basha">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>2 : 소서리스 직업 확인</comment>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n1055_elf_guard_basha">a</exe>
+         <exe type="talk" npc="n1055_elf_guard_basha">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n1062_azelia">a</exe>
+         <exe type="talk" npc="n1062_azelia">b</exe>
+         <exe type="talk" npc="n1062_azelia">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>컷신 플레이 이후 스텝 넘김</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="conexe" true="6" false="7">0</exe>
+         <exe type="conexe" true="8" false="9">0</exe>
+         <exe type="conexe" true="10" false="11">0</exe>
+         <exe type="conexe" true="12" false="13">0</exe>
+         <exe type="talk" npc="n1054_azelia">a</exe>
+         <exe type="talk" npc="n1054_azelia">b</exe>
+         <exe type="talk" npc="n1054_azelia">e</exe>
+         <exe type="talk" npc="n1054_azelia">f</exe>
+         <exe type="talk" npc="n1054_azelia">h</exe>
+         <exe type="talk" npc="n1054_azelia">i</exe>
+         <exe type="talk" npc="n1054_azelia">l</exe>
+         <exe type="talk" npc="n1054_azelia">m</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92860,92861,,92863,92864,92865,92866,92867</exe>
+         <exe type="complete" true="">9286</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1055_elf_guard_basha" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="" />
+   <exelink qstep="1" npc="n1055_elf_guard_basha" sub="job1">2</exelink>
+   <exelink qstep="1" npc="n1055_elf_guard_basha" sub="c" />
+   <exelink qstep="1" npc="n1055_elf_guard_basha" sub="c" />
+   <exelink qstep="1" npc="n1055_elf_guard_basha" sub="d">0,1</exelink>
+   <exelink qstep="1" npc="n1055_elf_guard_basha" sub="" />
+   <exelink qstep="2" npc="n1062_azelia" sub="next2">5,0,1</exelink>
+   <exelink qstep="2" npc="n1062_azelia" sub="next3">5,0,1</exelink>
+   <exelink qstep="2" npc="n1062_azelia" sub="" />
+   <exelink qstep="2" npc="n1062_azelia" sub="job">2</exelink>
+   <exelink qstep="4" npc="n1054_azelia" sub="c" />
+   <exelink qstep="4" npc="n1054_azelia" sub="c" />
+   <exelink qstep="4" npc="n1054_azelia" sub="d" />
+   <exelink qstep="4" npc="n1054_azelia" sub="job4_3">3</exelink>
+   <exelink qstep="4" npc="n1054_azelia" sub="g" />
+   <exelink qstep="4" npc="n1054_azelia" sub="g" />
+   <exelink qstep="4" npc="n1054_azelia" sub="job4_4">4</exelink>
+   <exelink qstep="4" npc="n1054_azelia" sub="j" />
+   <exelink qstep="4" npc="n1054_azelia" sub="j" />
+   <exelink qstep="4" npc="n1054_azelia" sub="k" />
+   <exelink qstep="4" npc="n1054_azelia" sub="job4_5">5</exelink>
+   <exelink qstep="4" npc="n1054_azelia" sub="n">0,1</exelink>
+   <exelink qstep="4" npc="n1054_azelia" sub="n">0,1</exelink>
+   <exelink qstep="4" npc="n1054_azelia" sub="" />
+   <exelink qstep="4" npc="n1054_azelia" sub="job4_2">2</exelink>
+   <exelink qstep="5" npc="n822_teramai" sub="b">0</exelink>
+   <exelink qstep="5" npc="n822_teramai" sub="!next">1</exelink>
+   <journal_data recompense="1:92861,3:92863,4:92864,5:92865,6:92866,7:92867" quest_title="불협화음" chapterid="12" quest_level="63" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Basha.dds</contents_image>
+         <destination_pos>34,n1055</destination_pos>
+         <destination_mode>coustom:</destination_mode>
+         <statemark_npcid>1055</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="98"><![CDATA[불협화음 I]]></title>
+         <contents mid="99"><![CDATA[<html>탐색을 나간 아젤리아가 돌아오지 않았다.<BR>그녀를 걱정하고 있는 엘프 경비병 바샤와 이야기를 더 나누자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT><FONT color=#a82424> - 엘프 경비병 바샤</FONT></html>]]></contents>
+         <destination mid="100"><![CDATA[아누 아렌델 관문의 엘프 경비병 바샤와 대화]]></destination>
+         <todo_msg mid="101"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Azelia.dds</contents_image>
+         <destination_pos>781,n1062</destination_pos>
+         <destination_mode>custom:781@4</destination_mode>
+         <statemark_npcid>1062</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[불협화음 II]]></title>
+         <contents mid="103"><![CDATA[<html>아젤리아를 찾아 황금 초원으로 향하자.<BR><BR><FONT color=#086171>아누 아렌델 관문 </FONT><FONT color=#a82424>- 황금 초원(아젤리아)</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[황금 초원 수색]]></destination>
+         <todo_msg mid="105"><![CDATA[아젤리아를 찾아 황금 초원으로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_78.dds</contents_image>
+         <destination_pos>781,0,0</destination_pos>
+         <destination_mode>custom:781@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[불협화음 III]]></title>
+         <contents mid="107"><![CDATA[<html>아젤리아는 황금 초원에서 용 추종자를 이끄는 사도를 발견했다.<BR>그들을 뒤쫓아 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 황금 초원</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[황금 초원에서 용 추종자 추적]]></destination>
+         <todo_msg mid="109"><![CDATA[용 추종자를 쫓아 다음 지역으로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Azelia.dds</contents_image>
+         <destination_pos>34,n1054</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1054</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[불협화음 IV]]></title>
+         <contents mid="111"><![CDATA[<html>사도 이그나시오와 로잘린데를 발견했으나 놓치고 말았다.<BR>상황을 전하러 신월의 숲 입구에 있는 아젤리아에게 돌아가자.<BR><BR><FONT color=#086171>아누 아렌델 관문 </FONT><FONT color=#a82424>- 아젤리아</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[아누 아렌델 관문의 아젤리아에게 보고]]></destination>
+         <todo_msg mid="113"><![CDATA[아누 아렌델 관문으로 돌아가세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[불협화음 V]]></title>
+         <contents mid="115"><![CDATA[<html><FONT color=#2b2723>세인트헤이븐에 도움을 요청해야 한다.</FONT><BR><FONT color=#2b2723>왕성의 테라마이에게 상황을 알리자.</FONT><BR><BR><FONT color=#086171>세인트헤이븐</FONT><FONT color=#a82424> - 세인트헤이븐 왕성(테렌스 테라마이)</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[세인트헤이븐 왕성의 테라마이에게 보고]]></destination>
+         <todo_msg mid="117"><![CDATA[세인트헤이븐 왕성으로 가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9285</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

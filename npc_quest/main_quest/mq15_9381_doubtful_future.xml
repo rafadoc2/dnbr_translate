@@ -1,0 +1,349 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9381_doubtful_future</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9381</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9382</nextqid>
+      <nextqname>mq15_9382_by_time_for_time</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[미래에 대한 의심]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>875</npcid>
+         <npcename>n875_academic</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="119" select_type="3" />
+      <talk_question mid="6"><![CDATA[<html>$상급 소서리스 스텔라$<BR>아휴... 너무하잖니...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="128" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>$상급 소서리스 스텔라$<BR>아우 내가 못살아… 내가 너, 너너널 왜 거기 보, 보냈다고 새, 생각하는거니이….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="129" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(땅 투기요…)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="130" select_type="2" />
+      <talk_question mid="111"><![CDATA[<html>$상급 소서리스 스텔라$<BR>하아… 그 여, 여자애… 귀, 귀, 귀시이인… 은 아니, 아니건로, 만났지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="QW_71.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="131" select_type="2" />
+      <talk_question mid="108"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아, 그 여자애는 귀신이… 아마… 아닐거에요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="132" select_type="2" />
+      <talk_question mid="121"><![CDATA[<html>$상급 소서리스 스텔라$<BR>아마는 또 뭐니?! <FONT color=#7e12d2>(스텔라는 머리를 짚고 한숨을 쉬었다)<BR></FONT>그, 그, 그래… 그래도 이야기는 하고 왔다 이거지? 이젠 또 어, 어, 어디를, 떠, 떠돈다, 더니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-e" image="QW_71.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-1-f" mid="133" select_type="2" />
+      <talk_question mid="122"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아, </FONT><FONT color=#a82424>이데아 전진기지</FONT><FONT color=#662500>라는 곳이었어요.</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="134" select_type="2" />
+      <talk_question mid="123"><![CDATA[<html>$상급 소서리스 스텔라$<BR>거, 거긴 또 어디라니… 그래… 이번엔 좀 확실하게 물어보고 오렴. 안젤리카 얘는 또 왜 안 오는 거지…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-a" mid="165" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$아카데믹 코멜리나$<BR>오셨군요. 어떠신가요? 이데아 전진기지에 대한 소감은?<BR>물론 당연히 놀라셨겠죠. 미래에서 온 최정예 부대들이니까요. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-b" mid="166" select_type="2" />
+      <talk_question mid="96"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>최정예부대? 왜 그런 게 이런 곳에…</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-c" mid="167" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$아카데믹 코멜리나$<BR>...미래가 멸망해가니 과거로 모두 이주해서 멸망을 피하자, 하지만 현재의 사람들이 거슬리니 그들을 전부 없애고 현재를 멸망시키자...그게 그들의 생각이죠. 저도 그들의 일부였구요...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-d" mid="168" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럴 수가… 미래가 멸망해간다니? 무슨 말을 하는거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-e" mid="169" select_type="2" />
+      <talk_question mid="100"><![CDATA[<html>$아카데믹 코멜리나$<BR>...사실입니다. 모두가 죽어가는 미래... 미래가 존재할 수 없는 미래. 모두가 거기서 도망치려고 하다보니, 시간을 뛰어넘는 이론이 발전되게 되고... 시간을 뛰어넘고, 과거를 침략하기 위한 도구 중 하나인 클론을 만들게 되고...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-f" mid="170" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>클론…?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-g" mid="171" select_type="2" />
+      <talk_question mid="102"><![CDATA[<html>$아카데믹 코멜리나$<BR>네. 클론이란 건 복제인간인데요, 간단하게 설명하자면 일란성 쌍둥이의 원리를 토대로 하는 건데….<BR>기본적으로 똑같은 인간의 유전자를 토대로 한다고 가정했을 때 디옥시리보 헥산의 전사과정을… @!??&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;%</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-h" mid="172" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$아카데믹 코멜리나$<BR>텔로미어의 간섭을 통해서… 어쩌구… 억제유전자의 변이를 최소화 저쩌구;*^* 외형을 결정하는 ()()()배양액의 농도를… 저쩌구 체세포 보강을 위해 여기서 중요한 건 Nacl의 농도를… 어쩌구저쩌구…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-i" mid="139" select_type="0"><![CDATA[<html>안 쉬워!!!</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-i" mid="140" select_type="0"><![CDATA[<html>아 머리아퍼....</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-i" mid="141" select_type="0"><![CDATA[<html>주문외우는 줄 알았잖아...</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$아카데믹 코멜리나$<BR>참 쉽죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-j" mid="173" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>$아카데믹 코멜리나$<BR>이런…과거의 수준을 고려해서 최대한 쉽게 말씀드린 건데…<BR>뭐, 어쨌든….XD-27과 XD-28, 그리고 제 모습이 같은 것은 클론이라서 육체적으로는 모든 구성성분이 같기 때문이에요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-k" mid="176" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>말도 안 돼... 그런 건 처음 들어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-l" mid="177" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>$아카데믹 코멜리나$<BR>그야 미래인걸요! 시간도, 우리의 몸도, 제법 사람이 원하는 대로 조절할 수 있을 정도의 기술에 이르렀습니다. 물론… 아무리 기술이 발전한다고 해도, 멸망해가는 세계를 지탱하기엔 역부족이었지만요. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-m" mid="178" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그런… 잠깐, 그럼 코멜리나도 이 시대를 멸망시키러 온 거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-n" mid="142" select_type="0"><![CDATA[<html>너 혼자서? 외롭지 않아?</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-n" mid="143" select_type="0"><![CDATA[<html>혼자서는 무리야.</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-n" mid="144" select_type="0"><![CDATA[<html>같은 편은 아무도 없는 거야?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$아카데믹 코멜리나$<BR>…아니요. 미래에서 온 수 많은 클론과 병사 중 저만, 생각이 다릅니다… 저는 이 시대의 편이에요. 저는 이 시대를 지키기 위해, 미래와 싸울 겁니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-o" mid="146" select_type="0"><![CDATA[<html>이기적... 인가.</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-o" mid="147" select_type="0"><![CDATA[<html>사정에 따라 다르지 않아?</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-2-o" mid="148" select_type="0"><![CDATA[<html>…잘 모르겠네.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#7e12d2>(코멜리나가 살짝 웃는다)</FONT> 괜찮아요. 이미 결심했으니까요. 이 시대의 모두가 이렇게 최선을 다해 살고 있는데, 다른 시대의 사정으로 인해 멸망해버린다는건… 너무 이기적이지 않습니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-p" mid="179" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아카데믹 코멜리나$<BR>저와 다르게 여러 시대를 살아오신 분이라니, 저랑은 생각이 조금 다를지도 모르겠네요.... <BR>
+하지만 제 생각은, 제 결심은 확고합니다. <FONT color=#a82424>전 이 시대를 위해 무기를 잡은 걸 후회하지 않아요.</FONT><BR>
+<FONT color=#387206>{user_nick}</FONT>님은 어떻게 하실 건가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-q" mid="190" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(코멜리나는 대단한 결심을 한 것 같네. 나는 어떻게 해야 할까? 난 어쩌면... 이 시대를 벗어나 다른 시대로 도망칠 수도 있을지도 몰라. 루나리아가 아르테움의 진수의 반을 주고 갔으니, 어떻게든 피할 수 있을 것 같기도 한데)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-r" mid="191" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(…하지만, 나에게 아르테움의 진수를 주고… 나랑 같이 여행하다가, 나와 헤어진… 루나리아가 있던 시대는 이 시대야.. 어느 시간대로 간들 이 시대는 두 개가 될 수 없어)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-s" mid="192" select_type="2" />
+      <talk_question mid="73"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>코멜리나, 나도 코멜리나와 같이 싸우게 해줘.</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-t" mid="193" select_type="2" />
+      <talk_question mid="75"><![CDATA[<html>$아카데믹 코멜리나$<BR>네? 하지만… 미래의 적은 강대하고 위험합니다. 이 기지에 있던 병사들은 미래의 병력의 극히 일부에요. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-t" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-u" mid="194" select_type="2" />
+      <talk_question mid="150"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그렇다면 더더욱 힘을 합쳤으면 해. 하나보다는 둘이 낫잖아.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-u" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-v" mid="195" select_type="2" />
+      <talk_question mid="151"><![CDATA[<html>$아카데믹 코멜리나$<BR>그렇다면… 부탁 드리겠습니다.<FONT color=#7e12d2>(코멜리나가 손을 내민다)</FONT><BR>같이 이 시대를 선택한 자로서, 잘 부탁드릴게요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-v" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-w" mid="196" select_type="2" />
+      <talk_question mid="152"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>나도 잘 부탁해.(손을 맞잡는다)<BR>그럼, 일단 무엇부터 하면 될까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-w" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-2-x" mid="197" select_type="2" />
+      <talk_question mid="153"><![CDATA[<html>$아카데믹 코멜리나$<BR>우선 텔 누아르 신전으로 가 주세요. 그곳에서 아마 대규모 작전인 <FONT color=#a82424>'데저트 스톰'</FONT>이 실행될 겁니다. 무슨 작전인지는 제대로 모르지만, 대규모 작전이라고 명시되어있는 점을 보아 엄청난 것임이 분명해요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-2-x" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-3" mid="155" select_type="0"><![CDATA[<html>(과거의 영웅이라…)알겠어.</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-3" mid="156" select_type="0"><![CDATA[<html>내게 맡겨.</html>]]></talk_answer>
+      <talk_answer link_index="n875_academic-3" mid="157" select_type="0"><![CDATA[<html>(하긴, 다른 사람들은 당황스럽겠구나)</html>]]></talk_answer>
+      <talk_question mid="154"><![CDATA[<html>$아카데믹 코멜리나$<BR>그리고 저는 잠시… 역사에 기록된, 과거의 영웅분들을 뵙고 갈게요. 그분들에게 제대로 설명을 안 해드리면, 지금 일어나는 일이 어떤 일인지 알 수 없으실 테니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_71.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-2-" mid="125" select_type="5" />
+      <talk_question mid="64"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네.(스텔라님의 안색이 좋지 않다. </FONT><FONT color=#a82424>이데아 전진기지</FONT><FONT color=#662500>로 가 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n875_academic-3" image="QN_Npc_SoceressStella.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n875_academic-3-" mid="126" select_type="5" />
+      <talk_question mid="82"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#387206>{user_nick}</FONT>님이 같은 편이 되어 얼마나 든든한지 모릅니다! 같이 열심히 해요!<BR><FONT color=#7e12d2>(코멜리나가 생긋 웃는다. 일단 스텔라에게 돌아가자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="182" select_type="2" />
+      <talk_question mid="84"><![CDATA[<html>$상급 소서리스 스텔라$<BR><FONT color=#7e12d2>(안색이 사뭇 좋지 않다)</FONT><BR>왔니? 그러지 않아도 부르려고 했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="183" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무슨 일이 있으신가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-3-c" mid="184" select_type="4" />
+      <talk_question mid="159"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_SoceressStella.dds" center_image="">
+      <talk_answer link_index="n045_soceress_master_stella-3-!next" mid="162" select_type="0"><![CDATA[<html>(고양이 맞는데...)</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-3-!next" mid="163" select_type="0"><![CDATA[<html>네 그 녀석이 좀 이상하긴 해요.</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$상급 소서리스 스텔라$<BR>자꾸 이런 편지가 와서… 아무래도 네가 급히 필요한 모양인데. 그림자 냥이 뭐니? 사람 이름을 참 고양이처럼 지어놨네.<FONT color=#7e12d2>(스텔라에게서 편지를 받는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9381</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>각 직업별로 호칭이 다릅니다. </comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>으아 길다...</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n875_academic">2</exe>
+         <exe type="conexe" true="5" false="6">1</exe>
+         <exe type="talk" npc="n875_academic">b</exe>
+         <exe type="conexe" true="7" false="8">2</exe>
+         <exe type="talk" npc="n875_academic">d</exe>
+         <exe type="conexe" true="9" false="10">3</exe>
+         <exe type="talk" npc="n875_academic">f</exe>
+         <exe type="talk" npc="n875_academic">i</exe>
+         <exe type="delquestitem" num="-1">400336</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93810,,,,,,,</exe>
+         <exe type="complete" true="">9381</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="f" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n875_academic" sub="b" />
+   <exelink qstep="2" npc="n875_academic" sub="c" />
+   <exelink qstep="2" npc="n875_academic" sub="d" />
+   <exelink qstep="2" npc="n875_academic" sub="e" />
+   <exelink qstep="2" npc="n875_academic" sub="f" />
+   <exelink qstep="2" npc="n875_academic" sub="g" />
+   <exelink qstep="2" npc="n875_academic" sub="h" />
+   <exelink qstep="2" npc="n875_academic" sub="i" />
+   <exelink qstep="2" npc="n875_academic" sub="i" />
+   <exelink qstep="2" npc="n875_academic" sub="i" />
+   <exelink qstep="2" npc="n875_academic" sub="j" />
+   <exelink qstep="2" npc="n875_academic" sub="k" />
+   <exelink qstep="2" npc="n875_academic" sub="l" />
+   <exelink qstep="2" npc="n875_academic" sub="m" />
+   <exelink qstep="2" npc="n875_academic" sub="n" />
+   <exelink qstep="2" npc="n875_academic" sub="n" />
+   <exelink qstep="2" npc="n875_academic" sub="n" />
+   <exelink qstep="2" npc="n875_academic" sub="o" />
+   <exelink qstep="2" npc="n875_academic" sub="o" />
+   <exelink qstep="2" npc="n875_academic" sub="o" />
+   <exelink qstep="2" npc="n875_academic" sub="p" />
+   <exelink qstep="2" npc="n875_academic" sub="q" />
+   <exelink qstep="2" npc="n875_academic" sub="r" />
+   <exelink qstep="2" npc="n875_academic" sub="s" />
+   <exelink qstep="2" npc="n875_academic" sub="t" />
+   <exelink qstep="2" npc="n875_academic" sub="u" />
+   <exelink qstep="2" npc="n875_academic" sub="v" />
+   <exelink qstep="2" npc="n875_academic" sub="w" />
+   <exelink qstep="2" npc="n875_academic" sub="x" />
+   <exelink qstep="2" npc="n875_academic" sub="3">0,1,11</exelink>
+   <exelink qstep="2" npc="n875_academic" sub="3">0,1,11</exelink>
+   <exelink qstep="2" npc="n875_academic" sub="3">0,1,11</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b">0</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="c">1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="!next" />
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="!next" />
+   <journal_data recompense="93810" quest_title="미래에 대한 의심" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="400336">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[미래에 대한 의심 1]]></title>
+         <contents mid="89"><![CDATA[<html>지금까지의 일을 스텔라에게 말해주자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 소서리스 스텔라</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[상급 소서리스 스텔라와 대화]]></destination>
+         <todo_msg mid="91"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_71.dds</contents_image>
+         <destination_pos>710,n875</destination_pos>
+         <destination_mode>custom:710@1</destination_mode>
+         <statemark_npcid>875</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[미래에 대한 의심 2]]></title>
+         <contents mid="93"><![CDATA[<html>아카데믹 코멜리나를 만나러 이데아 전진기지로 가보자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 누마라 관문)</FONT> <FONT color=#a82424>- 이데아 전진기지</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[이데아 전진기지에서 아카데믹 코멜리나 찾기]]></destination>
+         <todo_msg mid="95"><![CDATA[이데아 전진기지로 가서 소녀를 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[미래에 대한 의심 3]]></title>
+         <contents mid="105"><![CDATA[<html>아카데믹 코멜리나는 미래가 멸망해가고 있다는 것과 클론 기술에 대해 설명해주었다. 그리고 코멜리나를 도와 같이 싸우기로 결의하였다. 지금까지의 일을 스텔라에게 말해주자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 소서리스 스텔라</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[상급 소서리스 스텔라와 대화]]></destination>
+         <todo_msg mid="107"><![CDATA[세인트헤이븐의 상급 소서리스 스텔라에게 보고하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9380</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

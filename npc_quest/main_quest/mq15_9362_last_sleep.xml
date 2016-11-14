@@ -1,0 +1,302 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9362_last_sleep</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9362</qid>
+      <designer>최지은</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9363</nextqid>
+      <nextqname>mq15_9363_pope_coming</nextqname>
+      <nextqnpc>n811_teramai</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[영웅의 안식]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>811</npcid>
+         <npcename>n811_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>813</npcid>
+         <npcename>n813_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>818</npcid>
+         <npcename>n818_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="83" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$시델$<BR><FONT color=#a82424>바르낙</FONT> 님을 정화하는 일에 실패했다고?<BR>쉽게 되지는 않을 거라고 생각했지만… 어쩌면 좋을까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="88" select_type="5" />
+      <talk_question mid="7"><![CDATA[<html>$시델$<BR>우선은 <FONT color=#a82424>테라마이</FONT>님께 뭔가 다른 생각이 있으신지 들어보는 게 좋을 것 같아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-a" mid="89" select_type="2" />
+      <talk_question mid="8"><![CDATA[<html>$테렌스 테라마이$<BR>바르낙을 정화할 수 있길 바랬는데... 역시 쉬운 길은 아니었던 모양이네.<BR><FONT color=#7e12d2>(테라마이가 침통한 얼굴로 한숨을 쉰다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-b" mid="91" select_type="2" />
+      <talk_question mid="90"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>대체 어떻게 된 일이죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-b" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-c" mid="95" select_type="2" />
+      <talk_question mid="10"><![CDATA[<html>$테렌스 테라마이$<BR>바르낙은 50년 전에 <FONT color=#a82424>블랙 드래곤 카라스</FONT>를 맞아 최전선에서 싸웠지<BR>파티의 후방을 지원했던 난 무사했지만, 네르윈과 카라큘, 그리고 바르낙 모두 블랙 드래곤의 피에 오염되고 말았다네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-d" mid="96" select_type="2" />
+      <talk_question mid="12"><![CDATA[<html>$테렌스 테라마이$<BR>네르윈은 엘프의 고향인 아누 아렌델로 돌아갔고, 카라큘은 로터스마쉬에서 요양하며 치료법을 찾기 시작했지. <FONT color=#a82424>바르낙</FONT>은 <FONT color=#a82424>텔 누마라</FONT>로 떠났네.<BR>그도 나름대로 치료할 방법을 찾아보려 했던 것이었지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-e" mid="97" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>$테렌스 테라마이$<BR>하지만, 불행히도 그는 그곳에서 숨을 거두고 말았네.<BR>그의 건강이 좋지 않다는 것을 전해듣고 급히 <FONT color=#a82424>텔 누마라</FONT>로 떠났지만, 미처 손쓸 사이도 없이 그는 아르테아 여신님의 세계로 건너가 버렸지….<BR><FONT color=#7e12d2>(테라마이가 여신의 문장을 어루만진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-f" mid="98" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>$테렌스 테라마이$<BR>난 그의 시신을 수습해 장례를 치르고 그곳에 남았다네.<BR>모두가 고통받고 괴로워하고 있는데, 혼자만이 교황이란 자릴 차지하고 뻔뻔스럽게 살아가고 있었다는 것이 괴로웠지….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-g" mid="99" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$테렌스 테라마이$<BR>그런 어느날, 용추종자들에게 둘러싸여 도움을 청하는 <FONT color=#a82424>소녀</FONT>를 발견하게 되었네.<BR>소녀를 구했을 때, 그녀는 심신이 몹시 쇠약해져 있었지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-h" mid="100" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$테렌스 테라마이$<BR>그녀가 정신을 차리고 처음 한 말은 텔 누마라에 창궐한 용추종자들의 움직임에 대한 것이었네.<BR>그녀의 말은 곧 사실로 드러났고, 그것이 예지이며 그녀가 <FONT color=#a82424>선지자</FONT>라는 것을 알게 해주었지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-i" mid="101" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$테렌스 테라마이$<BR>그야말로 여신의 축복....<BR>선지자의 예언은 모두 적중했고 얼마간 그녀의 힘을 이용해 사악한 이교도들의 뿌리를 뽑는 일에 전념해 왔네. 그런데....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-i" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-j" mid="102" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$테렌스 테라마이$<BR>얼마전, 선지자는 새로운 예언을 했다네....<BR><FONT color=#a82424>바르낙</FONT>에 대한 일이었지. 그가 사악한 힘에 의해 다시 소생할 것이라는... 믿기 힘든 예언이었네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-j" image="QW_LotusMarshTown.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-k" mid="103" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$테렌스 테라마이$<BR>안타깝게도 예언은 현실이 되었네.<BR>바르낙의 무덤은 파헤쳐져있었고, 선지자는 그가 로터스마쉬로 이동할 것이라고 말했다네. 그래서 지체할 사이 없이 곧바로 <FONT color=#a82424>로터스마쉬</FONT>로 오게 된게지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-k" image="QN_warrior_barnak_silhouette.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-1-l" mid="104" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$테렌스 테라마이$<BR>대체 누가, 어떤 이유로 <FONT color=#a82424>바르낙</FONT>을 이용하려는 것인지는 모르겠으나…<BR>이승을 떠도는 벗을 내버려둘 수 없는 노릇.<BR>어서 그에게 안식을 돌려주어야 하네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-1-l" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-2" mid="105" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$테렌스 테라마이$<BR>세상을 위해 진력하고도 홀로 죽어간 그를..., 또다시 이렇게 희생시킬 수는 없는 노릇이야. 반드시... 그를 구원할 것이네.<BR>다행히 우리 곁에 <FONT color=#a82424>선지자</FONT>가 있으니 분명 여신의 은혜가 따를 것이라 믿네.<BR><FONT color=#7e12d2>(로제와 이야기해 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-1-" mid="107" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>$로제$<BR>...죄송해요. 제 힘이 부족해서, 큰 도움이 되지 못했군요. 정말 죄송해요.<BR><FONT color=#a82424>테라마이</FONT> 님께서 얼마나 비통해 하실지....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n813_teramai-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n813_teramai-1-" mid="108" select_type="5" />
+      <talk_question mid="76"><![CDATA[<html>$테렌스 테라마이$<BR>자, 어서 <FONT color=#a82424>카라큘의 오두막</FONT>으로 감세나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n811_teramai-2" image="QN_Rose.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n811_teramai-2-" mid="110" select_type="5" />
+      <talk_question mid="32"><![CDATA[<html>$테렌스 테라마이$<BR>반드시 바르낙에게 안식을 돌려줄 것이네.<BR><FONT color=#a82424>선지자</FONT>에게 다른 여신의 말씀이 들리지 않았는지, 한 번 들어 보세나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-a" mid="112" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$로제$<BR>안식을 취해야 할 고인을 이런 잘못된 일에 이용하려 하다니... 정말 안타까운 일이에요. 당사자인 바르낙님이나, 테라마이님께서 얼마나 고통스러우실지...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-b" mid="114" select_type="2" />
+      <talk_question mid="113"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>용추종자들이 왜 바르낙을 이용하는 거죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-c" mid="115" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$로제$<BR>그것은... 잘 모르겠어요. 죄송해요. 제 능력이 부족해서...<BR><FONT color=#7e12d2>(로제가 부끄러운 듯 고개를 숙였다)</FONT><BR>하지만, 바르낙 님이 지금 무엇을 쫓고 있는 지는 알 것 같아요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-d" mid="117" select_type="2" />
+      <talk_question mid="116"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무엇을 쫓고 있습니까?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-d" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-e" mid="118" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>$로제$<BR>검은 기사....<BR><FONT color=#a82424>벨스커드</FONT>, 그 자에요....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-f" mid="119" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$로제$<BR>...저, 실은 그 사람의 이름을 입에 올리는 것만으로도 두려워요....<BR><FONT color=#7e12d2>(로제가 입술을 깨문다)<BR></FONT>그렇지만 사실이에요.<BR>제 꿈이 그렇게 말하고 있으니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-g" mid="121" select_type="2" />
+      <talk_question mid="120"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그들이 왜 벨스커드를?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-h" mid="124" select_type="2" />
+      <talk_question mid="123"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(...혹시 그 사도라는 자들의 우두머리가 하는 짓인가?<BR>하지만 왜 이제와서...?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-i" mid="129" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$로제$<BR>그것도... 알 수 없어요.<BR>저는 그저 꿈을 꿀 뿐....<BR>꿈 속에서 바르낙 님이 검은 기사의 뒤를 쫓는 광경을 보았기에 그렇게 말씀드린 거예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-i" image="" itemindex="" portrait_left="NPC_Left_Teramai.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n818_rose-2-j" mid="130" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>$테렌스 테라마이$<BR>잘은 모르지만 그가 <FONT color=#a82424>칼레온의 기사</FONT>라는 이름으로 사도로서 활동했었다는 이야길 들었네. 용추종자들은 배신자에게 냉혹하기로 유명하니 배신자를 처단하기 위한 일이거나, 아니면 벨스커드가 가지고 있는 그 힘을 다시 빼앗으려는 걸지도 모르지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-k" mid="131" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$로제$<BR>어쨌든, 바르낙 님을 정화하려면 아까와 같은 방법만으로는 안될 것 같아요.<BR>좀 더 거대한 힘으로 그분을 제압할 수 있으면 좋을텐데....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-l" mid="132" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$로제$<BR>바르낙 님을 에워싼 사악한 힘을 끊을 수 있는 매개체 또는 그 힘을 뛰어넘는 거대한 힘이 필요해요. 이를 테면 <FONT color=#a82424>드래곤의 힘</FONT>이라거나...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-l" image="" itemindex="" portrait_left="NPC_Left_Teramai.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n818_rose-2-m" mid="133" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>$테렌스 테라마이$<BR>드래곤의 힘이라....<BR><FONT color=#7e12d2>(테라마이가 문득 생각난 것이 있는 듯 말한다)</FONT><BR><FONT color=#387206>{user_nick}</FONT>, 내 들은 게 있네. 오던 길에 다른 모험자들을 만났거든.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-m" image="QP_Geraint_sword.dds" itemindex="" portrait_left="NPC_Left_Teramai.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n818_rose-2-n" mid="134" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>$테렌스 테라마이$<BR>듣자하니 제레인트의 검을 벨스커드가 가지고 있다더군.<BR><FONT color=#7e12d2>(테라마이가 인상을 찌푸린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-n" image="" itemindex="" portrait_left="NPC_Left_Teramai.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n818_rose-2-o" mid="135" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>$테렌스 테라마이$<BR>그 검이라면 바르낙을 제압하고 그에게 평안을 돌려줄 수 있다고 생각했는데.<BR>낭패가 아닐 수 없네.<BR>그래서 검을 돌려받기 위해서라도 벨스커드의 행방을 찾아보는 게 좋겠다 싶네만.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-o" image="QP_Geraint_sword.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-p" mid="137" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>$로제$<BR>제 생각에도 그게 좋을 것 같아요. 바르낙 님이 왜 벨스커드 님을 쫓는 지는 모르겠지만, 그분에게 무언가 실마리가 있을 지도 모르니까요.<BR>그리고 제레인트 님의 검이라면 충분히 바르낙 님께 걸린 사악한 힘을 억누를 수 있을 거에요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-p" image="" itemindex="" portrait_left="NPC_Left_Teramai.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n818_rose-2-q" mid="139" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html>$테렌스 테라마이$<BR>결론이 난 것 같군.<BR>마침 <FONT color=#a82424>벨스커드</FONT>가 로터스마쉬에 있다니, 조사를 해 봐야겠네.<BR>선지자의 예언이 있을 때까지 손 놓고 있을 수만은 없으니 말이야....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-r" mid="140" select_type="2" />
+      <talk_question mid="64"><![CDATA[<html>$로제$<BR>네. 저도 어서 여신께서 다시 현신하시기를 기도할게요.<BR>그러면 이 뿌연 안개 같은 영상이 아니라, 거울에 비추듯 선명한 미래를 볼 수 있겠지요.<BR>...부족한 힘이나마 최선을 다하겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-r" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n818_rose-2-s" mid="153" select_type="4" />
+      <talk_question mid="66"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n818_rose-2-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rose.dds" center_image="">
+      <talk_answer link_index="n818_rose-2-!next" mid="156" select_type="2" />
+      <talk_question mid="155"><![CDATA[<html>$로제$<BR>저는 오두막 근처를 거닐며 여신께서 예지를 내려주시길 기도하겠어요.<BR>...그 가엾은 분을 제 손으로 구원할 수 있기만을 바라면서요.<BR><FONT color=#7e12d2>(로제가 슬픈 표정으로 먼 곳을 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9362</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93620,,,,,,,</exe>
+         <exe type="complete" true="">9362</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n811_teramai" sub="b" />
+   <exelink qstep="1" npc="n811_teramai" sub="c" />
+   <exelink qstep="1" npc="n811_teramai" sub="d" />
+   <exelink qstep="1" npc="n811_teramai" sub="e" />
+   <exelink qstep="1" npc="n811_teramai" sub="f" />
+   <exelink qstep="1" npc="n811_teramai" sub="g" />
+   <exelink qstep="1" npc="n811_teramai" sub="h" />
+   <exelink qstep="1" npc="n811_teramai" sub="i" />
+   <exelink qstep="1" npc="n811_teramai" sub="j" />
+   <exelink qstep="1" npc="n811_teramai" sub="k" />
+   <exelink qstep="1" npc="n811_teramai" sub="l" />
+   <exelink qstep="1" npc="n811_teramai" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n818_rose" sub="b" />
+   <exelink qstep="2" npc="n818_rose" sub="c" />
+   <exelink qstep="2" npc="n818_rose" sub="d" />
+   <exelink qstep="2" npc="n818_rose" sub="e" />
+   <exelink qstep="2" npc="n818_rose" sub="f" />
+   <exelink qstep="2" npc="n818_rose" sub="g" />
+   <exelink qstep="2" npc="n818_rose" sub="h" />
+   <exelink qstep="2" npc="n818_rose" sub="i" />
+   <exelink qstep="2" npc="n818_rose" sub="j" />
+   <exelink qstep="2" npc="n818_rose" sub="k" />
+   <exelink qstep="2" npc="n818_rose" sub="l" />
+   <exelink qstep="2" npc="n818_rose" sub="m" />
+   <exelink qstep="2" npc="n818_rose" sub="n" />
+   <exelink qstep="2" npc="n818_rose" sub="o" />
+   <exelink qstep="2" npc="n818_rose" sub="p" />
+   <exelink qstep="2" npc="n818_rose" sub="q" />
+   <exelink qstep="2" npc="n818_rose" sub="r">0</exelink>
+   <exelink qstep="2" npc="n818_rose" sub="s">1</exelink>
+   <exelink qstep="2" npc="n818_rose" sub="!next" />
+   <journal_data recompense="93620" quest_title="영웅의 안식" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>14,n811</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>811</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[영웅의 안식 1]]></title>
+         <contents mid="69"><![CDATA[<html>바르낙을 정화하려했지만 실패했다. 카라큘의 오두막에서 테라마이와 앞으로의 대책을 이야기하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 테렌스 테라마이</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[카라큘의 오두막에서 테라마이와 대화]]></destination>
+         <todo_msg mid="71"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>14,n818</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>818</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[영웅의 안식 2]]></title>
+         <contents mid="73"><![CDATA[<html>테라마이는 바르낙을 정화하기 위한 굳은 의지를 밝힌다. 로제와 이야기해보자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 로제</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[카라큘의 오두막에서 로제와 대화]]></destination>
+         <todo_msg mid="75"><![CDATA[로제와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9361</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

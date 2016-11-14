@@ -1,0 +1,228 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9333_hatred_of_charty</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>6</qchapter>
+      <qid>9333</qid>
+      <designer>정진호</designer>
+      <qlevel>40</qlevel>
+      <qdesc>300379 정글 고사리</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9334</nextqid>
+      <nextqname>mq15_9334_his_words</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[차티의 증오]]></qkname>
+      <qnpc>
+         <npcid>465</npcid>
+         <npcename>n465_charty</npcename>
+         <npckname>차티</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-accepting-acceptted" mid="7" select_type="2" />
+      <talk_question mid="6"><![CDATA[<html>$상인 루시타$<BR>차티 언니를 찾으시는군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="QW_52.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lucita.dds" center_image="">
+      <talk_answer link_index="n709_trader_lucita-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$상인 루시타$<BR>길이 엇갈린 모양이네요.<BR>차티 언니는 시델 님을 만나러 <FONT color=#a82424>고대의 도서관</FONT>으로 간다고 했거든요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-a" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$차티$<BR>시델은 정말… 어디있는거야?!<BR>분명 지금쯤이면 약초를 다 캤을텐데….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-b" mid="14" select_type="0"><![CDATA[<html>(시델의 부탁으로 왔다고 말한다)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$차티${action:Talk}<BR>뭐야, 넌?! 날 추적한 거야?!<BR>
+설마… 마귀 할멈의 하수인…?!<BR><FONT color=#7e12d2>(차티가 들고양이처럼 으르렁거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-c" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$차티$<BR>흥, 시델의 이름을 판다고 내가 속을 줄 알아?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-d" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>시델이 정글 고사리를 전해 달라고 해서 온 거야.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-e" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$차티${action:Talk2}<BR>정글 고사리…?<BR><FONT color=#7e12d2>(차티의 태도가 조금 누그러진 듯 하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-e" image="QS_Default.dds" itemindex="300379" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-f" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$차티${action:Talk2}<BR>정글 고사리…?<BR><FONT color=#7e12d2>(차티의 태도가 조금 누그러진 듯 하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-f" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-g" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>시델이 네가 다치진 않았는지 걱정을 해서.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-g" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-h" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$차티$<BR>괜찮아, 이까짓 상처쯤은….<BR><FONT color=#7e12d2>(차티가 상처를 혀로 핥는다)</FONT><BR>시델도 참… 걱정쟁이라니까. 후웅…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-i" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$차티$<BR>그렇게 착한 애가 왜 그런 마귀할멈 옆에 붙어있는 거지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-j" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>마귀할멈?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-j" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-k" mid="32" select_type="0"><![CDATA[<html>오해를 한 게 아닐까?</html>]]></talk_answer>
+      <talk_answer link_index="n465_charty-1-k" mid="33" select_type="0"><![CDATA[<html>그럴 리가!!!</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$차티$<BR><FONT color=#a82424>카라큘</FONT> 말이지 누구겠어?<BR>지금 그 할멈이 우리 부족들을 납치해서 괴물로 만들고 있다고!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-1-l" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>$차티$<BR>이건 믿을 만한 사람에게서 받은 정보야! 그 할멈의 편을 들려고 하지 마!<BR>너 어딘가 수상한데? 역시 너, 첩자야? <BR><FONT color=#7e12d2>(차티가 {user_nick}의 냄새를 맡는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-1-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-2" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$차티$<BR>흥, 아무튼!! 이건 믿을만한 사람에게서 얻은 정보라구.<BR>마귀 할멈의 편이나 들거면 이만 돌아가!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n465_charty-2" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Charty.dds" center_image="">
+      <talk_answer link_index="n465_charty-2-" mid="39" select_type="5" />
+      <talk_question mid="38"><![CDATA[<html>$차티$<BR>정글 고사리는 잘 받았어.<BR>가서 <FONT color=#a82424>시델</FONT>에게 난 괜찮으니 걱정 안해도 된다고 전해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QN_Npc_Charty.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-a" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$시델${action:Talk}<BR>차티는 무사한가요?<BR><FONT color=#7e12d2>(시델이 걱정스런 표정으로 묻는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-a" image="QN_Npc_Charty.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-b" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>$시델$<BR>뭐? 스승님께서 사람들을 시켜 원주민들을 병들게 했다고요?<BR>그럴 리가 없어요. 차티가 뭔가 오해하는 것 아닐까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-c" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>믿을 만한 사람에게서 받은 정보라던데…?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-d" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$시델$<BR>믿을 만한 사람이라… 대체 누굴 말하는 걸까.<BR>차티와 친하게 지냈지만, 그런 사람이 있다는 건 전혀 몰랐는데….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-e" mid="62" select_type="4" />
+      <talk_question mid="61"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2-e" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-!next" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$시델$<BR>역시, 신경쓰여요. 제가 직접 차티를 만나봐야 겠어요.<BR><FONT color=#7e12d2>(시델이 카라큘의 눈치를 살피며 수군거린다)<BR></FONT>스승님께는 비… 비밀이에요?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9333</exe>
+         <exe type="talk" npc="n709_trader_lucita">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">300379</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93330,,,,,,,</exe>
+         <exe type="complete" true="">9333</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n465_charty" sub="b" />
+   <exelink qstep="1" npc="n465_charty" sub="c" />
+   <exelink qstep="1" npc="n465_charty" sub="d" />
+   <exelink qstep="1" npc="n465_charty" sub="e" />
+   <exelink qstep="1" npc="n465_charty" sub="f" />
+   <exelink qstep="1" npc="n465_charty" sub="g" />
+   <exelink qstep="1" npc="n465_charty" sub="h" />
+   <exelink qstep="1" npc="n465_charty" sub="i" />
+   <exelink qstep="1" npc="n465_charty" sub="j" />
+   <exelink qstep="1" npc="n465_charty" sub="k" />
+   <exelink qstep="1" npc="n465_charty" sub="k" />
+   <exelink qstep="1" npc="n465_charty" sub="l" />
+   <exelink qstep="1" npc="n465_charty" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="b" />
+   <exelink qstep="2" npc="n707_sidel" sub="c" />
+   <exelink qstep="2" npc="n707_sidel" sub="d">0</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="e">1</exelink>
+   <exelink qstep="2" npc="n707_sidel" sub="!next" />
+   <journal_data recompense="93330" quest_title="차티의 증오" chapterid="6" quest_level="40" quest_mark_type="1" use_item_list="300379">
+      <journal index="1">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>521,n465</destination_pos>
+         <destination_mode>custom:521@1</destination_mode>
+         <statemark_npcid>465</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[차티의 증오 I]]></title>
+         <contents mid="54"><![CDATA[<html>차티는 시델을 만나기 위해 고대의 도서관으로 이동한 것 같다. 고대의 도서관에서 차티를 찾아보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장(고대의 창고 입구) </FONT><FONT color=#a82424>- 고대의 도서관(차티)</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[고대의 도서관]]></destination>
+         <todo_msg mid="56"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[차티의 증오 II]]></title>
+         <contents mid="58"><![CDATA[<html><FONT color=#2b2723>차티는 큰 부상은 없는 듯 건강해 보였다. 시델에게 돌아가서 안부를 전하자.</FONT><BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장</FONT><FONT color=#a82424> - 카라큘의 오두막(시델)</FONT><BR>
+</html>]]></contents>
+         <destination mid="59"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="60"><![CDATA[시델에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9332</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

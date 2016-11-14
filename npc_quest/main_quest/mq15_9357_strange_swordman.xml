@@ -1,0 +1,220 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9357_strange_swordman</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9357</qid>
+      <designer>최지은</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9358</nextqid>
+      <nextqname>mq15_9358_shadows</nextqname>
+      <nextqnpc>n711_warrior_fedro</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[이상한 검사]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>711</npcid>
+         <npcename>n711_warrior_fedro</npcename>
+         <npckname>상급 워리어 페드로</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-acceptted" mid="42" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$상급 워리어 페드로$<BR>으음~ 왜 그런 소문이? 흐음….<BR>
+<FONT color=#7e12d2>(페드로가 고개를 갸웃거리고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-a" mid="44" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$상급 워리어 페드로$<BR>너 왔구나. 실은 내가 좀 신경 쓰이는 게 있어서 말야.<BR>너한테 물어보면 왠지 알 거 같더라고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-b" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>$상급 워리어 페드로$<BR>...응? 혹시 사람 얘기냐고?!<BR>아니 어떻게 알았지! 와, 너 신통력이라도 있는 거냐?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-c" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$상급 워리어 페드로$<BR>요즘 이 근처에 정체불명의 검사를 봤다는 사람이 있는데.... 이야기를 듣다 보니까 왠지 낯이 익은 거야.<BR>그래서 곰곰히 생각해 봤지. 아무래도 그 사람... 램버트 님이 아닐까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-c" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-d" mid="48" select_type="2" />
+      <talk_question mid="47"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(루나리아 이야기가 아니었구나... 혹시나 했는데.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-e" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html><FONT color=#2b2723>$상급 워리어 페드로$<BR>너 반응이 왜 그렇게 미적지근한 거야?<BR>쳇... 사람이 모처럼 흥분해서 불러 놨더니만.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-f" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html><FONT color=#2b2723>$상급 워리어 페드로$<BR>내가 램버트 님에 대해서 말 안 했던가?<BR>그분은 우리 아버지 알레그로와는 동기로, 말하자면 나한테 사숙? 뭐 그런 분이시라고!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-g" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html><FONT color=#2b2723>$상급 워리어 페드로$<BR>텔 누마라의 영웅!! </FONT><FONT color=#a82424>사막의 푸른 늑대</FONT><FONT color=#2b2723>, <FONT color=#a82424>램버트</FONT> 님!<BR>우리 아버지 만큼이나 훌륭한 분이시지. 핫핫핫핫.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-g" image="QN_Npc_Cian.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-h" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>(램버트 님이라면 분명히 워리어 시안의 아버지라는 그...?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-i" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>그런데 왜 그런 분이 이런 곳이 계신 거지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-j" mid="61" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html><FONT color=#2b2723>$상급 워리어 페드로$<BR>그분이 최근에 세인트헤이븐에 나타나샀다는 소문도 돌았거든.<BR>혹시 그곳을 거쳐 로터스마쉬까지 오신 게 아닐까? 뭐, 무슨 용건인지는 확인해 봐야 확실해지겠지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-j" image="QW_68.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-k" mid="63" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html><FONT color=#2b2723>$상급 워리어 페드로$<BR>그분이 목격되었다는 곳은 여왕의 정원이야.<BR>나는 지금 다른 일 때문에 움직일 수 없으니 네가 가서 직접 확인하고 오도록 해라.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-2" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>(시안의 아버지라는 사람이 정말 여기 있는 건가?<BR>나도 조금은 신경이 쓰이니까 한번 가 볼까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_Lotus_WarriorFedro.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="86" select_type="5" />
+      <talk_question mid="85"><![CDATA[<html>$시델$<BR>
+음, <FONT color=#a82424>상급 워리어 페드로</FONT>가 네게 무슨 볼일인지 모르겠지만….<BR>
+좋은 정보라도 얻은 걸지도 모르지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-2" image="QW_68.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-2-" mid="71" select_type="5" />
+      <talk_question mid="19"><![CDATA[<html>$상급 워리어 페드로$<BR>그 정체불명의 검사가 정말 <FONT color=#a82424>램버트</FONT> 님이라면....<BR>대체 왜 <FONT color=#a82424>여왕의 정원</FONT> 같은 곳에 계신 걸까? 참 이상한 일이란 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-3-a" mid="74" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$상급 워리어 페드로$<BR>다녀왔군.<BR>그래, 그 정체불명의 검사가 <FONT color=#a82424>램버트</FONT>님이 맞나?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-3-b" mid="75" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html><FONT color=#2b2723>$상급 워리어 페드로$<BR>...음? 네 이야기를 듣자면 아무래도 램버트 님이 아닌 것 같기도 한데?<BR>물론 나도 아버지께 이야기만 들어서 잘은 모르지만....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-3-c" mid="82" select_type="4" />
+      <talk_question mid="81"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-3-!next" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html><FONT color=#2b2723>$상급 워리어 페드로$<BR>내가 들었던 바로는 그런 모습이 아니셨던 거 같단 말이야.<BR></FONT><FONT color=#7e12d2>(페드로가 고개를 갸웃거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9357</exe>
+         <exe type="talk" npc="n711_warrior_fedro">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93570,,,,,,,</exe>
+         <exe type="complete" true="">9357</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="b" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="c" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="d" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="e" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="f" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="g" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="h" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="i" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="j" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="k" />
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="b">0</exelink>
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="c">1</exelink>
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="!next" />
+   <journal_data recompense="93570" quest_title="이상한 검사" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_WarriorFedro.dds</contents_image>
+         <destination_pos>15,n711</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>711</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[이상한 검사 1]]></title>
+         <contents mid="30"><![CDATA[<html>상급 워리어 페드로에게 신경쓰이는 일에 대해 듣자.<BR><BR><FONT color=#086171>로터스마쉬</FONT> <FONT color=#a82424>- 상급 워리어 페드로</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[로터스마쉬의 상급 워리어 페드로와 대화]]></destination>
+         <todo_msg mid="32"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_68.dds</contents_image>
+         <destination_pos>681,n819</destination_pos>
+         <destination_mode>custom:681@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[이상한 검사 2]]></title>
+         <contents mid="34"><![CDATA[<html>여왕의 정원으로 가서, 정체불명의 기사의 행방을 쫓자.<BR><BR><FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT> <FONT color=#a82424>- 여왕의 정원</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[여왕의 정원 탐색]]></destination>
+         <todo_msg mid="36"><![CDATA[여왕의 정원에서 정체불명의 기사를 찾으세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_WarriorFedro.dds</contents_image>
+         <destination_pos>15,n711</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>711</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[이상한 검사 3]]></title>
+         <contents mid="38"><![CDATA[<html>정체불명의 기사를 목격했지만 아주 잠시뿐이었다.<BR>일단 상급 워리어 페드로에게 돌아가 여왕의 정원에서 본 것을 전달하자.<BR><BR><FONT color=#086171>로터스마쉬</FONT> <FONT color=#a82424>- 상급 워리어 페드로</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[로터스마쉬의 상급 워리어 페드로와 대화]]></destination>
+         <todo_msg mid="40"><![CDATA[상급 워리어 페드로에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9356</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

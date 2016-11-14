@@ -1,0 +1,280 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9349_abruptly_farewell</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>7</qchapter>
+      <qid>9349</qid>
+      <designer>정진호</designer>
+      <qlevel>46</qlevel>
+      <qdesc>선착장에서 루나와 대화. 아무 것도 바뀐 것은 없다. 자신이 누구인지, 어디에 속한 것인지 혼란에 빠진 그 자신을 제외하고는.
+루나는 '내가 원망스럽지 않나? 네 입장에서 보면 이 모든 것은 불쾌한 사고에 불과하지. 일루전은 너지만 네가 아니다.'
+
+유저는 '루나 너는 언제나 이런 세상을 보면서 살아왔겠지. 지금 여기가 어딘지, 오늘이 과연 어제의 내일인지도 알 수 없는 그런 세상 말이야.'
+
+루나는 유저에게 '이제 그런 혼란은 겪지 않을 거다' 라고 말해준 후, '그러나 내가 곁에 있으면 또 무수한 시간의 혼란을 겪게 되겠지. 나는 이제 너를 놓아주겠다. 네게 의지하고 있었던 것, 인정한다. 미안했다.' 고 하고는 홀로 사라진다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9350</nextqid>
+      <nextqname>mq15_9350_finding_lunaria</nextqname>
+      <nextqnpc>n575_shadow_meow</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[돌연한 작별]]></qkname>
+      <qnpc>
+         <npcid>1169</npcid>
+         <npcename>n1169_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1177</npcid>
+         <npcename>n1177_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>575</npcid>
+         <npcename>n575_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-accepting-acceptted" mid="7" select_type="2" />
+      <talk_question mid="6"><![CDATA[<html>$그림자 냥$<BR>냐앙? 다시 착한 제자로 돌아왔구냥?!!<BR>환영한다냥! 환영! 환영이냥! 환! 냥! …응? 이상하냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$그림자 냥$<BR>응? 리버워트 선착장으로 가는 거냥?<BR>잘 가라냥~ 찾던 걸 찾길 바란다냥~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1177_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1177_lunaria-1-" mid="12" select_type="6" />
+      <talk_question mid="11"><![CDATA[<html>$루나리아$<BR>돌아가자, <FONT color=#387206>{user_nick}.<BR></FONT>네가 선택한 덕분에 새로운 길이 열렸어.<BR>
+<FONT color=#a82424>리버워트 선착장</FONT> 방향으로, 가자.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-a" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$루나리아$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-b" mid="86" select_type="2" />
+      <talk_question mid="85"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_01.ogg}<BR>겨우 여기까지 왔구나.<BR>아주 길고도 긴 세월이 흐른 것만 같네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-c" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>사실은 아직도 좀 혼란스러워.<BR>내가 누군지, 어디에 속한 건지, 모르겠어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-d" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>다만 과거로 돌아간다고 해도 이제는 예전처럼 살아갈 수 없다는 걸 알아.<BR>나는 돌아갈 수 없는 거지? 루나리아. 너는 처음부터 그걸 알고 있었던 거야.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-e" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$루나리아$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-f" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>일루전이 나를 집어 삼켰을 때, 그는 분명 너와 함께 또 과거로 이동했어.<BR>본디 내가 있었던 바로 그 과거.<BR>내가 돌아가려 했던 과거.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-g" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>하지만 거기에는 또 다른 내가 있었고, 일루전과 내가 다른 인간이듯 그 쪽의 나도 이미 다른 나였던 거야.<BR>일루전이…… 아니 내가…… 내가 과거의 나를 죽였어. 그렇지?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-h" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_02.ogg}<BR>그를 죽인 건 일루전이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-i" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>하지만 내 몸이었어.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-j" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_03.ogg}<BR>……내가 원망스럽지? <FONT color=#387206>{user_nick}.</FONT><BR>네 입장에서 보면 이 모든 것은 불쾌한 사고에 불과할 테니.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-k" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_04.ogg}<BR>일루전은 너지만 네가 아니야.<BR>너는 일루전의 억지에 휘말려, 시간의 미아가 되고 말았어. 오늘의 다음날이 내일이라는 걸 믿을 수 없는 세계에 나와 함께 갇혀 버렸지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-l" mid="35" select_type="0"><![CDATA[<html>원망한다.</html>]]></talk_answer>
+      <talk_answer link_index="n1169_lunaria-1-m" mid="36" select_type="0"><![CDATA[<html>원망하지 않는다.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_05.ogg}<BR>나를, 원망하니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-n" mid="41" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…원망하는 걸지도 모르지.<BR>하지만 나만 그런 것이 아니잖아. 루나리아, 너야말로 시간의 미아니까.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-n" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아니. 원망하지 않아.<BR>나만 그런 게 아니니까. 루나리아, 너도 똑 같잖아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-o" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>너는 언제나 이런 세상을 보면서 살아왔겠지.<BR>지금 여기가 어딘지, 곧 일어날 일이 방금 일어난 일의 미래가 맞기나 한지 알 수도 없는 세상 말이야.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-p" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_06.ogg}<BR>꽃이 피지 않아도 열매맺는 세계.<BR>씨앗을 뿌리기도 전에 결실이 이미 과거의 영광으로 지나쳐 가는 세계.<BR>먼 미래의 고통이 달콤한 쾌락 가운데 공존하는 이 막막한 세계.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-p" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-q" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_07.ogg}<BR>네게 그런 혼란을 겪게 해서는 안 됐어.<BR>일루전의 말이 맞아. 처음부터 나는 잘못 선택했던 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-q" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-r" mid="51" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…루나리아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-r" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-s" mid="53" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_08.ogg}<BR>이제 이 미로 속에서 꺼내 줄게.<BR>끝없이 오르고 또 올라도 저 깊은 나락으로 꺼져 버리는, <FONT color=#a82424>무한한 층계놀이의 형벌</FONT>에서 너를 해방시켜 줄게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-s" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-t" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_09.ogg}<BR><FONT color=#387206>{user_nick},</FONT> 나는 너를 쭉 속여 왔어.<BR>내가 곁에 있었기 때문에 너는 이 무수한 시간의 혼란을 겪었던 거니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-t" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-u" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_10.ogg}<BR>나는 이제 너를 놓아주겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-u" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-1-v" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_11.ogg}<BR>네게 의지하고 있었던 것, 인정해.<BR>…쭉, 아주 아주 오래 전인지 아주 아주 먼 미래인지 모를 첫번째 만남부터 지금까지 나는 네게 의지해 왔어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-1-v" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-2" mid="61" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html>$루나리아${sound:npc_Lunaria_qu_9349_12.ogg}<BR>미안했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1169_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1169_lunaria-2-" mid="65" select_type="5" />
+      <talk_question mid="64"><![CDATA[<html>$루나리아$<BR>…미안해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-2-a" mid="67" select_type="2" />
+      <talk_question mid="66"><![CDATA[<html>$그림자 냥$<BR>뭐냥?<BR>또 뭐 찾을 것이 있냥? 이 그림자 냥은 개코가 아니라서 도움이 안 된다냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-2-b" mid="69" select_type="2" />
+      <talk_question mid="68"><![CDATA[<html>$그림자 냥$<BR>…응? 저번에 무서워져서 막 찾던 그 여자를 아직도 못 찾은 거냥?<BR>어휴… <FONT color=#387206>{user_nick}</FONT> 뭘 모른다냥. 그렇게 집착하면 여자가 도망가는 거라고 우리 열 둘째 누나가 그랬다냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-2-c" mid="71" select_type="2" />
+      <talk_question mid="70"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(집착하는 게 아니라, 도대체 마지막의 말들이 무슨 뜻인지 알고 싶을 뿐이라고.<BR>걱정도 되고….)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-2-d" mid="73" select_type="4" />
+      <talk_question mid="72"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n575_shadow_meow-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n575_shadow_meow-2-!next" mid="75" select_type="2" />
+      <talk_question mid="74"><![CDATA[<html>$그림자 냥$<BR>하지만 하도 열심히 찾아 다니니 돕지 않을 수가 없냥.<BR>할짝할짝… 좀 생각해 봤는데, 사람 찾는 건 고양이 말고 주로 하는 사람이 있는 거 같냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9349</exe>
+         <exe type="talk" npc="n575_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93490,,,,,,,</exe>
+         <exe type="complete" true="">9349</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n575_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1169_lunaria" sub="b" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="c" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="d" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="e" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="f" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="g" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="h" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="i" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="j" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="k" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="l" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="m" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="n" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="n" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="o" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="p" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="q" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="r" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="s" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="t" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="u" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="v" />
+   <exelink qstep="1" npc="n1169_lunaria" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n575_shadow_meow" sub="b" />
+   <exelink qstep="2" npc="n575_shadow_meow" sub="c">0</exelink>
+   <exelink qstep="2" npc="n575_shadow_meow" sub="d">1</exelink>
+   <exelink qstep="2" npc="n575_shadow_meow" sub="!next" />
+   <journal_data recompense="93490" quest_title="돌연한 작별" chapterid="7" quest_level="46" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>14,n1169</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1169</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[돌연한 작별 I]]></title>
+         <contents mid="78"><![CDATA[<html>리버워트 선착장에서 루나리아의 이야기를 더 들어보자.<BR>
+ <BR>
+<FONT color=#086171>리버워트 선착장</FONT> <FONT color=#a82424>- 루나리아</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[리버워트 선착장에서 루나리아와 대화]]></destination>
+         <todo_msg mid="80"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_LotusMarshTown.dds</contents_image>
+         <destination_pos>15,n575</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>575</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[돌연한 작별 II]]></title>
+         <contents mid="82"><![CDATA[<html>루나리아가 사라져 버렸다.<BR>더는 행방을 알 만한 단서조차 남지 않았다. 마을로 돌아가서 수소문하는 수밖에 없는 것 같다.<BR>
+ <BR>
+<FONT color=#086171>로터스마쉬</FONT> <FONT color=#a82424>- 그림자 냥</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[그림자 냥과 대화]]></destination>
+         <todo_msg mid="84"><![CDATA[로터스마쉬로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class>7</user_class>
+      <prev_quest>9348</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,198 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9244_what_to_do</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>10</qchapter>
+      <qid>9244</qid>
+      <designer>곽노찬</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9245</nextqid>
+      <nextqname>mq15_9245_my_mission</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[What Should I Do]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>884</npcid>
+         <npcename>n884_academic</npcename>
+         <npckname>XD-29</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>▶ <FONT color=#086171>Code name XD-27. Access Granted.</FONT><BR><FONT color=#2b2723>▷ </FONT><FONT color=#086171>Checking Data………….</FONT><BR>
+▷ <FONT color=#7e12d2>Operation Desert Storm.</FONT><BR><BR>▷ <FONT color=#7e12d2>Checking for your mission details. Please wait.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Academic Station$<BR>▶ Mission Object.<BR>▷ <FONT color=#7e12d2>Professor K's experimental notes have been obtained</FONT><BR>
+▷ <FONT color=#7e12d2>Join the rest at Intruder's Forward Base with XD-27</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QW_71.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Intruder's Forward Base, </FONT><FONT color=#7e12d2> is that where Jasmine's army is…?</FONT><BR><FONT color=#7e12d2>Can I stop them all by myself…?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-1" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$XD-29$<BR>Urrr… ughhh….<BR><FONT color=#7e12d2>(XD-29 falters)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QW_71.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(I have no choice….</FONT><BR><FONT color=#7e12d2>This war started because of me. I should do whatever I can.</FONT><BR><FONT color=#7e12d2>I won't let Jasmine have her own way….</FONT><BR><FONT color=#7e12d2>I will go to Intruder's Forward Base)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_answer link_index="n884_academic-3-a" mid="14"><![CDATA[<html>Where are Professor K's experimental notes? Tell me!</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$XD-29$<BR>Urrr… ughhh….<BR><FONT color=#7e12d2>(XD-29 falters)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3-a" image="" itemindex="">
+      <talk_answer link_index="n884_academic-3-b" mid="16"><![CDATA[<html>What is Desert Storm? Are you really going to start a war?!</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$XD-29$<BR>XD-26, you betrayer….<BR>Do you think I'll tell you that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3-b" image="" itemindex="">
+      <talk_answer link_index="n884_academic-3-c" mid="18"><![CDATA[<html>You sacrificed too many people…</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$XD-29$<BR>Going to start a war…?<BR>No, the war has already begun!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3-c" image="" itemindex="">
+      <talk_answer link_index="n884_academic-3-d" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$XD-29$<BR>Shut up you hypocrite!<BR>You're the one who's trying to let everyone in the future die!<BR>You're originally from our world.<BR>What is the reason you're trying to save this world at the expense of your own world?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3-d" image="" itemindex="">
+      <talk_answer link_index="n884_academic-3-e" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$XD-29$<BR>We're fighting for our survival. But how about you?<BR>What are you fighting for?<BR>Have you ever thought about all the people in the future who are going to be tortured and die in misery all because of you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3-e" image="" itemindex="">
+      <talk_answer link_index="n884_academic-3-f" mid="20"><![CDATA[<html>N-no! I-I-I just…</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$XD-29$<BR>You're the one who started all this!<BR>If only you didn't fail to get the <FONT color=#a82424>Prophet</FONT>, things wouldn't have come this far….<BR>You're driving everyone to death!<BR>It's all your fault!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3-f" image="QN_Npc_Academic_Normal.dds" itemindex="">
+      <talk_answer link_index="n884_academic-3-g" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$XD-29$<BR>(Coughs)<BR>We will survive….<BR><FONT color=#7e12d2>(XD-29 staggers away)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3-g" image="" itemindex="">
+      <talk_answer link_index="n884_academic-3-h" mid="37"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n884_academic-3-h" image="QW_72.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(Must either the future or the past be destroyed…?</FONT><BR><FONT color=#7e12d2>Oh Velskud… What should I do…?)<FONT><BR><BR>※ <FONT color=#7e12d2>Follow XD-29 to Tel Noir Temple.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9244</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92440,,,,,,</exe>
+         <exe type="complete" true="">9244</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n884_academic" sub="b" />
+   <exelink qstep="3" npc="n884_academic" sub="c" />
+   <exelink qstep="3" npc="n884_academic" sub="d" />
+   <exelink qstep="3" npc="n884_academic" sub="e" />
+   <exelink qstep="3" npc="n884_academic" sub="f" />
+   <exelink qstep="3" npc="n884_academic" sub="g">0</exelink>
+   <exelink qstep="3" npc="n884_academic" sub="h">1</exelink>
+   <journal_data recompense="92440" quest_title="어찌해야 하는 걸까요" chapterid="10" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[What Should I Do I]]></title>
+         <contents mid="41"><![CDATA[<html>Use XD-28's communicator to log on to Academic Station.<BR>
+ <BR>
+<BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Log on to Academic Station]]></destination>
+         <todo_msg mid="43"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_71.dds</contents_image>
+         <destination_pos>710,0,0</destination_pos>
+         <destination_mode>custom:710@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[What Should I Do II]]></title>
+         <contents mid="45"><![CDATA[<html>Go to Intruder's Forward Base where Jasmine's army is.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Numara Entrance)</FONT> <FONT color=#a82424>→ Intruder's Forward Base</FONT> 
+<BR>
+ <BR>
+※ <FONT color=#7e12d2>You cannot proceed in a party.</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[(Solo) Search Intruder's Forward Base]]></destination>
+         <todo_msg mid="47"><![CDATA[Go to Intruder's Forward Base.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_71.dds</contents_image>
+         <destination_pos>710,n884</destination_pos>
+         <destination_mode>custom:710@4</destination_mode>
+         <statemark_npcid>884</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[What Should I Do III]]></title>
+         <contents mid="49"><![CDATA[<html>You have defeated XD-29 at Intruder's Forward Base.<BR>Talk to XD-29.<BR><BR><FONT color=#086171>Riverwort Wharf (Tel Numara Entrance)</FONT> <FONT color=#a82424>→ Intruder's Forward Base(XD-29)</FONT><BR><BR>※ <FONT color=#7e12d2>You cannot proceed in a party.</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[(Solo) Talk to XD-29 at Intruder's Forward Base]]></destination>
+         <todo_msg mid="51"><![CDATA[Talk to XD-29.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>9243</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

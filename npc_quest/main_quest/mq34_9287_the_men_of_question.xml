@@ -1,0 +1,466 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9287_the_men_of_question</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9287</qid>
+      <designer>강지영</designer>
+      <qlevel>63</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9288</nextqid>
+      <nextqname>mq34_9288_forest_that_has_lost_the_origin</nextqname>
+      <nextqnpc>n1065_geraint_kid</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[의문의 남자]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1057</npcid>
+         <npcename>n1057_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1065</npcid>
+         <npcename>n1065_geraint_kid</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1083</npcid>
+         <npcename>n1083_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>822</npcid>
+         <npcename>n822_teramai</npcename>
+         <npckname>테렌스 테라마이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$테렌스 테라마이$<BR>게다가 이번 일을 돕는다면 다시 엘프들과의 신뢰를 쌓을 수 있을 지도 모르니....<BR>정말 좋은 기회가 될 것 아닌가.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-a" mid="9" select_type="2" />
+      <talk_question mid="8"><![CDATA[<html>$테렌스 테라마이${sound:npc_AN_Teramai_qu_9287_01.ogg}<BR>하지만 자네도 알다시피 왕성 보수로 인해 지금 이곳 상황도 말이 아니라네. <BR>저들의 목표가 어느 정도 뚜렷해지면, 내가 이곳 사람들을 설득해 보겠네.<BR>자네는 <FONT color=#a82424>아누 아렌델</FONT>의 상황을 계속 내게 보고해주게.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-b" mid="11" select_type="2" />
+      <talk_question mid="10"><![CDATA[<html>$테렌스 테라마이$<BR>바로 어떤 대답을 주지 못해 정말 안타깝군.<BR>아누 아렌델의 엘프들이 실망할까 걱정이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-1-" mid="13" select_type="5" />
+      <talk_question mid="12"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(아젤리아 말대로 됐네? 끙~ 이 소식을 어떻게 전해야 하나...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-1" image="QN_Npc_Lotus_Elder_Teramai.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-1-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$아처 트리아나$<BR>아직 세인트헤이븐으로 출발하지 않으셨나요?<BR><FONT color=#a82424>테라마이</FONT>님께 이곳의 상황을 전하신다고 하셨잖아요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-1-" mid="18" select_type="5" />
+      <talk_question mid="17"><![CDATA[<html>$아처 유벤시엘$<BR><FONT color=#7e12d2>(유벤시엘은 그다지 대화를 하고 싶지 않은 듯하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="20" select_type="5" />
+      <talk_question mid="19"><![CDATA[<html>$아르젠타$<BR>우르르 몰려다니는 게 인간이나 엘프나 똑같군. 너흰 대체 뭘 하고 다니는 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-" mid="22" select_type="5" />
+      <talk_question mid="21"><![CDATA[<html>$제레인트$<BR>귀찮게 하지 마라. 인간.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n822_teramai-2" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Teramai.dds" center_image="">
+      <talk_answer link_index="n822_teramai-2-" mid="24" select_type="5" />
+      <talk_question mid="23"><![CDATA[<html>$테렌스 테라마이$<BR>바로 어떤 대답을 주지 못해 정말 안타깝군.<BR><FONT color=#a82424>아누 아렌델</FONT>의 엘프들이 실망할까 걱정이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-a" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$아처 트리아나$<BR>이 순간에도 용추종자들이 숲을 망치고 있겠죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-job2_2" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$아처 트리아나${sound:npc_AN_Archer Triana_qu_9287_01.ogg}<BR>당신이 언제 돌아오나 하고 있었어요. <BR>왕성에서의 일은 어떻게 되었나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-d" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그게... 바로 도와주긴 어려울 것 같았어.<BR>세인트헤이븐 왕성도 부서졌었고, 보수도 해야 한다고 하고....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-d" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>바로 도움을 받긴 힘들 것 같습니다.<BR>얼마 전 공격으로 무너진 세인트헤이븐을 수리하느라 몹시 바쁜 모양이었어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-job2_3" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$아처 트리아나$<BR>그렇군요. 하긴 그들도 사정이 있겠지요. <BR>하지만 테라마이님이 알리신 것인지, 다른 모험자 분들이 도우러 오셨더군요.<BR>그것만으로도 큰 힘이 된다고 생각합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-g" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>누가 왔는데? 어디로 갔고?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-g" mid="38" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그 다른 분들은 어디로 가셨나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-job2_4" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>$아처 트리아나$<BR>저희가 미처 아직 확인하지 못한 곳으로 용추종자를 찾으러 가셨어요.<BR><FONT color=#387206>{user_nick}</FONT>님도 서둘러 쫓아가 주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-j" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>넌 같이 안갈거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-j" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>트리아나님은요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-j" image="QN_Npc_Elder_elf.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-k" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$아처 트리아나$<BR>전 장로님께 상황을 알리러 다녀올 생각입니다.<BR>콘클라베를 준비하시는 데에 위험이 있다는 걸 알려드려야 할 것 같아서요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-2-k" image="QW_79.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-2-" mid="48" select_type="5" />
+      <talk_question mid="47"><![CDATA[<html>$아처 트리아나$<BR>그럼 다시 이곳에서 뵐께요.<BR><FONT color=#a82424>청동 그믐달 숲길</FONT>에 마물이 늘었다는 소문을 들었습니다. 조심하세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-3" image="QW_79.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-3-" mid="50" select_type="5" />
+      <talk_question mid="49"><![CDATA[<html>$아처 트리아나$<BR>제가 함께 가고 싶지만, 장로님께 이 상황을 알려야 할 것 같아요.<BR>청동 그믐달 숲길로 가세요. <FONT color=#387206>{user_nick}</FONT>! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-a" mid="53" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$유벤시엘$<BR>......<BR><FONT color=#7e12d2>(유벤시엘이 숲을 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-b" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(또 만났네...?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-job3_2" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>$유벤시엘$<BR>......<BR><FONT color=#7e12d2>(먼저 말을 걸어봐야 할 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-e" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신! 여기서 뭐 하는 거야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-e" mid="61" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>여기서 뭘 하고 계시죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-e" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-job3_3" mid="63" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html>$유벤시엘$<BR>아! 당신은.... 트리아나님과 같이 있었던 것 같은데, 맞죠?<BR><FONT color=#7e12d2>(유벤시엘이 잠시 반가운 기색을 띈다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-h" mid="143" select_type="0"><![CDATA[<html><FONT color=#2b2723>그래서 말인데 당신, 여기서 뭐 하고 있는거야?</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n1057_yuvenciel-3-h" mid="144" select_type="0"><![CDATA[<html>네가 여길 오염시키고 있는 사도인거야?</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>난 숲에 수상한 자를 찾고 있는데, 당신이랑 자꾸 만나잖아?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-i" mid="145" select_type="0"><![CDATA[<html>왜 자꾸 당신이랑 마주치는 걸까요?</html>]]></talk_answer>
+      <talk_answer link_index="n1057_yuvenciel-3-i" mid="146" select_type="0"><![CDATA[<html>그 수상한 자가 당신이 아닌가.. 의심이 됩니다.</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네. 그것보다 숲에 수상한 자들을 찾으러 다니는 중인데...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-h" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-k" mid="147" select_type="0"><![CDATA[<html>자꾸 말 돌릴래!? 내 질문에 대답 부터 해!</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$유벤시엘${sound:npc_AN_Yuvenciel_qu_9287_01.ogg}<BR>
+그런 것 보다... 트리아나님은 잘 돌아가셨습니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-i" image="QN_Npc_Triana.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-k" mid="148" select_type="0"><![CDATA[<html>대답은 안하고 자꾸 말 돌리실 거예요?</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$유벤시엘${sound:npc_AN_Yuvenciel_qu_9287_01.ogg}<BR>
+그런 것 보다... 트리아나님은 잘 돌아가셨습니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-k" mid="73" select_type="2" />
+      <talk_question mid="72"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>자꾸 말 돌리실 거예요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-l" mid="75" select_type="2" />
+      <talk_question mid="74"><![CDATA[<html>$유벤시엘$<BR>제가 당신의 질문에 대답해야 할 이유는 없지요.<BR><FONT color=#7e12d2>(유벤시엘이 몸을 돌려 다시 숲으로 향한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-" mid="77" select_type="5" />
+      <talk_question mid="76"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(뭐야? 저 남자는...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-4-" mid="80" select_type="5" />
+      <talk_question mid="79"><![CDATA[<html>$유벤시엘$<BR>당신과 더 나눌 대화는 없는 것 같군요.<BR><FONT color=#7e12d2>(유벤시엘이 숲을 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-4-job4_2" mid="112" select_type="2" />
+      <talk_question mid="111"><![CDATA[<html>$트리아나$<BR>수색은 어떻게 되었나요? 발견한 거라도 있나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-4-a" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-4-c" mid="114" select_type="2" />
+      <talk_question mid="113"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>응. 별로 특이할 게 없던걸?</FONT><BR>
+<FONT color=#662500>(좀 마음에 걸리는 사람을 만나긴 했지만...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-4-b" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-4-c" mid="116" select_type="2" />
+      <talk_question mid="115"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아뇨. 별로 찾은 게 없어요.</FONT><BR>
+<FONT color=#662500>(좀 마음에 걸리는 사람을 만나긴 했지만...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-4-d" mid="118" select_type="2" />
+      <talk_question mid="117"><![CDATA[<html>$트리아나$<BR>알겠습니다. 일단 전 콘클라베 때문에 장로님께 가 봐야 할 것 같으니, 이제 함께 움직이는 건 어려울 것 같습니다.<BR>어쩌다보니 저도 여왕 후보가 되었거든요.<BR><FONT color=#7e12d2>(트리아나가 부끄러운 듯 미소를 짓는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-4-d" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-4-" mid="120" select_type="5" />
+      <talk_question mid="119"><![CDATA[<html>$트리아나$<BR><FONT color=#387206>{user_nick}</FONT>님께서는 생명의 나무를 지키고 있는 <FONT color=#a82424>아르젠타</FONT>님께 지금 상황을 전하는 건 어떨까요?<BR>그렇게나 숲을 걱정해 주셨는데 기다리고 계실 것 같군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1083_triana-5" image="QN_Npc_Argenta.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n1083_triana-5-" mid="122" select_type="5" />
+      <talk_question mid="121"><![CDATA[<html>$트리아나$<BR><FONT color=#387206>{user_nick}</FONT>님께서는 생명의 나무를 지키고 있는 <FONT color=#a82424>아르젠타</FONT>님께 지금 상황을 전하는 건 어떨까요?<BR>그렇게나 숲을 걱정해 주셨는데 기다리고 계실 것 같군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-a" mid="124" select_type="2" />
+      <talk_question mid="123"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9287_01.ogg}<BR>너는 엘프들한테 소식 좀 전하는 일이, 뭐가 이렇게 오래 걸리는 거야?<BR>엘프들이랑 숲에 다녀오는 것 같던데, 그럼 독극물은 찾아서 처리하고 온 거지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-b" mid="126" select_type="2" />
+      <talk_question mid="125"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그게...</FONT> <BR><FONT color=#7e12d2>(수색 결과에 대해 알린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-5-c" mid="128" select_type="2" />
+      <talk_question mid="127"><![CDATA[<html>$아르젠타$<BR>뭐야, 그게! 독을 찾지도 못하고, 사도들을 눈앞에서 다 놓쳐?<BR>널 내 노예로 다시 써볼까 하고 잠깐 생각했는데 역시 그만둬야겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-c" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-5-d" mid="137" select_type="2" />
+      <talk_question mid="129"><![CDATA[<html>$???${sound:npc_AN_Gereint Young_qu_9287_01.ogg}<BR>이게 내가 살리려고 했다는 인간인가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-d" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-5-e" mid="139" select_type="4" />
+      <talk_question mid="138"><![CDATA[<html>$퀘스트 완료$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-5-e" image="" itemindex="" portrait_left="NPC_Left_geraint_Kid.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1047_argenta-5-" mid="141" select_type="5" />
+      <talk_question mid="140"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(아르젠타 옆에 웬 금발의 검사가 나타났다. 그와 대화해 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9287</exe>
+         <exe type="talk" npc="n822_teramai">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="5" false="6">0</exe>
+         <exe type="conexe" true="7" false="8">0</exe>
+         <exe type="conexe" true="9" false="10">0</exe>
+         <exe type="talk" npc="n1083_triana">b</exe>
+         <exe type="talk" npc="n1083_triana">c</exe>
+         <exe type="talk" npc="n1083_triana">e</exe>
+         <exe type="talk" npc="n1083_triana">f</exe>
+         <exe type="talk" npc="n1083_triana">h</exe>
+         <exe type="talk" npc="n1083_triana">i</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>4번 조건은 수정되어 사용되지 않는 상태(분기가 하나 줄어들었음) 그로 인해 9, 10 조건도 미사용</comment>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="conexe" true="5" false="6">0</exe>
+         <exe type="conexe" true="7" false="8">0</exe>
+         <exe type="conexe" true="9" false="10">0</exe>
+         <exe type="talk" npc="n1057_yuvenciel">c</exe>
+         <exe type="talk" npc="n1057_yuvenciel">d</exe>
+         <exe type="talk" npc="n1057_yuvenciel">f</exe>
+         <exe type="talk" npc="n1057_yuvenciel">g</exe>
+         <exe type="talk" npc="n1057_yuvenciel">i</exe>
+         <exe type="talk" npc="n1057_yuvenciel">j</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n1083_triana">a</exe>
+         <exe type="talk" npc="n1083_triana">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92871,92871,,92873,92874,92875,92876,92877</exe>
+         <exe type="complete" true="">9287</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n822_teramai" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n822_teramai" sub="b">0,1</exelink>
+   <exelink qstep="1" npc="n822_teramai" sub="" />
+   <exelink qstep="2" npc="n1083_triana" sub="job2_2">2</exelink>
+   <exelink qstep="2" npc="n1083_triana" sub="d" />
+   <exelink qstep="2" npc="n1083_triana" sub="d" />
+   <exelink qstep="2" npc="n1083_triana" sub="job2_3">3</exelink>
+   <exelink qstep="2" npc="n1083_triana" sub="g" />
+   <exelink qstep="2" npc="n1083_triana" sub="g" />
+   <exelink qstep="2" npc="n1083_triana" sub="job2_4">4</exelink>
+   <exelink qstep="2" npc="n1083_triana" sub="j" />
+   <exelink qstep="2" npc="n1083_triana" sub="j" />
+   <exelink qstep="2" npc="n1083_triana" sub="k">0,1</exelink>
+   <exelink qstep="2" npc="n1083_triana" sub="" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="b" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="job3_2">2</exelink>
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="e" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="e" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="job3_3">3</exelink>
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="h" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="h" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="i" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="i" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="k" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="k" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="k" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="l">0,1</exelink>
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="" />
+   <exelink qstep="4" npc="n1083_triana" sub="job4_2">2</exelink>
+   <exelink qstep="4" npc="n1083_triana" sub="c" />
+   <exelink qstep="4" npc="n1083_triana" sub="c" />
+   <exelink qstep="4" npc="n1083_triana" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n1083_triana" sub="" />
+   <exelink qstep="5" npc="n1047_argenta" sub="b" />
+   <exelink qstep="5" npc="n1047_argenta" sub="c" />
+   <exelink qstep="5" npc="n1047_argenta" sub="d">0</exelink>
+   <exelink qstep="5" npc="n1047_argenta" sub="e">1</exelink>
+   <exelink qstep="5" npc="n1047_argenta" sub="" />
+   <journal_data recompense="1:92871,3:92873,4:92874,5:92875,6:92876,7:92877" quest_title="의문의 남자" chapterid="12" quest_level="63" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_Elder_Teramai.dds</contents_image>
+         <destination_pos>21,n822</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>822</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[의문의 남자 I]]></title>
+         <contents mid="92"><![CDATA[<html>테라마이는 엘프들을 돕는 일에 호의적으로 보인다. 더 이야기 해 보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 세인트헤이븐 왕성(테렌스 테라마이)</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[세인트헤이븐 왕성의 테라마이와 대화]]></destination>
+         <todo_msg mid="94"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Triana.dds</contents_image>
+         <destination_pos>34,n1083</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1083</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[의문의 남자 II]]></title>
+         <contents mid="96"><![CDATA[<html>엘프의 숲에서 벌어진 일을 바로 도울 수 없다는 대답을 들었다.<BR>트리아나는 어찌 되었는지 이야기해 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 트리아나</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[아누 아렌델 관문의 트리아나와 대화]]></destination>
+         <todo_msg mid="98"><![CDATA[아누 아렌델 관문으로 돌아가 트리아나와 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_79.dds</contents_image>
+         <destination_pos>792,0,0</destination_pos>
+         <destination_mode>custom:791@1,792@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[의문의 남자 III]]></title>
+         <contents mid="100"><![CDATA[<html>신월의 숲에서 용 추종자의 흔적을 찾기로 했다. 청동 그뭄달 숲길로 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 청동 그뭄달 숲길(???)<BR></FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[청동 그믐달 숲길 탐색]]></destination>
+         <todo_msg mid="102"><![CDATA[청동 그믐달 숲길에서 용추종자의 흔적을 찾으세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_yubaensiael.dds</contents_image>
+         <destination_pos>792,n1057</destination_pos>
+         <destination_mode>custom:792@1</destination_mode>
+         <statemark_npcid>1057</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[의문의 남자 IV]]></title>
+         <contents mid="108"><![CDATA[<html>수색을 위해 도착한 청동 그믐달 숲길에서 유벤시엘을 만났다.<BR>그와 대화를 나눠 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 청동 그믐달 숲길(아처 유벤시엘)</FONT><FONT color=#a82424><BR></FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[청동 그믐달 숲길의 유벤시엘과 대화]]></destination>
+         <todo_msg mid="110"><![CDATA[아처 유벤시엘을 발견했습니다!]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Triana.dds</contents_image>
+         <destination_pos>34,n1083</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1083</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[의문의 남자 V]]></title>
+         <contents mid="104"><![CDATA[<html>유벤시엘 말고는 수상한 자를 발견하지 못했다.<BR>지금까지의 상황을 보고하러 아누 아렌델에 돌아가자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 트리아나</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[아누 아렌델 관문의 트리아나와 대화]]></destination>
+         <todo_msg mid="106"><![CDATA[아누 아렌델 관문으로 돌아가세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="133"><![CDATA[의문의 남자 VI]]></title>
+         <contents mid="134"><![CDATA[<html>아누 아레델의 엘프 트리아나, 아젤리아와 숲을 수색했지만 독이나 수상한 자를 발견하지 못했다.<BR>
+지금까지의 경과를 알리러 아르젠타를 찾아가자.<BR>
+<BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="135"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="136"><![CDATA[아르젠타에게 돌아가 보고하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9286</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

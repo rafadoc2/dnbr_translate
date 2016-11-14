@@ -1,0 +1,262 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9359_traceless</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9359</qid>
+      <designer>최지은</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9360</nextqid>
+      <nextqname>mq15_9360_the_other_hero</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[흔적없는]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>711</npcid>
+         <npcename>n711_warrior_fedro</npcename>
+         <npckname>상급 워리어 페드로</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>810</npcid>
+         <npcename>n810_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-acceptted" mid="9" select_type="3" />
+      <talk_question mid="8"><![CDATA[<html>$상급 워리어 페드로$<BR>오면서 바르낙 님이 왜 로터스마쉬에 계신지 생각해봤는데 말이야.<BR>그분은 카라큘 님과 친분이 깊었으니까, 카라큘 님이 돌아가셨다는 소식을 듣고 조문을 하러 오신 게 아닐까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_WarriorFedro.dds" center_image="">
+      <talk_answer link_index="n711_warrior_fedro-1-" mid="14" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>$상급 워리어 페드로$<BR>카라큘님을 조문하기 위해 오신거라면 페어리스타에 알리는게 좋겠지.<BR><FONT color=#387206>{user_nick}</FONT>, 시델에게 가서 바르낙 님께서 로터스마쉬에 계신다는 이야길 전해주도록 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds " center_image="">
+      <talk_answer link_index="n810_velskud-1-" mid="18" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$벨스커드$<BR>......흥.<BR><FONT color=#7e12d2>(상급 워리어 페드로에게서 퀘스트를 수행할 수 있습니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-a" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$시델$<BR>무슨 일이니,<FONT color=#387206> {user_nick}</FONT>?<BR>뭐 급한 일이라도 생겼니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-b" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$시델$<BR>뭐? 바르낙 님이 오셨다고...?<BR>오랫동안 행방불명되셔서 다들 돌아가신줄로만 알았는데 살아계셨구나.... 다행이다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$시델$<BR>만약 정말이라면, 스승님 영전에 꽃이라도 바쳐 드릴 수 있겠지.<BR>고마운 일이야.<BR>나는 혹시 모르니까 손님 맞을 준비를 해야겠는데, 네가 대신 좀 모셔와 주지 않을래?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_67.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-" mid="29" select_type="5" />
+      <talk_question mid="26"><![CDATA[<html>$시델$<BR>페드로의 말로는<FONT color=#a82424> 맹목의 정원</FONT> 쪽으로 가신 것 같다고 했지?<BR>그곳에 다녀와 줘. 그게 정말로 바르낙 님이면 얼마나 좋을까....<BR>스승님의 옛 친구가 들러 주신다면 나도 마음이 든든할 텐데.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-a" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$벨스커드$<BR>...이상하군.<BR><FONT color=#7e12d2>(벨스커드가 정체불명의 검사가 사라져 간 방향을 노려보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-b" mid="35" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>벨스커드...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-c" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html><FONT color=#2b2723>$벨스커드$<BR>또 네 녀석이냐?<BR>지긋지긋하기가 그 에이션트 녀석들 못지 않군 그래.<BR></FONT><FONT color=#7e12d2>(벨스커드가 조소를 띤다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-d" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html><FONT color=#2b2723>$벨스커드$<BR>아직도 그 여자를 찾아 헤매는 모양이군.<BR>여기에 있다는 보장도 없건만, 한심한 노릇이다.<BR>...하긴, 일루전이 쭉 찾고 있던 것도 바로 그 여자였던 걸지도 모르지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-e" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>......일루전이...?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-f" mid="43" select_type="2" />
+      <talk_question mid="42"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>(그야 일루전이 루나리아에게 집착하고 있었던 건 사실이지만...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-g" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html><FONT color=#2b2723>$벨스커드$<BR>일루전은 자신이 시간을 한 번 뛰어 넘었다고 말했다. 예전에 한 두 번 정도 그런 소리를 했지.<BR>나는 그 말을 믿지 않았지만… 이제와서는 사실일 지도 모른다는 생각이 드는군.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-h" mid="51" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html><FONT color=#2b2723>$벨스커드$<BR>그는 어떤 특별한 물건으로 시간을 조절할 수 있다고 말했다.<BR>그 능력을 쓰기 위해 무언가를 찾고 있었던 건지... 아니면 무언가를 찾기 위해 그 능력을 사용하는 것인지... 그건 나도 모르겠군.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-i" mid="53" select_type="2" />
+      <talk_question mid="52"><![CDATA[<html><FONT color=#2b2723>$벨스커드$<BR>어쨌거나 붉은 군대의 주인인 그 남자는 일루전의 말에 흥미를 느꼈기에, 그를 사도로 받아 주었던 거겠지.<BR>자세한 이야기 따윈 모른다. 너 자신도 모르는 과거를 남에게서 구하다니, 우습군.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-j" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>(...특별한 물건?<BR>그게 루나리아를 가리키는 건가? 아니면… 다른 도구가 있었던 걸까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-k" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>(그런 이야기는 듣지 못했는데. 그런 낌새도 없었고.<BR>...루나리아는 자신의 힘을 전혀 제어할 수 없다고 했었는데....)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-l" mid="59" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html><FONT color=#2b2723>$벨스커드$<BR>여기서는 구질구질한 옛날 그림자들이 죄다 나를 만나러 올 셈인가?<BR>참으로 이상한 곳이다.<BR>도대체 바르낙... 어째서 그 녀석까지 여기에 있는 건지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-m" mid="61" select_type="2" />
+      <talk_question mid="60"><![CDATA[<html><FONT color=#2b2723>$벨스커드$<BR>...거기다 상태도 이상하고. 심상치가 않군.<BR></FONT><FONT color=#7e12d2>(벨스커드가 중얼거린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-2-n" mid="63" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html><FONT color=#2b2723>${user_nick}$<BR></FONT><FONT color=#662500>아! 그렇지...<BR>벨스커드, 바르낙을 만났나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-2-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-3" mid="68" select_type="2" />
+      <talk_question mid="67"><![CDATA[<html><FONT color=#2b2723>$벨스커드$<BR></FONT><FONT color=#7e12d2>(벨스커드가 물끄러미 내려다본다)</FONT><FONT color=#2b2723><BR>세상 만사에 참견할 생각이신가...?<BR>이건 내가 알아볼 테니 네 갈 길이나 가라.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n810_velskud-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Velskud.dds" center_image="">
+      <talk_answer link_index="n810_velskud-3-" mid="75" select_type="5" />
+      <talk_question mid="74"><![CDATA[<html>$벨스커드$<BR>돌아가라, 애송이.<BR><FONT color=#7e12d2>(벨스커드는 더 이상 상대할 생각이 없는 듯 하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-a" mid="78" select_type="2" />
+      <talk_question mid="77"><![CDATA[<html>$시델$<BR>왔구나! <FONT color=#387206>{user_nick}</FONT>!!<BR>바르낙 님은 만났니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-b" mid="81" select_type="2" />
+      <talk_question mid="80"><![CDATA[<html>$시델$<BR>역시.... 바르낙 님의 상태가 이상하셨다는 말이지…?<BR>그렇지 않아도 조금 전까지 바르낙 님에 대한 이야기를 나누던 중이었어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-b" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-c" mid="110" select_type="4" />
+      <talk_question mid="109"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-!next" mid="83" select_type="2" />
+      <talk_question mid="82"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이야기를 나누다니?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9359</exe>
+         <exe type="talk" npc="n711_warrior_fedro">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93590,,,,,,,</exe>
+         <exe type="complete" true="">9359</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n707_sidel" sub="b" />
+   <exelink qstep="1" npc="n707_sidel" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n810_velskud" sub="b" />
+   <exelink qstep="2" npc="n810_velskud" sub="c" />
+   <exelink qstep="2" npc="n810_velskud" sub="d" />
+   <exelink qstep="2" npc="n810_velskud" sub="e" />
+   <exelink qstep="2" npc="n810_velskud" sub="f" />
+   <exelink qstep="2" npc="n810_velskud" sub="g" />
+   <exelink qstep="2" npc="n810_velskud" sub="h" />
+   <exelink qstep="2" npc="n810_velskud" sub="i" />
+   <exelink qstep="2" npc="n810_velskud" sub="j" />
+   <exelink qstep="2" npc="n810_velskud" sub="k" />
+   <exelink qstep="2" npc="n810_velskud" sub="l" />
+   <exelink qstep="2" npc="n810_velskud" sub="m" />
+   <exelink qstep="2" npc="n810_velskud" sub="n" />
+   <exelink qstep="2" npc="n810_velskud" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="b">0</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="c">1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="!next" />
+   <journal_data recompense="93590" quest_title="흔적없는" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[흔적없는 1]]></title>
+         <contents mid="95"><![CDATA[<html>시델에게 가서 페드로의 말을 전하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="97"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_67.dds</contents_image>
+         <destination_pos>671,n810</destination_pos>
+         <destination_mode>custom:671@1</destination_mode>
+         <statemark_npcid>810</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="100"><![CDATA[흔적없는 2]]></title>
+         <contents mid="101"><![CDATA[<html>시델은 페드로의 말이 사실이라면 바르낙을 맞을 준비를 해야겠다고 한다. 그를 대신해 정체불명의 기사를 찾아 데리고 오자.<BR>그는 맹목의 계곡 쪽으로 간 것 같다.<BR><BR><FONT color=#086171>리버워트 선착장(리버워트 폐허)</FONT> <FONT color=#a82424>- 맹목의 계곡</FONT></html>]]></contents>
+         <destination mid="102"><![CDATA[맹목의 계곡 탐색]]></destination>
+         <todo_msg mid="103"><![CDATA[맹목의 계곡에서 바르낙을 찾으십시오.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="105"><![CDATA[흔적없는 3]]></title>
+         <contents mid="106"><![CDATA[<html>정체불명의 검사와 마주친 벨스커드는, 그가 바르낙임을 알아본 것 같다.<BR>그러나 바르낙의 상태를 의아하게 여긴 벨스커드는 말을 아낀다.<BR>시델에게 가서 보고 들은 것을 전하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="107"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="108"><![CDATA[카라큘의 오두막으로 돌아가 시델을 만나세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9358</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

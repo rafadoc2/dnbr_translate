@@ -1,0 +1,277 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9280_crisis_that_has_been_planned</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9280</qid>
+      <designer>강지영</designer>
+      <qlevel>69</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9281</nextqid>
+      <nextqname>mq34_9281_queens_seat</nextqname>
+      <nextqnpc>n1067_elder_elf</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[계획된 위기]]></qkname>
+      <qnpc>
+         <npcid>1066</npcid>
+         <npcename>n1066_geraint_kid</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1067</npcid>
+         <npcename>n1067_elder_elf</npcename>
+         <npckname>엘프 장로</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1077</npcid>
+         <npcename>n1077_elf_guard_basha</npcename>
+         <npckname>엘프 경비병 바샤</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1078</npcid>
+         <npcename>n1078_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-accepting-a" mid="75" select_type="2" />
+      <talk_question mid="5"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9280_01.ogg}<BR>나는 장로로서 여왕 후보를 지키는 것도 생명의 나무를 지키는 것도 할 수 없단 말인가....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-accepting-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-accepting-acceptted" mid="8" select_type="3" />
+      <talk_question mid="7"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>무슨 일이 있었어요? 왜 여기 아무도 없죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$엘프 경비병 바샤$<BR>함께 했던 친구들이 목숨을 잃다니...<BR>
+이렇게 당할 수 만은 없어. 이번엔... 이번엔....<BR><FONT color=#7e12d2>(경비병 바샤의 얼굴에 슬픔과 분노가 가득하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1078_argenta-1" image="QN_Npc_Elder_elf.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1078_argenta-1-" mid="73" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$아르젠타$<BR>뭐야 넌, <FONT color=#a82424>장로</FONT>한테 가보라니까 왜 여기에 돌아온 건데?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1066_geraint_kid-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1066_geraint_kid-1-" mid="74" select_type="5" />
+      <talk_question mid="12"><![CDATA[<html> <BR>
+<FONT color=#7e12d2>(제레인트는 아무 대답도 하지 않는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-a" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9280_02.ogg}<BR>조금 전 마물들이 이 곳을 습격했습니다.<BR>생명의 나무로 향하는 것은 어찌 막을 수 있었지만 이렇게나 많은 이들이 당했지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-b" mid="16" select_type="2" />
+      <talk_question mid="15"><![CDATA[<html>$엘프 장로$<BR>저는... 저는....<BR>동료를 잃은 바샤가 그들이 몰려온 저 사막으로 향하는 것을 미처 말리지 못했습니다.<BR><FONT color=#7e12d2>(엘프 장로가 자신을 책망하며 말을 잇는다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-b" image="QW_76.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-c" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>바샤가 <FONT color=#a82424>모래먼지 바다</FONT></FONT><FONT color=#662500>로 갔다는 말인가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-d" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$엘프 장로$<BR>그렇습니다. 적들이 <FONT color=#a82424>모래먼지 바다 </FONT>방향에서 나타났다면서 말이죠.<BR>이렇게 습격이 계속되는 걸 기다리고만 있지 않겠다면서...<BR><FONT color=#7e12d2>(장로가 안타까운 시선으로 사막을 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-e" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>제가 그녀를 찾아 보겠습니다</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-" mid="24" select_type="5" />
+      <talk_question mid="23"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9280_03.ogg}<BR>마물들이 이렇게 많아지면 여기도 더 위험해 질 테니, 그리 하십시오.<BR>당신이 그쪽을 맡아주십시오. 바샤를 무사히 타일러 데려오시기를 바랍니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2" image="QW_76.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_question mid="25"><![CDATA[<html>$엘프 장로$<BR>어서 <FONT color=#a82424>모래먼지 바다</FONT>로 가서 <FONT color=#a82424>바샤</FONT>를 도와주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-a" mid="27" select_type="2" />
+      <talk_question mid="26"><![CDATA[<html>$엘프 경비병 바샤${sound:npc_AN_Elf_Guard_Basha_qu_9280_01.ogg}<BR>오오 {user_nick}!! 날 도와주러 왔구나….<BR><FONT color=#7e12d2>(바샤의 얼굴에 눈물이 가득하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-b" mid="29" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네, 괜찮으신가요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-c" mid="31" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$엘프 경비병 바샤$<BR>저... 정말 무서웠어. 나는 사실 그리 뛰어난 레인저가 아니었어.<BR>
+그래서 생명의 나무 경비병이 되는 일이야말로 내게 딱 맞는 텔레지아라고 믿었는데...<BR>나와 함께 훈련한 동료들이 모두 죽고. 어흑...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-d" mid="33" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$엘프 경비병 바샤$<BR>그래도 저 분들이 도와주셔서 무사할 수 있었어.<BR>
+정말이지 큰일날 뻔 했다니까.<BR><FONT color=#7e12d2>(바샤가 아르젠타와 제레인트를 가리킨다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-e" mid="37" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>$엘프 경비병 바샤$<BR>그래도 여기까지 적들도 꽤 많이 물리쳤더니 자신이 좀 생겼어. <BR>이제 나 혼자서도 돌아갈 수 있을 것 같아. 그렇지만....<BR><FONT color=#7e12d2>(경비병 바샤의 얼굴에 걱정의 기색이 비춘다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-f" mid="39" select_type="2" />
+      <talk_question mid="38"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>왜 그러세요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-f" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-g" mid="79" select_type="0"><![CDATA[<html>걱정이 된다고요?</html>]]></talk_answer>
+      <talk_answer link_index="n1077_elf_guard_basha-2-g" mid="80" select_type="0"><![CDATA[<html>무얼 하고 있었죠?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$엘프 경비병 바샤${sound:npc_AN_Elf_Guard_Basha_qu_9280_02.ogg}<BR>네게 말하긴 좀 불편한 일인데, 네 수호자 <FONT color=#a82424>유벤시엘</FONT>이라는 분을 봤거든.<BR>
+좀, 걱정이 되어서 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-h" mid="45" select_type="2" />
+      <talk_question mid="44"><![CDATA[<html>$엘프 경비병 바샤$<BR>잘못 본 것일지도 모르지만 그자가 생명의 나무 방향으로 뛰어가면서 주변 마물들에게 뭔가 말하는 것 같았거든.<BR>이곳의 마물을 그자가 지휘하는 것만 같았어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-i" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$엘프 경비병 바샤$<BR>널 지키는 일은 성실히 임했을지 몰라도....<BR>그자는 한번 동족을 배신했던 자니까 경계하라고 하신 장로님의 말이 생각나더라고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-j" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>$엘프 경비병 바샤${sound:npc_AN_Elf_Guard_Basha_qu_9280_03.ogg}<BR>아무래도 생명의 나무가 걱정돼.<BR>마물들과의 전투보다 <FONT color=#a82424>유벤시엘</FONT> 그자의 행방을 찾는 게 더 급한 일 일지도 몰라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_answer link_index="n1077_elf_guard_basha-2-" mid="51" select_type="5" />
+      <talk_question mid="50"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그럼 일단 아누 아렌델로 돌아가죠.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1077_elf_guard_basha-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Basha.dds" center_image="">
+      <talk_question mid="52"><![CDATA[<html>$엘프 경비병 바샤$<BR>내가 돌아가는 길은 걱정하지 않아도 돼. 나도 이제 내 몸쯤은 지킬 수 있으니까.<BR>그것보다 <FONT color=#a82424>유벤시엘</FONT>이 무슨 일을 저지를지 몰라. 서둘러!<BR>
+어서 <FONT color=#a82424>아누 아렌델</FONT>로 돌아가는 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3" image="QN_Npc_yubaensiael.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-a" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9280_04.ogg}<BR>크....큰일입니다. 역시 유벤시엘, 그자가...<BR><FONT color=#7e12d2>(엘프 장로가 상처를 입은 듯 몸을 감싸고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-b" mid="56" select_type="2" />
+      <talk_question mid="55"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>역시... 유벤시엘 님이 이쪽으로 왔나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-c" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>$엘프 장로$<BR>제가 막아보려 했으나 그자가 이미 이 베일 안쪽으로 들어가 버렸습니다.<BR>
+어서 여왕님을....<BR><FONT color=#7e12d2>(엘프 장로가 다급한 표정으로 베일을 들어올린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-!next" mid="77" select_type="4" />
+      <talk_question mid="59"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9280</exe>
+         <exe type="talk" npc="n1067_elder_elf">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92800,,,,,,,</exe>
+         <exe type="complete" true="">9280</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1067_elder_elf" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1067_elder_elf" sub="b" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="c" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="d" />
+   <exelink qstep="1" npc="n1067_elder_elf" sub="e">0,1</exelink>
+   <exelink qstep="1" npc="n1067_elder_elf" sub="" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="b" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="c" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="d" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="e" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="f" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="g" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="g" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="h" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="i" />
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="j">0,1</exelink>
+   <exelink qstep="2" npc="n1077_elf_guard_basha" sub="" />
+   <exelink qstep="3" npc="n1067_elder_elf" sub="b" />
+   <exelink qstep="3" npc="n1067_elder_elf" sub="c">0</exelink>
+   <exelink qstep="3" npc="n1067_elder_elf" sub="!next">1</exelink>
+   <journal_data recompense="92800" quest_title="계획된 위기" chapterid="12" quest_level="69" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[계획된 위기 I]]></title>
+         <contents mid="62"><![CDATA[<html>생명의 나무에 무슨일이 일어난 것일까. 장로와 더 대화를 나눠보자.<BR><BR><FONT color=#086171>신월의 숲 입구</FONT><FONT color=#a82424> - 생명의 나무(엘프 장로)</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="64"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Basha.dds</contents_image>
+         <destination_pos>761,n1077</destination_pos>
+         <destination_mode>custom:761@1,762@1</destination_mode>
+         <statemark_npcid>1077</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[계획된 위기 II]]></title>
+         <contents mid="66"><![CDATA[<html>친구들을 잃고 분노한 엘프 경비병 바샤가 습격한 마물들을 뒤쫓았다고 한다.<BR>그를 도우러 모래먼지 바다로 향하자.<BR><BR><FONT color=#086171>신월의 숲 입구</FONT> <FONT color=#a82424>- 모래먼지 바다(엘프 경비병 바샤)</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[엘프 경비병 바샤와 대화]]></destination>
+         <todo_msg mid="68"><![CDATA[경비병 바샤를 쫓아 모래먼지 바다로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_AnuarendelGateway.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[계획된 위기 III]]></title>
+         <contents mid="70"><![CDATA[<html>모래먼지 바다에서 만난 바샤가 유벤시엘이 의심스러운 행동에 대해 말했다.<BR>그의 행방을 쫓아 생명의 나무로 돌아가자.<BR><BR><FONT color=#086171>신월의 숲 입구</FONT> <FONT color=#a82424>- 생명의 나무(???)</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="72"><![CDATA[생명의 나무로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9279</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

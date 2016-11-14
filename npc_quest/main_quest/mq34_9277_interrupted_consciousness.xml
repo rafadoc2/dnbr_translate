@@ -1,0 +1,184 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9277_interrupted_consciousness</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9277</qid>
+      <designer>강지영</designer>
+      <qlevel>67</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9278</nextqid>
+      <nextqname>mq34_9278_dangerous_advice</nextqname>
+      <nextqnpc>n1067_elder_elf</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[중단된 의식]]></qkname>
+      <qnpc>
+         <npcid>1067</npcid>
+         <npcename>n1067_elder_elf</npcename>
+         <npckname>엘프 장로</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$엘프 장로$<BR>그렇다면 모든 위험은 처음부터 유물을 위한 것이었군요.<BR>콘클라베를 급하게 진행해 유물을 얻을 기회를 얻기위해 독으로 위협을 한 거였어요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-a" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9277_01.ogg}<BR>아누 아렌델의 모든 숲이 근원을 잃고 생명의 나무의 힘을 잃으면 엘프는 곧 다크엘프들처럼 떠돌게 되겠지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-b" mid="10" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$엘프 장로$<BR>벌써 두 개의 근원을 잃었습니다.<BR>이런 때 사막에서 뒤틀린 자들이 숲을 공격하기라도 하면 신월의 숲은 무참히 짓밟혀 폐허가 될 겁니다. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1-b" image="QW_76.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$엘프 장로$<BR>이 상황을 어찌해야 할지 다른 원로분들과 상의해야겠군요.<BR>그동안 당신은 <FONT color=#a82424>모래먼지 바다</FONT>의 마물들을 최대한 막아 숲을 지켜주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2" image="QW_76.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-" mid="40" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>$엘프 장로$<BR>수천 년간 지켜온 신월의 숲이 무너지는 건가....<BR><FONT color=#a82424>모래먼지 바다</FONT>로 가세요. 저들에게서 숲을 지켜야 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-a" mid="15" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>$엘프 장로$<BR><FONT color=#7e12d2>(장로가 걱정이 가득한 얼굴을 하고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-b" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>다녀왔습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-c" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$엘프 장로$<BR>당신 표정을 보니 사막에 꽤 많은 마물들이 숲을 향하고 있나 보군요.<BR>하지만 당신이 그들을 막아낼 수 있을거라 믿었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-d" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9277_02.ogg}<BR>유물과 숲의 비밀을 알게 된 이상, 콘클라베의 의식을 중단하기로 결정했습니다.<BR>이 이상 숲의 근원을 잃는 것은 엘프의 마지막 고향마저 잃는 것이니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-e" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$엘프 장로$<BR>아직 희망이 남은 월식의 계곡을 경비병이 계속 수색을 하고 있습니다.<BR>어서 엘리디안과 수호자를 찾아야 할 텐데....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-f" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$엘프 장로$<BR>하지만 그들의 흔적을 발견하지 못했다는 것은 숲이 아직 그들을 지켜주고 있는 것인지도 모릅니다.<BR>그런 작은 희망이라도 붙잡고 싶은 상황입니다.<BR><FONT color=#7e12d2>(엘프 장로의 주름이 깊어진 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-!next" mid="42" select_type="4" />
+      <talk_question mid="26"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9277</exe>
+         <exe type="talk" npc="n1067_elder_elf">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>몬스터 배치 확인 후 몬스터 수정해야 함</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="5,6,7">601037</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 601037);</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5,6,7">701037</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>사냥 후 스텝 3으로 넘어감</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92770,,,,,,,</exe>
+         <exe type="complete" true="">9277</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1067_elder_elf" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1067_elder_elf" sub="b">0,1,2,4</exelink>
+   <exelink qstep="1" npc="n1067_elder_elf" sub="" />
+   <exelink qstep="3" npc="n1067_elder_elf" sub="b" />
+   <exelink qstep="3" npc="n1067_elder_elf" sub="c" />
+   <exelink qstep="3" npc="n1067_elder_elf" sub="d" />
+   <exelink qstep="3" npc="n1067_elder_elf" sub="e" />
+   <exelink qstep="3" npc="n1067_elder_elf" sub="f">0</exelink>
+   <exelink qstep="3" npc="n1067_elder_elf" sub="!next">1</exelink>
+   <journal_data recompense="92770" quest_title="중단된 의식" chapterid="12" quest_level="67" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[중단된 의식 I]]></title>
+         <contents mid="29"><![CDATA[<html>유물에 대해 장로가 할 이야기가 남은 것 같다. 엘프 장로와 이야기를 더 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 생명의 나무 앞(엘프 장로)</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="31"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_76.dds</contents_image>
+         <destination_pos>761,0,0</destination_pos>
+         <destination_mode>custom:761@3,762@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[중단된 의식 II]]></title>
+         <contents mid="33"><![CDATA[<html>숲의 근원을 지키기 위해 숲으로 몰려 오는 사막의 마물들을 처치해야 한다.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 모래먼지 바다</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[모래먼지 바다 마물 처치]]></destination>
+         <todo_msg mid="35"><![CDATA[모래먼지 바다로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[중단된 의식 III]]></title>
+         <contents mid="37"><![CDATA[<html>모래먼지 바다의 마물들을 처치했다. 엘프 장로를 만나 보고하자.<BR><BR><FONT color=#086171>아누 아렌델 관문<FONT color=#2b2723> </FONT><FONT color=#a82424>- 생명의 나무 앞(엘프 장로)</FONT></FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="39"><![CDATA[아누 아렌델 관문의 장로에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9276</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

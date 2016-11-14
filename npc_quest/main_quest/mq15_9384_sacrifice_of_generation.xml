@@ -1,0 +1,296 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9384_sacrifice_of_generation</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9384</qid>
+      <designer>최지은</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9385</nextqid>
+      <nextqname>mq15_9385_promise_of_start</nextqname>
+      <nextqnpc>n574_shadow_meow</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[시대의 희생자]]></qkname>
+      <qnpc>
+         <npcid>1022</npcid>
+         <npcename>n1022_academic</npcename>
+         <npckname>아카데믹 코멜리나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1026</npcid>
+         <npcename>n1026_academic</npcename>
+         <npckname>XD-30</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>574</npcid>
+         <npcename>n574_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-accepting-acceptted" mid="54" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$그림자 냥$<BR>훌쩍훌쩍 으햐아아아냐아아아아아~…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-a" mid="59" select_type="2" />
+      <talk_question mid="6"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그만 좀 울어… 난 이만 간다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-b" mid="60" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$그림자 냥$<BR>냥냥? 어디가 냥?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-b" image="QW_74.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-c" mid="61" select_type="2" />
+      <talk_question mid="8"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아르누트 협곡. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-d" mid="62" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$그림자 냥$<BR>뭐 뭐라고 냥?!!! 제정신이냐 냥?!! 거긴 절대 가면 안되는 곳이야 냥!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-e" mid="63" select_type="2" />
+      <talk_question mid="10"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>왜? 그냥 협곡 아니야?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-e" image="QM_black_Dragon.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-f" mid="64" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$그림자 냥$<BR>아아아아니야 냥!?! 거긴 50년 전 죽은 블랙드래곤 카라스의 흉악한 독으로 죽은 자들이 묻힌 땅…. 그 독은 50년이 지난 지금도 거기 있을 거라고 냥. 거기를 지키는 수호자들도 독 때문에 괴로워하다가 떠났다는 소문이 있다고 냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-g" mid="65" select_type="2" />
+      <talk_question mid="12"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>잠깐 갔다 오면 괜찮겠지. 게다가 이미 코멜리나는 그쪽으로 갔다고. 나도 얼른 갔다 올게. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-h" mid="66" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$그림자 냥$<BR>아, 안된다니까 냥?! 너 왜 그렇게 무모한 거야 냥!!! 안돼 냥!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1-h" image="QN_Npc_Academic_Commelina.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2" mid="67" select_type="2" />
+      <talk_question mid="14"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…지금 이러고 있는 시간에도 코멜리나는 싸우고 있어. 어서 가 봐야된다구.<BR>(더 이상 말싸움으로 시간을 낭비할 수는 없어… 어서 아카데믹 코멜리나에게 가 봐야겠다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-1-" mid="56" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$아카데믹 코멜리나$<BR>....왜...이래야만…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1026_academic-1" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1026_academic-1-" mid="57" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(누군가를 원망하는 듯 빤히 바라보고 있다. 조금 무섭다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-2" image="QW_74.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-2-" mid="68" select_type="5" />
+      <talk_question mid="17"><![CDATA[<html>$그림자 냥$<BR>안된다니까 냥!!... 휴… 그럼 잠깐 갔다가 얼른 오는 거야 냥??<BR><FONT color=#7e12d2>(그림자냥은 무척 걱정하는 것 같지만, 어쩔 수 없다. 텔 로사 진입로의 아르누트 </FONT><FONT color=#7e12d2>협곡으로 가자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-a" mid="69" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$아카데믹 코멜리나$<BR>XD-30. 자스민은 고대사원에서 도대체 뭘 하려는거죠? 데이지라는 그 소녀는 왜 납치된 건가요!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-a" image="" itemindex="" portrait_left="NPC_Left_Academic_Normal.dds" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-b" mid="75" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$XD-30$<BR>나 원. 배신자 주제에 하나도 아는 게 없다니…우습네. 쿨럭. <BR>큭큭큭…특별히 알려줄게. 데이지는…인간이 아냐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-b" image="" itemindex="" portrait_left="NPC_Left_Academic_Normal.dds" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-c" mid="77" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$아카데믹 코멜리나$<BR>인간이 아니라뇨...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-c" image="" itemindex="" portrait_left="NPC_Left_Academic_Normal.dds" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-d" mid="78" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$XD-30$<BR>너나 나나…클론들은 전부…보옥의…조각인 건 알지…? 그 원형이… 바로 데이지야…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-d" image="" itemindex="" portrait_left="NPC_Left_Academic_Normal.dds" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-e" mid="79" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$아카데믹 코멜리나$<BR>그게 무슨 말이죠?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-e" image="" itemindex="" portrait_left="NPC_Left_Academic_Normal.dds" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-f" mid="80" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$XD-30$<BR>쿡쿡…배신자, 따위에게…말해주기…싫은데? 어차피…죽을 건데. <BR>머리싸매고 실컷 고민해봐…배신자랑… 큭큭… 잊혀질…영웅씨….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-f" image="" itemindex="" portrait_left="NPC_Left_Academic_Normal.dds" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-g" mid="81" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>잊혀질 영웅…?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-g" image="" itemindex="" portrait_left="NPC_Left_Academic_Normal.dds" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-h" mid="82" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>$XD-30$<BR>쿡쿡쿡… 추하게 발버둥쳐봤자 변하는 건 없어…!<BR>XD-26, 너만 운명을 피해 갈 거라고 생각하지 말라고…하하하…! 악…!<BR><FONT color=#7e12d2>(XD-30은 외마디 비명을 지르고 그대로 숨을 거두었다. 움직이지 </FONT><FONT color=#7e12d2>않는다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-i" mid="83" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…코멜리나, 이 클론….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-j" mid="84" select_type="2" />
+      <talk_question mid="28"><![CDATA[<html>$아카데믹 코멜리나$<BR><FONT color=#7e12d2>(목소리가 가늘게 </FONT><FONT color=#7e12d2>떨린다)</FONT>네… 제… 자매중 하나입니다… 그리고… 이 아르누트 협곡을 지나면 나오는 고대사원에 자스민이 있는 모양입니다. 지금 가면 늦지 않을지도 몰라요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-2-k" mid="85" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그렇구나. 그럼 어서…</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-2-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-3" mid="86" select_type="2" />
+      <talk_question mid="30"><![CDATA[<html>$아카데믹 코멜리나$<BR>아닙니다…먼저 가십시오. 저는 조금만 더 여기에 있다가 가겠습니다.<BR><FONT color=#7e12d2>(XD-30의 시체를 물끄러미 보고 있다. 몹시 </FONT><FONT color=#7e12d2>괴로워 보인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1026_academic-2" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="96"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(누군가를 원망하는 듯 빤히 바라보고 있다. 조금 무섭다.) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1022_academic-3" image="QN_NPC_Shadow_Meow.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Academic_Commelina.dds" center_image="">
+      <talk_answer link_index="n1022_academic-3-" mid="70" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>$아카데믹 코멜리나$<BR>금방 따라갈 테니 걱정하지 마세요…저는… 조금만 더….<BR>
+<FONT color=#7e12d2>(금방이라도 울 것 같은 표정을 하고 있다. 일단 그림자 냥에게 돌아가서 무사함을 알리자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-a" mid="71" select_type="2" />
+      <talk_question mid="32"><![CDATA[<html>$그림자 냥$<BR>괜찮냥?! 괜찮냥?! 킁킁… 다행히 괴물이 된 것 같지는 않구나 냥!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-b" mid="72" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$그림자 냥$<BR>휴우… 이유는 잘 모르겠지만 거기 독도 훨씬 약해진 것 같구냥. 아무래도 수호자는 그 땅을 포기하지 않은 모양이냥. 잘됬냥….<FONT color=#7e12d2>(진심으로 안도하는 것 </FONT><FONT color=#7e12d2>같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-c" mid="73" select_type="2" />
+      <talk_question mid="34"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>…그럼 이만 난 가볼게. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-d" mid="74" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>$그림자 냥$<BR>또 어디 냥???</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-e" mid="88" select_type="2" />
+      <talk_question mid="36"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>점령당한 고대사원.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-f" mid="90" select_type="4" />
+      <talk_question mid="89"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-!next" mid="91" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>$그림자 냥$<BR>점령당한 고대사원냥…? 어디 사원 말하는 거지 냥? 아르누트 협곡 근처라면냥….<FONT color=#7e12d2>(그림자 냥은 </FONT><FONT color=#7e12d2>머리를 긁적거리고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9384</exe>
+         <exe type="talk" npc="n574_shadow_meow">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93840,,,,,,,</exe>
+         <exe type="complete" true="">9384</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n574_shadow_meow" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n574_shadow_meow" sub="b" />
+   <exelink qstep="1" npc="n574_shadow_meow" sub="c" />
+   <exelink qstep="1" npc="n574_shadow_meow" sub="d" />
+   <exelink qstep="1" npc="n574_shadow_meow" sub="e" />
+   <exelink qstep="1" npc="n574_shadow_meow" sub="f" />
+   <exelink qstep="1" npc="n574_shadow_meow" sub="g" />
+   <exelink qstep="1" npc="n574_shadow_meow" sub="h" />
+   <exelink qstep="1" npc="n574_shadow_meow" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1022_academic" sub="b" />
+   <exelink qstep="2" npc="n1022_academic" sub="c" />
+   <exelink qstep="2" npc="n1022_academic" sub="d" />
+   <exelink qstep="2" npc="n1022_academic" sub="e" />
+   <exelink qstep="2" npc="n1022_academic" sub="f" />
+   <exelink qstep="2" npc="n1022_academic" sub="g" />
+   <exelink qstep="2" npc="n1022_academic" sub="h" />
+   <exelink qstep="2" npc="n1022_academic" sub="i" />
+   <exelink qstep="2" npc="n1022_academic" sub="j" />
+   <exelink qstep="2" npc="n1022_academic" sub="k" />
+   <exelink qstep="2" npc="n1022_academic" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n574_shadow_meow" sub="b" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="c" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="d" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="e">0</exelink>
+   <exelink qstep="3" npc="n574_shadow_meow" sub="f">1</exelink>
+   <exelink qstep="3" npc="n574_shadow_meow" sub="!next" />
+   <journal_data recompense="93840" quest_title="시대의 희생자" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Shadow_Meow.dds</contents_image>
+         <destination_pos>11,n574</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>574</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[시대의 희생자 1]]></title>
+         <contents mid="39"><![CDATA[<html>그림자 냥에게 안타까운 소식을 전해주자.<BR>그의 생선은 불 속으로 사라져버렸다...<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 그림자 냥</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[그림자 냥과 대화]]></destination>
+         <todo_msg mid="41"><![CDATA[퀘스트가 추가되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_74.dds</contents_image>
+         <destination_pos>741,n1022</destination_pos>
+         <destination_mode>custom:741@1</destination_mode>
+         <statemark_npcid>1022</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[시대의 희생자 2]]></title>
+         <contents mid="43"><![CDATA[<html>아카데믹 코멜리나를 쫓아 아르누트 협곡으로 가자.<BR><BR><FONT color=#086171>리버워트 선착장(텔 로사 진입로)</FONT> <FONT color=#a82424>- 아르누트 협곡</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[아르누트 협곡 탐색]]></destination>
+         <todo_msg mid="45"><![CDATA[아르누트 협곡으로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Shadow_Meow.dds</contents_image>
+         <destination_pos>11,n574</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>574</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[시대의 희생자 3]]></title>
+         <contents mid="47"><![CDATA[<html>XD-30과 코멜리나와의 대화로 많은 것을 알았다.<BR>XD-30의 말로는 아르누트 협곡 근처 점령당한 고대사원에 자스민이 있는 모양인데….<BR>일단 그림자 냥에게 돌아가서 무사함을 알리자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 그림자 냥</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[세인트헤이븐의 그림자 냥과 대화]]></destination>
+         <todo_msg mid="49"><![CDATA[세인트헤이븐의 그림자 냥과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class>7</user_class>
+      <prev_quest>9383</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

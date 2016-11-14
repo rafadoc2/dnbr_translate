@@ -1,0 +1,461 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9269_strange_step</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9269</qid>
+      <designer>강지영</designer>
+      <qlevel>63</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9270</nextqid>
+      <nextqname>mq34_9270_gold_dragon_returns</nextqname>
+      <nextqnpc>n1054_azelia</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[이상한 행보]]></qkname>
+      <qnpc>
+         <npcid>1054</npcid>
+         <npcename>n1054_azelia</npcename>
+         <npckname>아젤리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1057</npcid>
+         <npcename>n1057_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1060</npcid>
+         <npcename>n1060_yuvenciel</npcename>
+         <npckname>아처 유벤시엘</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$상급 아처 이실리엔$<BR>생명의 나무가 위험하다니... 정말 걱정이에요.<BR>바깥세상을 여행 중인 모험자 분들께도 이 상황을 알려야겠죠.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="8" select_type="2" />
+      <talk_question mid="7"><![CDATA[<html>$상급 아처 이실리엔$<BR>그들에게는 제가 알리도록 하겠습니다.<BR>다른 마을에 머무시는 분들과 연락하면 그리 오래 걸리진 않을 거예요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="QW_AnuarendelGateway.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$상급 아처 이실리엔$<BR>당신은 <FONT color=#a82424>아누 아렌델</FONT>로 돌아가세요.<BR>여행 중인 분들이 도착하기 전까지 우리들의 고향을 지켜주세요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-1" image="QN_Npc_Archer_Ishilien.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-1-" mid="12" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$아젤리아$<BR><FONT color=#a82424>세인트헤이븐의 이실리엔</FONT>님과는 만나보셨나요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-1-" mid="14" select_type="5" />
+      <talk_question mid="13"><![CDATA[<html>$아처 유벤시엘$<BR>왜 여기에 당신이....<BR><FONT color=#7e12d2>(유벤시엘이 혼란스러운 표정으로 쳐다본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-1-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$아처 유벤시엘$<BR>왜 여기에 당신이....<BR><FONT color=#7e12d2>(유벤시엘이 혼란스러운 표정으로 쳐다본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Ishilien.dds" center_image="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-" mid="18" select_type="5" />
+      <talk_question mid="17"><![CDATA[<html>$상급 아처 이실리엔$<BR>이 모든 여행이 당신을 숙명으로 이끌어 줄 것입니다. <BR>팔라 텔라지아..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-a" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$아젤리아$<BR>당신이 언제 돌아오나 하고 있었어요. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-b" mid="128" select_type="2" />
+      <talk_question mid="127"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9269_01.ogg}<BR>이 순간에도 용 추종자들이 숲을 망치고 있을 테니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-c" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$아젤리아$<BR>당신이 다녀오는 사이 전 장로님께 상황을 알렸습니다.<BR>장로님께서 당신을 꽤 믿을만한 분이라고 하셨답니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-d" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$아젤리아$<BR>그러고 보니 그들이 청동 그믐달 숲길로 향하는 것을 봤다고 말씀해주셨지요? <BR>시간이 꽤 흘러서 더는 추적이 힘들지도 모르겠군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-e" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그래도 가 봐야죠.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-2-e" image="QW_79.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-2-" mid="28" select_type="5" />
+      <talk_question mid="27"><![CDATA[<html>$아젤리아$<BR>제가 함께 가고 싶지만, 아직 몸이 다 낫지 않았으니 이런 상태로는 오히려 방해될 것 같군요.<BR><FONT color=#a82424>청동 그믐달 숲길</FONT>로 가세요. <FONT color=#387206>{user_nick}</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-3" image="QW_79.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-3-" mid="30" select_type="5" />
+      <talk_question mid="29"><![CDATA[<html>$아젤리아$<BR>제가 함께 가고 싶지만, 아직 몸이 다 낫지 않았으니 이런 상태로는 오히려 방해될 것 같군요.<BR><FONT color=#a82424>청동 그믐달 숲길</FONT>로 가세요. <FONT color=#387206>{user_nick}</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-a" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>$아처 유벤시엘$<BR>......<BR><FONT color=#7e12d2>(아처 유벤시엘이 지그시 바라보고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-b" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$아처 유벤시엘$<BR>......<BR><FONT color=#7e12d2>(먼저 말을 걸어봐야 할 것 같다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-c" mid="146" select_type="0"><![CDATA[<html>사도인가요?</html>]]></talk_answer>
+      <talk_answer link_index="n1057_yuvenciel-3-c" mid="147" select_type="0"><![CDATA[<html>우리의 적인가요?</html>]]></talk_answer>
+      <talk_answer link_index="n1057_yuvenciel-3-c" mid="148" select_type="0"><![CDATA[<html>무슨 일을 꾸미고 있나요?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신은...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-d" mid="38" select_type="2" />
+      <talk_question mid="37"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_01.ogg}<BR>역시 언젠가 카라한이 말한 것처럼 둔한 분이시군요.<BR>그런 점이 더 마음에 들지만요.<BR><FONT color=#7e12d2>(한참 생각에 잠겼던 아처 유벤시엘이 쓴웃음을 지으며 대답한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-e" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>예전에 당신은 저를 도와주셨잖아요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-f" mid="149" select_type="0"><![CDATA[<html>제가 누군가를 닮았기 때문인가요?</html>]]></talk_answer>
+      <talk_answer link_index="n1057_yuvenciel-3-f" mid="150" select_type="0"><![CDATA[<html>당신이 구하지 못한 누군가가 떠올라서요?</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$아처 유벤시엘$<BR>그건 곤란에 처한 것이 그대였기 때문이죠.<BR>곤란해 하는 모습도 싫진 않았지만, 아무래도 그대의 미소가 더 보고 싶었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-g" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_02.ogg}<BR>네. 그래서 그녀와 같은 그대의 얼굴과 눈동자에 그만 손을 잡아버렸죠.<BR>하지만 후회하고 있습니다.<BR>
+순진한 당신을 이곳, 사도들의 목적지까지 끌어들이고 만 것 같아서요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-h" mid="44" select_type="2" />
+      <talk_question mid="43"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>사도들의 목적지요?<BR>여왕님을 다치게 하는 것이 당신들의 목적이었나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-i" mid="138" select_type="2" />
+      <talk_question mid="137"><![CDATA[<html>$아처 유벤시엘$<BR>짓궂은 분이시군요. 제가 곤란해 하는 걸 보기 위해, 일부러 그런 질문을 던지시는 건가요?<BR><FONT color=#387206>{user_nick}</FONT>님이 그렇게 생각하신다면 어쩔 수 없지만, 오해는 풀어야겠지요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-j" mid="46" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_03.ogg}<BR>그대가 생각하는 것과는 달리 숲이 죽어가는 것이 사도들 때문만은 아닙니다.<BR>여왕의 힘이 약해져서 이렇게 황폐해졌다는 것은 알고 계시지 않나요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-k" mid="152" select_type="0"><![CDATA[<html>당신과 토론을 하러 온 것이 아닙니다.</html>]]></talk_answer>
+      <talk_answer link_index="n1057_yuvenciel-3-k" mid="153" select_type="0"><![CDATA[<html>제 질문에 답해 주세요.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_04.ogg}<BR>엘프 여왕의 힘에 의해 종족 전체의 안전이 좌지우지되는 이 세계가 정말 옳을까요?<BR><FONT color=#7e12d2>(유벤시엘이 안타까운 표정으로 나를 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-l" mid="50" select_type="2" />
+      <talk_question mid="49"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저는 당신과 한가하게 대화하려고 여기에 온 게 아닙니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-m" mid="52" select_type="2" />
+      <talk_question mid="51"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_05.ogg}<BR>오, 나르실리아의 따님.<BR>
+그대의 마음을 잃지 않을까 두려워, 모든 진실을 말해버릴 것 같군요.<BR>하지만 제 고민을 아직 어린 그대의 어깨에 지울 수는 없습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-n" mid="54" select_type="2" />
+      <talk_question mid="53"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신의 진실에는 별 관심이 없습니다.</FONT><BR>
+<FONT color=#662500>제가 찾고 있는 것은 이 독극물의 위치입니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-n" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-o" mid="155" select_type="0"><![CDATA[<html>여왕님을 해치려 한다면...</html>]]></talk_answer>
+      <talk_answer link_index="n1057_yuvenciel-3-o" mid="156" select_type="0"><![CDATA[<html>악한 일을 저지르려 하는 것이라면...</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_06.ogg}<BR>그곳이 어딘지는 저 역시 자세히 알지 못합니다. 이곳에서 저는 그저 지켜볼 뿐이거든요.<BR>
+마땅한 때를 기다리며 가련한 그대들의 숙명을 바라만 볼 뿐.<BR>하지만 그대는 그들과 함께 행동하는 저를 비난하시겠지요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-o" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-p" mid="58" select_type="2" />
+      <talk_question mid="57"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>제가 당신들을 저지하겠어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-3-p" image="QW_80.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-3-" mid="60" select_type="5" />
+      <talk_question mid="59"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_07.ogg}<BR>그럼 어디 막아보세요.<BR><FONT color=#7e12d2>(아처 유벤시엘이 월식의 계곡으로 사라집니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-a" mid="62" select_type="2" />
+      <talk_question mid="61"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_08.ogg}<BR>그대가 절 쫓아온다고 생각하니 꽤나 설레는 기분이군요.<BR>이 숨바꼭질을 영원히 할 수 있다면 좋으련만….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-b" mid="64" select_type="2" />
+      <talk_question mid="63"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>전 당신과 놀고 있을 시간이 없어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-c" mid="66" select_type="2" />
+      <talk_question mid="65"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_09.ogg}<BR>제게도 시간이 없습니다.<BR>하지만 그대와 있으면 마치 그녀와 그랬듯이 시간이 멈추는 기분입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-d" mid="158" select_type="0"><![CDATA[<html>당신도 엘프면서...</html>]]></talk_answer>
+      <talk_answer link_index="n1060_yuvenciel-4-d" mid="159" select_type="0"><![CDATA[<html>숲이 죽어가고 있는데...</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$아처 유벤시엘$<BR>이 숲이 보이십니까. 여기도 곧 독에 물들고 생명력을 잃겠죠.<BR>그들은 활발히 움직이고 있으니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-e" mid="70" select_type="2" />
+      <talk_question mid="69"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>당신도 엘프면서, 숲이 죽는데 아무렇지도 않나요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-f" mid="72" select_type="2" />
+      <talk_question mid="71"><![CDATA[<html>$아처 유벤시엘$<BR>그럴리가요. 그래서 이렇게 저들과 따로 움직이지 않습니까?<BR>저는 다른 사도들 처럼 명령에 따르는 꼭두각시가 아닙니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-g" mid="160" select_type="0"><![CDATA[<html>당신을 믿을 수 없어요.</html>]]></talk_answer>
+      <talk_answer link_index="n1060_yuvenciel-4-g" mid="161" select_type="0"><![CDATA[<html>당신을 믿고 싶지만...</html>]]></talk_answer>
+      <talk_question mid="141"><![CDATA[<html>$아처 유벤시엘$<BR>제겐 다른 목적이 있습니다. 우리 종족의 미래가 걸린 일이지요.<BR>당신에게 말해줄 수 있는 건 아주 적지만, 절 믿어주셨으면 하는 욕심이 생기는 군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-h" mid="78" select_type="2" />
+      <talk_question mid="77"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_12.ogg}<BR>이곳엔 지금보다 더 큰 위험이 찾아올 것입니다. 그대의 안전을 위해 제가 알려드릴 것은 그것뿐이지만....<BR>지금은 그대가 그일에 휘말리기 전에 피하길 바라는 부탁은 들어주지 않으실 것 같군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-i" mid="80" select_type="2" />
+      <talk_question mid="79"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>그 위험이란 게 뭐죠?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-j" mid="144" select_type="2" />
+      <talk_question mid="143"><![CDATA[<html>$아처 유벤시엘$<BR>당신은 절 곤란에 빠뜨리기 위해 찾아오신 걸까요?<BR>
+말해서는 안 되는 일조차 당신의 눈을 바라보면 그만 다 털어놓게 되고 마니….<BR>하지만 알려드릴 수밖에 없군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-j" image="QW_78.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-k" mid="82" select_type="2" />
+      <talk_question mid="81"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_13.ogg}<BR>용 추종자와 사도들은 <FONT color=#a82424>황금 초원</FONT>에 모이고 있을 겁니다.<BR>
+그들의 왕을 맞이하기 위해서.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-l" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>사도들의 왕?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-4-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-4-" mid="86" select_type="5" />
+      <talk_question mid="85"><![CDATA[<html>$아처 유벤시엘$<BR>네. 그러니 부디 무사히 살아 남겠다고 약속해 주십시오.<BR>500년 전의 고통을 반복하고 싶지 않으니까요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1057_yuvenciel-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1057_yuvenciel-4-" mid="126" select_type="5" />
+      <talk_question mid="125"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_07.ogg}<BR>그럼 어디 막아보세요.<BR><FONT color=#7e12d2>(아처 유벤시엘이 월식의 계곡으로 사라집니다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1060_yuvenciel-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Yubaensiael.dds" center_image="">
+      <talk_answer link_index="n1060_yuvenciel-5-" mid="88" select_type="5" />
+      <talk_question mid="87"><![CDATA[<html>$아처 유벤시엘${sound:npc_AN_Yuvenciel_qu_9269_11.ogg}<BR>그녀와 같은 원망의 눈빛으로 절 바라보지 마십시오. <BR>전 더 이상 그대에게 드릴 말이 없습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-5" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-5-a" mid="90" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>$아젤리아$<BR>용 추종자들의 수색은 어떻게 되었나요?<BR>
+무언가 발견한 거라도 있으신가요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-5-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-5-b" mid="134" select_type="2" />
+      <talk_question mid="133"><![CDATA[<html>$아젤리아${sound:npc_AN_Archer Agelia_qu_9269_02.ogg}<BR><FONT color=#a82424>용 추종자의 왕</FONT>이 여기에 오고 있다고요?<BR>그 움직임을 쫓으면 독의 위치도 알 수 있겠군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-5-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-5-c" mid="92" select_type="2" />
+      <talk_question mid="91"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>하지만 위험하지 않을까요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-5-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-5-d" mid="121" select_type="2" />
+      <talk_question mid="93"><![CDATA[<html>$아젤리아$<BR>흠.... 그렇겠군요. 그들의 왕이 온다면 <FONT color=#a82424>사도</FONT>라는 자들이 모두 모일지도 모르니까요.<BR>게다가 저는 아직 상처때문에 마음껏 움직일 수가 없고요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1054_azelia-5-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Azelia.dds" center_image="">
+      <talk_answer link_index="n1054_azelia-5-!next" mid="123" select_type="4" />
+      <talk_question mid="122"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9269</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92690,,,,,,,</exe>
+         <exe type="complete" true="">9269</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="a">0,1</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="" />
+   <exelink qstep="2" npc="n1054_azelia" sub="b" />
+   <exelink qstep="2" npc="n1054_azelia" sub="c" />
+   <exelink qstep="2" npc="n1054_azelia" sub="d" />
+   <exelink qstep="2" npc="n1054_azelia" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n1054_azelia" sub="" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="b" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="c" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="c" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="c" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="d" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="e" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="f" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="f" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="g" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="h" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="i" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="j" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="k" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="k" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="l" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="m" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="n" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="o" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="o" />
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="p">0,1</exelink>
+   <exelink qstep="3" npc="n1057_yuvenciel" sub="" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="b" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="c" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="d" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="d" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="e" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="f" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="g" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="g" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="h" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="i" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="j" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="k" />
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="l">0,1</exelink>
+   <exelink qstep="4" npc="n1060_yuvenciel" sub="" />
+   <exelink qstep="5" npc="n1054_azelia" sub="b" />
+   <exelink qstep="5" npc="n1054_azelia" sub="c" />
+   <exelink qstep="5" npc="n1054_azelia" sub="d">0</exelink>
+   <exelink qstep="5" npc="n1054_azelia" sub="!next">1</exelink>
+   <journal_data recompense="92690" quest_title="이상한 행보" chapterid="12" quest_level="63" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n044</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[이상한 행보 I]]></title>
+         <contents mid="96"><![CDATA[<html>아누 아렌델에 찾아온 위기에 대해 세인트헤이븐의 이실리엔에게 알렸다.<BR>그녀의 말을 더 들어보자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 상급 아처 이실리엔</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[상급 아처 이실리엔과 대화]]></destination>
+         <todo_msg mid="98"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Azelia.dds</contents_image>
+         <destination_pos>34,n1054</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1054</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[이상한 행보 II]]></title>
+         <contents mid="100"><![CDATA[<html>이실리엔은 여행중인 자들에게 소식을 전하겠다고 말했다.<BR>아누 아렌델로 돌아가 무엇을 할지 다시 의논해 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아젤리아</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[아젤리아와 대화]]></destination>
+         <todo_msg mid="102"><![CDATA[아누 아렌델로 돌아가 이실리엔의 답변을 전하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_79.dds</contents_image>
+         <destination_pos>792,0,0</destination_pos>
+         <destination_mode>custom:792@4,791@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[이상한 행보 III]]></title>
+         <contents mid="104"><![CDATA[<html>사도들이 도망친 방향을 다시 탐색해 보기로 했다.<BR>청동 그믐달 숲길에서 사도들이 남긴 흔적을 찾아보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 청동 그믐달 숲길(???)</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[청동 그믐달 숲길 탐색]]></destination>
+         <todo_msg mid="106"><![CDATA[청동 그믐달 숲길에서 사도들의 흔적을 찾으세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_79.dds</contents_image>
+         <destination_pos>792,n1057</destination_pos>
+         <destination_mode>custom:792@1</destination_mode>
+         <statemark_npcid>1057</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="115"><![CDATA[이상한 행보 IV]]></title>
+         <contents mid="116"><![CDATA[<html>청동 그믐달 숲길에서 유벤시엘을 다시 만났다.<BR>그와 대화를 나눠보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 청동 그믐달 숲길(아처 유벤시엘)</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[유벤시엘과 대화]]></destination>
+         <todo_msg mid="118"><![CDATA[아처 유벤시엘을 다시 만났습니다.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_80.dds</contents_image>
+         <destination_pos>801,n1060</destination_pos>
+         <destination_mode>custom:801@4</destination_mode>
+         <statemark_npcid>1060</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[이상한 행보 V]]></title>
+         <contents mid="108"><![CDATA[<html>탐색 중에 만난 사도 유벤시엘은 알수 없는 말을 남겼다.<BR>그를 쫓아 월식의 계곡으로 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 월식의 계곡(유벤시엘)</FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[월식의 계곡에서 유벤시엘 추적]]></destination>
+         <todo_msg mid="110"><![CDATA[유벤시엘을 쫓아 월식의 계곡으로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Azelia.dds</contents_image>
+         <destination_pos>34,n1054</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1054</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="111"><![CDATA[이상한 행보 VI]]></title>
+         <contents mid="112"><![CDATA[<html>유벤시엘은 이 곳에 어떤 위험이 다가오고 있는지 알려줬다.<BR>사도들의 왕이 나타난 다는 것을 아젤리아와 다른 엘프들에게 알리자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아젤리아</FONT></html>]]></contents>
+         <destination mid="113"><![CDATA[아젤리아와 대화]]></destination>
+         <todo_msg mid="114"><![CDATA[아누 아렌델 관문의 아젤리아에게 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9268</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

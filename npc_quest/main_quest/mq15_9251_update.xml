@@ -1,0 +1,249 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9251_update</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>11</qchapter>
+      <qid>9251</qid>
+      <designer>곽노찬</designer>
+      <qlevel>60</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9252</nextqid>
+      <nextqname>mq15_9252_find_out_zero</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Update in Progress]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>Huh...? What's wrong?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>- <FONT color=#a82424>ERROR</FONT><BR>- <FONT color=#7e12d2>A fatal error has occurred.</FONT><BR>- <FONT color=#7e12d2>System is not working properly.</FONT><BR>- <FONT color=#7e12d2>Please contact the customer service for more information.</FONT><FONT color=#7e12d2><FONT color=#7e12d2><BR></FONT></FONT><FONT color=#086171>- Berlin Corporation. Hotline : 1800 -xxx-xxxx (Open 24 hours)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="11"><![CDATA[<html>(Hit it with a spanner)</html>]]></talk_answer>
+      <talk_answer link_index="n393_academic_station-1-b" mid="12"><![CDATA[<html>(Explode a Mecha Duck in it)</html>]]></talk_answer>
+      <talk_answer link_index="n393_academic_station-1-c" mid="13"><![CDATA[<html>(Scorch it with Alfredo Beam)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Academic Station$<BR><FONT color=#7e12d2>(Academic Station is not working.</FONT><BR>
+<FONT color=#7e12d2>What should I do?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1" mid="15"><![CDATA[<html>(Look for other ways)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Academic Station$<BR><FONT color=#7e12d2>(A huge spark appeared from Academic Station!</FONT><BR><FONT color=#7e12d2>But it seems like there was no other effect)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1" mid="17"><![CDATA[<html>(Look for other ways)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Academic Station$<BR><FONT color=#7e12d2>(Smoke started to appear from Academic Station.</FONT><BR>
+<FONT color=#7e12d2>>But it seems like there was no other effect)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-c" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-d" mid="19"><![CDATA[<html>(Connect XD-28's communicator)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Academic Station$<BR>
+<FONT color=#7e12d2>(Academic Station has been overheated by the Alfredo Beam!</FONT><BR>
+<FONT color=#7e12d2>System rebooted)</FONT><BR>
+- <FONT color=#a82424>The system is unavailable.</FONT><BR>
+- <FONT color=#086171>Please update to the latest version.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-d" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-e" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Academic Station$<BR>
+- <FONT color=#a82424>Update in progress.</FONT><BR>
+- <FONT color=#086171>Please do not turn the power off while the update is in progress.</FONT><BR>
+- ...<BR>
+- ...<BR>
+- ...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-e" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-f" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Academic Station$<BR>
+- <FONT color=#a82424>The system has been updated.</FONT><BR>
+<FONT color=#7e12d2>(A hidden folder appeared from XD-28's communicator!)</FONT><BR>
+ <BR>
+- <FONT color=#086171>(Hidden Folder)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-f" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-g" mid="27"><![CDATA[<html>Alteia's Ecosystem Report.txt</html>]]></talk_answer>
+      <talk_answer link_index="n393_academic_station-1-h" mid="28"><![CDATA[<html>Game of Drones.avi</html>]]></talk_answer>
+      <talk_answer link_index="n393_academic_station-1-i" mid="29"><![CDATA[<html>Berlin's Inconvenient Truth.mkv</html>]]></talk_answer>
+      <talk_answer link_index="n393_academic_station-1-j" mid="30"><![CDATA[<html>Valkyrie Project.ppt</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Hidden Folder$<BR>
+- <FONT color=#086171>Alteia's Ecosystem Report.txt</FONT> (1,210,898KB)<BR>
+- <FONT color=#086171>Game of Drones.avi</FONT> (420,7258KB)<BR>
+- <FONT color=#086171>Berlin's Inconvenient Truth.mkv</FONT> (699,547KB)<BR>
+- <FONT color=#086171>Valkyrie Project.ppt</FONT> (5,823KB)<BR>
+<FONT color=#7e12d2>(What should I open?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-g" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-f" mid="36"><![CDATA[<html>(Try another one)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Academic Station$<BR>
+- <FONT color=#a82424>This file cannot be opened.</FONT><BR>
+- <FONT color=#7e12d2>The file has been damaged or the file extension is incorrect.</FONT><BR>
+- <FONT color=#7e12d2>Please contact the service center for more information.</FONT><FONT color=#7e12d2><FONT color=#7e12d2><BR></FONT></FONT><FONT color=#086171>- Berlin Corporation. Service Center : 1800-xxx-xxxx (Open 24 hours)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-h" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-f" mid="37"><![CDATA[<html>(Check another one)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Academic Station$<BR>
+<FONT color=#7e12d2>(You see the White Walkers fighting the drones)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-i" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-f" mid="38"><![CDATA[<html>(Check another one)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Academic Station$<BR><FONT color=#7e12d2>(A documentary on the corruptions and conspiracies surrounding the Berlin Corporation is played)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-j" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-k" mid="39"><![CDATA[<html>Valkyrie...?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Academic Station$<BR>
+<FONT color=#7e12d2>(Jasmine's invasion plans are summarized)</FONT><BR>
+Stage 1. <FONT color=#a82424>Project Desert Storm</FONT><BR>
+- <FONT color=#086171>Use Professor K's experiment notes to awaken the Desert Dragon.</FONT><BR>
+Stage 2. <FONT color=#a82424>Project Valkyrie</FONT><BR>
+- <FONT color=#086171>Using the dragon's jewel created by Professor K, create the Valkyrie Army.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-k" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-2" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(A dragon created by Professor K.</FONT><BR><FONT color=#7e12d2>I think I saw something about this in his diary.</FONT><BR><FONT color=#7e12d2>But… use the jewel to make... what?!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QW_73.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Academic Station$<BR><FONT color=#7e12d2>(I need to find it out.</FONT><BR><FONT color=#7e12d2>Jasmine, I will not let your plans succeed!)</FONT><BR><BR>* <FONT color=#7e12d2>Go to Tel Rosa City.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="QN_Npc_Daisy.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-a" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(The little girl taken by Jasmine was...</FONT><BR><FONT color=#7e12d2>...</FONT><BR><FONT color=#7e12d2>...</FONT><BR><FONT color=#7e12d2>Chickie... </FONT><FONT color=#7e12d2>Yes, she's </FONT><FONT color=#7e12d2>Daisy!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-a" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-!next" mid="56"><![CDATA[<html><FONT color=#a94407>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9251</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_npc_Disappoint(userObjID, 393 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92510,,,,,,</exe>
+         <exe type="complete" true="">9251</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="a">2</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="b">2</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="1" />
+   <exelink qstep="1" npc="n393_academic_station" sub="1" />
+   <exelink qstep="1" npc="n393_academic_station" sub="d" />
+   <exelink qstep="1" npc="n393_academic_station" sub="e" />
+   <exelink qstep="1" npc="n393_academic_station" sub="f" />
+   <exelink qstep="1" npc="n393_academic_station" sub="g" />
+   <exelink qstep="1" npc="n393_academic_station" sub="h" />
+   <exelink qstep="1" npc="n393_academic_station" sub="i" />
+   <exelink qstep="1" npc="n393_academic_station" sub="j" />
+   <exelink qstep="1" npc="n393_academic_station" sub="f" />
+   <exelink qstep="1" npc="n393_academic_station" sub="f" />
+   <exelink qstep="1" npc="n393_academic_station" sub="f" />
+   <exelink qstep="1" npc="n393_academic_station" sub="k" />
+   <exelink qstep="1" npc="n393_academic_station" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="a">0</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="92510" quest_title="업데이트를 실행합니다" chapterid="11" quest_level="60" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Update in Progress 1]]></title>
+         <contents mid="59"><![CDATA[<html>An error occurred in Academic Station.<BR>
+Check what the problem is.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>- Academic Station</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Log in to Academic Station]]></destination>
+         <todo_msg mid="61"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_73.dds</contents_image>
+         <destination_pos>731,0,0</destination_pos>
+         <destination_mode>custom:731@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Update in Progress 2]]></title>
+         <contents mid="63"><![CDATA[<html>Jasmine has launched the phase 2 of her plan. You must go to Tel Rosa City to stop her.<BR>
+ <BR>
+<FONT color=#086171>Riverwort Wharf (Tel Rosa Gates)</FONT> <FONT color=#a82424>- Tel Rosa City</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Investigate Tel Rosa City]]></destination>
+         <todo_msg mid="65"><![CDATA[Go to Tel Rosa City.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Update in Progress 3]]></title>
+         <contents mid="67"><![CDATA[<html>By the time you reached Tel Rosa City, the city was already under fire.<BR>
+Jasmine disappeared in the direction of Arnute Canyon taking a little girl with her.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Log in to Academic Station]]></destination>
+         <todo_msg mid="69"><![CDATA[Go back to Saint Haven and log in to Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>9245</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+      <have_cash_item />
+   </condition_data>
+</quest>

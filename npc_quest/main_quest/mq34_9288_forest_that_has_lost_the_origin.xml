@@ -1,0 +1,330 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9288_forest_that_has_lost_the_origin</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9288</qid>
+      <designer>강지영</designer>
+      <qlevel>63</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9289</nextqid>
+      <nextqname>mq34_9289_gold_dragon_returns</nextqname>
+      <nextqnpc>n1047_argenta</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[근원을 잃은 숲]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1065</npcid>
+         <npcename>n1065_geraint_kid</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1085</npcid>
+         <npcename>n1085_rojalin</npcename>
+         <npckname>로잘린데</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$???$<BR>이게 내가 살리려고 했다는 인간인가?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-a" mid="91" select_type="2" />
+      <talk_question mid="90"><![CDATA[<html>$아르젠타$<BR>
+뭐지? 나한테 할 얘기라도 있는거야?<BR>
+저 녀석이랑 이야기가 끝나지 않은 것 같았는데.<BR>
+ <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting-a" image="QN_Npc_geraint_Kid.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-" mid="93" select_type="5" />
+      <talk_question mid="92"><![CDATA[<html>$아르젠타$<BR>
+<FONT color=#7e12d2>(아르젠타가 옆에 서 있는 금발의 검사를 가리키고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="QN_Npc_geraint_Kid.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="9" select_type="5" />
+      <talk_question mid="8"><![CDATA[<html>$아르젠타$<BR>이제야 둘이 만나는군. 그가 너 조금 궁금해했어.<BR><FONT color=#7e12d2>(금발의 검사와 대화를 더 나눠 보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-1-" mid="11" select_type="5" />
+      <talk_question mid="10"><![CDATA[<html>$로잘린데$<BR>너랑 놀 시간 없어. 난 지금 좀 바쁘다구.<BR><FONT color=#7e12d2>(로잘린데는 바람과 같이 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-chk_job_01" mid="13" select_type="2" />
+      <talk_question mid="12"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(몹시 낯익은 얼굴이다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-b" mid="84" select_type="2" />
+      <talk_question mid="83"><![CDATA[<html>$???${sound:npc_AN_Gereint Young_qu_9288_01.ogg}<BR>뭔가 특별한 게 있을까 했더니 그런 건 아니었군. 수많은 케이어스를 포기하면서까지 지켰다더니.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-c" mid="17" select_type="2" />
+      <talk_question mid="16"><![CDATA[<html>$???$<BR>그나저나 그놈들이 뿌린다는 독, 생명의 나무에 큰 영향은 없을걸?<BR>어차피 숲의 정화력은 나무의 보옥과 유물들의 힘으로 유지되는 거잖아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-d" mid="19" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$???${sound:npc_AN_Gereint Young_qu_9288_02.ogg}<BR>중요한건 그 유물. 내 기억엔 여기 어디 있었던 것 같은데,<BR>저 인간이 말한 선지자가 찾고 있다는 물건은, 이곳에 있는 고대인의 유물이 아닐까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-e" mid="21" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>고대인의 유물이요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-f" mid="23" select_type="2" />
+      <talk_question mid="22"><![CDATA[<html>$???$<BR>유물에 대해서는 아르젠타가 더 잘 알고 있겠군.<BR>독 같은 것 보다 유물을 가져간 게 아닌지 확인하는 게 더 중요할 것 같은데?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-f" image="" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-g" mid="25" select_type="2" />
+      <talk_question mid="24"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9288_01.ogg}<BR>응?? 유물이라고? <BR><FONT color=#7e12d2>(아르젠타가 돌연 짜증스러운 표정을 짓는다)<BR></FONT>맞아. 그게 있었지. 나도 정말 멍청해졌군. 어떻게 그걸 까먹을 수 있지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-g" image="QS_Default.dds" itemindex="400394" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-h" mid="27" select_type="0"><![CDATA[<html>숲의 근원이 뭔데요?</html>]]></talk_answer>
+      <talk_answer link_index="n1065_geraint_kid-1-h" mid="28" select_type="0"><![CDATA[<html>어디에 있는데요?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$아르젠타$<BR>그래, 기억 났다구. 그리고 그 유물을 찾으면 선지자가 다시 힘을 되찾는다는 것도 말야.<BR>어휴. 짜증나. <BR>야. 노예 후보! 가서 <FONT color=#a82424>숲의 근원</FONT>이 무사한지 보고 와.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-h" image="" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-i" mid="88" select_type="0"><![CDATA[<html>처음 듣는 이야기예요.</html>]]></talk_answer>
+      <talk_answer link_index="n1065_geraint_kid-1-i" mid="89" select_type="0"><![CDATA[<html>중요한 물건인가봐요?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$아르젠타$<BR>숲의 근원이 뭐냐고? 넌 왜 그런 것도 모르는 거야. 역사 같은 거 공부 안 했어?<BR>엘프의 숲이 생겨날 때 의식을 했던 고대인의 유물이잖아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-i" image="" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-j" mid="32" select_type="2" />
+      <talk_question mid="31"><![CDATA[<html>$아르젠타$<BR>고대인들의 능력을 증폭해주는 기도가 담겨있는 특별한 물건이라 선지자의 손에 들어가면....<BR>잃어버린 힘을 다시 찾을지도 몰라. 아주 골치 아파진다는 말이지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-j" image="QS_Default.dds" itemindex="400398" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-k" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>$아르젠타$<BR>다행인 건 너처럼 둔한 인간들에게는 안보인다는건데. 로잘린데는 선지자였으니..<BR>네가 유물을 보호하려면 부적이라도 하나 줘야겠군.<BR><FONT color=#7e12d2>(아르젠타가 투덜거리며 무언가를 꺼내 쥐여준다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-k" image="" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-l" mid="36" select_type="2" />
+      <talk_question mid="35"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>안보여요? 왜요?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-l" image="QW_80.dds" itemindex="" portrait_left="NPC_Left_Argenta.dds" portrait_right="" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-" mid="38" select_type="5" />
+      <talk_question mid="37"><![CDATA[<html>$아르젠타$<BR>그거야 엘프여왕 보옥의 힘이... 아 귀찮게, 그냥 그런 줄 알면 안 되니?<BR>로잘린데가 보옥을 가져가기 전에 <FONT color=#a82424>월식의 계곡</FONT>으로 얼른 가기나 해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-1-m" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-1-b" mid="95" select_type="2" />
+      <talk_question mid="94"><![CDATA[<html>$???$<BR>인간이라는 녀석들에겐 뭔가 특별한 게 있을까 했더니 그런 것도 아니었군.<BR>
+수많은 케이어스를 포기하면서까지 지켰다더니...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-a" mid="41" select_type="2" />
+      <talk_question mid="40"><![CDATA[<html>$아르젠타$<BR>숲의 근원은 엘프 여왕의 힘으로 숨겨져 있어.<BR>너 같이 둔한 애한텐 안보였을지 몰라서 준 부적이니, 이번엔 찾을 수 있겠지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-2-a" image="QW_80.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-2-" mid="97" select_type="5" />
+      <talk_question mid="42"><![CDATA[<html>$아르젠타$<BR>그럼 잔말말고 <FONT color=#a82424>월식의 계곡</FONT>에 가서 근원을 확인하고 와!<BR>무사하면 아예 흙으로 묻어 버던지 해서 더 깊이 숨겨놓고. 알았어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1065_geraint_kid-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_geraint_Kid.dds" center_image="">
+      <talk_answer link_index="n1065_geraint_kid-2-" mid="45" select_type="5" />
+      <talk_question mid="44"><![CDATA[<html>$???$<BR>아르젠타가 시킨 일이 있을 텐데. 내게 무슨 볼일이지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-g" mid="47" select_type="2" />
+      <talk_question mid="46"><![CDATA[<html>$로잘린데$<BR>또 네 녀석이로군. 무슨 냄새라도 맡고 찾아온 모양이지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-b" mid="49" select_type="2" />
+      <talk_question mid="48"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(로잘린데가 손에 무언가를 들고 있다. 그 유물일까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-c" mid="51" select_type="2" />
+      <talk_question mid="50"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>유물을 돌려줘.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-d" mid="98" select_type="0"><![CDATA[<html>페더라면….</html>]]></talk_answer>
+      <talk_answer link_index="n1085_rojalin-2-e" mid="99" select_type="0"><![CDATA[<html>페더? 그게 누군데?!</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$로잘린데$<BR>내가 왜? 이 로잘린데가 <FONT color=#a82424>페더 </FONT>님한테 능력을 인정받을 기회인데?<BR>이 로잘린데는, 그 늙은 너구리가 하는 쓸데 없는 짓보다 훠~어얼씬 훌륭한 일을 할 수 있다는 점을 말야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-f" mid="55" select_type="2" />
+      <talk_question mid="54"><![CDATA[<html>$로잘린데$<BR>후후후. 벌써 이름만 듣고도 새파랗게 질리는거야? 그래, 우리들의 페더 님!<BR>
+그분은 <FONT color=#a82424>나의 왕, 모든 사도의 왕. 그리고 곧 모든 세계의 왕</FONT>이 되실 분이다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-f" mid="57" select_type="2" />
+      <talk_question mid="56"><![CDATA[<html>$로잘린데$<BR>허! 감히 페더님께 그런 호칭을 붙이다니. 죽고 싶구나, 너?<BR>그분은 <FONT color=#a82424>나의 왕, 모든 사도의 왕. 그리고 곧 모든 세계의 왕</FONT>이 되실 분이다!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-g" mid="100" select_type="2" />
+      <talk_question mid="58"><![CDATA[<html>$로잘린데${sound:npc_AN_Rozalinde_qu_9288_02.ogg}<BR>목숨을 잃고 싶지 않으면 이제 그만 귀찮게 하고 꺼져.<BR>페더님은 나처럼 너그럽지 않으시니, <FONT color=#a82424>레드드래곤</FONT>의 힘을 완전히 깨우치기 전인 지금 도망치라구.<BR>옛정을 봐서라지만 난 너무 착하다니까? 히힛.<BR><FONT color=#7e12d2>(로잘린데가 콧노래를 부르며 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-3" mid="102" select_type="2" />
+      <talk_question mid="101"><![CDATA[<html>$로잘린데$<BR>옛정을 봐서라지만 난 너무 착하다니까? 히힛.<BR><FONT color=#7e12d2>(로잘린데가 콧노래를 부르며 사라진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-2-a" mid="87" select_type="2" />
+      <talk_question mid="86"><![CDATA[<html>$로잘린데${sound:npc_AN_Rozalinde_qu_9288_01.ogg}<BR>하지만 뭐. 지금은 기분이 좋으니 널 죽이진 않겠어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1085_rojalin-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Rojalin.dds" center_image="">
+      <talk_answer link_index="n1085_rojalin-3-" mid="61" select_type="5" />
+      <talk_question mid="60"><![CDATA[<html>$로잘린데$<BR>페더 님께서 오시리라! 우리 모두의 왕! 모든 사도들의 왕이신 그분께서! 아하하하하!<BR><FONT color=#7e12d2>(로잘린데의 요란한 웃음소리가 퍼진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3" image="QN_Npc_Rosalin.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-a" mid="63" select_type="2" />
+      <talk_question mid="62"><![CDATA[<html>$아르젠타${sound:npc_AN_Argenta_qu_9288_03.ogg}<BR>뭐? 그래서 로잘린데랑 사이좋게 노닥거리다가 돌아왔다는 거야?<BR>어쩜 이렇게 번번이 시키는 일조차 못하니? 너 사실 케이어스 드래곤을 돕고 있는 거 아냐?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-b" mid="65" select_type="2" />
+      <talk_question mid="64"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>아니에요! 그래도 중요한 정보를 얻었어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-c" mid="67" select_type="2" />
+      <talk_question mid="66"><![CDATA[<html>$아르젠타$<BR>그래? 쓸만한 내용이 아니면 가만두지 않겠어.<BR><FONT color=#7e12d2>(아르젠타가 주먹을 쥐었다 폈다 하며 내려다본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-3-!next" mid="69" select_type="4" />
+      <talk_question mid="68"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9288</exe>
+         <exe type="talk" npc="n1065_geraint_kid">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>k단계에서 퀘스트 아이템 지급해야 함</comment>
+      <conditions>
+         <chk type="class" op="=">5</chk>
+         <chk type="class" op="=">7</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400398</exe>
+         <exe type="conexe" true="5" false="4">0</exe>
+         <exe type="conexe" true="5" false="6">1</exe>
+         <exe type="talk" npc="n1065_geraint_kid">a</exe>
+         <exe type="talk" npc="n1065_geraint_kid">m</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92881,92881,,92883,92884,92885,92886,92887</exe>
+         <exe type="complete" true="">9288</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1065_geraint_kid" sub="acceptted">0,1</exelink>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="a">0</exelink>
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="chk_job_01">3</exelink>
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="b" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="c" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="d" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="e" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="f" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="g" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="h" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="h" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="i" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="i" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="j" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="k" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="l">0,1,2</exelink>
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="" />
+   <exelink qstep="1" npc="n1065_geraint_kid" sub="b" />
+   <exelink qstep="2" npc="n1047_argenta" sub="" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="b" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="c" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="d" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="e" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="f" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="f" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="g" />
+   <exelink qstep="2" npc="n1085_rojalin" sub="3">0,1</exelink>
+   <exelink qstep="2" npc="n1085_rojalin" sub="a" />
+   <exelink qstep="3" npc="n1047_argenta" sub="b" />
+   <exelink qstep="3" npc="n1047_argenta" sub="c">0</exelink>
+   <exelink qstep="3" npc="n1047_argenta" sub="!next">1</exelink>
+   <journal_data recompense="1:92881,3:92883,4:92884,5:92885,6:92886,7:92887" quest_title="근원을 잃은 숲" chapterid="12" quest_level="63" quest_mark_type="1" use_item_list="400398">
+      <journal index="1">
+         <contents_image>QN_Npc_geraint_Kid.dds</contents_image>
+         <destination_pos>34,n1065</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1065</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[근원을 잃은 숲 I]]></title>
+         <contents mid="72"><![CDATA[<html>용 추종자에 대해 보고하던 중 수상한 금발의 검사가 대화에 끼어들었다. 그와 조금 더 대화해보자. <BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- ???</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[아누 아렌델 관문의 금발의 검사와 대화]]></destination>
+         <todo_msg mid="74"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_80.dds</contents_image>
+         <destination_pos>801,n1085</destination_pos>
+         <destination_mode>custom:801@4</destination_mode>
+         <statemark_npcid>1085</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[근원을 잃은 숲 II]]></title>
+         <contents mid="76"><![CDATA[<html>월식의 계곡에 고대인들의 유물, 숲의 근원이 숨겨져 있다고 한다. <BR>숲의 근원이 무사한지 확인하러 가 보자.<BR><BR><FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 월식의 계곡(???)</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[월식의 계곡 탐색]]></destination>
+         <todo_msg mid="78"><![CDATA[월식의 계곡으로 향하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[근원을 잃은 숲 II]]></title>
+         <contents mid="80"><![CDATA[<html>월식의 계곡에 있다는 숲의 근원은 이미 로잘린데에게 빼앗겼다.<BR>
+아누 아렌델 관문으로 돌아가자.<BR>
+ <BR>
+<FONT color=#086171>아누 아렌델 관문</FONT> <FONT color=#a82424>- 아르젠타</FONT> </html>]]></contents>
+         <destination mid="81"><![CDATA[아누 아렌델 관문의 아르젠타와 대화]]></destination>
+         <todo_msg mid="82"><![CDATA[아누 아렌델 관문으로 돌아가세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9287</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

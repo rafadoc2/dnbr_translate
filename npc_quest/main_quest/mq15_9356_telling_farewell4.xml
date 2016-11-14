@@ -1,0 +1,231 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq15_9356_telling_farewell4</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>8</qchapter>
+      <qid>9356</qid>
+      <designer>최지은</designer>
+      <qlevel>50</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9357</nextqid>
+      <nextqname>mq15_9357_strange_swordman</nextqname>
+      <nextqnpc>n707_sidel</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[작별인사 4]]></qkname>
+      <qnpc>
+         <npcid>707</npcid>
+         <npcename>n707_sidel</npcename>
+         <npckname>시델</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>801</npcid>
+         <npcename>n801_sorceress_tessa</npcename>
+         <npckname>소서리스 텟사</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="189"><![CDATA[<html>$상급 소서리스 타마라$<BR>지금은 나중에 찾아와 주렴.<BR>알았지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-noquest" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_question mid="302"><![CDATA[<html>$소서리스 텟사$<BR>카라큘님이 돌아가셨다니… 믿을 수 없어. 훌쩍….<BR>
+흑흑.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-accepting" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-accepting-acceptted" mid="328" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$시델$<BR>...페어리스타의 지주셨던 분을 이렇게 혼란한 때에 보내야만 한다니 슬플 뿐이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-1" image="QN_Npc_SoceressTamara.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-1-" mid="331" select_type="5" />
+      <talk_question mid="270"><![CDATA[<html>$시델${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>, 마을로 가서 <FONT color=#a82424>타마라</FONT>님을 모셔와 줘.<BR>다른 상급 소서리스분들이 거의 다 도착하신 것 같으니까.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-1-a" mid="333" select_type="2" />
+      <talk_question mid="271"><![CDATA[<html>$상급 소서리스 타마라$<BR>네가 대신 부르러 와 주었구나.<BR>그동안 여러모로 도와줘서 고마워, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-a" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-2" mid="334" select_type="2" />
+      <talk_question mid="273"><![CDATA[<html>$상급 소서리스 타마라$<BR>장례식을 치른 후 배신자 카라한을 치기 위해 상급 소서리스들끼리 의견을 모을 거야.<BR>너도 계속 우리를 도와주길 바라.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sorceress_Tessa.dds" center_image="">
+      <talk_answer link_index="n801_sorceress_tessa-1-" mid="335" select_type="5" />
+      <talk_question mid="303"><![CDATA[<html>$소서리스 텟사$<BR>...아아. 너무너무 슬프니까 더 이상 내게 <FONT color=#a82424>카라큘</FONT>님 이야긴 하지 말아 줘. 흑흑.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-2-" mid="337" select_type="5" />
+      <talk_question mid="275"><![CDATA[<html>$상급 소서리스 타마라${action:Talk}<BR>너도 우리들의... 그리고 시델의 힘이 되어주면 좋겠구나.<BR><FONT color=#7e12d2>(타마라가 리버워트 선착장 쪽으로 몸을 돌렸다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-2" image="QW_LiverwortFerry.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-2-" mid="339" select_type="5" />
+      <talk_question mid="278"><![CDATA[<html>$시델$<BR>...페어리스타의 지주셨던 분을 이렇게 혼란한 때에 보내야만 한다니 슬플 뿐이야.<BR><FONT color=#7e12d2>(시델이 리버워트 선착장 방향을 향해 서 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sorceress_Tessa.dds" center_image="">
+      <talk_answer link_index="n801_sorceress_tessa-2-a" mid="340" select_type="2" />
+      <talk_question mid="304"><![CDATA[<html>$소서리스 텟사$<BR>카라큘님이 돌아가셨다니...<BR>믿을 수 없어. 훌쩍....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sorceress_Tessa.dds" center_image="">
+      <talk_answer link_index="n801_sorceress_tessa-2-b" mid="341" select_type="2" />
+      <talk_question mid="321"><![CDATA[<html>$소서리스 텟사$<BR>상급 소서리스님들이 장례식 때문에 가 버리셨어.<BR>조금 전에 운구행렬이 저쪽으로 가는 걸 봤으니까, 벌써 끝나지 않았을까?<BR>나도 그분의 마지막 모습을 보고 싶었는데...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-2-b" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sorceress_Tessa.dds" center_image="">
+      <talk_answer link_index="n801_sorceress_tessa-3" mid="342" select_type="2" />
+      <talk_question mid="323"><![CDATA[<html>$소서리스 텟사$<BR>그나저나 시델인가 하는 꼬마가 페어리스타의 수장이라니, 난 아직도 믿을 수가 없어.<BR><FONT color=#7e12d2>(카라큘의 장례식이 끝났을 것 같다. 오두막으로 가서 시델을 만나보자)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lotus_SoceressTamara.dds" center_image="">
+      <talk_answer link_index="n713_soceress_tamara-3-" mid="344" select_type="5" />
+      <talk_question mid="305"><![CDATA[<html>$상급 소서리스 타마라$<BR>시델은 카라한의 뒤를 쫓을 생각인 것 같아.<BR>우리를 돕겠다면 <FONT color=#a82424>시델</FONT>에게 가 주지 않겠니?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n801_sorceress_tessa-3" image="QN_Npc_Sidel.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sorceress_Tessa.dds" center_image="">
+      <talk_answer link_index="n801_sorceress_tessa-3-" mid="345" select_type="5" />
+      <talk_question mid="307"><![CDATA[<html>$소서리스 텟사$<BR>새로운 페어리스타의 단장이 그런 <FONT color=#a82424>꼬마</FONT>라니.<BR>...어디 두고 볼 테야. 페어리스타의 이름이 더러워지지 않도록.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-a" mid="349" select_type="2" />
+      <talk_question mid="308"><![CDATA[<html>$시델$<BR><FONT color=#387206>{user_nick}</FONT>, 왔구나.<BR>다른 상급 소서리스분들도 페어리스타의 수치는 페어리스타의 손으로 <BR>
+결착을 짓자는 내 말에 동의해 주셨어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-a" image="QN_Npc_karahan.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-b" mid="350" select_type="2" />
+      <talk_question mid="311"><![CDATA[<html>$시델${action:Talk}<BR><FONT color=#a82424>카라한</FONT>은 이미 네스트를 만들 만큼 강해졌지. <BR>
+그에게 힘을 보태줄 고대의 유물도 거의 다 모은 것 같고.<BR>그런데도 그린 드래곤으로 완전히 변하지 못한 걸 보면,<BR>
+유물 말고도 <FONT color=#a82424>다른 무언가</FONT>가 남아 있을 거라고 생각해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-c" mid="355" select_type="2" />
+      <talk_question mid="354"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>다른 무언가가 있다고?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-d" mid="352" select_type="2" />
+      <talk_question mid="313"><![CDATA[<html>$시델$<BR>응. 그것에 관해 짚이는 데가 있어서, 아까 와 주셨던 상급 소서리스들의 조언을 받아 고대의 문헌을 조사해 봤어.<BR>차티의 부족 사람들에게 부족의 전승에 대해서 듣기도 했고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-d" image="QN_Npc_OldKarakule.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-e" mid="357" select_type="2" />
+      <talk_question mid="315"><![CDATA[<html>$시델$<BR>카라한은 페어리스타의 수치. 차티와 카라큘님의 복수를 위해서, 그리고 내가 그와는 다른 인간이란 걸 증명하기 위해서라도... 그의 결착은 우리들이 지을 거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-e" image="" itemindex="" portrait_left="" portrait_right="" center_image="">
+      <talk_answer link_index="n707_sidel-3-f" mid="366" select_type="4" />
+      <talk_question mid="317"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n707_sidel-3-f" image="QN_Npc_Lotus_WarriorFedro.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Sidel.dds" center_image="">
+      <talk_answer link_index="n707_sidel-3-!next" mid="368" select_type="2" />
+      <talk_question mid="324"><![CDATA[<html>$시델$<BR>그러고보니, <FONT color=#a82424>상급 워리어 페드로</FONT>가 네게 부탁할 일이 있다고 하던데...<BR>지금이라면 괜찮으니까 마을에 가서 만나봐.<BR>고대의 문헌에 대한 조사는 끝나는 데로 연락을 줄게.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9356</exe>
+         <exe type="talk" npc="n707_sidel">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93560,,,,,,,</exe>
+         <exe type="complete" true="">9356</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n707_sidel" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n801_sorceress_tessa" sub="b" />
+   <exelink qstep="2" npc="n801_sorceress_tessa" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="b" />
+   <exelink qstep="3" npc="n707_sidel" sub="c" />
+   <exelink qstep="3" npc="n707_sidel" sub="d" />
+   <exelink qstep="3" npc="n707_sidel" sub="e">0</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="f">1</exelink>
+   <exelink qstep="3" npc="n707_sidel" sub="!next" />
+   <journal_data recompense="93560" quest_title="작별인사 4" chapterid="8" quest_level="50" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="289"><![CDATA[회의]]></title>
+         <contents mid="290"><![CDATA[<html>상급 소서리스 타마라와 장례 준비와 회의에 대해 대화하자.<BR><BR><FONT color=#086171>로터스마쉬</FONT> <FONT color=#a82424>- 상급 소서리스 타마라</FONT></html>]]></contents>
+         <destination mid="291"><![CDATA[로터스마쉬의 상급 소서리스 타마라와 대화]]></destination>
+         <todo_msg mid="292"><![CDATA[상급 소서리스 타마라에게 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressYulliaPrison.dds</contents_image>
+         <destination_pos>14,n801</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>801</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="293"><![CDATA[작별]]></title>
+         <contents mid="294"><![CDATA[<html>장례식이 진행될 예정인 듯 하다. 잠깐 시간을 보내며 묵념하도록 하자.<BR><BR><FONT color=#086171>리버워트 선착장 </FONT><FONT color=#a82424>- 소서리스 텟사</FONT></html>]]></contents>
+         <destination mid="295"><![CDATA[리버워트 선착장의 소서리스 텟사와 대화]]></destination>
+         <todo_msg mid="296"><![CDATA[소서리스 텟사와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Sidel.dds</contents_image>
+         <destination_pos>14,n707</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>707</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="297"><![CDATA[시델의 의지]]></title>
+         <contents mid="298"><![CDATA[<html>카라큘의 오두막에서 시델과 대화하자.<BR><BR><FONT color=#086171>리버워트 선착장(카라큘의 오두막)</FONT> <FONT color=#a82424>- 시델</FONT></html>]]></contents>
+         <destination mid="299"><![CDATA[카라큘의 오두막의 시델과 대화]]></destination>
+         <todo_msg mid="300"><![CDATA[카라큘의 오두막으로 돌아가 시델과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9355</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

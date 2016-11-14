@@ -1,0 +1,280 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq34_9279_queens_face</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>12</qchapter>
+      <qid>9279</qid>
+      <designer>강지영</designer>
+      <qlevel>69</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9280</nextqid>
+      <nextqname>mq34_9280_crisis_that_has_been_planned</nextqname>
+      <nextqnpc>n1067_elder_elf</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[여왕의 얼굴]]></qkname>
+      <qnpc>
+         <npcid>1047</npcid>
+         <npcename>n1047_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1067</npcid>
+         <npcename>n1067_elder_elf</npcename>
+         <npckname>엘프 장로</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1076</npcid>
+         <npcename>n1076_elf_queen</npcename>
+         <npckname>여왕 나르실리아</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-accepting-acceptted" mid="6" select_type="3" />
+      <talk_question mid="5"><![CDATA[<html>$아르젠타$<BR>하! 정말 일이 복잡해졌군.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-1-" mid="8" select_type="5" />
+      <talk_question mid="7"><![CDATA[<html>$엘프 장로$<BR><FONT color=#7e12d2>(장로는 경비병들의 대화로 바빠 보인다. <BR>그러고 보니 오는 길에 있던 아르젠타가 할 말이 있어 보였다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1076_elf_queen-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Nerwin.dds" center_image="">
+      <talk_answer link_index="n1076_elf_queen-1-" mid="10" select_type="5" />
+      <talk_question mid="9"><![CDATA[<html>$여왕 나르실리아$<BR>자격 있는 아이로구나. 하지만 아직 선택의 시간이 되지 않았으니 나가보거라.<BR>하지만 너와는 곧 다시 만날 것 같구나.<BR><FONT color=#7e12d2>(나르실리아의 얼굴에 엷은 미소가 퍼진다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-a" mid="12" select_type="2" />
+      <talk_question mid="11"><![CDATA[<html>$아르젠타$<BR>로잘린데가 여기서 뭘 하고 다니는지는 대충 들었지?<BR>우두머린지 왕인지 하는 놈이랑 만나는 곳도 알아내서 이제 그쪽에 가려던 참이었다고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-b" mid="14" select_type="2" />
+      <talk_question mid="13"><![CDATA[<html>$아르젠타$<BR>그런데 생명의 나무가 죽어버리면 다 꽝이잖아? <BR>너희 엘프들은 내가 이렇게까지 지켜줬는데 여왕 후보 몇 명 살려두는 것도 못하니?<BR>
+어휴 답답해.<BR><FONT color=#7e12d2>(아르젠타가 몹시 짜증 난 모양이다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1047_argenta-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n1047_argenta-1-" mid="16" select_type="5" />
+      <talk_question mid="15"><![CDATA[<html>$아르젠타$<BR>장로를 만나러 갈 거라고 했지? 엘프 여왕을 어떻게든 잘 지키라고 전해.<BR>우리가 저 성가신 놈들을 다 쓸어버릴 때까지 말야. 알았어?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-a" mid="18" select_type="2" />
+      <talk_question mid="17"><![CDATA[<html>$엘프 장로$<BR>엘리디안은 어찌 되었습니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-b" mid="20" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d2>(있었던 일을 설명한다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-level_check" mid="22" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$엘프 장로$<BR>슬픈 소식이 연달아 당도하니, 괴롭군요.<BR>
+그래도 월식의 계곡 유물은 지킨 것 같아 다행입니다.<BR>
+엘리디안의 죽음을 애도 할 겨를 도 없이 숲을 지킨 것에 안도하는 상황이라니....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-d" mid="24" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$엘프 장로$<BR>게다가 나르실리아 님의 힘이 약해지고 있습니다.<BR>
+아르젠타 님 우려처럼 더는 여왕 승계를 미룰 수 없는 때가 되었군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-e" mid="26" select_type="2" />
+      <talk_question mid="25"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>하지만 콘클라베는 중단되었잖아요. 후보들도 전부....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-f" mid="28" select_type="2" />
+      <talk_question mid="27"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9279_02.ogg}<BR>많은 일이 있어 저 역시 생각하지 못했지만, 다행히 <FONT color=#a82424>한 명의 여왕 후보</FONT>가 살아남았지요.<BR>문득 이것이 다음 여왕을 위해 정해진 길일지도 모른다는 생각이 들었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-g" mid="30" select_type="2" />
+      <talk_question mid="29"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>한 명의 여왕 후보? 설마....</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-g" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-h" mid="74" select_type="0"><![CDATA[<html>저는 모험을 계속하고 싶어요.</html>]]></talk_answer>
+      <talk_answer link_index="n1067_elder_elf-2-h" mid="75" select_type="0"><![CDATA[<html>저는 준비가 안 됐는데요...</html>]]></talk_answer>
+      <talk_answer link_index="n1067_elder_elf-2-h" mid="76" select_type="0"><![CDATA[<html>저는 여왕이 될 수 없어요!</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9279_03.ogg}<BR>그렇습니다. <FONT color=#387206>{user_nick}</FONT> 님. 당신은 여왕의 자격을 갖추고 순례를 마친 유일한 여왕 후보이지요.<BR>나르실리아 님을 알현하세요. 다음에 볼 때에는 여왕이 되어 있을지도 모르겠군요.<BR><FONT color=#7e12d2>(장로의 얼굴에 힘겨운 미소가 어린다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-i" mid="34" select_type="2" />
+      <talk_question mid="33"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저는 아직 제 텔레지아가 무엇인지 모르겠습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-i" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-" mid="36" select_type="5" />
+      <talk_question mid="35"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9279_04.ogg}<BR>텔레지아를 따르세요.<BR>당신에게 여왕의 길이 주어진 것이 아니었다면, 지금 모든 일이 이런 모습으로 흐르지 않았을 것입니다.<BR><FONT color=#7e12d2>(장로가 생명의 나무의 베일을 열고 부드럽게 {user_nick}의 등을 밀어 준다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-2-j" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-2-" mid="73" select_type="5" />
+      <talk_question mid="72"><![CDATA[<html>$엘프 장로$<BR>게다가 나르실리아님의 힘이 약해지고 있습니다.<BR>
+<BR><FONT color=#7e12d2>(엘프 장로가 생각에 잠겨 더 이상 말을 꺼내지 않습니다.</FONT><BR><FONT color=#7e12d2>69Lv 이후에 다시 찾아오세요)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-3-" mid="38" select_type="5" />
+      <talk_question mid="37"><![CDATA[<html>$엘프 장로$<BR>이번 콘클라베는 정말 특이했군요. 단 한명의 후보만 살아남다니....<BR>하지만 우리에게 준비된 숙명 중 하나이겠죠. 더는 망설이지 마십시오. 나르실리아 여왕님을 알현하세요.<BR><FONT color=#2b2723><BR></FONT><FONT color=#7e12d2><FONT color=#7e12d2>(장로가 생명의 나무의 베일을 열고 부드럽게 {user_nick}의 등을 밀어 준다)</FONT></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-4-a" mid="40" select_type="2" />
+      <talk_question mid="39"><![CDATA[<html>$엘프 장로${sound:npc_AN_Elf Elder_qu_9279_05.ogg}<BR>아니 왜 그냥 나왔습니까....<BR>여왕께서 결정을 내리지 않으신겁니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-4-b" mid="42" select_type="2" />
+      <talk_question mid="41"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>이곳의 소란으로 알현이 중지되었어요.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-4-c" mid="68" select_type="2" />
+      <talk_question mid="45"><![CDATA[<html>$엘프 장로$<BR><FONT color=#7e12d2>(장로가 안타까운 표정을 짓는다)<BR></FONT>콘클라베는 생명의 나무와 여왕 후보가 숲의 기운을 느끼고 하나 되어야 하는 의식....<BR>숲의 기운이 이리도 어지러우니 그럴 만도 하군요.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1067_elder_elf-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elder_elf.dds" center_image="">
+      <talk_answer link_index="n1067_elder_elf-4-!next" mid="70" select_type="4" />
+      <talk_question mid="69"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1076_elf_queen-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Nerwin.dds" center_image="">
+      <talk_answer link_index="n1076_elf_queen-4-" mid="66" select_type="5" />
+      <talk_question mid="64"><![CDATA[<html>$여왕 나르실리아$<BR>너무 소란스럽구나, 아이야. 이런 소란 속에선 생명의 나무의 바람 소리조차 들리지 않아.<BR>바깥을 살펴봐 주지 않으련?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9279</exe>
+         <exe type="talk" npc="n1047_argenta">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">69</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="talk" npc="n1067_elder_elf">c</exe>
+         <exe type="talk" npc="n1067_elder_elf">j</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">92790,,,,,,,</exe>
+         <exe type="complete" true="">9279</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n1047_argenta" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="b">0,1</exelink>
+   <exelink qstep="1" npc="n1047_argenta" sub="" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="b" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="level_check">4</exelink>
+   <exelink qstep="2" npc="n1067_elder_elf" sub="d" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="e" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="f" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="g" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="h" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="h" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="h" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="i">0,1</exelink>
+   <exelink qstep="2" npc="n1067_elder_elf" sub="" />
+   <exelink qstep="2" npc="n1067_elder_elf" sub="" />
+   <exelink qstep="4" npc="n1067_elder_elf" sub="b" />
+   <exelink qstep="4" npc="n1067_elder_elf" sub="c">0</exelink>
+   <exelink qstep="4" npc="n1067_elder_elf" sub="!next">1</exelink>
+   <journal_data recompense="92790" quest_title="여왕의 얼굴" chapterid="12" quest_level="69" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>34,n1047</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1047</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[여왕의 얼굴 I]]></title>
+         <contents mid="48"><![CDATA[<html>엘프의 콘클라베가 중지된 것을 아르젠타에게 알렸다. 아르젠타와 대화를 나눠 보자.<BR>
+ <BR>
+<FONT color=#086171>신월의 숲 입구</FONT> <FONT color=#a82424>- 아르젠타</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[아르젠타와 대화]]></destination>
+         <todo_msg mid="50"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[여왕의 얼굴 II]]></title>
+         <contents mid="52"><![CDATA[<html>아르젠타는 여왕의 힘이 약해지는 것을 걱정하고 있었다. 이를 엘프 장로에게 전하자.<BR><BR>
+<FONT color=#7e12d2>※ 69Lv 이상이 되어야 다음으로 진행할 수 있습니다.</FONT><BR>
+<BR><FONT color=#086171>신월의 숲 입구</FONT> <FONT color=#a82424>- 생명의 나무(엘프 장로)</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="54"><![CDATA[생명의 나무의 엘프 장로를 찾아가세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Elf_Narsilia.dds</contents_image>
+         <destination_pos>34,n1076</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[여왕의 얼굴 III]]></title>
+         <contents mid="56"><![CDATA[<html>엘프 장로는 단 하나 남은 여왕 후보로서 엘프의 여왕을 만나라고 말했다. <BR>마음을 정하기 위해 엘프 여왕을 알현해야 한다.<BR><BR><FONT color=#086171>신월의 숲 입구</FONT> <FONT color=#a82424>- 생명의 나무(베일 안)</FONT><BR>
+ <BR>
+<FONT color=#7e12d2>(파티 상태에서는 진행할 수 없는 퀘스트입니다)</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[(1인) 여왕 알현]]></destination>
+         <todo_msg mid="58"><![CDATA[생명의 나무 안쪽으로 들어가 여왕을 만나세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Elder_elf.dds</contents_image>
+         <destination_pos>34,n1067</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>1067</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[여왕의 얼굴 IV]]></title>
+         <contents mid="60"><![CDATA[<html>엘프 여왕을 만났다. 하지만 대화를 마치기도 전에 소란으로 알현이 중지되었다.<BR>베일 바깥으로 나가 무슨 일이 일어난 것인지 알아보자.<BR><BR><FONT color=#086171>신월의 숲 입구</FONT> <FONT color=#a82424>- 생명의 나무(???)</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[엘프 장로와 대화]]></destination>
+         <todo_msg mid="62"><![CDATA[베일 밖에 무슨일이 생겼는지 확인하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_class />
+      <prev_quest>9278</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>
