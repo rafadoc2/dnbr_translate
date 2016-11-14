@@ -1,0 +1,272 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_205_ancient_relic</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>205</qid>
+      <designer>김주연</designer>
+      <qlevel>12</qlevel>
+      <qdesc>300030 순종의 팬던트는 당장 지우지 않음</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>206</nextqid>
+      <nextqname>mq08_206_surprise_attack</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[Ancient Relic]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-noquest" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="86"><![CDATA[<html>$Master Cleric Jermain$<BR><FONT color=#a82424>Heraldry Scholar Bailey</FONT> knows many things.<BR>It would be a good idea to ask him for some advice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceptted" mid="88"><![CDATA[<html>(Ask about the Pendant of the Pure.)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>Ah, you are <FONT color=#387206>{user_class} {user_nick}</FONT>!<BR>How are you feeling? You don't look very well…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="6"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>The <FONT color=#a82424>Pendant of the Pure</FONT>, eh? I remember Cleric William owned one. Try asking his disciple, Master Cleric Jermain.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="8"><![CDATA[<html>(Ask about the ancient relic.)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The <FONT color=#a82424>Pendant of the Pure</FONT>…? The Black Knight seems to be greatly interested in <FONT color=#a82424>ancient relics</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Ancient relics are treasures left behind by the Ancients, the people who served the Goddess long ago.<BR>Under the blessing of the Goddess, they acquired deep knowledge about <FONT color=#a82424>heraldry</FONT> and <FONT color=#a82424>jewels</FONT>, but they disappeared into history due to unknown reasons. All that is left about them are their relics.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Cleric Jermain$<BR><FONT color=#a82424>Heraldry Scholar Bailey</FONT> knows many things.<BR>It would be a good idea to ask him for some advice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Heraldry Scholar Bailey$<BR><FONT color=#a82424>Master Cleric Jermain</FONT> was a disciple of Priest William. He should be able to help you with the details of that pendant.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="16"><![CDATA[<html>Do you happen to have the Pendant of the Pure with you?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Cleric Jermain$<BR>Hello there.<BR>I'm worried about the <FONT color=#a82424>Prophet</FONT>. She must be terrified with the Black Knight.<BR>We have to save her as soon as possible…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="18"><![CDATA[<html>Where is William right now?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Cleric Jermain$<BR>The Pendant of the Pure? That's what my master, <FONT color=#a82424>Master Cleric William</FONT> always carried with him...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>My master… He took part in the Monster Struggle to fight the monsters in <FONT color=#a82424>Forest of Death</FONT> long time ago… and he was martyred there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-c" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-d" mid="26"><![CDATA[<html>I see. I will look for it at the Forest of Death myself.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Master Cleric Jermain$<BR>The Forest of Death was engulfed with a poisonous cloud during that time. Due to that, I wasn't able to recover my master's body...<BR>The poison cloud even turned some of the fallen into ghouls...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3" mid="65"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Cleric Jermain$<BR>I should have recovered his remains...<BR>When you're there, could you bring his remains back too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="QW_17.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Master Cleric Jermain$<BR>Thank you...the <FONT color=#a82424>Pendant of the Pure</FONT> should still be on him if you find his remains in the <FONT color=#a82424>Forest of Death</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n034_cleric_master_germain-4-a" mid="30"><![CDATA[<html>(You tell him about what happened in the Forest of Death.)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Cleric Jermain$<BR>Did you find his remains and the <FONT color=#a82424>Pendant of the Pure</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-a" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-b" mid="32"><![CDATA[<html>The monster refused to let it go...</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Cleric Jermain$<BR>What...?<BR><FONT color=#a82424>Ghoul Baldness</FONT> was wearing the <FONT color=#a82424>Pendant of the Pure</FONT>? How is that possible? Are you saying that monster messed with my master's remains and stole it from him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-c" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Master Cleric Jermain$<BR>Ahh… ah… master…<BR>(Jermain is sobbing)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-d" mid="36"><![CDATA[<html>Are you saying that the blue ghoul was William?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Master Cleric Jermain$<BR>(Jermain continues weeping.)<BR>Master... how could it be... how could you be wandering the earth as the undead...even after your sacrifice...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-d" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-e" mid="38"><![CDATA[<html>I see… I'm sorry.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Master Cleric Jermain$<BR>I guess that's the only way a ghoul could wear the holy <FONT color=#a82424>Pendant of the Pure</FONT>.<BR>Though he had become an undead, his deep faith must have protected him from being destroyed by the holy powers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-e" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-f" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>I'm okay now...<BR>He must be by the Goddess's side in peace now...<BR>(He turns to the skies and shouts) Master, please rest in peace…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-g" mid="46"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-g" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-h" mid="83"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Master Cleric Jermain$<BR>We still have to figure out how this happened. Sometimes, great bitterness and regret may cause the dead to continue wandering the earth...however, for a cleric...it is unheard of. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-h" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-!next" mid="85"><![CDATA[<html>(Jermain looks desperate)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Master Cleric Jermain$<BR>Clearly, some corrupted monsters or mad magicians had something to do with this.<BR>We must find the ones behind this, and punish them for their insolence!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-5" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-5-a" mid="78"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Master Cleric Jermain$<BR>We still have to figure out how this happened. Sometimes, great bitterness and regret may cause the dead to continue wandering the earth...however, for a cleric...it is unheard of. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-5-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-5-!next" mid="80"><![CDATA[<html>Uh-huh.</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Master Cleric Jermain$<BR>Clearly, some corrupted monsters or mad magicians had something to do with this.<BR>We must find the ones behind this, and punish them for their insolence!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">205</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>300030 - 순종의 팬던트 
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">433</exe>
+         <exe type="huntitem" num="1" exe="" onexe="4,5,6">300030</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300030</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200433</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2051,2051,2052,2053,2054,2056,2056</exe>
+         <exe type="complete">205</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">205</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="3">2,8,3,0,1</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="e" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="f">0</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="g">1</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="h" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="!next" />
+   <exelink qstep="5" npc="n034_cleric_master_germain" sub="!next">0</exelink>
+   <journal_data recompense="1:2051,2:2052,3:2053,4:2054,6:2056" quest_title="고대인의 유물" chapterid="2" quest_level="12" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,-2694,-3175</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Talk to Heraldry Scholar Bailey]]></title>
+         <contents mid="48"><![CDATA[<html>Talk to <FONT color=#a82424>Heraldry Scholar Bailey </FONT> about the <FONT color=#a82424>Pendant of the Pure</FONT>. It acts as a key to the Sleepers' Temple.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424> → Heraldry Scholar Bailey </FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="50"><![CDATA[Talk to Heraldry Scholar Bailey.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,-2383,2325</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Talk to Master Cleric Jermain]]></title>
+         <contents mid="52"><![CDATA[<html>Speak to <FONT color=#a82424>Jermain</FONT> about the <FONT color=#a82424>Pendant of the Pure</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Talk to Master Cleric Jermain]]></destination>
+         <todo_msg mid="54"><![CDATA[Talk to Master Cleric Jermain.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_GhoulBlue.dds</contents_image>
+         <destination_pos>134,-11.58,698.30</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@1,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Find the Pendant of the Pure]]></title>
+         <contents mid="56"><![CDATA[<html>Recover Priest William's <FONT color=#a82424>remains</FONT> and his <FONT color=#a82424>Pendant of the Pure</FONT> from the <FONT color=#a82424>Forest of Death</FONT>.<BR><BR><FONT color=#086171>Lower Ridge</FONT> <FONT color=#a82424> → Forest of Death</FONT><BR><FONT color=#a82424></FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Find the Pendant of the Pure]]></destination>
+         <todo_msg mid="58"><![CDATA[Find the Pendant of the Pure in the Forest of Death.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,-2383,2325</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Talk to Master Cleric Jermain]]></title>
+         <contents mid="60"><![CDATA[<html>You have obtained the Pendant of the Pure from Ghoul Baldness at the Forest of Death.<BR>Go back to <FONT color=#a82424>Calderock Village</FONT> and talk to <FONT color=#a82424>Master Cleric Jermain</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT><FONT color=#a82424> → Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Master Cleric Jermain]]></destination>
+         <todo_msg mid="62"><![CDATA[Return to Master Cleric Jermain.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>204</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,274 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_394_deep_anxiety</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>394</qid>
+      <designer>김인정</designer>
+      <qlevel>36</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>395</nextqid>
+      <nextqname>mq11_395_realize_foreboding</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Worries are Bound to End]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>527</npcid>
+         <npcename>n527_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-noquest" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>Then, leave the Serpentra alone. It's bound to revive.<BR>You just concentrate on the Prophet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-noquest" image="" itemindex="">
+      <talk_question mid="246"><![CDATA[<html>$Sorceress Angelica$<BR>People at the Royal Palace are no different.<BR>*Grumbling*. I thought I would make a lot of money.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-accepting-acceptted" mid="9"><![CDATA[<html>Then, let me help!</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Geraint$<BR>I vowed to protect Saint Haven.<BR>
+It will be very dangerous if the Serpentra revives.<BR>If something doesn't feel right, I will take action.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-a" mid="248"><![CDATA[<html>I just want to help. Can I?</html>]]></talk_answer>
+      <talk_question mid="247"><![CDATA[<html>$Geraint$<BR>You? ...Even if you help me, I cannot tell you the way to the <FONT color=#a82424>Monolith</FONT>.<BR>I cannot do it even if I trust you or show you goodwill.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-b" mid="252"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="249"><![CDATA[<html>$Geraint$<BR>Not true. <FONT color=#7e12d2>(Geraint becomes silent and looks a bit perplexed)<BR></FONT>...If what you say is true, we have to stop the Serpentra from reviving.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-c" mid="254"><![CDATA[<html>The Ancients' Scroll?</html>]]></talk_answer>
+      <talk_question mid="253"><![CDATA[<html>$Geraint$<BR>The Serpentra was the result of the Ancients' research.<BR>If that Bishop is trying to revive that beast, he will try to get the <FONT color=#a82424>Ancients' Scroll</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-c" image="QW_41.dds" itemindex="">
+      <talk_question mid="255"><![CDATA[<html>$Geraint$<BR>Yes. Then, go to the <FONT color=#a82424>Explosion Zone in Withered Leaves Forest</FONT> and find the Ancients' Scroll.<BR>The strongest monster there will possess it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="256"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_08.ogg}<BR>Then, leave the Serpentra alone. It's bound to revive.<BR>You just concentrate on the Prophet. Okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-1" image="" itemindex="">
+      <talk_question mid="257"><![CDATA[<html>$Sorceress Angelica$<BR>People at the Royal Palace are no different.<BR>*Grumbling*. I thought I would make a lot of money.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="QW_41.dds" itemindex="">
+      <talk_question mid="258"><![CDATA[<html>$Geraint$<BR>Go to the <FONT color=#a82424>Explosion Zone in Withered Leaves Forest</FONT> and find the Ancients' Scroll.<BR>The strongest monster there will possess it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-3" image="" itemindex="">
+      <talk_answer link_index="n527_angelica-3-a" mid="263"><![CDATA[<html>No, it's not that...</html>]]></talk_answer>
+      <talk_question mid="261"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>Oh~ it' you, <FONT color=#387206>{user_nick}</FONT>~<BR>How have you been? Oh!!! I see!!<BR>
+...Did you find some things that are valuable these days?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-3-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n527_angelica-3-b" mid="265"><![CDATA[<html>I'm not here to buy it.</html>]]></talk_answer>
+      <talk_question mid="264"><![CDATA[<html>$Sorceress Angelica$<BR>Huh? You're here to find the <FONT color=#a82424>Ancients' Scroll</FONT>? I have it in my possession?!<BR>
+Why, did the Bishop ask you, too?<BR>Hehe~ If you want to buy it from me, I'll sell it to you expensively... no, cheaply!! Sell it to you, how does it sound?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-3-b" image="" itemindex="">
+      <talk_answer link_index="n527_angelica-3-c" mid="267"><![CDATA[<html>Don't trust the Bishop.</html>]]></talk_answer>
+      <talk_question mid="266"><![CDATA[<html>$Sorceress Angelica$<BR>...No? <FONT color=#7e12d2>(Angelica looks very disappointed.)<BR></FONT>Don't I get to receive that small sum of reward?<BR>
+He's a Bishop but so stingy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-3-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n527_angelica-3-d" mid="270"><![CDATA[<html>He is trying to revive the Serpentra.</html>]]></talk_answer>
+      <talk_question mid="268"><![CDATA[<html>$Sorceress Angelica$<BR>He was collecting these saying he was going to cleanse Saint Haven.<BR>
+You think the <FONT color=#a82424>Bishop</FONT> is suspicious?<BR>Hmm~ you know I don't trust Clerics...<BR>
+Well fair is fair. Do you have any proof of what you just said?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-3-d" image="" itemindex="">
+      <talk_answer link_index="n527_angelica-3-e" mid="273"><![CDATA[<html>Umm... Not yet...</html>]]></talk_answer>
+      <talk_question mid="271"><![CDATA[<html>$Sorceress Angelica$<BR>So~ do you have proof~<BR>
+I would like to believe you, but I need to see some proof to abandon my job.<BR>
+I'm taking on this job with my name on the line.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-3-e" image="" itemindex="">
+      <talk_answer link_index="n527_angelica-3-f" mid="275"><![CDATA[<html>Geraint also said to be careful.</html>]]></talk_answer>
+      <talk_question mid="274"><![CDATA[<html>$Sorceress Angelica$<BR>See? But why do I have to give up my reward on the item I've already found just by listening to you?<BR>Though, I know you have that fascinating device.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-3-f" image="" itemindex="">
+      <talk_answer link_index="n527_angelica-3-g" mid="277"><![CDATA[<html>What?!</html>]]></talk_answer>
+      <talk_question mid="276"><![CDATA[<html>$Sorceress Angelica$<BR>That.... hmm, that does bother me. Umm~<BR>
+But~ you see, I don't actually have the <FONT color=#a82424>Ancients' Scroll</FONT>?<BR><FONT color=#7e12d2>(Angelica looks so sorry.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-3-g" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n527_angelica-4" mid="279"><![CDATA[<html>Oh my...</html>]]></talk_answer>
+      <talk_question mid="278"><![CDATA[<html>$Sorceress Angelica$<BR>Moments ago, <FONT color=#a82424>Edan</FONT> and <FONT color=#a82424>Xian</FONT>... we all came here~<BR>
+Hehe. Those guys were a bit faster, and took it with them.<BR>I think by now, they could have given it to the <FONT color=#a82424>Bishop</FONT>~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n527_angelica-4" image="" itemindex="">
+      <talk_question mid="280"><![CDATA[<html>$Sorceress Angelica$<BR>I'll go right back and find out. Don't worry too much. Nothing will happen~<BR>What's the Bishop got to gain by doing that?<BR>
+So, you should return, too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4" image="" itemindex="">
+      <talk_question mid="281"><![CDATA[<html>$Geraint$<BR>...If he has the Ancients' Scroll, he may really be trying to revive the Serpentra. I'll keep an eye on him for a while.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-a" mid="283"><![CDATA[<html>What should I do?</html>]]></talk_answer>
+      <talk_question mid="282"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_02.ogg}<BR>Really? I see.<BR>Everything is going to happen according to our records!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-b" mid="285"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="284"><![CDATA[<html>$Academic Jasmine$<BR>I told you? Don't worry about the Serpentra.<BR>The other adventurers will defeat it.<BR>
+What I mean is, take care of the <FONT color=#a82424>Prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-b" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-!next" mid="287"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="286"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">394</exe>
+         <exe type="talk" npc="n216_geraint_wounded">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="5,6,7" onexe="">1081</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201081</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1081);</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3940,,,,,,</exe>
+         <exe type="complete">394</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n216_geraint_wounded" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="c">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n527_angelica" sub="b" />
+   <exelink qstep="3" npc="n527_angelica" sub="c" />
+   <exelink qstep="3" npc="n527_angelica" sub="d" />
+   <exelink qstep="3" npc="n527_angelica" sub="e" />
+   <exelink qstep="3" npc="n527_angelica" sub="f" />
+   <exelink qstep="3" npc="n527_angelica" sub="g" />
+   <exelink qstep="3" npc="n527_angelica" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="b">0</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="3940" quest_title="근심은 끝나는 법입니다" chapterid="5" quest_level="36" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="289"><![CDATA[Worries are Bound to End I]]></title>
+         <contents mid="290"><![CDATA[<html>Talk to Geraint in the basement of the Royal Palace.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="291"><![CDATA[Talk to Geraint in the basement of the Royal Palace]]></destination>
+         <todo_msg mid="292"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="293"><![CDATA[Worries are Bound to End II]]></title>
+         <contents mid="294"><![CDATA[<html>Go to the Explosion Zone in Withered Leaves Forest and find the Ancients' Scroll.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain(Lonely Forest Path)</FONT> <FONT color=#a82424>→ Explosion Zone in Withered Leaves Forest</FONT></html>]]></contents>
+         <destination mid="295"><![CDATA[Find the Ancients' Scroll at the Explosion Zone in Withered Leaves Forest]]></destination>
+         <todo_msg mid="296"><![CDATA[Go to the Explosion Zone in Withered Leaves Forest.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Angelica.dds</contents_image>
+         <destination_pos>413,n527</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@1</destination_mode>
+         <statemark_npcid>527</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="297"><![CDATA[Worries are Bound to End III]]></title>
+         <contents mid="298"><![CDATA[<html>Couldn't find the Ancients' Scroll. Instead, met Sorceress Angelica, so talk to her if she knows anything about it.<BR><BR><FONT color=#086171>Foothills of Black Mountain(Lonely Forest Path)</FONT> <FONT color=#a82424>→ Explosion Zone in Withered Leaves Forest(Sorceress Angelica)</FONT></html>]]></contents>
+         <destination mid="299"><![CDATA[Talk to Sorceress Angelica]]></destination>
+         <todo_msg mid="300"><![CDATA[Talk to Sorceress Angelica.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="302"><![CDATA[Worries are Bound to End IV]]></title>
+         <contents mid="303"><![CDATA[<html>The Ancients' Scroll must be in the hands of the Bishop. Connect to the Academic Station and report to Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="304"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="305"><![CDATA[Connect to the Academic Station and discuss with Jasmine.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>393</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

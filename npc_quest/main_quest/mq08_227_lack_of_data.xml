@@ -1,0 +1,275 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_227_lack_of_data</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>227</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc xml:space="preserve">
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>228</nextqid>
+      <nextqname>mq08_228_out_of_fuel</nextqname>
+      <nextqnpc>n392_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[No Data]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드의 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행정 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Even a young girl like you is working hard for Calderock Village...<BR>
+Ahh.... I'm so touched...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Airship Engineer Hubert$<BR>What? I'm busy with this piece of junk airship!<BR>
+So stop talking to me and go away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="91"><![CDATA[<html>Then what should we do?</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Academic Jasmine{sound:npc_CG_Jasmin_sp_03.ogg}<BR>Since there is a 50 year gap between our world and the world you're currently in, not everything will be how you expect it to be.<BR>And it's no surprise that <FONT color=#a82424>Velskud</FONT> is different from himself in our world. It is inevitable.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-a" mid="93"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Academic Jasmine$<BR>I can't think of a solution right away.<BR>For the time being, keep an eye on Angelica and Edan. They are bound to meet Velskud again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-b" mid="95"><![CDATA[<html>Okay, I will.</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Academic Jasmine$<BR>Also, besides those two, two more people who will become part of the future Six Heroes will be arriving shortly. Until they arrive, carefully observe what goes on in Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_06.ogg}<BR>Angelica and Edan are working together with the Adventurers' Guild, so <FONT color=#a82424>Adverturer's Guild Master Deckard</FONT> should know what they are doing. Meet Deckard and find out their whereabouts.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Even a young girl like you is working hard for Calderock Village...<BR>
+Ahh.... I'm so touched...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QW_AirShip.dds" itemindex="">
+      <talk_question mid="98"><![CDATA[<html>$Airship Engineer Hubert$<BR>What? I'm busy with this piece of junk <FONT color=#a82424>airship</FONT>!<BR>
+So just go away!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="99"><![CDATA[<html>$Academic Station$<BR>※ Mission Objective.<BR>※ <FONT color=#7e12d2>Ask Adverturer's Guild Master Deckard about Angelica and Edan's whereabouts.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="101"><![CDATA[<html>What?! Did they leave already?!</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Talk}<BR>You're asking about <FONT color=#a82424>Angelica</FONT>?<BR>Oh... come to think of it, Angelica and Edan were asked to do something from the <FONT color=#a82424>silver-haired swordswoman</FONT>.<BR>So they said they were going to <FONT color=#a82424>Saint Haven</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="103"><![CDATA[<html>Oh... I see.</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Don't worry, little girl. They didn't go yet. They couldn't go!<BR>Thanks to the <FONT color=#a82424>Black Knight</FONT>, the airship is completely destroyed!<BR>We won't be able to take the airship for a while.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>If you talk to <FONT color=#a82424>Airship Engineer Hubert</FONT>, you'll hear the situation in more detail.<BR>
+Those two went to see him too, so try going there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Go and see <FONT color=#a82424>Airship Engineer Hubert</FONT>.<BR>Angelica and Edan are probably there, too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Academic Station$<BR>※ Mission Objective.<BR><FONT color=#7e12d2>※ Meet Airship Engineer Hubert.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-3-a" mid="109"><![CDATA[<html>Have you seen a Sorceress called Angelica?</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Airship Engineer Hubert$<BR>You see those injured Elite Soldiers over there?<BR>
+They came to Calderock to help, but they were attacked by the <FONT color=#a82424>Black Knight</FONT> before they could do anything.<BR>
+What a thing to happen!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3-a" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-3-b" mid="111"><![CDATA[<html>Other people?</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Airship Engineer Hubert$<BR>Oh, that Sorceress who came with a Cleric? Those two said they desperately needed to go to <FONT color=#a82424>Saint Haven</FONT> quickly, so they offered to help repair the airship.<BR>But I've already asked someone else to repair it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3-b" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-3-c" mid="113"><![CDATA[<html>Then, where did Angelica go?</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Airship Engineer Hubert$<BR>Yes, I left the repair job to a strong-looking <FONT color=#a82424>Warrior</FONT> and a beautiful <FONT color=#a82424>Archer</FONT>.<BR>They said they would collect the scattered parts, so the airship should be repaired soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3-c" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4" mid="115"><![CDATA[<html>Oh, I see. What should I do....</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Airship Engineer Hubert$<BR>That I don't know. They were busily going somewhere else....<BR>I can't know every adventurers' whereabouts in Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="116"><![CDATA[<html>$Airship Engineer Hubert$<BR>If you're done, please go somewhere else. I'm busy trying to fix the airship.<BR><FONT color=#7e12d2>(It would be better to return to the Academic Station first and report to Jasmine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-4-a" mid="119"><![CDATA[<html>Oh! Maybe!</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_01.ogg}<BR>A warrior and an archer are helping to repair the airship...?<BR>Hmm... They could be the members of the future Six Heroes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-4-b" mid="121"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Academic Jasmine$<BR><FONT color=#a82424>Bloody Destroyer Warrior Xian</FONT> and <FONT color=#a82424>Soul of Silver Crescent Archer Triana</FONT>.<BR>
+According to the records, they must be the Six Heroes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-4-c" mid="123"><![CDATA[<html>What bad news?</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Academic Jasmine$<BR>...But, there is a another bad news.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-4-d" mid="125"><![CDATA[<html>Then... how do I search for data from now on...?</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Academic Jasmine$<BR>
+I've finished sending the data....<BR>
+But it seems the auxiliary memory storage wasn't large enough to handle even the basic data.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-4-e" mid="127"><![CDATA[<html>I can't believe it...</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Academic Jasmine$<BR>
+Oh well. If you need some information or data, you'll have to check it when you're connected to the Academic Station even if it's very inconvenient....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4-e" image="" itemindex="">
+      <talk_answer link_index="n392_academic_station-4-!next" mid="129"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">227</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2270,,,,,,</exe>
+         <exe type="complete">227</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n392_academic_station" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="3" npc="n099_engineer_hubert" sub="c" />
+   <exelink qstep="3" npc="n099_engineer_hubert" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n392_academic_station" sub="b" />
+   <exelink qstep="4" npc="n392_academic_station" sub="c" />
+   <exelink qstep="4" npc="n392_academic_station" sub="d" />
+   <exelink qstep="4" npc="n392_academic_station" sub="e">0</exelink>
+   <exelink qstep="4" npc="n392_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="2270" quest_title="데이터가 부족합니다" chapterid="3" quest_level="14" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode />
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="131"><![CDATA[Lack of Data I]]></title>
+         <contents mid="132"><![CDATA[<html>Connect to the Academic Station at the Calderock Village and talk to Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="133"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="134"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode />
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[Lack of Data II]]></title>
+         <contents mid="136"><![CDATA[<html>Angelica and Edan went to Adverturer's Guild Master Deckard to report. Until I've received all the data, I should keep a close look on them.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adverturer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[Talk to Adverturer's Guild Master Deckard]]></destination>
+         <todo_msg mid="138"><![CDATA[Meet Adverturer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode />
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="139"><![CDATA[Lack of Data III]]></title>
+         <contents mid="140"><![CDATA[<html>It seems like Angelica and Edan will be going to Saint Haven. But they can't go at the moment since the airship is broken. Go to Airship Engineer Hubert and find out more information.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Airship Engineer Hubert</FONT></html>]]></contents>
+         <destination mid="141"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="142"><![CDATA[Go to Airship Engineer Hubert.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode />
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="143"><![CDATA[Lack of Data IV]]></title>
+         <contents mid="144"><![CDATA[<html>Hubert doesn't know where those two went. First, connect to the Academic Station at Calderock Village and discuss this matter with Jasmine.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="145"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="146"><![CDATA[Connect to the Academic Station and discuss with Jasmine.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>226</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

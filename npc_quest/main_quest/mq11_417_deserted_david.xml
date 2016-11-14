@@ -1,0 +1,302 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_417_deserted_david</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>417</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>418</nextqid>
+      <nextqname>mq11_418_curious_david</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[The Rest of Us]]></qkname>
+      <qnpc>
+         <npcid>261</npcid>
+         <npcename>n261_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>287</npcid>
+         <npcename>n287_blackdragons_wing</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$Adventurer David$<BR>I, Adventurer David, am envied by many people in this world!<BR>And you just one among those people! Ha. Ha. Ha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-noquest" image="" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(A wing fragment surrounded by a dark and evil energy.</FONT><BR><FONT color=#7e12d2>Blood stain is splattered around it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="87"><![CDATA[<html>What's going on now?</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Bishop Ignacio$<BR>This might annoy you a little, but there is just one thing I would like you to check......<BR>Will you do me another favor? I'm asking you because there aren't many people that I could trust besides you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-1" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Adventurer David$<BR>I, Adventurer David, am envied by many people in this world!<BR>And you just one among those people! Ha. Ha. Ha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>It's about the <FONT color=#a82424>Black Dragon</FONT>. Although the Gold Dragon may be protecting this place, didn't you say that the two dragons were nearly equal when they were fighting the other time?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="83"><![CDATA[<html>Geraint also mentioned about the same thing</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Bishop Ignacio$<BR>Although the <FONT color=#a82424>Black Dragon</FONT> has been said to have fallen down the cliff with broken wings, that wouldn't have been enough to kill it. I may be worrying unnecessarily, but... The Black Dragon could still be alive somehwere, and he could be healing his wounds...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QM_black_Dragon.dds" itemindex="w">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="10"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>Hehe... Is that so? Hmm, it would be terrible if the <FONT color=#a82424>Black Dragon</FONT> were to appear again. I am concerned... Something must be done.<BR>The Black Dragon could be hiding somewhere, so we must find out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QW_40.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Bishop Ignacio$<BR>Please scout the <FONT color=#a82424>Black</FONT><FONT color=#a82424> Dark Overlord's Tower</FONT>.<BR>All you have to do is go into the innermost area of the place, and check if there any particular signs of anything.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-1" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(A wing fragment surrounded by a dark and evil energy.</FONT><BR><FONT color=#7e12d2>Blood stain could be found splattered around it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_40.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Please scout the <FONT color=#a82424>Dark Overlord Keep Tower</FONT>. I am worried that the Black Dragon may be hiding somewhere.<BR>Just go into the innermost are, and check if there are any particular signs.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-a" mid="16"><![CDATA[<html>Huh...? Why are you here?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer David${action:Stand01}<BR>I wasn't waiting for you, but since you're here anyway, I will talk to you!<BR>Ha. Ha. Ha. You should be honored!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-b" mid="18"><![CDATA[<html>I just trying to ask why are you still here whereby Argenta had already left?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Adventurer David$<BR>Why am I here? Why do you ask something that has an obvious answer? Ha. Ha. Ha.<BR>You didn't fOgret about who I am, did you? I am the one and only slave of <FONT color=#a82424>Argenta</FONT>! Her eternal companion!<BR>I am <FONT color=#a82424>D.A.V.I.D.</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-c" mid="20"><![CDATA[<html>(Looks like he is really shocked.)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Adventurer David$<BR>W-what? Argenta has left?<BR><FONT color=#382000>{user_nick}</FONT>! What are you talking about? <FONT color=#a82424>Argenta</FONT> has left?! She left?!?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-d" mid="23"><![CDATA[<html>Were you too late to complete her errand?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer David$<BR>I was just taking a rest while I was doing an errand for <FONT color=#a82424>Argenta</FONT>. A very brief rest! But I can't believe Argenta could leave me like that... I can't believe it...!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-e" mid="25"><![CDATA[<html>She said she was going to Lotus Marsh.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Adventurer David$<BR>Huh! <FONT color=#7e12d2>(Adventurer David pretends to be indifferent.)</FONT><BR>First... I would like to ask you something. Where did <FONT color=#a82424>Argenta</FONT> go?<BR>Of... Of course I know where she went! Indeed I know, but... *Cough*!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-e" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-f" mid="30"><![CDATA[<html>What about the errand?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Adventurer David$<BR>Then it is not too late, I would still be able to catch up with her if i immediately take a ship from Hermalte Port to <FONT color=#a82424>Lotus Marsh</FONT>. Ha.<BR>Just wait for me, oh, Argenta!<BR>I am going! <FONT color=#7e12d2>(He is crying out like a cow.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-f" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-g" mid="32"><![CDATA[<html>What did I do?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Adventurer David${action:Stand01}<BR>Argh! ...Arrr... W-what should I do...<BR><FONT color=#7e12d2>(Adventurer David is nervous.)</FONT><BR>T-this is all your fault!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-g" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-h" mid="34"><![CDATA[<html>...... (Let's ignore the nonsense.)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Adventurer David$<BR>Are you really not aware? Because of you, my <FONT color=#a82424>Argenta</FONT> had no choice but to... My <FONT color=#a94407>beautiful </FONT>, <FONT color=#086171>lovely </FONT>, and <FONT color=#7e12d2>delicate</FONT> Argenta had to leave me because of you!<BR>She had to leave all alone!<BR>You're so cold-blooded!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-h" image="QW_40.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Adventurer David${action:Stand01}<BR>Just help me! Alright? It seems like you have something urgent to take care of first, so come to me after you have gotten it done! Don't fOgret!<BR>...... Promise me! <FONT color=#7e12d2>(He shouts mournfully.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Adventurer David$<BR>What's taking so long?<BR>Finish your task quickly and come see me!<BR>Poor <FONT color=#a82424>Argenta</FONT> is probably waiting for me in tears at this moment!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-4" image="" itemindex="">
+      <talk_answer link_index="n287_blackdragons_wing-4-a" mid="73"><![CDATA[<html>(Take a look.)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(A black wing surrounded by an evil energy.</FONT><BR><FONT color=#7e12d2>Blood Stains could be found splattering around.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-4-a" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(It's Black Dragon's Broken wing. It must have gotten rip off in it's fight against the Gold Dragon. Bloond stain could be found but no traces of him)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-5" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Adventurer David$<BR>What's taking so long? Finish your current task quickly and come see me!<BR>Poor <FONT color=#a82424>Argenta</FONT> is probably waiting for me in tears at this moment!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-a" mid="40"><![CDATA[<html>I have found Black Dragon's broken wings.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Bishop Ignacio$<BR>You're back. Did you find any traces of the <FONT color=#a82424>Black Dragon</FONT>?<BR>I was so worried while you were gone...<BR>I was praying for your safety while your away</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-b" mid="76"><![CDATA[<html>Yes. But I did not see the Black Dragon.</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Black Dragon's wings</FONT>...?<BR>So this was found near the tower...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-c" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Is that so...?<BR>I would have felt relieved if his body was found, but I guess I would be asking for too much. Hmm...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-c" image="QS_Default.dds" itemindex="300022">
+      <talk_answer link_index="n039_bishop_ignasio-5-d" mid="44"><![CDATA[<html>Oh... Is that...?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Bishop Ignacio$<BR>Oh, and does this <FONT color=#a82424>Pendant</FONT> belong to you?<BR><FONT color=#7e12d2>(The Bishop takes something out and shows you.)</FONT><BR>It was dropped around this area after you had left. I pick it up before the servants could</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-d" image="QS_Default.dds" itemindex="300022">
+      <talk_answer link_index="n039_bishop_ignasio-5-e" mid="46"><![CDATA[<html>Thank you. (When did I drop it...?)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Bishop Ignacio$<BR>It seemed like <FONT color=#a82424>Geraint's Pendant</FONT>, which you showed me before. It's an important item, so store it carefully.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-e" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-!next" mid="48"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-5" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$Black Dragon's Wing Fragment$<BR><FONT color=#7e12d2>(Black Dragon's broken wing.<BR>It is surrounded by a dark and evil energy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">417</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+         <exe type="delquestitem" num="-1">300025</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300022</exe>
+         <exe type="recompense">4171,4171,4172,4173,4174,4174,4176</exe>
+         <exe type="complete">417</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,2,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n261_slave_david" sub="b" />
+   <exelink qstep="3" npc="n261_slave_david" sub="c" />
+   <exelink qstep="3" npc="n261_slave_david" sub="d" />
+   <exelink qstep="3" npc="n261_slave_david" sub="e" />
+   <exelink qstep="3" npc="n261_slave_david" sub="f" />
+   <exelink qstep="3" npc="n261_slave_david" sub="g" />
+   <exelink qstep="3" npc="n261_slave_david" sub="h">0,1</exelink>
+   <exelink qstep="4" npc="n287_blackdragons_wing" sub="a">0,1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="e">1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="!next">0,2</exelink>
+   <journal_data recompense="1:4171,2:4172,3:4173,4:4174,5:4174,6:4176" quest_title="남겨진 사람" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[The Bishop's Worries]]></title>
+         <contents mid="51"><![CDATA[<html>It seems like Bishop Ignacio has more to say.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="53"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Scout Orders]]></title>
+         <contents mid="55"><![CDATA[<html>Bishop Ignacio is worried that the Black Dragon might be hiding somewhere. Scout the <FONT color=#a82424>Dark Overlord's Tower</FONT>.<BR><BR><FONT color=#086171>Foothills of Black Mountain (Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord's Tower</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Investigate Dark Overlord's Tower]]></destination>
+         <todo_msg mid="57"><![CDATA[Please investigate the Dark Overlord's Tower.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>261</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[The Man who is Watching]]></title>
+         <contents mid="68"><![CDATA[<html>At Foothills of Black Mountain, you found <FONT color=#a82424>Adventurer David</FONT>, who was looking at your direction. If you just pass him by, he will come chase you, so just go and talk to him first.<BR><BR><FONT color=#086171>Foothills of Black Mountain(Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Adventurer David</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk to Adventurer David]]></destination>
+         <todo_msg mid="70"><![CDATA[You had found Adventurer David, please talk to him]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>403,n287</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1</destination_mode>
+         <statemark_npcid>287</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[What you must do first]]></title>
+         <contents mid="59"><![CDATA[<html>First, go investigate the <FONT color=#a82424>Dark Overlord's Tower</FONT>. You should talk to Adventurer David after you have first gotten the job done.<BR> <BR><FONT color=#086171>Foothills of Black Mountain (Dark Overlord keep's Gates)</FONT> <FONT color=#a82424>→ Dark Overlord's Tower</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Investigate Dark Overlord's Tower]]></destination>
+         <todo_msg mid="61"><![CDATA[Please investigate Dark Overlord's Tower.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Please feel relieved]]></title>
+         <contents mid="63"><![CDATA[<html>After investigating you could only find <FONT color=#a82424>Black Dragon's Wing Fragment</FONT>. You were not able to find any other actual traces of the Black Dragon. Return to <FONT color=#a82424>Bishop Ignacio</FONT>.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="65"><![CDATA[You have finished investigating. Report to Bishop Ignacio.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>416</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

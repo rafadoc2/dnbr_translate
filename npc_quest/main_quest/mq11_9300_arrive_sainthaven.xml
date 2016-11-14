@@ -1,0 +1,409 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9300_arrive_sainthaven</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>9300</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9301</nextqid>
+      <nextqname>mq11_9301_new_face</nextqname>
+      <nextqnpc>n209_elite_soldier</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[세인트헤이븐 도착]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>258</npcid>
+         <npcename>n258_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>259</npcid>
+         <npcename>n259_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>260</npcid>
+         <npcename>n260_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>514</npcid>
+         <npcename>n514_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>515</npcid>
+         <npcename>n515_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>516</npcid>
+         <npcename>n516_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>517</npcid>
+         <npcename>n517_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>574</npcid>
+         <npcename>n574_shadow_meow</npcename>
+         <npckname>그림자 냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-a" mid="199" select_type="2" />
+      <talk_question mid="5"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>자아, 캐더락을 감싸고 있던 칙칙한 안개도 이미 걷히기 시작했네.<BR>이제 세인트헤이븐으로 출발할 수 있겠지.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-acceptted" mid="125" select_type="3" />
+      <talk_question mid="124"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>비행선 추락으로 쓸만한 장교들이 전사해서 정예병사 클림드가 남은 병사를 이끌고 보고를 할 모양이더구만.<BR>세인트헤이븐에 내려서 정예병사 클림드와 이야기를 해 보게나. 핫핫.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-1-lv_ck_0" mid="126" select_type="2" />
+      <talk_question mid="9"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>이제 운행 준비는 다 끝나 간다네!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-1-" mid="127" select_type="5" />
+      <talk_question mid="11"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>자아~ 비행선 수리는 막바지 작업이 한창일세. 곧 비행선을 띄울 수 있을테니 조금만 기다려 주게나.<BR><BR>
+<FONT color=#7e12d2>(* 24Lv 이상이 되면 세인트헤이븐으로 이동할 수 있습니다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-1-" mid="128" select_type="5" />
+      <talk_question mid="39"><![CDATA[<html>$정예병사 클림드$<BR>
+현재 보고해야 할 사항이 한 두 가지가 아니라, 정신이 없습니다.<BR>
+급한 용무가 아니시라면 다음에 뵙는게 좋겠습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-1-" mid="129" select_type="5" />
+      <talk_question mid="55"><![CDATA[<html>$그림자 냥$<BR>오호! 이곳이 세인트헤이븐이냥!<BR>넓고 반짝거린다냥~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="QN_Npc_Academic_station.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="130" select_type="5" />
+      <talk_question mid="70"><![CDATA[<html>$루나리아$<BR>...사람이 많은 곳, 불편해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="QN_Npc_Woman_Tiketer_Arnene.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Engineer_Hubert.dds" center_image="">
+      <talk_answer link_index="n099_engineer_hubert-2-" mid="132" select_type="5" />
+      <talk_question mid="14"><![CDATA[<html>$비행선 엔지니어 휴버트$<BR>비행선은 바로 운행 가능하도록 조치를 취해 두었네.<BR>탑승 수속은 저쪽에 있는 <FONT color=#a82424>매표원 아넨느</FONT> 양과 상의하도록 하게.<BR>
+<BR><FONT color=#7e12d2>(* 파티 상태에서는 진행할 수 없습니다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n258_slave_david-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_David.dds" center_image="">
+      <talk_answer link_index="n258_slave_david-2-" mid="133" select_type="5" />
+      <talk_question mid="16"><![CDATA[<html>$아르젠타의 노예 데이비드$<BR>훗. 훗. 훗. 아르젠타 님을 곁에서 모시고 싶다고?<BR>
+미안하지만, 그건 이 데이비드 님의 몫이다! 훗. 훗. 훗.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n259_argenta-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Argenta.dds" center_image="">
+      <talk_answer link_index="n259_argenta-2-" mid="134" select_type="5" />
+      <talk_question mid="17"><![CDATA[<html>$아르젠타$<BR>세인트헤이븐에 도착했군. 여전히 쓸데없는 공간이 많은 곳이야.<BR>흥. 대체 인간들은 왜 이렇게 북적거리며 사는 걸 좋아하는 거지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n514_cian-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n514_cian-2-a" mid="135" select_type="2" />
+      <talk_question mid="18"><![CDATA[<html>$워리어 시안$<BR>세인트헤이븐이 이런 곳이구나!! 우와~!<BR>진짜 크네요. 감동입니다~ 감동!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n514_cian-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n514_cian-2-" mid="136" select_type="5" />
+      <talk_question mid="26"><![CDATA[<html>$워리어 시안$<BR>아, 저희들은 곧장 왕성으로 갈 예정입니닷!<BR>
+<FONT color=#387206>{user_nick} </FONT>님도 볼일이 끝나면 그쪽으로 와 주십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n515_edan-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Edan.dds" center_image="">
+      <talk_answer link_index="n515_edan-2-a" mid="137" select_type="2" />
+      <talk_question mid="19"><![CDATA[<html>$클레릭 에단$<BR>세인트헤이븐에는 초행이십니까?<BR>이곳은 복잡한 곳이니 길을 잃지 않도록 주의하십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n515_edan-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Edan.dds" center_image="">
+      <talk_answer link_index="n515_edan-2-" mid="139" select_type="5" />
+      <talk_question mid="138"><![CDATA[<html>$클레릭 에단$<BR>음? 동행이셨던 그 아가씨는... 아, 그렇군요.<BR>멀미 때문에 먼저 내려가셨군요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n516_angelica-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n516_angelica-2-a" mid="140" select_type="2" />
+      <talk_question mid="20"><![CDATA[<html>$소서리스 안젤리카$<BR>
+으으… 내가 이곳에 다시 돌아올 줄이야….<BR>
+안 좋은 느낌이 들어.<BR>
+마치… 어디선가 빚쟁이가 날 노려보는 듯한 기분이….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n516_angelica-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Angelica.dds" center_image="">
+      <talk_answer link_index="n516_angelica-2-" mid="141" select_type="5" />
+      <talk_question mid="31"><![CDATA[<html>$소서리스 안젤리카$<BR>촌뜨기같으니까 충고해 주는 건데, 눈 감으면 코 베어가는 곳이니까 조심해~<BR>여기 사람이 다 나처럼 친절한 건 아니거든. 우후후후~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n517_triana-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n517_triana-2-a" mid="143" select_type="2" />
+      <talk_question mid="21"><![CDATA[<html>$아처 트리아나$<BR>저희 나르실리아 여왕님께서도 50년 전에 이 땅을 밟으셨겠죠?<BR>텔레지아의 부름이란 기이한 것... 숙명의 무게를 느낀답니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n517_triana-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Triana.dds" center_image="">
+      <talk_answer link_index="n517_triana-2-" mid="145" select_type="5" />
+      <talk_question mid="144"><![CDATA[<html>$아처 트리아나$<BR>왕성으로 가는 길입니다만, 당신은 조금 더 늦게 오시나요?<BR>합류하셔도 괜찮습니다만...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n260_elite_soldier-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n260_elite_soldier-2-a" mid="146" select_type="2" />
+      <talk_question mid="23"><![CDATA[<html>$정예병사 클림드$<BR>여러 모험자들의 도움으로 캐더락 관문을 지킬 수 있었습니다.<BR>지금부터 그간의 일을 카시우스 국왕 폐하께 보고 드리러 가려고 합니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n260_elite_soldier-2-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n260_elite_soldier-2-b" mid="148" select_type="2" />
+      <talk_question mid="147"><![CDATA[<html>$정예병사 클림드$<BR>검은기사와 선지자에 대해서도 보고를 드려야 하는데...<BR>
+모험자님들이 도와주신다고 선뜻 나서 주셔서 얼마나 감사한지 모릅니다.<BR><FONT color=#7e12d2>(클림드가 다른 모험자들 쪽을 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n260_elite_soldier-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n260_elite_soldier-2-c" mid="150" select_type="2" />
+      <talk_question mid="149"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(나는 우선 마을을 좀 둘러보기로 할까?<BR>왕성으로 갈 만한 입장은 아닌 것 같으니까.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n260_elite_soldier-2-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n260_elite_soldier-3" mid="152" select_type="2" />
+      <talk_question mid="151"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(다른 모험자들은 왕성으로 갈 모양이니, 마을을 좀 둘러보고 나서 합류하자.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n260_elite_soldier-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n260_elite_soldier-3-" mid="154" select_type="5" />
+      <talk_question mid="36"><![CDATA[<html>$정예병사 클림드$<BR>그러면, 저는 왕성으로 가서 여러분들이 접견할 수 있도록 절차를 밟겠습니다.<BR>
+준비를 마친 후 왕성으로 와 주십시오.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-a" mid="157" select_type="2" />
+      <talk_question mid="156"><![CDATA[<html>$그림자 냥$<BR>뭘 그렇게 놀란 얼굴을 하냥?<BR>이 스승님이 따라올 거라고 생각 못했던 것이냥?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-b" mid="159" select_type="2" />
+      <talk_question mid="158"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>어떻게 여기에 있어?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-c" mid="161" select_type="2" />
+      <talk_question mid="160"><![CDATA[<html>$그림자 냥$<BR>이 그림자 냥은 언제나 제자와 함께 하는 것이냥!<BR>그림자 냥은 세상 어디에나 있는 그림자와도 같은 것이니까냥!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-d" mid="163" select_type="2" />
+      <talk_question mid="162"><![CDATA[<html>$그림자 냥$<BR>겨우 이런 곳까지 따라온 걸로 놀라면 안 된다냥.<BR>냥냥냥~ 그림자 냥의 진정한 능력을 보면 놀라 자빠지겠구냥.<BR><FONT color=#7e12d2>(그림자 냥이 의기양양한 표정으로 발톱을 세워 보인다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-e" mid="165" select_type="2" />
+      <talk_question mid="164"><![CDATA[<html>$그림자 냥$<BR>물론 캐더락 관문에서 여기까지 오는 것은 몹시 힘들고 험난한 여정이었냥...<BR>
+그래도 그림자 냥을 꺾을 수는 없었던 것이냥. 휴... 산 넘고 물을 건넜다냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-f" mid="167" select_type="2" />
+      <talk_question mid="166"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(그냥 비행선을 타면 되잖아...?!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-g" mid="169" select_type="2" />
+      <talk_question mid="168"><![CDATA[<html>$그림자 냥$<BR>뭐, 딱히 비행선 삯이 없었던 건 아니다냥.<BR>
+오해하면 곤란하냥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-g" image="QN_Npc_Elite_Soilder.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-3-h" mid="172" select_type="2" />
+      <talk_question mid="171"><![CDATA[<html>$그림자 냥$<BR>분위기를 보아하니 요즘 이 동네도 흉흉한 것 같다냥. 전쟁이 일어날 지도 모른다고 저쪽의 병사들이 수군거리면서 지나갔다냥. 이 그림자 냥의 존재를 눈치채지 못하고 비밀 이야기를 하다니, 아직 멀었다냥. 크흐흐흐...!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4" mid="174" select_type="2" />
+      <talk_question mid="173"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(......그냥 왕성으로 바로 갈걸 그랬나 보다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n574_shadow_meow-4" image="QN_Npc_Elite_Soilder.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Shadow_Meow.dds" center_image="">
+      <talk_answer link_index="n574_shadow_meow-4-" mid="176" select_type="5" />
+      <talk_question mid="175"><![CDATA[<html>$그림자 냥$<BR>응? 세인트헤이븐 왕성으로 가는 것이냥?<BR><FONT color=#a82424>정예병사 클림드</FONT>는 캐더락에서 이 그림자 냥과 좀 안면이 있는 사이니까 잘 부탁한다냥.<BR><FONT color=#7e12d2>(그림자 냥이 허세를 부리고 있다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-4-a" mid="178" select_type="2" />
+      <talk_question mid="177"><![CDATA[<html>$정예병사 클림드$<BR>아, 오셨군요.<BR>다른 모험자님들 덕분에 보고를 무사히 마칠 수 있었습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-4-b" mid="180" select_type="2" />
+      <talk_question mid="179"><![CDATA[<html>$정예병사 클림드$<BR>왕국의 정예병사들이 손 하나 쓰지 못하고 부상을 입어, 검은 기사가 선지자를 탈취하는 결과에 이르다니 정말이지 면목이 없습니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-4-c" mid="182" select_type="2" />
+      <talk_question mid="181"><![CDATA[<html>$정예병사 클림드$<BR>그러나 너그러운 국왕 폐하께서는 저희들을 탓하지 않으시고, 검은 기사의 강한 힘을 염려하고 계십니다.<BR>
+자비로운 분입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-4-d" mid="184" select_type="2" />
+      <talk_question mid="183"><![CDATA[<html>$정예병사 클림드$<BR>다른 모험자님들께서는 검은 기사의 행방을 추적하기 위해 다른 귀족 여러분과 대화하셨습니다.<BR>그래서 조금 전에 출발하셨는데...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-4-e" mid="186" select_type="4" />
+      <talk_question mid="185"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-4-!next" mid="198" select_type="2" />
+      <talk_question mid="197"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>네? 어디로요?!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9300</exe>
+         <exe type="talk" npc="n099_engineer_hubert">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">24</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2,3,4" false="1">0</exe>
+         <exe type="talk" npc="n099_engineer_hubert">a</exe>
+         <exe type="talk" npc="n099_engineer_hubert">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93000,,,,,,,</exe>
+         <exe type="complete" true="">9300</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="lv_ck_0">0</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="" />
+   <exelink qstep="2" npc="n514_cian" sub="" />
+   <exelink qstep="2" npc="n515_edan" sub="" />
+   <exelink qstep="2" npc="n516_angelica" sub="" />
+   <exelink qstep="2" npc="n517_triana" sub="" />
+   <exelink qstep="2" npc="n260_elite_soldier" sub="b" />
+   <exelink qstep="2" npc="n260_elite_soldier" sub="c" />
+   <exelink qstep="2" npc="n260_elite_soldier" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n574_shadow_meow" sub="b" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="c" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="d" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="e" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="f" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="g" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="h" />
+   <exelink qstep="3" npc="n574_shadow_meow" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n209_elite_soldier" sub="b" />
+   <exelink qstep="4" npc="n209_elite_soldier" sub="c" />
+   <exelink qstep="4" npc="n209_elite_soldier" sub="d">0</exelink>
+   <exelink qstep="4" npc="n209_elite_soldier" sub="e">1</exelink>
+   <exelink qstep="4" npc="n209_elite_soldier" sub="!next" />
+   <journal_data recompense="93000" quest_title="세인트헤이븐 도착" chapterid="4" quest_level="24" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[세인트헤이븐 도착I]]></title>
+         <contents mid="94"><![CDATA[<html>비행선 수리가 끝났는지, 비행선 엔지니어 휴버트에게 확인해 보자.<BR><BR>(* <FONT color=#7e12d2>Lv 24 이상이 되면 세인트헤이븐으로 이동할 수 있습니다.)</FONT><BR><BR><FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>- 비행선 엔지니어 휴버트</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[캐더락 관문의 비행선 엔지니어 휴버트와 대화]]></destination>
+         <todo_msg mid="96"><![CDATA[퀘스트가 추가 되었습니다.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Tiketer_Arnene.dds</contents_image>
+         <destination_pos>8,n69</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>69</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[세인트헤이븐 도착II]]></title>
+         <contents mid="98"><![CDATA[<html>매표원 아넨느와 대화하여 비행선 알바트로스를 타고 세인트헤이븐으로 이동하자.<BR><BR><FONT color=#7e12d2>(* 파티로는 진행할 수 없습니다.)</FONT><BR><BR><FONT color=#086171>캐더락 관문</FONT> <FONT color=#a82424>-  매표원 아넨느</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[(1인) 캐더락 관문의 매표원 아넨느와 대화]]></destination>
+         <todo_msg mid="100"><![CDATA[매표원 아넨느와 대화하여 세인트헤이븐으로 이동하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>13015,n260</destination_pos>
+         <destination_mode>custom:8@4</destination_mode>
+         <statemark_npcid>260</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[세인트헤이븐 도착III]]></title>
+         <contents mid="104"><![CDATA[<html>세인트헤이븐에 도착했다. 정예병사 클림드와 잠시 대화하자.<BR><BR><FONT color=#7e12d2>(* 파티로는 진행할 수 없습니다.)</FONT><BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 정예병사 클림드</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[(1인) 정예병사 클림드와 대화]]></destination>
+         <todo_msg mid="106"><![CDATA[정예병사 클림드와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_NPC_Shadow_Meow.dds</contents_image>
+         <destination_pos>11,n574</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>574</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="188"><![CDATA[세인트헤이븐 도착III]]></title>
+         <contents mid="189"><![CDATA[<html>다른 모험자들은 세인트헤이븐 왕성으로 보고를 하기 위해 갈 모양이다.<BR>
+세인트헤이븐을 좀 둘러보며 대화할 만한 사람을 찾아보고 나서 합류하자.<BR><BR><FONT color=#086171>세인트헤이븐</FONT> <FONT color=#a82424>- 그림자 냥</FONT></html>]]></contents>
+         <destination mid="190"><![CDATA[세인트헤이븐의 그림자 냥과 대화]]></destination>
+         <todo_msg mid="191"><![CDATA[그림자 냥과 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="193"><![CDATA[세인트헤이븐 도착IV]]></title>
+         <contents mid="194"><![CDATA[<html>그림자 냥도 세인트헤이븐까지 온 것 같다. 요즘 분위기가 흉흉하다는데...<BR>왕성으로 가서 다른 모험자들의 동태를 살피자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성</FONT> <FONT color=#a82424>- 정예병사 클림드</FONT></html>]]></contents>
+         <destination mid="195"><![CDATA[왕성 내부의 정예병사 클림드와 대화]]></destination>
+         <todo_msg mid="196"><![CDATA[왕성으로 가서 정예병사 클림드와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>200</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

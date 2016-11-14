@@ -1,0 +1,267 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_407_the_zero_hour</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>407</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>1. 주교와 대화
+2. 아르젠타와 대화
+3. 라미아 그린 물리치기
+4. 아르젠타와 대화
+5. 주교에게 보고</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>408</nextqid>
+      <nextqname>mq11_408_soaring_black_arkmonarch</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[The Night Before the Decisive Battle]]></qkname>
+      <qnpc>
+         <npcid>212</npcid>
+         <npcename>n212_argenta</npcename>
+         <npckname>아르젠타(검은 산자락)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-noquest" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Argenta$<BR>Despite the fact that human cant be trusted, Geraint will still stand on their side<BR><FONT color=#7e12d2>(You can begin by talking to Bishop Ignacio at Saint Haven.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="75"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Bishop Ignacio$<BR>Are you talking about the dispatch?<BR>The ministers have to be convinced to make the decison.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html> I will go and pick up Argenta</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>There nothing to worried about as everyone know how dreadful the Black Knight is. So please hurry up find Argenta and complete <FONT color=#a82424>Ancient Celebrant's Rune</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>We will be preparing for dispatch during this period.<BR>Move on and be careful. Do not worried about support</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-1-a" mid="9"><![CDATA[<html>They will be helpful.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Argenta$<BR>Hold up a seconds. You're serious about taking human troops with you? I doubt they be helping us any further<BR>It will be fortunate if they didn't bother us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-1-b" mid="11"><![CDATA[<html>Uh... What about the Ancient Celebrant's Rune?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Argenta$<BR>I don't care what you think and I don't care.<BR>Anyway, I called <FONT color=#a82424>Geraint</FONT> for support too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-b" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-1-c" mid="13"><![CDATA[<html>Where?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Argenta$<BR>Just relax,I just about to tell you. The <FONT color=#a82424>Ancient Celebran'ts Rune</FONT> is almost complete. So you should be stopping by one place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-c" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-1-d" mid="15"><![CDATA[<html>The River Ruins...?Is it necessary?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Argenta$<BR>Go to <FONT color=#a82424>Flooded Downstream Ruins</FONT> and teach the Boss a lesson. It's a task as easy as ABC and your defintely up for the job since I trained you well. So faster go and come back. I busy right now</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1-d" image="QS_Default.dds" itemindex="300021">
+      <talk_question mid="16"><![CDATA[<html>$Argenta$<BR>Since when the task I give you is useless? I need the<BR><FONT color=#a82424>Female Chief Rhastka Seal</FONT>, so hurry up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-2" image="QW_34.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Argenta$<BR>Didn't I tell you to go to <FONT color=#a82424>River Ruins</FONT>? Don't slack off it is a fast job<BR>Hurry up. I'm done preparing on my part.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Bishop Ignacio$<BR>The preparations for the dispatch are going well.<BR>Don't worry and go see <FONT color=#a82424>Argenta</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-a" mid="20"><![CDATA[<html>(compliment or an insult?)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Argenta$<BR>You're pretty useful.<BR>Ha Ha Ha, cause your my former slave that why</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-a" image="QS_Default.dds" itemindex="300168">
+      <talk_answer link_index="n212_argenta-3-b" mid="22"><![CDATA[<html>(Receive Ancient Celebrant's Rune.)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Argenta$<BR>Here it is <FONT color=#a82424>Ancient Celebrant's Rune</FONT> has been completed, Knowing that you're a weakling I had customize it to your convenient, Isn't I generous?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-3-c" mid="24"><![CDATA[<html>Alright! I will hurry!</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Argneta$<BR>You wouldn't lose this no matter how foolish you are, right? If you're nervous about it, tie it to somewhere.<BR>Well then, I will be joining <FONT color=#a82424>Geraint</FONT> at the <FONT color=#a82424>Dark Overlord Training Ground</FONT>, so bring those humans that you said would help out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-c" image="QW_36.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Argenta$<BR>Alright. Hurry up.<BR>I won't wait for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-4" image="QW_36.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Argenta$<BR>I will be joining <FONT color=#a82424>Geraint</FONT> at <FONT color=#a82424>Dark Overlord Keep </FONT>Bring the humans along and withnes we put an end with the Black Dragons.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-a" mid="28"><![CDATA[<html>(Show the Ancient Celebrant's Rune.)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Ancient Celebrant's Rune completed yet?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-b" mid="30"><![CDATA[<html>We are ready for dispatch!!</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Bishop Ignacio$<BR>This will increase our chance of breaking the <FONT color=#a82424>Black Dragon's Nest</FONT>. Further more, the Royal Castle has made a decision to provide support for rescue of the Prophet. <FONT color=#a82424>General Douglas</FONT> also gladly gathered up elite troops.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-b" image="QS_Default.dds" itemindex="300168">
+      <talk_answer link_index="n039_bishop_ignasio-4-c" mid="55"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Bishop Ignacio$<BR>I worried that you may drop the important Ancient Celebrant's Rune, I will equip you with a Royal Castle Knight Equipment<BR><FONT color=#7e12d2>(The Ancient Celebrant's Rune was attached to the equipment.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-d" mid="32"><![CDATA[<html>(Get on your knees.)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Bishop Ignacio$<BR>Before you leave, the least that I could do for you, is to give you my blessing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-e" mid="34"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-e" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-!next" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#382000>{user_class} {user_nick}</FONT>, Friend of Saint Haven. As a representative of the Order, I give you the blessing of the Goddess. With you success in the rescue of the Prophet and contribute to the peace and satability of Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-!next" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#382000>{user_class} {user_nick}</FONT>, Friend of Saint Haven. As a representative of the Order, I give you the blessing of the Goddess. With you success in the rescue of the Prophet and contribute to the peace and satability of Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">407</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">951</exe>
+         <exe type="addquestitem" num="1">300021</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="1" exe="4,5,6" onexe="">300021</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200951</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300021</exe>
+         <exe type="addquestitem" num="1">300168</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4071,4071,4072,4073,4074,4075,4076</exe>
+         <exe type="delquestitem" num="-1">300168</exe>
+         <exe type="complete">407</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">407</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n212_argenta" sub="b" />
+   <exelink qstep="1" npc="n212_argenta" sub="c" />
+   <exelink qstep="1" npc="n212_argenta" sub="d">0,1,2,8,7</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="b" />
+   <exelink qstep="3" npc="n212_argenta" sub="c">2,0,1,3</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="d">0</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="e">2,1</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="!next" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="!next">0</exelink>
+   <journal_data recompense="1:4071,2:4072,3:4073,4:4074,5:4074,6:4076" quest_title="결전 전야" chapterid="4" quest_level="30" quest_mark_type="1" use_item_list="300021,300168">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Argenta's Situation]]></title>
+         <contents mid="38"><![CDATA[<html>While we await for dispatch. Please find Argenta and check on the process of the <FONT color=#a82424>Ancient Celebrant's</FONT> <FONT color=#a82424>Rune</FONT> has been completed.<BR> <BR><FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Argenta at Footshill of Foothills of Black Mountain]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_34.dds</contents_image>
+         <destination_pos>344,0,0</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Necessary Heraldry]]></title>
+         <contents mid="42"><![CDATA[<html>Obtain <FONT color=#a82424>Female Chief Rhastka Seal </FONT><FONT color=#a82424>Heraldry</FONT> from RFlooded Downstream Ruins<BR><BR><FONT color=#086171>Hermalte Port (Ruined Riverbanks Path)</FONT> <FONT color=#a82424> Flooded Downstream Ruins</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Defeat Rhastka at Flooded Downstream Ruins]]></destination>
+         <todo_msg mid="44"><![CDATA[Obtain Rhastka's Seal from Flooded Downstream Ruins]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report]]></title>
+         <contents mid="47"><![CDATA[<html>Report to Argenta on the situation.<BR> <BR><FONT color=#086171>Foothills Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk to Argenta at Footshill of Foothills of Black Mountain]]></destination>
+         <todo_msg mid="49"><![CDATA[You have completed the mission. Report to Argenta at Foothills of Black Mountain]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Let's prepare for Dispatch of Troops]]></title>
+         <contents mid="51"><![CDATA[<html>You have acquired the <FONT color=#a82424>Ancient Celebrant's Rune</FONT>. Now report to Bishop Ignacio at the Royal Castle and prepare for dispatch<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="53"><![CDATA[Report to Bishop Ignacio and get ready for dispatch.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>406</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

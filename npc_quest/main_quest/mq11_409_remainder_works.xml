@@ -1,0 +1,302 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_409_remainder_works</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>409</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>1. 검은 대군주의 연병장 보스맵에서 (이전 퀘스트에 이어) 제레인트와 대화.
+2. 세인트 헤이븐 왕성 비밀구역으로 입장.
+3. 제레인트와 대화.
+4. 아르젠타와 대화.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>410</nextqid>
+      <nextqname>mq11_410_sea_monsters_soul</nextqname>
+      <nextqnpc>n217_argenta</nextqnpc>
+      <qkname mid="1"><![CDATA[Unfinished Business]]></qkname>
+      <qnpc>
+         <npcid>214</npcid>
+         <npcename>n214_geraint_wounded</npcename>
+         <npckname>부상당한 제레인트(검은 대군주의 연병장)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>215</npcid>
+         <npcename>n215_argenta</npcename>
+         <npckname>아르젠타(검은 대군주의 연병장)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>부상당한 제레인트(왕성 비밀장소)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>217</npcid>
+         <npcename>n217_argenta</npcename>
+         <npckname>아르젠타(왕성 비밀장소)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-noquest" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Geraint$<BR>Come to the Royal Castle's underground in <FONT color=#a82424>Saint Haven</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n215_argenta-noquest" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Argenta$<BR>You are susposed to know what to do after what <FONT color=#a82424>Geraint</FONT> talked to you?<BR>Why are you still asking me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Geraint$<BR>...<BR><FONT color=#7e12d2>(I seems like he is too engross in his work that he do not know what going on around him. Go to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-noquest" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$General Douglas$<BR>Mmm... I heard the <FONT color=#a82424>Prophet</FONT> is still asleep. How could she do that? We did our best to save her but she not doing any thing now. Why not let hand her over to the king and let him take care of her</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I heard the girl, <FONT color=#a82424>Prophet</FONT> is still asleep, am I right? Expect this to happen and she is such a useless girl and everyone still waiting for her because she is the prophet</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$King Cassius$<BR>I highly value your contributions for saving the <FONT color=#a82424>Prophet</FONT>. But I was both surprise and disappointed by her being a country girl and directly went to sleep without greeting me. *Sob*.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Duke Stuart$<BR>I was wondering about the <FONT color=#a82424>Prophet</FONT>'s appearance, never did I expect her to be an ordinally lonely looking girl. Anyway you done a great job</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="75"><![CDATA[<html>(Bishop is worrying about you.)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Bishop Ignacio$<BR>Hey you are here. That was quite a truly hard-fought battle right.<BR>I can tell by just looking at you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n214_geraint_wounded-1" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Geraint$<BR>Come to the Royal Castle's underground in <FONT color=#a82424>Saint Haven</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n215_argenta-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Argenta$<BR>You are susposed to know what to do after what <FONT color=#a82424>Geraint</FONT> talked to you?<BR>Why are you still asking me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$King Cassius$<BR>I highly value your contributions for saving the <FONT color=#a82424>Prophet</FONT>. But I was both surprise and disappointed by her being a country girl and directly went to sleep without greeting me. *Sob*.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Duke Stuart$<BR>I was wondering about the <FONT color=#a82424>Prophet</FONT>'s appearance, never did I expect her to be an ordinally lonely looking girl. Anyway you done a great job</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I heard the girl, <FONT color=#a82424>Prophet</FONT> is still asleep, am I right? Expect this to happen and she is such a useless girl and everyone still waiting for her because she is the prophet</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$General Douglas$<BR>Mmm... I heard the <FONT color=#a82424>Prophet</FONT> is still asleep. How could she do that? We did our best to save her but she not doing any thing now. Why not let hand her over to the king and let him take care of her</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Bishop Ignacio$<BR>But why is it that you haven't brought the <FONT color=#a82424>Prophet</FONT> back here?<BR>What? <FONT color=#a82424>Geraint</FONT> has her?<BR><FONT color=#7e12d2>(You must go to the Royal Castle Secret Region to meet Geraint.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$Geraint$<BR>...<BR><FONT color=#7e12d2>(I seems like he is too engross in his work that he do not know what going on around him. Go to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-1" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$Argenta$<BR>You are susposed to know what to do after what <FONT color=#a82424>Geraint</FONT> talked to you?<BR>Why are you still asking me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-2" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Argenta$<BR>... That Geraint is really doing a useless thing.<BR><FONT color=#7e12d2>(Argenta grumbles and looks towards </FONT> <FONT color=#a82424>Geraint</FONT> <FONT color=#7e12d2>.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-2-a" mid="18"><![CDATA[<html>Did you create a Nest at this place?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Geraint$<BR>The descendant of the Ancients is at the center of the <FONT color=#a82424>Dragon Nest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-2-b" mid="20"><![CDATA[<html>To protect her.. I See...</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Geraint$<BR>That's right. The center of the Nest is the <FONT color=#a82424>sanctuary</FONT>. It is a forbidden for anyone except the owner<BR>It was also the best thing to safeguard the descendents of the Ancients now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Geraint$<BR>I yet to recovered fully and planned to stay here for awhile. But it seems like <FONT color=#a82424>Argenta</FONT> is leaving soon and she wish to say goodbye to you, go look for her now</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Geraint$<BR>To completely destroy the <FONT color=#a82424>Nest</FONT>, the owner of the Nest had to be defeated. I would be able to block off intruder even if the barrier is weak</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-a" mid="24"><![CDATA[<html>What's wrong?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Argenta$<BR>That <FONT color=#a82424>Geraint</FONT>. He is really such a useless person<BR>He's always looking for trouble in different ways!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-b" mid="26"><![CDATA[<html>Oh my, but that's a little too...</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Argenta$<BR>Look at that fool. He is injured yet he dare to say he is staying here for the sake of the <FONT color=#a82424>descendant of the Ancients</FONT>. And he could have probably healed his wounds if he just swallowed her up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-b" image="" itemindex="">
+      <talk_answer link_index="n217_argenta-3-c" mid="28"><![CDATA[<html>(she had a peaceful face afterall.)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Argenta$<BR>He seem determined to <FONT color=#a82424>protect</FONT>, so I have nothing more to say.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-c" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-d" mid="51"><![CDATA[<html>Are you talking about 50years old period when you mention about the old days?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Argenta$<BR>Since the old days, I can believe anyone except for Geraint but he just believed what everyone had said<BR>Even during that period, the fait of his nearly ruined everythign that going to be completed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-d" image="" itemindex="">
+      <talk_answer link_index="n217_argenta-3-e" mid="53"><![CDATA[<html>So that was the Six Heroes.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Argenta$<BR>Yes. Initially Geraint and me came to Saint Haven to defeat the Black Dragon but Geraint doubt so thus.<BR>He gathered up <FONT color=#a82424>colleagues</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-e" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-f" mid="64"><![CDATA[<html>(Argenta grumbles.)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Argenta$<BR>Six or Ten heroes it doesn't matter as they brought along a huge amount of backup.<BR>There were groups of <FONT color=#a82424>Sorceresses</FONT> and <FONT color=#a82424>archers</FONT>. How annoying.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-f" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-g" mid="57"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Argenta$<BR>Just when we thought we had defeated the Black Dragon and even destroyed his body and succeeded at taking out the Jewel.<BR>But then, <FONT color=#a82424>Velskud</FONT> snatched it away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-g" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-h" mid="59"><![CDATA[<html>Then what happened to the Black Dragon this time?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Argenta$<BR><FONT color=#a82424>Velskud</FONT> soon disappeard with the Jewel. We had nearly defeated the <FONT color=#a82424>Black Dragon</FONT>, but it was the worst... Geraint and I both could not move for a while because of our injuries.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-h" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-i" mid="61"><![CDATA[<html>What? Become a dragon?!</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Argenta$<BR>A human will never become a dragon even with the Dragon's Jewel thus he seek help form the ancient in the hope to become a <FONT color=#a82424>real dragon</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-i" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-j" mid="63"><![CDATA[<html>Are you saying that the Ancients have created the Black Dragon?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Argenta$<BR>That's right. He obtained powers from the <FONT color=#a82424>Ancient child</FONT>, and has become the <FONT color=#a82424>Black Dragon</FONT>. Yet he was weaker than the Black Dragon from 50 years ago. Of course, the Black Dragon back then was formed from a bunch of different Ancients, so we can't really compare the two.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-j" image="" itemindex="">
+      <talk_answer link_index="n217_argenta-3-k" mid="30"><![CDATA[<html>Where are you going?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Argenta$<BR>You had a lot of question which I do not know. I have no intention to continue this guardian thing<BR>I also have nothing to do here anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-k" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-l" mid="32"><![CDATA[<html>Do you mean Karacule, who is one of the Six Heroes...?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Argenta$<BR>I'm going to go meet <FONT color=#a82424>Karacule</FONT>.<BR>I going to help find a way to cure Geraint even thou I am injured</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-l" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n217_argenta-3-m" mid="34"><![CDATA[<html>Don't worry. I'll will take care of Geraint.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Argenta$<BR>Is that <FONT color=#a82424>noisy Sorceress</FONT> also a hero or whatever? Well, if you say so. Well, I'll be heading towards <FONT color=#a82424>Lotus</FONT> <FONT color=#a82424>Marsh</FONT>.<BR><FONT color=#382000>{user_nick}</FONT>, weakling, don't do anything stupid, and just quietly wait with Geraint.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-m" image="" itemindex="">
+      <talk_answer link_index="n217_argenta-3-n" mid="36"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n217_argenta-3-n" image="" itemindex="">
+      <talk_answer link_index="n217_argenta-3-!next" mid="38"><![CDATA[<html>(I never know she could smile with such a sweet face)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Argent$<BR>Ha ha ha... So who's going to look after who. A injured person like you worried about somebody else<BR>I really can't understand you sometimes. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">409</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4091,4091,4092,4093,4094,4094,4096</exe>
+         <exe type="complete">409</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1</exelink>
+   <exelink qstep="2" npc="n216_geraint_wounded" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n217_argenta" sub="b" />
+   <exelink qstep="3" npc="n217_argenta" sub="c" />
+   <exelink qstep="3" npc="n217_argenta" sub="d" />
+   <exelink qstep="3" npc="n217_argenta" sub="e" />
+   <exelink qstep="3" npc="n217_argenta" sub="f" />
+   <exelink qstep="3" npc="n217_argenta" sub="g" />
+   <exelink qstep="3" npc="n217_argenta" sub="h" />
+   <exelink qstep="3" npc="n217_argenta" sub="i" />
+   <exelink qstep="3" npc="n217_argenta" sub="j" />
+   <exelink qstep="3" npc="n217_argenta" sub="k" />
+   <exelink qstep="3" npc="n217_argenta" sub="l" />
+   <exelink qstep="3" npc="n217_argenta" sub="m">0</exelink>
+   <exelink qstep="3" npc="n217_argenta" sub="n">1</exelink>
+   <exelink qstep="3" npc="n217_argenta" sub="!next" />
+   <journal_data recompense="1:4091,2:4092,3:4093,4:4094,5:4094,6:4096" quest_title="아직 남은 일들" chapterid="4" quest_level="30" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_SaintHaven.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:13012@1,11@1,21@1,13014@1</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Going to the Secret Region]]></title>
+         <contents mid="41"><![CDATA[<html><FONT color=#a82424>Injured Geraint</FONT> told you that he will take <FONT color=#a82424>Rose</FONT>. He asked us to go Secret Region. Let's go<BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#086171>(Underground Secret Region)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Going to Royal Castle Underground Secret Region.]]></destination>
+         <todo_msg mid="43"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>13014,n217</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>217</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Argenta's Farewell]]></title>
+         <contents mid="45"><![CDATA[<html>Geraint had created the Nest in Saint Haven to protect Rose. <FONT color=#a82424>Argenta</FONT> is about to go to different place so say goodbye to her.<BR><BR><FONT color=#086171>Saint Haven<FONT color=#086171>(Underground Secret Region)</FONT></FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Talk to Argenta]]></destination>
+         <todo_msg mid="47"><![CDATA[Talk to Argenta.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>408</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

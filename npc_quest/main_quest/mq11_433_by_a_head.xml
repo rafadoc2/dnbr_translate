@@ -1,0 +1,191 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_433_by_a_head</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>433</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>434</nextqid>
+      <nextqname>mq11_434_so_cool_girl</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[By a Head]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$King Cassius$<BR>Oh... hello. You came.<BR>
+I'm happy to meet a girl of similar age....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceppted" mid="76"><![CDATA[<html>Alright, Jasmine.</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_01.ogg}<BR>It's going to be difficult. But, the Prophet will be in human hands for a while, so don't miss that chance.<BR>
+Look closely at the situation, and at the right time, act.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="6"><![CDATA[<html>I'll be careful</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Jasmine$<BR>First... be careful not to arouse suspicion from the Royal Palace.<BR>
+Otherwise, you'll have limitations when you need to move.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_05.ogg}<BR>If there is anyone <FONT color=#a82424>friendly</FONT> to you, try to get some information from that person.<BR><FONT color=#7e12d2>(Go to the Royal Palace and meet King Cassius.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="78"><![CDATA[<html>What about the other adventurers?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$King Cassius$<BR>Oh... hello. You came.<BR>
+<FONT color=#7e12d2>(Cassius seems pleased)<BR></FONT>I'm happy to meet a girl of similar age....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="82"><![CDATA[<html>What about the Prophet?</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$King Cassius$<BR>According to an informant, someone saw a person suspected to be the <FONT color=#a82424>Black Knight</FONT>.<BR>So the adventurers went out to find the Black Knight after being asked by <FONT color=#a82424>Bishop Ignacio</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2" mid="84"><![CDATA[<html>Where's that?</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$King Cassius$<BR>Hmm... it wasn't confirmed whether the Prophet was with him.<BR>Well, it was worth checking... so the adventurers were dispatched.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="QW_31.dds" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$King Cassius$<BR>The informant saw the Black Knight at the <FONT color=#a82424>Abandoned Welton Hollow</FONT>.<BR>It might be dangerous for a little girl like you to go there alone....<BR>To head there despite of the danger for me... I'm so touched.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QW_31.dds" itemindex="">
+      <talk_question mid="87"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_05.ogg}<BR>The Black Knight at the <FONT color=#a82424>Abandoned Welton Hollow</FONT>... You may be able to find traces of <FONT color=#a82424>Velskud </FONT>.<BR>The Royal Palace's news is pretty fast, so it's not a bad idea to go there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-a" mid="89"><![CDATA[<html>(It's Geraint.)</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$King Cassius$<BR>I heard the news. Other adventurers also witnessed the situation...<BR>They say a <FONT color=#a82424>blond</FONT> knight appeared out of nowhere and fought with the Black Knight.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3-a" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$King Cassius$<BR>Hmm... I don't know what's going on.<BR>I hope the General comes back soon, so I can discuss this with him...<BR><FONT color=#7e12d2>(Return to the Academic Station and report to Jasmine.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-a" mid="94"><![CDATA[<html>I think so.</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_02.ogg}<BR>What?! Velskud was fighting with Geraint?<BR>Oh no.... Were they enemies then?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-b" mid="96"><![CDATA[<html>What should I do?</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Academic Jasmine$<BR>Hmm... It's in the record that <FONT color=#a82424>Geraint will find the Prophet and protect her in Saint Haven</FONT>....<BR>What should we do? What you can do right now is....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-b" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-!next" mid="98"><![CDATA[<html><FONT color=#a94407>(Quest Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">433</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4330,,,,,,</exe>
+         <exe type="complete">433</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="b">0</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="0:4330" quest_title="간발의 차이입니다" chapterid="4" quest_level="24" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[By a Head I]]></title>
+         <contents mid="48"><![CDATA[<html>Go to the Saint Haven Royal Palace and try to obtain any information.<BR>
+<FONT color=#7e12d2></FONT><BR><FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="50"><![CDATA[Talk to anyone at the Saint Haven Royal Palace.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_31.dds</contents_image>
+         <destination_pos>314,0,0</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@1,314@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[By a Head II]]></title>
+         <contents mid="54"><![CDATA[<html>According to the King, a man suspected to be the Black Knight headed towards the Abandoned Welton Hollow.<BR>
+<BR><FONT color=#086171>Foothills of Black Mountain(Lonely Woods Path)</FONT> <FONT color=#a82424>→ Abandoned Welton Hollow</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Chase the Black Knight at the Abandoned Welton Hollow]]></destination>
+         <todo_msg mid="56"><![CDATA[Chase the Black Knight at the Abandoned Welton Hollow.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[By a Head III]]></title>
+         <contents mid="58"><![CDATA[<html>Saw the Black Knight at the Abandoned Welton Hollow but couldn't follow him. Return to the Academic Station and report to Jasmine.<BR>
+<BR><FONT color=#086171>Saint Haven </FONT><FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Connect to the Academic Station at Saint Haven.]]></destination>
+         <todo_msg mid="60"><![CDATA[Report what you saw at the Academic Station in Saint Haven.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>432</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,326 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_431_next_town</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>431</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>701</nextqid>
+      <nextqname>mq15_701_lotusmarsh</nextqname>
+      <nextqnpc>n213_slave_david</nextqnpc>
+      <qkname mid="1"><![CDATA[Pollution]]></qkname>
+      <qnpc>
+         <npcid>213</npcid>
+         <npcename>n213_slave_david</npcename>
+         <npckname>자칭 모험가 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="158"><![CDATA[<html>$Adventurer David$<BR>Is a secret and I am not telling you why am I here.<BR>He. He. He</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="159"><![CDATA[<html>$King Cassius$<BR>You, are you a loyal follower? Huh? ...You seems not very trustable...<BR>Should I trust <FONT color=#a82424>General Douglas</FONT>? I think the General.... is a good follower. <FONT color=#7e12d2>(Cassius is being nervous.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="160"><![CDATA[<html>$Duke Stuart${action:Stand2}<BR>So we should not speak about <FONT color=#a82424>Bishop Ignacio</FONT>'s disappearance as well.<BR>I hope you understand what I mean. Hmhm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-noquest" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="161"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>I have no interest in what Bishop's disappearance.<BR>Oh~ hohoho!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="162"><![CDATA[<html>$Master Archer Ithilien$<BR>I can hear the noisy wind coming from the Royal Castle.<BR>You should go to <FONT color=#a82424>General Douglas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="164"><![CDATA[<html>(Maybe is the cause of the Blood of Laviatha covering my entire body...)</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$General Douglas$<BR>What happen? You look awful Is it because you have been through a lot? Or maybe because of long battle we had?<BR>I am worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="166"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$General Douglas$<BR>It can't be that you are feeling tired now from the fight against the Black Dragon... That's strange.<BR>Go see <FONT color=#a82424>Master Archer Ithilien</FONT>, just in case.<BR>She should know something regarding this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1" image="" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$Adventurer David$<BR>Why am I here? Heh...<BR>It's a secret! Hah! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="85"><![CDATA[<html>(Cassius is staring into space. There is a blank look in his eye.)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$King Cassius$<BR>The Bishop.... He took the Prophet and betrayed us. I don't believe it... *Sniff* <FONT color=#a82424>Uncle Stuart</FONT> says you can't trust anyone but family... I think he's right... *Sniff*.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="86"><![CDATA[<html>$King Cassius$<BR>You are a loyal to the Kingdom? I'm not sure if I can trust you anymore... *sniffle*...<BR>What about <FONT color=#a82424>General Douglas</FONT>? I hope he's loyal to the Kingdom too... It would be nice to believe that.<FONT color=#7e12d2>(Cassius is fidgetting nervously.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="88"><![CDATA[<html>(The Duke lets out a sigh.)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Duke Stuart$<BR>Our young king is devastated by this incident.<BR>The time is not right to use the Gold Dragon and the Prophet for publicity.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-b" mid="90"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Duke Stuart$<BR>The <FONT color=#a82424>Prophet</FONT> and the <FONT color=#a82424>Gold Dragon</FONT> are gone, but we shall keep this a secret.<BR>Now that the Black Dragon has been defeated, nothing really matters much now. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Duke Stuart$<BR>Let's also stay quiet the<FONT color=#a82424>Bishop Ignacio</FONT>'s situation.<BR>I hope you know what I mean...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="94"><![CDATA[<html>(Kayleen puts up a bold front and shouts.)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I knew it! The <FONT color=#a82424>Bishop</FONT> is a cunning fox but you are too blind as a bat to see anything! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="96"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>I'm such a sharp observer, aren't I? Hah, and you will always be the fool who lost the Prophet! It's a pity I can't speak of the<FONT color=#a82424>Prophet</FONT>'s disappearance in public or I will stop at nothing to shame you! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Court Sorceress Kayleen$<BR>What? No prison for you? Bah.<BR>You'd better leave before <FONT color=#a82424>Duke Steward</FONT> changes his mind. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="98"><![CDATA[<html>$General Douglas${action:Talk}<BR>I hope your adventure gets better each time.<BR>Good luck, my friend.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="100"><![CDATA[<html>About that... (You explain your situation.)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Master Archer Ithilien$<BR>What happened? Are you here to help me?<BR>...Oh.. You don't look too good.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-b" mid="102"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Master Archer Ithilien$<BR>I see... <FONT color=#a82424>Geraint</FONT> is dead...<BR>He is a dragon with supreme powers. It is indeed a lost. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-c" mid="104"><![CDATA[<html>I've been contaminated by the Black Dragon's blood too?</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Master Archer Ithilien$<BR><FONT color=#387206>{user_nick}</FONT>If what you said is true, you are in a very precarious situation. I'm afraid you seem to be exhibiting symptoms of contamination.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2" mid="106"><![CDATA[<html>Please help me.</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Master Archer Ithilien$<BR>I can detect the symptoms just by looking at your eyes and body temperature changes.<BR>I'm afraid I don't have the cure, but I could ease your discomfort.<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QW_45.dds" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$Master Archer Ithilien$<BR>Please bring me a <FONT color=#a82424>Fossil Fragment</FONT> from <FONT color=#a82424> the Ghost Town of Isolated Forest.</FONT>.I will need them to prescribe a medicine for you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="112"><![CDATA[<html>(lthilien gets busy.)</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Master Archer Ithilien$<BR><BR>Please wait while I make the medicine for you</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-b" mid="114"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Master Archer Ithilien$<BR>Here, take this.<BR><FONT color=#7e12d2>(She hands you a bottle of pills with a weird smell)</FONT><BR>May the Tree of Life bless you a swift recovery somehow.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-c" mid="141"><![CDATA[<html>(Ithilien looks at you with clear eyes.)</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Master Archer Ithilien$<BR><FONT color=#7e12d2>(You drink the medicine and feel toxins being purged from your body. Somehow, you feel better already.)</FONT><BR </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-d" mid="116"><![CDATA[<html>She has gone to Lotus Marsh.</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Master Archer Ithilien$<BR>By the way, where is <FONT color=#a82424>Argenta</FONT>?<BR>She should know about Geraint.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-d" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4" mid="118"><![CDATA[<html>I shall go.</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Master Archer Ithilien$<BR>Good to hear, <FONT color=#387206>{user_nick}</FONT> you will be safe with Argenta at the<FONT color=#a82424>Lotus Marsh</FONT>. You may meet. <FONT color=#a82424>Karacule</FONT> there and she may be able to help you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="120"><![CDATA[<html>$Master Archer Ithilien${action:Talk}<BR>Hurry and make your way to <FONT color=#a82424>Hermalte Port</FONT>. You need to take ship to go to Lotus Marsh.<BR>May the blessings of the Tree of Life be with you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4" image="" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-a" mid="122"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Adventurer David$<BR>What? Have you come on purpose to wait for me? Ha. Ha. Ha.<BR>I didn't realize you admired me to such extend!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-b" mid="124"><![CDATA[<html>What's your reason for coming back here?</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Adventurer David${action:Stand01}<BR>Seems like you look more rugged then the last time we met. Ha. Ha. Ha.<BR>You must have been abandon by <FONT color=#a82424>Argenta</FONT>~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-c" mid="126"><![CDATA[<html>Actually... (You explain him what happened.)</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Adventurer David$<BR>Reason I am here? To run an errand my Argenta of course!<BR>Argenta found medicine that is good for eyes. So she told me to deliver this medicine to <FONT color=#a82424>Geraint</FONT>.<BR>Here! Give this medicine to Geraint!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-d" mid="128"><![CDATA[<html> (... ... ...) </html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Adventurer David$<BR>Wha, what?! <FONT color=#7e12d2>(David is freaking out.)</FONT><BR>Wha, what did you say? Ge, Geraint...<BR>Did you say Geraint is no longer around? You are joking right?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-d" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-e" mid="130"><![CDATA[<html>I am sorry... It's the truth...</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Adventurer David$<BR>This cannot be!<BR>He has the same strength as the world greatest, <FONT color=#382000>GOgreous, </FONT><FONT color=#7e12d2>Amazing, </FONT> and <FONT color=#086171>Gentle</FONT> Argenta. How can he be dead?<BR>He even won the battle against the Black Dragon!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-f" mid="132"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Adventurer David$<BR>Grrrr... <FONT color=#7e12d2>(David pulling his hair.)</FONT><BR>I need to think through my talented brain about this news. If I tell this news to <FONT color=#a82424>Argenta</FONT>, then she will claw me to death for sure! She will chop me up without any mercy! Ahhh~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-f" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-g" mid="134"><![CDATA[<html>I was on my way to Lotus Marsh.</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$Adventurer David$<BR>I still can't believe Geraint is dead. This must be a dream...!<BR>No way I am returning to Argenta as a suicide mission. If I go by myself, then I will...<FONT color=#7e12d2>(Gulp)</FONT> not be survived...<BR>Hey you, <FONT color=#387206>{user_nick}</FONT>! You should break the news Argenta about Geraint's news on your own!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-4-g" image="" itemindex="">
+      <talk_answer link_index="n213_slave_david-4-!next" mid="136"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">431</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">1172</exe>
+         <exe type="addquestitem" num="1">300250</exe>
+         <exe type="huntitem" num="1" exe="5,6,7" onexe="">300250</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">201172</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300250</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4311,4311,4312,4313,4314,4315,4316</exe>
+         <exe type="complete">431</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="2">0,2,8,4,1</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n213_slave_david" sub="b" />
+   <exelink qstep="4" npc="n213_slave_david" sub="c" />
+   <exelink qstep="4" npc="n213_slave_david" sub="d" />
+   <exelink qstep="4" npc="n213_slave_david" sub="e" />
+   <exelink qstep="4" npc="n213_slave_david" sub="f" />
+   <exelink qstep="4" npc="n213_slave_david" sub="g">0</exelink>
+   <exelink qstep="4" npc="n213_slave_david" sub="!next">1</exelink>
+   <journal_data recompense="1:4311,2:4312,3:4313,4:4314,5:4315,6:4316" quest_title="오염" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="300250">
+      <journal index="1">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="142"><![CDATA[Advisor]]></title>
+         <contents mid="143"><![CDATA[<html>You don't seem to look good, might be due to <FONT color=#a82424>Blood of Leviathan</FONT>. Is better for you to seek advise from <FONT color=#a82424>Master Archer Ithilien</FONT>.<BR> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="144"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="145"><![CDATA[Go to Master Archer Ithilien and describe to her about the symptoms.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_45.dds</contents_image>
+         <destination_pos>452,0,0</destination_pos>
+         <destination_mode>custom:451@1,452@3,453@0</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="146"><![CDATA[Fossil Fragment of Deserted Woods]]></title>
+         <contents mid="147"><![CDATA[<html>You have been corrupted by blood of Leviatha. Like everyone who got corrupted by blood of the Black Dragon. You need medicine to maintain your health for at least for a short period of time. Collect a <FONT color=#a82424>Fossil Fragment of Deserted Woods</FONT> at the <FONT color=#a82424>Ghost Town of Isolated Forest</FONT>.<BR><BR><FONT color=#086171>Black Foothills of Black Mountain(Lonely Forest)</FONT> <FONT color=#a82424>→ Ghost Town of Isolated Forest</FONT></html>]]></contents>
+         <destination mid="148"><![CDATA[Ghost Town of Isolated Forest]]></destination>
+         <todo_msg mid="149"><![CDATA[Please collect a fossil fragment of Deserted Woods at the Ghost Town of Isolated Forest.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="150"><![CDATA[Medicine]]></title>
+         <contents mid="151"><![CDATA[<html>You have collected the required ingredients for the medicine. Deliver to Master Archer Ithilien.<BR> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="152"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="153"><![CDATA[You have collected the required ingredients. Please report to Master Archer Ithilien]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n213</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>213</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="154"><![CDATA[Going to Hermalte Port]]></title>
+         <contents mid="155"><![CDATA[<html>You have to go to Lotus Marsh to meet Argenta. You are required to take ship to go to Lotus Marsh from Hermalte Port.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Hermalte Port</FONT></html>]]></contents>
+         <destination mid="156"><![CDATA[Going to Hermalte Port]]></destination>
+         <todo_msg mid="157"><![CDATA[Please go to Hermalte Port.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>430</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

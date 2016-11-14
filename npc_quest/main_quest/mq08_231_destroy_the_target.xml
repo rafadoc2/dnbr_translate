@@ -1,0 +1,256 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_231_destroy_the_target</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>231</qid>
+      <designer>김인정</designer>
+      <qlevel>16</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>232</nextqid>
+      <nextqname>mq08_232_ucan_be_strong</nextqname>
+      <nextqnpc>n553_cian</nextqnpc>
+      <qkname mid="1"><![CDATA[Destroy the Target]]></qkname>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>547</npcid>
+         <npcename>n547_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>553</npcid>
+         <npcename>n553_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Warrior Xian$<BR>
+If we join our forces, everything will be alright! Haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Warrior Xian$<BR>Evil Dark Elf...<BR>Let's cheer up and protect the Calderock Village!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_04.ogg}<BR>It's about the data searching we talked about the other day....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-a" mid="88"><![CDATA[<html>Thank goodness we've at least recovered parts of the data.</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Academic Jasmine$<BR>Though, it has some limitations, you can at least use the communicator to search for some basic data.<BR>
+I don't know if it will help very much, but at least, you won't be left with nothing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-b" mid="90"><![CDATA[<html>It's okay. Trust me.</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Academic Jasmine$<BR>But only a tiny tip of the iceberg has been recovered. You'll have to make decisions on your own for most situations...<BR>
+I'm a bit worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-c" mid="92"><![CDATA[<html>(Checks the data)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_05.ogg}<BR>Yes, I believe you.<BR>My beloved sister, <FONT color=#387206>{user_nick}</FONT>...<BR>Now I'll send you what you requested. Take a look.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-d" mid="162"><![CDATA[<html>It's okay. Thank you~!</html>]]></talk_answer>
+      <talk_question mid="161"><![CDATA[<html>$Academic Jasmine$<BR>Elena hid the manufacturing facility at the <FONT color=#a82424>Church Ruins</FONT>.<BR>
+But, what are you planning to do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="232"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_05.ogg}<BR>I don't know what you're planning... But, be careful.<BR><FONT color=#7e12d2>(Tell Warrior Xian at the Cristal Stream about this information)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Warrior Xian$<BR>It's okay!<BR>
+Everything will be alright!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-1" image="" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Warrior Xian$<BR>Evil Dark Elf...<BRLet's cheer up and protect the Calderock Village!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="234"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Go to Cristal Stream and give Warrior Xian the information.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-2" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n547_cian-2-a" mid="239"><![CDATA[<html>What about the others?</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Warrior Xian${action:Talk}<BR><FONT color=#a82424>Church Ruins</FONT>? I never imagined it would be at that place!!<BR>My blood is boiling!! Shall we go now?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-2-a" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_question mid="240"><![CDATA[<html>$Warrior Xian$<BR>Others will soon follow. Let's get going, <FONT color=#387206>{user_nick}</FONT>!<BR>We have to stop that evil <FONT color=#a82424>Dark Elf</FONT> before she takes control over all the monsters around Calderock Village~!<BR><FONT color=#7e12d2>(Xian clenches his fists)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3" image="QW_19.dds" itemindex="">
+      <talk_question mid="241"><![CDATA[<html>$Warrior Xian$<BR>Destroy the Hobgoblin Manufacturing Facility, eliminate Hobgoblins and protect Calderock.<BR>
+Now, let's go! To the <FONT color=#a82424>Church Ruins</FONT>~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-3" image="" itemindex="">
+      <talk_question mid="242"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#387206>{user_nick}</FONT>, did you destroy all the Hobgoblin Manufacturing Facilities?<BR>
+I'm also looking for them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-4" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n553_cian-4-a" mid="245"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="243"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>Excellent.<BR>Wow~ I respect you, <FONT color=#387206>{user_nick}</FONT>!!<BR>
+<FONT color=#7e12d2>(Xian exclaims)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-4-a" image="" itemindex="">
+      <talk_answer link_index="n553_cian-4-b" mid="247"><![CDATA[<html>I don't really want that....</html>]]></talk_answer>
+      <talk_question mid="246"><![CDATA[<html>$Warrior Xian$<BR>Even though you're a child, since I respect you very much, I'll start calling you big sister...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-4-b" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n553_cian-4-c" mid="250"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="249"><![CDATA[<html>$Warrior Xian$<BR>...Since you don't like it, I'll just continue calling you <FONT color=#387206>{user_nick}</FONT>.<BR>I hope you'll continue to give me guidance in the future.<BR>Let's meet frequently.<BR>
+(Xian grabs my hand)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-4-c" image="" itemindex="">
+      <talk_answer link_index="n553_cian-4-d" mid="252"><![CDATA[<html>Wh, where?</html>]]></talk_answer>
+      <talk_question mid="251"><![CDATA[<html>$Warrior Xian$<BR>In that sense, will you go somewhere with me one more time?!<BR>Comrade protecting the Calderock Village!!<BR>Courageous <FONT color=#387206> {user_nick}</FONT>~ let's work together!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-4-d" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n553_cian-4-e" mid="254"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="253"><![CDATA[<html>$Warrior Xian$<BR>That is! That is...!<BR>Umm.... I'll tell you when we're in a brightly lit environment, unlike this cold and dark place! I'll see you at the <FONT color=#a82424>Cristal Stream</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-4-e" image="" itemindex="">
+      <talk_answer link_index="n553_cian-4-!next" mid="256"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="255"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">231</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2310,,,,,,</exe>
+         <exe type="complete">231</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n392_academic_station" sub="b" />
+   <exelink qstep="1" npc="n392_academic_station" sub="c" />
+   <exelink qstep="1" npc="n392_academic_station" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n547_cian" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n553_cian" sub="b" />
+   <exelink qstep="4" npc="n553_cian" sub="c" />
+   <exelink qstep="4" npc="n553_cian" sub="d" />
+   <exelink qstep="4" npc="n553_cian" sub="e">0</exelink>
+   <exelink qstep="4" npc="n553_cian" sub="!next">1</exelink>
+   <journal_data recompense="2310" quest_title="대상을 파괴합니다" chapterid="3" quest_level="16" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="257"><![CDATA[Destroy the Target I]]></title>
+         <contents mid="258"><![CDATA[<html>Connect to the Academic Station and ask Jasmine for a data search.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="259"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="260"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>4,n547</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>547</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="261"><![CDATA[Destroy the Target II]]></title>
+         <contents mid="262"><![CDATA[<html>Found out where Elena hid the Hobgoblin Manufacturing Facility. Go to Cristal Stream and tell Warrior Xian.<BR>
+ <BR>
+<FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Warrior Xian</FONT></html>]]></contents>
+         <destination mid="263"><![CDATA[Talk to Warrior Xian at the Cristal Stream]]></destination>
+         <todo_msg mid="264"><![CDATA[Give information to Warrior Xian at the Cristal Stream.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_19.dds</contents_image>
+         <destination_pos>144,0,0</destination_pos>
+         <destination_mode>custom:142@3,143@3,144@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="265"><![CDATA[Destroy the Target III]]></title>
+         <contents mid="266"><![CDATA[<html>According to the records Jasmine searched, the Hobgoblin Manufacturing Facility is located at the Church Ruins. Go there.<BR>
+ <BR>
+<FONT color=#086171>Wind Forest Area (Wind Forest Temple Entrance)</FONT> <FONT color=#a82424>→ Church Ruins</FONT></html>]]></contents>
+         <destination mid="267"><![CDATA[Destroy the Hobgoblin Manufacturing Facility at the Church Ruins]]></destination>
+         <todo_msg mid="268"><![CDATA[Destroy the Hobgoblin Manufacturing Facility at the Church Ruins.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>144,n553</destination_pos>
+         <destination_mode>custom:142@1,143@1,144@1</destination_mode>
+         <statemark_npcid>553</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="269"><![CDATA[Destroy the Target IV]]></title>
+         <contents mid="270"><![CDATA[<html>Eliminated Hobgoblins, and destroyed the Hobgoblin Manufacturing Facility located at the Church Ruins. Warrior Xian is looking at me in awe.<BR>
+ <BR>
+<FONT color=#086171>Wind Forest Area(Wind Forest Temple Entrance)</FONT> <FONT color=#a82424>→ Church Ruins(Warrior Xian)</FONT></html>]]></contents>
+         <destination mid="271"><![CDATA[Talk to Warrior Xian at the Church Ruins]]></destination>
+         <todo_msg mid="272"><![CDATA[Talk to Warrior Xian.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>230</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

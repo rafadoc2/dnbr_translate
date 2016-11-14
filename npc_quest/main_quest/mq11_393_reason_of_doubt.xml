@@ -1,0 +1,248 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_393_reason_of_doubt</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>393</qid>
+      <designer>김인정</designer>
+      <qlevel>36</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>394</nextqid>
+      <nextqname>mq11_394_deep_anxiety</nextqname>
+      <nextqnpc>n216_geraint_wounded</nextqnpc>
+      <qkname mid="1"><![CDATA[Why the Doubt]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>526</npcid>
+         <npcename>n526_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Geraint$<BR>Live your life in the bright world.<BR>Don't go in the path of... looking at the past and being captured by the shadows.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$King Cassius$<BR>
+Nice to see you, brave girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Archer Triana$<BR>Living a devoted life chasing after the Telezia.<BR>
+That's the only thing permitted to an Elf.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>Then, leave the Serpentra alone. It's bound to revive.<BR>Anyway, you must watch carefully and when the Nest is lifted, take the Prophet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="139"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_08.ogg}<BR>Go to <FONT color=#a82424>King Cassius</FONT> and keep a close lookout.<BR>It's fortunate there is someone at the Royal Palace who likes you.<BR>A kid can come in useful in situations like this after all...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="140"><![CDATA[<html>$Geraint$<BR>Live your life in the bright world.<BR>Don't go to the path of... looking at the past and being captured by the shadows.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-1" image="" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$Archer Triana$<BR>
+Living a devoted life chasing after the Telezia.<BR>
+That's the only thing permitted to an Elf.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="144"><![CDATA[<html>(Cassius has a sympathetic look)</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$King Cassius$<BR>Oh, welcome. Did you come to see what the other adventurers were doing?<BR>I understand... completely. With that young, slow body, it's easy to lose the other adventurers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="146"><![CDATA[<html>Why would they have gone there?</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$King Cassius$<BR>The adventurers who came with you are still working hard under Ignacio.<BR>
+This time... what was it?<BR>The <FONT color=#a82424>Ruins of Lost Time</FONT>? They went there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2" mid="148"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$King Cassius$<BR>I'm not sure.<BR>Something called the <FONT color=#a82424>Power Source</FONT>? They're going to find that and use it during the ritual....<BR>
+Cleansing ritual is so bothersome.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="QW_47.dds" itemindex="">
+      <talk_question mid="208"><![CDATA[<html>$King Cassius$<BR>
+Oh! Are you going to the <FONT color=#a82424>Ruins of Lost Time</FONT> to find your colleagues?<BR>You're a girl who considers others so much. I'm so touched.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-2" image="" itemindex="">
+      <talk_answer link_index="n526_triana-2-a" mid="210"><![CDATA[<html>What are you doing here?</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Archer Triana${action:Talk}<BR>Hello, <FONT color=#387206>{user_nick}</FONT> .<BR>Fancy meeting you here. Destiny is a mysterious thing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-2-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n526_triana-2-b" mid="212"><![CDATA[<html>Sea Beast's Seal?</html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Archer Triana$<BR>Didn't you hear? Xian, Edan, Angelica and I are working for <FONT color=#a82424>Bishop Ignacio</FONT>. I'm here to retrieve the <FONT color=#a82424>Sea Beast's Seal</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-2-b" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n526_triana-2-c" mid="214"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Archer Triana$<BR>Long ago, The Sea Beast, which was eliminated by the <FONT color=#a82424>Six Heroes</FONT> was separated and sealed.<BR>
+The Power Source also sank in the deep ocean. The Sea Beast's Seal, that's the Power Source.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-2-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n526_triana-2-d" mid="216"><![CDATA[<html>The Bishop is planning a heinous conspiracy.</html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$Archer Triana$<BR>Since I retrieved the Sea Beast's Seal, I'm going back and report to <FONT color=#a82424>Ignacio</FONT>.<BR>Are you coming with me, <FONT color=#387206>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-2-d" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n526_triana-2-e" mid="218"><![CDATA[<html>He's trying to revive the Sea Beast.</html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Archer Triana$<BR>You're so abrupt.<BR>
+What do you mean <FONT color=#a82424>Ignacio</FONT> is planning something heinous?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-2-e" image="" itemindex="">
+      <talk_answer link_index="n526_triana-2-f" mid="221"><![CDATA[<html>I'm not sure about that yet.</html>]]></talk_answer>
+      <talk_question mid="220"><![CDATA[<html>$Archer Triana$<BR>Reviving the Sea Beast, it's a strange story. Even if it's possible, what would Ignacio gain from doing that?<BR>
+There's nothing for him to gain by putting Saint Haven in danger.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-2-f" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="222"><![CDATA[<html>$Archer Triana$<BR>I can't believe you. But, if you're really concerned, go to <FONT color=#a82424>Geraint</FONT> in the basement of the Royal Palace and tell him. If you have a point in your story, he'll listen to it carefully.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n526_triana-3" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="223"><![CDATA[<html>$Archer Triana$<BR>I don't understand what you're saying. I consider you as a very good person....<BR>I'm sorry. You had better talk to <FONT color=#a82424>Geraint</FONT> in the basement of the Royal Palace.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-a" mid="226"><![CDATA[<html>I'm not sure.</html>]]></talk_answer>
+      <talk_question mid="225"><![CDATA[<html>$Geraint$<BR>Reviving the Serpentra?<BR>I don't... understand. Why would he do such a thing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-b" mid="228"><![CDATA[<html>Is your injury okay?</html>]]></talk_answer>
+      <talk_question mid="227"><![CDATA[<html>$Geraint$<BR>It's too much for me to believe it.<BR>But, I'll remember that. If something doesn't feel right, I will take action.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-c" mid="230"><![CDATA[<html>Then, let me help.</html>]]></talk_answer>
+      <talk_question mid="229"><![CDATA[<html>$Geraint$<BR>I vowed to protect <FONT color=#a82424>Saint Haven</FONT>.<BR>
+As I had selected this place to be my Nest, it's a promise I can't break.<BR>I do not lie.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-c" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-!next" mid="232"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="231"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">393</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3930,,,,,,</exe>
+         <exe type="complete">393</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n526_triana" sub="b" />
+   <exelink qstep="2" npc="n526_triana" sub="c" />
+   <exelink qstep="2" npc="n526_triana" sub="d" />
+   <exelink qstep="2" npc="n526_triana" sub="e" />
+   <exelink qstep="2" npc="n526_triana" sub="f">0,1</exelink>
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="c">0</exelink>
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="!next">1</exelink>
+   <journal_data recompense="3930" quest_title="어째서 믿지 않는 겁니까" chapterid="5" quest_level="36" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="234"><![CDATA[Why the Doubt I]]></title>
+         <contents mid="235"><![CDATA[<html>Can't be sure what might happen, so listen carefully to the information coming out from the Royal Palace.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="236"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="237"><![CDATA[Talk to King Cassius.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_47.dds</contents_image>
+         <destination_pos>474,n526</destination_pos>
+         <destination_mode>custom:471@1,472@1,473@1,474@1</destination_mode>
+         <statemark_npcid>526</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="238"><![CDATA[Why the Doubt II]]></title>
+         <contents mid="239"><![CDATA[<html>It seems Ignacio sent an adventurer to Ruins of Lost Time. Go there and find out what he's doing.<BR><BR><FONT color=#086171>Hermalte Port(Entrance to the Flooded Downstream Ruins)</FONT> <FONT color=#a82424>→ Ruins of Lost Time</FONT></html>]]></contents>
+         <destination mid="240"><![CDATA[Talk to the adventurer at Ruins of Lost Time]]></destination>
+         <todo_msg mid="241"><![CDATA[Find the adventurer at Ruins of Lost Time.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="242"><![CDATA[Why the Doubt III]]></title>
+         <contents mid="243"><![CDATA[<html>Go to Geraint in the basement of the Royal Palace and tell him about the revival of the Serpentra.<BR><BR><FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="244"><![CDATA[Talk to Geraint in the basement of the Royal Palace]]></destination>
+         <todo_msg mid="245"><![CDATA[Meet Geraint at the Secret Area in the basement of the Royal Palace.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>392</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

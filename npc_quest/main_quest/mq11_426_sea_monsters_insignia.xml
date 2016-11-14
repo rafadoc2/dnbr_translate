@@ -1,0 +1,201 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_426_sea_monsters_insignia</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>426</qid>
+      <designer>김인정</designer>
+      <qlevel>36</qlevel>
+      <qdesc>1. 주교와 대화
+2. 잃어버린 시간의 폐허에서 바다 괴수의 문장 습득
+3. 주교와 대화</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>427</nextqid>
+      <nextqname>mq11_427_old_scroll</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Sea Monster's Seal]]></qkname>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="45"><![CDATA[<html>(The Bishop's eyes turn quite serious.)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Bishop Ignacio$<BR>It is now time to get the <FONT color=#a82424>Sea Monster's Crest</FONT>.<BR>But before that, you would like to learn about the Sea Monster, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>Oh, the Sea Monster was defeated by the Six Heroes...?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Hmm... Now about that <FONT color=#a82424>Sea Monster</FONT>... That monster caused much violence a long time ago at Lorreline River, which was near Saint Haven. It caused numerous casualties before it was defeated by the <FONT color=#a82424>Heroes</FONT> 50 years ago.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>That's right. This is before they left to subdue the Black Dragon.<BR>After the heroes defeated the Sea Monster, they separated the corpse into many pieces, and then sealed them. The <FONT color=#a82424>root of the powers</FONT> also sank deep Into the Abyss.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="41"><![CDATA[<html>Then where could it be?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Bishop Ignacio$<BR>That monster was defeated after it had already attacked and sunk the Ship. Immediately after this, the heroes attacked. So the monster's neck was left near the <FONT color=#a82424>Sunken Cargo Vessel</FONT>, as you have already seen. But the heroes took the <FONT color=#a82424>root of the powers</FONT> to somewhere far away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>Its exact location has not been identified yet. I will investigate more about the Sea Monster, so you train while you wait.<BR><FONT color=#7e12d2>(Get to Level 36 or higher to proceed.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="QW_47.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Bishop Ignacio$<BR>If the root of the powers still remain, I'm thinking that it may be at the direction of <FONT color=#a82424>River Ruins</FONT>. I espcially think that the <FONT color=#a82424>Ruins of Lost Time</FONT> is the most likely place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="QW_47.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-f" mid="13"><![CDATA[<html>How about asking Geraint about the exact location?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>Just like the other monsters, it is highly possible that the <FONT color=#a82424>Sea Monster's Crest</FONT> has hardened into a form of a Glowing Jewel.<BR>Look for the crest at <FONT color=#a82424>Ruins of Lost Time</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-f" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-g" mid="15"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio$<BR>Why, no. You can't just try to rely on others for everything like that.<BR>He was greatly injured from his fight against the <FONT color=#a82424>Black Knight</FONT>, wasn't he? He has not fully recovered yet... I mean, you can't cause trouble to a <FONT color=#a82424>dragon</FONT> like that.<BR>Just let him get some rest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-g" image="QW_47.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Bishop Ignacio$<BR>When all of the evil energies have been driven out, Geraint, who has been injured, will be happy.<BR>So you must make sure that you bring back the <FONT color=#a82424>Sea Monster's Crest</FONT> at <FONT color=#a82424>Ruins of Lost Time</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_47.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Bishop Ignacio$<BR>Go find the <FONT color=#a82424>Sea Monster's Crest</FONT> at <FONT color=#a82424>Ruins of Lost Time</FONT>.<BR>It is most likely that the strongest monster there is holding onto it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>I was waiting.<BR>Oh, my true friend of Saint Haven!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="QS_Default.dds" itemindex="300024">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="21"><![CDATA[<html>(The Bishop's eyes look deeply moved.)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Bishop Ignacio$<BR>What a mysterious light...<BR>It certainly has the vitality of a powerful monster.<BR>Just looking at it makes me shiver.<BR>This much power will indeed be helpful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="43"><![CDATA[<html>Yes. Please do so.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Bishop Ignacio$<BR>I feel assured because of your strong will. How trustworthy!!<BR>Well... Since both the Spirit and Crest have been found, it is time to prepare for the ritual.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="23"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">426</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">36</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">c</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">d</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">1215</exe>
+         <exe type="addquestitem" num="1">300024</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,8,9">300024</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="12">201215</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1215);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4261,4261,4262,4263,4264,4264,4266</exe>
+         <exe type="delquestitem" num="-1">300024</exe>
+         <exe type="complete">426</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="f" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="g">3,5,11,10,4</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1,2</exelink>
+   <journal_data recompense="1:4261,2:4262,3:4263,4:4264,5:4264,6:4266" quest_title="바다 괴수의 문장" chapterid="5" quest_level="36" quest_mark_type="1" use_item_list="300024">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[Sea Monster's Crest]]></title>
+         <contents mid="29"><![CDATA[<html>Talk to Bishop Ignacio about the Sea Monster's Crest, which is needed for the ritual.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[[Lv.36] Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="31"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_47.dds</contents_image>
+         <destination_pos>474,0,0</destination_pos>
+         <destination_mode>custom:471@1,472@1,473@1,474@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[To the Sunken Cargo Vessel]]></title>
+         <contents mid="33"><![CDATA[<html>Go to Ruins of Lost Time and find the <FONT color=#a82424>Sea Monster's Crest</FONT>.<BR><BR><FONT color=#086171>Hermalte Port(River Ruins Path)</FONT> <FONT color=#a82424>→ Ruins of Lost Time</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Collect Crest from Ruins of Lost Time]]></destination>
+         <todo_msg mid="35"><![CDATA[Find the Sea Monster's Crest at Ruins of Lost Time.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom:462@1,11@1,21@1</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[The Bishop's Compliments]]></title>
+         <contents mid="37"><![CDATA[<html>You have obtained the Sea Monster's Crest. Report to Bishop Ignacio.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="39"><![CDATA[You have obtained the Sea Monster's Crest. Report to Bishop Ignacio.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>425</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

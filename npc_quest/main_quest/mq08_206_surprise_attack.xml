@@ -1,0 +1,264 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_206_surprise_attack</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>206</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>207</nextqid>
+      <nextqname>mq08_207_scattered_components</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Outwit Your Opponent!]]></qkname>
+      <qnpc>
+         <npcid>128</npcid>
+         <npcename>n128_argenta</npcename>
+         <npckname>아르젠타 (이벤트 씬 용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>27</npcid>
+         <npcename>n027_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-noquest" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Argenta$<BR>Darn it... Argh...Ugh...<BR>(Argenta groans in pain.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Adventurer's Guild Master Deckard${action:Talk}<BR>You're still here? I thought you were meeting that silver-haired woman at the <FONT color=#a82424>Sleepers' Temple</FONT>?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-noquest" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Argenta$<BR>Think of something, instead of just idling around, you fool!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="63"><![CDATA[<html>Yes, I am ready.</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>Your destination is the Sleepers' Temple. Are you prepared?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Cleric Jermain$<BR>Be careful... I would hate to lose you like I lost my master...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Master Cleric Jermain$<BR>Hurry on to the <FONT color=#a82424>Sleepers' Temple</FONT> and please rescue the Prophet before she gets hurt.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-b" mid="58"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>Your destination is the Sleepers' Temple. Are you prepared?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-b" mid="67"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Master Cleric Jermain$<BR>Be careful... I would hate to lose you like I lost my master...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-b" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Master Cleric Jermain$<BR>Hurry on to the <FONT color=#a82424>Sleepers' Temple</FONT> and please rescue the Prophet before she gets hurt.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-1-a" mid="7"><![CDATA[<html>I'm sorry. The pendant took a while to find.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Argenta$<BR>You fool! What took you so long?<BR>Have you any idea how long the Black Knight has been in the temple?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-a" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n027_argenta-1-b" mid="9"><![CDATA[<html>(Show her the pendant)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Argenta$<BR>So did you get the pendant?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-c" mid="11"><![CDATA[<html>It sounds funny to use the word "recapture" on a person...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Argenta$<BR>Good. We'll attack the Black Knight now and recapture the girl!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-d" mid="13"><![CDATA[<html>That's...your plan?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Argenta$<BR>Hush, stay focused!<BR>You go inside and draw the attention of the Black Knight.<BR>I'm going to catch him by surprise from behind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-d" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n027_argenta-1-e" mid="15"><![CDATA[<html>You mean I'm the bait?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Argenta$<BR>Yes. I am ashamed to say that I might not beat him head on. I'm unwilling to take that risk.<BR>So yes, you go in and engage him first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-1-e" image="" itemindex="">
+      <talk_answer link_index="n027_argenta-2" mid="17"><![CDATA[<html>Uhh...sounds good...sure.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Argenta$<BR>Great. There may be hope for you, still.<BR>Alright, don't keep me waiting kiddo.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Argenta$<BR>Darn it... Argh...Ugh...<BR>(Argenta groans in pain.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Master Deckard${action:Talk}<BR>You're still here? I thought you were meeting that silver-haired woman at the <FONT color=#a82424>Sleepers' Temple</FONT>?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n027_argenta-2" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Argenta$<BR>Quit complaining and hurry up, already.<BR>Don't you want to rescue the girl?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-a" mid="23"><![CDATA[<html>Are you okay?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Argenta$<BR>Darn it... Argh...Ugh...<BR>(Argenta groans in pain.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-a" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-b" mid="25"><![CDATA[<html>You're injured, let me bring you back to the village.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Argenta$<BR>Are your eyes useless? What does it look like?? Ugh...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-b" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-c" mid="27"><![CDATA[<html>Yes? Alright.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Argenta$<BR>No, I'm going off. Ugh.. Return to town by yourself.<BR>Hang on, I've got a favour to ask you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-c" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n128_argenta-2-d" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Argenta$<BR>Go to Saint Haven. Find Geraint, a blond-haired swordsman.<BR>Tell him what happened, and request for his help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-d" image="" itemindex="">
+      <talk_answer link_index="n128_argenta-2-e" mid="54"><![CDATA[<html>Geraint seemed to know the Black Knight well.</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Argenta$<BR><FONT color=#a82424>Geraint</FONT> is busy investigating the <FONT color=#a82424>Black Mountain</FONT>  now, but he needs to be updated on what happened here. Once I have recovered, I will be heading to the <FONT color=#a82424>Lotus Marsh</FONT> to get more help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-2-e" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Argenta$<BR>They are bound by fate… a bitter unending fate…<BR>I will tell you more later. Now, go to <FONT color=#a82424>Saint Haven</FONT> as my slave. First, tell <FONT color=#a82424>Deckard</FONT> what happened.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>I thought you had left for <FONT color=#a82424>Sleepers' Temple</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>Did you get hurt? I didn't know the Black Knight would be that strong…<BR><FONT color=#a82424>Adventurer's Guild Master Deckard</FONT> is waiting for you now. Why don't you go and see him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Adventurer's Guild Master Deckard${action:Refusal}<BR>I've heard the news… So you got owned by <FONT color=#a82424>the Black Knight</FONT>, eh? <BR>You're something too.<BR>You faced <FONT color=#a82424>the Black Knight</FONT> twice and you're still alive…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-b" mid="35"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>What about your <FONT color=#a82424>silver-haired friend</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="37"><![CDATA[<html><FONT face=Arial color=#a94407 size=2>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n128_argenta-3" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Argenta$<BR>Find Geraint in Saint Haven. Update him on all that has happened.<BR>Request for his aid to stop the Black Knight.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">206</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>n027_argenta 아르젠타는 기본형
+n128_argenta 는 이벤트 씬 용(다친 상태)</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>300003 노예의 증거 아이템</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300003</exe>
+         <exe type="delquestitem" num="-1">300030</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">206</exe>
+         <exe type="recompense">2061,2061,2062,2063,2064,2066,2066</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="b">0</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="1" npc="n027_argenta" sub="b" />
+   <exelink qstep="1" npc="n027_argenta" sub="c" />
+   <exelink qstep="1" npc="n027_argenta" sub="d" />
+   <exelink qstep="1" npc="n027_argenta" sub="e" />
+   <exelink qstep="1" npc="n027_argenta" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n128_argenta" sub="b" />
+   <exelink qstep="2" npc="n128_argenta" sub="c" />
+   <exelink qstep="2" npc="n128_argenta" sub="d" />
+   <exelink qstep="2" npc="n128_argenta" sub="e">3,2,0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2061,2:2062,3:2063,4:2064,6:2066" quest_title="의표를 찔러라" chapterid="2" quest_level="14" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>129,n27</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1</destination_mode>
+         <statemark_npcid>27</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Talk to Argenta]]></title>
+         <contents mid="40"><![CDATA[<html>Bring the Pendant of the Pure to the silver-haired woman at the <FONT color=#a82424>Sleepers' Temple</FONT>.<BR><BR><FONT color=#086171>Lower Ridge </FONT><FONT color=#a82424>→ Sleepers' Temple</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Talk to Argenta at the Sleepers' Temple.]]></destination>
+         <todo_msg mid="42"><![CDATA[Meet Argenta at the Sleepers' Temple.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>130,n128</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1,130@1</destination_mode>
+         <statemark_npcid>128</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Outsmarting the Enemy]]></title>
+         <contents mid="44"><![CDATA[<html>Meet <FONT color=#a82424>Argenta</FONT> at the <FONT color=#a82424>Sleepers' Temple</FONT>, and go to the <FONT color=#a82424>altar at the temple</FONT> to fight the Black Knight.<BR><BR><FONT color=#086171>Lower Ridge</FONT><FONT color=#a82424> → Sleepers' Temple</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Go to the altar and talk to Argenta]]></destination>
+         <todo_msg mid="46"><![CDATA[Defeat the Black Knight at the Sleepers' Temple.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></title>
+         <contents mid="48"><![CDATA[<html>The Black Knight countered Argenta's plan and injured her gravely.<BR>Return to <FONT color=#a82424>Deckard</FONT> and report to him. <BR><BR><FONT color=#086171>Calderock Village</FONT><FONT color=#a82424> → Deckard</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="50"><![CDATA[Report to Deckard.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>205</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

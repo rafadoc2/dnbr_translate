@@ -1,0 +1,236 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_397_but_unbowed</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>397</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>398</nextqid>
+      <nextqname>mq11_398_lose_or_shorn</nextqname>
+      <nextqnpc>n209_elite_soldier</nextqnpc>
+      <qkname mid="1"><![CDATA[Will Not be Defeated]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>530</npcid>
+         <npcename>n530_sleeping_rose</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>531</npcid>
+         <npcename>n531_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Elite Soldier Calrim$<BR>This is a huge crisis for Saint Haven!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n531_bishop_ignasio-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Bishop Ignacio$<BR>Give me the Prophet!!<BR>
+Foolish little girl!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Rose$<BR>...No....<BR><FONT color=#7e12d2>(Moans quietly, as if she cannot wake up.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>Okay, Jasmine!</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_03.ogg}<BR>Yes, so go to the <FONT color=#a82424>Secret Area in the Basement of the Royal Palace</FONT> and keep an eye on the Prophet.<BR>It would be better if we could wake her up, but we don't know when the Nest will be lifted.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="139"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_08.ogg}<BR>Everything will become clear soon. Hurry and go to the <FONT color=#a82424>Secret Area in the Basement of the Royal Palace</FONT> and meet the <FONT color=#a82424>Prophet</FONT>.<BR><FONT color=#7e12d2></FONT><BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="247"><![CDATA[<html>$Elite Soldier Calrim$<BR>Oh, no. A grave crisis has come to Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n531_bishop_ignasio-1" image="" itemindex="">
+      <talk_question mid="248"><![CDATA[<html>$Bishop Ignacio$<BR>Give me the Prophet.<BR>
+Foolish girl!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-1" image="" itemindex="">
+      <talk_answer link_index="n530_sleeping_rose-1-a" mid="326"><![CDATA[<html>(Come to think of it, why did the Prophet collapse?)</html>]]></talk_answer>
+      <talk_question mid="249"><![CDATA[<html>$Rose$<BR>No... I don't want to wake up...<BR>Leave me alone.... I...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-1-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n530_sleeping_rose-1-b" mid="328"><![CDATA[<html>The Nest has been lifted.</html>]]></talk_answer>
+      <talk_question mid="327"><![CDATA[<html><FONT color=#7e12d2>(Unlike the time when I couldn't touch the Prophet's hand, I think I can touch her now.<BR>Geraint's Nest must have been lifted.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-1-b" image="" itemindex="">
+      <talk_answer link_index="n530_sleeping_rose-1-camera_wark_1" mid="330"><![CDATA[<html>(Feel someone is behind)</html>]]></talk_answer>
+      <talk_question mid="329"><![CDATA[<html>$Rose$<BR>No... No... I don't want to wake up...!<BR><FONT color=#7e12d2>(Now, I can take her without waking the Prophet up.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-2" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="332"><![CDATA[<html><FONT color=#7e12d2>(As I am about to take the Prophet, I hear footsteps.<BR>There is an intruder.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n531_bishop_ignasio-2" image="" itemindex="">
+      <talk_question mid="333"><![CDATA[<html>$Bishop Ignacio$<BR>I succeeded in destroying the <FONT color=#a82424>Gold Dragon</FONT>'s <FONT color=#a82424>Nest</FONT>.<BR>Haha... foolish adventurers. As I expected, there is no one here. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n531_bishop_ignasio-3" image="" itemindex="">
+      <talk_question mid="341"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Foolish... little girl.... You seem to be on friendly terms with the <FONT color=#a82424>Gold Dragon</FONT>?<BR>I'll take your life in an instant!!<BR>Go get her, my loyal servants~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-3" image="" itemindex="">
+      <talk_question mid="342"><![CDATA[<html><FONT color=#7e12d2>(I won't be able to take her and run before eliminating the monsters Ignacio summoned.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-a" mid="344"><![CDATA[<html>I don't know.</html>]]></talk_answer>
+      <talk_question mid="343"><![CDATA[<html>$Academic Jasmine$<BR>
+What? <FONT color=#a82424>Ignacio</FONT> ran away with the Prophet?<BR>Go, go after him!! Do you know where he went?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="345"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_05.ogg}<BR>What are you doing? You don't have time to report to me!!<BR>Go to the <FONT color=#a82424>Royal Palace</FONT> and ask any <FONT color=#a82424>Elite Soldier</FONT>! Ask if any of them saw something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-4-a" mid="347"><![CDATA[<html>I know.</html>]]></talk_answer>
+      <talk_question mid="346"><![CDATA[<html>$Elite Soldier Calrim${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT> !! Is it true the <FONT color=#a82424>Prophet</FONT> is gone?<BR>The gate to the Basement is wide open and there is no trace of the Prophet anywhere after the guards searched the whole place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-4-b" mid="349"><![CDATA[<html>Do you know where he went?</html>]]></talk_answer>
+      <talk_question mid="348"><![CDATA[<html>$Elite Soldier Calrim$<BR>That's not all!!<BR>
+<FONT color=#a82424>Bishop Ignacio</FONT> also disappeared, so the Royal Palace is in a state of emergency.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4-b" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-4-!next" mid="351"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="350"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">397</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3970,,,,,,</exe>
+         <exe type="complete">397</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n530_sleeping_rose" sub="b" />
+   <exelink qstep="1" npc="n530_sleeping_rose" sub="camera_wark_1">0,1</exelink>
+   <exelink qstep="4" npc="n209_elite_soldier" sub="b">0</exelink>
+   <exelink qstep="4" npc="n209_elite_soldier" sub="!next">1</exelink>
+   <journal_data recompense="3970" quest_title="패배하지 않습니다" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n530</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>530</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="353"><![CDATA[Will Not be Defeated I]]></title>
+         <contents mid="354"><![CDATA[<html>Wake the Prophet up once more.<BR>
+ <BR><BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="355"><![CDATA[Talk to Rose in the Basement of the Royal Palace]]></destination>
+         <todo_msg mid="356"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>13014,n530</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>530</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="357"><![CDATA[Will Not be Defeated II]]></title>
+         <contents mid="358"><![CDATA[<html>Bishop Ignacio appeared and took the Prophet away. It seems he's trying to stand in our way.<BR>
+<BR><BR>
+<BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="359"><![CDATA[Talk to Rose in the Basement of the Royal Palace]]></destination>
+         <todo_msg mid="360"><![CDATA[Bishop Ignacio broke in.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>13014,0,0</destination_pos>
+         <destination_mode>custom:13014@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="361"><![CDATA[Will Not be Defeated III]]></title>
+         <contents mid="362"><![CDATA[<html>While trying to take the Prophet, Bishop Ignacio launches an attack. Because of the monsters he had summoned, you lost track of the Prophet.<BR><FONT color=#7e12d2></FONT><BR><BR><FONT color=#086171></FONT><BR><FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT></html>]]></contents>
+         <destination mid="363"><![CDATA[Eliminate a dragon follower in the Basement of the Royal Palace]]></destination>
+         <todo_msg mid="364"><![CDATA[Defeat the monsters Ignacio summoned.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="365"><![CDATA[Will Not be Defeated IV]]></title>
+         <contents mid="366"><![CDATA[<html>Ignacio kidnapped the Prophet and ran away. We have no idea where he went, so ask Elite Soldier Calrim if he saw anything.<BR><BR><FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Elite Soldier Calrim</FONT></html>]]></contents>
+         <destination mid="367"><![CDATA[Talk to Elite Soldier Calrim]]></destination>
+         <todo_msg mid="368"><![CDATA[Ask Elite Soldier Calrim the Bishop's whereabouts.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>396</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

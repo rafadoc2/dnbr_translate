@@ -1,0 +1,247 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_236_ending</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>236</qid>
+      <designer>김인정</designer>
+      <qlevel>22</qlevel>
+      <qdesc>순백의 오브	300064
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>237</nextqid>
+      <nextqname>mq08_237_rouse</nextqname>
+      <nextqnpc>n392_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[The Outcome Cannot be Chaged]]></qkname>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>556</npcid>
+         <npcename>n556_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n556_cian-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Warrior Xian$<BR>It's okay! Everything will be alright.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-a" mid="9"><![CDATA[<html>(Jasmine searches the data)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_03.ogg}<BR>Hmm... How to cleanse the poison in Calderock Village? It should be possible if you use the sorceresses' research on the Ancients' purification methods.<BR>Anyway, in the historical record, it states that the poison in Calderock was eventually purified.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="260"><![CDATA[<html>What's that?</html>]]></talk_answer>
+      <talk_question mid="259"><![CDATA[<html>$Academic Jasmine$<BR>Oh, here it is. There's a record of <FONT color=#a82424>an Ancient's purification device that was used to revive the forests around Calderock</FONT>.<BR>Maybe this can be used.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-a" mid="235"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Academic Jasmine$<BR>There is a purification device created by the Ancients at the Prayer's Resting Place.<BR>
+But, to activate this machine, we need the White Orb and the key to that machine....<BR><FONT color=#a82424>White Orb</FONT> is located at the <FONT color=#a82424>Sanctuary Core</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-b" mid="262"><![CDATA[<html>I should find the White Orb first.</html>]]></talk_answer>
+      <talk_question mid="236"><![CDATA[<html>$Academic Jasmine$<BR>
+And <FONT color=#a82424>Manticore Keruru</FONT> at <FONT color=#a82424>Prayer's Resting Place</FONT> has the key.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-c" mid="264"><![CDATA[<html>Yes, but...</html>]]></talk_answer>
+      <talk_question mid="263"><![CDATA[<html>$Academic Jasmine$<BR>Find it...? You?<BR>You don't have time to worry about the contamination in Calderock Village.<BR>Even if you don't take care it, other people will find a way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-d" mid="267"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="265"><![CDATA[<html>$Academic Jasmine$<BR>You have to get to Saint Haven as soon as you can and find the <FONT color=#a82424>Prophet</FONT>.<BR><FONT color=#387206>{user_nick}</FONT>, you didn't fogret about your mission, did you?<BR>We took a great risk to send you into the past. Don't fogret about our determination.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="268"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_06.ogg}<BR>Yes. You just think about how to get to Saint Haven.<BR>It's not your problem to worry about the <FONT color=#a82424>Sanctuary Core</FONT> or the <FONT color=#a82424>White Orb</FONT>, or Ancients' purification device.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n556_cian-1" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Warrior Xian$<BR>It's okay! Everything will be alright!<BR>
+Trust me~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-2" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="269"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_06.ogg}<BR>To cleanse Calderock, first, you'll need the White Orb from the <FONT color=#a82424>Sanctuary Core</FONT>.<BR>But... <FONT color=#387206>{user_nick}</FONT>, it's not your problem. Okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n556_cian-3" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n556_cian-3-a" mid="272"><![CDATA[<html>(Elena... I couldn't be of any help...)</html>]]></talk_answer>
+      <talk_question mid="270"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>Oh... <FONT color=#a82424>Elena</FONT> died in the end.<BR><FONT color=#7e12d2>(Xian looks bitter)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n556_cian-3-a" image="QS_Default.dds" itemindex="300064">
+      <talk_answer link_index="n556_cian-3-b" mid="274"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="273"><![CDATA[<html>$Warrior Xian$<BR>I think she was after the <FONT color=#a82424>White Orb</FONT> to <FONT color=#a82424>cleanse the poison she had spilled on herself</FONT>.<BR>But... she failed and died from the contamination.<BR>You could say that what goes around comes around in this case, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n556_cian-3-b" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n556_cian-3-c" mid="276"><![CDATA[<html>Not all Dark Elves are bad.</html>]]></talk_answer>
+      <talk_question mid="275"><![CDATA[<html>$Warrior Xian$<BR>Why are Dark Elves and the ordinary Elves so different?<BR>In the past, they must have been the same species.<BR>If you look at <FONT color=#a82424>Elena</FONT>, she is completely different from <FONT color=#a82424>Archer Triana</FONT> or other Master Archers in town. Isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n556_cian-3-c" image="" itemindex="">
+      <talk_answer link_index="n556_cian-3-d" mid="278"><![CDATA[<html>Now, take this White Orb.</html>]]></talk_answer>
+      <talk_question mid="277"><![CDATA[<html>$Warrior Xian$<BR>Really? Hmm... Since you say that, someday I really would like to meet a Dark Elf who is different.<BR>
+Though I can't imagine right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n556_cian-3-d" image="QS_Default.dds" itemindex="300064">
+      <talk_answer link_index="n556_cian-4" mid="280"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="279"><![CDATA[<html>$Warrior Xian$<BR>Oh!! This is the <FONT color=#a82424>White Orb</FONT>...!! Are you comfortable giving it to me?<BR>Ahh... I, I take responsibility of delivering this Orb to the Calderock Village!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n556_cian-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="281"><![CDATA[<html>$Warrior Xian$<BR>Thank you!! I won't fogret what you have done for us!!<BR><FONT color=#7e12d2>(Return to the Academic Station at Calderock Village and check the data)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-4-a" mid="283"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="282"><![CDATA[<html>$Academic Station$<BR><FONT color=#7e12d2>(Conversation with Jasmine is still saved in the memory device.</FONT><BR>
+<FONT color=#7e12d2>Play it again)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4-a" image="" itemindex="">
+      <talk_answer link_index="n392_academic_station-4-!next" mid="285"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="284"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">236</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6,3,4,5">21014</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300064</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300064</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2360,,,,,</exe>
+         <exe type="complete">236</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n392_academic_station" sub="b" />
+   <exelink qstep="1" npc="n392_academic_station" sub="c" />
+   <exelink qstep="1" npc="n392_academic_station" sub="d">0,2,1</exelink>
+   <exelink qstep="3" npc="n556_cian" sub="b" />
+   <exelink qstep="3" npc="n556_cian" sub="c" />
+   <exelink qstep="3" npc="n556_cian" sub="d" />
+   <exelink qstep="3" npc="n556_cian" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n392_academic_station" sub="a">0</exelink>
+   <exelink qstep="4" npc="n392_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="2360" quest_title="결말은 정해져 있습니다" chapterid="3" quest_level="22" quest_mark_type="1" use_item_list="300064">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="286"><![CDATA[The Outcome Cannot be Chaged I]]></title>
+         <contents mid="287"><![CDATA[<html>Connect to the Academic Station and ask Jasmine about how to cleanse Calderock.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="288"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="289"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_25.dds</contents_image>
+         <destination_pos>254,0,0</destination_pos>
+         <destination_mode>custom:252@1,253@1,254@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="290"><![CDATA[The Outcome Cannot be Chaged II]]></title>
+         <contents mid="291"><![CDATA[<html>Using Acients' purification device, we might be able to cleanse Calderock Village. In order to do that, we need the White Orb located deep in the Sanctuary Core. Find the White Orb made from the Blessed Stone.<BR>
+ <BR>
+<FONT color=#086171>Gray Ruins (Sanctuary Entrance)</FONT> <FONT color=#a82424>→ Sanctuary Core</FONT></html>]]></contents>
+         <destination mid="292"><![CDATA[Find the White Orb at the Sanctuary Core]]></destination>
+         <todo_msg mid="293"><![CDATA[Find the White Orb at the Sanctuary Core.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>254,n556</destination_pos>
+         <destination_mode>custom:252@1,253@1,254@1</destination_mode>
+         <statemark_npcid>556</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="294"><![CDATA[The Outcome Cannot be Chaged III]]></title>
+         <contents mid="295"><![CDATA[<html>Elena showed up and you almost lost the White Orb. She lost her senses and became a monster. You couldn't save her....<BR>
+Give the White Orb to Warrior Xian.<BR>
+ <BR>
+<FONT color=#086171>Gray Ruins (Sanctuary Entrance)</FONT> <FONT color=#a82424>→ Sanctuary Core(Warrior Xian)</FONT></html>]]></contents>
+         <destination mid="296"><![CDATA[Talk to Warrior Xian at the Sanctuary Core]]></destination>
+         <todo_msg mid="297"><![CDATA[Give the White Orb to Warrior Xian.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="298"><![CDATA[The Outcome Cannot be Chaged IV]]></title>
+         <contents mid="299"><![CDATA[<html>Connect to the Academic Station and reconfirm the data with Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="300"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="301"><![CDATA[Connect to the Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>235</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,268 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_421_warclouds</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>421</qid>
+      <designer>김인정</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>404</nextqid>
+      <nextqname>mq11_404_return_of_fatality</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Clouds of War]]></qkname>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$General Douglas$<BR>You should report to <FONT color=#a82424>Bishop Ignacio</FONT> stuff that you had seen or heard<BR><FONT color=#7e12d2>(You must talk to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-getquest" mid="71"><![CDATA[<html>I think we must hurry.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Bishop Ignacio$<BR>While you were chasing the <FONT color=#a82424>Black Knight</FONT>, I tried to convince the other nobles and the King, but...<BR>There have been troubles inside and outside of <FONT color=#a82424>Saint Haven</FONT> recently, so I was told that it is difficult to provide troops support.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>I heard his name is Geraint.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>Anyway, What is the name of blond swordsman, who was with lady <FONT color=#a82424>Argenta</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="8"><![CDATA[<html>Moreover, I heard the Black Knight's name is Velskud.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>That interesting.. Ge..r..aint?<BR>Well.. I'm not surprise at all as blond hair babies who was born after the Dragon Raid 50 years ago are commonly name after <FONT color=#a82424>Geraint</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="60"><![CDATA[<html>You don't have to look at them as the heroes from 50 years ago.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Bishop Ignacio$<BR>Velskud? Did you say the Black Knight's name is Velskud?<BR><FONT color=#a82424>Argenta</FONT>, <FONT color=#a82424>Geraint</FONT>, and <FONT color=#a82424>Velskud</FONT>... Haha... Well, is that mean Dragon Reid's driving forces from 50 years ago are congregating here again?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="63"><![CDATA[<html>What? Is it different than the truth? Are you saying that they are the real heroes?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Bishop Ignacio$<BR>Oh.. Actually what the public had heard about the news of Dragon Raid 50 years ago was quite different from the truth. Especially, only a few people know about the truth of <FONT color=#a82424>Geraint</FONT> and <FONT color=#a82424>Velskud</FONT> except those six heroes...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>Hmm... Dear <FONT color=#382000> {user_nick}</FONT>, if the <FONT color=#a82424>Black Knight</FONT> is the hero , <FONT color=#a82424>Velskud</FONT> from 50 years ago, then you soon will be known the truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-f" mid="66"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Bishop Ignacio$<BR>But, currently people know <FONT color=#a82424>Velskud</FONT> as a hero who bravely died in Dragon Raid 50 years ago.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-f" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-g" mid="68"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Bishop Ignacio$<BR>Unfortunately, if people found out the truth of <FONT color=#a82424>Velskud</FONT>, then it will throw the nation into chaos. So please remain silent about the <FONT color=#a82424>Black Knight</FONT> to people. Let's solve this issue as quickly as possible before the rumor goes around.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-g" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-h" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Thank you for your understanding.<BR>But we are facing a big situation right now, and we do not have any solution to chase the <FONT color=#a82424>Black Knight</FONT>'s hiding place... What a bad situation to be in.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-h" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Bishop Ignacio$<BR>I wonder what will <FONT color=#a82424>General Douglas</FONT> say about this issue?<BR>Perhaps he already had a solution in mind. Why don't you go talk to him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$General Douglas$<BR>You should report to <FONT color=#a82424>Bishop Ignacio</FONT> about what you had seen or heard.<BR><FONT color=#7e12d2>(You must talk to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Talk to <FONT color=#a82424>General Douglas</FONT>, the commander of troops, to find the solution.<BR>We cant give up just like this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-a" mid="20"><![CDATA[<html>You are too kind.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$General Douglas${action:talk}<BR>You make a big contribution for the dispatch of troops.<BR>I didn't truely believe when you said you are the guardian of <FONT color=#a82424>Calderock Village</FONT>. But I have to acknowledge that you are the true gaurdian of Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-b" mid="22"><![CDATA[<html>What can we do?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$General Douglas$<BR>We can say we achieved some result because we grasped the Black Knight's main base.<BR>But we have not found the <FONT color=#a82424>Prophet</FONT> yet...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-b" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-c" mid="24"><![CDATA[<html>Other path?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$General Douglas$<BR>I am going to assume that you already know we cannot simply enter the <FONT color=#a82424>The Dark Overlord Keep's Guards</FONT> because everyone will be annihilated.<BR>But we cannot just wait here and do nothing. Let's go find other path to get in.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-c" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-d" mid="26"><![CDATA[<html>I will help you.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$General Douglas$<BR>Yes. I am going to dispatch troops continuously to <FONT color=#a82424>Dark Overlord Keep</FONT> to defeat monsters. And at the same time, I am going to find the other path so that our troops can enter The Fortress of the Dark Overlord Army.<BR>So while we are in that process, we are going to search if there is the path that we can enter in.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-e" mid="28"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$General Douglas$<BR>Would you?<BR>Then I will give you a <FONT color=#a82424>mission</FONT> separately.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-e" image="QM_Gargoyle_Red.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-f" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$General Douglas$<BR>As you see <FONT color=#a82424>Worshiper Brethren Fire Mages</FONT> at <FONT color=#a82424>Dark Overlord Keep</FONT> already, they are very nettlesome monsters to fight.<BR>They summons <FONT color=#a82424>Flame Wings</FONT> endlessly to significantly damage our troops' strength.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-f" image="QM_Gargoyle_Red.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-g" mid="32"><![CDATA[<html>Alright!</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$General Douglas$<BR>Therefore, in order us to push later, we have to defeat <FONT color=#a82424>Worshiper Brethren Fire Mages</FONT> who summons <FONT color=#a82424>Flame Wings</FONT> as much as possible. I would like to give you this mission.<BR>You would encounter difficulties thus you are able to take our troops with you to defeat 10 Worshiper Brethren Fire Mages.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-g" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$General Douglas${action:talk}<BR>You are very reliable.<BR>I would be expanding the troops and securing goods, I wish you good luck!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QW_28.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$General Douglas$<BR>In order us to push later, we have to defeat <FONT color=#a82424>Worshiper Brethren Fire Mages</FONT> who summons Flame Wings as many as possible. I would like to give you this mission.<BR>You would encounter difficulties thus you are able to take our troops with you to defeat 10 Worshiper Brethren Fire Mages.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QW_28.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Are you talking about <FONT color=#a82424>Worship Brethren Fire Mages</FONT> at <FONT color=#a82424>Dark Overlord Keep</FONT>? I would be a difficult situation, thus It will be helpful if there is such a brave man like you to help defeat those monster as much as you can</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="37"><![CDATA[<html>(General Douglas looks very happy .)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$General Douglas$<BR>Oh, <FONT color=#382000>{user_nick} </FONT>, you are here!<BR>Because of your great performance in many ways, I am able to move troops more easily.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-b" mid="39"><![CDATA[<html>So can we now chase the Black Knight?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$General Douglas$<BR>We have thoroughly investigated <FONT color=#a82424>Dark Overlord Keep</FONT> and found out efficient routes. From now on, we can fight with minimum loss to our troops.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-!next" mid="41"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">421</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="3" party="1" exe="3,4,5" onexe="">825</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200825</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 825);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4211,4211,4212,4213,4214,4211,4216</exe>
+         <exe type="complete">421</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="getquest">0,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="f" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="g" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="h">0,1</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="e" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="f" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="g">1,0,6,2</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="!next">1</exelink>
+   <journal_data recompense="1:4211,2:4212,3:4213,4:4214,5:4211,6:4216" quest_title="전운" chapterid="4" quest_level="26" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Discuss a plan]]></title>
+         <contents mid="44"><![CDATA[<html>Discuss a plan with Bishop Ignacio.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="46"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[General Douglas's Plan]]></title>
+         <contents mid="48"><![CDATA[<html>Currently you have no other ways to go further than Dark Overlord Keep Gates to chase the <FONT color=#a82424>Black Knight</FONT>. Ask <FONT color=#a82424>General Douglas</FONT> if he has other plan.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Discuss a Plan with General Douglas]]></destination>
+         <todo_msg mid="50"><![CDATA[Please ask General Douglas if he has another plan.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_28.dds</contents_image>
+         <destination_pos>284,0,0</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1,284@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Defeat Worshiper Brethren Fire Mages]]></title>
+         <contents mid="52"><![CDATA[<html><FONT color=#a82424>General Douglas</FONT> asked for your help in dispatching troops in the future. Go to <FONT color=#a82424>Dark</FONT> <FONT color=#a82424>Overlord </FONT><FONT color=#a82424>Keep</FONT> and defeat <FONT color=#a82424>Worshiper Brethren Fire Mage</FONT> that summons Flame Wing.<BR><BR><FONT color=#086171>Foothills of Black Mountain (Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord Keep</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Defeat Worshiper Brethren Fire Mages]]></destination>
+         <todo_msg mid="54"><![CDATA[Please defeat Worshiper Brethren Fire Mages]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Complete a Mission]]></title>
+         <contents mid="56"><![CDATA[<html>You are used to the road of Dark Overlord Keep and you also have been defeated Worship Brethren Fire Mages. Report to <FONT color=#a82424>General Douglas</FONT>.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Report to General Douglas at the Royal Castle]]></destination>
+         <todo_msg mid="58"><![CDATA[The mission has been completed. Please report to General Douglas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>403</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,250 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_214_queen_of_toxin</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>214</qid>
+      <designer>김주연</designer>
+      <qlevel>18</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>215</nextqid>
+      <nextqname>mq08_215_decisive_battle</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[The Queen of Poison]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="64"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Something doesn't feel right. Compared to the Dark Elf's notoriety, this feels like it was...almost too easy. Perhaps they were just trying to cause confusion.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>My cool, careful planning has proven effective against <FONT color=#a82424>Elena</FONT> so far. Regardless, we must tread carefully when dealing with this Poison Spider.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QM_Spider_Yellow.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>The Poison Spiders slowly turned poisonous due to the poison cloud that at the Forest of Death. Rumour has it that over-exposure to the poison does not kill you, but turns you into a monster instead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>My years of knowledge is still not enough to form a solid conclusion. I'll need other people's advice to verify my theories.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Therefore, I want you to ask the <FONT color=#a82424>silver-haired swordswoman</FONT> to confirm my theories. As soon as she does, you can wipe those spiders out!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Argenta$<BR>When will the airship to Saint Haven be fixed? Here I am, slowly recovering from my injuries alone. At least have some courtesy to get me a fried harpy or something! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2-a" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Argenta$<BR>Poison Spiders?<BR>It's very likely of Elena to have chosen poison to irritate us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2-b" mid="16"><![CDATA[<html>You've been bitten by a Poison Spider?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Argenta$<BR>I have been bitten by a Poison Spider in the past. It turned out to be a really itchy and annoying experience. So one day, when I had enough, I went to hunt that spider down and kicked it's sorry behind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2-c" mid="18"><![CDATA[<html>Uhh, right. So, where do the spiders come from?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Argenta$<BR>Yes, what about you? I heard that humans die from the little bites. Haha, funny isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-c" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2-d" mid="20"><![CDATA[<html>To the <FONT color=#a82424>Dark Tower Magic Institute</FONT>! Let's go!</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Argenta$<BR>They're found in the Forest of Death. The <FONT color=#a82424>Spider Queen Raren</FONT>, however, lives in the <FONT color=#a82424>Dark Tower Magic Institute</FONT>. Elena is doing something with those spiders...I just know it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2-d" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Argenta$<BR>Hey, are you leaving? I was bored, I thought you could stay and entertain me. Fine! GO!<BR>Hmph! I hope the Spider Queen bites you heartily.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>I have heard that <FONT color=#a82424>Argenta</FONT> is quite an intelligent woman, just like me. Ask her for advice, and if my assumptions are confirmed, you can defeat the Poison Spiders!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="QW_21.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Argenta$<BR>If I wasn't injured, I would go straight down to <FONT color=#a82424>Dark Tower Magic Institute</FONT> and beat Elena to a pulp! Ugh, I'm so bored...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-a" mid="25"><![CDATA[<html>The spiders seem to be collecting poison.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>So the Dark Tower Magic Institute was really the main base of the Poison Spiders? I knew it. What have you discovered there?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-b" mid="27"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-!next" mid="53"><![CDATA[<html>I would like to take part.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>They are obviously gathering the poison to use as a weapon. The scale of this seems too big for you to handle by yourself. I will rally the other guild members to deal with this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-c" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>We will move out the moment I get my reports.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-5" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Argenta$<BR>I have no clue as to why the spiders are gathering the poison. You'll have to figure it out. Report your findings to the Adventurer's Guild.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-a" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>We haven't found out where the poison is being stored at yet, but it's only a matter of time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-5-!next" mid="58"><![CDATA[<html>I would like to participate.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>They are obviously gathering the poison to use as a weapon. The scale of this seems too big for you to handle by yourself. I will rally the other guild members to deal with this.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">214</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>엘레나의 지령서(300051)를 통해 독이 옮겨지는 정황을 파악한다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="3,4,5,6">510</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300051</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200510</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 510);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2141,2141,2142,2143,2144,2146,2146</exe>
+         <exe type="complete">214</exe>
+         <exe type="delquestitem" num="-1">300051</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">214</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="2" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="2" npc="n164_argenta_wounded" sub="d">0,2,7,1</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="a">0</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="b">1,2</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="!next" />
+   <exelink qstep="5" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2141,2:2142,3:2143,4:2144,6:2146" quest_title="맹독의 여왕" chapterid="3" quest_level="18" quest_mark_type="1" use_item_list="300051">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="34"><![CDATA[Movement of the Poison Spiders]]></title>
+         <contents mid="35"><![CDATA[<html>Defeat the Poison Spiders who have adapted to the poison cloud. Adventurer's Guild Master Deckard has no idea where they're coming from. <BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="37"><![CDATA[Talk to Adventurer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image />
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Ask Argenta for information on the Poison Spiders]]></title>
+         <contents mid="42"><![CDATA[<html>You need more information on the Poison Spiders. Speak with Argenta.<BR><BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Ask Argenta for information on the Poison Spiders]]></destination>
+         <todo_msg mid="44"><![CDATA[Ask Argenta for information on the Poison Spiders]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>154,0,0</destination_pos>
+         <destination_mode>custom:151@1,152@1,153@1,154@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Defeat Poison Spiders in the Dark Tower Magic Institute]]></title>
+         <contents mid="46"><![CDATA[<html>Argenta thinks that the Poison Spiders in <FONT color=#a82424>Dark Tower Magic Institute</FONT> are planning something. Find out if <FONT color=#a82424>Spider Queen Raren</FONT>and Elena are working together.<BR><BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Dark Tower Magic Institute</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Defeat Poison Spiders in the Dark Tower Magic Institute]]></destination>
+         <todo_msg mid="48"><![CDATA[Defeat the Poison Spiders in the Dark Tower Magic Institute.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Report to Adventurer's Guild Master Deckard]]></title>
+         <contents mid="50"><![CDATA[<html>You have defeated <FONT color=#a82424>Spider Queen Raren</FONT>. However, you have not yet found the place where the poison is being stored. Report back to <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Report to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="52"><![CDATA[A clue was obtained. Report back to Adventurer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>213</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

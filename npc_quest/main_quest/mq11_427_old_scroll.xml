@@ -1,0 +1,200 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_427_old_scroll</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>427</qid>
+      <designer>김인정</designer>
+      <qlevel>36</qlevel>
+      <qdesc>1. 주교와 대화
+2. 고엽의 숲 폭발지역에서 고대인의 주문서 습득
+3. 주교에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>428</nextqid>
+      <nextqname>mq11_428_revive_serpentra</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[The Ancients Scroll]]></qkname>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="46"><![CDATA[<html>Yes, please do that.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Bishop Ignacio$<BR>Good job.<BR>Since both the Spirit and Crest have been found, I must now prepare the ritual.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>Is there something on your mind?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>I have finished creating the altar, and the ritual has also started smoothly.<BR>There aren't any problems yet, but...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="9"><![CDATA[<html>Hmm... I see.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Bishop Ignacio$<BR>Actually... There must be a <FONT color=#a82424>Scroll</FONT> to handle great powers for a big ritual. The scroll that I have right now has modified the way of the Ancients to fit the humans, so it is not enough to suit a big ritual.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QS_Default.dds" itemindex="300027">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="11"><![CDATA[<html>Where can it be found?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Bishop Ignacio$<BR>That's why I will need the <FONT color=#a82424>Ancient's Scroll</FONT>. A scroll that has been used for the important rituals of the Ancients, should be enough to withstand the powers of the giant Sea Monster.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QW_41.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="13"><![CDATA[<html>If that's the case, then couldn't it be a dangerous item?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>At <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT>. It is a devastated place where all life forms have been lost because of some kind of an experiment that has been conducted by the Ancients. Therefore it has been said that a scroll of great powers should still be remaining somewhere in the area.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="15"><![CDATA[<html>That does sound reasonable.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio$<BR>It depends on who and what somebody uses it for. You cannot fOgret that powers are merely a tool. If one is truly concerned about the safety of Saint Haven, then the one should certainly be able to handle such powers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="QW_41.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Bishop Ignacio$<BR>The strongest monster at <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT> should be holding onto that scroll, so look carefully. I'm counting on you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_41.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Bishop Ignacio$<BR>The strongest monster at <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT> should be holding onto that scroll, so look carefully. I'm counting on you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QS_Default.dds" itemindex="300027">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="19"><![CDATA[<html>(For some reason, it seems like my title is becoming more and more grandiose...)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Bishop Ignacio$<BR>Oh dear friend, and the faithful guardian of Saint Haven, <FONT color=#387206>{user_nick}</FONT>!<BR>Did you find the <FONT color=#a82424>Ancient's Scroll</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR><FONT color=#7e12d2>(The Bishop receives the Ancient's Scroll.)</FONT><BR>Great! It is hard to find more words to compliment you with. Oh... How is it that god has not sent you to me sooner.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="40"><![CDATA[<html>Yes. Thank you.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Bishop Ignacio$<BR>When an altar has been ready, the remaining ritual will be held, so you should leave now and get some rest. You were so busy all this time, so you should go and look around and enjoy some free time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-d" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Bishop Ignacio$<BR>Hehe. Don't worry, and just leave. I should be thanking you for all of this.<BR>Among all of the adventurers I have ever met, I have never seen one who was as talented as you are.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-d" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-e" mid="44"><![CDATA[<html>(The Bishop smiles like a fat raccoon.)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Bishop Ignacio$<BR>Trust me!<BR>By the way, it seems like <FONT color=#a82424>Geraint</FONT> has not recovered yet, so you should take some extra good care of him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-e" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="23"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">427</exe>
+         <exe type="delquestitem" num="-1">300024</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">1096</exe>
+         <exe type="addquestitem" num="1">300027</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300027</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201096</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1096);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4271,4271,4272,4273,4274,4274,4276</exe>
+         <exe type="delquestitem" num="-1">300027</exe>
+         <exe type="complete">427</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1,2</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,2,8,4,1</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="e">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1,2</exelink>
+   <journal_data recompense="1:4271,2:4272,3:4273,4:4274,5:4275,6:4276" quest_title="고대인의 주문서" chapterid="5" quest_level="36" quest_mark_type="1" use_item_list="300027">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Bishop's Preparations]]></title>
+         <contents mid="28"><![CDATA[<html>Go and check if Bishop Ignacio has finished the preparations for the ritual.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="30"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Scroll of the Ancients]]></title>
+         <contents mid="32"><![CDATA[<html>Go to Explosion zone in Withered Leaves Forest and look for the <FONT color=#a82424>Ancient's Scroll </FONT>.<BR><BR><FONT color=#086171>Foothills of Black Mountain(Lonely Forest Path)</FONT> <FONT color=#a82424>→ Explosion zone in Withered Leaves Forest</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Withered Leaf Explosion Area Exploration.]]></destination>
+         <todo_msg mid="34"><![CDATA[Look for the Ancient's Scroll at Explosion zone in Withered Leaves Forest.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Recover the Scroll]]></title>
+         <contents mid="36"><![CDATA[<html>Deliver the Ancient's Scroll to Bishop Ignacio.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="38"><![CDATA[Deliver the Ancient's Scroll to Bishop Ignacio.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>426</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

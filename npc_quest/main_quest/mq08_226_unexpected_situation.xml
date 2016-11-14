@@ -1,0 +1,469 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_226_unexpected_situation</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>226</qid>
+      <designer>김인정</designer>
+      <qlevel>14</qlevel>
+      <qdesc>300030	순종의 팬던트
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>227</nextqid>
+      <nextqname>mq08_227_lack_of_data</nextqname>
+      <nextqnpc>n392_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Unexpected Situation]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>544</npcid>
+         <npcename>n544_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>545</npcid>
+         <npcename>n545_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>546</npcid>
+         <npcename>n546_velskud</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>559</npcid>
+         <npcename>n559_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n544_edan-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Cleric Edan$<BR><FONT color=#a82424>Angelica</FONT> is an excellent Sorceress. But sometimes...<BR>But… I'm embarrassed about her sometimes.<BR>
+<FONT color=#7e12d2>※ You have to get the quest from the Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Cleric Edan$<BR>
+This is not as easy as I thought. I feel so incapable.<BR>
+ <BR>
+<FONT color=#7e12d2>※ You have to get the quest from the Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Velskud$<BR>.........Who are you?<BR>
+ <BR>
+<FONT color=#7e12d2>※ You have to get the quest from the Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="220"><![CDATA[<html>$Argenta$<BR>
+I have nothing to say to you, so go back.<BR>
+ <BR>
+<FONT color=#7e12d2>※You have to get the quest from the Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n559_argenta-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="221"><![CDATA[<html>$Argenta$<BR>I have nothing to say to you, so go back.<BR><BR><FONT color=#7e12d2>※ You have to get the quest from the Academic Station to proceed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>Please.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_04.ogg}<BR>Although the network status is unstable...<BR>I'll try to send the data to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-a" mid="88"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Academic Jasmine$<BR>I'll start the data transfer.<BR>It will keep running in the background, but it will take a lot of time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-b" mid="90"><![CDATA[<html>Yes, I heard he is going to the Sleepers' Temple with the Prophet.</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Academic Jasmine$<BR>Meanwhile, we can't just sit around and wait. Other people must be going there too.<BR>You said <FONT color=#a82424>Velskud</FONT> is headed to the <FONT color=#a82424>Sleepers' Temple</FONT>, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-2" mid="92"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Academic Jasmine$<BR>While you're receiving the data, you should also go to the <FONT color=#a82424>Sleepers' Temple</FONT>.<BR>If you're lucky, you might be able to meet Velskud.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n544_edan-1" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Cleric Edan$<BR><FONT color=#a82424>Angelica</FONT> is an excellent Sorceress.<BR>
+But… I'm embarrassed about her sometimes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-1" image="" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Cleric Edan$<BR>Everthing is not turning out as I expected.<BR>
+I feel so incapable.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-1" image="" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$Velskud$<BR>......Who are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="222"><![CDATA[<html>$Argenta$<BR>
+I have nothing to say to you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n559_argenta-1" image="" itemindex="">
+      <talk_question mid="223"><![CDATA[<html>$Argenta$<BR>
+I have nothing to say to you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-2" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_05.ogg}<BR>You can get to the <FONT color=#a82424>Sleepers' Temple</FONT> through the <FONT color=#a82424>Gray Ruins</FONT>. Be careful not to get lost.<BR>You're smart, but you do sometimes make a stupid mistake.<BR><FONT color=#7e12d2>※ You cannot proceed in a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n544_edan-3" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n544_edan-3-a" mid="98"><![CDATA[<html>Huh? How did you know?!</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Cleric Edan${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>, I was waiting for you.<BR>You were planning on going to the <FONT color=#a82424>Sleepers' Temple</FONT>, weren't you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n544_edan-3-a" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n544_edan-3-b" mid="100"><![CDATA[<html>Yes, it was a trade....</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Cleric Edan$<BR>I heard from <FONT color=#a82424>Angelica</FONT>.<BR>
+<FONT color=#7e12d2>(Edan smiles bitterly)<BR></FONT>Angelica seems to have snatched... I mean traded Pendant of the Pure with you, <FONT color=#387206>{user_nick}</FONT>…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n544_edan-3-b" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n544_edan-3-c" mid="102"><![CDATA[<html>You don't have to apologize.</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Cleric Edan$<BR>How could she take it from a young girl like that…?<BR>I'm so sorry. I'll apologize on her behalf.<BR>Angelica often does strange things, but she doesn't mean any harm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n544_edan-3-c" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n544_edan-3-d" mid="104"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Cleric Edan$<BR>Anyway, I'll return you the <FONT color=#a82424>Pendant of the Pure</FONT> that Angelica took.<BR>We got another one by bugging the heraldry scholar.<BR>It was wrong of Angelica to take what is yours.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n544_edan-3-d" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Cleric Edan$<BR>Now, excuse me.<BR><FONT color=#a82424>Sleepers' Temple</FONT> is a dangerous place, so be careful.<BR><FONT color=#7e12d2>(Edan waves his hand and smiles)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n544_edan-4" image="QW_16.dds" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Cleric Edan$<BR><FONT color=#a82424>Sleepers' Temple</FONT> is a dangerous place, so be careful.<BR>
+ <BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-4" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n546_velskud-4-a" mid="109"><![CDATA[<html>Velskud!!</html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$Velskud$<BR><FONT color=#7e12d2>(A man covered in black armour is standing in a coercive manner)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-4-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n546_velskud-4-b" mid="111"><![CDATA[<html>I'm {user_nick}. You might not know me yet....</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Velskud$<BR><FONT color=#7e12d2>(The man looks at me curiously)</FONT><BR>Who are you? How could a little girl like you know my name?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-4-b" image="" itemindex="">
+      <talk_answer link_index="n546_velskud-4-c" mid="113"><![CDATA[<html>I'm... from the future.</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Velskud$<BR>Not yet...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-4-c" image="" itemindex="">
+      <talk_answer link_index="n546_velskud-4-d" mid="115"><![CDATA[<html>I need your help.</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Velskud$<BR>Future? Hah.... The future me deals with kids like you?<BR>Not very pleasant at all....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-4-d" image="" itemindex="">
+      <talk_answer link_index="n546_velskud-4-e" mid="117"><![CDATA[<html>W-wait!</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Velskud$<BR>Funny. I have no interest in the future.<BR>
+Go away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-4-e" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n546_velskud-4-cutscene_part2" mid="163"><![CDATA[<html>Argenta...?</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Velskud$<BR>Now even kids are here to make me annoyed....<BR>Why do you bring these junk around with you, <FONT color=#a82424>Argenta</FONT>?<BR>
+<FONT color=#7e12d2>(Velskud stares at one place)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-5" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n546_velskud-5-a" mid="122"><![CDATA[<html>Velskud, why are you fighting with Argenta?</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Velskud$<BR>It was good that they chose to ambush me, thinking that they couldn't win me. But still, they were such weaklings.<BR>It's unlike you <FONT color=#a82424>Argenta</FONT>, to have made such a stupid decision.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-5-a" image="" itemindex="">
+      <talk_answer link_index="n546_velskud-5-b" mid="124"><![CDATA[<html>You two are part of the Six Heroes guarding Alteia!</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Velskud$<BR>Funny thing to say.<BR>Is there a reason why we should not fight?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-5-b" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n546_velskud-6" mid="126"><![CDATA[<html>No, what I mean is...</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Velskud$<BR>Heroes guarding Alteia? Haha!<BR>
+Talking nonsense about being from the future, and now, you're talking about the treacherous <FONT color=#a82424>hero</FONT> story from <FONT color=#a82424>50 years ago</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n546_velskud-6" image="" itemindex="">
+      <talk_question mid="128"><![CDATA[<html>$Velskud$<BR>Stop being a nuisance and get lost!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n559_argenta-6" image="" itemindex="">
+      <talk_answer link_index="n559_argenta-6-a" mid="225"><![CDATA[<html>Argenta, are you all right?</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Argenta$<BR>Ahh.... Velskud, when did he obtain that kind of power…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n559_argenta-6-a" image="" itemindex="">
+      <talk_answer link_index="n559_argenta-6-b" mid="227"><![CDATA[<html>What? As I have told you before, I am from the future...</html>]]></talk_answer>
+      <talk_question mid="226"><![CDATA[<html>$Argenta$<BR>You! Who are you?!<BR>How do you know <FONT color=#a82424>Velskud</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n559_argenta-6-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n559_argenta-7" mid="229"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="228"><![CDATA[<html>$Argenta$<BR>Stop your nonsense...! Argh....<BR><FONT color=#7e12d2>(Argenta frowns)</FONT><BR>First, I'll have to get some rest....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n559_argenta-7" image="QW_GrayRuin.dds" itemindex="">
+      <talk_question mid="187"><![CDATA[<html>$Argenta$<BR>
+And you, you and I need to talk.<BR>
+I'll be resting at the <FONT color=#a82424>Gray Ruins</FONT>, so come and see me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-a" mid="190"><![CDATA[<html>Yes... I'm from approximately 50 years from now.</html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Argenta$<BR>
+Who are you?<BR>
+Are you really from the future?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-b" mid="192"><![CDATA[<html>I... can't tell you.</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Argenta$<BR>50 years from now...?<BR>Then, why did you come to the past?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-c" mid="194"><![CDATA[<html>Er... I can't tell you that either.</html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$Argenta$<BR>..........<BR>Alright. What happens after 50 years? I don't think you came here just for fun. There must be a problem in the future and you came here to fix that, didn't you?<BR>Tell me more about the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-d" mid="197"><![CDATA[<html>That is... I have to be careful, since what I say can change the future...</html>]]></talk_answer>
+      <talk_question mid="195"><![CDATA[<html>$Argenta$<BR>You came from the future, but can't tell anyone why.<BR>
+Can't tell anyone what the future will be like.<BR>Are you joking with me?!!!!<BR><FONT color=#7e12d2>(Argenta shouts agitatedly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-e" mid="199"><![CDATA[<html>No, whatever I do here doesn't affect the future.</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Argenta$<BR>
+The future may change?<BR>
+Didn't you come here so you could change the future?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-f" mid="203"><![CDATA[<html>(Explain in detail)</html>]]></talk_answer>
+      <talk_question mid="202"><![CDATA[<html>$Argenta$<BR>What are you saying now....<BR>You have to be careful not to change the future, when you just said the future will not change?! You're not making any sense!<BR>Explain in more detail!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-f" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-g" mid="205"><![CDATA[<html>Yes, that's right.</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Argenta$<BR>.......... So, are you saying whatever you do here will not change the future that you came from? But it may change the future of our world and that may distort history and unforseen circumstances may happen...?<BR>
+So things may go bad until you have achieved your goal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8" mid="209"><![CDATA[<html>That... that is...</html>]]></talk_answer>
+      <talk_question mid="208"><![CDATA[<html>$Argenta$<BR>You people from the future are so selfish.<BR>So you asked me about the <FONT color=#a94407>Monolith</FONT> the other day for your future?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="211"><![CDATA[<html>$Argenta$<BR>I have nothing more to say to you, so go back!<BR><FONT color=#7e12d2>(Argenta doesn't seem to want to talk with me. Connect to the Academic Station and contact Jasmine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-8" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-8-a" mid="214"><![CDATA[<html>(Explain the situation)</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_03.ogg}<BR>Data transfer is taking much longer than I thought.<BR>How's the situation? Did you meet Velskud?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-8-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-8-b" mid="216"><![CDATA[<html>Now what should I do?</html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$Academic Jasmine$<BR><FONT color=#a82424>Velskud</FONT>...?<BR>I see. Of course..., he would be much different from the person we know.<BR>
+50 years is not a short time....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-8-b" image="" itemindex="">
+      <talk_answer link_index="n392_academic_station-8-!next" mid="218"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">226</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300030</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="delquestitem" num="-1">300030</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2260,,,,,,</exe>
+         <exe type="complete">226</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n392_academic_station" sub="b" />
+   <exelink qstep="1" npc="n392_academic_station" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n544_edan" sub="b" />
+   <exelink qstep="3" npc="n544_edan" sub="c" />
+   <exelink qstep="3" npc="n544_edan" sub="d">0,1,2</exelink>
+   <exelink qstep="4" npc="n546_velskud" sub="b" />
+   <exelink qstep="4" npc="n546_velskud" sub="c" />
+   <exelink qstep="4" npc="n546_velskud" sub="d" />
+   <exelink qstep="4" npc="n546_velskud" sub="e" />
+   <exelink qstep="4" npc="n546_velskud" sub="cutscene_part2">0,1</exelink>
+   <exelink qstep="5" npc="n546_velskud" sub="b" />
+   <exelink qstep="5" npc="n546_velskud" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n559_argenta" sub="b" />
+   <exelink qstep="6" npc="n559_argenta" sub="7">0,1</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="g" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="8">0,1</exelink>
+   <exelink qstep="8" npc="n392_academic_station" sub="b">0</exelink>
+   <exelink qstep="8" npc="n392_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="2260" quest_title="의외의 상황입니다" chapterid="2" quest_level="14" quest_mark_type="1" use_item_list="300030">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="136"><![CDATA[Unexpected Situation I]]></title>
+         <contents mid="137"><![CDATA[<html>Try to communicate with Jasmine at the Academic Station in Calderock Village.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="138"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="139"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_16.dds</contents_image>
+         <destination_pos>9,n544</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>544</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="140"><![CDATA[Unexpected Situation II]]></title>
+         <contents mid="141"><![CDATA[<html>Angelica must have messed with the communicator. The data has been wiped out. While Jasmine is transferring data to your communicator, go to Sleepers' Temple.<BR><BR><BR><FONT color=#086171>Lower Ridge (Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Sleepers' Temple</FONT></html>]]></contents>
+         <destination mid="142"><![CDATA[Go to the Sleepers' Temple]]></destination>
+         <todo_msg mid="143"><![CDATA[Go to the Sleepers' Temple.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Edan.dds</contents_image>
+         <destination_pos>9,n544</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>544</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="144"><![CDATA[Unexpected Situation III]]></title>
+         <contents mid="145"><![CDATA[<html>Ran into Cleric Edan at the Gray Ruins. It seems like he was waiting to tell me something. Go ahead and talk to him.<BR><BR><BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Cleric Edan</FONT></html>]]></contents>
+         <destination mid="146"><![CDATA[Talk to Cleric Edan at the Gray Ruins]]></destination>
+         <todo_msg mid="147"><![CDATA[Talk to Cleric Edan at the Gray Ruins.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_16.dds</contents_image>
+         <destination_pos>130,n546</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1,130@1</destination_mode>
+         <statemark_npcid>546</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="148"><![CDATA[Unexpected Situation IV]]></title>
+         <contents mid="149"><![CDATA[<html>Take the Pendant of the Pure Cleric Edan returned and go to the Sleepers' Temple.<BR><BR><FONT color=#086171>Lower Ridge (Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Sleepers' Temple (Velskud)</FONT></html>]]></contents>
+         <destination mid="150"><![CDATA[Talk to Velskud at the Sleepers' Temple]]></destination>
+         <todo_msg mid="151"><![CDATA[Go to the Sleepers' Temple.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>130,n559</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1,130@1</destination_mode>
+         <statemark_npcid>559</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="152"><![CDATA[Unexpected Situation V]]></title>
+         <contents mid="153"><![CDATA[<html>Velskud disappeared before I had a chance to exchange a few words. Talk to Argenta.<BR><BR><BR><FONT color=#086171>Lower Ridge (Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Sleepers' Temple (Argenta)</FONT></html>]]></contents>
+         <destination mid="154"><![CDATA[Talk to Argenta at the Sleepers' Temple]]></destination>
+         <todo_msg mid="155"><![CDATA[Talk to Argenta.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="156"><![CDATA[Unexpected Situation VI]]></title>
+         <contents mid="157"><![CDATA[<html>Argenta is badly injured from the fight with Velskud, so she plans to return to the Gray Ruins and rest. Go to Gray Ruins and talk to Argenta.<BR>
+ <BR>
+<FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="158"><![CDATA[Talk to Argenta at Gray Ruins]]></destination>
+         <todo_msg mid="159"><![CDATA[Talk to Argenta at Gray Ruins.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="232"><![CDATA[Unexpected Situation VII]]></title>
+         <contents mid="233"><![CDATA[<html>Report to Jasmine at the Academic Station in Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="234"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="235"><![CDATA[Connect to the Academic Station at the Calderock Village.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>225</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,258 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_208_depleting_fuel</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>208</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>300103 부유장치</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>209</nextqid>
+      <nextqname>mq08_209_red_eyes_darkelf</nextqname>
+      <nextqnpc>n167_charging_point</nextqnpc>
+      <qkname mid="1"><![CDATA[Energy Depleted]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>167</npcid>
+         <npcename>n167_charging_point</npcename>
+         <npckname>투명NPC(이름 없음)(잠든자의 신전 이벤트 맵)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Argenta$<BR>Go see Geraint in Saint Haven. Tell him all that has happened.<BR>Ask for his help to stop the Black Knight.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-noquest" image="" itemindex="">
+      <talk_question mid="98"><![CDATA[<html><FONT color=#2b2723>$Airship Engine Battery$<BR></FONT><FONT color=#7e12d2>(It is not working)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-acceptted" mid="100"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Airship Engineer Hubert$<BR>Welcome back.<BR>Wait a minute. I'm almost done with the final phase.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-1-cutscene" mid="49"><![CDATA[<html>Wow!</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Airship Engineer Hubert$<BR>Finally the repairs are complete!<BR>Everyone, stand back! Let the Nautilus fly once more!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Argenta$<BR>Find the blond-haired swordsman at <FONT color=#a82424>Saint Haven</FONT>. Update him on all that has happened.<BR>Request for his aid to stop the Black Knight.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Airship Engineer Hubert$<BR>What in the heavens? How did this happen!? An explosion must mean that something's wrong with the engine! I was sure it was fine, so what gives!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-2-b" mid="87"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Airship Engineer Hubert$<BR>Ack...sigh...<BR>The engines are not to blame...I've triple checked them.<BR>Then it must mean that the problem lies with the power. I was told this ship uses a special rechargeable drive system. I didn't believe it... I don't have the necessary equipment here.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-b" image="QW_AirShip.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Airship Engineer Hubert$<BR>I'm sorry to disappoint you…<BR>But it looks like the airship isn't going anywhere for a while...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="57"><![CDATA[<html>(You explain about the launch failure of the airship.)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Argenta$<BR>What!? I ask you to do something important, and you're still here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-b" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Argenta$<BR>The Black Knight is always ahead of our game.<BR>Blast it. Somehow, we have to get that wreck of a ship flying again...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-b" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n164_argenta_wounded-3-c" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Argenta$<BR>The temple has a power source that we may be able to tap on... that is, if the Black Knight didn't drain all of it already. Hopefully, there is some power left. We must make good use of it...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-c" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-d" mid="63"><![CDATA[<html>Inside the Sleepers' Temple?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Argenta$<BR>{user_nick}!!! Try to recall the time the Black Knight stole the power of the Ancients! Take that...whatever it is from the airship and see if you power it up in the temple.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-d" image="QW_16.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Argenta$<BR>Oh please! I am wounded and am in need of rest. Quit messing around! Take the...the airship's...drive component to the Sleepers' Temple.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Airship Engineer Hubert$<BR>I'm sorry, it looks like the airship won't be flying anytime soon... Nothing I've tried can recharge the Airship Engine Battery. This may be the end...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-a" mid="67"><![CDATA[<html>There just might be something that can...</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Airship Engineer Hubert$<BR>The ship just can't be recharged without the proper charger...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4-b" mid="69"><![CDATA[<html>Maybe. I'll need to take this weird looking device...</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Airship Engineer Hubert$<BR>Are you serious? You've found a way to recharge it without going to Saint Haven?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4-b" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="70"><![CDATA[<html>$Airship Engineer Hubert$<BR>Okay, go ahead. I'm desperate to make this thing fly again. I can't imagine how you're going to do it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Argenta$<BR>Oh please! I am wounded and am in need of rest. Quit messing around! Take the...the airship's...drive component to the Sleepers' Temple..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-5" image="QW_16.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Argenta$<BR>What are you doing lingering here? Take the <FONT color=#a82424>Airship Engine Battery</FONT> to the <FONT color=#a82424>Sleepers' Temple</FONT> RIGHT AWAY!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="73"><![CDATA[<html>$Airship Engineer Hubert$<BR>If you actually manage to recharge it, the Nautilus will be able to soar the skies again!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n167_charging_point-5-a" mid="75"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$Airship Engine Battery$</FONT></FONT><BR><FONT color=#7e12d2>(A soft humming sound can be heard.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5-a" image="" itemindex="">
+      <talk_answer link_index="n167_charging_point-5-b" mid="77"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n167_charging_point-5-b" image="QS_Default.dds" itemindex="300103">
+      <talk_question mid="95"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>$Airship Engine Battery$</FONT></FONT><BR><FONT color=#7e12d2>(The Airship Engine Battery buzzes with power. It must be fully charged by now.)</FONT><BR></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">208</exe>
+         <exe type="talk" npc="n099_engineer_hubert">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,61);</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>잠든자의 신전에서 부유장치를 충전한 뒤, 컷신 출력(71)</comment>
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300103</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment>퀘스트 완료후, 컷씬 보기, 18-BossA맵으로 이동 순으로 실행됨.
+</comment>
+      <conditions />
+      <executions>
+         <exe type="complete">208</exe>
+         <exe type="recompense">2081,2081,2082,2083,2084,2084,2086</exe>
+         <exe type="delquestitem" num="-1">300103</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n099_engineer_hubert" sub="cutscene">0,1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n099_engineer_hubert" sub="b">0,1,2</exelink>
+   <exelink qstep="5" npc="n167_charging_point" sub="a">1</exelink>
+   <exelink qstep="5" npc="n167_charging_point" sub="b">0,2</exelink>
+   <journal_data recompense="1:2081,2:2082,3:2083,4:2084,6:2086" quest_title="고갈된 에너지" chapterid="3" quest_level="14" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Talk to Airship Engineer Hubert]]></title>
+         <contents mid="37"><![CDATA[<html><FONT color=#a82424>Hubert</FONT> said that with a fully-charged battery, the Nautilus could finally fly again. Go talk to him.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Hubert</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="39"><![CDATA[Nautilus reactivated!]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Argenta_wounded.dds</contents_image>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Speak with Argenta in the Gray Ruins]]></title>
+         <contents mid="41"><![CDATA[<html>As the <FONT color=#a82424>Nautilus</FONT> is not operational, you are unable to reach<FONT color=#a82424>Saint Haven</FONT>. Argenta might have an idea or two.<BR><FONT color=#a82424></FONT><BR><FONT color=#a82424><FONT color=#086171>Gray Ruins</FONT> → Argenta</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Speak with Argenta in the Gray Ruins]]></destination>
+         <todo_msg mid="43"><![CDATA[Tell to Argenta about the wrecked airship.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Talk to Airship Engineer Hubert]]></title>
+         <contents mid="45"><![CDATA[<html>Return to Airship Engineer Hubert and get the Nautilus's Engine Battery.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Airship Engineer Hubert</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="47"><![CDATA[Get the Airship Engine Battery from Airship Engineer Hubert.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_16.dds</contents_image>
+         <destination_pos>130,0,0</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1,130@4,13005@3</destination_mode>
+         <statemark_npcid>167</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[The Airship Engine Battery is being charged by the power of the Ancients.]]></title>
+         <contents mid="82"><![CDATA[<html>Bring the <FONT color=#a82424>Airship Engine Battery</FONT> to the <FONT color=#a82424>Sleepers' Temple</FONT>. If the Black Knight had not taken all the power, you may be able to recharge the device.<BR><BR><FONT color=#086171>Lower Ridge</FONT><FONT color=#a82424> → Sleepers' Temple</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[The Airship Engine Battery is being charged by the power of the Ancients.]]></destination>
+         <todo_msg mid="84"><![CDATA[Charge the Airship Engine Battery at the Sleepers' Temple]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>207</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

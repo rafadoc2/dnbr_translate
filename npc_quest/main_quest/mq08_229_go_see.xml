@@ -1,0 +1,357 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_229_go_see</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>229</qid>
+      <designer>김인정</designer>
+      <qlevel>14</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>230</nextqid>
+      <nextqname>mq08_230_cant_change</nextqname>
+      <nextqnpc>n550_angelica</nextqnpc>
+      <qkname mid="1"><![CDATA[Going to Meet Them]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>547</npcid>
+         <npcename>n547_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>548</npcid>
+         <npcename>n548_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>549</npcid>
+         <npcename>n549_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>550</npcid>
+         <npcename>n550_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n548_edan-noquest" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Cleric Edan$<BR><FONT color=#a82424>Angelica</FONT> is an excellent Sorceress. But sometimes...<BR>
+She does some puzzling things.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Warrior Xian$<BR>It's okay! Everything will be alright!<BR>
+Haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Argenta$<BR>Hmm. Do I have to tell you what to do again?<BR>
+I don't like to repeat myself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-noquest" image="" itemindex="">
+      <talk_question mid="160"><![CDATA[<html>$Archer Triana$<BR>I hear destiny calling.<BR>Can't you hear?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-noquest" image="" itemindex="">
+      <talk_question mid="161"><![CDATA[<html>$Sorceress Angelica$<BR>Ahh... that filthy Ogre~ I'm so furious!!<BR>I almost died!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>It seems that way.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_01.ogg}<BR>The airship crashed, and a huge Ogre took the fuel device?<BR>Hmm... I see. You won't be able to get to Saint Haven for now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="87"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_07.ogg}<BR>Keep a close lookout on the other adventurers, and you should be able to reach Saint Haven with them.<BR>Oh, didn't you say they were gathered at the <FONT color=#a82424>Cristal Stream</FONT>? Why don't you go there too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Argenta$<BR>
+You're always talking about the future, but how come you don't know anything?<BR>
+The other adventurers are trying to come up with a plan at the <FONT color=#a82424>Cristal Stream</FONT>. If you have nothing to do, go there and give them a hand.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n548_edan-1" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n548_edan-1-a" mid="162"><![CDATA[<html>Who are those other people...?</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Cleric Edan$<BR>Things aren't working out as I thought.<BR>I feel so incapable....<BR><FONT color=#7e12d2>(Edan sighs)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n548_edan-1-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n548_edan-1-b" mid="164"><![CDATA[<html>As expected.</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>
+Oh, this is <FONT color=#a82424>Archer Triana</FONT> and <FONT color=#a82424>Warrior Xian</FONT>.<BR>They met each other by chance at <FONT color=#a82424>Prairie Town</FONT> and came all the way here to save the <FONT color=#a82424>Prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n548_edan-1-b" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_question mid="165"><![CDATA[<html>$Cleric Edan$<BR>...As expected?<BR><FONT color=#387206>{user_nick}</FONT>, say hello to them.<BR><FONT color=#7e12d2>(Archer Triana looks at me with clear eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>Wow~ So young and cute...!<BR>Anyway, you're <FONT color=#387206>{user_nick}</FONT>, right? Haha~!!<BR>
+I heard so much about you from Edan!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-1" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_question mid="166"><![CDATA[<html>$Archer Triana$<BR>You're that girl Edan was talking about.<BR>You're <FONT color=#387206>{user_nick}</FONT>... am I right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-1" image="" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Sorceress Angelica$<BR>Ahh... that filthy Ogre~ I'm so furious!!<BR>I almost died!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n548_edan-2" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$Cleric Edan$<BR>With the help of <FONT color=#a82424>Archer Triana</FONT> and <FONT color=#a82424>Warrior Xian</FONT>, I'm going to search for <FONT color=#a82424>Angelica</FONT>.<BR><FONT color=#7e12d2>(Archer Triana stares at me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="169"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Meet the adventurers at the Cristal Stream.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-2" image="" itemindex="">
+      <talk_answer link_index="n549_triana-2-a" mid="171"><![CDATA[<html>Hello.</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Archer Triana${action:Talk}<BR>You're that girl Edan was talking about.<BR><FONT color=#387206>{user_nick}</FONT>... am I right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-2-a" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n549_triana-2-b" mid="174"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$Archer Triana$<BR>I'm <FONT color=#a82424>Triana</FONT>.<BR>I'm on my journey to find my destiny.<BR>
+<FONT color=#7e12d2>(Triana smiles softly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-2-b" image="" itemindex="">
+      <talk_answer link_index="n549_triana-2-c" mid="176"><![CDATA[<html>I'm not a young girl. I'm pretty old...</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Archer Triana$<BR>
+But, don't the humans call people like you <FONT color=#a82424>"children"</FONT>?<BR>I heard children grow up at home under protection....<BR>You've chosen a unique path. Going on an adventure all by yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-2-c" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n549_triana-3" mid="178"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Archer Triana$<BR>Is that so?<BR>
+<FONT color=#7e12d2>(Triana scratches her head)</FONT><BR>I don't really understand the concept of an adult and a child.<BR>I guess you're an <FONT color=#a82424>adult</FONT> then? I understood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-3" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_question mid="179"><![CDATA[<html>$Archer Triana$<BR>It was nice meeting you.<BR>
+May the wind of destiny be with you....<BR>
+<FONT color=#7e12d2>(Say hello to Warrior Xian)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n547_cian-3-a" mid="181"><![CDATA[<html>I'm not a kid. (I'm older than you!)</html>]]></talk_answer>
+      <talk_question mid="180"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>Wow~ So young and cute...!<BR>Anyway, you're <FONT color=#387206>{user_nick}</FONT>, right? Haha~!!<BR>
+I heard so much about you from Edan!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-a" image="QN_Lily.dds" itemindex="">
+      <talk_answer link_index="n547_cian-3-b" mid="184"><![CDATA[<html>(Lilly...? Same name as my grandmother's...)</html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$Warrior Xian$<BR>Oh right. I heard you get angry when people call you a kid....<BR>But, in my eyes, you're a little girl... Oh! I'm sorry!<BR>But you're much older than <FONT color=#a82424>Lily</FONT> at Prairie Town! You're an adult compared to her!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-b" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n547_cian-3-c" mid="186"><![CDATA[<html>I'm fine.</html>]]></talk_answer>
+      <talk_question mid="185"><![CDATA[<html>$Warrior Xian$<BR>Hmm... I heard from Edan that you are much more powerful than you look.<BR>But, I don't think you should go to such a dangerous place.<BR>What if something bad happens....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-c" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n547_cian-3-d" mid="188"><![CDATA[<html>Are we going to the Raider's Ambush Point?</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$Warrior Xian$<BR>I'm not okay. Taking a young girl to a place like the <FONT color=#a82424>Raider's Ambush Point</FONT>?!<BR>That is inhumane.<BR>As an adventurer, I have the responsibility to protect little children!!<BR>
+<FONT color=#7e12d2>(Xian is raising his voice)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-3-d" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n547_cian-4" mid="190"><![CDATA[<html>(Hmm... I better go first!)</html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Warrior Xian$<BR>Yes! I accidently found traces of a <FONT color=#a82424>huge Ogre</FONT> there~ heheh.<BR>Angelica must be there! I'm almost certain!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-4" image="QW_18.dds" itemindex="">
+      <talk_question mid="191"><![CDATA[<html>$Warrior Xian$<BR>
+Then we better go to the <FONT color=#a82424>Raider's Ambush Point</FONT> to save Angelica.<BR>
+Since it's very dangerous for <FONT color=#387206>{user_nick}</FONT>, you should wait at Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n549_triana-4" image="" itemindex="">
+      <talk_question mid="192"><![CDATA[<html>$Archer Triana${action:Talk}<BR>You're an adult or a child?<BR>…Humans are difficult…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n548_edan-4" image="QW_18.dds" itemindex="">
+      <talk_question mid="193"><![CDATA[<html>$Cleric Edan$<BR>With the help of Archer Triana and Warrior Xian, we'll head over to the <FONT color=#a82424>Raider's Ambush Point</FONT>.<BR>The place must be it since the traces of the huge Ogre lead to that place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4" image="" itemindex="">
+      <talk_answer link_index="n550_angelica-4-a" mid="195"><![CDATA[<html>Are you all right?!</html>]]></talk_answer>
+      <talk_question mid="194"><![CDATA[<html>$Sorceress Angelica$<BR>Ahh... that filthy Ogre~ I'm so furious!!<BR>I almost died~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-a" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n550_angelica-4-b" mid="197"><![CDATA[<html>There are more coming.</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>Of course I'm okay!! If I'm not okay, am I some sort of a <FONT color=#a82424>Ghost K</FONT>?<BR>This is me, Angelica!<BR>Anyway, did you come here all by yourself?<BR>What's <FONT color=#a82424>Edan</FONT> doing, not coming to save me?! That idiot!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-b" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n550_angelica-4-c" mid="200"><![CDATA[<html>I just came first on my own.</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Sorceress Angelica$<BR>Soon?! How could they send a little girl first?<BR><FONT color=#a82424>Edan</FONT> should have taken the innitiative to come first!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-c" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n550_angelica-4-d" mid="202"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$Sorceress Angelica$<BR>Really?<BR>
+Haha... were you that worried about me?<BR><FONT color=#7e12d2>(Angelica seems touched)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-d" image="QM_HopGoblinGreen.dds" itemindex="">
+      <talk_answer link_index="n550_angelica-4-e" mid="204"><![CDATA[<html>Hobgoblin?!</html>]]></talk_answer>
+      <talk_question mid="203"><![CDATA[<html>$Sorceress Angelica$<BR>Oh! That's not the problem.<BR>
+As you just saw, there is a lot of <FONT color=#a82424>Hobgoblin Manufacturing Facility</FONT> around here!<BR>
+I was almost turned into a <FONT color=#a82424>Hobgoblin</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-e" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n550_angelica-4-f" mid="206"><![CDATA[<html>It's only a monster.</html>]]></talk_answer>
+      <talk_question mid="205"><![CDATA[<html>$Sorceress Angelica$<BR>Yes, in fact, a beauty like me was mutated, it won't be a Hobgoblin but...<BR><FONT color=#7e12d2>(Angelica's brain seems to have been overworked)<BR></FONT>...Anyway I would have been something else!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-f" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n550_angelica-4-g" mid="208"><![CDATA[<html>Was there anything else?</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>Yes... only a monster... right.<BR>
+<FONT color=#7e12d2>(Angelica stares into empty space)</FONT><BR>Anyway, that <FONT color=#a82424>Dark Elf covered in red cloak</FONT> will pay for this!!!<BR>How dare she brings this mighty Sorceress Angelica to this place?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-g" image="" itemindex="">
+      <talk_answer link_index="n550_angelica-4-h" mid="210"><![CDATA[<html>(She must have told her everything...)</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Sorceress Angelica$<BR>That huge Ogre stepped on me and threatened me, so I had no choice but to tell them a few things.<BR>But, not something important, I only told her a little.<BR>R-really!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-h" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n550_angelica-4-i" mid="213"><![CDATA[<html>Wait! What about Elena? Where did she go?</html>]]></talk_answer>
+      <talk_question mid="212"><![CDATA[<html>$Sorceress Angelica$<BR>Oh~ I'm getting hungry~.<BR><FONT color=#7e12d2>(Angelica tries to evade eye contact)</FONT><BR>I don't have any more business at this place, so I better get out.<BR>I'm going back to <FONT color=#a82424>Argenta</FONT>. You should return to Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-i" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n550_angelica-4-j" mid="216"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="214"><![CDATA[<html>$Sorceress Angelica$<BR>Elena...? That Dark Elf?<BR>How should I know? I was on the verge of dying!!<BR>She just stepped on me and flew off.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n550_angelica-4-j" image="" itemindex="">
+      <talk_answer link_index="n550_angelica-4-!next" mid="218"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">229</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2290,,,,,,</exe>
+         <exe type="complete">229</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n548_edan" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n549_triana" sub="b" />
+   <exelink qstep="2" npc="n549_triana" sub="c" />
+   <exelink qstep="2" npc="n549_triana" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n547_cian" sub="b" />
+   <exelink qstep="3" npc="n547_cian" sub="c" />
+   <exelink qstep="3" npc="n547_cian" sub="d" />
+   <exelink qstep="3" npc="n547_cian" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n550_angelica" sub="b" />
+   <exelink qstep="4" npc="n550_angelica" sub="c" />
+   <exelink qstep="4" npc="n550_angelica" sub="d" />
+   <exelink qstep="4" npc="n550_angelica" sub="e" />
+   <exelink qstep="4" npc="n550_angelica" sub="f" />
+   <exelink qstep="4" npc="n550_angelica" sub="g" />
+   <exelink qstep="4" npc="n550_angelica" sub="h" />
+   <exelink qstep="4" npc="n550_angelica" sub="i" />
+   <exelink qstep="4" npc="n550_angelica" sub="j">0</exelink>
+   <exelink qstep="4" npc="n550_angelica" sub="!next">1</exelink>
+   <journal_data recompense="2290" quest_title="지금 만나러 갑니다" chapterid="3" quest_level="14" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Edan.dds</contents_image>
+         <destination_pos>4,n548</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>548</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="219"><![CDATA[Going to Meet Them I]]></title>
+         <contents mid="220"><![CDATA[<html>Other adventurers are gathered at the Cristal Stream and discussing about how to get Angelica back. Go there and meet them.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Cleric Edan</FONT></html>]]></contents>
+         <destination mid="221"><![CDATA[Talk to Cleric Edan at the Cristal Stream]]></destination>
+         <todo_msg mid="222"><![CDATA[Meet the adventurers at the Cristal Stream.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Triana.dds</contents_image>
+         <destination_pos>4,n549</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>549</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="223"><![CDATA[Going to Meet Them II]]></title>
+         <contents mid="224"><![CDATA[<html>Other adventurers are gathered at the Cristal Stream and discussing about how to get Angelica back.<BR>You were introduced to Archer Triana.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Archer Triana</FONT></html>]]></contents>
+         <destination mid="225"><![CDATA[Talk to Archer Triana at the Cristal Stream]]></destination>
+         <todo_msg mid="226"><![CDATA[Talk to Archer Triana.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>4,n547</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>547</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="227"><![CDATA[Going to Meet Them III]]></title>
+         <contents mid="228"><![CDATA[<html>Other adventurers are gathered at the Cristal Stream and discussing about how to get Angelica back.<BR>You were introduced to Warrior Xian.<BR>
+ <BR>
+<FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Warrior Xian</FONT></html>]]></contents>
+         <destination mid="229"><![CDATA[Talk to Warrior Xian at the Cristal Stream]]></destination>
+         <todo_msg mid="230"><![CDATA[Talk to Warrior Xian.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_18.dds</contents_image>
+         <destination_pos>139,n550</destination_pos>
+         <destination_mode>custom:136@1,137@1,139@1</destination_mode>
+         <statemark_npcid>550</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="231"><![CDATA[Going to Meet Them IV]]></title>
+         <contents mid="232"><![CDATA[<html>The huge Ogre who took Angelica seems to have gone to the Raider's Ambush Point. Go and rescue Angelica.<BR><BR><FONT color=#086171>Cristal Stream (Raider's Ambush Point Entrance)</FONT> <FONT color=#a82424>→ Raider's Ambush Point (Sorceress Angelica)</FONT></html>]]></contents>
+         <destination mid="233"><![CDATA[Talk to Angelica at the Raider's Ambush Point]]></destination>
+         <todo_msg mid="234"><![CDATA[Find Sorceress Angelica at the Raider's Ambush Point.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>228</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

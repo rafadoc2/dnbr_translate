@@ -1,0 +1,431 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_422_question_of_dragon</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>422</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>423</nextqid>
+      <nextqname>mq11_423_doubt_history</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[Stas' Question]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>213</npcid>
+         <npcename>n213_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="144"><![CDATA[<html>$Adventurer David$<BR>Since I completed the errand, I am going to go find Argenta!<BR>Hey you, steadily listen to <FONT color=#a82424>Geraint</FONT>'s word!<BR><FONT color=#7e12d2>(You must return to the Royal Castle.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$Geraint$<BR>I heard someone in the <FONT color=#a82424>Royal Castle</FONT> mentioned about your name.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="" itemindex="">
+      <talk_question mid="146"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I told <FONT color=#a82424>Elite Soldier</FONT> already, but how come it's not here yet? The adventurer...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-accepting" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-accepting-acceptted" mid="148"><![CDATA[<html>Who are you waiting for?</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Elite Soldier$<BR>Hmm.. Should be soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Geraint$<BR>I heard someone in the <FONT color=#a82424>Royal Castle</FONT> mentioned about your name.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I told <FONT color=#a82424>Elite Soldier</FONT> already, but how come it's not here yet? The adventurer...<BR><FONT color=#7e12d2>(It seems like Heraldry Scholar Stas is waiting for someone.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n213_slave_david-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Adventurer David$<BR>Since I had finished the errand I am going to look for Argenta. Hey you, steadily listen to <FONT color=#a82424>Geraint</FONT>'s word!<BR>(<FONT color=#7e12d2>You must return to the Royal Castle.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-1-a" mid="9"><![CDATA[<html>Who? Me?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Elite Soldier${action:Talk}<BR>Oh! You there! I was just about to look for you.<BR>Someone wants to meet up with you, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1-a" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-1-b" mid="11"><![CDATA[<html>Who is it?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Elite Soldier$<BR>You are correct. He need a favor from someone like you and cant be any other adventurer.<BR>He wanted to ask you about the research that he is working on.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Elite Soldier$<BR>His name is <FONT color=#a82424>Heraldry Scholar Stas</FONT>. To tell you the truth, he is actually researching dragons. That is why he wanted to see you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Elite Soldier${action:Talk}<BR>Have you met <FONT color=#a82424>Heraldry Scholar Stas</FONT> yet?<BR>He wanted to see you because he has been researching dragons for a long time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="15"><![CDATA[<html>What's the matter?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Heraldry Scholar Stas$<BR>You are finally here. I was desperately waiting for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="17"><![CDATA[<html>The Royal Castle... and?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>I know the information has not been announced to the pulic yet. But since I often go to the Royal Castle to take care of my personal matter, I hear lots of stories.<BR>So I heard the Royal Castle has currently...<BR>(<FONT color=#7e12d2>Heraldry Scholar Stas is looking around.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="19"><![CDATA[<html>Okay. So what would you want me to do?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Those <FONT color=#a82424>Elite Soldiers</FONT> are bothering me.<BR>Could you do me a favor first? It is very simple.<BR>I will tell you more once you finish my favor.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="QW_38.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Could you get me one <FONT color=#a82424>Dark Elf's Necklace</FONT> at <FONT color=#a82424>Road to Death City</FONT>? I would appreciate it if you get me the necklace from <FONT color=#a82424>Impostor Karen</FONT>, not from normal dark elves.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QW_38.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I have to ask you something, but this is not a good time. Could you get me one <FONT color=#a82424>Dark Elf's Necklace</FONT> at <FONT color=#a82424>Road to Death City</FONT>. I would appreciate it if the necklace is from Impostor Karen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="23"><![CDATA[<html>What is the one that you wanted to ask me about?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldry Scholar Stas$<BR>You are back. You may pass me the necklace.<BR>Many strong and smart monsters are appearing at the Road to Death City because you have to go through the Road to Death City to go to <FONT color=#a82424>Dark Elves</FONT>'s city. Therefore, those monsters are worth enough to research.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="25"><![CDATA[<html>Is a rumor going around already?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR><FONT color=#7e12d2>(Heraldry Scholar Stas is looking around.)</FONT><BR>Hm... <FONT color=#7e12d2>(He is whispering to you.)</FONT><BR>I heard the <FONT color=#a82424>Gold Dragon</FONT> stays in the Royal Castle's Underground and it is guarding the Prophet. Is that true?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="28"><![CDATA[<html>(Heraldry Scholar Stas is making sarcastic remarks.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldry Scholar Stas$<BR>No, not yet. There are a few rumors going around inside the troops who went to Dark Overlord Keep Gates. But the military and the Royal Castle are <FONT color=#a82424>controlling</FONT> pretty well. Probably, <FONT color=#a82424>Duke Stuart</FONT> will edit a few impressive story top of the original story to look better and announce to people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldry Scholar Stas$<BR>What a bunch of fools. The dragon cannot be measured with humans standard. I don't know if you know but the <FONT color=#a82424>six heroes</FONT> did the same thing 50 years ago.<BR>The six heroes were all agitated when they saw the <FONT color=#a82424>Gold Dragon</FONT> even though the Gold Dragon was their colleague who fought monsters together.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="QN_Npc_Geraint_silhouette.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-e" mid="33"><![CDATA[<html>Did you know about Geraint's identity?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Lady Karacule and Barnac were mad about his betrayal.<BR>Humans became so chaotic so they conceal the truth that the leader of six heroes, <FONT color=#a82424>Geraint</FONT> was the <FONT color=#a82424>Gold Dragon</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-f" mid="35"><![CDATA[<html>(Heraldry Scholar Stas grab your shoulder with a pair of glowing eyes)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Actually, I couldn't believe my eyes when I saw it. So I started to research on <FONT color=#a82424>dragons</FONT>. But I noticed that as I research more about dragons, I am just descending into the fog. Which is true because I didn't have the cleared information. So with respect to the fact...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-f" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-g" mid="37"><![CDATA[<html>I guess... I will go talk to him.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I finally meet a person <FONT color=#a82424>who can speak with the Dragon</FONT>?! This is a rare sight and is not a common opportunity in my life!<BR>So could you go talk to <FONT color=#a82424>Geraint</FONT> and get answers from these questions? Please!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-g" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-h" mid="39"><![CDATA[<html>How is it made...? What do you mean?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Thank you very much!<BR><FONT color=#7e12d2>(Heraldry Scholar Stas hugs you with tears in his eyes.)<BR></FONT>Then, please go ask him about how the dragon is made.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-h" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I think the black dragon this time and 50 years ago is <FONT color=#a82424>the artificial dragon that made by power of Ancients</FONT>. It was just my thoughts but I recently found that my hypothesis might be true. So I would like to know if other <FONT color=#a82424>Dragons</FONT> are made by power of Ancients as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Heraldry Scholar Stas$<BR>So please ask the <FONT color=#a82424>Gold Dragon</FONT> about these following questions.<BR>Do all dragons are being made artificially? Is it possible to combine dragons by using the power of Ancients to make stronger dragons Like the Black Dragon?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Geraint$<BR>Human are doubtful of everything, unless they seen it with their own eyes. But they are fooled by stupid lies and they rely too much on their delusion and emotion.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-b" mid="46"><![CDATA[<html>But I would like to hear it.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Geraint$<BR>I remembered what this guys had said.<BR>I can sincerely explain to you. But I don't know if the information can be fully delivered to humans.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-c" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Geraint$<BR>Originally the <FONT color=#a82424>Black Dragon</FONT> was a part of broken cerebrates from the <FONT color=#a94407>Chaos Dragon</FONT>. The Black Dragon was a forced creation from power of Ancients.<BR>In humans expression, the black dragon is artificial.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-c" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-d" mid="116"><![CDATA[<html>(Listen to him more carefully.)</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Geraint$<BR>But we, me and Argenta, are born from the <FONT color=#a94407>Sentinel Dragon</FONT> when the Sentinel Dragon divided into two. So we are not the forced creation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-d" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-e" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Geraint$<BR>In the beginning <FONT color=#a94407>Goddess Altea</FONT>, who is the world mediator, created two dragons, <FONT color=#a94407>Sentinel</FONT> and <FONT color=#a94407>Chaos</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-e" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-f" mid="125"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Geraint$<BR>The creation of Goddess Altea, the world was living in peace under <FONT color=#a82424>Ancients</FONT> good deed. The world was also protected by two dragons. But because of Goddess Vestinel, who was jealous of Altea, the darkness descended on peaceful city, <FONT color=#a94407>Lagendia</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-f" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-g" mid="127"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Geraint$<BR>When Goddess Altea drank Vestinel's poison, the good deed Ancients became contaminated by darkness and Ancients became corrupted. The evil <FONT color=#a94407>Beyond Dragon</FONT> who came from Vestinel's <FONT color=#a94407>Mist Land</FONT>, started to destroy Lagendia.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-g" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-h" mid="129"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Geraint$<BR>Sentinel and Chaos barely defeated the Beyond Dragon. But the Chaos dragon got contaminated by Beyond's evil energy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-h" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-i" mid="120"><![CDATA[<html>Who won?</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Geraint$<BR>When corrupted Chaos threats the world once again, Sentinel tried to stop Chaos. And the epic battle has started.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-i" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-j" mid="131"><![CDATA[<html>So you and Argenta are the descendant of Sentinel, am I right?</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Geraint$<BR>Nobody won... The aftermath of battle, Chaos's body divided into many and spread all over the world. The Sentinel Dragon was also spent too much power so itself divided into two and prepared for the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-j" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-k" mid="132"><![CDATA[<html>It sounds it happened a very long time ago.</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Geraint$<BR>Yes, you are right. Me and Argenta are <FONT color=#a82424>siblings</FONT> who were born from the Sentinel Dragon. We are called to stop the resurrection of Chaos's cerebrates.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-k" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-l" mid="54"><![CDATA[<html>What happened to Chaos's other cerebrates?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Geraint$<BR>A very long time ago...?<BR>Hm... I don't know what humans are thinking about the time.<BR>Anyway, did I clear all of your curiosity?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-l" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-m" mid="135"><![CDATA[<html>Then is there no possibility that dragons are going to awake?</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Geraint$<BR>50 years ago, starting from the Black Dragon, we found <FONT color=#a82424>Chaos's cerebrates</FONT> and seal them. Luckily, none of dragons were awaken.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-m" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-n" mid="137"><![CDATA[<html>Can you and Argenta become the one again?</html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$Geraint$<BR>Unfortunately, my power was not enough to destroy all the cerebrates.<BR>If me and Argenta become the one again, then it might be possible to destroy all of them.<BR>Anyway, don't worry because those seals will never be broken as long as I am here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-n" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-o" mid="139"><![CDATA[<html>Monolith...?</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Geraint$<BR>Hm...<BR>We are not sure unless we try, but I think it's possible.<BR>But, we cannot be the one because she needs to support <FONT color=#a94407>Monolith</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-o" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-p" mid="141"><![CDATA[<html>Okay... Then, do all dragons have the similar power?</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Geraint$<BR>It's not necessary for you and people to remember.<BR>I should fOgret about it too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-p" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-q" mid="142"><![CDATA[<html>I didn't know Argenta is that strong. But last time she was...</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Geraint$<BR>I'm not sure. But when me and <FONT color=#a82424>Argenta</FONT> are born from Sentinel, Argenta took almost every power. She is still at least three times stronger than me. I think each Chaos's cerebrates also has different power.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-q" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="143"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Argenta</FONT> cannot use her true power.<BR>As I told you earlier, she is using her majority powers to support <FONT color=#a82424>Monolith</FONT>. I think I gave you the enough information.<BR>You should go now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Geraint$<BR>You should go back to a guy who is waiting for your answers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-a" mid="59"><![CDATA[<html>(What did Geraint told you.)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Did you get answers from <FONT color=#a82424>Gerrrant</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-b" mid="61"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I see. I didn't know the <FONT color=#a82424>Black Dragon</FONT> was one of <FONT color=#a82424>Broken Pieces</FONT> of Chaos's Dragon...<BR>So it can be created anytime as long as the core of cerebrates is not destroyed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-c" mid="63"><![CDATA[<html>What do you mean, "be ashamed"?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Hm... Thank you for the valuable information.<BR>I really wanted to meet and talk to <FONT color=#a82424>him</FONT> in person, but I don't want to be ashamed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-d" mid="65"><![CDATA[<html>(Heraldry Scholar Stas drops his head.)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>I couldn't be on his side after the battle 50 years ago. When he disappeared without saying anything, I was very angry, shocked, and collapsed. I couldn't look at reality correctly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-d" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-e" mid="67"><![CDATA[<html>It looks like you have been worried about this for a long time.</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Heraldry Scholar Stas$<BR>As a Scholar, I should have said what I saw. Because if people are confused about something, they tend to conceal and fOgret about what happened. Therefore, when the <FONT color=#a82424>Six Heroes</FONT> are known for just the Six Heroes, nothing more, I should have said what I saw.<BR>...I should have said what I saw.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-!next" mid="69"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">422</exe>
+         <exe type="talk" npc="n209_elite_soldier">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1028</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300253</exe>
+         <exe type="addquestitem" num="1">300253</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201028</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300253</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4221,4221,4222,4223,4224,4224,4226</exe>
+         <exe type="complete">422</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n209_elite_soldier" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n209_elite_soldier" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c">0,2,8,3,1</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="h">0,1,2</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="g" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="i" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="j" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="k" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="l" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="m" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="n" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="o" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="p" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="q">0,1</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="e">0</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="!next">1</exelink>
+   <journal_data recompense="1:4221,2:4222,3:4223,4:4224,5:4224,6:4226" quest_title="스타쉬의 의문" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="300253">
+      <journal index="1">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Royal Castle's Task]]></title>
+         <contents mid="72"><![CDATA[<html>You have no more of Adventurer David's request. Return to the <FONT color=#a82424>Royal Castle</FONT> and look for other task.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Elite Soldier</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to Elite Soldier at the Royal Castle]]></destination>
+         <todo_msg mid="74"><![CDATA[Please return to the Royal Castle and look for other task.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Heraldry Scholar Stas's Call]]></title>
+         <contents mid="76"><![CDATA[<html>Heraldry Scholar Stas has been looking for you. Go to Heraldry Scholar Stas and talk to him what it is about.<BR> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[Talk to Heraldry Scholar Stas.]]></destination>
+         <todo_msg mid="78"><![CDATA[Please find Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_38.dds</contents_image>
+         <destination_pos>384,0,0</destination_pos>
+         <destination_mode>custom:381@1,382@1,383@1,384@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Dark Elf Necklace]]></title>
+         <contents mid="80"><![CDATA[<html>Heraldry Scholar Stas didn't talk about it. Instead he gave you an errand. It seems like he wants to talk to you about something when no one is around. As of his request, collect <FONT color=#a82424>Dark Elf's Necklace</FONT> at <FONT color=#a82424>Dying City Crossroads</FONT>.<BR><BR><FONT color=#086171>Hermalte Port (Dark Mines Access)</FONT> <FONT color=#a82424>→ Road to Death City</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Collect Dark Elf's Necklace]]></destination>
+         <todo_msg mid="82"><![CDATA[Please collect Dark Elf's Necklace at Dying City Crossroads.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Heraldry Scholar Stas's Question]]></title>
+         <contents mid="84"><![CDATA[<html>You have been collected Dark Elf's Necklace. Report to <FONT color=#a82424>Heraldry Scholar Stas</FONT> and listen to his story.<BR> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Talk to Heraldry Scholar Stas.]]></destination>
+         <todo_msg mid="86"><![CDATA[Please deliver Dark Elf's Necklace to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[A Created Dragon?]]></title>
+         <contents mid="88"><![CDATA[<html><FONT color=#a82424>Heraldry </FONT><FONT color=#a82424>Scholar Stas</FONT> wanted to ask Geraint something about the Dragon. Deliver Heraldry Scholar Stas's questions to <FONT color=#a82424>Geraint</FONT>.<BR> <BR><FONT color=#086171>Saint Haven(Underground Secret Region)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[Talk to Geraint]]></destination>
+         <todo_msg mid="90"><![CDATA[Please deliver Heraldry Scholar Stas's questions to Geraint.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[Two Different Dragons]]></title>
+         <contents mid="92"><![CDATA[<html>Return to Heraldry Scholar Stas and deliver Geraint's answer.<BR> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[Talk to Heraldry Scholar Stas.]]></destination>
+         <todo_msg mid="94"><![CDATA[Please deliver Geraint's answer to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>418</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

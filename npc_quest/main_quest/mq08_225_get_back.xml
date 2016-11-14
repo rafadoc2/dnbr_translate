@@ -1,0 +1,367 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_225_get_back</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>225</qid>
+      <designer>김인정</designer>
+      <qlevel>12</qlevel>
+      <qdesc>300030	순종의 팬던트
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>226</nextqid>
+      <nextqname>mq08_226_unexpected_situation</nextqname>
+      <nextqnpc>n392_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Got the Device Back]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>543</npcid>
+         <npcename>n543_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html><FONT color=#7e12d2>(Since there is no communicator, it is impossible to communicate with Jasmine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-noquest" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Master Cleric Jermain$<BR><FONT color=#a82424>Heraldry Scholar Bailey</FONT> knows many things. <BR>It would be a good idea to visit him and ask for advice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Sorceress Angelica$<BR>Huh? Your communicator? ...I'll give it back to you~ I told you I'll play with it for a while~<BR>Hehe~ Okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceptted" mid="9"><![CDATA[<html>(Bailey is stumped)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>What? Are you asking me where the Pendant of the Pure is?<BR>Oh my... I didn't know even a young girl like you would be put into such a dangerous task.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="11"><![CDATA[<html>Don't worry.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I don't know if telling you is the right thing to do...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Anyway, the Pendant of the Pure...<BR>
+belonged to Cleric William.<BR>His apprentice, <FONT color=#a82424>Master Cleric Jermain</FONT> knows where the pendant is, so you should meet him and ask him yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Cleric Jermain$<BR>Heraldry Scholar Bailey knows many things. <BR>It would be a good idea to visit him and ask for advice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html><FONT color=#7e12d2>(Since there is no communicator, it is impossible to communicate with Jasmine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Sorceress Angelica$<BR>Huh? Your communicator? ...I'll give it back to you~ I told you I'll play with it for a while~<BR>Hehe~ Okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The Pendant of the Pure belonged to  <FONT color=#a82424>Cleric William</FONT>.<BR>His apprentice, <FONT color=#a82424>Master Cleric Jermain</FONT> may know where the pendant is now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="19"><![CDATA[<html>(Ask about the Pendant of the Pure)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Cleric Jermain$<BR>Phew…<BR>I'm worried about the <FONT color=#a82424>Prophet</FONT>. She must be terrified with the Black Knight.<BR>We have to save her as soon as possible…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Cleric Jermain$<BR>Wow! Is a young girl like you also taking part in finding the <FONT color=#a82424>Prophet</FONT>?<BR>The <FONT color=#a82424>Pendant of the Pure</FONT> belonged to my master, Master Cleric William....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-c" mid="23"><![CDATA[<html>At the Forest of Death...?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Master Cleric Jermain$<BR>My master died during the Calderock Struggle more than 10 years ago, near the <FONT color=#a82424>Forest of Death</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-c" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n034_cleric_master_germain-2-d" mid="25"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Master Cleric Jermain$<BR>During that time, that area was full of poisonous gas and I couldn't collect my mentor's remains or belongings.<BR>Pendant of the Pure was a very important item, a <FONT color=#a82424>key to go to the Sleepers' Temple</FONT>, but I had no choice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-d" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3" mid="27"><![CDATA[<html>I'm okay. I'll be on my way.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Cleric Jermain$<BR>I was about to go there with a few adventurers.<BR>
+You don't have to take the risk of going there, little girl.<BR>
+<FONT color=#7e12d2>(Jermain looks worried)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="QW_17.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Master Cleric Jermain$<BR>The Pendant of the Pure should still be around at the <FONT color=#a82424>Forest of Death</FONT>.<BR>I hope the monsters didn't take it....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-4" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n543_angelica-4-a" mid="30"><![CDATA[<html>I'm not a kid!!</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Sorceress Angelica$<BR>Wow! It's <FONT color=#387206>{user_nick} </FONT>!<BR>
+I saw it!! I saw it all~ Haha~<BR>I saw you pick up the <FONT color=#a82424>Pendant of the Pure</FONT>, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-4-a" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n543_angelica-4-b" mid="33"><![CDATA[<html>If you give me back my communicator.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>Yes ma'am, the great <FONT color=#387206>{user_nick}</FONT>~<BR>
+<FONT color=#7e12d2>(Angelica tries to please me)<BR></FONT>Can you give me that pendant please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-4-b" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n543_angelica-4-c" mid="35"><![CDATA[<html>It was mine to start with.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Sorceress Angelica$<BR>Communicator? Umm....<BR>
+<FONT color=#7e12d2>(You can almost hear Angelica counting money in her head)<BR></FONT>Okay! Why not~!! I'll give it to you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-4-c" image="QS_Default.dds" itemindex="300030">
+      <talk_answer link_index="n543_angelica-4-d" mid="37"><![CDATA[<html>(Angelica's eyes are sparkling)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Sorceress Angelica$<BR>Oh~ hey~ don't mind the small things. haha~<BR>
+Anyway! Now, are you giving me the <FONT color=#a82424>Pendant of the Pure</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-4-d" image="" itemindex="">
+      <talk_answer link_index="n543_angelica-4-e" mid="39"><![CDATA[<html>I don't need a sister ike you!</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Sorceress Angelica$<BR>I'm doing this because I'm worried about you.<BR>
+I don't want to see you go in harm's way.<BR>
+I'll be your older sister and go to dangerous places for you, okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-4-e" image="" itemindex="">
+      <talk_answer link_index="n543_angelica-5" mid="41"><![CDATA[<html>My sister is pretty and smart and... Huh?!</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Sorceress Angelica$<BR>Why are you taking it so sensitively?<BR>Anyway I gave you what you want so I'll leave now~<BR>
+Bye~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n543_angelica-5" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Sorceress Angelica$<BR>Bye kid~ See you again!<BR><FONT color=#7e12d2>(Angelica smiles innocently and runs away)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-5" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Master Cleric Jermain$<BR>I see...<BR>It would have been hard for you to obtain that pendant, but you have handed it over to Sorceress Angelica… You're a generous lady.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-a" mid="45"><![CDATA[<html>(Ringtone)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Academic Station$<BR><FONT color=#7e12d2>(Trying to connect)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-b" mid="47"><![CDATA[<html>(Tell Jasmine what had happened recently)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_0.ogg}<BR>What's the status, <FONT color=#387206>{user_nick}</FONT>?<BR>I was getting worried since you didn't report for a while.<BR>Is everything going well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-c" mid="49"><![CDATA[<html>Oh…Okay…</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu225_01.ogg}<BR>Hmm... I see. I'm worried that you trust people too easily.<BR>Not everyone in the world are good, so you shouldn't be kind to anyone.<BR>Also, you shouldn't tell everyone you meet that you're from the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-d" mid="103"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Academic Jasmine$<BR>
+Yes, please try not to tell people that you're from the future or what's going to happen in the future. You may be a hero or a guardian in this world, but you're only a novice adventurer in that world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-e" mid="51"><![CDATA[<html>The communicator? It seems okay....</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Academic Jasmine$<BR>
+In any case, if the future changes, our plan will be in vain. Remember that.<BR>
+Also, I'm worried about....<BR>That communicator, is it really okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-f" mid="53"><![CDATA[<html>Wait.... I'll check right now!</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Academic Jasmine$<BR>
+Judging from what you told me about Angelica, she wouldn't have given you the communicator back without having touched anything....<BR>
+If she damaged the internal circuit or the memory, it will get complicated.<BR>Did you check it thoroughly?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-f" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-g" mid="55"><![CDATA[<html>...Oh no!!!</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html><FONT color=#7e12d2>(Checking data and circuit. Can't find any data)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-g" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-h" mid="57"><![CDATA[<html>The, the memory chip... is gone!</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_04.ogg}<BR>What?<BR>
+What happened?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-h" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-i" mid="59"><![CDATA[<html>Ahh... What should I do...?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Academic Jasmine$<BR>What?!<BR>
+<FONT color=#7e12d2>(Jasmine is shocked)</FONT><BR>...!! I never thought this kind of an incident would happen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-i" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-j" mid="101"><![CDATA[<html>Will it be possible?</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Academic Jasmine$<BR><FONT color=#7e12d2>(Jasmine talks calmly)</FONT><BR>Since you have lost all the data, you won't be able to use the communicator other than for communication purposes...<BR>Since this is an urgent situation, you'll have to download some basic data onto the auxiliary memory installed in the communicator....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-j" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-k" mid="61"><![CDATA[<html>Please send it to me.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Academic Jasmine$<BR>This won't be easy. There are many limitations to send data through time and space...<BR>But, that is the only way now.<BR>If you don't have some basic data, it will be very difficult for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5-k" image="" itemindex="">
+      <talk_answer link_index="n392_academic_station-5-!next" mid="63"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">225</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">433</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200433</exe>
+         <exe type="addquestitem" num="1">300030</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300030</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delquestitem" num="-1">300030</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2250,,,,,,</exe>
+         <exe type="complete">225</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="3">0,2,3,5,1</exelink>
+   <exelink qstep="4" npc="n543_angelica" sub="b" />
+   <exelink qstep="4" npc="n543_angelica" sub="c" />
+   <exelink qstep="4" npc="n543_angelica" sub="d" />
+   <exelink qstep="4" npc="n543_angelica" sub="e" />
+   <exelink qstep="4" npc="n543_angelica" sub="5">0,1,2</exelink>
+   <exelink qstep="5" npc="n392_academic_station" sub="b" />
+   <exelink qstep="5" npc="n392_academic_station" sub="c" />
+   <exelink qstep="5" npc="n392_academic_station" sub="d" />
+   <exelink qstep="5" npc="n392_academic_station" sub="e" />
+   <exelink qstep="5" npc="n392_academic_station" sub="f" />
+   <exelink qstep="5" npc="n392_academic_station" sub="g" />
+   <exelink qstep="5" npc="n392_academic_station" sub="h" />
+   <exelink qstep="5" npc="n392_academic_station" sub="i" />
+   <exelink qstep="5" npc="n392_academic_station" sub="j" />
+   <exelink qstep="5" npc="n392_academic_station" sub="k">0</exelink>
+   <exelink qstep="5" npc="n392_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="2250" quest_title="물건을 돌려받았습니다" chapterid="2" quest_level="12" quest_mark_type="1" use_item_list="300030">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Got the Device Back I]]></title>
+         <contents mid="66"><![CDATA[<html>Meet Heraldry Scholar Bailey and find out about the Pendant of the Pure.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Tak to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="68"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Got the Device Back II]]></title>
+         <contents mid="72"><![CDATA[<html>Ask Master Cleric Jermain about the Pendant of the Pure, which is an Ancient artifact.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to Master Cleric Jermain]]></destination>
+         <todo_msg mid="74"><![CDATA[Meet Master Cleric Jermain.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_17.dds</contents_image>
+         <destination_pos>134,0,0</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@1,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Got the Device Back III]]></title>
+         <contents mid="76"><![CDATA[<html>Search for the Pendant of the Pure at the Forest of Death.<BR>
+ <BR>
+<FONT color=#086171>Lower Ridge (Forest of Death Entrance)</FONT> <FONT color=#a82424>→ Forest of Death</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[Find the Pendant of the Pure at the Forest of Death]]></destination>
+         <todo_msg mid="78"><![CDATA[Find the Pendant of the Pure at the Forest of Death.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Angelica.dds</contents_image>
+         <destination_pos>134,n543</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@1,134@1</destination_mode>
+         <statemark_npcid>543</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Got the Device Back IV]]></title>
+         <contents mid="80"><![CDATA[<html>Found Sorceress Angelica. Ask her to return the communicator.<BR>
+ <BR>
+<FONT color=#086171>Lower Ridge (Forest of Death Entrance)</FONT> <FONT color=#a82424>→ Forest of Death (Sorceress Angelica)</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Sorceress Angelica at the Forest of Death]]></destination>
+         <todo_msg mid="82"><![CDATA[Talk to Sorceress Angelica.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Got the Device Back V]]></title>
+         <contents mid="84"><![CDATA[<html>Got the communicator back. Try to communicate with Jasmine at the Academic Station in Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Connect to the Academic Station at the Calderock Village]]></destination>
+         <todo_msg mid="86"><![CDATA[Connect to the Academic Station at the Calderock Village.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>224</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,189 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_383_riskful_meet</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>383</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>384</nextqid>
+      <nextqname>mq11_384_fairystars_prescribe</nextqname>
+      <nextqnpc>n523_velskud</nextqnpc>
+      <qkname mid="1"><![CDATA[Precarious Encounter]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>522</npcid>
+         <npcename>n522_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>523</npcid>
+         <npcename>n523_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Talk to General Douglas at the Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n522_velskud-noquest" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[Velskud closes his eyes while covering his injuries]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-noquest" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Velskud$<BR>.......<BR><FONT color=#7e12d2>(Velskud closes his eyes while covering his injuries.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="10"><![CDATA[<html>Yes, alright.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$General Douglas$<BR>It's a hectic situation trying to tie up the loose ends of the war and checking the status of the soldiers.<BR>
+If you are free, please give us a hand.<BR><FONT color=#7e12d2>(Douglas moves around hastily.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_35.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$General Douglas${action:Talk}<BR>Hmm... It worries me that the contamination at the Foothills of Black Mountain is getting worse from the result of this war.<BR><FONT color=#7e12d2>(Go to the Dried Marissa Spring and look for traces of the fallen Black Dragon.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_05.ogg}<BR>Oh, so you're saying geographically, there is a chance at the <FONT color=#a82424>Dried Marissa Sping</FONT>, there may be traces of the fallen Black Dragon?<BR>Good thinking. Go and check it out!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Velskud$<BR>.......<BR><FONT color=#7e12d2>(Velskud closes his eyes while covering his injuries.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n522_velskud-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n522_velskud-1-a" mid="88"><![CDATA[<html>Velskud!!</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Velskud$<BR>......Ahh.<BR><FONT color=#7e12d2>(Velskud closes his eyes while covering his injuries.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n522_velskud-1-a" image="" itemindex="">
+      <talk_answer link_index="n522_velskud-1-b" mid="91"><![CDATA[<html>Are you okay?</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Velskud$<BR>...You again.<BR>I tried to remove all traces, but I never thought I would be discovered by a little girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n522_velskud-1-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n522_velskud-1-c" mid="93"><![CDATA[<html>It's not that...</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Velskud$<BR>...You're sorry I didn't die?<BR>Since the Gold Dragon wasn't able to use all his power, as you can see, I'm fine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n522_velskud-1-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n522_velskud-2" mid="95"><![CDATA[<html>First, get out of here.</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Velskud$<BR>But an injury is an injury.<BR>
+I won't be able to tun into a dragon for a while.<BR><FONT color=#7e12d2>(Velskud looks ill.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n522_velskud-2" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Velskud$<BR>.......<BR>I'm going to the <FONT color=#a82424>Foothills of Black Mountain</FONT>.<BR>
+<FONT color=#7e12d2>※Need to find the hidden cave at the Foothills of Black Mountain.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-2" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-2-a" mid="100"><![CDATA[<html>Those Sentinels?</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Velskud$<BR>Such a strange kid, you are.<BR>Why do you keep following me? I'm already overwhelmed with <FONT color=#a82424>those Sentinels</FONT> who are chasing me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-2-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-2-b" mid="102"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Velskud$<BR>Geraint and Argenta. That uncomprehensible <FONT color=#a82424>dragons</FONT>.<BR>Compared to them, I'm only a human.<BR>...So human that when I think about revenge, my blood boils.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-2-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-2-c" mid="104"><![CDATA[<html>(Report to Jasmine)</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Velskud$<BR>...Go away. I will leave when I'm able to move by myself.<BR><FONT color=#7e12d2>(Velskud closes his eyes as if he doesn't want to talk to me anymore.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-2-c" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-2-!next" mid="106"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">383</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3830,,,,,,</exe>
+         <exe type="complete">383</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n522_velskud" sub="b" />
+   <exelink qstep="1" npc="n522_velskud" sub="c" />
+   <exelink qstep="1" npc="n522_velskud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n523_velskud" sub="b" />
+   <exelink qstep="2" npc="n523_velskud" sub="c">0</exelink>
+   <exelink qstep="2" npc="n523_velskud" sub="!next">1</exelink>
+   <journal_data recompense="3830" quest_title="위태로운 조우입니다" chapterid="5" quest_level="30" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_35.dds</contents_image>
+         <destination_pos>354,n522</destination_pos>
+         <destination_mode>custom:352@1,353@1,354@1</destination_mode>
+         <statemark_npcid>522</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Precarious Encounter I]]></title>
+         <contents mid="69"><![CDATA[<html>It is possible that Velskud may be around the Deserted Woods if he had fallen from the sky above the Dark Overlord Gate. Find traces of the Black Dragon at the Dried Marissa Spring.<BR><BR><FONT color=#086171>Foothills of Black Mountain (Lonely Forest Path) → Dried Marissa Spring</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Find the Black Dragon at the Dried Marissa Spring]]></destination>
+         <todo_msg mid="71"><![CDATA[Find traces of the Black Dragon at the Dried Marissa Spring.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13,n523</destination_pos>
+         <destination_mode>custom:13@4</destination_mode>
+         <statemark_npcid>523</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[Precarious Encounter II]]></title>
+         <contents mid="109"><![CDATA[<html>Found the injured Velskud. Move him to Foothills of Black Mountain and listen to his story.<BR><BR>
+<FONT color=#7e12d2>※Need to find the hidden cave at the Foothills of Black Mountain.</FONT><BR>
+<BR><FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Velskud</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[Talk to Velskud at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="111"><![CDATA[Travel to the Foothills of Black Mountain and talk to Velskud.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>382</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

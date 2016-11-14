@@ -1,0 +1,231 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_420_return_of_the_general</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>420</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>403</nextqid>
+      <nextqname>mq11_403_meet_argenta_again</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[General's Return]]></qkname>
+      <qnpc>
+         <npcid>263</npcid>
+         <npcename>n263_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-noquest" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$General Douglas$<BR>The courageous soldiers of Saint Haven are currently trying their best to fight off the monsters of the Dark Mines.<BR><FONT color=#7e12d2>(Talk to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$General Douglas$<BR>I have too much work to do now. If there is no urgent matter, please find later okie?<BR><FONT color=#7e12d2>(Talk to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-a" mid="53"><![CDATA[<html>(Ignacio looks at you with miserable eyes.)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Bishop Ignacio$<BR>We have no choice but to target the <FONT color=#a82424>Dark Overlord Keep</FONT> to find the <FONT color=#a82424>Prophet</FONT>.<BR>But then... There are no troops that are readily available for dispatch...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceppted" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Bishop Ignacio$<BR>For now, I guess the best thing would be to make use of the Royal Castle's Elite Soldiers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-1" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR>The courageous soldiers of Saint Haven are currently trying their best to fight off the monsters of the Dark Mines.<BR><FONT color=#7e12d2>(Talk to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>I have just returned.<BR>I have too much work to do now. If there is no urgent matter, please find later okie?<BR><FONT color=#7e12d2>(Talk to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="8"><![CDATA[<html>The Dark Mines?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>The Elite Soldiers are currently gathered near the <FONT color=#a82424>Dark Mines</FONT> with <FONT color=#a82424>General Douglas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="10"><![CDATA[<html>Then I will go to the Dark Mines.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>They are facing the monsters of the <FONT color=#a82424>Dark Mines</FONT>.<BR>Situation over there is not as urgent as the situation of the Prophet. So go to <FONT color=#a82424>General Douglas</FONT>, and tell him about the situation over here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QS_Default.dds" itemindex="300243">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="12"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Bishop Ignacio$<BR>Will you do that? Then hurry up and tell <FONT color=#a82424>General Douglas</FONT> about our urgent situation, and tell him to send the troops back to the Royal Castle. Here, I will write a personal letter to inform them about the situation over here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QW_27.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Take this letter to General Douglas at <FONT color=#a82424>Dark Mines</FONT>.<BR>He is a loyal man, so he will understand the crisis of this nation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_27.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR>Take this letter to General Douglas at <FONT color=#a82424>Dark Mines</FONT>.<BR>He is a loyal man, so he will understand the crisis of this nation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-a" mid="16"><![CDATA[<html>I am <FONT color=#382000>{user_class} {user_nick}</FONT>.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$General Douglas${action:talk}<BR>Hmm? Who are you?<BR>You seem like a normal adventurer. This is a dangerous place, so return.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-b" mid="18"><![CDATA[<html>Here, this is Bishop Ignacio's letter.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$General Douglas$<BR>I think I have never heard that name before... What are you here for?<BR>As you can see, I am in the middle of an important operation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-b" image="QS_Default.dds" itemindex="300243">
+      <talk_answer link_index="n263_general_duglars-2-c" mid="20"><![CDATA[<html>(The general folded up the letter he has finished reading.)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$General Douglas$<BR>Hmm? The Bishop's letter? Here, let me take a look.<BR><FONT color=#7e12d2>(He hastily reads the letter.)</FONT><BR>... Hmm. So there was a crisis while I was absent.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-d" mid="22"><![CDATA[<html>(The General pats you on the shoulders.)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$General Douglas$<BR>The <FONT color=#a82424>Dark Mines</FONT> is a very important position for supply of logistic for war. it would be a terrible situation if the monsters were to take over it. But since saving the <FONT color=#a82424>Prophet</FONT> is also an urgent matter, the Adventurer's Guild should temporarily defend this area.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-d" image="QM_Orc_Gray.dds" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-e" mid="24"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$General Douglas$<BR>It's a shame that <FONT color=#a82424>Bomb Expert Numharoko</FONT>, who took over the mines, got away before our eyes, but we'll just have to hope for the next opportunity...<BR>So we can now send the troops back. I will gather the troops around the mines and return with them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-e" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$General Douglas${action:talk}<BR>Well then, I will see you at the <FONT color=#a82424>Royal Castle</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-3" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$General Douglas$<BR>The defense of this place will be left to the <FONT color=#a82424>Adventurer's Guild</FONT>, and our troops will be sent back.<BR>I will be returning to the <FONT color=#a82424>Royal Castle</FONT> soon, so you should start leaving as well. I will see you at the Royal Castle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>General Douglas</FONT> has just returned.<BR>Now hurry up and discuss with him about the operations to be used for the attack on the Black Knight's base.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="29"><![CDATA[<html>We must hurry to the Dark Overlord Keep.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$General Douglas${action:talk}<BR>I have just returned.<BR>I see that you have returned safely as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$General Douglas$<BR>Oh, do not hurry. There are still soldiers who have not yet returned, and many of the <FONT color=#a82424>troops</FONT> are exhausted from the long fights against the monsters at <FONT color=#a82424>Dark Mines</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$General Douglas$<BR>As soon as the troops have been re-organized, they will be dispatched to the <FONT color=#a82424>DarK Overlord Keep</FONT>, so don't worry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-!next" mid="35"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">420</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300243</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300243</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4201,4201,4202,4203,4204,4205,4206</exe>
+         <exe type="complete">420</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c">0,1,2</exelink>
+   <exelink qstep="2" npc="n263_general_duglars" sub="b" />
+   <exelink qstep="2" npc="n263_general_duglars" sub="c" />
+   <exelink qstep="2" npc="n263_general_duglars" sub="d" />
+   <exelink qstep="2" npc="n263_general_duglars" sub="e">0,1,2</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="!next">1</exelink>
+   <journal_data recompense="1:4201,2:4202,3:4203,4:4204,5:4205,6:4206" quest_title="장군의 귀환" chapterid="4" quest_level="24" quest_mark_type="1" use_item_list="300243">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Plans to Assemble the Elite Soldiers]]></title>
+         <contents mid="39"><![CDATA[<html>Talk to Bishop Ignacio about using the Elite Soldiers.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="41"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>272,n263</destination_pos>
+         <destination_mode>custom:271@1,272@1</destination_mode>
+         <statemark_npcid>263</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[To General Douglas]]></title>
+         <contents mid="43"><![CDATA[<html>Bishop Ignacio was trying to assemble the Elite Soldiers, but they are currently at the <FONT color=#a82424>Dark Mines</FONT> with <FONT color=#a82424>General Douglas</FONT>. Go to the Dark Mines and look for General Douglas.<BR> <BR><FONT color=#086171>Hermalte Port (Dark Mines Access)</FONT> <FONT color=#a82424>→ Dark Mines</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Talk to General Douglas at Dark Mines]]></destination>
+         <todo_msg mid="45"><![CDATA[Meet General Douglas at Dark Mines and request troop support.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Returning to Royal Castle]]></title>
+         <contents mid="47"><![CDATA[<html>General Douglas has promised to withdraw the troops. Return to <FONT color=#a82424>Royal Castle</FONT> and talk to <FONT color=#a82424>General Douglas</FONT>, who has returned, and then request troop support.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk to General Douglas at Saint Haven Royal Castle]]></destination>
+         <todo_msg mid="49"><![CDATA[Talk to General Douglas at Saint Haven Royal Castle.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>419</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,361 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_391_black_medicine</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>391</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc>블랙 드래곤의 파편	300026
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>392</nextqid>
+      <nextqname>mq11_392_facing_the_enemy</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Searching for the Black Cure]]></qkname>
+      <qnpc>
+         <npcid>287</npcid>
+         <npcename>n287_blackdragons_wing</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>523</npcid>
+         <npcename>n523_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>524</npcid>
+         <npcename>n524_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-noquest" image="" itemindex="">
+      <talk_question mid="139"><![CDATA[<html>$???$<BR>(A piece of the wing surrounded by dark and evil power.<BR>There seems to be traces of blood nearby.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-noquest" image="" itemindex="">
+      <talk_question mid="140"><![CDATA[<html>$Velskud$<BR>.......<BR><FONT color=#7e12d2>(Velskud closes his eyes while covering his injuries.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-noquest" image="" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$Warrior Xian$<BR>I will serve Saint Haven diligently!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>I'll keep a good lookout.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_03.ogg}<BR>The Prophet is still asleep. I'm curious how the Gold Dragon's Nest will be lifted.<BR>I don't know anything yet, and there is no record of it.... I'm getting worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="142"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_05.ogg}<BR>Hmm.... Then why don't you go see <FONT color=#a82424>Velskud</FONT> at the Foothills of Black Mountain?<BR>Since he's also a dragon... He may feel something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-1" image="" itemindex="">
+      <talk_question mid="144"><![CDATA[<html>$Warrior Xian$<BR>I will work hard for Saint Haven!<BR>
+If you want, why don't you join us?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-1" image="" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$???$<BR>(A piece of the wing surrounded by dark and evil power.<BR>There seems to be traces of blood nearby.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-a" mid="147"><![CDATA[<html>Is there anything I can do to help?</html>]]></talk_answer>
+      <talk_question mid="146"><![CDATA[<html>$Velskud$<BR>...Annoying guest is here.<BR>
+<FONT color=#7e12d2>(Velskud opens his eyes sadly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-a" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-b" mid="149"><![CDATA[<html>Wow! You're asking me a favour!!</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Velskud$<BR>Anything to help?<BR>
+<FONT color=#7e12d2>(Velskud thinks for a while)<BR></FONT>...Can you do one thing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-b" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-c" mid="152"><![CDATA[<html>Because you're asking me a favour, not ordering me.</html>]]></talk_answer>
+      <talk_question mid="150"><![CDATA[<html>$Velskud$<BR>Strange kid, getting excited to do a favour.<BR>Do you like to have someone order you around?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-c" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-d" mid="154"><![CDATA[<html>So... what's the favour?</html>]]></talk_answer>
+      <talk_question mid="153"><![CDATA[<html>$Velskud$<BR>It doesn't matter what you call it.<BR>
+It only depends on the outside will.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-d" image="QW_40.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-1-e" mid="156"><![CDATA[<html>Core?</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Velskud$<BR>I would like you to go to the <FONT color=#a82424>Dark Overlord Tower</FONT> and retrieve my core.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-e" image="QW_40.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-2" mid="158"><![CDATA[<html>(Is he concerned that I might be infected?)</html>]]></talk_answer>
+      <talk_question mid="157"><![CDATA[<html>$Velskud$<BR>Find out where my torn <FONT color=#a82424>wing</FONT> is and bring me that <FONT color=#a82424>fragment</FONT>.<BR>...You wont be infected just by getting in contact with the fragment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-2" image="QW_40.dds" itemindex="">
+      <talk_question mid="159"><![CDATA[<html>$Velskud$<BR>Go to the<FONT color=#a82424>Dark Overlord Tower</FONT>.<BR>After you find my torn wing, just bring me that fragment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="160"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Collect fragments of the Black Dragon's wing at the Dark Overlord Tower.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-2" image="QW_40.dds" itemindex="">
+      <talk_question mid="161"><![CDATA[<html>$Warrior Xian$<BR>Hello, <FONT color=#387206>{user_nick}</FONT>! Did you come here to collect a fragment of the Black Dragon's wing?<BR>
+<FONT color=#7e12d2>(Warrior Xian is looking at the Black Dragon's wing)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-2" image="" itemindex="">
+      <talk_answer link_index="n287_blackdragons_wing-2-a" mid="164"><![CDATA[<html>(Carefully tear a fragment of the wing)</html>]]></talk_answer>
+      <talk_question mid="162"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(The wing piece is consisted of strange tissue.<BR>There seem to be traces of blood nearby)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-2-a" image="QS_Default.dds" itemindex="300026">
+      <talk_answer link_index="n287_blackdragons_wing-3" mid="166"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$Fragment of the Black Dragon's wing$<BR><FONT color=#7e12d2>(Collected the wing fragment taking care not to get blood on the skin.<BR>Can feel a great power)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-3" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html><FONT color=#7e12d2>(When I look around, I see Warrior Xian looking this way.</FONT><BR>
+<FONT color=#7e12d2>He seems eager to talk to talk to me.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-3" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n524_cian-3-a" mid="169"><![CDATA[<html>I'm not here on his request.</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$Warrior Xian$<BR>I was wondering what you were doing, but were you also working for <FONT color=#a82424>Bishop Ignacio</FONT>?<BR>You're here to collect a fragment of the Black Dragon, right? Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-3-a" image="QS_Default.dds" itemindex="300026">
+      <talk_answer link_index="n524_cian-3-b" mid="172"><![CDATA[<html>I'm here on someone else's request.</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Warrior Xian$<BR>You're not? Hmm... <FONT color=#a82424>Ignacio</FONT> told me to collect this wing fragment so that he could cleanse the power of the Black Dragon. I thought <FONT color=#387206>{user_nick}</FONT> was here for the same purpose....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-3-b" image="" itemindex="">
+      <talk_answer link_index="n524_cian-3-c" mid="174"><![CDATA[<html>Don't work with the Bishop.</html>]]></talk_answer>
+      <talk_question mid="173"><![CDATA[<html>$Warrior Xian$<BR>I see. You have to make sure it won't be used for an evil purpose. Okay?<BR>Of course, <FONT color=#387206>{user_nick}</FONT> is not the type of person to be deceived. Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-3-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n524_cian-3-d" mid="176"><![CDATA[<html>But I'm suspicious.</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Warrior Xian$<BR>What? Why do you say such a thing suddenly? <FONT color=#a82424>Ignacio</FONT> is a very good man, encouraging the adventurers to work for <FONT color=#a82424>Saint Haven</FONT>and using his own money to do many other things.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-3-d" image="" itemindex="">
+      <talk_answer link_index="n524_cian-3-e" mid="178"><![CDATA[<html>That's true...</html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#7e12d2>(Xian is firm)</FONT> If you're suspicious of him because he asked to bring the fragment of the Black Dragon, isn't <FONT color=#387206>{user_nick}</FONT>'s client suspicious, too? But I didn't ask who that was, because I have complete trust in <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-3-e" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="179"><![CDATA[<html>$Warrior Xian$<BR>Oh! It's dangerous to hold on to a fragment of the Black Dragon.<BR>I'm going to go back now. Be careful, <FONT color=#387206>{user_nick}</FONT> and see you again!!<BR>
+<FONT color=#7e12d2>(Return to Velskud at the Foothills of Black Mountain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n524_cian-4" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="181"><![CDATA[<html>$Warrior Xian$<BR>I'm going to go back now. It's dangerous to hold on to a fragment of the Black Dragon.<BR><FONT color=#7e12d2>(Return to Velskud at the Foothills of Black Mountain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="182"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR>※ Meet Velskud at the Foothills of Black Mountain.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-4-a" mid="185"><![CDATA[<html>I'm not a kid!!</html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$Velskud$<BR>Unlike your looks, you're quite skilled, kid.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-4-b" mid="187"><![CDATA[<html>Geraint is protecting her.</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$Velskud$<BR>...Used the Prophet's power and barely finished the physical body of the <FONT color=#a82424>Black Dragon</FONT> only to have it ruined.<BR>
+I won't be able to turn into a dragon. I will recover slowly... Physical body is so annoying.<BR>Is the 
+<FONT color=#a82424>Descendent of the Ancient</FONT> still with him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-4-c" mid="190"><![CDATA[<html>I don't think so.</html>]]></talk_answer>
+      <talk_question mid="188"><![CDATA[<html>$Velskud$<BR>Ha! He's still doing something unnecessary.<BR>Is he going to stay there eternally and protect the Descendent of the Ancient?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-c" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-4-d" mid="192"><![CDATA[<html>(Tell him what I saw)</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Velskud$<BR>...Someone tampered with part of the black core.<BR>
+It's not a big problem, but some fool is devouring the power of a dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-d" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-4-e" mid="194"><![CDATA[<html>Can we stop him?</html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$Velskud$<BR>Cleansing... Ignacio, he's up to something.<BR>Foolish adventurers are trying to shorten their lives.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-e" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-4-f" mid="196"><![CDATA[<html>Is that about you, Velskud?</html>]]></talk_answer>
+      <talk_question mid="195"><![CDATA[<html>$Velskud$<BR>Ignorance is a crime. It's his fault even if he is taken advantage of and endlessly regret that he was used.<BR>It's not my problem if he dreams of revenge with hatred in his body, or just die.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4-f" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-5" mid="198"><![CDATA[<html>(Should I go to Jasmine?)</html>]]></talk_answer>
+      <talk_question mid="197"><![CDATA[<html>$Velskud$<BR>....... Annoying kid.<BR><FONT color=#7e12d2>(Velskud turns his head away and stops talking.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-5" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="199"><![CDATA[<html>$Velskud$<BR>You should watch out for Ignacio.<BR>
+Well, whatever the outcome is, those foolish adventurers will have to take responsibility for their actions.<BR><FONT color=#7e12d2>(Connect to the Academic Station at Saint Haven and report to Jasmine.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-5-a" mid="201"><![CDATA[<html>Yes it does.</html>]]></talk_answer>
+      <talk_question mid="200"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_04.ogg}<BR><FONT color=#a82424>Warrior Xian</FONT> was there trying to collect the core of the Black Dragon?<BR>Hmm... that's definitely a problem.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-5-b" mid="203"><![CDATA[<html>I'm worried.</html>]]></talk_answer>
+      <talk_question mid="202"><![CDATA[<html>$Academic Jasmine$<BR>Yes, there is definitely a record stating that Ignacio is the <FONT color=#a82424>traitor</FONT> of Saint Haven.<BR>
+That kind of a man isn't doing something noble right now.<BR>He's up to something. Although we don't yet know what that is....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5-b" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-5-!next" mid="205"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">391</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300026</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300026</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3910,,,,,,</exe>
+         <exe type="complete">391</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n523_velskud" sub="b" />
+   <exelink qstep="1" npc="n523_velskud" sub="c" />
+   <exelink qstep="1" npc="n523_velskud" sub="d" />
+   <exelink qstep="1" npc="n523_velskud" sub="e" />
+   <exelink qstep="1" npc="n523_velskud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n287_blackdragons_wing" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n524_cian" sub="b" />
+   <exelink qstep="3" npc="n524_cian" sub="c" />
+   <exelink qstep="3" npc="n524_cian" sub="d" />
+   <exelink qstep="3" npc="n524_cian" sub="e">0,1</exelink>
+   <exelink qstep="4" npc="n523_velskud" sub="b" />
+   <exelink qstep="4" npc="n523_velskud" sub="c" />
+   <exelink qstep="4" npc="n523_velskud" sub="d" />
+   <exelink qstep="4" npc="n523_velskud" sub="e" />
+   <exelink qstep="4" npc="n523_velskud" sub="f" />
+   <exelink qstep="4" npc="n523_velskud" sub="5">0,1,2</exelink>
+   <exelink qstep="5" npc="n393_academic_station" sub="b">0</exelink>
+   <exelink qstep="5" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="3910" quest_title="검은 치료약을 찾습니다" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="300026">
+      <journal index="1">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13,n523</destination_pos>
+         <destination_mode>custom:13@4</destination_mode>
+         <statemark_npcid>523</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="206"><![CDATA[Searching for the Black Cure I]]></title>
+         <contents mid="207"><![CDATA[<html>Meet Velskud at the Foothills of Black Mountain. We might be able to learn new information.<BR><BR><FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Velskud</FONT></html>]]></contents>
+         <destination mid="208"><![CDATA[Talk to Velskud at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="209"><![CDATA[Talk to Velskud at the Foothills of Black Mountain.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>403,n287</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1</destination_mode>
+         <statemark_npcid>287</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="210"><![CDATA[Searching for the Black Cure II]]></title>
+         <contents mid="211"><![CDATA[<html>Bring back a fragment of the Black Dragon's wing at the Dark Overlord Tower.<BR><BR><FONT color=#086171>Foothills of Black Mountain(Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord Tower</FONT></html>]]></contents>
+         <destination mid="212"><![CDATA[Find the Black Dragon's wing at the Dark Overlord Tower]]></destination>
+         <todo_msg mid="213"><![CDATA[Bring back a fragment of the Black Dragon's wing at the Dark Overlord Tower.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>403,n524</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1</destination_mode>
+         <statemark_npcid>524</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="215"><![CDATA[Searching for the Black Cure III]]></title>
+         <contents mid="216"><![CDATA[<html>Collected a fragment of the Black Dragon's wing. Talk to Warrior Xian since you met him.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain(Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord Tower(Warrior Xian)</FONT></html>]]></contents>
+         <destination mid="217"><![CDATA[Talk to Xian at the Dark Overlord Tower]]></destination>
+         <todo_msg mid="218"><![CDATA[Talk to Warrior Xian.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13,n523</destination_pos>
+         <destination_mode>custom:13@4</destination_mode>
+         <statemark_npcid>523</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="219"><![CDATA[Searching for the Black Cure IV]]></title>
+         <contents mid="220"><![CDATA[<html>Return to Velskud at the Foothills of Black Mountain and give him a fragment of Black Dragon.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Velskud</FONT></html>]]></contents>
+         <destination mid="221"><![CDATA[Talk to Velskud at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="222"><![CDATA[Return to Velskud at the Foothills of Black Mountain.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="224"><![CDATA[Searching for the Black Cure V]]></title>
+         <contents mid="225"><![CDATA[<html>Connect to the Academic Station at Saint Haven and report to Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="226"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="227"><![CDATA[Connect to the Academic Station at Saint Haven.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>390</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

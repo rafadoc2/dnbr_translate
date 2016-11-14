@@ -1,0 +1,337 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_419_where_argenta</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>419</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>420</nextqid>
+      <nextqname>mq11_420_return_of_the_general</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Argenta's Whereabouts]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>261</npcid>
+         <npcename>n261_slave_david</npcename>
+         <npckname>자칭 모험가 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>262</npcid>
+         <npcename>n262_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Ha. Ha. Ha. I am <FONT color=#a82424>Adventurer David</FONT>! I am the proud slave of <FONT color=#a82424>Argenta </FONT>, the most beautiful and delicate being in the world!<BR>... What is it? I don't have anything to say to you right now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-noquest" image="" itemindex="">
+      <talk_question mid="89"><![CDATA[<html>$Argenta$<BR>I don't think you should be here right now.<BR>Don't bother me. Go and do what you must do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-noquest" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$Elite Soldier$<BR>I'm sorry, but I'm a little busy right now. I have to write apologies letter because of what happened at <FONT color=#a82424>Calderock</FONT>. *Sigh*...<BR>Oh and I just remembered that the Bishop was looking for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-a" mid="93"><![CDATA[<html>Yes. She has always been chasing the Black Knight.</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Bishop Ignacio$<BR>Is there really somebody who knows the whereabouts of the <FONT color=#a82424>Black Knight</FONT>?<BR>Is this true?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceppted" mid="95"><![CDATA[<html>Her name is Argenta.</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Bishop Ignacio$<BR>If you are talking about a woman, then you must be talking about that <FONT color=#a82424>Silver-Haired Swordswoman</FONT> who helped you at Calderock Village. Yes, what was her name?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>But Argenta and I separated right when we arrived at the Royal Castle, so there is no way of knowing where she is at.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:talk}<BR><FONT color=#a82424>Argenta</FONT>...? Hehe. That's quite an interesting name...<BR>Hmm... Right. If she was chasing the <FONT color=#a82424>Black Knight</FONT>, she might know something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="8"><![CDATA[<html>Yes, I will try that.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>We urgently need her help right now, so we must do what we can do to find her...<BR>How about asking <FONT color=#a82424>Elite Soldier</FONT>, who came with you? If Argenta left the Royal Castle, the soldiers would have seen her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>I will speak to the King and the ministers and try to get at least some soldiers for support. Meanwhile, go and find <FONT color=#a82424>Argenta</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Ha. Ha. Ha. I am <FONT color=#a82424>Adventurer David</FONT>! I am the proud slave of <FONT color=#a82424>Argenta </FONT>, the most beautiful and delicate being in the world!<BR>... What is it? I don't have anything to say to you right now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Argenta$<BR>I don't think you should be here right now.<BR>Don't bother me. Go and do what you must do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Elite Soldier$<BR>I'm sorry, but I'm a little busy right now. I have to submit one hundred written letters of apologies because of what happened at <FONT color=#a82424>Calderock</FONT>. *Sigh*...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio$<BR>Did you find out?<BR><FONT color=#a82424>Soldier</FONT> is a very faithful friend, so he will let you know if he has any information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-a" mid="16"><![CDATA[<html>Do you know where she went?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Elite Soldier${action:talk}<BR>Oh, it's you, <FONT color=#387206>{user_nick}</FONT>.<BR>If you're talking about <FONT color=#a82424>Argenta</FONT>, are you talking about the lady that was on board the airship with you? Of course I remember her.<BR>You can't see such a beautiful lady like her these days.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-b" mid="18"><![CDATA[<html>Oh, are you talking about Adventurer David?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Elite Soldier$<BR>She didn't really mention anything about her destination, but... Her <FONT color=#a82424>other companion</FONT> might know.<BR>I'm talking about that person named Dav... or whatever.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-c" mid="20"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Elite Soldier$<BR>Yes. He came over to me and whispered a question about how dangerous <FONT color=#a82424>Foothills of Black Mountain </FONT> is.<BR>After I explained the region he asked about, his face suddenly hardened, and then he left.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Elite Soldier$<BR>I think you might want to go and check <FONT color=#a82424>Foothills of Black Mountain </FONT>. If I am remembering correctly, that <FONT color=#a82424>Adventurer David</FONT> fellow should have gone in that direction.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Elite Soldier$<BR>I have no idea where did Argenta went, but I if I am not wrong, Adventurer David should have headed to <FONT color=#a82424> Foothills of Black Mountain </FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-a" mid="25"><![CDATA[<html>... Where is Argenta?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>It's been a long time, <FONT color=#382000><FONT color=#387206>{user_nick}</FONT></FONT>!!<BR>Did you come here to meet the great <FONT color=#a82424>Adventurer David</FONT>? Ha. Ha. Ha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-b" mid="27"><![CDATA[<html>Are you saying that she abandoned you, and left alone?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR><FONT color=#a82424>Argenta</FONT>? She was here just a minute ago!<BR>But then she suddenly ran away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-b" image="QS_Default.dds" itemindex="300003">
+      <talk_answer link_index="n261_slave_david-3-c" mid="29"><![CDATA[<html>So do you know where she went?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>What? A...Abandon? Take a look at this<FONT color=#a82424> Proof of Slave</FONT> that <FONT color=#a82424>Argenta</FONT> herself, has given to me?<BR><FONT color=#7e12d2>(Adventurer David shows the Proof of Slave as if he is bragging.)</FONT><BR>I'm certain that something urgent has come up for her!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-c" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-d" mid="31"><![CDATA[<html>Abandoned Welton Hollow? ...Okay.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR><FONT color=#a82424>Abandoned Welton Hollow</FONT>!<BR>I was keeping tap on her with my keen pair of eye and I am sure that she head toward there! I didn't follow but not because I was scared !</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-d" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-3-e" mid="87"><![CDATA[<html>Do whatever you want.. I not gona help you with such a simple task</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Hey! I have to prepare a meal for <FONT color=#a82424>Argenta</FONT>Hmm give me some ideas what would be good for her. Since previously you was her slave but you lose out to me</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-3-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Oh, how imprudent! How could you call Argenta's meal petty?! <BR>Well anyway... If you happen to meet <FONT color=#a82424>Argenta</FONT>, tell her that this weak Adventurer David will be patiently waiting at Foothills of Black Mountain !</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-4" image="QW_31.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>You still haven't left? <FONT color=#a82424>Argenta</FONT> headed towards <FONT color=#a82424>Abandoned Welton Hollow</FONT> at an amazing speed.<BR>Hurry up and meet <FONT color=#a82424>Argenta</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4-a" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Argenta$<BR>Humpf <FONT color=#a82424>Geraint</FONT>I could sense Geraint presence, but where did he go? Did you lose him?<BR><FONT color=#7e12d2>(Argenta has a serious face.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-a" image="" itemindex="">
+      <talk_answer link_index="n262_argenta-4-b" mid="38"><![CDATA[<html>Argenta, do you know where the Black Knight is?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Argenta$<BR>What? Why are you still lurking around here?<BR>You said you were going to <FONT color=#a82424>Royal Castle</FONT> to make a report, but you must have some free time on your hands, is that so?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4-c" mid="40"><![CDATA[<html>Then is there any way to find out where he went?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Argenta$<BR>The <FONT color=#a82424>Black Knight</FONT>? He was already gone when I arrived.<BR>Should have run away like a coward.<BR>All that is left is his scent.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4-d" mid="42"><![CDATA[<html>His Fortress would be...?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Argenta$<BR>Since he got nothing important here, and he already gotten the<FONT color=#a82424>power of the Ancients</FONT> into his hands, he should be hiding himself in the<FONT color=#a82424>Fortress</FONT>.<BR>He should have being defeated..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-d" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4-e" mid="44"><![CDATA[<html>I will follow you after I reported to the Royal Castle</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Argenta$<BR>Where else would it be besides the <FONT color=#a82424>Dark Overlord's Keep</FONT>?<BR>Well anyway, I'm going to go chase <FONT color=#a82424>that</FONT> <FONT color=#a82424>guy</FONT>.With your skill, you would easily die. But i wouldn't stop you if you insist on following</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4-e" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Argenta$<BR>Royal Castle? A report?<BR>You guys don't change.<BR>Well, whatever.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-5" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Argenta$<BR>I'm going to head towards the <FONT color=#a82424>Dark Overlord Keep</FONT>.<BR>You said you were going to report to the <FONT color=#a82424>Royal Castle</FONT>, right? Well, do as you would like.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-5" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Argenta is going to the <FONT color=#a82424>Dark Overlord Keep</FONT>?<BR>T-then, I guess I should just patiently wait right here!<BR>I-I'm not staying because I'm scared or anything like that!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-a" mid="49"><![CDATA[<html>She mention that he had head toward Dark Overlord Keep</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Bishop Ignacio$<BR>Oh, your back after meeting Argenta<BR>Well, does she know where the <FONT color=#a82424>Black Knight</FONT> is at?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-b" mid="51"><![CDATA[<html>The Prophet should also be there...</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Bishop Ignacio$<BR>Oh no... This is not good. <BR>Isn't the <FONT color=#a82424>Bdark Overlord Keep</FONT> filled with powerful monsters?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-c" mid="53"><![CDATA[<html>(Ignacio looks at you with sorrowful eyes.)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Bishop Ignacio$<BR>Your right, we need to target the <FONT color=#a82424>Dark Overlord Keep</FONT> to find the <FONT color=#a82424>Prophet</FONT>.<BR>However we do not have enough troop to dispatch..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-c" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-d" mid="55"><![CDATA[<html>Aren't there any Royal Castle Guards or Elite Soldiers?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Bishop Ignacio$<BR>The <FONT color=#a82424>Templar Knights</FONT> did not return after they were dispatch to Mana Ridge and Cardelock Even if they return, they can't provide too much help, as it will take time to organize the troops.<BR>As for the <FONT color=#a82424>Sorceresses</FONT>, we cant expect much, they are an uncooperative group.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-d" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-e" mid="57"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Bishop Ignacio$<BR>The Guards cannot just make a move without the approval of the <FONT color=#a82424>Duke</FONT>. The <FONT color=#a82424>Duke</FONT> don't any how release his troops as they are also required to protect the King and possible rebellions. Thus i think our best bet now is to make use of Royal Castle's Elite Soldiers</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-e" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-!next" mid="59"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">419</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4191,4191,4192,4193,4194,4195,4196</exe>
+         <exe type="complete">419</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="b" />
+   <exelink qstep="2" npc="n209_elite_soldier" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n261_slave_david" sub="b" />
+   <exelink qstep="3" npc="n261_slave_david" sub="c" />
+   <exelink qstep="3" npc="n261_slave_david" sub="d" />
+   <exelink qstep="3" npc="n261_slave_david" sub="e">0,1</exelink>
+   <exelink qstep="4" npc="n262_argenta" sub="b" />
+   <exelink qstep="4" npc="n262_argenta" sub="c" />
+   <exelink qstep="4" npc="n262_argenta" sub="d" />
+   <exelink qstep="4" npc="n262_argenta" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="e">0</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4191,2:4192,3:4193,4:4194,5:4195,6:4196" quest_title="아르젠타의 행방" chapterid="4" quest_level="24" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Bishop Ignacio's Suggestion]]></title>
+         <contents mid="62"><![CDATA[<html>It looks like Bishop Ignacio has something to say about Argenta.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="64"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[The Investigations of Argenta's Whereabouts I]]></title>
+         <contents mid="66"><![CDATA[<html>You must find the whereabouts of the Black Knight by asking <FONT color=#a82424>Argenta</FONT>. <FONT color=#a82424>Elite Soldier</FONT>, should know where Argenta location is<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> → Elite Soldier</html>]]></contents>
+         <destination mid="67"><![CDATA[Talk to Elite Soldier Calrim]]></destination>
+         <todo_msg mid="68"><![CDATA[Enquire Elite Soldier where Argenta went.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom:21@1,11@1,261@1</destination_mode>
+         <statemark_npcid>261</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[The Investigations of Argenta's Whereabouts II]]></title>
+         <contents mid="70"><![CDATA[<html>It looks like Adventurer David, who came with Argenta, has headed towards <FONT color=#a82424>Foothills of Black Mountain </FONT>. Find Adventurer David.<BR> <BR><FONT color=#086171>Foothills of Black Mountain </FONT> <FONT color=#a82424>→ Adventurer David</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Talk to Adventurer David at Foothills of Black Mountain]]></destination>
+         <todo_msg mid="72"><![CDATA[Meet Adventurer David at Foothills of Black Mountain, and ask about Argenta's whereabouts.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>314,n262</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@1,314@1</destination_mode>
+         <statemark_npcid>262</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[The Investigations of Argenta's Whereabouts III]]></title>
+         <contents mid="74"><![CDATA[<html>According to <FONT color=#a82424>Adventurer David</FONT>, Argenta ran towards Abandoned Welton Hollow.<BR> <BR><FONT color=#086171>Foothills of Black Mountain (Deserted Woods Patch)</FONT><FONT color=#a82424> → Abandoned Welton Hollow</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Talk to Argenta at Abandoned Welton Hollow]]></destination>
+         <todo_msg mid="76"><![CDATA[Find Argenta at Abandoned Welton Hollow and talk to her.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Report to the Bishop]]></title>
+         <contents mid="79"><![CDATA[<html>It seems like the <FONT color=#a82424>Black Knight</FONT> has already returned to the Dark Overlord's Keep. Report what you have heard from <FONT color=#a82424>Bishop Ignacio</FONT>.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="81"><![CDATA[Tell Bishop Ignacio where the Black Knight is at.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>402</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

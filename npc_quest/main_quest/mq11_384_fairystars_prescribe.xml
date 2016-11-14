@@ -1,0 +1,291 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_384_fairystars_prescribe</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>384</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc>몽환의 풀	300251
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>385</nextqid>
+      <nextqname>mq11_385_rose_in_dream</nextqname>
+      <nextqnpc>n038_royal_magician_kalaen</nextqnpc>
+      <qkname mid="1"><![CDATA[Dark Tower's Prescription]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>523</npcid>
+         <npcename>n523_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-noquest" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Oh~ Finally, it's time to show the power of a Sorceress~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-noquest" image="" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Velskud$<BR>.......<BR><FONT color=#7e12d2>(Velskud closes his eyes while covering his injuries.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="56"><![CDATA[<html>(Report the situation)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_03.ogg}<BR>How did it go?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="60"><![CDATA[<html>(Jasmine sighs)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_03.ogg}<BR>I see. I feel better now that you found <FONT color=#a82424> Velskud</FONT>.<BR>But... he won't co-operate easily.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-b" mid="62"><![CDATA[<html>I think this is about revenge.</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Academic Jasmine$<BR>Velskud in this world is a proud guardian of humans, but why was he the enemy at that time?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-c" mid="64"><![CDATA[<html>You don't know either.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Academic Jasmine$<BR>Revenge? Revenge to who?<BR>...He's a man of few words, so there isn't much known about him.<BR>
+I can't understand this by only reading the historical records.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-d" mid="66"><![CDATA[<html>Yes, she is still sleeping</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Academic Jasmine$<BR>I'm sorry but yes, he isn't really talkative.<BR>
+Hmm, anyway, you found Velskud. What about the <FONT color=#a82424>Prophet</FONT>?<BR>Is she still not waking up?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-e" mid="69"><![CDATA[<html>I'll look into it.</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Academic Jasmine$<BR>Is there any other way? The Prophet must know about the Monolith.<BR>
+Oh, by the way, shouldn't you go check on the Prophet at the<FONT color=#a82424>Royal Palace</FONT>? Wouldn't they try and wake her up?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>Okay, go to the Royal Palace and see if there is a way to wake the Prophet.<BR>Hmm... maybe a <FONT color=#a82424>Sorceress</FONT> might know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>Oh~<BR>
+Finally, it's time to show the power of a Sorceress~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Velskud$<BR>
+...Just know that and go away, kid.<BR>
+<FONT color=#7e12d2>(Connect to the Academic Station in Saint Haven and report to Jasmine)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Gather information at the Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-2" image="" itemindex="">
+      <talk_question mid="75"><![CDATA[<html>$Velskud$<BR>When I recover, I'll do what I have to do and leave.<BR>Don't take anymore interest in this matter.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-a" mid="77"><![CDATA[<html>Hello.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Why are you wandering around here? Little adventurer!<BR>......Huh? I didn't mean, leave! You don't have any sense at all.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-b" mid="80"><![CDATA[<html>Really? How?!</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>I heard that the <FONT color=#a82424>Prophet</FONT> isn't waking up from her sleep. Haha~<BR>Of course, I, Court Sorceress Kayleen, had already expected this. Haha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-c" mid="82"><![CDATA[<html>So there is a way.</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Just believe when I say I knew this was going to happen. Why are you asking so many questions? You're just like a kid.<BR>That's not the important thing. The important thing is that I know <FONT color=#a82424>how to wake the Prophet</FONT>! That's what's important!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-d" mid="85"><![CDATA[<html>Really?! Thank you!!</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Haha. Do you think I'm the kind of a person who would make empty promises?<BR>I'll give you the opportunity to watch the amazing ability of the Dark Tower Magic Institute. How about that, don't you feel honoured?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-d" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3" mid="87"><![CDATA[<html>Yes! I'll do that.</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Alright. You seem to understand something. Haha~<BR>Now, first go to the <FONT color=#a82424>Forsaken Islet Core</FONT> and find some Dream Plant.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="QW_33.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>You'll be able to obtain the Dream Plant when you defeat a strong monster at the <FONT color=#a82424>Forsaken Islet Core</FONT>.<BR>
+It fermentates inside a monster's stomach.<BR>Haha. I'll show you the great power of the Dark Tower Magic Institute!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="91"><![CDATA[<html>So what do you do with this?</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hmm, you look pretty weak, but you're quite capable.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="QS_Default.dds" itemindex="300251">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-b" mid="93"><![CDATA[<html>Uh, no....</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Court Sorceress Kayleen$<BR>What's your hurry? You think that the sleeping Prophet is going to run away?<BR>Now, I'm going to make a <FONT color=#a82424>Dream Powder</FONT> from this Dream Plant.<BR>Do you know what Dream Powder is?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-b" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-c" mid="97"><![CDATA[<html>Fascinating.</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>Haha. I'll teach you, so listen up.<BR>
+<FONT color=#7e12d2>(Kayleen starts to puff out her chest in pride)<BR></FONT>This is a <FONT color=#a82424>magical powder that enables you to go into the dream of a sleeping person</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-d" mid="99"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Sleeping that long has something to do with psychological disorder, so it is better to just go inside her subconscious and ask.<BR>It's also convenient.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-d" image="QS_Default.dds" itemindex="300251">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-e" mid="101"><![CDATA[<html>I won't eat it...</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Court Sorceress Kayleen$<BR>This is a very special treat from me, so feel honoured!<BR><FONT color=#7e12d2>(Kayleen mixes the Dream Plant with various condiments)<BR></FONT>It smells delicious, but you can't eat it, do you understand?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-e" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-f" mid="103"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Now, it's ready.<BR><FONT color=#7e12d2>(She grinds some aromatic weed and gives me a handful.)<BR></FONT>Take this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-f" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-!next" mid="105"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">384</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">931</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200931</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300251</exe>
+         <exe type="addquestitem" num="1">300251</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3840,,,,,,</exe>
+         <exe type="complete">384</exe>
+         <exe type="delquestitem" num="-1">300251</exe>
+         <exe type="addquestitem" num="1">300083</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="b" />
+   <exelink qstep="1" npc="n393_academic_station" sub="c" />
+   <exelink qstep="1" npc="n393_academic_station" sub="d" />
+   <exelink qstep="1" npc="n393_academic_station" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="d" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="3">0,2,3,4,1</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="d" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="e" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="f">0</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="!next">1,2,3</exelink>
+   <journal_data recompense="3840" quest_title="페어리스타의 처방입니다" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="300251">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Dark Tower's Prescription I]]></title>
+         <contents mid="39"><![CDATA[<html>Transported Velskud to the Foothills of Black Mountain. Report to Jasmine at the Academic Station.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="41"><![CDATA[Connect to the Academic Station and report.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[Dark Tower's Prescription II]]></title>
+         <contents mid="108"><![CDATA[<html>Go to Saint Haven Royal Palace and find out if there is a way to wake the Prophet up.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Court Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[Talk to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="110"><![CDATA[Go to Saint Haven Royal Palace and find out if there is a way to wake the Prophet up.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="111"><![CDATA[Dark Tower's Prescription III]]></title>
+         <contents mid="112"><![CDATA[<html>Court Sorceress Kayleen knows a way to wake the Prophet. Take her advice, go to the Forsaken Islet Core and find the Dream Plant.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Forsaken Islet Transport)</FONT> <FONT color=#a82424>→ Forsaken Islet Core</FONT></html>]]></contents>
+         <destination mid="113"><![CDATA[Forsaken Islet Core]]></destination>
+         <todo_msg mid="114"><![CDATA[Collect the Dream Plant at the Forsaken Islet Core.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="115"><![CDATA[Dark Tower's Prescription IV]]></title>
+         <contents mid="116"><![CDATA[<html>Collected the Dream Plant. Give it to Court Sorceress Kayleen.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Court Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[Report to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="118"><![CDATA[Return to Court Sorceress Kayleen.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>383</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

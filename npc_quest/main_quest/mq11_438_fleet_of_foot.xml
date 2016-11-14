@@ -1,0 +1,289 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_438_fleet_of_foot</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>438</qid>
+      <designer>김인정</designer>
+      <qlevel>28</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>439</nextqid>
+      <nextqname>mq11_439_good_data</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Acting Fast]]></qkname>
+      <qnpc>
+         <npcid>212</npcid>
+         <npcename>n212_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>37</npcid>
+         <npcename>n037_geraint</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-noquest" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Argenta$<BR>Don't think about going after Geraint.<BR>...Well, I won't keep you if you insist. It's your choice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-noquest" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Geraint$<BR>...Don't interrupt me.<BR>
+I'm trying to find his location.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-noquest" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>If you can find the Prophet at the Dark Overlord Keep, it would be great...<BR>But, it won't be easy, according to our records.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-accep" mid="9"><![CDATA[<html>Take me, too!</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$General Douglas$<BR>We're almost ready, so we can head out to the <FONT color=#a82424>Dark Overlord Keep</FONT>. Other adventurers have received the word and are preparing themselves, so this time, we'll get the <FONT color=#a82424>Prophet</FONT> back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="12"><![CDATA[<html>I'm not a kid....</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$General Douglas$<BR>Oh, so trustworthy!!<BR>I'm sorry to have to put you in such a dangerous area, but I'll leave you with the task since you're so skilled.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="14"><![CDATA[<html>(...I'm not a kid!)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$General Douglas$<BR>I have a <FONT color=#a82424>daughter</FONT> of my own, so I'm worried.<BR>Since I raised my daughter like a princess, I can't send her into battle....<BR>You're so brave.<BR>
+<FONT color=#7e12d2>(The General strokes my hair)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Academic Station$<BR>※ Mission Object<BR><FONT color=#7e12d2>※ Talk to General Douglas at the Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Argenta$<BR>Don't think about going after Geraint.<BR>...Well, I won't keep you if you insist. It's your choice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Geraint$<BR>...Don't interrupt me.<BR>
+I'm trying to find his location.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_43.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$General Douglas${action:Talk}<BR>I've dispatched the Elite Soldiers and adventurers to various routes.<BR>Please head out to the <FONT color=#a82424>Dark Overlord Keep</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n037_geraint-2-a" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Geraint$<BR>One step too late....<BR>
+<FONT color=#7e12d2>(Geraint says as he looks inside.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2-a" image="" itemindex="">
+      <talk_answer link_index="n037_geraint-2-b" mid="23"><![CDATA[<html>Nest...?!</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Geraint$<BR>He already built his <FONT color=#a82424>Nest</FONT> inside, so I can't go inside.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n037_geraint-2-c" mid="25"><![CDATA[<html>I have something to tell you, Geraint....</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Geraint$<BR>Hmm? <FONT color=#7e12d2>(Geraint looks at me strangely.)</FONT><BR>
+You know about a Nest....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Geraint$<BR>If you have something to say, say that to <FONT color=#a82424>Argenta</FONT> at the Foothills of Black Mountain.<BR><FONT color=#7e12d2>(After that, Geraint purses his lips.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-3" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Geraint$<BR>....<BR><FONT color=#7e12d2>(Geraint doesn't seem like he wants to talk anymore. </FONT><FONT color=#7e12d2>Meet Argenta at the Foothills of Black Mountain.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-a" mid="29"><![CDATA[<html>(Search for the data containing information about a Nest.)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Argenta$<BR>I know the nest is complete. Because I felt it before.<BR>...But now, we've come to the worst situation.<BR>
+We don't even have to think about going back or not.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-a" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-b" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$File No. 438$<BR><FONT color=#086171>Nest is a shield built by a being with enormous power and is used to protect its territory. By going inside a Nest, you are entering the territory of the being who made it to exert a strong rejection to others.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-b" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-c" mid="33"><![CDATA[<html>(Shut down the data.)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$File No. 438$<BR>
+<FONT color=#086171>The owner of a Nest can recognize who is trying to penetrate into the Nest, </FONT><FONT color=#086171>but with special power and tools, you can trespass the Nest.</FONT><BR>
+<FONT color=#086171>When the owner of the Nest dies or is nullified, the Nest is destroyed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-3-d" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Argenta$<BR>If it was made by a weak being such as a Manticore or a Cerberus, it's okay... But it's a <FONT color=#a82424>Black Dragon</FONT> who made that Nest.<BR>Annoying Velskud ! He really became a <FONT color=#a82424>complete Black Dragon</FONT>.<BR>
+<FONT color=#7e12d2>(Argenta grumbles)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-d" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-4" mid="37"><![CDATA[<html>(Have to discuss this with Jasmine.)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Argenta$<BR>I have to ask another adventurer to find out something for me.<BR>It's a dangerous job for a kid, so go home and play with your dog or something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Argenta$<BR>Things are getting complicated.<BR>
+I shoudn't have trusted that black human. Foolish Geraint!<BR><FONT color=#7e12d2>(Return to the Academic Station and discuss this with Jasmine.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$General Douglas$<BR>I received the report. This isn't good... I feel something worse is going to happen.<BR>As soon as the adventurers come back, I'll convene a meeting.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-a" mid="58"><![CDATA[<html>That's Velskud.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_04.ogg}<BR>What? Black Dragon's Nest?<BR><FONT color=#7e12d2>(Jasmine searches the data.)</FONT><BR>...Oh, yes. It's been recorded in the history. During that time, the Black Dragon revived.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-b" mid="60"><![CDATA[<html>Can I meet Velskud?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Academic Jasmine$<BR>It was Velskud, but at that time, he was an enemy of the kingdom.<BR>...I have no idea how Velskud changed his mind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-c" mid="62"><![CDATA[<html>(Opening the data)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Academic Jasmine$<BR>Then you'll have to go inside the <FONT color=#a82424>Nest</FONT>... I'll check if there is a way.<BR>...Hmm, oh, found it!<BR>
+There is a record of it. Look~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-c" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-d" mid="64"><![CDATA[<html>(Saving the data)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$File No. 143-58$<BR><FONT color=#086171>Ancient Celebrant's Rune. A special seal was used during the Black Dragon Karas' Raid.<BR>The recipe for making the rune is as follows.</FONT><BR>
+<FONT color=#7e12d2>(Additional data shows up)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-d" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-!next" mid="66"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">438</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4380,,,,,,</exe>
+         <exe type="complete">438</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="accep">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n037_geraint" sub="b" />
+   <exelink qstep="2" npc="n037_geraint" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="b" />
+   <exelink qstep="3" npc="n212_argenta" sub="c" />
+   <exelink qstep="3" npc="n212_argenta" sub="d" />
+   <exelink qstep="3" npc="n212_argenta" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="b" />
+   <exelink qstep="4" npc="n393_academic_station" sub="c" />
+   <exelink qstep="4" npc="n393_academic_station" sub="d">0</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="4380" quest_title="발빠르게 움직입니다" chapterid="4" quest_level="28" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Acting Fast I]]></title>
+         <contents mid="42"><![CDATA[<html>Participate in General Douglas's dispatch plan.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="44"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_43.dds</contents_image>
+         <destination_pos>432,n37</destination_pos>
+         <destination_mode>custom:431@1,432@1</destination_mode>
+         <statemark_npcid>37</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Acting Fast II]]></title>
+         <contents mid="46"><![CDATA[<html>Go to the Fortress of the Dark Overlord Army and track the Dark Knight's whereabouts.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain(Dark Overlord Gate)</FONT> <FONT color=#a82424>→ Fortress of the Dark Overlord Army</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Fortress of the Dark Overlord Army]]></destination>
+         <todo_msg mid="48"><![CDATA[Go to theFortress of the Dark Overlord Army]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom:13@1</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Acting Fast III]]></title>
+         <contents mid="50"><![CDATA[<html>Go to Argenta at the Foothills of Black Mountain and finish the talk.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk to Argenta at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="52"><![CDATA[Talk to Argenta at the Foothills of Black Mountain.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Acting Fast IV]]></title>
+         <contents mid="54"><![CDATA[<html>Is there a way to get inside the Black Dragon's Nest? Connect to the Academic Station at Saint Haven and discuss this with Jasmine.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="56"><![CDATA[Connect to the Academic Station and discuss with Jasmine.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>437</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

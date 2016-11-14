@@ -1,0 +1,234 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_416_dig_for_minerals</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>416</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc>1. 주교와 대화
+2. 죽은 도시의 길목에서 화석 채취
+3. 주교에게 보고
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>417</nextqid>
+      <nextqname>mq11_417_deserted_david</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Fossil Collection]]></qkname>
+      <qnpc>
+         <npcid>276</npcid>
+         <npcename>n276_invisible_thef</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-noquest" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(It seems like something is there, yet nothing can be seen.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-a" mid="64"><![CDATA[<html>Here it is.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Geraint</FONT> gave you some kind of an emblem, right? I'm talking about the one that allows you to enter where he is at.<BR>Let me have a look at it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting-a" image="QS_Default.dds" itemindex="300022">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="66"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Bishop Ignacio$<BR>What a delicate workmanship this is. I can't believe I am actually seeing a dragon's item. What a rare sight.<BR>Make sure you don't lose it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>(The Bishop is deep in thought, and gives you a glance.)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Hmm... <FONT color=#a82424>Geraint</FONT> is protecting the Prophet, but I am concerned about the defense of of the vicinities of Saint Haven.<BR>Although the Black Dragon has disappeared, the <FONT color=#a82424>monsters</FONT> still remain.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="8"><![CDATA[<html>Is there anything I can help with?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>Evil groups tend to become even more uncontrollable when they lose their leaders. But we have been severely damaged from the previous battle, and there is no way of knowing when we will get additional <FONT color=#a82424>military supplies</FONT>, as much of them were wasted during the battle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Bishop Ignacio$<BR>Your help would be much appreciated, and it would make me feel reassured. I will go and check the armory, so you should briefly get some rest while you wait.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="10"><![CDATA[<html>Where can we get them?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>After checking the amoury I noticed that we are short on <FONT color=#a82424>explosives</FONT>.<BR>How shameful would it be if our defensive lines were to collapse because we weren't able to secure enough explosives, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="37"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Bishop Ignacio$<BR>We must gather and then manufacture <FONT color=#a82424>Fossils</FONT>, which are used as materials for creating explosives.<BR>You don't have to worry about the manufacturing process, as we have a separate logistics group for that.<BR>So could you collect some <FONT color=#a82424>Fossils</FONT> so that we can secure enough of them?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="QW_38.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Bishop Ignacio$<BR>Then go and collect some Fossils at <FONT color=#a82424>Road to Death City</FONT>.<BR>There should be an abandoned <FONT color=#a82424>bomb switch</FONT> somewhere in the area. All you have to do is, blow it up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-1" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(It seems like something is there, yet nothing can be seen.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-2-a" mid="39"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>Oh, right. I'm only saying this for your own good, but let us keep this a <FONT color=#a82424>secret</FONT>, just bewteen the two of us.<BR>It will just make things more difficult if the other nobles start to become suspirious.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2-a" image="QW_38.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Bishop Ignacio$<BR>Then go and collect some Fossils at <FONT color=#a82424>Road to Death City</FONT>.<BR>There should be an abandoned <FONT color=#a82424>bomb switch</FONT> somewhere in the area. All you have to do is, blow it up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QW_38.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Bishop Ignacio$<BR>You haven't collected enough <FONT color=#a82424>Fossils</FONT> yet. It does appear like you have more than enough...<BR>But something seems to be missing, so go to <FONT color=#a82424>Road to Death City</FONT> again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-3" image="" itemindex="">
+      <talk_answer link_index="n276_invisible_thef-3-a" mid="43"><![CDATA[<html>(Check again.)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(It look like there something here, but we just could not find it.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-3-a" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Indeed, nothing is there. It must have been the sound of the wind.</FONT><BR><FONT color=#7e12d2>There seems to be no more Fossils to collect here, so you should return and report the situation.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n276_invisible_thef-4" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There is nothing here.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-a" mid="47"><![CDATA[<html>It was nothing.</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>You're already back?<BR>Oh my, shake off that dust you have on your clothes.<BR>Thank you for doing this. I will remember the contributions you have made.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-b" mid="49"><![CDATA[<html>(The Bishop is enthusiastically throwing compliments.)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Bishop Ignacio$<BR>Just as you have been doing, I hope that you will continue to help us solve the present problems that are being faced at <FONT color=#a82424>Saint Haven</FONT>.<BR>There aren't many people that I know of whom I could trust, so it really comforts me to have such a talented person like you by my side.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-c" mid="51"><![CDATA[<html>What? What is going on?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Bishop Ignacio$<BR>This might annoy you a little, but there is just one thing I would like you to check......<BR>Will you do me another favor? I'm asking you because there aren't many people that I could trust besides you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-4-!next" mid="53"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">416</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300022</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4161,4161,4162,4163,4164,4164,4166</exe>
+         <exe type="complete">416</exe>
+         <exe type="delquestitem" num="-1">300025</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n276_invisible_thef" sub="a">0,1,2</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="c">0</exelink>
+   <exelink qstep="4" npc="n039_bishop_ignasio" sub="!next">2,1</exelink>
+   <journal_data recompense="1:4161,2:4162,3:4163,4:4164,5:4164,6:4166" quest_title="화석 채취" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="300025">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Bishop Ignacio's Worries]]></title>
+         <contents mid="24"><![CDATA[<html>Ignacio, who was preparing for the ceremony, is worried about something. Listen to what it is.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="26"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_38.dds</contents_image>
+         <destination_pos>384,0,0</destination_pos>
+         <destination_mode>custom:381@4,382@4,383@4,384@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Collecting Fossils]]></title>
+         <contents mid="28"><![CDATA[<html>Go to Road to Death City and collect Fossils to be used for explosive materials.<BR><BR><FONT color=#086171>Hermalte Port (Dark Mine Access)</FONT> <FONT color=#a82424>→ Road to Death City</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Collect Fossils at Road to Death City]]></destination>
+         <todo_msg mid="30"><![CDATA[Please collect Fossils at Road to Death City.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_38.dds</contents_image>
+         <destination_pos>383,n276</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>276</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Annoying things]]></title>
+         <contents mid="55"><![CDATA[<html>Collect fossils to be used for explosive materials. If you find some things that are suspicious, then make sure to confirm everything so that no more fossils to be left.<BR> <BR><FONT color=#086171>Road to Death City</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Collect Fossils at Road to Death City]]></destination>
+         <todo_msg mid="57"><![CDATA[I feel there is something around here, please do a check]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[The Bishop's Compliments]]></title>
+         <contents mid="59"><![CDATA[<html>There are no more Fossils to collect. Deliver the Fossils you have collected to <FONT color=#a82424>Bishop Ignacio</FONT>.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Deliver the Fossils to Bishop Ignacio]]></destination>
+         <todo_msg mid="61"><![CDATA[Please pass the Fossils to Bishop Ignacio]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>415</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

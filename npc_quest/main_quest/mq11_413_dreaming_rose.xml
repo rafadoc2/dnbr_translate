@@ -1,0 +1,313 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_413_dreaming_rose</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>413</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>414</nextqid>
+      <nextqname>mq11_414_odd_sequela</nextqname>
+      <nextqnpc>n038_royal_magician_kalaen</nextqnpc>
+      <qkname mid="1"><![CDATA[Within the Dream of Rose]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>251</npcid>
+         <npcename>n251_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>76</npcid>
+         <npcename>n076_dream_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$Geraint$<BR>The <FONT color=#a82424>Descendant of the Ancients</FONT> still has not waken up.<BR>I don't think there is any other problems with her right now... I don't know why she is like this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-noquest" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$Geraint$<BR>The <FONT color=#a82424>Descendant of the Ancients</FONT> still has not waken up.<BR>I cant seem to know what causes to be like this</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-noquest" image="" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$Rose$<BR>... No. Not anymore... No. I've had enough...<BR>Everything..., everything is my fault.<BR>If I didn't exist... Then nobody would...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-acceptted" mid="114"><![CDATA[<html>Okay. (It looked pretty easy to me.)</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Court Sorceress Kayleen$<BR>The process may look easy but I can tell you, it is NOT an easy task.<BR>Don't even drop a single grain.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="30"><![CDATA[<html>No matter how many times I see it, it is always amazing.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Now take the <FONT color=#a82424>Dream Dust</FONT> to the <FONT color=#a82424>Prophet</FONT>.<BR>You will be able to enter her dreams the moment you sprinkle this dust onto her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="32"><![CDATA[<html>(Kayleen is starting to show off.)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>You don't know how powerful we Sorceresses are? Hahaha... You cannot compare our powers with that <FONT color=#a82424>old raccoon</FONT> over there. Ah hahahahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Go now and sprinkle the Dream Dust onto the Prophet.<BR>Although this is a safe magical dust that has already been verified many times, you can go and ask the <FONT color=#a82424>Gold Dragon</FONT> about it if you are still suspicious.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-1" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Rose$<BR>... No. Not anymore... No. I've had enough...<BR>Everything..., everything is my fault.<BR>If I didn't exist... Then nobody would...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-1" image="" itemindex="">
+      <talk_answer link_index="n251_rose-1-changemap_1" mid="98"><![CDATA[<html>(Use the Dream Dust.)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Rose$<BR>......<BR><FONT color=#7e12d2>(She shows no reaction, as if she is a doll.)</FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2>? You cannot proceed while you are in a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-1-a" image="" itemindex="">
+      <talk_question mid="122"><![CDATA[<html>$Rose$<BR>.......<BR><FONT color=#7e12d2>(She is not responding)</FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2>※ You cannot proceed in a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-a" mid="99"><![CDATA[<html>I wish she would wake up.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Geraint$<BR>The <FONT color=#a82424>Descendant of the Ancients</FONT> still has not waken up.<BR>I cant seem to know what causes to be like this</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-b" mid="101"><![CDATA[<html>Maybe she is just dreaming?</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Geraint$<BR>Let's see... She might be inside a dream that she does not want to wake up from.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-b" image="QS_Default.dds" itemindex="300083">
+      <talk_question mid="102"><![CDATA[<html>$Geraint$<BR>I don't know. If you really wanted to know, the only way would be to ask her directly.<BR>The <FONT color=#a82424>Dream Dust</FONT> used by the Sorceresses might work.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-a" mid="38"><![CDATA[<html>(The child is crying and mumbling to herself)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Rose$<BR>... No...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-a" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-b" mid="52"><![CDATA[<html>It's not your fault.</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Rose$<BR>I am tired from all these. Everything is my fault so stop it.<BR>If only I did not exist... Then nobody would have died...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-b" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-c" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Rose$<BR>No, it is my fault.<BR>Because I was born... Because I exist...<BR>Because of these... Everybody had to...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-c" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-d" mid="56"><![CDATA[<html>(Continue to convince her that she must wake up.)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Rose$<BR>I'm going to stay here.<BR>I won't go anywhere, and I won't talk to anyone.<BR>Now go back...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-d" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-e" mid="58"><![CDATA[<html>(...)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Rose$<BR>I'm scared that somebody will get hurt because of me. Why were such powers given to me? There's nothing I can do... <BR>I never even wanted these powers... Why do I have these powers?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-2-e" image="" itemindex="">
+      <talk_answer link_index="n076_dream_rose-2-changemap_2" mid="60"><![CDATA[<html>(The girl's voice sounds sounds increasingly painful.)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Rose$<BR>I'm sorry, but I don't want to do anything anymore.<BR>I don't even want to call out somebody's name....<BR>I've had enough... Just leave me alone... I beg you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-2" image="" itemindex="">
+      <talk_answer link_index="n251_rose-2-changemap_again" mid="121"><![CDATA[<html>(Use the dream powder)</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Rose$<BR>.......<BR><FONT color=#7e12d2>(No reaction)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-a" mid="62"><![CDATA[<html>Was that the girl's dream...?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Geraint$<BR>Did the descendant of the Ancients reveal her dream to you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-b" mid="64"><![CDATA[<html>(Geraint continue calmly.)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Geraint$<BR>You could also think of it as a history. A history which is a projection of a dream.<BR>A human being's history, which was carved onto her subconscious mind.<BR>You were listening to her story.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-c" mid="66"><![CDATA[<html>She was refusing to wake up because she was worried that people would get hurt because of her.</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Geraint$<BR>I was hoping that you would wake her up.<BR>But, it seems like she is refusing to get up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-4" mid="68"><![CDATA[<html>I hope so.</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Geraint$<BR>If we wait, she should eventually wake up one day.<BR>I'm surprise to learn that human is a powerful being.<BR>There will be a day when she finally hears your voice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-3" image="" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Rose$<BR>......<BR><FONT color=#7e12d2>(She shows no reaction, as if she is a doll.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n076_dream_rose-3" image="" itemindex="">
+      <talk_question mid="118"><![CDATA[<html>$Rose$<BR>Sorry, I don't want to do anything.<BR>Don't want to call out anyone's name....<BR>I'm fed up... Please, leave me alone...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Geraint$<BR>I will be protecting the descendant of the Ancients. So don't worry, and just return to the world of the humans.<BR><FONT color=#7e12d2>(You must report to Court Sorceress Kayleen.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="72"><![CDATA[<html>I doubt she will wake up.</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Court Sorceress Kayleen$<BR>You have met the Prophet inside her dream, did she mention when she will be waking up?<BR>Don't tell me that she is thinking about staying asleep forever, is she?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-b" mid="75"><![CDATA[<html>(Kayleen grumbles.)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Court Sorceress Kayleen$<BR>What?! Then why was the Prophet even rescued in the first place?<BR>Where can we use a Prophet who only sleeps!<BR>Oh my. This is so frustrating</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-c" mid="77"><![CDATA[<html>Yes. She refused to wake up.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hmm come to think of it. I actually better than that Bishop raccoon. I Court Sorceress Kayleen was able to communicate with the Prophet and is not that I couldn't wake her up but its that I just didn't wake her up! Isn't that true?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-d" mid="79"><![CDATA[<html>(As she stopped complaining, she began to show off again.)</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>Ah hahaha that right! Totally correct! Its not my fault at all afterall!<BR>Sorceresses are amazing indeed! Awesome! So great we are! Ah hahahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-d" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-e" mid="81"><![CDATA[<html>(Kayleen waved her hand in the air as if she was annoyed.)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Well any, it's been a while since I've worked like this, so I should get some rest.<BR>*Sigh*... You will never know how tough it is to create such an amazing item as the Dream Dust.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-e" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-!next" mid="83"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">413</exe>
+         <exe type="talk" npc="n038_royal_magician_kalaen">1</exe>
+         <exe type="addquestitem" num="1">300083</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13016,1);</exe>
+         <exe type="conexe" true="3" false="2">0</exe>
+         <exe type="talk" npc="n251_rose">a</exe>
+         <exe type="talk" npc="n251_rose">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">300083</exe>
+         <exe type="setstep">1</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13016,1);</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13014,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4131,4131,4132,4133,4134,4135,4136</exe>
+         <exe type="complete">413</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="acceptted">0,1,2</exelink>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="1" npc="n251_rose">1</exelink>
+   <exelink qstep="1" npc="n251_rose" sub="changemap_1">0</exelink>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="b" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="c" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="d" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="e" />
+   <exelink qstep="2" npc="n076_dream_rose" sub="changemap_2">0,1,2,6</exelink>
+   <exelink qstep="2" npc="n251_rose" sub="changemap_again">3,5,4</exelink>
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="d" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="e">0</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="!next">1</exelink>
+   <journal_data recompense="1:4131,2:4132,3:4133,4:4134,5:4135,6:4136" quest_title="로제의 꿈속으로" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="300083">
+      <journal index="1">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n251</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>251</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Into Rose's Dream]]></title>
+         <contents mid="24"><![CDATA[<html>You have received Dream Dust from Lady Kayleen.<BR>Go to the Royal Castle Underground and use it on <FONT color=#a82424>Rose</FONT>.<BR><BR><FONT color=#086171>Saint Haven Royal Castle (Underground Secret Region)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[(Solo) Use Dream Dust on Rose in Royal Castle Underground]]></destination>
+         <todo_msg mid="26"><![CDATA[Go to the Underground Secret Region in the Royal Castle and use the Dream Dust on Rose.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13016,n76</destination_pos>
+         <destination_mode>custom:13016@4</destination_mode>
+         <statemark_npcid>76</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Dreamy Girl]]></title>
+         <contents mid="86"><![CDATA[<html>The Dream Dust you have received from Kayleen revealed to you a girl inside a dream. The girl inside the dream was very exhausted. Talk to Rose inside the dream.<BR><BR><FONT color=#086171>Saint Haven Royal Castle (Underground Secret Region)</FONT> <FONT color=#a82424>→ Rose(Rose's Dream)</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Talk to Rose inside the Dream]]></destination>
+         <todo_msg mid="88"><![CDATA[Talk to Rose inside the Dream.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[The reason why she does not wake up]]></title>
+         <contents mid="90"><![CDATA[<html>The girl inside the dream is refusing to wake up. Go and ask Geraint if there are any other methods.<BR><BR><FONT color=#086171>Saint Haven Royal Castle(Underground Secret Region)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Talk to Geraint at Royal Castle Underground]]></destination>
+         <todo_msg mid="92"><![CDATA[You have failed to make the girl wake up. Talk to Geraint.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Report to Kayleen]]></title>
+         <contents mid="94"><![CDATA[<html>Tell Court Sorceress Kayleen that the girl does not want to wake up.<BR> <BR><FONT color=#086171>Saint Haven - Inside the Royal Castle</FONT> <FONT color=#a82424>→ Kayleen</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Report to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="96"><![CDATA[Report to Court Sorceress Kayleen about the result]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>412</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,204 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_424_retrieval_darkcore</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>424</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc>1. 주교와 대화
+2. 검은 대군주의 탑으로 가서, 검은 코어 프랍을 통해 아이템 습득
+3. 주교에게 보고
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>425</nextqid>
+      <nextqname>mq11_425_missing_spirits</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Recover Dark Core Crumbs]]></qkname>
+      <qnpc>
+         <npcid>287</npcid>
+         <npcename>n287_blackdragons_wing</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-noquest" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(A wing fragment surrounded by a dark and evil energy.</FONT><BR><FONT color=#7e12d2>It look like it is blood that is scattered around.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="50"><![CDATA[<html>What should we do?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Bishop Ignacio$<BR>There is something that we can do with our own strength. It's not like we can solely rely on them for this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="6"><![CDATA[<html>The Black Dragon... Fragment?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Don't hurry. All things have orders.<BR>The <FONT color=#a82424>Black Dragon Fragment</FONT> must be obtained first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="37"><![CDATA[<html>Where can I get such a thing?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Bishop Ignacio$<BR>In order to purify something... You will need a substance that is <FONT color=#a82424>directly related connected to</FONT> the Black Dragon's powerful strength.<BR>Something that was attached to the Black Dragon would be ideal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="8"><![CDATA[<html>Hmm, will I have to use my bare hands for this?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>Didn't you see something like that with your own eyes the other time? I'm talking about the <FONT color=#a82424>Black Dragon's Broken Wings </FONT>.<BR>Bring that back so that it can be purified to prevent any more threats in Saint Haven... How does that sound? Isn't it a good idea?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="10"><![CDATA[<html>Yes. I will try.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>This could be a fearful task but be brave. There shouldn't be a big problem from bringing just a part of it.<BR>As long as you make sure that you do not touch the Black Dragon's blood, it shouldn't cause a problem to such a hero like you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="QW_40.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Bishop Ignacio$<BR>The <FONT color=#a82424>Dark Overlord Tower</FONT> is a very dangerous place, so you must be extra careful. Although the Dark Overlord Knight may have disappeared, the monsters influenced by him should still be there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-1" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(A wing fragment surrounded by a dark and evil energy.</FONT><BR><FONT color=#7e12d2>Blood is seen splattered around it.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_40.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>Although the Overlord<FONT color=#a82424>Black Knight</FONT> may have disappeared, the monsters influenced by him should still be there, so be extra careful. And make sure that you bring back the <FONT color=#a82424>Black Dragon Fragment</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-2" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n287_blackdragons_wing-2-a" mid="44"><![CDATA[<html>(Carefully tear off a part of it.)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Black Dragon's Wing Fragment$<BR><FONT color=#7e12d2>(Black Dragon's Broken wing.<BR>It is surrounded by a dark and gloomy eneergy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-2-a" image="QS_Default.dds" itemindex="300026">
+      <talk_question mid="45"><![CDATA[<html>$Black Dragon's Wing Fragment$<BR><FONT color=#7e12d2>(You carefully tore off a piece, so that no blood got on.<BR>Merely holding onto it gives you an ominous feeling.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="QS_Default.dds" itemindex="300026">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="14"><![CDATA[<html>(You give what you brought.)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Bishop Ignacio$<BR>This dangerous energy...!<BR>It is emitting a light that is so bright, that even the Sage's eyes would fear it.<BR>There is no doubt that you have shown a glimpse of your mighty power, as you were able to bring it like this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="QS_Default.dds" itemindex="300026">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>What an evil light... It is so dark and faint, and I feels like it could captivate anybody as long as they gaze into it.<BR>Who knows if the greatest evil is also the greatest beauty.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="QS_Default.dds" itemindex="300026">
+      <talk_answer link_index="n039_bishop_ignasio-3-c" mid="18"><![CDATA[<html>I'm glad that I was able to help.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Bishop Ignacio$<BR>Since the <FONT color=#a82424>Fragment of powers</FONT> has been prepared, I should get ready for the purification ritual.<BR><FONT color=#7e12d2>(The Bishop warmly holds and shakes your hands.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-c" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-!next" mid="20"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n287_blackdragons_wing-3" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Black Dragon's Wing Fragment$<BR><FONT color=#7e12d2>(Black Dragon's Broken wing.<BR>It is surrounded by a dark and gloomy eneergy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">424</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300026</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300026</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4241,4241,4242,4243,4244,4244,4246</exe>
+         <exe type="delquestitem" num="-1">300026</exe>
+         <exe type="complete">424</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d">0,2,1</exelink>
+   <exelink qstep="2" npc="n287_blackdragons_wing" sub="a">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="c">0</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="!next">1,2</exelink>
+   <journal_data recompense="1:4241,2:4242,3:4243,4:4244,5:4244,6:4246" quest_title="검은 코어 회수" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="300026">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Something Needed]]></title>
+         <contents mid="24"><![CDATA[<html>Talk to Bishop Ignacio about how to completely purify the Black Dragon's powers.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop </FONT><FONT color=#a82424>Ignacio</FONT>.</html>]]></contents>
+         <destination mid="25"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="26"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>403,n287</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1</destination_mode>
+         <statemark_npcid>287</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[Fragment]]></title>
+         <contents mid="29"><![CDATA[<html>You must bring <FONT color=#a82424>Black Dragon's Fragment</FONT> for the purification. Go to the Dark Overlord Keep Tower.<BR><BR><FONT color=#086171>Foothills of Black Mountain (Dark Overlord Keep's Gate)</FONT> <FONT color=#a82424>→ Dark Overlord Keep Tower</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[Collect Black Dragon Fragment]]></destination>
+         <todo_msg mid="31"><![CDATA[Collect Black Dragon Fragment at Dark Overlord Tower.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[Black Dragon's Wing Fragment]]></title>
+         <contents mid="33"><![CDATA[<html>You have acquired Black Dragon's Fragment. Go to the Royal Castle at Saint Haven and deliver it to Bishop Ignacio.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Report to Bishop Ignacio]]></destination>
+         <todo_msg mid="35"><![CDATA[You have recovered Black Dragon's Fragment. Report to Bishop Ignacio.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>423</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

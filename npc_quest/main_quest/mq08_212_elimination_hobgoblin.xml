@@ -1,0 +1,158 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_212_elimination_hobgoblin</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>212</qid>
+      <designer>김주연</designer>
+      <qlevel>16</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>213</nextqid>
+      <nextqname>mq08_213_priestess_in_red</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Hobgoblin Hordes]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="38"><![CDATA[<html>(Adventurer's Guild Master Deckard's face looks serious)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>A congregation of evil monsters?<BR>Creating Hobgoblins with machines... Looks like we're in for something big!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>You claim you saw Hobgoblins, Orcs, Spiders, and Ogres? If that's true, that means that the Elf has got all the monsters around Calderock under her influence... The Hobgoblins alone...can overrun Calderock...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>They have formed a remarkable army. Directly confronting them would not be wise. We need to plan carefully...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QP_hobgoblin_maker.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="10"><![CDATA[<html>Where!?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Did you say the Dark Elf's name was <FONT color=#a82424>Elena</FONT>? Let's see… From my expert adventurer's point of view, the location of the <FONT color=#a82424>Hobgoblin Production Unit</FONT> is…!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QW_19.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>...in the <FONT color=#a82424>Church Ruins</FONT>!!<BR>Alright! Move in and destroy them!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_19.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Based on my experience and intuition… Elena's <FONT color=#a82424>Hobgoblin Production Unit</FONT> must be at <FONT color=#a82424>Church Ruins</FONT>!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Job well done.<BR>See, I was right! Okay, the next thing is...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">212</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">212</exe>
+         <exe type="recompense">2121,2121,2122,2123,2124,2126,2126</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2121,2:2122,3:2123,4:2124,6:2126" quest_title="홉고블린 퇴치" chapterid="3" quest_level="16" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Bad News]]></title>
+         <contents mid="24"><![CDATA[<html>Report what you saw to Adventurer's Guild Master Deckard. <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT><FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="26"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_HopGoblinGreen.dds</contents_image>
+         <destination_pos>144,0,0</destination_pos>
+         <destination_mode>custom:141@1,142@1,143@1,144@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Defeat the Hobgoblins and destroy the Production Unit.]]></title>
+         <contents mid="28"><![CDATA[<html>Based on Adventurer's Guild Master Deckard's wild guesses, the <FONT color=#a82424>Hobgoblin Production Unit</FONT> is supposed to be in the <FONT color=#a82424>Church Ruins</FONT>.<BR>Go to the <FONT color=#a82424>Church Ruins</FONT> and destroy the <FONT color=#a82424>Hobgoblin Production Units</FONT>.<BR><BR><FONT color=#086171> Wind Forest</FONT> <FONT color=#a82424>→ Church Ruins</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Defeat the Hobgoblins and destroy the Production Unit.]]></destination>
+         <todo_msg mid="30"><![CDATA[Defeat the Hobgoblins and destroy the Production Unit.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></title>
+         <contents mid="32"><![CDATA[<html>You have defeated the Hobgoblins and destroyed the Production Unit in the Church Ruins. Report to <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT><FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="34"><![CDATA[Report to Adventurer's Guild Master Adventurer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>211</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

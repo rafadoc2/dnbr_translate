@@ -1,0 +1,229 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_234_cant_stop</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>234</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>235</nextqid>
+      <nextqname>mq08_235_how_to_find</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Couldn't Stop Her]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>555</npcid>
+         <npcename>n555_darkelf_elena</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n555_darkelf_elena-noquest" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Dark Elf Elena$<BR>...Who are you?<BR>
+Go away, human!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>According to <FONT color=#a82424>Elena</FONT>'s order scroll, she's planning on releasing poison onto Calderock Village.<BR>Hmm... considering the magnitude of this situation, it would be better to get more people involved. This is very serious.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="188"><![CDATA[<html>Where's that?</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Refusal}<BR>Frankly, while you were away searching for Triana, <FONT color=#a82424>Edan</FONT> and <FONT color=#a82424>Angelica</FONT> found a place where the contaminants are being transferred to.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="190"><![CDATA[<html> Elena was there...? Are you sure?</html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>They've reported that they spotted a Dark Elf wearing a red cloak while they were patrolling around the <FONT color=#a82424>Road of No Return</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2" mid="192"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>
+Frankly, I wasn't certain when I received the report.<BR>
+But, when I took a look at the order you brought, I became certain.<BR>
+<FONT color=#a82424>Road of No Return</FONT> is geographically close to Calderock Village and has the advantage of altitude, making it a viable place to spread contaminants.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n555_darkelf_elena-1" image="" itemindex="">
+      <talk_question mid="143"><![CDATA[<html>$Dark Elf Elena$<BR>...Who are you?<BR>
+Go away, human child.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_23.dds" itemindex="">
+      <talk_question mid="231"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>
+I must hurry and send adventurers to the <FONT color=#a82424>Road of No Return</FONT>.<BR>
+Will you go first, since this is an urgent matter?<BR>
+You don't have to stop it from happening, but try to delay it from happening as long as you can.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n555_darkelf_elena-2" image="" itemindex="">
+      <talk_answer link_index="n555_darkelf_elena-2-a" mid="233"><![CDATA[<html>Stop doing what you're doing, Elena.</html>]]></talk_answer>
+      <talk_question mid="232"><![CDATA[<html>$Dark Elf Elena$<BR>Hey strange kid.<BR>
+Are you going to annoy me again?<BR>I won't let you go twice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n555_darkelf_elena-2-a" image="" itemindex="">
+      <talk_answer link_index="n555_darkelf_elena-2-b" mid="235"><![CDATA[<html>But, nothing is going to change by harassing humans!</html>]]></talk_answer>
+      <talk_question mid="234"><![CDATA[<html>$Dark Elf Elena${action:Stand2}<BR>What nonsense are you going to say next?<BR>
+Since you said you knew a Dark Elf, you should know at least a little about us, don't you? How, unlike the <FONT color=#a82424>Elves who live oh-so-elegantly</FONT>, the Dark Elves lead utterly miserable lives!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n555_darkelf_elena-2-b" image="" itemindex="">
+      <talk_question mid="236"><![CDATA[<html>$Dark Elf Elena$<BR>Taking <FONT color=#a82424>revenge</FONT> on humans and completing the task by finding the <FONT color=#a82424>Prophet</FONT> is my goal.<BR>That's the only thing in my mind right now. So stop interrupting me and go away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n555_darkelf_elena-3" image="" itemindex="">
+      <talk_question mid="237"><![CDATA[<html>$Dark Elf Elena$<BR>...Don't make me annoyed.<BR>
+Human.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-a" mid="239"><![CDATA[<html>I'm sorry. I met Elena, but I couldn't stop her....</html>]]></talk_answer>
+      <talk_question mid="238"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Talk}<BR>
+Welcone.<BR>
+I heard about what happened from <FONT color=#a82424>Edan</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-a" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-b" mid="262"><![CDATA[<html>What...? What do you mean Elena isn't safe...?</html>]]></talk_answer>
+      <talk_question mid="261"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>
+It's not your fault, so don't torment yourself.<BR>
+Although some of the poison was released, <FONT color=#a82424>Elena</FONT> also couldn't get away from it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-c" mid="264"><![CDATA[<html>Oh... (Elena... eventually...)</html>]]></talk_answer>
+      <talk_question mid="263"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Refusal}<BR>
+So you didn't witness the last moments of <FONT color=#a82424>Elena</FONT>?<BR>
+According to Edan's report, some of the contaminants were spilled onto Elena. Elena got covered with contaminants and she fell off a cliff screaming in pain.<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-c" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-d" mid="241"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="240"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>
+We can't be certain since we haven't found Elena's body yet, but since she was covered with poison and fell off a cliff, she can't be alive.<BR>
+Anyway, I don't know how to get rid of the contaminants that were spilled.<BR>
+Another crisis for Calderock....<BR><FONT color=#7e12d2>(Deckard Sighs)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-!next" mid="243"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="242"><![CDATA[<html>$Receive Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">234</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2340,,,,,</exe>
+         <exe type="complete">234</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n555_darkelf_elena" sub="b">0,1</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="!next">1</exelink>
+   <journal_data recompense="2340" quest_title="막을 수 없습니다" chapterid="3" quest_level="18" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="245"><![CDATA[Couldn't Stop Her I]]></title>
+         <contents mid="246"><![CDATA[<html>Talk to Adverturer's Guild Master Deckard.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adverturer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="247"><![CDATA[Talk to Adverturer's Guild Master Deckard]]></destination>
+         <todo_msg mid="248"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_23.dds</contents_image>
+         <destination_pos>173,n555</destination_pos>
+         <destination_mode>custom:171@1,172@1,173@1</destination_mode>
+         <statemark_npcid>555</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="249"><![CDATA[Couldn't Stop Her II]]></title>
+         <contents mid="250"><![CDATA[<html>Elena was seen at the Road of No Return. Go over there and stop Elena from spreading the contaminants.<BR>
+ <BR>
+<FONT color=#086171>Cristal Stream(Sigh Canyon Entrance) </FONT><FONT color=#a82424>→ Road of No Return(Dark Elf Elena)</FONT></html>]]></contents>
+         <destination mid="251"><![CDATA[Stop Elena at the Road of No Return]]></destination>
+         <todo_msg mid="252"><![CDATA[Stop Elena at the Road of No Return.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="253"><![CDATA[Couldn't Stop Her III]]></title>
+         <contents mid="254"><![CDATA[<html>Failed to stop Elena.<BR>
+Report back to Adverturer's Guild Master Deckard.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adverturer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="255"><![CDATA[Talk to Adverturer's Guild Master Deckard]]></destination>
+         <todo_msg mid="256"><![CDATA[Report to Adverturer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>233</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

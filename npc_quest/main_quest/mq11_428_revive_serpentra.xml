@@ -1,0 +1,411 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_428_revive_serpentra</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>428</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>1. 제레인트와 대화로 이어져 시작.
+해당 레벨에 왕성 병사 클림드와 대화.
+2. 해적들의 동굴에서 부상당한 정예병사와 대화.
+3. 주교에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>429</nextqid>
+      <nextqname>mq11_429_guardian_geraint</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[New Crisis]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드(세인트헤이븐 왕성)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>부상당한 제레인트(왕성 비밀장소)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>220</npcid>
+         <npcename>n220_elite_soldier_wounded</npcename>
+         <npckname>부상당한 정예병사(잃어버린 시간의 폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>$Injured Elite$<BR>Argh... *Gasp*...<BR><FONT color=#7e12d2>(It seems like he is having trouble speaking because of a severe injury.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$Geraint$<BR>The only ones here right now are a sleeping girl and a non-human being.<BR>I think you belong more to the vibrant outside world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-noquest" image="QW_CataractGateway.dds" itemindex="">
+      <talk_question mid="122"><![CDATA[<html>$Elite Soldier$<BR>I still have 50 pages of letters of apologies left to write for the incident at Calderock.<BR>When will I finish this... Sigh..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-noquest" image="" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$Injured Soldier$<BR>Argh... *Gasp*...<BR><FONT color=#7e12d2>(It seems like he is having trouble speaking because of a severe injury.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-noquest" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Move away, being beside you make me look bad.<BR>Just go over there and play with that raccoon Bishop!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="125"><![CDATA[<html>$King Cassius$<BR>D-did the <FONT color=#a82424>Prophet</FONT>... Did the Prophet wake up yet...?<BR>I-is this because of my lack of virtue...? I-it isn't, is it...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Duke Stuart${action:Stand2}<BR>If we would like to make the virtue of our young <FONT color=#a82424>King</FONT> be known to the poor people who are shivering with anxiety, we should make good use of the <FONT color=#a82424>Gold Dragon</FONT>, as well as the <FONT color=#a82424>Prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="127"><![CDATA[<html>$General Douglas$<BR>It looks like <FONT color=#a82424>Bishop Ignacio</FONT> is busy these days.<BR>With you helping out, I feel more relax.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-a" mid="129"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Bishop Ignacio$<BR>You should now go and get some rest.<BR>You should get this chance and enjoy yourself, you being too busy all this time</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="131"><![CDATA[<html>(The Bishop is giving great compliments.)</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Bishop Ignacio$<BR>Hehe. Don't worry, and just leave. I should be thanking you for all of this.<BR>You are the more talented adventurer of all I had every meet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-1" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Injured Elite$<BR>Argh... *Gasp*...<BR><FONT color=#7e12d2>(It seems like he is having trouble speaking because of a severe injury.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Bishop Ignacio$<BR>The ritual is progressing smoothly, so don't worry, and just go and take care of <FONT color=#a82424>Geraint</FONT>.<BR>Hehehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="QW_CataractGateway.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Elite Soldier$<BR>I still have 50 pages of letters of apologies left to write for the incident at Calderock.<BR>I wonder when will we finish this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$King Cassius$<BR>D-did the <FONT color=#a82424>Prophet</FONT>Has the prophet wake up?<BR>Is it because of my lack of Virtue? I doubt it is right</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Duke Stuart${action:Stand2}<BR>We should train our young to have good virtue<FONT color=#a82424>King</FONT> be known to the poor people who are shivering with anxiety, we should make good use of the <FONT color=#a82424>Gold Dragon</FONT>, as well as the <FONT color=#a82424>Prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Stop standing beside me!<BR>You make me look bad. Hmph.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$General Douglas$<BR>The situation with the injured soldiers is not getting any better.<BR>Ithilien is providing much help, but I am worried because there is no perfect cure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-a" mid="114"><![CDATA[<html>How are you feeling?</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Geraint$<BR><FONT color=#387206>{user_nick}</FONT>...<BR>What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-b" mid="115"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Gerant$<BR>Well... I am now getting somewhat used to the darkness.<BR>It's just that I can't detect objects with my eyes. There aren't any other inconveniences.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-c" mid="84"><![CDATA[<html>An energy...?</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Geraint$<BR>But there is one thing that is bothering me...<BR>I can't feel it properly yet because it's so faint, but...<BR>But this vague energy that I feel...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-c" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-2" mid="86"><![CDATA[<html>What kind of information could I get?</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Geraint$<BR>I guess it's too soon to jump to conclusions, it would be better to judge when we had more information from people of Royal Castle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Bishop Ignacio$<BR>I still waiting for a reportt, so go and hear about it from <FONT color=#a82424>Elite Soldier</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$King Cassius$<BR>*Sniff*... At times like this.... W-what, what can I do?<BR><FONT color=#7e12d2>(He shivering alone with anxiety.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="" itemindex="">
+      <talk_question mid="89"><![CDATA[<html>$Duke Stuart$<BR>Hmm... I can't believe there is another problem on top all the problems the kingdom is already facing. This is horrible.<BR><FONT color=#7e12d2>(The Duke has a hopeless look.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Sigh, I doubt there is ever a peaceful day in this Kingdom Hmph.<BR>Well it isn't my responsibility, so I don't care!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$General Douglas${action:Talk}<BR>I am currently receiving an urgent report.<BR>Come back to me later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-a" mid="93"><![CDATA[<html>What? What is going on?</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Elite Soldier${action:Talk}<BR>There's a big problem! <FONT color=#387206>{user_nick}</FONT>!<BR>Have you heard the news?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-a" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-b" mid="95"><![CDATA[<html>An unidentified monster?</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Elite Soldier$<BR>An <FONT color=#a82424>unidentified monster</FONT> has appeared.<BR>The scouts who went out after receiving the report have also been attacked, so they had to retreat without even getting to recover the injured soldiers!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Elite Soldier$<BR>That's right. After receiving the report, the <FONT color=#a82424>Bishop</FONT> has been looking for you, <FONT color=#387206>{user_nick}</FONT>, to seek countermeasures. So hurry up and go to him right now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="117"><![CDATA[<html>$Geraint$<BR>Anything would be fine.<BR>If there were no problems, that would be fine, and if there were problems, then it wouldn't hurt to know about it.<BR><FONT color=#7e12d2>(Talk to Elite Soldier.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-a" mid="22"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Bishop Ignacio$<BR>Oh welcome, <FONT color=#387206>{user_nick}</FONT>, my true friend of Saint Haven. I was just going to call for you after receiving the report just now.<BR>Saint Haven really needs your help for the new crisis it has met!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-a" image="QW_39.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-3-b" mid="24"><![CDATA[<html>I will check it out.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Bishop Ignacio$<BR>I have heard that an unidentified monster has appeared at <FONT color=#a82424>Captain Darlant's Base</FONT>, and has dealt severe injuries to the loyal soldiers of the kingdom.<BR>The King is feeling greatly devastated from the sudden incident, and I also cannot help but grieve bitterly...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3-b" image="QW_39.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Oh, that's exactly what I was going to ask you to do.<BR>Go to <FONT color=#a82424>Captain Darlant's Base</FONT> and find out the identity of the monster!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$King Cassius$<BR>I have heard the n-news. So an evil monster has appeared and has tormented my people, right? At such times I should... I should... W-what should I do? What are the <FONT color=#a82424>others</FONT> saying? Are there any good ideas?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-3-a" mid="28"><![CDATA[<html>(The Duke shakes his head.)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Duke Stuart${action:talk}<BR>The <FONT color=#a82424>Black Dragon</FONT> has just disappeared, and I can't believe another <FONT color=#a82424>new monster</FONT> has appeared.<BR>It is really a chaotic world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Duke Stuart$<BR>First, we should reassure the people that it is not a big deal. <FONT color=#a82424>General Douglas</FONT>, who is in charge of the defense of the capital, should be taking care of the monsters. Isn't that right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-a" mid="31"><![CDATA[<html>B-but if things aren't taken care of as soon as possible, then...</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Court Sorceress Kayleen$<BR>An <FONT color=#a82424>unidentified monster</FONT> has appeared? It was probably just passing through Saint Haven. Its not my buisness i never call for it. If you would like to borrow the powers of us, Sorceresses, then bring a certificate from the King himself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Shouldn't the General take care of it?! What did <FONT color=#a82424>General Douglas</FONT> say?<BR>... Or maybe that Bishop over there, who is acting like he is solemn, will take care of it. Why are you always coming to me for things like this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="34"><![CDATA[<html>(General Douglas let out a big sigh.)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$General Douglas$<BR>I have heard the report!! An unidentified monster has been threatening the soldiers of Saint Haven, right?<BR>Yet we do not have enough troops to dispatch immediately, beacuse of the great loss we had from the previous battle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$General Douglas$<BR>In such a situation, I think it would be best to follow <FONT color=#a82424>Ignacio's</FONT> suggestion.<BR><FONT color=#7e12d2>(General Douglas is looking towards Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Elite Soldier$<BR>An unidentified monster has just appeared, and has attacked many soldiers. Many people have been injured. After receiving the report, <FONT color=#a82424>Bishop Ignacio</FONT> has been looking for you, <FONT color=#382000> {user_nick}</FONT> , to seek countermeasures. So hurry up and go to him right now!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="QW_39.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Bishop Ignacio$<BR>Hurry up and go to <FONT color=#a82424>Captain Darlant's Base</FONT> to find out the identity of the monster.<BR>Even if it has already escaped, there should be witnesses.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4" image="QW_39.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Geraint$<BR>A <FONT color=#a82424>monster</FONT> appeared? ... It had a familiar energy, but i do not remember.<BR>It should be better to check it out. Please do this for me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-4" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n220_elite_soldier_wounded-4-a" mid="39"><![CDATA[<html>Are you okay? Hold yourself together!</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Injured Soldier$<BR>Arr... Argh...! A m-monster...! A giant <FONT color=#a82424>monster</FONT>...<BR>It went that way!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-4-a" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n220_elite_soldier_wounded-5" mid="41"><![CDATA[<html>I will tell them. Take care of yourself first.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Injured Soldier$<BR>*Pant pant*... I'm a-alright... Go to the Royal Castle with this news...!!<BR>That a giant... That a giant <FONT color=#a82424>Sea Monster</FONT> has appeared... If they do not know soon, then...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="44"><![CDATA[<html>(Geraint has an incredulous look.)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Geraint$<BR>A Sea Monster? I see. Without a doubt, this was the same energy as the one from the other time...<BR>... But how did it appear again...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Geraint$<BR>What did the <FONT color=#a82424>one who gave you the orders</FONT> say?<BR>You should try doing as he says.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-a" mid="47"><![CDATA[<html>Leviathan...?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Bishop Ignacio$<BR>So the identity of the monster was the evil <FONT color=#a82424>Leviathan</FONT>...<BR>So that monster has created a great tidal wave, which has injured many and has demolished the troops...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-a" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-b" mid="49"><![CDATA[<html>Then the troops should be assembled and then...</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Bishop Ignacio$<BR>It's a beast that has disappeared 50 years ago by the Six Heroes.<BR>I don't know what the reason may be, but I can't believe that the ferocious monster has returned... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-b" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-c" mid="51"><![CDATA[<html>But... We can't just sit back and watch, can we?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Bishop Ignacio$<BR>I have sent an army, but it was useless. There has already been a great loss due to the fight against the <FONT color=#a82424>Black Dragon</FONT>, so the army is not strong enough to face <FONT color=#a82424>Leviathan</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-c" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-d" mid="113"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Bishop Ignacio$<BR>Of course we can't just do that.<BR>If possible I would like to send the Clerics of the Order and the Court Sorceresses, but... As you may know, this is not something I can order independently on my own...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-e" mid="53"><![CDATA[<html>Who are you talking about?</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Bishop Ignacio$<BR>Well it seems like there's no choice but to ask help from <FONT color=#a82424>him</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-e" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-f" mid="55"><![CDATA[<html>But Geraint is currently injured.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Who else would I be talking about besides <FONT color=#a82424>Geraint</FONT>?<BR>A dragon is certainly the strongest existing life form. No matter how strong of a beast that Leviathan is, there is no way that it could beat a dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-f" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-g" mid="59"><![CDATA[<html>We need to let Geraint know about this first.</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Bishop Ignacio$<BR>I am aware of that. We don't have much choice too am i right?<BR>Not only is there no guarantee that <FONT color=#a82424>Leviatha</FONT> could be defeated by the powers of human beings alone, but there is also no way of knowing how much damage this process will cause.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-g" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-!next" mid="98"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-5" image="" itemindex="">
+      <talk_question mid="119"><![CDATA[<html>$Injured Elite$<BR>*Cough cough* Thank you.<BR><FONT color=#7e12d2>(It looks like the Soldier cannot say much more. Hurry up and report to the Royal Castle.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">428</exe>
+         <exe type="delquestitem" num="-1">300027</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4281,4281,4282,4283,4284,4284,4286</exe>
+         <exe type="complete">428</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1,2</exelink>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n039_bishop_ignasio" sub="b">0,1</exelink>
+   <exelink qstep="4" npc="n220_elite_soldier_wounded" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="f" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="g">0</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4281,2:4282,3:4283,4:4284,5:4284,6:4286" quest_title="새로운 위기" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Geraint's Premonition]]></title>
+         <contents mid="75"><![CDATA[<html>Talk to Geraint.<BR><BR><FONT color=#086171>Saint Haven Royal Castle(Underground Secret Region)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Speak to Geraint at the Royal Castle Underground Secret Region]]></destination>
+         <todo_msg mid="77"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[The Noisy Royal Castle]]></title>
+         <contents mid="79"><![CDATA[<html>Geraint has a bad feeling, even though everything looks progressing smoothly. Talk to <FONT color=#a82424>Elite Soldier</FONT> and see if there is any useful information.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Elite Soldier</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Talk to Elite Soldier Calrim]]></destination>
+         <todo_msg mid="81"><![CDATA[Talk to Elite Soldier Calrim]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="100"><![CDATA[Talk to Elite Soldier Calrim.]]></title>
+         <contents mid="101"><![CDATA[<html>Listen to the details from Bishop Ignacio to get more information on the unidentified monster that appear near Saint Haven<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="102"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="103"><![CDATA[Learn about the unidentified monster from Bishop Ignacio.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_39.dds</contents_image>
+         <destination_pos>392,n220</destination_pos>
+         <destination_mode>custom:391@1,392@1,393@0</destination_mode>
+         <statemark_npcid>220</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[At the Cave of Pirates]]></title>
+         <contents mid="105"><![CDATA[<html>To find out the identity of the unidentified monster, go to Captain Darlant's Base, where it has been witnessed.<BR><BR><FONT color=#086171> Hermalte Port(Charter Ship)</FONT> <FONT color=#a82424>→ Captain Darlant's Base</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[Investigate Captain Darlant's Base]]></destination>
+         <todo_msg mid="107"><![CDATA[Track down the unidentified monster at Captain Darlant's Base.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[The Monster's Identity]]></title>
+         <contents mid="109"><![CDATA[<html>Report the identity of the monster to Bishop Ignacio.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="111"><![CDATA[Tell the witness's testimony to Bishop Ignacio.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>427</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

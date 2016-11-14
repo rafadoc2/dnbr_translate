@@ -1,0 +1,255 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9301_new_face</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>9301</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9302</nextqid>
+      <nextqname>mq11_9302_tiny_tramp</nextqname>
+      <nextqnpc>n1143_cian</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[새로운 인물]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1143</npcid>
+         <npcename>n1143_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드(세인트헤이븐 왕성)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-accepting" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-accepting-acceptted" mid="78" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$정예병사 클림드$<BR>다른 모험자님들께서는 검은 기사의 행방을 추적하기 위해 다른 귀족 여러분과 대화하셨습니다.<BR>그래서 조금 전에 출발하셨는데....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Elite_Soilder.dds" center_image="">
+      <talk_answer link_index="n209_elite_soldier-1-" mid="80" select_type="5" />
+      <talk_question mid="79"><![CDATA[<html>$정예병사 클림드$<BR>모두들 저쪽의 <FONT color=#a82424>주교 이그나시오</FONT> 님께 정보를 얻으신 모양이니, 한 번 뵙도록 하십시오.<BR>왕국의 앞날을 염려하시는 분이십니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="84" select_type="5" />
+      <talk_question mid="83"><![CDATA[<html>$루나리아$<BR>...사람이 많은 곳, 불편해.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1143_cian-1" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1143_cian-1-" mid="86" select_type="5" />
+      <talk_question mid="85"><![CDATA[<html>$워리어 시안$<BR>검은 기사...<BR>
+도대체 어떻게 된 자일까요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="88" select_type="2" />
+      <talk_question mid="87"><![CDATA[<html>$주교 이그나시오$<BR>흐음... 큰 일이군. 큰 일이야.<BR>왕국의 운명이 바람 앞의 등불과도 같은 형국이니, 근심일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="90" select_type="2" />
+      <talk_question mid="89"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(일단 말을 걸어볼까?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-1-c" mid="93" select_type="2" />
+      <talk_question mid="92"><![CDATA[<html>$주교 이그나시오$<BR>음? 자, 자네는...!<BR><FONT color=#7e12d2>(이그나시오가 몹시 놀란 표정을 짓는다)</FONT><BR>여기는 대체 어쩐 일이지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="95" select_type="0"><![CDATA[<html>당신, 저를 알고 계십니까?</html>]]></talk_answer>
+      <talk_answer link_index="n039_bishop_ignasio-1-d" mid="96" select_type="0"><![CDATA[<html>초면인줄 알았는데...?</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$주교 이그나시오$<BR>소식도 없이 참견하러 온 거라면...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-1-e" mid="98" select_type="2" />
+      <talk_question mid="97"><![CDATA[<html>$주교 이그나시오$<BR>뭐, 뭐라고?<BR>
+<FONT color=#7e12d2>(이그나시오의 얼굴이 당황한 기색으로 역력하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-e" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-1-f" mid="100" select_type="2" />
+      <talk_question mid="99"><![CDATA[<html>$주교 이그나시오$<BR>아~ 그, 렇군. 그렇군. 내가 사람을 잘못 본 것 같네 그래.<BR><FONT color=#7e12d2>(이그나시오가 말을 돌리며 갑자기 온화한 표정을 짓는다)<BR></FONT>이번에 함께 왕성으로 온 모험자들의 일행이셨군. 잘 왔네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-f" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-1-g" mid="103" select_type="2" />
+      <talk_question mid="102"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(뭔가 이상한데. 아무래도 제대로 이야기를 들어 볼 기회를 놓친 것 같다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-g" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-2" mid="105" select_type="2" />
+      <talk_question mid="104"><![CDATA[<html>$주교 이그나시오$<BR>다른 모험자들은 내 의뢰로 <FONT color=#a82424>검은 기사</FONT>를 쫓아 갔다네.<BR>물론 신전 기사단의 보고를 받았을 뿐이라 그게 정말 검은 기사인지 아닌지 확인할 수는 없지만 말일세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_31.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Bishop.dds" center_image="">
+      <talk_answer link_index="n039_bishop_ignasio-2-" mid="107" select_type="5" />
+      <talk_question mid="106"><![CDATA[<html>$주교 이그나시오$<BR>검은 기사가 목격되었다는 곳은 바로 <FONT color=#a82424>버려진 윌든 할로우</FONT>일세.<BR>검은 산자락 방향으로 나가면 접근할 수 있지.<BR>
+다른 모험자들에게선 아직 소식이 없으니, 자네가 한 번 가 보게나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1143_cian-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1143_cian-2-" mid="132" select_type="5" />
+      <talk_question mid="130"><![CDATA[<html>$워리어 시안$<BR>아까 그 광경... 보셨습니까?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2" image="QW_31.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-a" mid="134" select_type="2" />
+      <talk_question mid="133"><![CDATA[<html>$루나리아$<BR>그렇구나. 넌 버려진 윌든 할로우로 가는 거구나.<BR>흐음... 그 검은 기사도 너를 아는 것 같았지. 그리고 주교 이그나시오까지...<BR>너, 인기가 많구나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-a" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-b" mid="136" select_type="2" />
+      <talk_question mid="135"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>엘레나 때와 마찬가지로 그들이 아는 건 내가 아닐 것 같은데.<BR>아마도 일루전 쪽을 아는 거겠지.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-2-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-2-" mid="138" select_type="5" />
+      <talk_question mid="137"><![CDATA[<html>$루나리아$<BR>그럴 지도 모르지.<BR>...아닐 수도 있고.<BR><FONT color=#7e12d2>(루나리아가 냉담한 표정으로 바라본다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-3" image="QW_31.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-3-" mid="139" select_type="5" />
+      <talk_question mid="108"><![CDATA[<html>$루나리아$<BR>그렇구나. 넌 버려진 윌든 할로우로 가는 거구나.<BR>흐음...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1143_cian-3" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1143_cian-3-a" mid="116" select_type="2" />
+      <talk_question mid="115"><![CDATA[<html>$워리어 시안$<BR>아, <FONT color=#387206>{user_nick}</FONT> 님도 이쪽으로 오셨군요.<BR>저는 지금 막 돌아가려던 참입니다.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1143_cian-3-a" image="QN_Npc_Geraint.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1143_cian-3-b" mid="118" select_type="2" />
+      <talk_question mid="117"><![CDATA[<html>$워리어 시안$<BR>아까 그 광경... 보셨습니까? 금발머리의 검사가 검은 기사와 격돌하던 그 모습을요.<BR>미처 끼어들기도 전에 두 사람은 어마어마한 힘을 뽐내며 저쪽으로 사라졌죠.<BR>그 힘은 마치...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1143_cian-3-b" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1143_cian-3-c" mid="120" select_type="2" />
+      <talk_question mid="119"><![CDATA[<html>$워리어 시안$<BR>...마치 두 사람 다 마치 인간이 아닌 것 같았어요.<BR>전 그렇게나 대단한 검사들을 본 적이 없거든요.<BR><FONT color=#7e12d2>(시안의 표정이 착잡하다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1143_cian-3-c" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1143_cian-3-d" mid="122" select_type="2" />
+      <talk_question mid="121"><![CDATA[<html>$워리어 시안$<BR>다른 분들은 우선 아르젠타 님과 상의해 보려고 나갔습니다.<BR>주교 이그나시오 님께도 보고를 하고 다음 일을 상의해야죠.<BR>
+아, <FONT color=#387206>{user_nick}</FONT> 님은 어떻게 하시겠어요?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1143_cian-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1143_cian-3-e" mid="126" select_type="4" />
+      <talk_question mid="125"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1143_cian-3-e" image="QN_NPC_Lunaria.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Cian.dds" center_image="">
+      <talk_answer link_index="n1143_cian-3-!next" mid="141" select_type="2" />
+      <talk_question mid="140"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>저도 우선 검은 산자락으로 가서 동행을 만나 보겠습니다.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9301</exe>
+         <exe type="talk" npc="n209_elite_soldier">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93010,,,,,,,</exe>
+         <exe type="complete" true="">9301</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n209_elite_soldier" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="d" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="e" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="f" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="g" />
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n1139_lunaria" sub="b" />
+   <exelink qstep="2" npc="n1139_lunaria" sub="" />
+   <exelink qstep="3" npc="n1143_cian" sub="b" />
+   <exelink qstep="3" npc="n1143_cian" sub="c" />
+   <exelink qstep="3" npc="n1143_cian" sub="d">0</exelink>
+   <exelink qstep="3" npc="n1143_cian" sub="e">1</exelink>
+   <exelink qstep="3" npc="n1143_cian" sub="!next" />
+   <journal_data recompense="93010" quest_title="새로운 인물" chapterid="4" quest_level="24" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[새로운 인물I]]></title>
+         <contents mid="48"><![CDATA[<html>다른 모험자들은 검은 기사를 추적해 어딘가로 가 버린 모양이다.<BR>
+어디로 갔는지 주교 이그나시오에게 듣자.<BR><BR><FONT color=#086171>세인트헤이븐 왕성</FONT> <FONT color=#a82424>- 주교 이그나시오</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[왕성 내부에서 주교 이그나시오와 대화]]></destination>
+         <todo_msg mid="50"><![CDATA[주교 이그나시오와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_31.dds</contents_image>
+         <destination_pos>314,0,0</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@1,314@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[새로운 인물II]]></title>
+         <contents mid="54"><![CDATA[<html>주교 이그나시오가 무언가를 아는 눈치지만, 아무래도 이쪽이 아무런 기억도 없다는 걸 알아버린 것 같다.<BR>
+그는 검은기사로 추정되는 인물이 버려진 윌든 할로우 방향으로 갔다는 정보를 주었다.<BR><BR><FONT color=#086171>검은 산자락(쓸쓸한 숲길)</FONT> <FONT color=#a82424>- 버려진 윌든 할로우</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[버려진 윌든 할로우에서 검은기사 추적]]></destination>
+         <todo_msg mid="56"><![CDATA[버려진 윌든 할로우에서 검은기사를 추적하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>314,n1143</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@1,314@1</destination_mode>
+         <statemark_npcid>1143</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[새로운 인물III]]></title>
+         <contents mid="58"><![CDATA[<html>검은 기사를 놓치고 만 것 같다. 있었던 일에 대해 워리어 시안과 대화하자.<BR><BR><FONT color=#086171>검은 산자락(쓸쓸한 숲길)</FONT> <FONT color=#a82424>- 버려진 윌든 할로우(워리어 시안)</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[버려진 윌든 할로우에서 워리어 시안과 대화]]></destination>
+         <todo_msg mid="60"><![CDATA[워리어 시안과 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9300</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

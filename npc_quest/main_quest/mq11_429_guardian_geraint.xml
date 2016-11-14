@@ -1,0 +1,287 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_429_guardian_geraint</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>429</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>1. (주교에게 퀘스트 받음) 제레인트와 대화
+2. 솔로로, 해적들의 동굴로 감.
+클리어 후 이벤트 전투맵으로 이동.
+3. 씨드래곤과 잠시 전투한 후, 컷신을 보고 나서 제레인트와 대화.
+4. 왕성 지하 비밀구역으로 와서 벨스커드와 대화.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>430</nextqid>
+      <nextqname>mq11_430_trace_apostle</nextqname>
+      <nextqnpc>n219_velskud</nextqnpc>
+      <qkname mid="1"><![CDATA[Guardian Geraint]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>부상당한 제레인트(왕성 비밀장소)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>219</npcid>
+         <npcename>n219_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html> {ui_string: 1200001} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html> {ui_string: 1200002} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html> {ui_string: 1200003} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html> {ui_string: 1200005} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Geraint$<BR>What the... ?<FONT color=#a82424>I don't understand.</FONT> say?<BR>Let's hear him out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-noquest" image="" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(The one you seek is nowhere to be found.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-noquest" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Court Sorceress Kayleen$<BR>An unidentified monster you say? What's the big fuss? It could be just passing by Saint Haven for all you know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$King Cassius$<BR>Oh wh-what should I do? BR>*Sniff sniff*... Why must this be happening? *Sniff sniff*</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Duke Stuart$<BR>Dear <FONT color=#382000> <FONT color=#387206>{user_class}</FONT></FONT>Argh, there are reports of a new monster! The General has his hands full as it is. Please support him in any way you can. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$General Douglas$<BR>We have too much destruction and wounded soldiers already. As our ally, please help us out now in this great time of need. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-a" mid="71"><![CDATA[<html>The troops have been assembled.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Bishop Ignacio$<BR>This vile and evil creature is called <FONT color=#a82424>Leviathan</FONT>.<BR>It was defeated by the Six Heroes 50 years ago.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-b" mid="73"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Bishop Ignacio$<BR>I sent out an army but none of the men were good enough. We have already lost much of our army to the Black Dragon. Is there only one strong man left to stop <FONT color=#a82424>Leviathan</FONT>? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-c" mid="75"><![CDATA[<html>Who are you talking about?</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Bishop Ignacio$<BR>It cannot be helped. We must seek help from <FONT color=#a82424>him</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="77"><![CDATA[<html>... I will inform Geraint.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>Geraint</FONT> will never neglect his duty.<BR>Now go! Go before Saint Haven falls victim to the monster...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$King Cassius$<BR>Oh wh-what should I do? BR>*Sniff sniff*... Why must this be happening? *Sniff sniff*</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Duke Stuart$<BR>Dear <FONT color=#382000> <FONT color=#387206>{user_class}</FONT></FONT>Argh, there are reports of a new monster! The General has his hands full as it is. Please support him in any way you can. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Court Sorceress Kayleen$<BR>An unidentified monster you say? What's the big fuss? It could be just passing by Saint Haven for all you know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$General Douglas$<BR>We have too much destruction and wounded soldiers already. As our ally, please help us out now in this great time of need. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-1" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(The person you are seeking is not here.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-party1" mid="13"><![CDATA[<html>(Describe the current situation.)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Geraint$<BR>... I heard the sound of urgent footsteps running.<BR>It sure sounds like an emergency situation.<BR>This aura... this dark ominuous aura... it's getting closer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-a" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-b" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Geraint$<BR>I don't understand.<BR>It was deliberately put into a deep sleep so it won't be resurrected. But... what is going on now? How did it appear again?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-b" image="QW_39.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-c" mid="17"><![CDATA[<html> Is there anything I can do to help?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Geraint$<BR>I understand now...<BR>Let's head out to <FONT color=#a82424>Captain Darlant's Base</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-c" image="QW_39.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-1-e" mid="19"><![CDATA[<html>Yes sir!</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Geraint$<BR>My <FONT color=#a82424>vision</FONT> is failing me but I can still rely on my other senses for battle. Nonetheless, I'll be glad for your kind <FONT color=#a82424>company</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-d" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Geraint$<BR>... The noise is drowning out your voice. I can't hear you well. Please keep your surroundings as calm and quiet as possible.<BR><FONT color=#7e12d2>(Unable to proceed with quest while you're in a party.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1-e" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Geraint$<BR>Hmmm, this energy... this force... it seems all too familiar... like the Leviathan I've fought once.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Bishop Ignacio$<BR>Join <FONT color=#a82424>Geraint</FONT> and save Saint Haven!<BR>We're counting on the both of you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="QW_39.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Geraint$<BR>We had defeated Levithian years ago so it's reappearance baffles me so. A trip to<FONT color=#a82424>Captain Darlant's Base</FONT> is necessary.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$King Cassius$<BR>What in the world is happening? Oh,what will the great King Cassius, my father do in such a situation?<BR><FONT color=#7e12d2>(Check on Rose at the Undergrounds of the Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Duke Stuart$<BR>That's just too bad. The Prophet is such a disappointing weapon indeed.<BR><FONT color=#7e12d2>(Check on Rose at the Undergrounds of the Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I knew it! That raccoon-faced man is nothing but trouble!<BR><FONT color=#7e12d2>(Check on Rose at the Undergrounds of the Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$General Douglas$<BR>What?! Not a single scout report? What happened to the commands I gave?<BR><FONT color=#7e12d2>(Check on Rose at the Undergrounds of the Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-3" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n219_velskud-3-a" mid="57"><![CDATA[<html>What the...? How did you....?!</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Velskud$<BR><FONT color=#a82424>Geraint</FONT>.<BR>He looks dead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-3-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n219_velskud-3-b" mid="59"><![CDATA[<html>(Geraint's Nest has...)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Velskud$<BR>Doors are seldom open without reason.<BR>Thanks to a complete fool, the <FONT color=#a82424>Nest</FONT> is damaged...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n219_velskud-3-b" image="" itemindex="">
+      <talk_answer link_index="n219_velskud-3-!next" mid="61"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-3" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Bishop Ignacio$<BR>Thank you for being a puppet, foolish one.<BR><FONT color=#7e12d2>(You're burning with rage, but you cannot get him at the moment.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Bishop Ignacio$<BR>Go on <FONT color=#a82424>Geraint</FONT> may Saint Haven well wishes be with you!<BR>Never neglect your duties.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4" image="QW_39.dds" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Geraint$<BR>I did not know that the Leviathan has reappeared.<BR>Hurry to <FONT color=#a82424>Captain Darlant's Base</FONT>as there is no time to lose.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">429</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n216_geraint_wounded">d</exe>
+         <exe type="talk" npc="n216_geraint_wounded">a</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4291,4291,4292,4293,4294,4294,4296</exe>
+         <exe type="complete">429</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="party1">0</exelink>
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="1" npc="n216_geraint_wounded" sub="e">3,4</exelink>
+   <exelink qstep="3" npc="n219_velskud" sub="b">0</exelink>
+   <exelink qstep="3" npc="n219_velskud" sub="!next">1</exelink>
+   <journal_data recompense="1:4291,2:4292,3:4293,4:4294,5:4294,6:4296" quest_title="수호자 제레인트" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Request for help]]></title>
+         <contents mid="44"><![CDATA[<html>Geraint's help is needed to defeat <FONT color=#a82424>Leviathan</FONT>. Inform Geraint about the situation at once, and may he swiftly recover from his injuries to help!<BR><BR><FONT color=#086171>Undergrounds of the Royal Castle</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Talk to Geraint at the Undergrounds of the Royal Castle.]]></destination>
+         <todo_msg mid="46"><![CDATA[Locate Geraint at the Undergrounds of the Royal Castle and ask for his help.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_Sea_Drake.dds</contents_image>
+         <destination_pos>393,0,0</destination_pos>
+         <destination_mode>custom:391@1,392@1,393@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Guardian Geraint]]></title>
+         <contents mid="49"><![CDATA[<html>Assist Geraint to defeat Leviathan.<BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2> ※ Unable to proceed while you're in a party.</FONT><BR><BR><FONT color=#086171>Hermalte Port(Charter Ship)</FONT> <FONT color=#a82424>→ Captain Darlant's Base</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[(Solo) Defeat Leviathan at Captain Darlant's Base]]></destination>
+         <todo_msg mid="51"><![CDATA[Head to Captain Darlant's Base and defeat Leviathan.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n219</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>219</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[The Collapse of the Nest]]></title>
+         <contents mid="53"><![CDATA[Without Geraint, the <FONT color=#a82424>Nest</FONT> he constructed grows weak. Rose could be in great danger so seek out Geraint and Rose at the Undergrounds of the Royal Castle<BR>. <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→Undergrounds of the Royal Castle</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Assess the situation at the Undergrounds of the Royal Castle.]]></destination>
+         <todo_msg mid="55"><![CDATA[Visit the Undergrounds of the Royal Castle to check that Rose is safe.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>428</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

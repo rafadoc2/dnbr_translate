@@ -1,0 +1,284 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_437_cooperatively</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>437</qid>
+      <designer>김인정</designer>
+      <qlevel>26</qlevel>
+      <qdesc>코볼트 화약	300479
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>438</nextqid>
+      <nextqname>mq11_438_fleet_of_foot</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Cooperative]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>520</npcid>
+         <npcename>n520_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-noquest" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_05.ogg}<BR>I'm worried about the well-being of the Prophet.<BR>Our mission is to safely rescue her and take her to the Monolith.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Sorceress Angelica$<BR>Ahh~ I thought working for the Royal Palace would make me rich, but no.<BR>Is gambling the only way to make money? Hehe~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$General Douglas$<BR>Due to lack of information, we cannot move large amount of troops into the Dark Overlord Base.<BR>But we've been dispatching scouts and completing the map, so soon, we'll be able to move in.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$General Douglas$<BR>Of course. So concentrate on your training and wait.<BR><FONT color=#7e12d2>(Go to the Academic Station and report to Jasmine.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Sorceress Angelica$<BR>Ahh~ I thought working for the Royal Palace would make me rich, but no.<BR>Is gambling the only way to make money? Hehe~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="88"><![CDATA[<html>Training?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_03.ogg}<BR>Really? If the General said so, then trust his words and wait.<BR>And don't fOgret to train yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-b" mid="91"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Academic Jasmine$<BR>You're not that strong to begin with. And you're also spending much time doing research....<BR>Also you turned into a child, so you won't be able to move as freely as you used to.<BR>
+You have a few large battles ahead of you, so train yourself from time to time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-c" mid="142"><![CDATA[<html>Yes, I will.</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Academic Jasmine$<BR>Hmm... Since Saint Haven is a huge place, you'll find many jobs.<BR>
+You could check the Guild Request Board.<BR>You could find something to do there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2" mid="95"><![CDATA[<html>(Terminate communication)</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_07.ogg}<BR>Don't follow suspicious people, don't get lost, don't pick up food from the ground and eat it at places like <FONT color=#a82424>Hermalte Port</FONT>, find a missing child his home, and...<BR><FONT color=#7e12d2>(She nags on and on.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Go to Hermalte Port and see if there are any open tasks.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2" image="" itemindex="">
+      <talk_answer link_index="n520_angelica-2-a" mid="100"><![CDATA[<html>What? Money?</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Sorceress Angelica$<BR>Why hello~ <FONT color=#387206>{user_nick}</FONT>!!<BR>Are you busy? I can't see your face anymore. How are you doing?<BR>
+Did you make some money here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2-a" image="" itemindex="">
+      <talk_answer link_index="n520_angelica-2-b" mid="102"><![CDATA[<html>I'm just trying to train myself...</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>When I saw you from afar, you were looking at the Guild Request Board?<BR>Haha. You can't deceive <FONT color=#a82424>Angelica</FONT>'s eyes~<BR>Aren't you trying to make money?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2-b" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n520_angelica-2-c" mid="104"><![CDATA[<html>What kind of a job?</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Sorceress Angelica$<BR>Training? What training... I'm so smart I don't need any of that, so I don't understand~<BR>
+<FONT color=#7e12d2>(Angelica looks elsewhere.)<BR></FONT>Oh, yes! Do you want to do a task together?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2-c" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n520_angelica-2-d" mid="106"><![CDATA[<html>You shouldn't trust the Bishop too much.</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Sorceress Angelica$<BR>All the people in Saint Haven are busy fighting that <FONT color=#a82424>Dark Knight</FONT>. You know, to fight a huge battle, you need a lot of supplies, right? So I'm so busy preparing the supplies. <FONT color=#a82424>Edan</FONT> went somewhere as per <FONT color=#a82424>Bishop</FONT>'s request.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2-d" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n520_angelica-2-e" mid="108"><![CDATA[<html>That's true.</html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$Sorceress Angelica$<BR>Huh? I've never trusted Clerics, ever? Well, Edan is a non-negotiable nerd, so he's okay. But it pays to do what the Bishop asks. And we have a common purpose of defeating the <FONT color=#a82424>Dark Knight</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2-e" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n520_angelica-2-f" mid="110"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Sorceress Angelica$<BR>The <FONT color=#a82424>Bishop</FONT>'s power is pretty strong within the Royal Palace. If you want to keep going into the <FONT color=#a82424>Royal Palace</FONT>, you better not tell everyone that. If the Bishop starts to be wary about you, you might be banned from the castle and it'll become difficult for you to move around.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2-f" image="" itemindex="">
+      <talk_answer link_index="n520_angelica-2-g" mid="112"><![CDATA[<html>Go? Where?</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Sorceress Angelica$<BR>See? So do as I do, make some money and say some flattery words.<BR>...Okay, now get going!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2-g" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n520_angelica-2-h" mid="114"><![CDATA[<html>What kind of a request?</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Sorceress Angelica$<BR>I can't refuse Kayleen's request.<BR>
+If Court Sorceress Kayleen starts to dislike me, I may go bankrupt...<BR>So please take the request from the <FONT color=#a82424>General</FONT> and do it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-2-h" image="QW_30.dds" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>You have to collect Cobalt Gunpowder from the <FONT color=#a82424>Forsaken Islet</FONT>.<BR>If the soldiers don't have enough gunpowder, they won't be able to move around freely.<BR>If you defeat <FONT color=#a82424>{monster:863}</FONT>, you'll be able to obtain the gunpowder. Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-3" image="QW_30.dds" itemindex="">
+      <talk_question mid="117"><![CDATA[<html>$Sorceress Angelica$<BR>Please collect Cobalt Gunpowder from the <FONT color=#a82424>Forsaken Islet</FONT>.<BR>
+If you defeat <FONT color=#a82424>{monster:863}</FONT>, you'll be able to obtain the gunpowder. Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-4" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n520_angelica-4-a" mid="120"><![CDATA[<html>Yes, alright.</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Sorceress Angelica$<BR>Oh~ you brought it back.<BR>Hmm... alright! I still have some work left, so please bring it to <FONT color=#a82424>General Douglas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n520_angelica-4-a" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$Sorceress Angelica$<BR>I don't feel like taking a kid's pay. Haha.<BR>...Anyway, is Edan crying while at work? Why is he not coming?!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="122"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_05.ogg}<BR>General Douglas' request? Hmm, yes, building trust that way seems good.<BR>It will be difficult for you to get close to the Prophet without close cooperation with the Royal Palace.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="124"><![CDATA[<html>No problem.</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$General Douglas${action:Talk}<BR>Oh, I asked <FONT color=#a82424>Sorceress Angelica</FONT>, but you made it.<BR>I'm sorry I had to ask you since this is for the military to handle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-b" mid="126"><![CDATA[<html>I want to go, too!</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$General Douglas$<BR>
+Give me the gunpowder. We're almost ready, so we can head out to the <FONT color=#a82424>Dark Overlord Keep</FONT>. Other adventurers have received the word and are preparing themselves, so this time, we'll get the <FONT color=#a82424>Prophet</FONT> back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-!next" mid="128"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">437</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">863</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200863</exe>
+         <exe type="addquestitem" num="1">300479</exe>
+         <exe type="huntitem" num="5" exe="6,7,8" onexe="">300479</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4370,,,,,,</exe>
+         <exe type="delquestitem" num="-1">300479</exe>
+         <exe type="complete">437</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="b" />
+   <exelink qstep="1" npc="n393_academic_station" sub="c" />
+   <exelink qstep="1" npc="n393_academic_station" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n520_angelica" sub="b" />
+   <exelink qstep="2" npc="n520_angelica" sub="c" />
+   <exelink qstep="2" npc="n520_angelica" sub="d" />
+   <exelink qstep="2" npc="n520_angelica" sub="e" />
+   <exelink qstep="2" npc="n520_angelica" sub="f" />
+   <exelink qstep="2" npc="n520_angelica" sub="g" />
+   <exelink qstep="2" npc="n520_angelica" sub="h">0,1,2,3,5</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="!next">1,2</exelink>
+   <journal_data recompense="0:4370" quest_title="협조적입니다" chapterid="4" quest_level="26" quest_mark_type="1" use_item_list="300479">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Coooperative I]]></title>
+         <contents mid="69"><![CDATA[<html>While the General prepares for battle with the help of the Adventurers' Guild, connect to the Academic Station and report to Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="71"><![CDATA[Connect to the Academic Station and talk to Jasmine.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n520</destination_pos>
+         <destination_mode>custom:12@1</destination_mode>
+         <statemark_npcid>520</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="130"><![CDATA[Coooperative II]]></title>
+         <contents mid="131"><![CDATA[<html>As Jasmine had mentioned, go to the Hermalte Port to train.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="132"><![CDATA[Talk to someone at the Hermalte Port]]></destination>
+         <todo_msg mid="133"><![CDATA[Find a job at the Hermalte Port.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_30.dds</contents_image>
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="134"><![CDATA[Cooperative III]]></title>
+         <contents mid="135"><![CDATA[<html>To cover for Sorceress Angelica, go to the Forsaken Islet and collect Cobalt Gunpowder.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Forsaken Islet Transport)</FONT> <FONT color=#a82424>→ Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="136"><![CDATA[Collect Cobalt Gunpowder at the Forsaken Islet]]></destination>
+         <todo_msg mid="137"><![CDATA[Collect Cobalt Gunpowder at the Forsaken Islet.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="138"><![CDATA[Cooperative IV]]></title>
+         <contents mid="139"><![CDATA[<html>Completed collecting Cobalt Gunpowder. Since the task was from General Douglas, go straight to him and report.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="140"><![CDATA[Report to General Douglas]]></destination>
+         <todo_msg mid="141"><![CDATA[Give the collected items to General Douglas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>436</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

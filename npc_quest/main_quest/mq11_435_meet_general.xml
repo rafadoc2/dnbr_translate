@@ -1,0 +1,241 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_435_meet_general</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>435</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>436</nextqid>
+      <nextqname>mq11_436_not_same</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Met the General]]></qkname>
+      <qnpc>
+         <npcid>263</npcid>
+         <npcename>n263_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$King Cassius$<BR>Oh... hello. You came.<BR>
+I'm happy to meet a girl of similar age....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>I have so much to take care of, so if it's not urgent, please come back later.<BR><FONT color=#7e12d2>(Communicate with Jasmine at the Academic Station in Saint Haven.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$General Douglas$<BR>Brave Saint Haven soldiers are doing their best to stop the monsters at the Dark Mine.<BR>
+<FONT color=#7e12d2>(Communicate with Jasmine at the Academic Station at Saint Haven.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="8"><![CDATA[<html>Someone who can help?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_04.ogg}<BR>Going alone to the <FONT color=#a82424>Dark Overlord Keep</FONT> is very dangerous.<BR>Hmm... you need someone who can help you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_08.ogg}<BR>If there is anyone at the <FONT color=#a82424>Royal Palace</FONT> who is friendly towards you, ask him for help.<BR>If you're going to a place where there are a lot of monsters, it is better to get the support from the Elite Soldiers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-1" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$General Douglas$<BR>Brave Saint Haven soldiers are doing their best to stop the monsters at the Dark Mine.<BR>(Talk to King Cassius.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$General Douglas$<BR>I have so much to take care of, so if it's not urgent, please come back later.<BR><FONT color=#7e12d2>(Talk to King Cassius.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="82"><![CDATA[<html>Uhh, I have a request.</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$King Cassius$<BR>Oh, you came...<FONT color=#387206> {user_nick}</FONT>....<BR>
+Though you're young, you have worked and proved your loyalty to me...<BR>I'm touched. You're giving me strength. I hope you'll play with me a little longer...<BR>This isn't the time....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="85"><![CDATA[<html>Where is the General?</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$King Cassius$<BR>What's going on? If it's about the Prophet, I can't make a decision until the <FONT color=#a82424>General</FONT> comes....<BR>It's not because I don't have any power, but it's just the way it works...<BR><FONT color=#7e12d2>(Mumbling...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-2" mid="87"><![CDATA[<html>Yes, I will.</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$King Cassius$<BR><FONT color=#a82424>General Douglas</FONT> is eliminating the monsters at the <FONT color=#a82424>Dark Mine</FONT>.<BR>I don't know why he isn't back yet....<BR>If you're okay, do you mind bringing the General back, <FONT color=#387206>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="QW_27.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$King Cassius$<BR>So trustworthy, so loyal.<BR>Please tell <FONT color=#a82424>General Douglas</FONT> at the <FONT color=#a82424>Dark Mine</FONT> to hurry back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-a" mid="92"><![CDATA[<html>I came on King Cassius' request.</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$General Douglas${action:Talk}<BR>Hmm? Who are you?<BR>This is not a place for a little girl. It's dangerous, so go back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-b" mid="94"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$General Douglas$<BR>Huh? <FONT color=#7e12d2>(The General listens and nods his head.)</FONT><BR>
+I see. Not too long ago, adventurers working for the <FONT color=#a82424>Bishop</FONT> came here and passed on the message. While I wasn't there, the Royal Palace was in trouble.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-b" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n263_general_duglars-2-c" mid="96"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Dark Mine</FONT> is an important supply route for a war.<BR>
+We can't lose this strategic land to the monsters.<BR>
+But since rescuing the Prophet is just as important, I'll have to let the Adventurers' Guild handle the guards here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-2-c" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n263_general_duglars-3" mid="98"><![CDATA[<html>I'll see you back at the Royal Palace.</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$General Douglas$<BR>I'm sorry to lose <FONT color=#a82424>Explosives Expert Numharoko</FONT> right before my eyes, but I'll have to eliminate him later.... I'll turn the force back.<BR>
+I'll gather up the soldiers around the mine and return.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n263_general_duglars-3" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$General Douglas${action:Talk}<BR>
+Careful not to get hurt on your way back. Haha.<BR>
+<FONT color=#7e12d2>(Return to the Royal Palace.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="101"><![CDATA[<html>$King Cassius$<BR>Oh, you're back!<BR>
+Since the General is back, ask him for help.<BR>*Cough*</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="104"><![CDATA[<html>I have to go to the Dark Overlord Keep.</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$General Douglas${action:Talk}<BR>I just came back.<BR>I see you have also returned safely.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="106"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$General Douglas$<BR>Hmm, not even the strongest adventurer can win a large group of monsters by himself.<BR>Don't worry. While I was coming back, I ordered to convene troops.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="108"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$General Douglas$<BR>It's less than what I had expected, but they are all Elite Soldiers who had trained themselves over many battles.<BR>
+We must hurry and go to the <FONT color=#a82424>Dark Overlord Keep</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-!next" mid="110"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">435</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4350,,,,,,</exe>
+         <exe type="complete">435</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n263_general_duglars" sub="b" />
+   <exelink qstep="2" npc="n263_general_duglars" sub="c" />
+   <exelink qstep="2" npc="n263_general_duglars" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="!next">1</exelink>
+   <journal_data recompense="0:4350" quest_title="장군을 만났습니다" chapterid="4" quest_level="24" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Met the General I]]></title>
+         <contents mid="65"><![CDATA[<html>Go to King Cassius and listen to the information coming from the Royal Palace and find someone who can help.<BR>
+<BR><FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="67"><![CDATA[Meet King Cassius at the Saint Haven Royal Palace.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>272,n263</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1</destination_mode>
+         <statemark_npcid>263</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Met the General II]]></title>
+         <contents mid="69"><![CDATA[<html>According to the King, General Douglas is at the Dark Mine with Elite Soldiers. Go to the Dark Mine and meet General Douglas.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Dark Mines Access)</FONT> <FONT color=#a82424>→ Dark Mine(General Douglas)</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk to General Douglas at the Dark Mine]]></destination>
+         <todo_msg mid="71"><![CDATA[Meet General Douglas at the Dark Mine.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Met the General III]]></title>
+         <contents mid="73"><![CDATA[<html>General Douglas promised to come back with the troops. Go to the Royal Palace and talk to the General who had returned, and ask him for military support to rescue the Prophet.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk to General Douglas at Saint Haven Royal Palace]]></destination>
+         <todo_msg mid="75"><![CDATA[Talk to General Douglas at Saint Haven Royal Palace.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>434</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

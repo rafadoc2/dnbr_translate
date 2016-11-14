@@ -1,0 +1,312 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_434_so_cool_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>434</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>435</nextqid>
+      <nextqname>mq11_435_meet_general</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Cold-Hearted]]></qkname>
+      <qnpc>
+         <npcid>262</npcid>
+         <npcename>n262_argenta</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>518</npcid>
+         <npcename>n518_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Argenta$<BR>What? You shouldn't be here.<BR>Don't disturb me and be on your way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Warrior Xian$<BR>I hope we rescue the Prophet and make everyone happy! Haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_02.ogg}<BR>Hmm... It's in the record that Geraint will find the Prophet and protect her in Saint Haven.... What should we do? What you can do right now is....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="11"><![CDATA[<html>I don't know.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Academic Jasmine$<BR><FONT color=#7e12d2>(Jasmine thinks for a moment.)</FONT><BR>Oh, where's Argenta who came with you to Saint Haven?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-b" mid="14"><![CDATA[<html>Oh, alright.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Academic Jasmine$<BR>According to the record, unlike Geraint, <FONT color=#a82424>Argenta</FONT> always moves with the other adventurers. So it won't be difficult to find where Argenta is. There is really no record of the whereabouts of Geraint or Velskud .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-c" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Academic Jasmine$<BR>First, head towards the <FONT color=#a82424>Foothills of Black Mountain</FONT> and find the adventurers who came with you, or <FONT color=#a82424>people relevant to Argenta</FONT>.<BR>It would be better if you found Geraint or Velskud and persuade them.... But even if that doesn't work, don't pressure yourself too much. We still have plenty of time....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-d" mid="18"><![CDATA[<html>Constantly meeting with Geraint would be better for our plan.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Academic Jasmine$<BR>Even if you don't do anything, <FONT color=#a82424>Geraint</FONT> will rescue the Prophet.<BR>
+Maybe it would be better for Geraint to rescue the Prophet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-e" mid="83"><![CDATA[<html>Haha... thanks....</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Academic Jasmine$<BR>
+Yes, I haven't thought of that.<BR>
+In order to approach the Prophet, you should get friendly with Geraint.<BR>
+My sister, you're so smart.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_07.ogg}<BR>Okay. Now go to the <FONT color=#a82424>Foothills of Black Mountain</FONT>.<BR>I hope things work out easily.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Argenta$<BR>What? You shouldn't be here.<BR>Don't disturb me and be on your way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Warrior Xian$<BR>I hope we rescue the Prophet and make everyone happy! Haha!<BR>
+Let's cheer up~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR>※ <FONT color=#7e12d2>Find out where Argenta is at the Foothills of Black Mountain.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n518_cian-2-a" mid="24"><![CDATA[<html>Slave? (What is he talking about...)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Warrior Xian$<BR>Huh? <FONT color=#a82424>Argenta</FONT>?<BR>Were you also Argenta's slave, <FONT color=#387206>{user_nick}</FONT>? Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-a" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n518_cian-2-b" mid="27"><![CDATA[<html>Where's Argenta?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>Oh...! Maybe not....<BR>Some other people are connected by that linkage.<BR>It seems right now, <FONT color=#a82424>David</FONT> is Argenta's slave.<BR><FONT color=#7e12d2>(Xian scratches his head.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-b" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n518_cian-2-c" mid="29"><![CDATA[<html>Abandoned Welton Hollow...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Warrior Xian$<BR>Well, I think she's at the <FONT color=#a82424>Abandoned Welton Hollow</FONT>.<BR>Not long ago, I met David who kept coming and going, trying to find something for dinner, and he told me that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n518_cian-2-d" mid="31"><![CDATA[<html>(Xian sighs)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Warrior Xian$<BR>Anyway, <FONT color=#387206>{user_nick}</FONT>, what are you doing these days?<BR>
+If you don't have anything to do, do you want to help <FONT color=#a82424>Bishop Ignacio</FONT> with us? The only person who is trying to find the Prophet is the Bishop.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-d" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n518_cian-2-e" mid="33"><![CDATA[<html>Hmm... (Even if I tell him about the Bishop, he won't believe it...)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Warrior Xian$<BR>Other nobles, and the Royal Sorceress are avoiding this task by making excuses!<BR>We don't have much time. We need to rescue Rose... no, the Prophet. Ahh....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-e" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n518_cian-2-f" mid="35"><![CDATA[<html>Hmm... You shouldn't trust him too much.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#a82424>Bishop Ignacio</FONT> is a very kind man.<BR>He's the only one concerned about the kingdom!<BR>We're going forward because he gave us some information and gave us some tools.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-2-f" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n518_cian-3" mid="37"><![CDATA[<html>(Yes... he won't believe me regardless of what I say.)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Warrior Xian$<BR>What proof do you have to say such a thing...?<BR>
+<FONT color=#7e12d2>(Xian frowns.)</FONT><BR>
+I hope <FONT color=#387206>{user_nick}</FONT> is not running away from this like the other nobles by saying that this doesn't feel right and we shouldn't trust him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-3" image="QW_31.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Warrior Xian$<BR>Oh, I've wasted valuable time.<BR>If you want to meet Argenta, go to the <FONT color=#a82424>Abandoned Welton Hollow</FONT>.<BR>I don't know what business you have with her, but I hope you find her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-3" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-3-a" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Argenta$<BR>I can feel you Geraint... but where did you go?<BR>Did you lose him?<BR><FONT color=#7e12d2>(Argenta looks serious.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-3-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-3-b" mid="43"><![CDATA[<html>Are you looking for Velskud?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Argenta$<BR>Huh? ...What are you doing here?<BR>If you came to ask about the Monolith or anything like that, I'm not going to talk to you.<BR>Go away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-3-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-3-c" mid="45"><![CDATA[<html>It's not that....</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Argenta$<BR>The <FONT color=#a82424>great</FONT> Velskud ...? Did you become a servant of that weasel?<BR>
+You seem pretty friendly towards him.<BR>
+<FONT color=#7e12d2>(Argenta says sarcastically)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-3-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-3-d" mid="47"><![CDATA[<html>Where could he have gone?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Argenta$<BR>When I arrived, the <FONT color=#a82424>Black Knight</FONT> was already gone.<BR>The only thing left was his smell.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-3-d" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-3-e" mid="49"><![CDATA[<html>You mean the Dark Overlord Keep?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Argenta$<BR>Well, since he doesn't have any business left here, he probably went back to his base.<BR>Because he has obtained the Ancient Power, he probably went back to his base and will stay there.<BR>I should have defeated him before that...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-3-e" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n262_argenta-4" mid="51"><![CDATA[<html>Okay. (But I'm still going...)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Argenta$<BR>Why do you ask when you know so well? Annoying.<BR>
+...But you're going to get killed right away with your skills.<BR>I don't care if you live or die, but I'm just telling you that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n262_argenta-4" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Argenta$<BR>Geraint... Are you doing a good job in chasing him?<BR>
+He's so slow...!<BR><FONT color=#7e12d2>(Return to the Academic Station at Saint Haven and report.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Warrior Xian$<BR><FONT color=#a82424>Dark Overlord Keep</FONT>.... That's a problem.<BR>I'll have to talk to Edan, Angelica, and Triana who went out to scout.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-a" mid="56"><![CDATA[<html>What should I do?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_03.ogg}<BR><FONT color=#a82424>Dark Overlord Keep</FONT>...?<BR>Is he in there with the Prophet?<BR>Since using the Prophet's power to become a complete being was his purpose at that time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-b" mid="58"><![CDATA[<html>I was thinking of going there.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Academic Jasmine$<BR>We won't be able to stop Velskud.<BR>If he agrees to help us, it would be great, but at that time, it's probably not possible.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-c" mid="60"><![CDATA[<html>Someone who can help?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Academic Jasmine$<BR>It's not a bad idea, but going alone is really dangerous.<BR>
+If you do something unimportant and get tired, you won't be able to move as fast as you want to, right?<BR>Hmm... you need someone who can help you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-c" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-!next" mid="62"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">434</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4340,,,,,,</exe>
+         <exe type="complete">434</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="b" />
+   <exelink qstep="1" npc="n393_academic_station" sub="c" />
+   <exelink qstep="1" npc="n393_academic_station" sub="d" />
+   <exelink qstep="1" npc="n393_academic_station" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n518_cian" sub="b" />
+   <exelink qstep="2" npc="n518_cian" sub="c" />
+   <exelink qstep="2" npc="n518_cian" sub="d" />
+   <exelink qstep="2" npc="n518_cian" sub="e" />
+   <exelink qstep="2" npc="n518_cian" sub="f" />
+   <exelink qstep="2" npc="n518_cian" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n262_argenta" sub="b" />
+   <exelink qstep="3" npc="n262_argenta" sub="c" />
+   <exelink qstep="3" npc="n262_argenta" sub="d" />
+   <exelink qstep="3" npc="n262_argenta" sub="e" />
+   <exelink qstep="3" npc="n262_argenta" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="b" />
+   <exelink qstep="4" npc="n393_academic_station" sub="c">0</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="0:4340" quest_title="냉정합니다" chapterid="4" quest_level="24" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Cold-Hearted I]]></title>
+         <contents mid="65"><![CDATA[<html>Talk to Jasmine at the Academic Station.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="67"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_SkirtOfBlackMountain.dds</contents_image>
+         <destination_pos>13,n518</destination_pos>
+         <destination_mode>custom:13@1</destination_mode>
+         <statemark_npcid>518</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Cold-Hearted II]]></title>
+         <contents mid="69"><![CDATA[<html>Go to the Foothills of Black Mountain and find anyone related to Argenta.<BR><BR><FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Warrior Xian</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk to Warrior Xian at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="71"><![CDATA[Meet someone at the Foothills of Black Mountain.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_31.dds</contents_image>
+         <destination_pos>314,n262</destination_pos>
+         <destination_mode>custom:312@1,313@1,314@1</destination_mode>
+         <statemark_npcid>262</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Cold-Hearted III]]></title>
+         <contents mid="73"><![CDATA[<html>According to Warrior Xian, Argenta is at the Abandoned Welton Hollow.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain(Lonely Forest Path)</FONT> <FONT color=#a82424>→ Abandoned Welton Hollow(Argenta)</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk to Argenta at the Abandoned Welton Hollow]]></destination>
+         <todo_msg mid="75"><![CDATA[Meet Argenta at the Abandoned Welton Hollow.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Cold-Hearted IV]]></title>
+         <contents mid="77"><![CDATA[<html>It seems Velskud had already gone deep into the Dark Overlord Keep. Return to the Academic Station and report.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="79"><![CDATA[Return to Saint Haven and connect to the Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>433</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

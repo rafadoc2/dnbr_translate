@@ -1,0 +1,347 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_396_last_hope</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>396</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>397</nextqid>
+      <nextqname>mq11_397_but_unbowed</nextqname>
+      <nextqnpc>n530_sleeping_rose</nextqnpc>
+      <qkname mid="1"><![CDATA[Last Hope]]></qkname>
+      <qnpc>
+         <npcid>251</npcid>
+         <npcename>n251_rose</npcename>
+         <npckname>로제</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>528</npcid>
+         <npcename>n528_acamedic_jasmin</npcename>
+         <npckname>아카데믹 자스민</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>529</npcid>
+         <npcename>n529_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>530</npcid>
+         <npcename>n530_sleeping_rose</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_08.ogg}<BR>Don't fOgret what you have to do.<BR>Our duty.... Everyone has placed their faith on you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Velskud$<BR>....... In the past, and now, the world wants one girl to solve the problem.<BR>So dull.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Rose$<BR>...No....<BR><FONT color=#7e12d2>(Moans quietly, as if she cannot wake up.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-noquest" image="" itemindex="">
+      <talk_question mid="246"><![CDATA[<html>$Rose$<BR>.......<BR><FONT color=#7e12d2>(No response)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_08.ogg}<BR>Yes, so go to the <FONT color=#a82424>Secret Area in the Basement of the Royal Palace</FONT> and keep an eye on the Prophet.<BR>It would be better if we could wake her up, but we don't know when the Nest will be lifted.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="139"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_06.ogg}<BR>Everything will become clear soon. Hurry and go to the <FONT color=#a82424>Secret Area in the Basement of the Royal Palace</FONT> and meet the <FONT color=#a82424>Prophet</FONT>.<BR><FONT color=#7e12d2></FONT><BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-1" image="" itemindex="">
+      <talk_question mid="247"><![CDATA[<html>$Velskud$<BR>......In the past, and now, the world wants <FONT color=#a82424>one girl</FONT> to solve the problem.<BR>So dull.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-1" image="" itemindex="">
+      <talk_question mid="248"><![CDATA[<html>$Rose$<BR>...No....<BR><FONT color=#7e12d2>(Moans quietly, as if she cannot wake up.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-1" image="" itemindex="">
+      <talk_question mid="249"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_05.ogg}<BR>Don't fOgret what you have to do.<BR>Our duty.... Everyone has placed their faith on you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-1" image="" itemindex="">
+      <talk_answer link_index="n251_rose-1-party_check_1" mid="252"><![CDATA[<html>(Talks to her)</html>]]></talk_answer>
+      <talk_question mid="250"><![CDATA[<html>$Rose$<BR>.......<BR><FONT color=#7e12d2>(Shows no response.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-1-a" image="" itemindex="">
+      <talk_answer link_index="n251_rose-1-b" mid="255"><![CDATA[<html>You have a duty, but why aren't you waking up?</html>]]></talk_answer>
+      <talk_question mid="254"><![CDATA[<html>$Rose$<BR>......NO!<BR><FONT color=#7e12d2>(Hears a small voice. She seems to be refusing to wake up.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-1-b" image="" itemindex="">
+      <talk_answer link_index="n251_rose-1-chgmap1" mid="257"><![CDATA[<html>I have a duty too.</html>]]></talk_answer>
+      <talk_question mid="256"><![CDATA[<html><FONT color=#7e12d2>(Recollect what had happened in the future.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-1-c" image="" itemindex="">
+      <talk_question mid="327"><![CDATA[<html>$Rose$<BR>......NO!<BR>
+<FONT color=#7e12d2>(You hear a small voice. She seems to be refusing to wake up)</FONT><BR>
+<FONT color=#7e12d2></FONT> <BR>
+※ <FONT color=#7e12d2>You cannot proceed in a party state.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-2" image="" itemindex="">
+      <talk_answer link_index="n528_acamedic_jasmin-2-a" mid="259"><![CDATA[<html>Yes, it's going well.</html>]]></talk_answer>
+      <talk_question mid="258"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu396_01.ogg}<BR>Are you preparing yourself well, <FONT color=#387206>{user_nick}</FONT>? My precious sister.<BR>I just received report that the 28th testing of the <FONT color=#a82424>time traveling machine</FONT> was successful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-2-a" image="" itemindex="">
+      <talk_answer link_index="n528_acamedic_jasmin-2-b" mid="261"><![CDATA[<html>(Jasmine sighs)</html>]]></talk_answer>
+      <talk_question mid="260"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu396_02.ogg}<BR>To send you, still young, alone into the past....<BR>
+As your older sister, I would rather go, but after various tests, you were more fit to travel, and I don't have any choice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-2-b" image="" itemindex="">
+      <talk_answer link_index="n528_acamedic_jasmin-2-c" mid="267"><![CDATA[<html>I'll do well.</html>]]></talk_answer>
+      <talk_question mid="262"><![CDATA[<html>$Academic Jasmine$<BR>Long ago, <FONT color=#a82424>grandpa Kevin</FONT> failed, and didn't come back. But this time, we've fixed all the errors, so it would be okay. There won't be any more problems.<BR>
+Only thing left is for you to do well over there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-2-c" image="" itemindex="">
+      <talk_answer link_index="n528_acamedic_jasmin-2-d" mid="270"><![CDATA[<html>I won't fOgret. Not for a minute.</html>]]></talk_answer>
+      <talk_question mid="268"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu396_03.ogg}<BR>Yes, of course I trust you.<BR>
+Not only me but also all the technicians in Berlin Corporation and the people in this world who survived....<BR>Don't fOgret everyone has faith in you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-2-d" image="" itemindex="">
+      <talk_answer link_index="n528_acamedic_jasmin-2-e" mid="272"><![CDATA[<html>You mean, a parallel world?</html>]]></talk_answer>
+      <talk_question mid="271"><![CDATA[<html>$Academic Jasmine$<BR>...We need to do more than just stopping the <FONT color=#a82424>Monolith</FONT> from going wild.<BR>
+If we go into the past and change history, our world will be erased.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-2-e" image="" itemindex="">
+      <talk_answer link_index="n528_acamedic_jasmin-2-f" mid="274"><![CDATA[<html>I will find it</html>]]></talk_answer>
+      <talk_question mid="273"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu396_04.ogg}<BR>Yes, if you change the past, <FONT color=#a82424>another world</FONT> will just form. A <FONT color=#a82424>future with a different path</FONT>.<BR>The world we now live in will just continue to <FONT color=#a82424>collapse</FONT>.<BR>...It's not far now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-2-f" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n528_acamedic_jasmin-2-g" mid="276"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="275"><![CDATA[<html>$Academic Jasmine$<BR>The <FONT color=#a82424>Prophet</FONT> will be able to <FONT color=#a82424>copy the Goddess' dream</FONT> by getting in contact with Monolith.<BR>Lagendia has faded away, but if we can copy it, we can move it elsewhere....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-2-g" image="" itemindex="">
+      <talk_question mid="277"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu396_05.ogg}<BR>Don't fOgret. You're our last hope.<BR>Only you can take the <FONT color=#a82424>Prophet</FONT>, contact with <FONT color=#a82424>Monolith</FONT> and make a new world for us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n528_acamedic_jasmin-3" image="" itemindex="">
+      <talk_question mid="278"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu396_05.ogg}<BR>Don't fOgret.<BR>You're our last hope.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-a" mid="280"><![CDATA[<html>Yes. Ahh... I don't know if I can complete the task.</html>]]></talk_answer>
+      <talk_question mid="279"><![CDATA[<html>$Velskud$<BR>Are you heading out?<BR>In the end, you've decided to go.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-a" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-b" mid="282"><![CDATA[<html>Are you talking about the Prophet?</html>]]></talk_answer>
+      <talk_question mid="281"><![CDATA[<html>$Velskud$<BR>......In the past, and now, the world wants one girl to solve the problem.<BR>So dull..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-b" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-c" mid="284"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="283"><![CDATA[<html>$Velskud$<BR>Humans have always been like that. Elves, Humans and any other organisms are all the same.<BR>They put all their burden on one person and look up to him.<BR>Lean on him and blame on him as they wish....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-c" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-d" mid="286"><![CDATA[<html>We feel so safe because you are protecting us, Velskud....</html>]]></talk_answer>
+      <talk_question mid="285"><![CDATA[<html>$Velskud$<BR>Now, as the Descendents of the Sentinel have vanished, the only <FONT color=#a82424>dragons</FONT> left in this wretched world are <FONT color=#a82424>him</FONT> and me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-d" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-e" mid="288"><![CDATA[<html>Please wait... until I come back.</html>]]></talk_answer>
+      <talk_question mid="287"><![CDATA[<html>$Velskud$<BR>I only held my place instead of those who gave me this burden and died.<BR>
+...I too failed to protect this world.<BR>I don't have much to live for anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-e" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-f" mid="290"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="289"><![CDATA[<html>$Velskud$<BR>Even if you succeed in your mission, this world will collapse.<BR>
+I'm the dragon in this collapsing world.<BR>
+It's right for me to vanish with this world as the <FONT color=#a82424>past shadow</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-f" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-g" mid="293"><![CDATA[<html>But, please wait.</html>]]></talk_answer>
+      <talk_question mid="291"><![CDATA[<html>$Velskud$<BR>Even if you go to the past and succeed in creating a new world using the Prophet and Monolith, staying there is like living a new bright life in a rundown house.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-g" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-h" mid="295"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="294"><![CDATA[<html>$Velskud$<BR><FONT color=#7e12d2>(There is commotion outside)</FONT><BR>Must be those thrash from the <FONT color=#a82424>Mist Land</FONT> coming.<BR>
+I better get going.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-h" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-i" mid="297"><![CDATA[<html>I'll be back!!</html>]]></talk_answer>
+      <talk_question mid="296"><![CDATA[<html>$Velskud$<BR>....Goodbye.<BR>
+Leave to the new world and fOgret about this world which is shameless in putting the burden of saving the world onto you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-3-i" image="" itemindex="">
+      <talk_answer link_index="n529_velskud-3-chgmap4" mid="299"><![CDATA[<html>(Finishes recollection)</html>]]></talk_answer>
+      <talk_question mid="298"><![CDATA[<html>$Velskud$<BR>You're crying to the end, <FONT color=#387206>{user_nick}</FONT>....<BR>I came to you to say goodbye.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n529_velskud-4" image="" itemindex="">
+      <talk_question mid="301"><![CDATA[<html>$Velskud$<BR>I don't like this world.<BR>
+Not then, not now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n251_rose-4" image="" itemindex="">
+      <talk_question mid="302"><![CDATA[<html>$Rose$<BR>......I don't want to wake up.<BR><FONT color=#7e12d2>(Can hear small mumbling.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-4" image="" itemindex="">
+      <talk_answer link_index="n530_sleeping_rose-4-a" mid="304"><![CDATA[<html>Why are you giving up your duty?!</html>]]></talk_answer>
+      <talk_question mid="303"><![CDATA[<html>$Rose$<BR>.......<BR><FONT color=#7e12d2>(No response)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-4-a" image="" itemindex="">
+      <talk_answer link_index="n530_sleeping_rose-4-b" mid="306"><![CDATA[<html>You're a Prophet! Please wake up!!</html>]]></talk_answer>
+      <talk_question mid="305"><![CDATA[<html>$Rose$<BR>......No. Now... I won't wake... up...<BR><FONT color=#7e12d2>(Doesn't open her eyes, and continues to sleep.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n530_sleeping_rose-4-b" image="" itemindex="">
+      <talk_answer link_index="n530_sleeping_rose-4-!next" mid="308"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="307"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">396</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13016,1);</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="talk" npc="n251_rose">a</exe>
+         <exe type="talk" npc="n251_rose">c</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3960,,,,,,</exe>
+         <exe type="complete">396</exe>
+         <exe type="delquestitem" num="-1">300022</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n251_rose" sub="party_check_1">1</exelink>
+   <exelink qstep="1" npc="n251_rose" sub="b" />
+   <exelink qstep="1" npc="n251_rose" sub="chgmap1">0</exelink>
+   <exelink qstep="2" npc="n528_acamedic_jasmin" sub="b" />
+   <exelink qstep="2" npc="n528_acamedic_jasmin" sub="c" />
+   <exelink qstep="2" npc="n528_acamedic_jasmin" sub="d" />
+   <exelink qstep="2" npc="n528_acamedic_jasmin" sub="e" />
+   <exelink qstep="2" npc="n528_acamedic_jasmin" sub="f" />
+   <exelink qstep="2" npc="n528_acamedic_jasmin" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n529_velskud" sub="b" />
+   <exelink qstep="3" npc="n529_velskud" sub="c" />
+   <exelink qstep="3" npc="n529_velskud" sub="d" />
+   <exelink qstep="3" npc="n529_velskud" sub="e" />
+   <exelink qstep="3" npc="n529_velskud" sub="f" />
+   <exelink qstep="3" npc="n529_velskud" sub="g" />
+   <exelink qstep="3" npc="n529_velskud" sub="h" />
+   <exelink qstep="3" npc="n529_velskud" sub="i" />
+   <exelink qstep="3" npc="n529_velskud" sub="chgmap4">0,1</exelink>
+   <exelink qstep="4" npc="n530_sleeping_rose" sub="b">0</exelink>
+   <exelink qstep="4" npc="n530_sleeping_rose" sub="!next">1,2</exelink>
+   <journal_data recompense="3960" quest_title="마지막 희망이니까요" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n251</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>251</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="310"><![CDATA[Last Hope I]]></title>
+         <contents mid="311"><![CDATA[<html>The Nest might be lifted soon. Meet the Prophet at the Secret Area.<BR>
+ <BR><BR><FONT color=#086171></FONT> <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="312"><![CDATA[Talk to Rose in the basement of the Royal Palace]]></destination>
+         <todo_msg mid="313"><![CDATA[Talk to Rose in the basement of the Royal Palace.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Academic_jasmine.dds</contents_image>
+         <destination_pos>13014,n251</destination_pos>
+         <destination_mode>custom:13014@4,13016@4</destination_mode>
+         <statemark_npcid>528</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="314"><![CDATA[Last Hope II]]></title>
+         <contents mid="315"><![CDATA[<html>The Prophet refuses to communicate at the Secret Area in the Basement of the Royal Palace. Hard to understand why the Prophet is refusing to do her duties. Recollect the conversation with Jasmine in the future world.<BR><BR><FONT color=#2b2723></FONT><BR><FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area) → Rose</FONT> <FONT color=#a82424>→ Future Memory(Academic Jasmine)</FONT></html>]]></contents>
+         <destination mid="316"><![CDATA[Talk to the future version of Academic Jasmine]]></destination>
+         <todo_msg mid="317"><![CDATA[Recollect the conversation with Academic Jasmine.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13014,n251</destination_pos>
+         <destination_mode>custom:13014@4,13016@4</destination_mode>
+         <statemark_npcid>529</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="318"><![CDATA[Last Hope III]]></title>
+         <contents mid="319"><![CDATA[<html>The Prophet refuses to communicate at the Secret Area in the basement of the Royal Palace. Hard to understand why the Prophet is refusing to do her duties. Recollect the conversation with Jasmine in the future world.<BR>
+<BR>
+<BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area) → Rose</FONT> <FONT color=#a82424>→ Future Memory(Velskud)</FONT></html>]]></contents>
+         <destination mid="320"><![CDATA[Talk to the future version of Velskud]]></destination>
+         <todo_msg mid="321"><![CDATA[Recollect the conversation with Velskud.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Rose.dds</contents_image>
+         <destination_pos>13014,n530</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>530</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="322"><![CDATA[Last Hope IV]]></title>
+         <contents mid="323"><![CDATA[<html>Try waking up the Prophet again. I'll have to take her even if it means using force.<BR>
+<BR><BR><BR><FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Rose</FONT></html>]]></contents>
+         <destination mid="324"><![CDATA[Talk to Rose in the Basement of the Royal Palace]]></destination>
+         <todo_msg mid="325"><![CDATA[Talk to Prophet Rose again.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>395</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

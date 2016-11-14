@@ -1,0 +1,249 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_441_end_in_failure</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>441</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>442</nextqid>
+      <nextqname>mq11_442_soaring_and_falling</nextqname>
+      <nextqnpc>n518_cian</nextqnpc>
+      <qkname mid="1"><![CDATA[Failed]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>518</npcid>
+         <npcename>n518_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>521</npcid>
+         <npcename>n521_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Warrior Xian$<BR>I hope we rescue the Prophet and everyone becomes happy! Haha!<BR>
+Don't you think so?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※Go to Heraldry Scholar Stas and finish the Ancient Celebrant's Rune.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Velskud$<BR>.......<BR>
+<FONT color=#7e12d2>(He doesn't seem interested.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="9"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Heraldry Scholar Stas$<BR>There, I made the<FONT color=#a82424>Ancient Celebrant's Rune</FONT> as promised.<BR>I'm embarrassed to be an adult and not work as hard as you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Heraldry Scholar Stas$<BR>When you leave, I must go to the Royal Palace and help with the battle preparation.<BR><FONT color=#7e12d2>(Go to the Academic Station and communicate with Jasmine and report)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-1" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Warrior Xian$<BR>
+I hope we can rescue the Prophet.<BR>
+I promised the leader of Prairie Town I'll rescue her and return.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-1" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Velskud$<BR>.......<BR><FONT color=#7e12d2>(He doesn't seem interested)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="16"><![CDATA[<html>Of course.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_02.ogg}<BR>Hello, <FONT color=#387206>{user_nick}</FONT>.<BR>Did you make the Ancient Celebrant's Rune?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Academic Jasmine$<BR>Now we'll be able to penetrate the <FONT color=#a82424>Black Dragon's Nest</FONT>.<BR>Be careful. It won't be easy going in alone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_08.ogg}<BR>Look at the map on the data and move cautiously.<BR>
+I hope you find the Prophet at the <FONT color=#a82424>Dark Overlord Training Ground</FONT>.<BR><BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-2" image="" itemindex="">
+      <talk_answer link_index="n521_velskud-2-a" mid="22"><![CDATA[<html>Velskud!</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Velskud$<BR>Are you the kid from the Calderock Village?<BR>...You're a ruthless kid.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-2-a" image="" itemindex="">
+      <talk_answer link_index="n521_velskud-2-b" mid="24"><![CDATA[<html>I'm not a kid, my name is, {user_nick}.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Velskud$<BR>The Black Dragon power isn't very strong, letting a kid like you come in.<BR>Did you say you knew the future me...? Kid.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-2-b" image="" itemindex="">
+      <talk_answer link_index="n521_velskud-2-c" mid="27"><![CDATA[<html>You never told me that.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Velskud$<BR>I don't need to hear the name of a kid I'm going to kill soon.<BR>Okay kid, let me ask you this.<BR>
+Do I succeed in my revenge in the future?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-2-c" image="" itemindex="">
+      <talk_answer link_index="n521_velskud-2-d" mid="29"><![CDATA[<html>I wanted to persuade you, Velskud.</html>]]></talk_answer>
+      <talk_answer link_index="n521_velskud-2-d" mid="30"><![CDATA[<html>We need the Prophet!</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Velskud$<BR>...Not a trustworthy kid. I don't care about the future.<BR>So what brings you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-2-d" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n521_velskud-2-e" mid="32"><![CDATA[<html>Please listen to my story a little more!</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Velskud$<BR>Funny. Are you going to ask me to give you the <FONT color=#a82424>Descendent of the Ancient</FONT> with that innocent face....<BR>I'll let you go for being so courageous. Go back before I kill you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-2-e" image="QW_36.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Velskud$<BR>I have nothing more to say, kid.<BR><FONT color=#7e12d2>(Velskud jumps and flies to the other side of the Dark Overlord Keep.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n521_velskud-3" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Velskud$<BR>...So annoying.<BR>
+Go away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>I see you failed to persuade Velskud.<BR>Why don't you go to the <FONT color=#a82424>Foothills of Black Mountain</FONT> and see what the other adventurers are doing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Other adventurers are busy preparing for the battle.<BR>A short while ago, someone called Warrior Xian ran up to the <FONT color=#a82424>Foothills of Black Mountain</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-3" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n518_cian-3-a" mid="39"><![CDATA[<html>Oh, I'm... (Xian suddenly grabs my hand.)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>Huh? <FONT color=#387206>{user_nick}</FONT>!<BR>By any chance, are you, <FONT color=#387206>{user_nick}</FONT>, going to fight the Dark Knight?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-3-a" image="" itemindex="">
+      <talk_answer link_index="n518_cian-3-b" mid="41"><![CDATA[<html>You mean the Ancient Celebrant's Rune?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Warrior Xian$<BR>In order to penetrate into the <FONT color=#a82424>Black Dragon's Nest</FONT>, we needed something.<BR>I went back and forth making that thing. Now that I had it made, I'm going in with the Elite Soldiers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-3-b" image="" itemindex="">
+      <talk_answer link_index="n518_cian-3-c" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Warrior Xian$<BR>Wow!! How did you know?! Amazing~ <FONT color=#7e12d2>(Xian smiles)<BR></FONT>You're amazing, <FONT color=#387206>{user_nick}</FONT>! Hehe~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-3-c" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n518_cian-3-d" mid="45"><![CDATA[<html>Me, me? (What should I do?)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Warrior Xian$<BR>Argenta and Geraint offered to help us.<BR>Geraint should have left already. Haha!!<BR>
+So, <FONT color=#387206>{user_nick}</FONT>, why don't you come with us!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n518_cian-3-d" image="" itemindex="">
+      <talk_answer link_index="n518_cian-3-!next" mid="47"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">441</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4410,,,,,,</exe>
+         <exe type="complete">441</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n521_velskud" sub="b" />
+   <exelink qstep="2" npc="n521_velskud" sub="c" />
+   <exelink qstep="2" npc="n521_velskud" sub="d" />
+   <exelink qstep="2" npc="n521_velskud" sub="d" />
+   <exelink qstep="2" npc="n521_velskud" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n518_cian" sub="b" />
+   <exelink qstep="3" npc="n518_cian" sub="c" />
+   <exelink qstep="3" npc="n518_cian" sub="d">0</exelink>
+   <exelink qstep="3" npc="n518_cian" sub="!next">1</exelink>
+   <journal_data recompense="4410" quest_title="실패했습니다" chapterid="4" quest_level="30" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Failed I]]></title>
+         <contents mid="49"><![CDATA[<html>Found the Ancient Celebrant's Rune, so report to Jasmine by connecting to the Academic Station.<BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#a82424> → Academic Station</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="51"><![CDATA[Connect to the Academic Station.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_36.dds</contents_image>
+         <destination_pos>364,n521</destination_pos>
+         <destination_mode>custom:361@1,362@1,363@1,364@1</destination_mode>
+         <statemark_npcid>521</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Failed II]]></title>
+         <contents mid="53"><![CDATA[<html>It seems we could penetrate into the Black Dragon's nest. Find Velskud at the Dark Overlord Training Camp.<BR>
+<BR><BR><FONT color=#086171>Foothills of Black Mountain(Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord Training Camp(Velskud)</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Velskud at the Dark Overlord Training Ground]]></destination>
+         <todo_msg mid="55"><![CDATA[Find Velskud at the Dark Overlord Training Ground.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_SkirtOfBlackMountain.dds</contents_image>
+         <destination_pos>13,n518</destination_pos>
+         <destination_mode>custom:13@1</destination_mode>
+         <statemark_npcid>518</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Failed III]]></title>
+         <contents mid="57"><![CDATA[<html>Failed to persuade Velskud. Go towards the Foothills of Black Mountain.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to someone at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="59"><![CDATA[Lost Velskud. Return to the Foothills of Black Mountain.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>440</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,162 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_215_decisive_battle</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>215</qid>
+      <designer>김주연</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>216</nextqid>
+      <nextqname>mq08_216_argentas_kiss</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Showdown]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>We haven't found out where the poison is being stored at yet, but it's only a matter of time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="40"><![CDATA[<html>I would like to participate.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>They are obviously gathering the poison to use as a weapon. The scale of this seems too big for just you to handle. I will rally the other guild members to deal with this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Of course, you're a part of us. You'll be a great help. I suspect one location but I'm not sure yet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="13"><![CDATA[<html><FONT face=Arial size=2>(Continue)</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Scout Fergus was patrolling around the <FONT color=#a82424>Road of No Return</FONT>, where he spotted a Dark Elf in red. It's probably <FONT color=#a82424>Elena</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QW_23.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>If it really was Elena, <FONT color=#a82424>Road of No Return</FONT> must be the place where the poison is stored.<BR>Go quickly, we must stop the poison from spreading.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_23.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Move quickly to <FONT color=#a82424>Road of No Return</FONT>. Calderock is in great peril!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="16"><![CDATA[<html><FONT face=Arial size=2>(Continue)</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Sigh...<BR>Even the injured royal guards sent from the Saint Haven castle were deployed for this operation… I wonder what will happen to Calderock.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="18"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">215</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300103</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4">612</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300103</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200612</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 612);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">215</exe>
+         <exe type="recompense">2151,2151,2152,2153,2154,2156,2156</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b">0,2,5,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="a">1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="1:2151,2:2152,3:2153,4:2154,6:2156" quest_title="결전" chapterid="3" quest_level="20" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></title>
+         <contents mid="24"><![CDATA[<html>The place where the poison is being stored has been found. Speak with <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT>.<BR><BR><FONT color=#086171>Calderock Village </FONT><FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="26"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_Ellena.dds</contents_image>
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@1,172@1,173@1,174@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Stop Elena at the Road of No Return]]></title>
+         <contents mid="28"><![CDATA[<html>Royal guards from Saint Haven have already been deployed to the <FONT color=#a82424>Road of No Return</FONT>. Assist them and stop <FONT color=#a82424>Elena</FONT> from releasing the poison unto Calderock.<BR><BR><FONT color=#086171>Cristal Stream (Sigh Canyon Entrance)</FONT><FONT color=#a82424>→ Road of No Return</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Stop Elena at the Road of No Return]]></destination>
+         <todo_msg mid="30"><![CDATA[Prevent Elena at the Road of No Return from unleashing her poison]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Report to Adventurer's Guild Master Deckard]]></title>
+         <contents mid="32"><![CDATA[<html>Elena fell off a cliff immersed with poison. Report to Adventurer's Guild Master Deckard.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Report to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="34"><![CDATA[Report to Adventurer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>214</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

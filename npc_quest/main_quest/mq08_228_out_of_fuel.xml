@@ -1,0 +1,389 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_228_out_of_fuel</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>228</qid>
+      <designer>김인정</designer>
+      <qlevel>14</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>229</nextqid>
+      <nextqname>mq08_229_go_see</nextqname>
+      <nextqnpc>n164_argenta_wounded</nextqnpc>
+      <qkname mid="1"><![CDATA[No Fuel]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>545</npcid>
+         <npcename>n545_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Argenta$<BR>Why are you hanging around here, kid?<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Cleric Edan$<BR>It's not easy as I thought.<BR>
+I feel so incapable.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Airship Engineer Hubert$<BR>What? I'm busy with this piece of junk airship, so just go away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>Okay, Jasmine.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_01.ogg}<BR>Now, you won't be able to search the data in real time with the communicator, I'll tell you the information regarding the current situation.<BR>Listen to it carefully and you must act on your own. Remember that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-a" mid="88"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Academic Jasmine$<BR>
+So, in summary, Velskud destroyed the airship, so there is no way to get to Saint Haven... and the airship will be fixed by... umm...<BR>
+<FONT color=#7e12d2>(Jasmine searches the data)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-b" mid="90"><![CDATA[<html>Elena? No way...?</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Academic Jasmine$<BR>It will take longer than I thought. And there is another problem....<BR>The poison that <FONT color=#a82424>Elena</FONT> spread reached Calderock... huh?<BR>Wait, <FONT color=#a82424>Elena</FONT>...? <FONT color=#a82424>Elena</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-c" mid="92"><![CDATA[<html>Elena..., I would like to meet her.</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Academic Jasmine$<BR>That's right. You've met <FONT color=#a82424>Teleju</FONT>, the Dark Elf queen, so you should remember the name Elena.<BR>According to the records, Dark Elf Elena will appear soon and put Calderock Village in danger.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-d" mid="239"><![CDATA[<html>Alright. But where is Elena now?</html>]]></talk_answer>
+      <talk_question mid="238"><![CDATA[<html>$Academic Jasmine$<BR>
+<FONT color=#387206>{user_nick}</FONT>, Elena isn't a good-hearted Dark Elf like Teleju.<BR>
+She is a servant of the <FONT color=#a82424>Red Dragon</FONT> and an enemy for us. Remember that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-e" mid="161"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Academic Jasmine$<BR>I don't know since the records don't state the exact location of Elena.<BR>When you follow Edan or Angelica, you'll run into her, so wait patiently.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="241"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_07.ogg}<BR>Before that, I hope you could hurry and go to Saint Haven.<BR>Velskud must have reached Saint Haven with the Prophet by now....<BR><FONT color=#387206>{user_nick}</FONT>, check the status of the airship from the <FONT color=#a82424>Airship Engineer Hubert</FONT> and ask him if you could be of any assistance.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Argenta$<BR>Why are you hanging around here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-1" image="" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Cleric Edan$<BR>Not everything is sorting out as I had thought.<BR>
+I feel so incapable.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$Airship Engineer Hubert$<BR>What?!<BR>I'm busy with this piece of junk airship, so just go away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="162"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR>※ <FONT color=#7e12d2>Meet Airship Engineer Hubert and check the status of the airship.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="164"><![CDATA[<html>Huh? Really? Already...? (Isn't it too soon...?)</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Airship Engineer Hubert$<BR>Oh, the little girl is here too!<BR>Welcome! I was just about to start the test flight of the <FONT color=#a82424>Nautilus</FONT> after the repair!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-cutscene228" mid="166"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$Airship Engineer Hubert$<BR>Okay everyone, stand back. <BR>Start the engines!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-3-a" mid="169"><![CDATA[<html>Can I have a look?</html>]]></talk_answer>
+      <talk_question mid="167"><![CDATA[<html>$Airship Engineer Hubert$<BR>Ahh!! What happened?!<BR>
+There must be something wrong if the engine had exploded!!<BR>What? What's gone wrong?<BR>
+<FONT color=#7e12d2>(Hubert shakes his head wildly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3-a" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-3-b" mid="172"><![CDATA[<html>It's a power problem. The engine overheated since it didn't have a power source.</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Airship Engineer Hubert$<BR>Huh? What would a little girl know...<BR>
+Well, it doesn't hurt to look, so be my guest.<BR>
+<FONT color=#7e12d2>(Hubert scratches his head after looking around the airship)</FONT><BR>
+Hmm.... What's the problem...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3-b" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-3-c" mid="174"><![CDATA[<html>(Hubert sighs)</html>]]></talk_answer>
+      <talk_question mid="173"><![CDATA[<html>$Airship Engineer Hubert$<BR>What? Is that so...? Well.... <BR>HUH?! The energy for the engine is empty....<BR>Oh no, this device was made in Saint Haven, so we can't use the fuel from Calderock...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3-c" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-4" mid="176"><![CDATA[<html>Where did the other adventurers go?</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Airship Engineer Hubert$<BR>I'll need to find another way to recharge the engines.<BR>Hey little girl, it might take a few more days to operate the airship. I'm sorry to disappoint you....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-4" image="QW_GrayRuin.dds" itemindex="">
+      <talk_question mid="177"><![CDATA[<html>$Airship Engineer Hubert$<BR>…Hmm? Other adventurers? Well...<BR><FONT color=#7e12d2>(Hubert scratches his head)<BR></FONT>They said they were going to meet someone at the <FONT color=#a82424>Gray Ruins</FONT>....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="178"><![CDATA[<html>$Academic Jasmine$<BR>The airship crashed again? Oh my....<BR>Then, how about you go to the <FONT color=#a82424>Gray Ruins</FONT> and meet <FONT color=#a82424>Argenta</FONT>?<BR>She might have some other information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-a" mid="180"><![CDATA[<html>(Explain the situation)</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$Argenta$<BR>What business do you have here?<BR>You're not here to talk about the future or something like that again, are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-a" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-b" mid="183"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="181"><![CDATA[<html>$Argenta$<BR>What? <FONT color=#a82424>Elena</FONT>? ...That annoying Dark Elf is coming back...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-c" mid="186"><![CDATA[<html>She's going to spread poison all over Calderock.</html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Argenta$<BR>I can't believe every word you say, but it does bother me a little.<BR>
+Of course, very little.<BR>If <FONT color=#a82424>Elena</FONT> appears, it will be very troublesome.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-d" mid="188"><![CDATA[<html>Slave?</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$Argenta$<BR>Poison? Elena always messes with the same stuff.<BR>
+I have a few places in mind where she might be. It would be too troublesome for me to go there by myself. I'll just make use of the young kids around. And also test out if they qualify to be my <FONT color=#a82424>slaves</FONT>. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-d" image="QW_16.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-e" mid="191"><![CDATA[<html>Sleepers' Temple?</html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Argenta$<BR>I've sent <FONT color=#a82424>Angelica</FONT> and <FONT color=#a82424>Edan</FONT> to the <FONT color=#a82424>Sleepers' Temple</FONT>.<BR>I've heard they needed airship fuel, so I told them to recharge the fuel there.<BR>If you're not busy, go there and bring them back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-e" image="QW_16.dds" itemindex="">
+      <talk_question mid="192"><![CDATA[<html>$Argenta$<BR>Yes. I don’t' want to keep talking!<BR>
+I'm an injured, so quietly go to the <FONT color=#a82424>Sleepers' Temple</FONT>.<BR>Go there and tell them there master wants to see them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-5" image="QW_16.dds" itemindex="">
+      <talk_question mid="194"><![CDATA[<html>$Argenta$<BR>Hurry and go to the <FONT color=#a82424>Sleepers' Temple</FONT>!<BR>Angelica and <FONT color=#a82424>Edan</FONT> should be there. Tell them to come back to me once they are done.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-5" image="" itemindex="">
+      <talk_question mid="195"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Go to the Sleepers' Temple.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-5" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n545_edan-5-a" mid="198"><![CDATA[<html>(Explain the situation)</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Cleric Edan$<BR>Oh... You are <FONT color=#387206>{user_nick}</FONT>.<BR><FONT color=#7e12d2>(Edan isn't looking well. He seems to be injured)<BR></FONT>What brings you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-5-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n545_edan-5-b" mid="200"><![CDATA[<html>Did something happen?!</html>]]></talk_answer>
+      <talk_question mid="199"><![CDATA[<html>$Cleric Edan$<BR>I see. <FONT color=#a82424>Argenta</FONT> wants us back…<BR>But, it seems we're one step late.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-5-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n545_edan-5-c" mid="203"><![CDATA[<html>She's Dark Elf Elena!</html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$Cleric Edan$<BR>While we were recharging the floating device, we ran into a Dark Elf with a huge Ogre.<BR>She was a <FONT color=#a82424>Dark Elf clad in red clothes</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-5-c" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n545_edan-6" mid="205"><![CDATA[<html>First, tell Argenta about this.</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Cleric Edan$<BR>I couldn't find out who she was.<BR>
+But, that Dark Elf kidnapped <FONT color=#a82424>Angelica</FONT>.<BR>That huge Ogre took the <FONT color=#a82424>floating device</FONT>... and I lost consciousness.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n545_edan-6" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="206"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>
+I'd better do that. I'm embarrassed that we end up like this.<BR>I should have protected Angelica....<BR>
+I'll make a move and return to the <FONT color=#a82424>Gray Ruins</FONT> to meet <FONT color=#a82424>Argenta</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-6" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-6-a" mid="208"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Argenta$<BR>I just heard the news.<BR>
+That huge Ogre took the fuel device and Angelica was kidnapped.<BR>So pathetic....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-6-a" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-6-b" mid="210"><![CDATA[<html>Well....</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Argenta$<BR>Edan says he'll try to figure out where she was taken along with the other slaves.<BR>Any hunches?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-6-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-6-!next" mid="212"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">228</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,61);</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2280,,,,,,</exe>
+         <exe type="complete">228</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n392_academic_station" sub="b" />
+   <exelink qstep="1" npc="n392_academic_station" sub="c" />
+   <exelink qstep="1" npc="n392_academic_station" sub="d" />
+   <exelink qstep="1" npc="n392_academic_station" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="cutscene228">0,1,2</exelink>
+   <exelink qstep="3" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="3" npc="n099_engineer_hubert" sub="c" />
+   <exelink qstep="3" npc="n099_engineer_hubert" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n545_edan" sub="b" />
+   <exelink qstep="5" npc="n545_edan" sub="c" />
+   <exelink qstep="5" npc="n545_edan" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n164_argenta_wounded" sub="b">0</exelink>
+   <exelink qstep="6" npc="n164_argenta_wounded" sub="!next">1</exelink>
+   <journal_data recompense="2280" quest_title="출력 부족입니다" chapterid="3" quest_level="14" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode />
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="214"><![CDATA[Lack of Power I]]></title>
+         <contents mid="215"><![CDATA[<html>It is impossible to completely repair the communicator. Connect to the Academic Station and listen to Jasmine's instructions.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="216"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="217"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode />
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="218"><![CDATA[Lack of Power II]]></title>
+         <contents mid="219"><![CDATA[<html>There is a record that around this time, Dark Elf Elena appeared at Calderock Village. You want to meet her if possible... But first, go to Airship Engineer Hubert and see if he had finished repairing the airship.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Airship Engineer Hubert</FONT></html>]]></contents>
+         <destination mid="220"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="221"><![CDATA[Meet Airship Engineer Hubert.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode />
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="222"><![CDATA[Lack of Power III]]></title>
+         <contents mid="223"><![CDATA[<html>Airship crashed. What seems to be the problem? In order to have a look at the airship, ask Hubert.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Airship Engineer Hubert</FONT></html>]]></contents>
+         <destination mid="224"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="225"><![CDATA[Airship crashed. Talk to Hubert again.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode />
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="226"><![CDATA[Lack of Power IV]]></title>
+         <contents mid="227"><![CDATA[<html>The reason why Nautilus crashed seems to be the lack of fuel. Argenta is at the Gray Ruins. Go and ask her some questions.<BR>
+ <BR>
+<FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="228"><![CDATA[Talk to Argenta at the Gray Ruins]]></destination>
+         <todo_msg mid="229"><![CDATA[Talk to Argenta at the Gray Ruins.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_16.dds</contents_image>
+         <destination_pos>129,n545</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@1</destination_mode>
+         <statemark_npcid>545</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="230"><![CDATA[Lack of Power V]]></title>
+         <contents mid="231"><![CDATA[<html>Angelica and Edan went to the Sleepers' Temple. Follow them and pass on Argenta's message.<BR><BR><FONT color=#086171>Lower Ridge(Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Sleepers' Temple(Cleric Edan)</FONT></html>]]></contents>
+         <destination mid="232"><![CDATA[Talk to Edan at the Sleepers' Temple]]></destination>
+         <todo_msg mid="233"><![CDATA[Go to the Sleepers' Temple and pass on the message from Argenta to the adventurers.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,n164</destination_pos>
+         <destination_mode />
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="234"><![CDATA[Lack of Power VI]]></title>
+         <contents mid="235"><![CDATA[<html>Elena showed up and kidnapped Angelica. She also took the floating device. Return to the Gray Ruins and report to Argenta.<BR>
+ <BR>
+<FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="236"><![CDATA[Talk to Argenta at the Gray Ruins]]></destination>
+         <todo_msg mid="237"><![CDATA[Return to Gray Ruins and talk to Argenta.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>227</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

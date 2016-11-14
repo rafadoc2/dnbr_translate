@@ -1,0 +1,347 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_387_temporarily_cure</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>387</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc>정령의 눈물	300246
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>388</nextqid>
+      <nextqname>mq11_388_homesick_to_future</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Find a Temporary Cure]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Geraint$<BR>The Descendent of the Ancient is still not waking up.<BR>It doesn't seem like there is other problems, so it is unclear what the reason is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$General Douglas$<BR>I wish the soldiers would get better soon. I'm so concerned.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="56"><![CDATA[<html>Then Velskud is...?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_04.ogg}<BR>The reason why those soldiers are sick is because of the <FONT color=#a82424>Black Dragon's blood</FONT>.<BR>Strong monster's blood is like a poison to other living organisms.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="172"><![CDATA[<html>So, it can't be cured?</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Academic Jasmine$<BR>Since they got mixed up with dragons' fight, there should be some side effects.<BR>Anyway, no one has ever found a perfect cure. To the day where you and I am living.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-b" mid="174"><![CDATA[<html>How do you do it?</html>]]></talk_answer>
+      <talk_question mid="173"><![CDATA[<html>$Academic Jasmine$<BR>Yes, but even though it cannot be perfectly cured, there is a way to suppress the symptoms.<BR>How long a person can last will depend on the mental state of each individuals....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2" mid="176"><![CDATA[<html>I'll try and find that cure.</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Academic Jasmine$<BR>At the <FONT color=#a82424>Spirit Grave Tomb</FONT> you can find something called Spirit's Tear. Dilute that and mix it with other painkillers.<BR>
+When they take that medicine, they'll be okay.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="178"><![CDATA[<html>$Geraint$<BR>The Descendent of the Ancient is still not waking up.<BR>It doesn't seem like there are other problems, so it is unclear what the reason is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="179"><![CDATA[<html>$General Douglas$<BR>I wish the soldiers get better soon.<BR>
+How are you doing with finding a cure for the soldiers?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="180"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_05.ogg}<BR>Hmm... If you insist on finding the cure, you'll have to go to the <FONT color=#a82424>Spirit Grave Tomb</FONT>.<BR>Spirit's Tear is buried in the strongest monster. So be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="QS_Default.dds" itemindex="300246">
+      <talk_question mid="181"><![CDATA[<html>$Geraint$<BR>Spirit's Tear?<BR>
+...Oh, after the Spirits left, their tears crystalized and got buried in monsters.<BR>It's a precious treasure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="182"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Give the Spirit's Tear to General Douglas.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QS_Default.dds" itemindex="300246">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="185"><![CDATA[<html>That's correct.</html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$General Douglas$<BR>Spirit's Tear? Wow... this is amazing.<BR>So with this, we can alleviate the symptoms.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4" mid="187"><![CDATA[<html>(The General grabs my hands.)</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$General Douglas$<BR>Good work.<BR>Thanks to you, many soldiers will be free from the pain this disease is giving them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="188"><![CDATA[<html>$General Douglas${action:Talk}<BR>Be sure to say thank you to your <FONT color=#a82424>sister</FONT> for me.<BR>Thank you so much!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-a" mid="190"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_02.ogg}<BR>So, did you find the <FONT color=#a82424>Spirit's Tear</FONT> and given it to the General?<BR>...Okay. I'm glad to hear that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-b" mid="192"><![CDATA[<html>Isn't it because the Nest is lifted?</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Academic Jasmine$<BR>But there is something I don't quite understand.<BR>According to the records, the Prophet vanishes at this very place? Why is that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-c" mid="194"><![CDATA[<html>Or?</html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$Academic Jasmine$<BR>Yes, of course, but I want to know why. Is Geraint lifting the Nest to go on a different urgent matter?<BR>
+Or...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-d" mid="196"><![CDATA[<html>Geraint's pendant...?</html>]]></talk_answer>
+      <talk_question mid="195"><![CDATA[<html>$Academic Jasmine$<BR>Like the <FONT color=#a82424>Ancient Celebrant's Rune</FONT>, there may be something that can penetrate the Gold Dragon's Nest.<BR>Someone trespasses using that. How's that? Isn't it quite reasonable?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-5" mid="198"><![CDATA[<html>Is that possible?</html>]]></talk_answer>
+      <talk_question mid="197"><![CDATA[<html>$Academic Jasmine$<BR>We only give out the pendants to people whom we can trust. According to our records, people who received the pendants never did anything suspicious. So that means, someone else penetrated the Nest...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-5" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="199"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>Hmm... This keeps bugging my mind.<BR>Could you go to <FONT color=#a82424>Geraint</FONT> in the basement of the Royal Palace and ask him?<BR>He may be able to answer that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="201"><![CDATA[<html>I'm here to ask you something.</html>]]></talk_answer>
+      <talk_question mid="200"><![CDATA[<html>$Geraint$<BR>It's you, <FONT color=#387206>{user_nick}</FONT>. You must be concerned about the Descendent of the Ancient.<BR>But, even if you speak to her, you won't be able to reach her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-b" mid="203"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="202"><![CDATA[<html>$Geraint$<BR>...Are you asking if someone could enter here with the <FONT color=#a82424>Ancient Celebrant's Rune</FONT>? Oh... you need not worry about that. The Black Dragon this time and the one 50 years ago was made by the power of Ancients, that's why it could be weakened with the Ancient Celebrant's Rune.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-c" mid="205"><![CDATA[<html>Chaos?</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Geraint$<BR>Those who are Descendents of the Chaos Dragon like myself, are different.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6" mid="207"><![CDATA[<html>(Sentinel? I think I heard this before from Velskud...?)</html>]]></talk_answer>
+      <talk_question mid="206"><![CDATA[<html>$Geraint$<BR>But we, Argenta and I are the <FONT color=#a82424>Descendents of the Sentinel Dragon</FONT> unlike those Chaos fragments.<BR>As far as I know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="208"><![CDATA[<html>$Geraint$<BR>I think I've answered your question.<BR>Now, return to whomever sent you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-a" mid="210"><![CDATA[<html>We'll see when that time comes.</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_02.ogg}<BR>Hmm~ if he says so, then we can be at ease for now.<BR>But, I still don't understand how the Nest could be lifted and the Prophet could disappear.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-b" mid="212"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Academic Jasmine$<BR>...And not all dragons are the same.<BR>Velskud... I mean, the Black Dragon is a fragment of the <FONT color=#a82424>Chaos Dragon</FONT>, whereas, Geraint and Argenta are the Descendents of the <FONT color=#a82424>Sentinel Dragon</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-c" mid="214"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Academic Jasmine$<BR>Hmm... We didn't know much about the dragons.<BR>In our days, dragons were only legends...<BR>
+<FONT color=#7e12d2>(Jasmine sighs)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-d" mid="216"><![CDATA[<html>No. Not yet.</html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$Academic Jasmine$<BR>How's <FONT color=#a82424>Velskud</FONT>? Did you get to know him a little better?<BR>
+If you want to move freely around in that place, you should get close to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-!next" mid="218"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">387</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1007</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201007</exe>
+         <exe type="addquestitem" num="1">300246</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300246</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300246</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3870,,,,,,</exe>
+         <exe type="complete">387</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="b" />
+   <exelink qstep="1" npc="n393_academic_station" sub="2">0,2,3,5,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="b" />
+   <exelink qstep="4" npc="n393_academic_station" sub="c" />
+   <exelink qstep="4" npc="n393_academic_station" sub="d" />
+   <exelink qstep="4" npc="n393_academic_station" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n393_academic_station" sub="b" />
+   <exelink qstep="6" npc="n393_academic_station" sub="c" />
+   <exelink qstep="6" npc="n393_academic_station" sub="d">0</exelink>
+   <exelink qstep="6" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="3870" quest_title="임시 치료제를 구합니다" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="300246">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_jasmine.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="219"><![CDATA[Finding a Temporary Cure I]]></title>
+         <contents mid="220"><![CDATA[<html>Ask Jasmine about the after effects the soldiers are experiencing.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="221"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="222"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_37.dds</contents_image>
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@1,372@1,373@1,374@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="223"><![CDATA[Finding a Temporary Cure II]]></title>
+         <contents mid="224"><![CDATA[<html>Obtain the Spirit's Tear at Spirit Grave Tomb. It seems a cure can be made using that treasure.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Entrance to the Flooded Downstream Ruins)</FONT><FONT color=#a82424> → Spirit Grave Tomb</FONT></html>]]></contents>
+         <destination mid="225"><![CDATA[Spirit Grave Tomb]]></destination>
+         <todo_msg mid="226"><![CDATA[Obtain the Spirit's Tear at Spirits' Grave.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="227"><![CDATA[Finding a Temporary Cure III]]></title>
+         <contents mid="228"><![CDATA[<html>Give the Spirit's Tear to General Douglas. It is possible to make a cure for the soldiers using this treasure.<BR><BR><FONT color=#086171>Saint Haven Royal Palace</FONT> → General Douglas</html>]]></contents>
+         <destination mid="229"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="230"><![CDATA[Give the Spirit's Tear to General Douglas.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="231"><![CDATA[Finding a Temporary Cure IV]]></title>
+         <contents mid="232"><![CDATA[<html>Gave the General the Spirit's Tear. Connect to Jasmine again and report.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="233"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="234"><![CDATA[Connect to the Academic Station and talk to Jasmine.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="235"><![CDATA[Finding a Temporary Cure V]]></title>
+         <contents mid="236"><![CDATA[<html>Go to Geraint in the basement of the Royal Palace and tell him about the question Academic Jasmine had asked.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="237"><![CDATA[Talk to Geraint at the secret area in the basement of the Royal Palace]]></destination>
+         <todo_msg mid="238"><![CDATA[Go to Geraint at the secret area in the basement of the Royal Palace.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="239"><![CDATA[Finding a Temporary Cure VI]]></title>
+         <contents mid="240"><![CDATA[<html>Return to Jasmine and tell her Geraint's response.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="241"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="242"><![CDATA[Connect to the Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>386</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

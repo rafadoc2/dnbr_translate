@@ -1,0 +1,439 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_237_rouse</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>237</qid>
+      <designer>김인정</designer>
+      <qlevel>22</qlevel>
+      <qdesc>정화장치 가동열쇠	300063
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>432</nextqid>
+      <nextqname>mq11_432_here_sainthaven</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <qkname mid="1"><![CDATA[Awakened]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>557</npcid>
+         <npcename>n557_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>558</npcid>
+         <npcename>n558_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>You're still working hard to save Calderock!<BR>You're so praiseworthy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Cleric Edan$<BR>Ha… Angelica is not a bad person, but she can be a little too carefree.<BR>
+She makes my life difficult.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Sorceress Angelica$<BR>Huh? To some people, it may seem like I play all the time, but I work when necessary.<BR>
+I'm a very serious person~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="160"><![CDATA[<html>$Airship Engineer Hubert$<BR>Hmm... I think the airship can take off soon.<BR>
+Look forward!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>(Play the data)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Station$<BR><FONT color=#7e12d2>(Conversation with Jasmine is still recorded in the memory device.<BR>Replay the conversation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-a" mid="235"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Recorded conversation with Jasmine$<BR>There is a purification device created by the Ancients at the Prayer's Resting Place.<BR>
+But, to activate this machine, we need the White Orb and the key to that machine....<BR><FONT color=#a82424>White Orb</FONT> is located at the <FONT color=#a82424>Sanctuary Core</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-a" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-2" mid="259"><![CDATA[<html>(Stop the conversaation)</html>]]></talk_answer>
+      <talk_question mid="236"><![CDATA[<html>$Recorded conversation with Jasmine$<BR>
+<FONT color=#a82424>Manticore Keruru</FONT> at <FONT color=#a82424>Prayer's Resting Place</FONT> has the key.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>You're still working hard to save Calderock!<BR>You're so praiseworthy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-1" image="" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Cleric Edan$<BR>You've become famous.<BR>
+<FONT color=#387206>{user_nick}</FONT>, you were great at field.<BR>You're so strong even though you're a little girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-1" image="" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$Sorceress Angelica$<BR>Huh? To some people, it may seem like I play all the time, but I work when necessary.<BR>
+I'm a very serious person~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="166"><![CDATA[<html>$Airship Engineer Hubert$<BR>Hmm... I think the airship can take off soon.<BR>
+Look forward!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-2" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="260"><![CDATA[<html><FONT color=#7e12d2>(Tell Adverturer's Guild Master Deckard about the key to the purification device)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QS_Default.dds" itemindex="300063">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="263"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="261"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Refusal}<BR>Manticore Keruru has the <FONT color=#a82424>key to the purification device</FONT>?<BR>Wow... Thank you for that precious information, little girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="265"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="264"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>According to you, we'll have to defeat Manticore Keruru at <FONT color=#a82424>Prayer's Resting Place</FONT> and get the key before operating the purification device.<BR>
+We would be able to clear up the poison spread around Calderock.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="267"><![CDATA[<html>I'll help you.</html>]]></talk_answer>
+      <talk_question mid="266"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Manticore was created by the Ancients using dark magic.<BR>It's some form of a <FONT color=#a82424>chimera</FONT>, with a lion's head, sheep's body, and snake's tail.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="QW_26.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-d" mid="269"><![CDATA[<html>(I must go there secretly)</html>]]></talk_answer>
+      <talk_question mid="268"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>It's too dangerous for you. I'll find some other adventurer.<BR>If I send a little girl to the Prayer's Resting Place alone, I'll be the center of criticism. You did a great job already by providing me with the information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-d" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="270"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Talk}<BR>Prayer's Resting Place's Manticore Keruru…<BR>Who would be capable of handling this job?<BR>
+<FONT color=#7e12d2>(Deckard searches the Adventurers' Guild roster)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="271"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Talk}<BR>Prayer's Resting Place's Manticore Keruru…<BR>Who would be capable of handling this job?<BR>
+<FONT color=#7e12d2>(Deckard searches the Adventurers' Guild roster)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-3" image="" itemindex="">
+      <talk_question mid="272"><![CDATA[<html>$Sorceress Angelica$<BR>Huh? To some people, it may seem like I play all the time, but I work when necessary.<BR>
+I'm a very serious person~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-3" image="" itemindex="">
+      <talk_question mid="273"><![CDATA[<html>$Cleric Edan$<BR>Ha… Angelica is not a bad person, but she can be a little too carefree.<BR>
+She makes my life difficult.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-4" image="" itemindex="">
+      <talk_answer link_index="n558_angelica-4-a" mid="275"><![CDATA[<html>What brings you here, Angelica?</html>]]></talk_answer>
+      <talk_question mid="274"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>What! Aren't you <FONT color=#387206>{user_nick}</FONT>?!<BR>What are you doing here little girl? You're out of your mind!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-4-a" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n558_angelica-4-b" mid="277"><![CDATA[<html>(She saw the purification device key)</html>]]></talk_answer>
+      <talk_question mid="276"><![CDATA[<html>$Sorceress Angelica$<BR>Huh? To some people, it may seem like I play all the time, but I work when necessary. I'm a very serious person~!!<BR>Edan and I came here after hearing from <FONT color=#a82424>Adventurer's Guild Master</FONT> that… huh?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-4-b" image="QS_Default.dds" itemindex="300063">
+      <talk_answer link_index="n558_angelica-4-c" mid="279"><![CDATA[<html>That's...</html>]]></talk_answer>
+      <talk_question mid="278"><![CDATA[<html>$Sorceress Angelica$<BR>Oh! You got it?<BR>
+It was you who gave the information to the Adventurers' Guild Master?<BR>How on earth did you know the <FONT color=#a82424>purification device key</FONT> would be here?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-4-c" image="" itemindex="">
+      <talk_answer link_index="n558_angelica-4-d" mid="281"><![CDATA[<html>Oh! No! Never!</html>]]></talk_answer>
+      <talk_question mid="280"><![CDATA[<html>$Sorceress Angelica$<BR>You used that strange device, didn't you?! I thought I broke it...... Oh!<BR>I thought it was broken, but it's fine?<BR>Oh good!<BR>
+<FONT color=#387206>{user_nick}</FONT>, can I see that?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-4-d" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_question mid="282"><![CDATA[<html>$Sorceress Angelica$<BR>Come on... Let me have a look at it.<BR>
+Huh? It's not like it's going to wear off... Oww!!<BR>Edan! Don't pull me!!<BR><FONT color=#7e12d2>(Cleric Edan is sending a signal)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-5" image="QN_Npc_Edan.dds" itemindex="">
+      <talk_question mid="283"><![CDATA[<html>$Sorceress Angelica$<BR>Oh~ seriously!! <FONT color=#a82424>Edan</FONT>, until when are you going to treat me like a child?!!<BR>This is why clerics are...<BR>
+Nevermind. I'm only traveling with you because I have a great heart!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-5" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n557_edan-5-a" mid="285"><![CDATA[<html>It's my communicator.</html>]]></talk_answer>
+      <talk_question mid="284"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>Hmm… I'm not sure…<BR>
+But, it seems like Angelica has taken interest in something weird again.<BR><FONT color=#7e12d2>(Edan sighs like he has had enough)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-5-a" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n557_edan-5-b" mid="287"><![CDATA[<html>Yes, she's so extreme....</html>]]></talk_answer>
+      <talk_question mid="286"><![CDATA[<html>$Cleric Edan$<BR>A communicator? Oh... isn't that the device which shows data?<BR>Sorceresses weirdly go wild when they see machines.<BR><FONT color=#a82424>Angelica</FONT> has a curious mind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-5-b" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n557_edan-6" mid="289"><![CDATA[<html>Yes, I will.</html>]]></talk_answer>
+      <talk_question mid="288"><![CDATA[<html>$Cleric Edan$<BR>Haha.... Anyway, while I hold Angelica back, you should run...... No, leave here. You can just give the purification device key to <FONT color=#a82424>Adverturer's Guild Master Deckard</FONT>.<BR>Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n557_edan-6" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_question mid="290"><![CDATA[<html>$Cleric Edan$<BR>Angelica~ Let's go back to Calderock Village.<BR>That device is <FONT color=#387206> {user_nick}</FONT>'s, so stop eyeing it.<BR><FONT color=#7e12d2>(Edan starts to chide Angelica)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n558_angelica-6" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="291"><![CDATA[<html>$Sorceress Angelica$<BR>I don't know why I'm traveling with a Cleric.<BR>Ahh... Since I'm kind-hearted, I'll tolerate him!!<BR>
+<FONT color=#7e12d2>(Return to Adverturer's Guild Master Deckard and report)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-6" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="292"><![CDATA[<html>$Academic Jasmine$<BR>Going to Saint Haven? Great. You must hurry.<BR>It would be great if you can find the Prophet over there....<BR>
+No, you must meet her!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-6-a" mid="294"><![CDATA[<html>It wasn't that difficult... (Blushing)</html>]]></talk_answer>
+      <talk_question mid="293"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Talk}<BR>This little girl defeated <FONT color=#a82424>Manticore Keruru</FONT>. The world will be amazed!<BR>
+Splendid work! This should be engraved in history!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6-a" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-6-b" mid="296"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="295"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Don't be shy.<BR>You're the <FONT color=#a82424>hero who saved Calderock</FONT>!<BR>Haha~<BR>
+<FONT color=#7e12d2>(Deckard laughs heartily)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-6-b" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-7" mid="298"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="297"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Oh, yes. The repair on Nautilus seemed to be near the final stage.<BR>If you need to go to Saint Haven, go and talk to <FONT color=#a82424>Airship Engineer Hubert</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-7" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="299"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Refusal}<BR>The poisonous mist has cleared. Now, everyone will feel safe. Thank you so much.<BR>Now, <FONT color=#a82424>Airship Engineer Hubert</FONT> can happily let the airship take off.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-7" image="" itemindex="">
+      <talk_question mid="300"><![CDATA[<html>$Academic Station$<BR>※ <FONT color=#086171>Mission Object.<BR></FONT>※ Meet Airship Engineer Hubert.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7" image="QN_crew_kevin.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-7-a" mid="302"><![CDATA[<html>(Grandpa Kevin is still a young boy...)</html>]]></talk_answer>
+      <talk_question mid="301"><![CDATA[<html>$Airship Engineer Hubert$<BR>Oh, are you that famous <FONT color=#387206>{user_nick}</FONT>?<BR>You're an amazing little girl!<BR>
+My Kevin is around your age but he is still a baby. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7-a" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-7-b" mid="304"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="303"><![CDATA[<html>$Airship Engineer Hubert$<BR>The Elite Soldiers have somewhat recovered, so they are also planning on going back to Saint Haven on this airship.<BR>
+I heard that they need to report on the airship crash, the <FONT color=#a82424>Black Knight</FONT>, and other incidents that happened at Calderock....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-7-c" mid="306"><![CDATA[<html>Are they reporting to the Royal Castle?</html>]]></talk_answer>
+      <talk_question mid="305"><![CDATA[<html>$Airship Engineer Hubert$<BR>It's not a place for an engineer like me, but I believe you're the best person for that job. Some other adventurers are going with them to <FONT color=#a82424>Saint Haven</FONT> to report to the Royal Castle.<BR>
+Why don't you accompany them too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7-c" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-7-d" mid="308"><![CDATA[<html>(Maybe it'll help me collect information)</html>]]></talk_answer>
+      <talk_question mid="307"><![CDATA[<html>$Airship Engineer Hubert$<BR>It seems so. Officers were killed in combat, so Elite Soldier Calrim will lead the rest of the soldiers and report.<BR>When you get off at <FONT color=#a82424>Saint Haven</FONT>, talk to <FONT color=#a82424>Elite Soldier Calrim</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7-d" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-7-!next" mid="310"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="309"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">237</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">762</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200762</exe>
+         <exe type="addquestitem" num="1">300063</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300063</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+         <exe type="delquestitem" num="-1">300063</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2370,,,,,</exe>
+         <exe type="complete">237</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n392_academic_station" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="d">0,2,3,5,1</exelink>
+   <exelink qstep="4" npc="n558_angelica" sub="b" />
+   <exelink qstep="4" npc="n558_angelica" sub="c" />
+   <exelink qstep="4" npc="n558_angelica" sub="d">0,1</exelink>
+   <exelink qstep="5" npc="n557_edan" sub="b" />
+   <exelink qstep="5" npc="n557_edan" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="6" npc="n024_adventurer_guildmaster_decud" sub="7">0,1,2</exelink>
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="b" />
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="c" />
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="d">0</exelink>
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="!next">1</exelink>
+   <journal_data recompense="2370" quest_title="눈을 떴습니다" chapterid="3" quest_level="22" quest_mark_type="1" use_item_list="300063">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="311"><![CDATA[Awakened I]]></title>
+         <contents mid="312"><![CDATA[<html>Connect to the Academic Station and reconfirm the data with Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="313"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="314"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="315"><![CDATA[Arousal II]]></title>
+         <contents mid="316"><![CDATA[<html>There are some items needed to activate the purification device. Manticore Keruru has the key to the device. Ask Adverturer's Guild Master Deckard about it.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adverturer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="317"><![CDATA[Talk to Adverturer's Guild Master Deckard]]></destination>
+         <todo_msg mid="318"><![CDATA[Pass the information to Adverturer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_26.dds</contents_image>
+         <destination_pos>264,0,0</destination_pos>
+         <destination_mode>custom:262@1,263@1,264@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="319"><![CDATA[Awakened III]]></title>
+         <contents mid="320"><![CDATA[<html>The Manticore at Prayer's Resting Place has the key to the purification device. Defeat Manticore Keruru, obtain the key, and activate the purification device.<BR>
+ <BR>
+<FONT color=#086171>Lower Ridge (Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Prayer's Resting Place</FONT></html>]]></contents>
+         <destination mid="321"><![CDATA[Activate the purification device at the Prayer's Resting Place]]></destination>
+         <todo_msg mid="322"><![CDATA[Obtain the key to the purification device at the Prayer's Resting Place.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Angelica.dds</contents_image>
+         <destination_pos>264,n558</destination_pos>
+         <destination_mode>custom:262@1,263@1,264@1</destination_mode>
+         <statemark_npcid>558</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="323"><![CDATA[Awakened IV]]></title>
+         <contents mid="324"><![CDATA[<html>You have defeated Manticore Keruru. Angelica and Edan can be seen. Since you have already activated the purification device, go and talk to them.<BR>
+ <BR>
+<FONT color=#086171>Lower Ridge (Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Prayer's Resting Place (Sorceress Angelica)</FONT></html>]]></contents>
+         <destination mid="325"><![CDATA[Talk to Angelica at the Prayer's Resting Place]]></destination>
+         <todo_msg mid="326"><![CDATA[Activated the cleansing machine. Talk to Angelica.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Edan.dds</contents_image>
+         <destination_pos>264,n557</destination_pos>
+         <destination_mode>custom:262@1,263@1,264@1</destination_mode>
+         <statemark_npcid>557</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="327"><![CDATA[Awakened V]]></title>
+         <contents mid="328"><![CDATA[<html>Seems like Edan has something to say.<BR>
+ <BR>
+<FONT color=#086171>Lower Ridge (Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Prayer's Resting Place (Cleric Edan)</FONT></html>]]></contents>
+         <destination mid="329"><![CDATA[Talk to Edan at the Prayer's Resting Place]]></destination>
+         <todo_msg mid="330"><![CDATA[Talk to Cleric Edan.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="331"><![CDATA[Awakened VI]]></title>
+         <contents mid="332"><![CDATA[<html>Report to Adverturer's Guild Master Deckard that the Manticore has been defeated and that you have activated the purification device.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adverturer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="333"><![CDATA[Talk to Adverturer's Guild Master Deckard]]></destination>
+         <todo_msg mid="334"><![CDATA[Report to Adverturer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="335"><![CDATA[Awakened VII]]></title>
+         <contents mid="336"><![CDATA[<html>Ask Airship Engineer Hubert if the airship can take off for Saint Haven.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Airship Engineer Hubert</FONT></html>]]></contents>
+         <destination mid="337"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="338"><![CDATA[Talk to Airship Engineer Hubert.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>236</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

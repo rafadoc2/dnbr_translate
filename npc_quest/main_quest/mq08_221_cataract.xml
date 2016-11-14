@@ -1,0 +1,176 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_221_cataract</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>2</qchapter>
+      <qid>221</qid>
+      <designer>곽노찬</designer>
+      <qlevel>9</qlevel>
+      <qdesc>다크엘프의 하프	300015
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>222</nextqid>
+      <nextqname>mq08_222_too_late</nextqname>
+      <nextqnpc>n023_ranger_fugus</nextqnpc>
+      <qkname mid="1"><![CDATA[Arrived at the Calderock Village]]></qkname>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-accepting" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Scout Fergus${action:Talk}<BR>The Prophet is currently confined at the <FONT color=#a82424>Sigh Canyon</FONT>.<BR>But, due to the magical barriers unfolded around the canyon, no one can get in.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-1-a" mid="11"><![CDATA[<html>Raider's Den... alright.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Scout Fergus$<BR>The barrier can be lifted by playing <FONT color=#a82424>Dark Elf Assassin Lydia</FONT>'s harp at the <FONT color=#a82424>Raider's Den</FONT>.<BR>Angelica went to the Raider's Den to find that harp.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1-a" image="QM_DarkelfGray.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Scout Fergus$<BR>
+A Dark Elf is a very swift and strong monster. <BR>
+A Dark Elf's dance can be captivating, but within the dance, there is a fatal poison, so be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-2" image="QW_13.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Scout Fergus${action:Talk}<BR>Angelica went to the <FONT color=#a82424>Raider's Den</FONT> to find that harp.<BR>
+A Dark Elf is a very swift and strong monster. Be careful not to lose your attention to the Dark Elf's dance.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-3-a" mid="18"><![CDATA[<html>I'm not a kid.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Scout Fergus$<BR>
+You got the harp?<BR>
+I thought you were only a little girl, but you're amazing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3-a" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-3-b" mid="20"><![CDATA[<html>Yes. It seems I'm one step too late.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Scout Fergus$<BR>
+Haha, little girls always say that. But, you didn't see Angelica?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3-b" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-3-c" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Scout Fergus$<BR>I see. Angelica went to the <FONT color=#a82424>Calderock Village</FONT> to fix the harp as the strings were broken.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-3-c" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-3-!next" mid="24"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">221</exe>
+         <exe type="talk" npc="n023_ranger_fugus">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">350</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300015</exe>
+         <exe type="addquestitem" num="1">300015</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200350</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2210,,,,,</exe>
+         <exe type="complete">221</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n023_ranger_fugus" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n023_ranger_fugus" sub="a">0,2,8,3,1</exelink>
+   <exelink qstep="3" npc="n023_ranger_fugus" sub="b" />
+   <exelink qstep="3" npc="n023_ranger_fugus" sub="c">0</exelink>
+   <exelink qstep="3" npc="n023_ranger_fugus" sub="!next">1</exelink>
+   <journal_data recompense="2210" quest_title="캐더락 관문에 도착했습니다" chapterid="2" quest_level="9" quest_mark_type="1" use_item_list="300015">
+      <journal index="1">
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Arrived at the Calderock Village I]]></title>
+         <contents mid="27"><![CDATA[<html>Ask Scout Fergus at the Cristal Stream about Angelica's whereabouts.<BR>
+ <BR>
+<FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Scout Fergus</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Talk to Scout Fergus]]></destination>
+         <todo_msg mid="29"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_13.dds</contents_image>
+         <destination_pos>114,0,0</destination_pos>
+         <destination_mode>custom:111@1,112@1,113@1,114@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Arrived at the Calderock Village II]]></title>
+         <contents mid="32"><![CDATA[<html>Angelica went to the Raider's Den to obtain the Dark Elf's harp.<BR>Look for Angelica at Raider's Den.<BR><BR><FONT color=#086171>Cristal Stream (Raider's Den Entrance)</FONT> <FONT color=#a82424>→ Raider's Den</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Raider's Den]]></destination>
+         <todo_msg mid="34"><![CDATA[Find out Angelica's whereabouts at the Raider's Den.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Arrived at the Calderock Village III]]></title>
+         <contents mid="37"><![CDATA[<html>Angelica seems to have left the Raider's Den already. Return to Scout Fergus and ask him again regarding Angelica's whereabouts.<BR>
+ <BR>
+<FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Scout Fergus</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Talk to Scout Fergus]]></destination>
+         <todo_msg mid="39"><![CDATA[Return to Scout Fergus at the Cristal Stream.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>9:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>100</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

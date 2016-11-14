@@ -1,0 +1,310 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_392_facing_the_enemy</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>392</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>393</nextqid>
+      <nextqname>mq11_393_reason_of_doubt</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[The Enemy is Near]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>523</npcid>
+         <npcename>n523_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>525</npcid>
+         <npcename>n525_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Velskud$<BR>...Every action has consequences.<BR>The laws apply to those reckless people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$King Cassius$<BR>
+Nice to see you, brave girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Cleric Edan$<BR>May the Goddess bless you always</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_03.ogg}<BR>Yes, it is a fact that Ignacio is the traitor of Saint Haven, so I'm worried that Warrior Xian is working for him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="139"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_05.ogg}<BR>We don't know when something is going to happen, so always be on the lookout for the inside information at the Royal Palace.<BR>Keep an eye on it.<BR>Since <FONT color=#a82424>King Cassius</FONT> is friendly to you, keep on talking to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1" image="" itemindex="">
+      <talk_question mid="140"><![CDATA[<html>$Velskud$<BR>...Every action has consequences.<BR>The laws apply to those reckless people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-1" image="" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$Cleric Edan$<BR>Hello, <FONT color=#387206>{user_nick} </FONT>.<BR>
+May the Goddess' blessing be with you always.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="144"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$King Cassius$<BR>Hello, brave girl....<BR>You're so wonderful, busy working for Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="146"><![CDATA[<html>What is he doing now?</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$King Cassius$<BR>The adventurers who came with you are still working hard under <FONT color=#a82424>Ignacio</FONT>. He's been great. Since my uncle and the General are all busy cleaning up after the battle, he volunteered to cleanse the Black Dragon's evil power and conduct a <FONT color=#a82424>ritual for the kingdom</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="QW_46.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-2" mid="148"><![CDATA[<html>Sunken Cargo Vessel?</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$King Cassius$<BR>Oh... not too long ago, someone went to the <FONT color=#a82424>Sunken Cargo Vessel</FONT> with a Crystal Calabash.<BR>He said he was going to pour something into it.... But, I'm not sure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="QW_46.dds" itemindex="">
+      <talk_question mid="149"><![CDATA[<html>$King Cassius$<BR><FONT color=#387206>{user_nick}</FONT>, are you also going to the <FONT color=#a82424>Sunken Cargo Vessel</FONT>?<BR>You're worried about the colleague who went ahead, aren't you?<BR>You're such a kind girl....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-2" image="" itemindex="">
+      <talk_answer link_index="n525_edan-2-a" mid="153"><![CDATA[<html>What are you doing?</html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>Oh, it's <FONT color=#387206>{user_nick}</FONT>.<BR>What are you doing here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-2-a" image="" itemindex="">
+      <talk_answer link_index="n525_edan-2-b" mid="155"><![CDATA[<html>You shouldn't help the Bishop.</html>]]></talk_answer>
+      <talk_question mid="154"><![CDATA[<html>$Cleric Edan$<BR>I was collecting the <FONT color=#a82424>Sea Beasts' Soul</FONT> into this Crystal Calabash.<BR>I think I've collected enough, so I was going to go back and report.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-2-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n525_edan-2-c" mid="157"><![CDATA[<html>I'm from the future. So... I know.</html>]]></talk_answer>
+      <talk_question mid="156"><![CDATA[<html>$Cleric Edan$<BR>...Why are you saying that suddenly?<BR>Do you have a specific reason to suspect the Bishop?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-2-c" image="" itemindex="">
+      <talk_answer link_index="n525_edan-2-d" mid="159"><![CDATA[<html>That's... (I can't say that right now)</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Cleric Edan$<BR>Your future...? <FONT color=#387206>{user_nick}</FONT>, it's not that I don't trust you.<BR>
+But, if that future was a fixed, definite future, why are you here? Also, why did you follow me without deciding on what to do next?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-2-d" image="" itemindex="">
+      <talk_question mid="160"><![CDATA[<html>$Cleric Edan$<BR>As you, <FONT color=#387206>{user_nick}</FONT> have something to do, it's the same for me, too.<BR>I'm not happy with you stirring an internal turmoil with uncertain information. Goodbye.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n525_edan-3" image="" itemindex="">
+      <talk_question mid="161"><![CDATA[<html>$Cleric Edan$<BR>I respect <FONT color=#387206>{user_nick}</FONT>'s courage and skill.<BR>I hope we could have a chance to work with each other some other day. Now, goodbye.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="" itemindex="">
+      <talk_question mid="162"><![CDATA[<html>$King Cassius$<BR>Had a safe trip to Sunken Cargo Vessel?<BR>You're face is so grim.... You're making me sad....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-a" mid="164"><![CDATA[<html>What should I do?</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_01.ogg}<BR>So, <FONT color=#a82424>Cleric Edan</FONT> didn't believe your story?<BR>...Even if he does, it'll be hard to get suspicious at the <FONT color=#a82424>Bishop</FONT>.<BR>Afterall, He is a Cleric and the Bishop was his Boss.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="165"><![CDATA[<html>$Academic Jasmine$<BR>What does Velskud say?<BR>Ask him for advice at the <FONT color=#a82424>Foothills of Black Mountain</FONT>. It troubles me since it's a Sea Beast.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-3" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-3-a" mid="167"><![CDATA[<html>Serpent?</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$Velskud$<BR>Sea beast...?<BR>Are you talking about the <FONT color=#a82424>Serpentra</FONT> which we've killed 50 years ago?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-3-a" image="QM_Sea_Drake.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-3-b" mid="169"><![CDATA[<html>It may resurrect.</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$Velskud$<BR>Yes. <FONT color=#a82424>Serpentra</FONT>. It caused much violence at Lorreline River near Saint Haven; therefore, we eliminated it 50 years ago. It was impossible to completely annihilate it, so it was separated into many pieces and <FONT color=#a82424>sealed</FONT>. There is no chance of it reviving.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-3-b" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-3-c" mid="171"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Velskud$<BR>Is that how it's recorded in your future?<BR>.... Then the reason why he tampered with my core was to get the energy to revive the Serpentra.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-3-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n523_velskud-3-d" mid="173"><![CDATA[<html>What should I do?!</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$Velskud$<BR>He is a member of a group called the <FONT color=#a82424>Apostle</FONT>.<BR>His purpose must have been to penetrate Saint Haven from the inside and disturb the church.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-3-d" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-4" mid="175"><![CDATA[<html>But...</html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Velskud$<BR>Didn't I tell you? It's their responsibility when fools cause regrettable results.<BR>Just leave the fools alone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-4" image="" itemindex="">
+      <talk_question mid="176"><![CDATA[<html>$Velskud$<BR>Even if you work for others, if they don't understand you, your attempt goes in vain.<BR>I've seen one like you, but to me, it's only a futile attempt.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-a" mid="178"><![CDATA[<html>We have to stop it!!</html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_01.ogg}<BR><FONT color=#a82424>Serpentra</FONT>? Of course... Our records weren't wrong.<BR>I'm so worried. If we leave it like this, Saint Haven will be attacked again by the Serpentra.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-b" mid="180"><![CDATA[<html>What? What did you say?!</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$Academic Jasmine$<BR>......Is it a right thing to stop this....<BR><FONT color=#7e12d2>(Jasmine mumbles without confidence.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-c" mid="182"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="181"><![CDATA[<html>$Academic Jasmine$<BR>If every event doesn't flow according to the set future, there may be more problems that what we anticipated.<BR>
+We ran into a reality where we can't do anything about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-d" mid="184"><![CDATA[<html>We may be able to save this place!!</html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$Academic Jasmine$<BR>If you try something and change the history, the end may come earlier.<BR>
+It will be a shame if the end comes in at <FONT color=#a82424>that time</FONT> before we even finish saving the world here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-e" mid="186"><![CDATA[<html>I didn't fOgret.</html>]]></talk_answer>
+      <talk_question mid="185"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>Save that place? <FONT color=#7e12d2>(Jasmine laughs at your reasoning.)<BR></FONT>What you need to save is our time, not there.<BR><FONT color=#387206>{user_nick}</FONT>, did you fOgret about your mission?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-f" mid="188"><![CDATA[<html>...That's my destiny.</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$Academic Jasmine$<BR>
+Then, leave the Serpentra alone. It's bound to revive.<BR>Anyway, you must watch carefully and when the Nest is lifted, take the <FONT color=#a82424>Prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4-f" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-4-!next" mid="190"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">392</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3920,,,,,,</exe>
+         <exe type="complete">392</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n525_edan" sub="b" />
+   <exelink qstep="2" npc="n525_edan" sub="c" />
+   <exelink qstep="2" npc="n525_edan" sub="d">0,1</exelink>
+   <exelink qstep="3" npc="n523_velskud" sub="b" />
+   <exelink qstep="3" npc="n523_velskud" sub="c" />
+   <exelink qstep="3" npc="n523_velskud" sub="d" />
+   <exelink qstep="3" npc="n523_velskud" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="b" />
+   <exelink qstep="4" npc="n393_academic_station" sub="c" />
+   <exelink qstep="4" npc="n393_academic_station" sub="d" />
+   <exelink qstep="4" npc="n393_academic_station" sub="e" />
+   <exelink qstep="4" npc="n393_academic_station" sub="f">0</exelink>
+   <exelink qstep="4" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="3920" quest_title="눈 앞에 적이 있습니다" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="192"><![CDATA[The Enemy is Near I]]></title>
+         <contents mid="193"><![CDATA[<html>Can't be sure what might happen, so listen carefully to the information coming out from the Royal Palace.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="194"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="195"><![CDATA[Talk to King Cassius.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_46.dds</contents_image>
+         <destination_pos>463,n525</destination_pos>
+         <destination_mode>custom:461@1,462@1,463@1</destination_mode>
+         <statemark_npcid>525</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="196"><![CDATA[The Enemy is Near II]]></title>
+         <contents mid="197"><![CDATA[<html>Don't know what Bishop Ignacio is planning. Meet the adventurer who went to the Sunken Cargo Vessel on his request.<BR><BR><FONT color=#086171>Hermalte Port(Forsaken Islet Transport)</FONT> <FONT color=#a82424>→ Sunken Cargo Vessel</FONT></html>]]></contents>
+         <destination mid="198"><![CDATA[Talk to an adventurer at the Sunken Cargo Vessel]]></destination>
+         <todo_msg mid="199"><![CDATA[Meet an adventurer at the Sunken Cargo Vessel.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13,n523</destination_pos>
+         <destination_mode>custom:13@4</destination_mode>
+         <statemark_npcid>523</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="200"><![CDATA[The Enemy is Near III]]></title>
+         <contents mid="201"><![CDATA[<html>Cleric Edan is not going to trust my words easily. Meet Velskud at the Foothills of Black Mountain, share the situation and ask for advice.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Velskud</FONT></html>]]></contents>
+         <destination mid="202"><![CDATA[Talk to Velskud at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="203"><![CDATA[Go to Velskud at the Foothills of Black Mountain and ask for advice.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="204"><![CDATA[The Enemy is Near IV]]></title>
+         <contents mid="205"><![CDATA[<html>It seems Ignacio is trying to revive the Serpentra. Connect to the Academic Station and report to Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="206"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="207"><![CDATA[Connect to the Academic Station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>391</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,238 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_412_cure_of_fairystar</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>412</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>413</nextqid>
+      <nextqname>mq11_413_dreaming_rose</nextqname>
+      <nextqnpc>n038_royal_magician_kalaen</nextqnpc>
+      <qkname mid="1"><![CDATA[The Dark Tower]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-noquest" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Are you still friends with that <FONT color=#a82424>raccoon</FONT>?<BR>Hmph. You don't know this racoon is who? Of course it's the sly<FONT color=#a82424>old Bishop</FONT>. Who else would it be?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-accepting" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-accepting-acceptted" mid="56"><![CDATA[<html>(It seems like the Bishop's faith has become even stronger.)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Bishop Ignacio$<BR>You cannot lose faith just because the Prophet did not immediately open her eyes. You should accept this as a sign to have more faith in the goddess.<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Are you still friends with that <FONT color=#a82424>raccoon</FONT>?<BR>Hmph. You don't know this racoon is who? Of course it's the sly<FONT color=#a82424>old Bishop</FONT>. Who else would it be?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-a" mid="8"><![CDATA[<html>You must be very busy.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Bishop Ignacio$<BR>I will think of other methods.<BR>I'm so busy nowsday, I had to comfort the wounded soldiers and had discussion with the high one above... Not much free time for others stuff</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-a" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-1-b" mid="10"><![CDATA[<html>Kayleen was looking for me?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>A person like you has come to me at such times like these. This is truly a blessing of the goddess. What else would it be?<BR>By the way, <FONT color=#a82424>Court Sorceress Kayleen</FONT> was looking for you......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1-b" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Yes. Kayleen is probably thinking about waking up the <FONT color=#a82424>Prophet</FONT> as well.<BR>I hope there are good results.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>Did you meet <FONT color=#a82424>Court Sorceress Kayleen</FONT> ?<BR>She was looking through an ancient book of Dark Tower to find a solution to wake the Prophet up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-a" mid="14"><![CDATA[<html>(What am I supposed to do...)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Why are you hanging around here like that?<BR>...... Hey wait, it's not like I told you to go away!<BR>You're so clueless. Hmph!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-b" mid="16"><![CDATA[<html>No. The Prophet did not wake up.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Court Sorceress Kayleen$<BR>It seems like that <FONT color=#a82424>raccoon</FONT> over there tried to get you to help him secretly make an achievement, right? I heard he created <FONT color=#a82424>Holy Water</FONT> for you or something......<BR>Did it work?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-c" mid="18"><![CDATA[<html>(Kayleen fiercely criticizes the Bishop.)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>Oh! Hehehe. I knew it! What a fool that racoon was, thinking just spraying water on the <FONT color=#a82424>Prophet</FONT> would wake her up?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-d" mid="20"><![CDATA[<html>(That probably means that she is going to give me an errand.)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hehe, I feel much better now.<BR>And you! I will specially give you the opportunity to witness the amazing powers of <FONT color=#a82424>Dark Tower</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-d" image="QS_Default.dds" itemindex="300251">
+      <talk_question mid="21"><![CDATA[<html>$Court Sorceress Kayleen$<BR>You, go to <FONT color=#a82424>Desolation Point</FONT> and bring back some <FONT color=#a82424>Dream Plants</FONT>.<BR>I need some that sprouted from within the stomach of a monster, so defeat a powerful monster at Forsaken Islet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="QS_Default.dds" itemindex="300251">
+      <talk_question mid="23"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Huh? You didn't leave yet? Get me some <FONT color=#a82424>Dream Plants</FONT> from <FONT color=#a82424>Forsaken Islet</FONT>.<BR>I will show you the amazing powers of Dark Tower!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="25"><![CDATA[<html>So what will you do with this?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hmm. Unlike your weak appearance, you're pretty useful.<BR>It would be good if you could just snap out of it and stop working with that <FONT color=#a82424>raccoon</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="QS_Default.dds" itemindex="300251">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-b" mid="27"><![CDATA[<html>(She is suddenly starting to show off.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Why are you in such a hurry? Are you worried that the sleeping Prophey might run away?<BR>Now, I will use this <FONT color=#a82424>Dream Plant</FONT> to create <FONT color=#a82424>Dream Dust</FONT>.<BR>Do you know what Dream Dust does?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-b" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-c" mid="29"><![CDATA[<html>(So, convenience is the main point.)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>Alright, listen carefully. It is a magical dust that can <FONT color=#a82424>enter into the dreams of a sleeping person</FONT>. Such sleeping problems are usually mental problems, so the best way would be to enter into the person's dreams.<BR>And this is also a convenient method.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-c" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-d" mid="31"><![CDATA[<html>I'm not going to eat it...</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Court Sorceress Kayleen$<BR>You should feel honored, as I am making this specially for you. Do remember that this can't be use frequently<BR><FONT color=#7e12d2>(Kayleen is mixing the Dream Plant with various condiments.)</FONT><BR>It smells delicious, but don't eat it. Got that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-d" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-e" mid="34"><![CDATA[<html>(Receive Dream Dust.)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Here, it is complete.<BR><FONT color=#7e12d2>(She grinds some of the aromatic plant and hands you a handful.)<BR></FONT>Take it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-e" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">412</exe>
+         <exe type="talk" npc="n039_bishop_ignasio">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">931</exe>
+         <exe type="addquestitem" num="1">300251</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntitem" num="1" exe="" onexe="4,5,6">300251</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200931</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300251</exe>
+         <exe type="addquestitem" num="1">300083</exe>
+         <exe type="recompense">4121,4121,4122,4123,4124,4124,4126</exe>
+         <exe type="complete">412</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n039_bishop_ignasio" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n039_bishop_ignasio" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="d">0,2,8,7,1</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="d" />
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="e">2</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="!next">0,1,3</exelink>
+   <journal_data recompense="1:4121,2:4122,3:4123,4:4124,5:4124,6:4126" quest_title="페어리스타의 약" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="300251">
+      <journal index="1">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Other Methods]]></title>
+         <contents mid="39"><![CDATA[<html>The Holy Water was not effective. Talk to Bishop Ignacio about other methods.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="41"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Kayleen's Method]]></title>
+         <contents mid="43"><![CDATA[<html>It seems like Court Sorceress Kayleen wants to try to make the <FONT color=#a82424>Prophet</FONT> wake up. Talk to her about it.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Court Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Talk to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="45"><![CDATA[Please talk to Court Sorceress Kayleen.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Dream Plant]]></title>
+         <contents mid="47"><![CDATA[<html>Obtain Dream Plant from <FONT color=#a82424>Forsaken Islet Core</FONT>. You are told that the strongest monster most likely has it.<BR><BR><FONT color=#086171>Hermalte Port (Charter Ship)</FONT> <FONT color=#a82424>→ Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Collect Dream Plant from Forsaken Islet]]></destination>
+         <todo_msg mid="49"><![CDATA[Obtain the Dream Plant from Forsaken Islet]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Report]]></title>
+         <contents mid="51"><![CDATA[<html>You have obtained the Dream Plant. Return to Court Sorceress Kayleen and report this.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Court Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="53"><![CDATA[Deliver the Dream Plant to Court Sorceress Kayleen]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>411</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

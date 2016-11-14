@@ -1,0 +1,307 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_382_second_step</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>382</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>383</nextqid>
+      <nextqname>mq11_383_riskful_meet</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Mission Starts Now]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>519</npcid>
+         <npcename>n519_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR>I have so much to take care of, so if it's not urgent, please come back later.<BR><FONT color=#7e12d2>(Talk to Jasmine at the Academic Station in Saint Haven)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Geraint$<BR>I'll protect the Descendent of the Ancient, you just go on your way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$King Cassius$<BR>Warm-hearted person.<BR>
+So young but so brave....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Warrior Xian$<BR>...Has time already passed this fast?<BR>Now, <FONT color=#387206>{user_nick}</FONT>, try to do some sightseeing in Saint Haven and enjoy yourself~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_02.ogg}<BR>You have arrived.<BR>I was waiting for your report.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="13"><![CDATA[<html>(Report what has been going on)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Academic Jasmine$<BR>So what happened?<BR>Did you rescue the Prophet?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-b" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Academic Jasmine$<BR>...I see. I didn't know Geraint has sustained injuries, that wasn't in any of the records.<BR>If the <FONT color=#a82424>Prophet</FONT> is at the center of the Nest, you won't be able to take her right away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-c" mid="17"><![CDATA[<html>Yes, I will.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Academic Jasmine$<BR>According to the records, the <FONT color=#a82424>Nest will be lifted</FONT>. I think Geraint will lift the nest on Saint Haven and go somewhere, or move the Prophet's location....<BR>
+I think it's best if you wait until then.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-d" mid="19"><![CDATA[<html>She isn't very talkative, so I'm not sure.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Academic Jasmine$<BR>It would be better if we can find out the <FONT color=#a82424>location of the Monolith</FONT>.... I don't think it'll be that easy.<BR>Argenta isn't very friendly towards humans and she already went to Lotus Marsh.<BR>
+So, how's Geraint doing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-e" mid="21"><![CDATA[<html>Missing for now...</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Academic Jasmine$<BR>Oh, really~ dragons are so difficult to handle? They say they are protecting the world, but in fact, they have no mercy for humans.<BR>
+...Only if Velskud becomes the person he is at our world, things would be a lot better. Do you know what happened to <FONT color=#a82424>Velskud</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-f" mid="23"><![CDATA[<html>Yes, where do I find it?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Academic Jasmine$<BR>Umm.... Couldn't this be an opportunity to persuade him?<BR>He may be hiding somewhere, so you better look for him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-f" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_07.ogg}<BR>Didn't you say you saw him fall down with your own eyes? Try to think about where he might be at geographically after taking that kind of injury.<BR>First... it might be better to see if there is anyone with the information at the <FONT color=#a82424>Royal Palace</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Geraint$<BR>I'll protect the descendent of the Ancient. You just go on your way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$King Cassius$<BR>Warm-hearted person.
+So young but so brave....<BR><FONT color=#7e12d2>(Connect to the Academic Station and report to Jasmine on current situation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$General Douglas$<BR>I have so much to take care of, so if it's not urgent, please come back later.<BR>(Communicate with Jasmine at the Academic Station in Saint Haven)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1" image="" itemindex="">
+      <talk_answer link_index="n519_cian-1-a" mid="29"><![CDATA[<html>Yes, see you later.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Warrior Xian$<BR>...Has the time already passed this fast?<BR>Now, <FONT color=#387206>{user_nick}</FONT>, I'll have to go and do some other work.<BR>
+See you later. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1-a" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Warrior Xian$<BR>Where did Triana go?<BR>
+Did she receive another task.... Hmm~<BR>
+<FONT color=#7e12d2>(Xian is mumbling)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_07.ogg}<BR>It would be better if you met Velskud.... Where could he be?<BR>First... it might be better to see if there is anyone with the information at the <FONT color=#a82424>Royal Palace</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-a" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$King Cassius$<BR>I've received the report, <FONT color=#387206>{user_nick}</FONT>, kind person.<BR>You're so brave, loyal to me and to the kingdom even at such a young age.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-b" mid="36"><![CDATA[<html>They are working under the Bishop's order?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$King Cassius$<BR>And the other adventurers....<BR>
+seem to be doing something by the order of the Bishop.<BR>I'm worried, since we lost many men during this war and the <FONT color=#a82424>General</FONT> is upset....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-c" mid="38"><![CDATA[<html>You shouldn't trust the Bishop too much.</html>]]></talk_answer>
+      <talk_answer link_index="n040_king_casius-2-d" mid="39"><![CDATA[<html>(My words wouldn't matter right now.)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$King Cassius$<BR>My uncle is busy with the work in the Royal Palace and the General is busy with the soldiers' treatment.<BR>Thank goodness the Bishop is taking care of other business. He's a good courtier, isn't he...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-c" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-d" mid="41"><![CDATA[<html>(Needless to say anymore.)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$King Cassius$<BR>...I'm so tired of people slandering others....<BR>
+I hope you won't do that.<BR><FONT color=#7e12d2>(Cassius waves his hand sadly. It doesn't seem like he wants to hear anymore.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-d" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-e" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$King Cassius$<BR>If you want to do something for your kingdom, go and meet the Bishop.<BR>...No, he has many who are helping him, so it might be better if you do something else.<BR>
+There is the Adventurers' Guild or the <FONT color=#a82424>General</FONT>... or.... anyway, there are a few.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-e" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-f" mid="45"><![CDATA[<html>Do you know the whereabouts of the Black Dragon?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$King Cassius$<BR><FONT color=#387206>{user_nick}</FONT>, cute girl.<BR>
+Do you have something to ask me?<BR>Your face looks worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-f" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$King Cassius$<BR>Whereabouts of the Black Dragon? ...Isn't the Black Dragon dead?!<BR>I heard that it was completely eliminated...?<BR><FONT color=#7e12d2>(I made him feel uneasy. Cassius starts to tremble and tries to find the General.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$King Cassius$<BR><FONT color=#a82424>General</FONT>!! General~ the Black Dragon is dead, right? Right?<BR>It's safe here... isn't it...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="49"><![CDATA[<html>Did you find any traces of the Black Dragon?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$General Douglas${action:Talk}<BR>Hmm... I just heard that the rescued Prophet is only sleeping. But we did the best we could. So let the King handle what to do about the <FONT color=#a82424>Prophet</FONT>.<BR>
+Anyway, you all did a great job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="52"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$General Douglas$<BR>Hmm? Black Dragon? ...I received a report that it was injured and it fell from the sky after fighting with the <FONT color=#a82424>Gold Dragon</FONT>....<BR>We didn't find any traces of it at the Dark Overlord Keep.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="54"><![CDATA[<html>Contamination at the Foothills of Black Mountain?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$General Douglas$<BR>Anyway, maybe because of the blood the Black Dragon spilled while falling from the sky above the Dark Overlord Keep, contamination at the <FONT color=#a82424>Foothills of Black Mountain</FONT> is getting worse.<BR>
+This isn't good since we don't have the manpower to think of that right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-d" mid="56"><![CDATA[<html>Will it affect there, too?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$General Douglas$<BR>I mean at the <FONT color=#a82424>Deserted Woods</FONT>. On top of the problem at the Dried Marissa Spring, everyday is a mess.. When the blood from monsters flowing, the land gets contaminated, and we won't be able to harvest on that land....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-d" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-e" mid="58"><![CDATA[<html>(Then maybe...)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$General Douglas$<BR>Yes, the <FONT color=#a82424>Dark Overlord Gate</FONT> is located at an elevated position.<BR>
+Due to geographical reasons, the <FONT color=#a82424>Deserted Woods</FONT>, located right by the gate, cannot escape the contamination.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-e" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-f" mid="60"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$General Douglas$<BR>It's a hectic situation trying to tie the loose ends from the war and checking the status of the soldiers.<BR>
+If you are free, please give us a hand.<BR><FONT color=#7e12d2>(Douglas moves around hastily.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-f" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-!next" mid="62"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">382</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3820,,,,,,</exe>
+         <exe type="complete">382</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="b" />
+   <exelink qstep="1" npc="n393_academic_station" sub="c" />
+   <exelink qstep="1" npc="n393_academic_station" sub="d" />
+   <exelink qstep="1" npc="n393_academic_station" sub="e" />
+   <exelink qstep="1" npc="n393_academic_station" sub="f">0,1</exelink>
+   <exelink qstep="2" npc="n040_king_casius" sub="b" />
+   <exelink qstep="2" npc="n040_king_casius" sub="c" />
+   <exelink qstep="2" npc="n040_king_casius" sub="d" />
+   <exelink qstep="2" npc="n040_king_casius" sub="d" />
+   <exelink qstep="2" npc="n040_king_casius" sub="e" />
+   <exelink qstep="2" npc="n040_king_casius" sub="f">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="e" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="f">0</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="!next">1</exelink>
+   <journal_data recompense="3820" quest_title="할 일은 지금부터" chapterid="5" quest_level="30" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Mission Starts Now I]]></title>
+         <contents mid="64"><![CDATA[<html>Connect to the Academic Station and tell Jasmine the recent activities.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="66"><![CDATA[Connect to the Academic Station and report to Jasmine.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Mission Starts Now II]]></title>
+         <contents mid="68"><![CDATA[<html>Go to the Saint Haven Royal Palace and meet someone who might have some information.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="70"><![CDATA[Go to Saint Haven Royal Palace to gather information.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Mission Starts Now III]]></title>
+         <contents mid="72"><![CDATA[<html>King Cassius is leaning on the General. Need to talk to the General to find out what's been happening.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="74"><![CDATA[Talk to General Douglas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>443</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

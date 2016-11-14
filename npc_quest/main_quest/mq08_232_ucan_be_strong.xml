@@ -1,0 +1,241 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_232_ucan_be_strong</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>232</qid>
+      <designer>김인정</designer>
+      <qlevel>16</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>233</nextqid>
+      <nextqname>mq08_233_get_the_wind</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[Can Become Stronger]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>547</npcid>
+         <npcename>n547_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>553</npcid>
+         <npcename>n553_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Even a young girl like you is working hard for Calderock Village...<BR>
+Ahh.... I'm so touched...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-noquest" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Warrior Xian$<BR>Evil Dark Elf...<BR>Let's cheer up and protect Calderock Village!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-noquest" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Warrior Xian$<BR>Evil Dark Elf...<BR>Let's cheer up and protect Calderock Village!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_01.ogg}<BR>Where are you going so busily?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Even a young girl like you is working hard for Calderock Village...<BR>
+Ahh.... I'm so touched...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1" image="" itemindex="">
+      <talk_answer link_index="n547_cian-1-a" mid="144"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>You've come.<BR>Now, I'll tell you what the request is~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-a" image="QM_Broo_White.dds" itemindex="">
+      <talk_answer link_index="n547_cian-1-b" mid="146"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$Warrior Xian$<BR>When I carefully observed the monsters' gathering, the brethrens caught my eyes. Since they use evil spells, they are very difficult to handle, so the Adventurers' Guild is having a hard time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-b" image="QM_Broo_White.dds" itemindex="">
+      <talk_answer link_index="n547_cian-1-c" mid="148"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Warrior Xian$<BR>Recently, the brethrens are flocking to the <FONT color=#a82424>Blizzard Plain</FONT>.<BR>From the looks of the last gathering, I think those monsters are up to something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-c" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n547_cian-1-d" mid="153"><![CDATA[<html>(Searches the data)</html>]]></talk_answer>
+      <talk_question mid="149"><![CDATA[<html>$Warrior Xian$<BR>According to <FONT color=#a82424>Triana</FONT> and the others' investigation, the brethrens are naturally inclined towards magical items, so they build a base where they can loot them easily. I'm trying to find such places near <FONT color=#a82424>Blizzard Plain</FONT> that might interest those brethrens.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-d" image="QW_22.dds" itemindex="">
+      <talk_answer link_index="n547_cian-1-e" mid="155"><![CDATA[<html>It's the Silent Monastery Main Hall.</html>]]></talk_answer>
+      <talk_question mid="154"><![CDATA[<html>$File No. 232-1$<BR><FONT color=#086171>{monster:559}... A dangerous monster that uses more of arcane magic than spells. It uses the Silent Monastery Main Hall near the Blizzard Plain as its base.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-e" image="QW_22.dds" itemindex="">
+      <talk_answer link_index="n547_cian-1-f" mid="157"><![CDATA[<html>I'm happy I could be of any help~</html>]]></talk_answer>
+      <talk_question mid="156"><![CDATA[<html>$Warrior Xian$<BR>Wow~ that's a really cool device!!<BR>
+<FONT color=#7e12d2>(Xian stares at the communicator)<BR></FONT>Then I'll head out to the <FONT color=#a82424>Silent Monastery Main Hall</FONT> right away.<BR>Thanks to you, <FONT color=#387206>{user_nick}</FONT>, things got a lot easier.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-f" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n547_cian-1-g" mid="160"><![CDATA[<html>You'll become stronger.</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Warrior Xian$<BR>I'll cheer up and go for the sake of the Calderock Village! Hehe. And someday, I'll become stronger than <FONT color=#a82424>Barnac</FONT> and meet my father!<BR>...Well, I'm really weak for now.<BR>
+<FONT color=#7e12d2>(Xian scratches his head)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-g" image="QW_22.dds" itemindex="">
+      <talk_answer link_index="n547_cian-1-h" mid="162"><![CDATA[<html>Yes, let's go.</html>]]></talk_answer>
+      <talk_question mid="161"><![CDATA[<html>$Warrior Xian$<BR>Yes! I'll become stronger! ...Hmm, it feels good being supported by a little girl with such a serious face... Haha.<BR>
+Anyway <FONT color=#387206>{user_nick}</FONT>, let's go to the <FONT color=#a82424>Silent Monastery Main Hall</FONT>~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-1-h" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="163"><![CDATA[<html>$Warrior Xian$<BR>Eliminate {monster:559}, and report to <FONT color=#a82424>Adverturer's Guild Master Deckard</FONT> at Calderock Village.<BR>If we succeed, the people in Calderock Village can finally have some rest. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n553_cian-1" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="150"><![CDATA[<html>$Warrior Xian$<BR>Let's not hesitate any longer and head to the <FONT color=#a82424>Cristal Stream</FONT>.<BR>I'll tell you about another request I received when we get there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="151"><![CDATA[<html>$Academic Jasmine$<BR>Oh, you're going to meet <FONT color=#a82424>Warrior Xian</FONT> at the <FONT color=#a82424>Cristal Stream</FONT>?<BR>Hmm... I see. Go on.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n547_cian-2" image="QW_22.dds" itemindex="">
+      <talk_question mid="164"><![CDATA[<html>$Warrior Xian$<BR>Eliminate {monster:559}, and report to <FONT color=#a82424>Adverturer's Guild Master Deckard</FONT> at the Calderock Village.<BR>Let's head to the <FONT color=#a82424>Silent Monastery Main Hall</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QW_22.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-a" mid="166"><![CDATA[<html>(Reports the situation)</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Refusal}<BR>Oh! I heard the news. You went to the <FONT color=#a82424>Silent Monastery Main Hall</FONT> with <FONT color=#a82424>Warrior Xian</FONT>, right?<BR>Okay, how's the situation over there?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-a" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-b" mid="168"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="167"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>Hmm, I see. But, if we look at the incidents up until now, that <FONT color=#a82424>Dark Elf</FONT> seems so insignificant contrary to her notoriety. Maybe, she is only a small fry in charge of throwing us off the track.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-b" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-c" mid="170"><![CDATA[<html>I'm not a little girl!!</html>]]></talk_answer>
+      <talk_question mid="169"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>There is something fishy going on....<BR>
+<FONT color=#7e12d2>(Deckard feels his mustache)<BR></FONT>Oh, I have another favor to ask you. Are you okay with it, little girl? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-3-!next" mid="172"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">232</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="5,6,7">559</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200559</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 559);</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2320,,,,,,</exe>
+         <exe type="complete">232</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n547_cian" sub="b" />
+   <exelink qstep="1" npc="n547_cian" sub="c" />
+   <exelink qstep="1" npc="n547_cian" sub="d" />
+   <exelink qstep="1" npc="n547_cian" sub="e" />
+   <exelink qstep="1" npc="n547_cian" sub="f" />
+   <exelink qstep="1" npc="n547_cian" sub="g" />
+   <exelink qstep="1" npc="n547_cian" sub="h">0,2,3,1</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="c">0</exelink>
+   <exelink qstep="3" npc="n024_adventurer_guildmaster_decud" sub="!next">1</exelink>
+   <journal_data recompense="2320" quest_title="강해질 수 있습니다" chapterid="3" quest_level="16" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>4,n547</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>547</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="174"><![CDATA[Can Become Stronger I]]></title>
+         <contents mid="175"><![CDATA[<html>You have destroyed the Hobgoblin Manufacturing Facility. Go to the Cristal Stream and talk to Warrior Xian.<BR>
+ <BR>
+<FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Warrior Xian</FONT></html>]]></contents>
+         <destination mid="176"><![CDATA[Talk to Warrior Xian at the Cristal Stream]]></destination>
+         <todo_msg mid="177"><![CDATA[Return to the Cristal Stream and talk to Warrior Xian.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_22.dds</contents_image>
+         <destination_pos>164,0,0</destination_pos>
+         <destination_mode>custom:161@1,162@1,163@1,164@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="178"><![CDATA[Can Become Stronger II]]></title>
+         <contents mid="179"><![CDATA[<html>Accepted Warrior Xian's request. Go to the Silent Monastery Main Hall and defeat the brethrens threatening the Calderock Village.<BR>
+ <BR>
+<FONT color=#086171>Blizzard Plain(Silent Monastery Entrance)</FONT> <FONT color=#a82424>→ Silent Monastery Main Hall</FONT></html>]]></contents>
+         <destination mid="180"><![CDATA[Defeat monsters at the Silent Monastery Main Hall]]></destination>
+         <todo_msg mid="181"><![CDATA[Defeat monsters at the Silent Monastery Main Hall.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="182"><![CDATA[Can Become Stronger III]]></title>
+         <contents mid="183"><![CDATA[<html>Silent Monastery Main Hall was the brethrens' base. You have eliminated them, so return to Calderock Village and report.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adverturer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="184"><![CDATA[Talk to Adverturer's Guild Master Deckard]]></destination>
+         <todo_msg mid="185"><![CDATA[Report to Adverturer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>231</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

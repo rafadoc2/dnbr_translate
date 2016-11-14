@@ -1,0 +1,177 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_440_take_a_step</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>440</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>여족장 루즈카의 문장	300021
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>441</nextqid>
+      <nextqname>mq11_441_end_in_failure</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[One Step Forward]]></qkname>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-accepptted" mid="7"><![CDATA[<html>(Explain how to make it.)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Since you collected the <FONT color=#a82424>Rune Fragment</FONT>, I'll try to make the Ancient Celebrant's Rune.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Hmm... <FONT color=#7e12d2>(Stas contemplates)<BR></FONT>It won't take long to make the Ancient Celebrant's Rune, if we follow this data.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-b" mid="12"><![CDATA[<html>What do you need?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Heraldry Scholar Stas$<BR>But, according to this document, you need one more thing.<BR>I don't know what it does, but it may be a device to distort the Ancient Celebrant's Rune and fix it somewhere.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-b" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2" mid="39"><![CDATA[<html>I'll try.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Heraldry Scholar Stas$<BR>The seal of a strong monster <FONT color=#a82424>{monster:951}</FONT> at <FONT color=#a82424>Flooded Downstream</FONT>.<BR>Can you get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="QW_34.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Then, go to the <FONT color=#a82424>Flooded Downstream</FONT> and find the Matriach Rhastka's Seal.<BR>I'll be waiting.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="42"><![CDATA[<html>(Ahh~ treating me like a kid again.)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Oh, you came back!!<BR>You look like a little girl, but you have some skills. I'm amazed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="44"><![CDATA[<html>What about the Ancient Celebrant's Rune?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Heraldry Scholar Stas$<BR>A grown man like me shouldn't get lazy since even a little girl like you are working so hard.<BR>I would like to be of any help to the kingdom!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-c" mid="46"><![CDATA[<html>Yes, here it is.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Of course I made it. Now, give me that seal.<BR>I'll combine it so that you don't lose it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-!next" mid="48"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">440</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">951</exe>
+         <exe type="addquestitem" num="1">300021</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300021</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200951</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4400,,,,,,</exe>
+         <exe type="delquestitem" num="-1">300021</exe>
+         <exe type="complete">440</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="accepptted">0,1</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="2">0,2,5,4,1</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="c">0</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="!next">1,2</exelink>
+   <journal_data recompense="4400" quest_title="일보전진입니다" chapterid="4" quest_level="30" quest_mark_type="1" use_item_list="300021">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[One Step Forward I]]></title>
+         <contents mid="28"><![CDATA[<html>Ask Heraldry Scholar Stas to make the Ancient Celebrant's Rune.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="30"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_34.dds</contents_image>
+         <destination_pos>344,0,0</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[One Step Forward II]]></title>
+         <contents mid="32"><![CDATA[<html>Go to the <FONT color=#a82424>Flooded Downstream</FONT> and find the Matriach Rhastka's Seal.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Entrance to the Flooded Downstream Ruins)</FONT> <FONT color=#a82424>→ Flooded Downstream</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Flooded Downstream]]></destination>
+         <todo_msg mid="34"><![CDATA[Find the Matriach Rhastka's Seal at the Flooded Downstream.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[One Step Forward III]]></title>
+         <contents mid="36"><![CDATA[<html><FONT color=#086171>Give Heraldry Scholar Stas the Matriach Rhastka's Seal.</FONT><BR>
+ <BR>
+<FONT color=#086171>Saint Haven </FONT><FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="38"><![CDATA[Return to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>439</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

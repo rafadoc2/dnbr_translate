@@ -1,0 +1,193 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_439_good_data</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>439</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>룬의 파편	300020
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>440</nextqid>
+      <nextqname>mq11_440_take_a_step</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[Victory using Data]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Hmm, if the theory is right, I'm a professional at making seals.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-accepptted" mid="7"><![CDATA[<html>(Remembers how to make it.)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_02.ogg}<BR>To do that, you need to go inside the Nest, and you need the Ancient Celebrant's Rune.<BR>Did you memorize the data I showed you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-a" mid="9"><![CDATA[<html>Rune Fragment?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine$<BR>As you may have looked at the data, in order to make an Ancient Celebrant's Rune, first, you need to collect the <FONT color=#a82424>Rune Fragment</FONT>. Then make those fragments into a complete rune by finding a core to inject power into it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-1-b" mid="12"><![CDATA[<html>I'll go and look.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Academic Jasmine$<BR>It says there are fragments of the rune at the <FONT color=#a82424>Dried Marissa Spring</FONT>.<BR>In our time, there aren't any usable energy left, but at that time, there definitely were some.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_07.ogg}<BR>When you finish collecting the Rune Fragment, go find <FONT color=#a82424>Heraldry Scholar Stas</FONT>.<BR>He'll be able to make the rune using that recipe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Hmm, if the theory is right, I'm a professional at making seals.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_0.ogg}<BR>You will be able to find fragments of the rune at the <FONT color=#a82424>Dried Marissa Spring</FONT>.<BR>They are only fragments but by collecting these fragments, you'll be able to make a complete rune so keep your eyes open and find the fragments.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Give the Rune Fragments to Heraldry Scholar Stas.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="18"><![CDATA[<html>I need a favour.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Huh? A little girl. I've never seen such a young adventurer!<BR>Oh wow....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="20"><![CDATA[<html>The Black Dragon has revived.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Oh, this seal... <FONT color=#7e12d2>(Stas becomes serious as he reads the data.)</FONT> ...I was part of the raid 50 years ago. Isn't this seal, Ancient Celebrant's Rune what I saw during that battle?<BR>
+How could a young girl like you know about this....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-c" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Is that true?! How could that dreadful thing happen again...!! <FONT color=#7e12d2>(Stas moans)<BR></FONT>Hmm, I don't know why a little girl like you are fighting this battle, but I have no reason not to help you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-d" mid="24"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I'll try to make the <FONT color=#a82424>Ancient Celebrant's Rune</FONT> by referring to the data you showed me.<BR>Give me the Rune Fragment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-!next" mid="26"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">439</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="10" exe="3,4,5" onexe="">300020</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4390,,,,,,</exe>
+         <exe type="delquestitem" num="-1">300020</exe>
+         <exe type="complete">439</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="accepptted">0,1</exelink>
+   <exelink qstep="1" npc="n393_academic_station" sub="b">0,1,2</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="d">0</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="!next">1,2</exelink>
+   <journal_data recompense="4390" quest_title="데이터의 승리입니다" chapterid="4" quest_level="30" quest_mark_type="1" use_item_list="300020">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Victory using Data I]]></title>
+         <contents mid="28"><![CDATA[<html>In order to penetrate the Nest, we need the Ancient Celebrant's Rune. Connect with Jasmine at the Academic Station and memorize the data.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="30"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_35.dds</contents_image>
+         <destination_pos>354,0,0</destination_pos>
+         <destination_mode>custom:352@4,353@4,354@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Victory using Data II]]></title>
+         <contents mid="32"><![CDATA[<html>Collect the Rune Fragment at the Dried Marissa Spring.<BR>
+<BR><FONT color=#086171>Foothills of Black Mountain(Lonely Forest Path)</FONT> <FONT color=#a82424>→ Dried Marissa Spring</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Dried Marissa Spring]]></destination>
+         <todo_msg mid="34"><![CDATA[Collect the Rune Fragment at the Dried Marissa Spring.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Victory using Data III]]></title>
+         <contents mid="36"><![CDATA[<html>Finished collecting the Rune Fragment. Go to Heraldry Scholar Stas and ask him to make the Ancient Celebrant's Rune.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven </FONT><FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="38"><![CDATA[Give the Rune Fragment to the Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>438</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

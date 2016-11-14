@@ -1,0 +1,377 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_415_stopgap</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>415</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>416</nextqid>
+      <nextqname>mq11_416_dig_for_minerals</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Temporary Expedients]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Master Archer Ithilien</FONT>... If she was the member of Silver Crescent Archers, if she was the clever Elf, then I remember her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Master Archer Ithilien</FONT> is a counter knight who participated the war 50 years ago.<BR>With such a brave knight fighting along us, I could breathe better now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Bishop Ignacio$<BR>How is the <FONT color=#a82424>Prophet</FONT> doing? I know <FONT color=#a82424>Geraint</FONT> is treating her very well, but I am a bit worried since I cannot see her.<BR>Haha... This is just an old man's worry for nothing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceptted" mid="95"><![CDATA[<html>Is there any cure for that?</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Master Archer Ithilien$<BR>The incident, <FONT color=#a82424>Rain of Plague</FONT> and the blood of Black Dragon...<BR>50 years ago, same as this time, we found a lot of victims even after ending of Dragon's Raid.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>How is the <FONT color=#a82424>Prophet</FONT> doing? I know <FONT color=#a82424>Geraint</FONT> is treating her very well, but I am a bit worried since I cannot see her.<BR>Haha... This is just an old man's worry for nothing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Master Archer Ithilien</FONT> is a counter knight who participated the war 50 years ago.<BR>With such a brave knight fighting along us, I could breathe better now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Geraint$<BR>You came here again because you are worried about the <FONT color=#a82424>descendant of the Ancients</FONT>, am I right?<BR>Don't be worried. Nobody cannot get in here except you and Argenta. Trust me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="10"><![CDATA[<html>(Ithilien slurs the end of her sentence.)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Archer Ithilien$<BR>I have not found the complete <FONT color=#a82424>Treatment</FONT> yet.<BR>If we had the treatment, then <FONT color=#a82424>The One</FONT> did not has to accept the destiny...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-b" mid="12"><![CDATA[<html>Then what should we do?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Archer Ithilien$<BR>I am sorry. I didn't mean to freak you out. I was just talking to myself.<BR>Anyway, many people including <FONT color=#a82424>Cynthia</FONT> are looking to find the treatment, but we have not found anything yet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-c" mid="14"><![CDATA[<html>What kind of medicine is it?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Archer Ithilien$<BR>We cannot cure right now, but we can <FONT color=#a82424>contain the symptom</FONT> temporarily.<BR>The medicine effect duration is based on indivivual's mental strength</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-c" image="QS_Default.dds" itemindex="300246">
+      <talk_question mid="15"><![CDATA[<html>$Master Archer Ithilien$<BR>It is called <FONT color=#a82424>Spirit Teardrop</FONT> that you can only find at the <FONT color=#a82424>Spirit Grave Tomb</FONT>.<BR>If you bring Spirit Teardrop to me I will try to make a medicine with it.<BR>I memorized the prescription for the medicine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QS_Default.dds" itemindex="300246">
+      <talk_question mid="18"><![CDATA[<html>$Master Archer Ithilien${action:talk}<BR>Please get me a <FONT color=#a82424>Spirit Teardrop</FONT> that you can only find at the <FONT color=#a82424>Spirit Grave Tomb</FONT>. Spirits of water has been disapeared a long time ago but, you may find some teardrops from stronger monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="21"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Archer Ithilien${action:talk}<BR>Then I will make the medicine.<BR>Once completed I would delivered it to the wounded soldiers imediately. Please report to <FONT color=#a82424>General Douglas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Master Archer Ithilien$<BR>The land has been contaminated because of the <FONT color=#a82424>Black Dragon</FONT>'s blood. The land of the Goddess will face the chaos if innocent lives get infected.<BR>I hope we can find the treatment as soon as possible so that we can break out of a vicious circle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Master Archer Ithilien$<BR>I saved a lot of time because of you.<BR>I will send the medicine to the injured soldiers treatment place as soon as it completes, so please report to <FONT color=#a82424>General Douglas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="25"><![CDATA[<html>The black dragon's blood was the cause of the disease.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$General Douglas$<BR>Does <FONT color=#a82424>Master Archer Ithilien</FONT> know the cause for the diseases?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-b" mid="27"><![CDATA[<html>Currently... We have no other choice.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$General Douglas${action:Talk}<BR>The evil monster is still damaging our troops even after it dies.<BR>Though, because of her, officers are minimizing their losses. But we need to have the complete treatment because this will only work for a temporary expedient. .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-c" mid="29"><![CDATA[<html>(General Douglas is resolving himself.)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$General Douglas$<BR>I, Douglas will take the responsibility for caring officers.<BR>I will not give up until the day we find the treatment.<BR>If they are completely ignoring our troops, then who will fight for our nation?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-d" mid="31"><![CDATA[<html>You are too generous with your compliments.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$general Douglas$<BR>I got your help this time again. Thank you very much.<BR><FONT color=#7e12d2>(General Douglas is strongly shaking your hand.)</FONT><BR>I will never fOgret your loyalty.<BR>Now I know why <FONT color=#a82424>Ignacio</FONT> highly praised you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-d" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$General Douglas$<BR>Since you have the full confidence of Ignacio, you must be very busy. Thank you very much for your help even though you are busy. My business is over now so go return to <FONT color=#a82424>Bishop Ignacio</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-5" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$General Douglas$<BR>Huh? Didn't you go see <FONT color=#a82424>Bishop Ignacio</FONT>?<BR>Haha. He has the full confidence on you. You should visit him every so often.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-a" mid="35"><![CDATA[<html>What are you worrying about?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Welcome, <FONT color=#a82424>Saint Haven</FONT>'s true friend.<BR>Today as same as everyday, I was worried with my deep anxiety.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-b" mid="37"><![CDATA[<html>You have to trust Geraint.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Bishop Ignacio$<BR>I know <FONT color=#a82424>Geraint</FONT> is protecting her and with her every minute. But I was worried what if some evil monsters attack the underground place while our <FONT color=#a82424>Prophet</FONT> is asleep?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-5-c" mid="39"><![CDATA[<html>I am a bit worried about that too.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Bishop Ignacio$<BR>I do, I do trust him. But you know how we weakened the Black Dragon's Nest with the <FONT color=#a82424>Ancient Celebrant's Rune</FONT>.<BR>I am just worry about if someone weakens our nest with the rune.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5-c" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Bishop Ignacio$<BR>Could you go talk to <FONT color=#a82424>Geraint</FONT> about the part that we just discussed?<BR>The problem might occurs even with the tiny suspicion so hopefully Geraint does not feel offended that we are asking about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-6-a" mid="42"><![CDATA[<html>Yes. I agree with you.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>I am worried because someone might break into the <FONT color=#a82424>Gold Dragon's Nest</FONT>. Since we actually weakened the Black Dragon's Nest with the Ancient Celebrant's Rune, we cannot so sure that nobody ever break into the Nest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-6-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Bishop Ignacio$<BR>Could you go talk to <FONT color=#a82424>Geraint</FONT> about the part that we just discussed?<BR>The problem might occurs even with the tiny suspicion so hopefully Geraint does not feel offended that we are asking about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6-a" mid="45"><![CDATA[<html>But are you not the same as them?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Geraint$<BR>If it's the Ancient Celebrant's Rune, then you don't have to worry about it.<BR>I could weaken the Nest with the Celebrant's Rune because the Black Dragon from this time and the Black Dragon from 50 years ago was created by using <FONT color=#a82424>Ancient</FONT>'s strength.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6-b" mid="47"><![CDATA[<html>We? Do you mean you and Argenta?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Geraint$<BR>The <FONT color=#a82424>Descendant of Chaos</FONT> and we are different.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6-c" mid="49"><![CDATA[<html>I see... (I didn't know Argenta is a dragon.)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Geraint$<BR>Yes. Me and Argenta, we are the only <FONT color=#a82424>Descendant of Sentinel</FONT>.<BR>At least I know of.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6-c" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Geraint$<BR>It seems like you don't have any other business.<BR>Go back to him who sent you here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-7" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Geraint$<BR>The <FONT color=#a82424>Nest</FONT> is inviolable territory. If someone break into the Nest, then that someone cannot exhibit their full strength as long as the <FONT color=#a82424>owner</FONT> stays alive.<BR>So tell those humans that they don't have to worry about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-a" mid="53"><![CDATA[<html>He said, no need to be worried.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>You are here.<BR>What did <FONT color=#a82424>Geraint</FONT> say?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-a" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-b" mid="55"><![CDATA[<html>(Bishop is unusually smiling benignantly.)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Bishop Ignacio$<BR>Hm... I see. So each dragon receives different effects of strength.<BR>Okay. So someone cannot break into the Next with the <FONT color=#a82424>Ancient Celebrant's Rune</FONT>. I'm so relief to hear that news.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-c" mid="57"><![CDATA[<html>(Show Geraint's Pendent.)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Bishop Ignacio$<BR>You can enter the place because... What did you say last time? Because... Oh! Some kind of pendent that you received from <FONT color=#a82424>Geraint</FONT>, am I right?<BR>Can I take a look at it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-c" image="QS_Default.dds" itemindex="300022">
+      <talk_answer link_index="n039_bishop_ignasio-7-d" mid="59"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Bishop Ignacio$<BR>What a delicate workmanship this is. I can't believe I am actually seeing a dragon's item. What a rare sight.<BR>Make sure you don't lose it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-d" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-!next" mid="61"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">415</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1007</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300246</exe>
+         <exe type="addquestitem" num="1">300246</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201007</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300246</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4151,4151,4152,4153,4154,4154,4156</exe>
+         <exe type="complete">415</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c">0,2,8,3,1</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="a">0,1,2</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="d">0,1</exelink>
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="5" npc="n039_bishop_ignasio" sub="c">0,1</exelink>
+   <exelink qstep="6" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="6" npc="n216_geraint_wounded" sub="c">0,1</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="b" />
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="c" />
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="d">0</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="!next">1</exelink>
+   <journal_data recompense="1:4151,2:4152,3:4153,4:4154,5:4154,6:4156" quest_title="임시방편" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="300246">
+      <journal index="1">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Location of the medicine]]></title>
+         <contents mid="64"><![CDATA[<html>Talk to Master Archer Ithilien about the <FONT color=#a82424>Medicine</FONT>.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="66"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_37.dds</contents_image>
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@1,372@1,373@1,374@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Collect the Spirit Teardrop]]></title>
+         <contents mid="68"><![CDATA[<html>Collect the <FONT color=#a82424>Spirit Teardrop</FONT> at <FONT color=#a82424>Spirit Grave Tomb</FONT>. It seems like you have make the medicine with Spirit Teardrop. It seems like the strongest monter has the spirit teardrop.<BR><BR><FONT color=#086171>Hermalte Port(River Ruins Path)</FONT> <FONT color=#a82424>→ Graves of Unrest</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Collect the Spirit Teardrop at Spirit Grave Tomb]]></destination>
+         <todo_msg mid="70"><![CDATA[Obtain the Spirit Teardrop at Spirit Grave Tomb]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Master Archer Ithilien's Medicine]]></title>
+         <contents mid="72"><![CDATA[<html>You have been collected the <FONT color=#a82424>Spirit Teardrop</FONT>. Return and report to Master Archer Ithilienn.<BR> <BR><FONT color=#086171>Saint Haven </FONT>→ Master Archer Ithilien</html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="74"><![CDATA[Please deliver the Spirit Teardrop to Master Archer Ithilien.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Report to the General]]></title>
+         <contents mid="76"><![CDATA[<html><FONT color=#a82424>Master Archer Ithilien</FONT> said she will make the medicine. Report the situation to General Douglas.<BR> <BR><FONT color=#086171>Saint Haven </FONT>→ General Douglas</html>]]></contents>
+         <destination mid="77"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="78"><![CDATA[You have been completed the request. Please report to General Douglas.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Other business]]></title>
+         <contents mid="80"><![CDATA[<html>You have completed all the business. Go to Bishop Ignacio.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="82"><![CDATA[Please talk to Bishop Ignacio if he has other business for you.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Ask Geraint]]></title>
+         <contents mid="84"><![CDATA[<html>Can <FONT color=#a82424>Ancient Celebrate's Rune</FONT> also weaken the Geraint's Nest? Since Bishop Ignacio is concerned about this. Please talk to <FONT color=#a82424>Geraint</FONT> and confirm with him about thist.<BR> <BR><FONT color=#086171>Saint Haven (Underground Secret Region)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Talk to Geraint]]></destination>
+         <todo_msg mid="86"><![CDATA[Please deliver the Bishop Ignacio's question to Geraint.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="87"><![CDATA[The Dragon's Response]]></title>
+         <contents mid="88"><![CDATA[<html>Return the answer from Geraint to Bishop Ignacio.<BR> <BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="89"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="90"><![CDATA[Please pass Geraint's answer to Bishop Ignacio]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>414</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

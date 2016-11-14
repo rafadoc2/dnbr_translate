@@ -1,0 +1,361 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_395_realize_foreboding</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>395</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>396</nextqid>
+      <nextqname>mq11_396_last_hope</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Sense of Foreboding is Correct]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>220</npcid>
+         <npcename>n220_elite_soldier_wounded</npcename>
+         <npckname>부상당한 정예병사</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>519</npcid>
+         <npcename>n519_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Geraint$<BR>Only thing here is the sleeping girl and the non-human.<BR>For you, the energetic outside world suits you better.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Injured Elite Soldier$<BR>Ahh....<BR><FONT color=#7e12d2>(Can't seem to talk due to severe injury.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$King Cassius$<BR>The Prophet... didn't wake up yet...?<BR>Is it because I'm not good enough? Is it...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-noquest" image="" itemindex="">
+      <talk_question mid="208"><![CDATA[<html>$Warrior Xian$<BR>I will do my best to protect Saint Haven!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="9"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_03.ogg}<BR>Don't worry about the Serpentra.<BR>The other adventurers will defeat it.
+You just need to take care of the <FONT color=#a82424>Prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="139"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_08.ogg}<BR>Go to <FONT color=#a82424>King Cassius</FONT> and keep a close lookout. I still don't understand why Geraint lifted the Nest and disappeared or where the Prophet had gone to. I don't understand.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-1" image="" itemindex="">
+      <talk_question mid="140"><![CDATA[<html>$Injured Elite Soldier$<BR>Ahh....<BR><FONT color=#7e12d2>(Can't seem to talk due to severe injury.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$Geraint$<BR>Only thing here is the sleeping girl and non-human.<BR>For you, energetic outside world suits you better.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="144"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$King Cassius$<BR>Brave <FONT color=#387206>{user_nick}</FONT>, in this situation, what...<BR>
+What...... what should I do?<BR><FONT color=#7e12d2>(He's shaking in fear.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="146"><![CDATA[<html>Who ambushed?</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$King Cassius$<BR>It's a state of emergency.<BR>
+The <FONT color=#a82424>scout</FONT> was ambushed, and they had to retreat leaving the wounded behind.<BR>What should I do....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-c" mid="148"><![CDATA[<html>Should I go and check?</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$King Cassius$<BR>They said they will send soldiers to check that....<BR>
+I'm not relieved.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-c" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2" mid="210"><![CDATA[<html>Where do I have to go?</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$King Cassius$<BR>Oh, would you? You're such a brave girl, <FONT color=#387206>{user_nick}</FONT>....<BR>I feel reassured.<BR>
+<FONT color=#7e12d2>(Cassius is genuinely happy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1" image="" itemindex="">
+      <talk_question mid="211"><![CDATA[<html>$Warrior Xian$<BR>I will do my best to protect Saint Haven!<BR>I hope <FONT color=#387206>{user_nick}</FONT> joins me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="QW_39.dds" itemindex="">
+      <talk_question mid="212"><![CDATA[<html>$King Cassius$<BR>The wounded soldiers who cannot retreat are at the <FONT color=#a82424>Captain Darlant's Base</FONT>.<BR>Go and find out what that evil monster is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-2" image="" itemindex="">
+      <talk_question mid="213"><![CDATA[<html>$Geraint$<BR>...Was the Serpentra really revived?<BR>
+I don't understand. Why did he do such a meaningless act...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-2" image="" itemindex="">
+      <talk_answer link_index="n220_elite_soldier_wounded-2-a" mid="215"><![CDATA[<html>Are you alright?</html>]]></talk_answer>
+      <talk_question mid="214"><![CDATA[<html>$Injured Elite Soldier$<BR>Ahh...! Beast...! A huge beast...<BR>It went that way...!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-2-a" image="" itemindex="">
+      <talk_answer link_index="n220_elite_soldier_wounded-2-b" mid="217"><![CDATA[<html>Sea Beast?!</html>]]></talk_answer>
+      <talk_question mid="216"><![CDATA[<html>$Injured Elite Soldier$<BR>Ahh... I'm... alright... Need to go to the Royal Palace to report...!!<BR>A huge... Sea Beast... appeared... hurry...<BR>
+We have to hurry... and tell them!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-2-b" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n220_elite_soldier_wounded-3" mid="219"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="218"><![CDATA[<html>$Injured Elite Soldier$<BR>Monsterous... <FONT color=#a82424>Serpentra</FONT>... Serpentra appeared!<BR>Hurry, report... to the <FONT color=#a82424>Royal Palace</FONT>...!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n220_elite_soldier_wounded-3" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="220"><![CDATA[<html>$Injured Elite Soldier$<BR>Thank... you... Ahh....!!.<BR><FONT color=#7e12d2>(The Elite Soldier can't seem to talk anymore.</FONT><BR>
+<FONT color=#7e12d2>(Hurry back to the Royal Palace and report.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-a" mid="223"><![CDATA[<html>Calm down.</html>]]></talk_answer>
+      <talk_question mid="222"><![CDATA[<html>$King Cassius$<BR>What? I can't believe the <FONT color=#a82424>Serpentra</FONT> appeared again...!<BR>
+I thought that monster was eliminated by the <FONT color=#a82424>Six Heroes</FONT> 50 years ago, what happened?<BR>
+Is it because I lack leadership...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3-a" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-4" mid="225"><![CDATA[<html>(Now, what should I do?)</html>]]></talk_answer>
+      <talk_question mid="224"><![CDATA[<html>$King Cassius$<BR>Oh, okay. I'll discuss this with the General and my uncle and decide on what to do.<BR>Thank you for telling me. Brave girl!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-3" image="" itemindex="">
+      <talk_answer link_index="n519_cian-3-a" mid="227"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="226"><![CDATA[<html>$Warrior Xian$<BR>Did you hear that the Serpentra has returned?<BR>It's time for us to save Saint Haven once again!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-3-a" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="228"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>I'm going with Geraint to defeat the Serpentra.<BR><FONT color=#387206>{user_nick}</FONT>, will you come with us?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-4" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="229"><![CDATA[<html><FONT color=#7e12d2>(Go to Velskud at the Foothills of Black Mountain and report on the situation and discuss what to do.)</FONT><BR>
+<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-4" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="230"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_06.ogg}<BR>Serpentra appeared? What about <FONT color=#a82424>Velskud</FONT>...? Did you meet him?<BR>Now, according to our records, the Prophet will disappear and we have to do something about it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="232"><![CDATA[<html>(Geraint moans)</html>]]></talk_answer>
+      <talk_question mid="231"><![CDATA[<html>$Geraint$<BR>Serpentra...<BR>
+We had put in much effort so that it would never revive, but now this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-b" mid="235"><![CDATA[<html>I'll protect the Prophet.</html>]]></talk_answer>
+      <talk_question mid="233"><![CDATA[<html>$Geraint$<BR>As I vowed to protect Saint Haven, I have no choice but to defeat the Serpentra.<BR>I'm going with <FONT color=#a82424>Warrior Xian</FONT> to where the beast was sighted.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-b" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6" mid="237"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="236"><![CDATA[<html>$Geraint$<BR>The Nest isn't lifted even when I leave my place to fight the beast.<BR>But if you wish so, please take care of it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="238"><![CDATA[<html>$Geraint$<BR>Now, I better go.<BR><FONT color=#7e12d2>(Go to the Academic Station and report to Jasmine on the current situation.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-a" mid="241"><![CDATA[<html>Yes, I decided to stay.</html>]]></talk_answer>
+      <talk_question mid="239"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_04.ogg}<BR>
+The Serpentra has appeared.<BR>But <FONT color=#a82424>Geraint</FONT> and the other adventurers are going to defeat it, so you don't have to worry. Okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-b" mid="243"><![CDATA[<html>She will know the location of the Monolith.</html>]]></talk_answer>
+      <talk_question mid="242"><![CDATA[<html>$Academic Jasmine$<BR>Good. This is our chance to take the <FONT color=#a82424>Prophet</FONT>.<BR>We failed to find out where the <FONT color=#a82424>Monolith</FONT> is located, but if the Prophet wakes up, the problem will be solved.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-c" mid="245"><![CDATA[<html>But why would the Nest be lifted?</html>]]></talk_answer>
+      <talk_question mid="244"><![CDATA[<html>$Academic Jasmine$<BR>Yes, so go to the <FONT color=#a82424>Secret Area in the Basement of the Royal Palace</FONT> and keep an eye on the Prophet.<BR>It would be better if we could wake her up, but we don't know when the Nest will be lifted.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-d" mid="247"><![CDATA[<html>Only speculations.</html>]]></talk_answer>
+      <talk_question mid="246"><![CDATA[<html>$Academic Jasmine$<BR>Well.... maybe after defeating the Serpentra, <FONT color=#a82424>Geraint</FONT> could feel disgusted by humans and just leave.<BR>Or some other problem could emerge and suddenly, he has to move the Nest....<BR>
+<FONT color=#7e12d2>(Jasmine tilts her head.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-d" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-!next" mid="249"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="248"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">395</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3950,,,,,,</exe>
+         <exe type="complete">395</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="c" />
+   <exelink qstep="1" npc="n040_king_casius" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n220_elite_soldier_wounded" sub="b" />
+   <exelink qstep="2" npc="n220_elite_soldier_wounded" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n040_king_casius" sub="4">0,1</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n393_academic_station" sub="b" />
+   <exelink qstep="6" npc="n393_academic_station" sub="c" />
+   <exelink qstep="6" npc="n393_academic_station" sub="d">0</exelink>
+   <exelink qstep="6" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="3950" quest_title="나쁜 예감은 적중합니다" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="192"><![CDATA[Sense of Foreboding is Correct I]]></title>
+         <contents mid="193"><![CDATA[<html>Don't know when the Serpentra will revive. Talk to the king and see if he knows anything.<BR>
+<BR><FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="194"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="195"><![CDATA[Talk to King Cassius.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_39.dds</contents_image>
+         <destination_pos>392,n220</destination_pos>
+         <destination_mode>custom:391@1,392@1</destination_mode>
+         <statemark_npcid>220</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="250"><![CDATA[Sense of Foreboding is Correct II]]></title>
+         <contents mid="251"><![CDATA[<html>To find out what the unknown monster is, go to the Captain Darlant's Base where it was sighted.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Forsaken Islet Transport)</FONT> <FONT color=#a82424>→ Captain Darlant's Base</FONT></html>]]></contents>
+         <destination mid="252"><![CDATA[Talk to a wounded soldier at the Captain Darlant's Base]]></destination>
+         <todo_msg mid="253"><![CDATA[Meet a wounded soldier at the Captain Darlant's Base]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="254"><![CDATA[Sense of Foreboding is Correct III]]></title>
+         <contents mid="255"><![CDATA[<html>According to the wounded soldier, the monster that attacked them was Serpentra. Report to King Cassius on what the monster is.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="256"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="257"><![CDATA[Return to King Cassius and report.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13,0,0</destination_pos>
+         <destination_mode>custom:13@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="258"><![CDATA[Sense of Foreboding is Correct IV]]></title>
+         <contents mid="259"><![CDATA[<html>Meet Velskud at the Foothills of Black Mountain and tell him what happened.<BR><FONT color=#7e12d2></FONT><BR><BR><BR><FONT color=#086171>Foothills of Black Mountain</FONT> → Velskud</html>]]></contents>
+         <destination mid="260"><![CDATA[Talk to Velskud at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="261"><![CDATA[Meet Velskud at the Foothills of Black Mountain.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="262"><![CDATA[Sense of Foreboding is Correct V]]></title>
+         <contents mid="263"><![CDATA[<html>Tried to tell Velskud that Serpentra had appeared, but he had already left the Foothills of Black Mountain. Go to the Basement in the Royal Palace, report to Geraint and discuss what to do next.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="264"><![CDATA[Talk to Geraint in the Basement of the Royal Palace]]></destination>
+         <todo_msg mid="265"><![CDATA[Velskud had already disappeared. Go to Geraint.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="266"><![CDATA[Sense of Foreboding is Correct VI]]></title>
+         <contents mid="267"><![CDATA[<html>Geraint is going to defeat the Serpentra with Warrior Xian. Decided to protect the Prophet, so report to Jasmine.<BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#a82424> → Academic Station</FONT></html>]]></contents>
+         <destination mid="268"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="269"><![CDATA[Connect to the Academic Station and report.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>394</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

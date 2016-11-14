@@ -1,0 +1,246 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_386_data_retrieval</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>386</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>387</nextqid>
+      <nextqname>mq11_387_temporarily_cure</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Resume Data Search]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Collect information at the Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$General Douglas$<BR>I have so much to do on my hands, so if it's not urgent, please visit me later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="" itemindex="">
+      <talk_question mid="119"><![CDATA[<html>$King Cassius$<BR>You're a good person.<BR>
+You're so young yet so brave....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-acceptted" mid="56"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Ahh. What's this? I can see wrinkles.<BR><FONT color=#7e12d2>(Kayleen puts the mirror back into her pocket and flaps her hand.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="120"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I have to get some rest now.<BR>I think our <FONT color=#a82424>young King</FONT> wants to talk to you....<BR>
+If you're not busy, why don't you go talk to him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Collect information at the Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="122"><![CDATA[<html>$General Douglas$<BR>Hmm, is that you?<BR>
+I have so much to do on my hands, so if it's not urgent, please visit me later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="125"><![CDATA[<html>Yes, but I failed</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$King Cassius$<BR>Oh, you're back, <FONT color=#387206>{user_nick}</FONT>... Young but brave girl.<BR>It seemed like you were helping Kayleen with something, is it over?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="128"><![CDATA[<html>(King sighs)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$King Cassius$<BR>Oh... waking the Prophet up. I'm sorry to hear that.<BR>
+The Bishop tried to wake her up but also failed....<BR>What if the Prophet doesn't wake up....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-c" mid="130"><![CDATA[<html>What do you mean after effects?</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$King Cassius$<BR>I'm worried about the after effects among the soldiers and the Prophet....<BR>
+Mumbling. This is serious....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="131"><![CDATA[<html>$King Cassius$<BR><FONT color=#a82424>General Douglas</FONT> gave a report on that matter. I... don't know much about diseases....<BR>The adventurers who came with you are going out to investigate. Maybe you should go and listen to the story....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="133"><![CDATA[<html>$King Cassius$<BR><FONT color=#a82424>General Douglas</FONT> is very concerned with the soldiers' aftereffects....<BR>I'm so worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-a" mid="136"><![CDATA[<html>I heard the soldiers are suffering from after effects.</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$General Douglas${action:Talk}<BR>Oh, <FONT color=#387206>{user_nick}</FONT>, you've done a great job last time.<BR>Though you were young, you were very brave which inspired many of the soldiers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-b" mid="138"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$General Douglas$<BR>Oh, did you come because of that? Frankly, in this battle... as the <FONT color=#a82424>Gold Dragon</FONT> showed up, meritorious services the soldiers made were pacified. Also, we didn't not give the injured soldiers the appropriate attention they needed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-c" mid="140"><![CDATA[<html>What kind of symptoms?</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$General Douglas$<BR>Meanwhile, I'm getting worried that there are many injured soldiers showing unusual symptoms.<BR>
+In order to treat those the right way, we must find out what's causing these symptoms... It's not easy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-c" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-d" mid="142"><![CDATA[<html>Should I try and find out?</html>]]></talk_answer>
+      <talk_question mid="141"><![CDATA[<html>$General Douglas$<BR>The symptoms are high fever and strange things covering their bodies. Then, part of their bodies start to mutate.<BR>
+I don't know what to make of this disease.<BR>Maybe they acquired some sort of poison when they were at the <FONT color=#a82424>Dark Overlord Keep</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-e" mid="144"><![CDATA[<html>I'll go and ask my sister.</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$General Douglas$<BR>Oh! Will you really? I'm sorry... to ask you so many favours when you're not even affiliated to the Royal Palace.<BR><FONT color=#a82424>(Douglas scratches his head)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-e" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3" mid="146"><![CDATA[<html>Well, please wait for a moment.</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$General Douglas$<BR>Hmm? <FONT color=#a82424>Sister</FONT>? So you had a sister! But why would you ask your sister about a disease?<BR>Top scholars in the Royal Palace gave up trying to find out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="147"><![CDATA[<html>$General Douglas${action:Talk}<BR>I have no choice but to ask anyone who might know something about the disease since curing the injured soldiers is the top priority.<BR>I hope that little girl's <FONT color=#a82424>sister</FONT> knows what's causing these symptoms.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-a" mid="150"><![CDATA[<html>Do you know what's causing this?</html>]]></talk_answer>
+      <talk_question mid="149"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_04.ogg}<BR>Hmm? Unusual after effects?<BR>Most of the soldiers who had participated in the battle against the <FONT color=#a82424>Black Dragon</FONT> are showing similar symptoms.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-b" mid="152"><![CDATA[<html>(Open the data)</html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$Academic Jasmine$<BR>There are quite a few records left from the Royal Palace, so I'll take a look.<BR><FONT color=#7e12d2>(Jasmine searches the data)</FONT><BR>
+Umm... oh, this must be it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-c" mid="154"><![CDATA[<html>Then, Velskud is the reason...?</html>]]></talk_answer>
+      <talk_question mid="153"><![CDATA[<html>$Academic Jasmine$<BR>A contamination called the <FONT color=#a82424>Catastrophic Rain</FONT>. It mutates the soil and the living organisms due to <FONT color=#a82424>dragon's blood</FONT>.<BR>A strong monster's blood eats other organism's physical and mental energy. This may be it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3-c" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-3-!next" mid="156"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">386</exe>
+         <exe type="talk" npc="n038_royal_magician_kalaen">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3860,,,,,,</exe>
+         <exe type="complete">386</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="e" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="b" />
+   <exelink qstep="3" npc="n393_academic_station" sub="c">0</exelink>
+   <exelink qstep="3" npc="n393_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="3860" quest_title="데이터 검색을 재개합니다" chapterid="5" quest_level="32" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="157"><![CDATA[Resume Data Search I]]></title>
+         <contents mid="158"><![CDATA[<html>Failed to wake the Prophet up. It seems King Cassius wants to talk, so listen to his story.<BR><BR><FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="159"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="160"><![CDATA[Talk to King Cassius.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="161"><![CDATA[Resume Data Search II]]></title>
+         <contents mid="162"><![CDATA[<html>Some of the soldiers who fought the battle at the Dark Overlord Keep have after effects. Listen to the details from General Douglas.<BR><BR><FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="163"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="164"><![CDATA[Go to General Douglas and listen to the soldiers' after effects.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="165"><![CDATA[Resume Data Search III]]></title>
+         <contents mid="166"><![CDATA[<html>Ask Jasmine for advice on the soldiers' after effects.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="167"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="168"><![CDATA[Connect to the Academic Station and ask Jasmine for advice.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>385</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

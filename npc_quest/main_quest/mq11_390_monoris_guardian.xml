@@ -1,0 +1,489 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_390_monoris_guardian</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>390</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>391</nextqid>
+      <nextqname>mq11_391_black_medicine</nextqname>
+      <nextqnpc>n393_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[Who's the Guardian of Monolith]]></qkname>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Geraint$<BR>Velskud?<BR>...I don't know why you would say that name.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Master Archer Ithilien$<BR>A year or ten years in the past is already the past.<BR>What you remember is what's important.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-noquest" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>There is a definite solution for our world....<BR>It's so difficult to achieve.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Thank you for telling me Geraint's story.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="11"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Having heard that he is well, my mind is finally at ease. Haha.<BR>In that sense... I'm sorry but I would like to ask you another favour.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I wasn't the only one who couldn't get out of the shadow 50 years ago.<BR>I think <FONT color=#2b2723>she</FONT> also deserves a chance.<BR>I want you to meet <FONT color=#a82424>Master Archer Ithilien</FONT>. Please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Geraint$<BR>A child with many questions.<BR>I heard a human child has much curiosity.<BR>
+You must really be a human child.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>There is a definite solution for our world...<BR>It's so difficult to achieve.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Master Archer Ithilien$<BR>A year or ten years in the past is already the past.<BR>What you remember is what's important.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR><FONT color=#a82424>Master Archer Ithilien</FONT> followed Nerwin to that battle 50 years ago.<BR>She also lived her life with unexplained questions.<BR>
+I want you to listen to that story. Please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-a" mid="19"><![CDATA[<html>(Listen to the story)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Archer Ithilien$<BR>I heard the story from Stas. <FONT color=#a82424>The one</FONT> I've been trying to meet for a very long time is currently at the Saint Haven Royal Palace.<BR>
+And... only a handful of adventurers have access to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-a" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-b" mid="22"><![CDATA[<html>(Another fairytale)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Archer Ithilien$<BR>50 years ago, I accompanied Queen Narcilia to the Black Dragon Raid....<BR>Well, she was still called <FONT color=#a82424>Nerwin</FONT> at the time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-c" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Master Archer Ithilien$<BR>The troops were thought to be a coalition of humans and Elves. When a <FONT color=#a82424>dragon</FONT> appeared amongst us, we were in chaos.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-c" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-d" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Archer Ithilien$<BR>The Gold Dragon... We were so surprised when we realized that our leader, <FONT color=#a82424>Geraint</FONT> turned into a dragon.<BR>
+After the war, Karacule and Barnac attacked him and said he was a traitor.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-e" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Archer Ithilien$<BR>Many people died and got injured.<BR>But <FONT color=#a82424>Geraint</FONT> disappeared with <FONT color=#a82424>Argenta</FONT> without any apology or explanation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-e" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-f" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Archer Ithilien$<BR><FONT color=#a82424>Lady Nerwin</FONT> was injured because she was <FONT color=#a82424>contaminated</FONT> by the Black Dragon's blood, and was quickly transferred to <FONT color=#a82424>Anu Arendel</FONT>. After that, she never left Anu Arendel.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-f" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-g" mid="33"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Master Archer Ithilien$<BR>Until she left, Lady Nerwin wanted to know...<BR>
+What <FONT color=#a82424>those two</FONT> were trying to do...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-g" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Master Archer Ithilien$<BR>Please, help me solve this aged question that has been lingering in Lady Nerwin and me.<BR>Please ask <FONT color=#a82424>Geraint</FONT> what he has been doing up until this day.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Master Archer Ithilien$<BR>Please give my word to <FONT color=#a82424>Geraint</FONT>.<BR>I want to know what he has been doing for the past 50 years.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_05.ogg}<BR>You're going to go see <FONT color=#a82424>Geraint </FONT> per request from <FONT color=#a82424>Master Archer Ithilien</FONT>?<BR>Hmm... The raid for the Black Dragon Karas dragged many lives for a long time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-a" mid="39"><![CDATA[<html>It's the same for Geraint, too.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Geraint$<BR>...Another <FONT color=#a82424>person related to the incident 50 years ago</FONT>?<BR>Even when the time had passed, nobody seems to have gotten over that period.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-b" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Geraint$<BR>......I see. It's probably the same for me, too....<BR>
+I don't think there is any being that is free from its past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-c" mid="44"><![CDATA[<html>What about Argenta?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Geraint$<BR>After the battle 50 years ago, <FONT color=#a82424>Velskud</FONT> disappeared with the Black Dragon Jewel.<BR>
+I wandered around the continent to chase Velskud, and also had to find the <FONT color=#a82424>fragments of the Chaos Dragon</FONT> and seal them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-d" mid="46"><![CDATA[<html>Can you send me to the Monolith?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Geraint$<BR>After the Goddess' Dream was contaminated by poison of corruption, the world became more and more unstable. The containments spread all over the world and the monsters became stronger. I told you this before, Argenta had to use most of her powers to support the <FONT color=#a94407>Monolith</FONT> as it was becoming weaker.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-d" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-e" mid="48"><![CDATA[<html>But I still need it.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Geraint$<BR>As I told you before, it's impossible. <FONT color=#a82424>Monolith</FONT>is a medium connecting Goddess and this world.<BR>It is a scale measuring the world and the step toward the Goddess.<BR>
+There is no way a human can withstand that kind of power.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-e" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-f" mid="50"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_answer link_index="n216_geraint_wounded-3-f" mid="51"><![CDATA[<html>You knew.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Geraint$<BR>The only people that know the location are <FONT color=#a82424>Argenta</FONT> and <FONT color=#a82424>me</FONT>.... And <FONT color=#a82424>that girl</FONT> who can see the Goddess' dream.<BR>Is that why you want to take her?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-f" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-g" mid="53"><![CDATA[<html>That's my destiny.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Geraint$<BR>I can feel your energy is different from other adventurers. Pure, but unstable....<BR>
+I can feel it in your confused voice.<BR>Do you want to get in contact with <FONT color=#a82424>Monolith</FONT> by using this girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-g" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-h" mid="55"><![CDATA[<html>Then are you going to try and kill me?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Geraint$<BR>What Argenta and I, and further on, Sentinel hope to protect is this <FONT color=#a82424>world's balance</FONT>.<BR>If someone comes in contact with the Monolith, it will cause a huge shift in the balance.<BR>
+I will never allow that to happen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-h" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-3-i" mid="57"><![CDATA[<html>But I, as well, have a destiny.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Geraint$<BR>Your will is yours. Your action is also yours to freely exercise.<BR>But if you try to break the world's balance, I will try my best to eliminate you to fulfill my destiny.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-3-i" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-4" mid="59"><![CDATA[<html>I'm sorry.</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Geraint$<BR>......I don't want to have to defeat you. All the other adventurers consider you as their colleague.<BR>
+If I defeat you, then I'll become a <FONT color=#a82424>traitor</FONT> among them, too.<BR>
+<FONT color=#7e12d2>(Geraint's face becomes painful.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-4" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Geraint$<BR>You don't have to apologize for doing what you believe in.<BR>Now, return to <FONT color=#a82424>Master Archer Ithilien</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-a" mid="64"><![CDATA[<html>(Tell her Geraint's story)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Master Archer Ithilien$<BR>I'll be listening quietly, so please, tell me his answer.<BR>I've been thinking about that question for 50 years.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-b" mid="66"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Master Archer Ithilien$<BR>To protect the world balance....<BR><FONT color=#7e12d2>(Ithilien contemplates for a long time)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-c" mid="68"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Master Archer Ithilien$<BR>I see. <FONT color=#7e12d2>(Ithilien sighs quietly)</FONT><BR>
+Since those two exist to protect the world, I had imagined they might have encountered some difficulty. But....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-c" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-d" mid="70"><![CDATA[<html>(Ithilien has a complicated look)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Master Archer Ithilien$<BR>But, was I asking too much for a dragon to understand human emotions?<BR>
+I'm not talking about complicated emotion such as love or friendship.<BR>
+Me, Nerwin... no, I assume everyone was thinking the same thing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-d" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-e" mid="72"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Master Archer Ithilien$<BR><FONT color=#a82424>Geraint</FONT> was our leader. Everyone trusted him and liked him. That's why I think Karacule and Barnac got angry when they realized who he was.<BR>They thought he was a <FONT color=#a82424>colleague</FONT>, but have been <FONT color=#a82424>betrayed</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-e" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-f" mid="75"><![CDATA[<html>Should I ask in more details?</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Master Archer Ithilien$<BR>But Geraint and Argenta left without any explanation.<BR>
+The ones left behind suffered from cold betrayal worse than a dreadful disease.<BR>
+We thought we were used and thrown away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-f" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4-g" mid="78"><![CDATA[<html>Are you really satisfied with this?</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Master Archer Ithilien$<BR>No, I won't ask anymore questions.<BR>
+I feel better knowing that they lived their lives fulfilling their destiny.<BR>They cannot go against their <FONT color=#a82424>destiny</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4-g" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Master Archer Ithilien$<BR>I'm okay now. I've decided to blow the past away on a wind.<BR>
+I also have my destiny.<BR><FONT color=#7e12d2>(Ithilien is smiling warmly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-5-a" mid="81"><![CDATA[<html>Is that your Teleja?</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Master Archer Ithilien$<BR>Did you hear some of the injured soldiers got a disease?<BR>
+That's because they were contaminated by the Black Dragon's blood.<BR>Although there is no cure, I want to do my best and help them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-5-a" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Master Archer Ithilien$<BR>The same thing happened in the battle 50 years ago. I'm here remembering then....<BR>
+Couln't you call this destiny?<BR>When you have some free time, please help me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="84"><![CDATA[<html>Are you okay if someone misunderstands or hates you?</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Geraint$<BR>...Saying... that not all the questions have been answered.<BR>
+You humans' lives are very short compared to that of the Elves and dragons.<BR>But I still don't understand why you waste your time with emotions.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-b" mid="86"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Geraint$<BR>If my colleagues consider me as a traitor, I don't have any excuses to give them.<BR>They had suffered irrepairable injuries from the battle and I did not have the ability to cure them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-b" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-c" mid="88"><![CDATA[<html>Was it Velskud?</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Geraint$<BR>Wouldn't it be better to leave and be loathed upon, since I couldn't save them?<BR>They say, <FONT color=#a82424>hatred is also a driving force for humans</FONT>...<BR>
+Someone once said that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-d" mid="90"><![CDATA[<html>Whose that?</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Geraint$<BR>Yes. 50 years ago, after Velskud ran away with the <FONT color=#a82424>Black Dragon's Jewel</FONT> did I realize there was <FONT color=#a82424>someone else</FONT> who was after the jewel. Velskud had infiltrated us under that order.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-d" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-e" mid="92"><![CDATA[<html>(The revenge that he was talking about, is it to that someone else?)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Geraint$<BR>I don't know. I can only guess....<BR>I don't want to disturb your future with this uncertain thing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-e" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-f" mid="95"><![CDATA[<html>The future him is a good man...</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Geraint$<BR>...I don't have a clue why he betrayed other colleagues.<BR>
+Also, how he lived his life afterwards.<BR>Human's strong will sometimes become a furious evilness.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-f" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-g" mid="97"><![CDATA[<html>But he's still a good man.</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Geraint$<BR>You always claimed you were from the <FONT color=#a82424>future</FONT>. <FONT color=#7e12d2>(Geraint becomes quiet for a moment)</FONT><BR>
+Even if he is your friend in the future, it doesn't change the fact that he is threatening the world this day.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-g" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-h" mid="99"><![CDATA[<html>(Is it that surprising?)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Geraint$<BR>....<BR>
+I'd never imagined he would be lenient to children.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-h" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-6" mid="101"><![CDATA[<html>(I'm sorry. But I still have a destiny to fulfill.)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Geraint$<BR>You're still a young human being. I hope you live a healthy life without thinking about the Monolith or any malice.<BR>
+This is why Argenta and I are trying our best to preserve the world's balance.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$Geraint$<BR>...I've told you too much.<BR>Try doing something else in the bright world rather than being dragged in my past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-6-a" mid="104"><![CDATA[<html>(Ithilien smiles)</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Master Archer Ithilien$<BR>You went back to Geraint?<BR>Oh my... you're so kind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-6-b" mid="106"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Master Archer Ithilien$<BR>I knew he would say that.<BR>But at least I don't despise him. I think others feel that way, too.<BR><FONT color=#7e12d2>(Ithilien is smiling warmly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-6-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Master Archer Ithilien$<BR>...Geraint is not a being to hate.<BR>If he had really betrayed us, everyone would have felt more comfortable....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-a" mid="109"><![CDATA[<html>I think so.</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_01.ogg}<BR>I see. It's been almost 100 years from our days, but the raid on the <FONT color=#a82424>Black Dragon Karas</FONT> affected many people's lives.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-b" mid="111"><![CDATA[<html>I'll keep a good lookout.</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Academic Jasmine$<BR>The Prophet is still asleep. I'm curious how the <FONT color=#a82424>Gold Dragon's Nest</FONT> will be lifted.<BR>I don't know anything yet, and there is no record of it.... I'm getting worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6-b" image="" itemindex="">
+      <talk_answer link_index="n393_academic_station-6-!next" mid="113"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">390</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">390</exe>
+         <exe type="recompense">3900,,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="e" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="f" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="g" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="i" />
+   <exelink qstep="3" npc="n216_geraint_wounded" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="e" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="f" />
+   <exelink qstep="4" npc="n044_archer_master_ishilien" sub="g">0,1</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="g" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="6" npc="n393_academic_station" sub="b">1</exelink>
+   <exelink qstep="6" npc="n393_academic_station" sub="!next">0</exelink>
+   <journal_data recompense="3900" quest_title="모노리스의 수호자는 누구입니까" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="115"><![CDATA[Who's the Guardian of Monolith I]]></title>
+         <contents mid="116"><![CDATA[<html>Finish listening to Heraldry Scholar Stas' story.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="118"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="119"><![CDATA[Who's the Guardian of Monolith II]]></title>
+         <contents mid="120"><![CDATA[<html>Go to Master Archer Ithilien, who had fought the battle 50 years ago and listen to her story.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="121"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="122"><![CDATA[Talk to Master Archer Ithilien.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="123"><![CDATA[Who's the Guardian of Monolith III]]></title>
+         <contents mid="124"><![CDATA[<html>Master Archer Ithilien held some questions for 50 years. Tell Geraint her questions.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="125"><![CDATA[Talk to Geraint at the secret area in the basement of the Royal Palace]]></destination>
+         <todo_msg mid="126"><![CDATA[Go to the basement of the Saint Haven Royal Palace and talk to Geraint.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[Who's the Guardian of Monolith IV]]></title>
+         <contents mid="128"><![CDATA[<html>Return to Master Archer Ithilien and tell him Geraint's response.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="130"><![CDATA[Return to Master Archer Ithilien.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="131"><![CDATA[Who's the Guardian of Monolith V]]></title>
+         <contents mid="132"><![CDATA[<html>It seems Master Archer Ithilien has no more questions. Return to Geraint and listen to the rest of the story.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Geraint</FONT></html>]]></contents>
+         <destination mid="133"><![CDATA[Talk to Geraint at the secret area in the basement of the Royal Palace]]></destination>
+         <todo_msg mid="134"><![CDATA[Return to Geraint and listen to the rest of the story.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[Who's the Guardian of Monolith VI]]></title>
+         <contents mid="136"><![CDATA[<html>Anyone involved in the battle 50 years ago is still not free from the past. Now, return to the Academic Station and talk to Jasmine and see if there are any news.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="138"><![CDATA[Connect to the Academic Station and report to Jasmine.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>389</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

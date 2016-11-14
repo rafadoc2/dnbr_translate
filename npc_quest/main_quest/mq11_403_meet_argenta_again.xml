@@ -1,0 +1,553 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_403_meet_argenta_again</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>403</qid>
+      <designer>김인정</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>421</nextqid>
+      <nextqname>mq11_421_warclouds</nextqname>
+      <nextqnpc>n039_bishop_ignasio</nextqnpc>
+      <qkname mid="1"><![CDATA[Black Overlord Mansion]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드(세인트헤이븐 왕성)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>210</npcid>
+         <npcename>n210_argenta</npcename>
+         <npckname>아르젠타(검은 대군주의 영지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>211</npcid>
+         <npcename>n211_geraint</npcename>
+         <npckname>제레인트(검은 대군주의 영지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>212</npcid>
+         <npcename>n212_argenta</npcename>
+         <npckname>아르젠타(검은 산자락)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>261</npcid>
+         <npcename>n261_slave_david</npcename>
+         <npckname>아르젠타의 노예 데이비드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html> {ui_string: 1200001} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html> {ui_string: 1200002} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html> {ui_string: 1200003} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html> {ui_string: 1200005} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="236"><![CDATA[<html>$Elite Soldier$<BR>Sorry but I am busy at the moment.I am required to submit written apologies because of what had happen at Calderock Village<BR>During this period, you could pay a visit to the General?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-noquest" image="" itemindex="">
+      <talk_question mid="237"><![CDATA[<html>$Argenta$<BR>Huh? Why are you here?<BR>Go and get your business done.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="238"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Hey you! What about <FONT color=#a82424>Argenta</FONT>!<BR>Why isn't she back yet!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="239"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>General Douglas</FONT> is gathering up the troops, so talk to him</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceppted" mid="241"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="240"><![CDATA[<html>$General Douglas$<BR>Our <FONT color=#a82424>troops</FONT>are all suffering from fatigue due to prolong fighting with monster..<BR>Not to worry, we will send our troops to <FONT color=#a82424>Dark Overlord Keep</FONT>once we completed gathering the troops.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR><FONT color=#a82424>General Douglas</FONT> is trying to gather troops, go talk to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Argenta$<BR>Why are you here now?<BR>I'm busy right now, go away and do your stuff</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-1" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Argenta$<BR>Huh? You are still here?<BR>Go and do what you must do now!.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n211_geraint-1" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Blond Swordsman$<BR>...<BR><FONT color=#7e12d2>(It seem like he don't wish to talk.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Elite Soldiers$<BR>Sorry but I am busy at the moment.I am required to submit written apologies because of what had happen at Calderock Village </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="122"><![CDATA[<html>Sure.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$General Douglas$<BR>I need to know the progress of gathering troops <BR>Go to <FONT color=#a82424>Elite Soldiers</FONT> and the situation over there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$General Douglas$<BR>Report to me once the preparations are completed<BR>In the mean time, I would monitor the situation of<FONT color=#a82424>Dark Mines</FONT>, and prepare logistic for the fight against <FONT color=#a82424>Black Knight</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="186"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Hey you! <FONT color=#a82424>Argenta</FONT>!<BR>What causes the delay in her returns</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$General Douglas$<BR>Report to me once the preparations are completed<BR>In the mean time, I would monitor the situation of<FONT color=#a82424>Dark Mines</FONT>, and prepare logistic for the fight against <FONT color=#a82424>Black Knight</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-c" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Elite Soldier$<BR>There an emergency recall for all Elite Soldiers to gather at Saint Haven right now</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-a" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-2-b" mid="125"><![CDATA[<html>Okay</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Elite Soldier$<BR>I doubt there are many reserve troops remain in the castle as we have always being having regional war with monster for a long period</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-b" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Elite Soldier$<BR>I had release an recall notice to all troops that are out station to returned.<BR>Get your ready and please wait awhile more<BR><FONT color=#7e12d2>(</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-2-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Elite Soldier$<BR>Troops that have returned can be dispatched now.<BR>Report to the<FONT color=#a82424>General</FONT>, and wait for his commands.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Elite Soldier$<BR>Recalled troops have been gathered<BR>Report to <FONT color=#a82424>General Douglas</FONT>, and wait for the next command.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="129"><![CDATA[<html>(General Douglas feel proud.)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$General Douglas$<BR>Is that all that you had recalled?<BR>It's not as much as I expected, however all this troops are experienced and well-trained through many battle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="131"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$General Douglas$<BR>The destination is <FONT color=#a82424>Dark Overlord Keep</FONT>... While fighting the <FONT color=#a82424>Black Knight</FONT>, we would not be able to proceed all the way inside the place, which is also his base. We need to obtain more information which would benefit us later on.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="134"><![CDATA[<html>Yes! That for sure!</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$General Douglas${action:talk}<BR>Move it now!<BR>We will never give up! Given all you can to rescue the <FONT color=#a82424>Prophet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="QW_28.dds" itemindex="">
+      <talk_question mid="135"><![CDATA[<html>$General Douglas$<BR>The 1st company of the elite troops have left<BR>Prepare yourself and advance to<FONT color=#a82424>Dark Overlord keep</FONT> and join the troops.<BR><FONT color=#7e12d2>? You cannot proceed the quest while you are in a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-d" image="" itemindex="">
+      <talk_question mid="234"><![CDATA[<html>$General Douglas$<BR><FONT color=#7e12d2><FONT color=#2b2723>The proud elite troops are set to depart</FONT></FONT><FONT color=#7e12d2><FONT color=#2b2723>prepare and get ready to join</FONT></FONT><BR><FONT color=#7e12d2>※ You cannot proceed the quest while you are in a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$General Douglas$<BR>The 1st company of the elite troops have left.<BR>Prepare yourself and advance to <FONT color=#a82424>Dark Overlord Keep</FONT> and join the company.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Elite Soldier$<BR>The troops are preparing themselves for depart. You may advance first, the troops will be catching up with you, relax and advance to <FONT color=#a82424>Dark Overlord keep</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Bishop Ignacio$<BR>Take care on the trips, I hope General Douglas's troop would be helpful<BR>Now head to <FONT color=#a82424>Dark Overlord Keep</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n211_geraint-4" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Blond Swordsman$<BR>...<BR>(Look like he having a conversation with<FONT color=#a82424>Argenta</FONT>.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4" image="" itemindex="">
+      <talk_answer link_index="n210_argenta-4-a" mid="107"><![CDATA[<html>Hey... are you the blonde swordsman</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Argenta$<BR>I can differentiate the sound of your footstep from others <FONT color=#382000>{user_nick}</FONT>.<BR>I'not surprise that you could find me in here</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4-a" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-4-b" mid="109"><![CDATA[<html>Serious?! That person!?</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Argenta$<BR>How could I fOgret? That<FONT color=#a82424>Geraint</FONT>.<BR>Didn't I mentioned to you before?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-4-c" mid="111"><![CDATA[<html>I saw him fighting the Black Knight at Abandoned Welton Hollow.</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Argenta$<BR>Yes. What with your reaction?<BR>You never meet<FONT color=#a82424>Geraint</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-4-d" mid="113"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Argenta$<BR>Oh? So you do saw him and you allowed this fool to get away?<BR><FONT color=#a82424>Geraint</FONT>, how did you manage to let <FONT color=#a82424>that guy</FONT> run away just? I don't understand it at all</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-4-d" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-4-cutin" mid="115"><![CDATA[<html>(Geraint open his mouth silently.)</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Argenta$<BR><FONT color=#a82424>Geraint</FONT>Are you listening to me ! ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-5" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-5-a" mid="101"><![CDATA[<html>Why not?</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Argenta$<BR>You are not allow to follow<FONT color=#a82424>Geraint</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-5-a" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n210_argenta-5-b" mid="103"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Argenta$<BR>Do not over estimate yourself and get yourself killed. Even I myself also doubt I can be of much help. So let's head to <FONT color=#a82424>Foothills of Black Mountain</FONT> now. Follow me and stay close.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-5-b" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Argenta$<BR>What are you waiting for now?<BR>Get yourself ready, we are going Foothills of Black Mountain soon.<BR>Don't ever think that you are already as skillful as Geraint. Understand?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-5" image="QW_28.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$General Douglas$<BR>Have you taken good care of everything?<FONT color=#a82424> Dark Overlord Keep</FONT>?<BR>It look as thou the troops have returned safely</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-5" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Bishop Ignacio$<BR>Did you see <FONT color=#a82424>Argenta</FONT>? Try to receive all information you from her.<BR><FONT color=#7e12d2>(You must talk to Argenta atFoothills of Black Mountain.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n211_geraint-5" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Geraint$<BR>...<BR><FONT color=#7e12d2>(it seem like he is reluctant to talk.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-5" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-5-a" mid="69"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Argenta$<BR>You ain't suspose to be here<BR>Don't pester me. Go and do what you need to do now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-6" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-6-a" mid="86"><![CDATA[<html>Velskud? That the Black Knight name right?</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Argenta$<BR>I wonder if <FONT color=#a82424>Geraint</FONT> is lost.<BR>It's unimgainable that he is still so coward even after the inicident that happend <FONT color=#a82424>Velskud</FONT>... Tsk tsk.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-6-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-6-b" mid="154"><![CDATA[<html>Velskud and Geraint...</html>]]></talk_answer>
+      <talk_question mid="153"><![CDATA[<html>$Argenta$<BR>What? Shouldn't you know all this before I even told you? You had chased the <FONT color=#a82424>Ancient</FONT> all the way here, and now you're telling me you do not know about it</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-6-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-6-c" mid="155"><![CDATA[<html>(Adventurer David shouts in excitement.)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR><FONT color=#a82424>Velskud</FONT>?! <FONT color=#a82424>Geraint</FONT>?!!<BR>Yes! Argenta is great<BR>I understand that she is close to the <FONT color=#a82424>Six Heroes</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-6-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="156"><![CDATA[<html>$Argenta$<BR>Can't he just keep quiet for a moment?<BR>I'm going to take a break, in the mean time, go and shut him<FONT color=#a82424>fool</FONT> up, rookie!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="188"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Heh Heh Heh<FONT color=#a82424>Argenta</FONT> never fOgret about me afterall!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-a" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-b" mid="191"><![CDATA[<html>What are you talking about? The Legendary Six Heroes?</html>]]></talk_answer>
+      <talk_question mid="190"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Oh, Argenta!<BR>I knew it! I knew it all along that you are not that simple. But I am surprise that you are acquainted with the legendary <FONT color=#a82424>Six Heroes</FONT>! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-b" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-c" mid="193"><![CDATA[<html>... I can't believe I am hearing insults from you... I'm a little angry now.</html>]]></talk_answer>
+      <talk_question mid="192"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>What the.....????<BR>You don't know who is the<FONT color=#a82424>Six Heroes</FONT>...?<BR>Are you stupid? How can you not know the<FONT color=#a82424>Six Heroes</FONT>!!!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-c" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-d" mid="195"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="194"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Tsk tsk, how dumb... I will specially explain it for you, so listen carefully!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-d" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-e" mid="197"><![CDATA[<html>Be straight forward will you?</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>50 years ago! The <FONT color=#a82424>Black Dragon Karas</FONT>, was critically wounded. Now it had been awakened. The world during that period of time was terrorise by <FONT color=#a82424>Black Dragon Karas</FONT>, people were running for their life!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-e" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-f" mid="200"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Tsk tsk... You are heartless...<BR>Anyway, <FONT color=#a82424>Six</FONT> Looking to defeat the Black Dragon Karas, heroes have gather here from all over the world. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-f" image="QN_Npc_Geraint_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-g" mid="203"><![CDATA[<html>(Continue) </html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>First! There was <FONT color=#a82424>Geraint</FONT>, the blond swordsman who appeared surprisingly to fight Black Dragon Karas! He was not only leader of the <FONT color=#a82424>Dragon Slayers</FONT>, he was also the founder of Dragon Slayers! Without him, the Six Heroes wouldn't have existed!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-g" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-h" mid="206"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Second! There was Captain <FONT color=#a82424>Velskud</FONT>, who was born from a lower class noble family, using his own skills, he became the greatest knight and current position of the kingdom at a young age</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-h" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-i" mid="209"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Argenta's Slave AdventurerAdventurer David$<BR>Third! There was <FONT color=#a82424>Barnac</FONT>, who was Captain of many Mercenaries and a mercenary himself. Those that he had led has become the foundation of the<FONT color=#a82424>Adventurer's Guild</FONT>! He is an idol to all warriors and Mercenaries</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-i" image="QN_archer_nerwin_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-j" mid="212"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="210"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Fourth! The leader of the <FONT color=#a82424>Silver Crescent Archers</FONT>, <FONT color=#a82424>Nerwin</FONT>, who came from a land of Elves called Anwarende to establish connection between the Elves and Humans. It is said to have being Crown the Queen of Elves upon returned</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-j" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-k" mid="214"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Argenta's Slave AdventurerAdventurer David$<BR>Fifth! <FONT color=#a82424>Terra</FONT>, the Templar Knights who is the Leader and had served Altea goddess, has since established the <FONT color=#a82424>Divine Order</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-k" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-l" mid="216"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Sixth! <FONT color=#a82424>Karacule</FONT>, the one who comes from the line of descent of the Sorceresses of Dark Tower Magic! The power of the <FONT color=#a82424>Dark Tower Magic</FONT> that she leads, is so powerful that it cause both allies and foes to shiver in fear</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-l" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-m" mid="220"><![CDATA[<html>I not sure about it. The Geraint and Velskud that I know are so....</html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Ugh Ugh Ugh... How was it?<BR>Were you moved by my knowledge?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-m" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-n" mid="222"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="221"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>You're Serious? They don't even look like humans, they are too strong. They looked like in theirs 20s and it has being 50 years since the Dragon Raid...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-n" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-o" mid="224"><![CDATA[<html>Well I should be heading back... See ya...</html>]]></talk_answer>
+      <talk_question mid="223"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Wait Wait.. I was told that Velskud died during the Dragon Raid, Barnac and Geraint went missing after.<BR>So that mean Argenta is not really acquainted with the heroes?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-o" image="" itemindex="">
+      <talk_answer link_index="n261_slave_david-6-p" mid="226"><![CDATA[<html>I made a promise, that I would find...</html>]]></talk_answer>
+      <talk_question mid="225"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Humpf. I thought I am going to see my idol Geraint<BR>Hey what are you trying to do by slipping in and out of the Royal Castle on daily basis?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-6-p" image="" itemindex="">
+      <talk_question mid="227"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Seriously you're so fake despite being so young.<BR>Stop thinking that Argenta will be interested in you after what you did? She is my Queen ha ha ha !</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n210_argenta-6" image="" itemindex="">
+      <talk_question mid="232"><![CDATA[<html>$Argenta$<BR>What are you waiting for?<BR>I'll be going to <FONT color=#a82424>Foothill of Foothills of Black Mountain</FONT>, so be there.<BR>Stop dreaming that your as good as Geraint</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-7" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-7-a" mid="166"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$Argenta$<BR>Did you really went<FONT color=#a82424>Royal Castle</FONT>? I don't think you went. Are you thinking about following <FONT color=#a82424>Geraint</FONT>, are you? You are now just some one that get in the way. So stop thinking about it and do what you need to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-7-a" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Argenta$<BR>Humans towns are so boring and full of useless event like <FONT color=#a82424>Adventurer's Guild</FONT> .Go and received some unique training to get yourself stronger.<BR><FONT color=#7e12d2>(You must report to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-a" mid="169"><![CDATA[<html>(Explain what you have witnessed.)</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html>$Bishop Ignacio$<BR>Welcome.<BR>What happened to the <FONT color=#a82424>Black Knight</FONT>? Did you find him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-a" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-b" mid="172"><![CDATA[<html>I agree.</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Bishop Ignacio$<BR>Hmmm ... The Fortress of the Dark Overlord Army... It would be careless of you to just follow blindly into somewhere like that. Did the swordsman who was with Argenta run away?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-b" image="" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-c" mid="178"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-7-c" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n039_bishop_ignasio-7-!next" mid="180"><![CDATA[<html>I think we must hurry.</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$Bishop Ignacio$<BR>While you were chasing the <FONT color=#a82424>Black Knight</FONT>,I tired to request for more troops from Kings and his followers<BR>However there is troubles inside and outside<FONT color=#a82424>Saint Haven</FONT> recently, so it was understood that is hard to mobilize any more troops</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n261_slave_david-7" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_question mid="181"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>H Ha Ha no one can replace me as Argenta's Slave, I will always be her slave<BR><FONT color=#7e12d2>(You must report to Bishop Ignacio.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">403</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, questID, 1) == 2</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">8</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, questID, 1, 2);</exe>
+         <exe type="conexe" true="5" false="6">0</exe>
+         <exe type="conexe" true="7" false="8">0</exe>
+         <exe type="talk" npc="n212_argenta">c</exe>
+         <exe type="talk" npc="n212_argenta">6</exe>
+         <exe type="talk" npc="n261_slave_david">a</exe>
+         <exe type="talk" npc="n261_slave_david">6</exe>
+         <exe type="setjornal">9</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4031,4031,4032,4033,4034,4034,4036</exe>
+         <exe type="complete">403</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n209_elite_soldier" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n210_argenta" sub="b" />
+   <exelink qstep="4" npc="n210_argenta" sub="c" />
+   <exelink qstep="4" npc="n210_argenta" sub="d" />
+   <exelink qstep="4" npc="n210_argenta" sub="cutin">0</exelink>
+   <exelink qstep="5" npc="n210_argenta" sub="b">0,1</exelink>
+   <exelink qstep="6" npc="n212_argenta">3</exelink>
+   <exelink qstep="6" npc="n212_argenta" sub="b" />
+   <exelink qstep="6" npc="n212_argenta" sub="c">1,2</exelink>
+   <exelink qstep="6" npc="n261_slave_david">4</exelink>
+   <exelink qstep="6" npc="n261_slave_david" sub="b" />
+   <exelink qstep="6" npc="n261_slave_david" sub="c" />
+   <exelink qstep="6" npc="n261_slave_david" sub="d" />
+   <exelink qstep="6" npc="n261_slave_david" sub="e" />
+   <exelink qstep="6" npc="n261_slave_david" sub="f" />
+   <exelink qstep="6" npc="n261_slave_david" sub="g" />
+   <exelink qstep="6" npc="n261_slave_david" sub="h" />
+   <exelink qstep="6" npc="n261_slave_david" sub="i" />
+   <exelink qstep="6" npc="n261_slave_david" sub="j" />
+   <exelink qstep="6" npc="n261_slave_david" sub="k" />
+   <exelink qstep="6" npc="n261_slave_david" sub="l" />
+   <exelink qstep="6" npc="n261_slave_david" sub="m" />
+   <exelink qstep="6" npc="n261_slave_david" sub="n" />
+   <exelink qstep="6" npc="n261_slave_david" sub="o" />
+   <exelink qstep="6" npc="n261_slave_david" sub="p">0,9</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="b">0</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="c">1</exelink>
+   <exelink qstep="7" npc="n039_bishop_ignasio" sub="!next" />
+   <journal_data recompense="1:4031,2:4032,3:4033,4:4034,5:4034,6:4036" quest_title="검은 대군주의 영지" chapterid="4" quest_level="26" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Prepare to dispatch troops]]></title>
+         <contents mid="37"><![CDATA[<html>Talk to General Douglas about the situation on the preparations for the dispatch.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="39"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Soldier's Situation]]></title>
+         <contents mid="41"><![CDATA[<html><FONT color=#a82424>Elite Soldier </FONT>is recalling all available troops. Check the siutation<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Elite Soldier</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Talk to Elite Soldier]]></destination>
+         <todo_msg mid="43"><![CDATA[Find Elite Soldier and check how the gathering troops situation]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Report to General Douglas]]></title>
+         <contents mid="45"><![CDATA[<html>Report to General Douglas. The recalling of troops is not completed yet<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="47"><![CDATA[Recalling of troops has completed. Report to General Douglas]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_28.dds</contents_image>
+         <destination_pos>284,0,0</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1,284@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[To Dark Overlord Keep]]></title>
+         <contents mid="49"><![CDATA[<html>General Douglas kind to lend you his troops Go to <FONT color=#a82424>Dark Overlord keep</FONT>.<BR><BR><BR><FONT color=#086171> Foothills of Black Mountain(Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord Keep</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Hunt Black Knight at Dark Overlord Keep]]></destination>
+         <todo_msg mid="51"><![CDATA[Please head over to Dark Overlord Keep and hunt the Black Knight]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>284,n210</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1,284@1</destination_mode>
+         <statemark_npcid>210</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[The Black Knight's Location]]></title>
+         <contents mid="53"><![CDATA[<html>You arrived at Dark Overlord Keep, Black Knight was not in sight but you met Argenta and Blond Swordsman<BR>Talk to <FONT color=#a82424>Argenta</FONT>.<BR><BR><BR><FONT color=#086171>Foothills of Black Mountain (Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord Keep(Argenta)</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Argenta at Dark Overlord keep]]></destination>
+         <todo_msg mid="55"><![CDATA[Please talk to Argenta. There is only one Black Knight]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>284,n210</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1,284@1</destination_mode>
+         <statemark_npcid>210</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Blond Swordsman]]></title>
+         <contents mid="57"><![CDATA[<html><FONT color=#a82424>Blond Swordsman</FONT> was the one who fought against the Black Knight at Abandoned Welton Hollow was <FONT color=#a82424>Geraint</FONT>, the one that Argenta was looking for. He left Argenta behind to chase the Black Knight<BR>Talk to <FONT color=#a82424>Argenta</FONT> and discuss future plan.<BR><BR><BR><FONT color=#086171>Foothills of Black Mountain(Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord Keep(Argenta)</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to Argenta at Dark Overlord keep]]></destination>
+         <todo_msg mid="59"><![CDATA[Geraint had left, Please talk to Argenta]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="143"><![CDATA[Argenta]]></title>
+         <contents mid="144"><![CDATA[<html>Geraint rushed to chase the Black Knight. Since you cannot follow Geraint right away, talk to <FONT color=#a82424>Argenta</FONT> at <FONT color=#a82424>Foothills of</FONT> <FONT color=#a82424>Foothills of Black Mountain</FONT>.<BR><BR><FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="145"><![CDATA[Talk to Argenta at Footshill of Foothills of Black Mountain]]></destination>
+         <todo_msg mid="146"><![CDATA[Please talk to Argenta at Footshill of Foothills of Black Mountain]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <destination_pos>13,n261</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>261</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="147"><![CDATA[A noisy Adventurer David]]></title>
+         <contents mid="148"><![CDATA[<html>Adventurer David always make himself a nuisance when you and Argenta are talking about Velskud and Geraint.<BR>Talk to <FONT color=#a82424>Adventurer David </FONT>at <FONT color=#a82424>Foothills of Black Mountain</FONT>.<BR> <BR><FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Argenta's Slave Adventurer David</FONT></html>]]></contents>
+         <destination mid="149"><![CDATA[Talk to Adventurer David at Footshills of Foothills of Black Mountain]]></destination>
+         <todo_msg mid="150"><![CDATA[Please talk to Adventurer David at Foothills of Black Mountain]]></todo_msg>
+      </journal>
+      <journal index="9">
+         <contents_image>QN_Npc_Bishop.dds</contents_image>
+         <destination_pos>21,n39</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>39</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="228"><![CDATA[Do what you need to do now]]></title>
+         <contents mid="229"><![CDATA[<html>You are not allow to follow Geraint right now. Head to the <FONT color=#a82424>Royal Castle</FONT> first, and report to <FONT color=#a82424>Ignacio</FONT> and request for support.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Bishop Ignacio</FONT></html>]]></contents>
+         <destination mid="230"><![CDATA[Talk to Bishop Ignacio]]></destination>
+         <todo_msg mid="231"><![CDATA[Report to Bishop Ignacio at the Royal Castle]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>420</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

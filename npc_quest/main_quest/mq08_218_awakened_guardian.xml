@@ -1,0 +1,371 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_218_awakened_guardian</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>218</qid>
+      <designer>김주연</designer>
+      <qlevel>22</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>401</nextqid>
+      <nextqname>mq11_401_castle_sainthaven</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <qkname mid="1"><![CDATA[The Awakened Guardian]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>55</npcid>
+         <npcename>n055_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트     (캐더락 관문)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-noquest" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Argenta$<BR>First, the Battery gets gobbled up by an ogre. Next, Elena attempts to blanket Calderock completely with a poison cloud.<BR>How fun.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-noquest" image="" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Elite Soldier Calrim$<BR>My mission is a failure, but I will do my best to bring all of my soldiers back home!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="98"><![CDATA[<html>$Airship Engineer Huber$<BR>A strange fog is covering the skies…<BR>
+The airship can't take off even if it's fixed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="100"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Master Sorceress Tiana$<BR>What? Elena died from her own poison? It reminds me of the saying that what goes around comes around.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QS_Default.dds" itemindex="300063">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="7"><![CDATA[<html>Finally, the key!</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Tiana$<BR>Now, all we need is the <FONT color=#a82424>Purification Device Key</FONT> to activate the device.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="QW_26.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-b" mid="9"><![CDATA[<html>Manticore...</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Sorceress Tiana$<BR>Do you even remember where to get the key? The key is with <FONT color=#a82424>Manticore Keruru</FONT> at <FONT color=#a82424>Prayer's Resting Place</FONT>. Does that sound familiar?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-b" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Tiana$<BR><FONT color=#a82424>Manticores</FONT> are chimeras that were created by the Ancients. It usually has a lion's head and a snake's tail. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-c" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-d" mid="13"><![CDATA[<html>Scary...I need to be extra careful.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Sorceress Tiana$<BR>Manticores are usually stronger than other regular monsters. They were created by the Ancients to serve as guardians, after all...</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-d" image="QM_Manticore.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2" mid="15"><![CDATA[<html>It's just a manticore!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Tiana${action:talk}<BR>Based on what you've done for us until now, you should be able to defeat that ancient beast.<BR>Are you ready?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Argenta$<BR>First, the Airship Engine Battery gets gobbled up by an ogre. Next, Elena attempts to blanket Calderock completely with a poison cloud.<BR>How fun.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Airship Engineer Huber$<BR>A strange fog is covering the skies…<BR>
+The airship can't take off even if it's fixed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Elite Soldier Calrim$<BR>My mission is a failure, but I will do my best to bring all of my soldiers back home!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QM_Manticore.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Master Sorceress Tiana$<BR>Defeat Manticore Keruru, and <FONT color=#a82424>activate the Purification Device with the key</FONT> in <FONT color=#a82424>Prayer's Resting Place</FONT> to save Calderock.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-a" mid="21"><![CDATA[<html>Hehe.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Tiana$<BR>You defeated Manticore Keruru? YOU? Simply unbelievable!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-a" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Sorceress Tiana$<BR>I can't believe this...but as you've managed to recover my mentor's research, defeat and the manticore, and ultimately saved Calderock, I dub thee, <FONT color=#a82424>Savior of Calderock Village</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-3" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Airship Engineer Hubert$<BR>Kudos to you, my friend! Now, we just wait for the fog to clear up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Argenta$<BR>Good work! I think you deserve this for your accomplishments! I grant you the title of <FONT color=#a82424>"Useful Slave"</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-a" mid="28"><![CDATA[<html>"Useful"?! Okay… Whatever you say…</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Argenta$<BR>Good work! I think you deserve this for your accomplishments! I grant you the title of <FONT color=#a82424>"Useful Slave"</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-b" mid="30"><![CDATA[<html>At least Calderock is saved...</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Argenta$<BR>Hahaha, calm down! I know you must be really happy! I don't find you useless anymore!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-4-c" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Argenta$<BR>Probably, but a few areas are still contaminated. Weird.<BR>Anyway, time for you to go to Saint Haven. Check if the airship is ready to go.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-4-c" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Argenta$<BR>Oh, one more thing, my Useful Slave. I promise a good beating If I catch you bumming around!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Master Sorceress Tiana$<BR>You've really managed to pulled everything off. You truly are Calderock's Savior!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-5-a" mid="36"><![CDATA[<html>Finally! Good.</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Airship Engineer Hubert$<BR>The fog is clearing up. We'll be able to depart for <FONT color=#a82424>Saint Haven</FONT> shortly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-5-b" mid="68"><![CDATA[<html>Elite Soldier Calrim?</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Airship Engineer Hubert$<BR><FONT color=#a82424>Elite Soldier Calrim</FONT> would like to speak to you. He's also heading back to Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-5-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Airship Engineer Hubert${action:talk}<BR>Go and talk to <FONT color=#a82424>Elite Soldier Calrim</FONT>. We still have some time before the fog clears.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-a" mid="71"><![CDATA[<html>You're welcome.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Elite Soldier Calrim$<BR>The <FONT color=#a82424>airship</FONT> is almost ready. As a royal guard deployed from Saint Haven, I'm embarrassed that we had to turn to you for help. Thank you so much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-a" image="" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-b" mid="73"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Elite Soldier Calrim$<BR>We will be returning to <FONT color=#a82424>Saint Haven</FONT> on that airship too. Would you please do me a favour, <FONT color=#382000>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-b" image="" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-c" mid="75"><![CDATA[<html>Huh? Me?</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Elite Soldier Calrim$<BR>Upon returning, I will need to submit my report to <FONT color=#a82424>King Cassius</FONT>. I would like you to come with me to the Royal Castle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n055_elite_soldier-6-d" mid="77"><![CDATA[<html>I guess that's alright.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Elite Soldier Calrim$<BR>Well, my reports alone would be insufficient. Words from someone who has come face to face with the <FONT color=#a82424>Prophet</FONT>, the <FONT color=#a82424>Black Knight</FONT> and all the monsters will be more convincing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-6-d" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Elite Soldier Calrim$<BR>Thank you, I really appreciate it. I'll see you in <FONT color=#a82424>Saint Haven</FONT>. Please go and ask <FONT color=#a82424>Airship Engineer Hubert</FONT> whether the repair has been completed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Airship Engineer Hubert${action:talk}<BR>Go and talk to <FONT color=#a82424>Elite Soldier Calrim</FONT>. We still have some time before the fog clears.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7" image="QS_Default.dds" itemindex="300103">
+      <talk_answer link_index="n099_engineer_hubert-7-a" mid="81"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Airship Engineer Hubert$<BR>The fog is clearing up. Ah! I was so fixated on the fog that I forgot about the Airship Engine Battery! Do you have it with you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-7-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-7-!next" mid="95"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n055_elite_soldier-7" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Elite Soldier Calrim$<BR>Thank you, I really appreciate it. I'll see you in <FONT color=#a82424>Saint Haven</FONT>. Please go and ask <FONT color=#a82424>Airship Engineer Hubert</FONT> whether the repair has been completed.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">218</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300063 (정화장치 가동열쇠)</comment>
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">762</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300063</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200762</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 762);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>300064 (순백의 오브)
+300063 (정화장치 가동열쇠)
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300064</exe>
+         <exe type="delquestitem" num="-1">300063</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment>300103 부유장치
+노예의 증표는 아르젠타 서브퀘 전부 완료했을 때 삭제(아르젠타의 노예 퀘스트)</comment>
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300103</exe>
+         <exe type="complete">218</exe>
+         <exe type="recompense">2181,2181,2182,2183,2184,2186,2186</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="2">2,7,0,1</exelink>
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="a">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="4" npc="n164_argenta_wounded" sub="c">0,1</exelink>
+   <exelink qstep="5" npc="n099_engineer_hubert" sub="b">0,1</exelink>
+   <exelink qstep="6" npc="n055_elite_soldier" sub="b" />
+   <exelink qstep="6" npc="n055_elite_soldier" sub="c" />
+   <exelink qstep="6" npc="n055_elite_soldier" sub="d">0,1</exelink>
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="a">2</exelink>
+   <exelink qstep="7" npc="n099_engineer_hubert" sub="!next">0,1</exelink>
+   <journal_data recompense="1:2181,2:2182,3:2183,4:2184,6:2186" quest_title="깨어난 수호자" chapterid="3" quest_level="22" quest_mark_type="1" use_item_list="300064,300063">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Talk to Master Sorceress Tiana]]></title>
+         <contents mid="44"><![CDATA[<html>You have obtained the <FONT color=#a82424>White Purity Orb</FONT>. Ask Master Sorceress Tiana what you should do next. <BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="46"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_Manticore.dds</contents_image>
+         <destination_pos>264,0,0</destination_pos>
+         <destination_mode>custom:261@1,262@1,263@1,264@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[The Manticore and the Purification Device]]></title>
+         <contents mid="48"><![CDATA[<html><FONT color=#a82424>Manticore Keruru</FONT> at the <FONT color=#a82424>Prayer's Resting Place</FONT> has the <FONT color=#a82424>Purification Device Key</FONT>. Defeat the monster and activate the purification device.<BR><BR><FONT color=#086171>Lower Ridge (Forgotten Temple)</FONT> <FONT color=#a82424>→ Prayer's Resting Place</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Defeat the manticore at Prayer's Resting Place.]]></destination>
+         <todo_msg mid="50"><![CDATA[Defeat the manticore at Prayer's Resting Place and get the Purification Device Key.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[The Purification Device has been activated! Report to Master Sorceress Tiana]]></title>
+         <contents mid="53"><![CDATA[<html>You've defeated the manticore and <FONT color=#a82424>activated the Purification Device</FONT>. Report back to <FONT color=#a82424>Master Sorceress Tiana</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="55"><![CDATA[You have defeated the manticore and activated the Purification Device.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Talk to Argenta at Gray Ruins]]></title>
+         <contents mid="58"><![CDATA[<html>With the activation of the purification device, the airship can take off. Update Argenta on all that has happened.<BR> <BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Speak With Argenta in the Gray Ruins]]></destination>
+         <todo_msg mid="60"><![CDATA[Update Argenta on all that has happened.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,3959,3392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Talk to Airship Engineer Hubert]]></title>
+         <contents mid="64"><![CDATA[<html>The poisonous fog is clearing up. Ask Hubert if you can depart for <FONT color=#a82424>Saint Haven</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Airship Engineer Hubert</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="66"><![CDATA[Talk to Airship Engineer Hubert]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>8,n55</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>55</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[A Favor for Elite Soldier Calrim]]></title>
+         <contents mid="85"><![CDATA[<html>Elite Soldier Calrim would like to speak with you.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Elite Soldier Calrim</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Talk to Elite Soldier Calrim]]></destination>
+         <todo_msg mid="87"><![CDATA[Talk to Elite Soldier Calrim.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[The Lifting of the Poison]]></title>
+         <contents mid="89"><![CDATA[<html>Calrim asked you to accompany him when he returned to the Royal Castle. Ask <FONT color=#a82424>Airship Engineer Hubert</FONT> if the airship can depart yet.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Airship Engineer Hubert</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="91"><![CDATA[Talk to Airship Engineer Hubert]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>217</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

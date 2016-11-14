@@ -1,0 +1,306 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_9303_honey_tongue</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>9303</qid>
+      <designer>김인정</designer>
+      <qlevel>26</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>9304</nextqid>
+      <nextqname>mq11_9304_enemy_in_heart</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <uistyle>1</uistyle>
+      <qkname mid="1"><![CDATA[구밀복검]]></qkname>
+      <qnpc>
+         <npcid>1139</npcid>
+         <npcename>n1139_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>1145</npcid>
+         <npcename>n1145_lunaria</npcename>
+         <npckname>루나리아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QN_Npc_Velskud.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="78" select_type="3" />
+      <talk_question mid="75"><![CDATA[<html>$더글라스 장군$<BR>검은 기사와 대치하면서 지금껏 그의 본거지 깊숙한 곳까지는 공략에 성공하지 못했지.<BR>
+이번 기회에 더 많은 정보를 얻어내면 이후의 싸움에도 도움이 될 걸세.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_28.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-1-" mid="280" select_type="5" />
+      <talk_question mid="278"><![CDATA[<html>$더글라스 장군$<BR>이미 정예병력의 제 1군이 다른 모험자들과 함께 출발했네.<BR>자네도 개인적인 준비가 끝나는 대로 <FONT color=#a82424>검은 대군주의 영지</FONT>로 출발해 병사들과 합류하게나.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-1" image="QW_28.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-1-" mid="282" select_type="5" />
+      <talk_question mid="281"><![CDATA[<html>$루나리아$<BR>흐음... 검은 대군주의 영지로 간다고?<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-1" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-1-a" mid="284" select_type="2" />
+      <talk_question mid="283"><![CDATA[<html>$루나리아${action:Talk}<BR>...너, 정말 인기가 있네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-1-a" image="QM_dragonSycophant.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-1-b" mid="287" select_type="2" />
+      <talk_question mid="286"><![CDATA[<html>$루나리아$<BR>지난 번의 그 사람... 같은데.<BR>따라왔어. 왕성의 병사는 아니지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-1-b" image="QM_dragonSycophant.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-1-c" mid="289" select_type="2" />
+      <talk_question mid="288"><![CDATA[<html>$루나리아$<BR>...눈이 마주쳤어.<BR>
+네가 봤다는 걸 저 사람도 알았을거야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-1-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-1-" mid="291" select_type="5" />
+      <talk_question mid="290"><![CDATA[<html>$루나리아$<BR>아마 너를 죽이고 싶은가 봐.<BR>
+저런, 유감이네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-2" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-2-" mid="294" select_type="5" />
+      <talk_question mid="293"><![CDATA[<html>$루나리아$<BR>...너 고생이 많구나.<BR>
+잘 해 봐.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3" image="QM_dragonSycophant.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-a" mid="296" select_type="0"><![CDATA[<html>도대체 누굴까</html>]]></talk_answer>
+      <talk_answer link_index="n1145_lunaria-3-a" mid="297" select_type="0"><![CDATA[<html>왜 내 뒤를 따라온 거지?</html>]]></talk_answer>
+      <talk_question mid="295"><![CDATA[<html>$루나리아$<BR>
+모두 도망쳤어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-a" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-b" mid="299" select_type="2" />
+      <talk_question mid="298"><![CDATA[<html>$루나리아$<BR>이런 것, 떨어뜨렸어.<BR><FONT color=#7e12d2>(루나리아가 작게 접힌 종이조각을 건넨다)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-b" image="QS_Default.dds" itemindex="300348" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-c" mid="302" select_type="2" />
+      <talk_question mid="301"><![CDATA[<html>$루나리아$<BR>보고서 같아.<BR>
+봉인 위에 이상한 문장이 찍혀 있네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-d" mid="304" select_type="2" />
+      <talk_question mid="303"><![CDATA[<html>$보고서$<BR><FONT color=#086171>......사도 일루전으로 추정되는 남자...<BR></FONT><FONT color=#7e12d2>(드문드문 글자를 읽을 수 있다)</FONT><BR><FONT color=#086171>추적 실패... 미행...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-d" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-e" mid="306" select_type="2" />
+      <talk_question mid="305"><![CDATA[<html>$보고서$<BR><FONT color=#086171>왕께서 아시는지 여부는 미정이며......<BR>...용추종자 교단은... 추가적인 보고를 약속...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-e" image="QS_Default.dds" itemindex="300243" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-f" mid="308" select_type="2" />
+      <talk_question mid="307"><![CDATA[<html>$루나리아$<BR><FONT color=#387206>{user_nick}</FONT>, 보여?<BR>이 끝의 문양은, 지난 번 주교의 서신에서 본 것과 같아.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-f" image="QN_Npc_Bishop.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-g" mid="310" select_type="2" />
+      <talk_question mid="309"><![CDATA[<html>$루나리아$<BR>그 주교도 사도인가 하는 사람인가 보네.<BR>엘레나도, 일루전도 모두 사도였지?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-g" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-h" mid="312" select_type="2" />
+      <talk_question mid="311"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>'왕'이라... 사도들을 부리는 사람인가? 대체 그는 누구지?<BR>루나리아를 데리고 도망쳤을 때, 일루전은 누군가에게 쫓기고 있었다고 했지?<BR>아마도 그건 왕이 아닐까? 사도들의 주인.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-h" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-i" mid="314" select_type="2" />
+      <talk_question mid="313"><![CDATA[<html>$루나리아$<BR>그럴 지도 모르지.<BR>아닐 수도 있고.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-i" image="QN_NPC_Illusion.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-j" mid="316" select_type="2" />
+      <talk_question mid="315"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>만약 일루전이 왕에게 쫓기고 있었다면...<BR>루나리아에 대해서는 주교도 모르는 것 같다는 점이 걸리긴 하는데.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-j" image="QM_Ellena.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-k" mid="319" select_type="2" />
+      <talk_question mid="318"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>하긴 엘레나도 루나리아에 대해 별 말을 하지 않긴 했지.<BR>도대체 뭐가 어떻게 되었던 걸까.</FONT><BR>
+<FONT color=#662500>이놈의 수수께끼는 복잡해지기만 하지 풀릴 줄을 모르는군. 휴...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-k" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-3-l" mid="321" select_type="2" />
+      <talk_question mid="320"><![CDATA[<html>$루나리아$<BR>그래서?<BR>
+이제 어떻게 할 거야?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-3-l" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-4" mid="324" select_type="2" />
+      <talk_question mid="323"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>지금은 모르는 척 하는 게 제일인 것 같아.<BR>반격할 만한 정보도 없고, 섣불리 자극해서 문제가 생기면 곤란하고.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-4-a" mid="327" select_type="2" />
+      <talk_question mid="326"><![CDATA[<html>$루나리아$<BR>당분간 동향을 살펴보자는 거구나.<BR>이해했어.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1145_lunaria-4-a" image="QW_SaintHaven_Inside.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1145_lunaria-4-" mid="329" select_type="5" />
+      <talk_question mid="328"><![CDATA[<html>${user_nick}$<BR><FONT color=#662500>(다른 모험자들이나 병사들과는 떨어져 버린 것 같으니......<BR>별 다른 정보가 없다면, 왕성으로 돌아가는 게 낫겠다.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n1139_lunaria-4" image="QW_SaintHaven_Inside.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Lunaria.dds" center_image="">
+      <talk_answer link_index="n1139_lunaria-4-" mid="332" select_type="5" />
+      <talk_question mid="331"><![CDATA[<html>$루나리아$<BR>왕성으로 가는 거야?<BR>흐음... 그렇구나.<BR><FONT color=#a82424>장군 더글라스</FONT>를 만나 보는 게 좋을 것 같네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="334" select_type="2" />
+      <talk_question mid="333"><![CDATA[<html>$더글라스 장군$<BR>자네인가? 혼자 수색을 좀 더 하고 돌아온 모양이군.<BR>다른 모험자들의 보고는 이미 들었겠지만, 검은 기사를 놓치고 말았네.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="QN_Npc_Velskud1.dds" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-4-b" mid="337" select_type="2" />
+      <talk_question mid="336"><![CDATA[<html>$더글라스 장군$<BR>금발머리의 검사가 검은기사를 쫓아 검은 영지 수비대 거점 쪽으로 진입했다는 보고였지.<BR>우리들의 정보는 아직 부족해서 대규모 병력을 그 안쪽까지는 이동시킬 수가 없었네. 애석한 일이야.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-b" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-4-c" mid="341" select_type="4" />
+      <talk_question mid="340"><![CDATA[<html>$퀘스트 보상$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-c" image="" itemindex="" portrait_left="" portrait_right="NPC_Right_Duglars.dds" center_image="">
+      <talk_answer link_index="n042_general_duglars-4-!next" mid="360" select_type="2" />
+      <talk_question mid="359"><![CDATA[<html>$더글라스 장군$<BR>하지만 모험자길드의 협조로 내부 지도의 일부도 입수했고, 지금도 정찰대를 파견해 두었으니 곧 안까지 진입할 수 있을걸세.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9303</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">21030</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">93030,,,,,,,</exe>
+         <exe type="complete" true="">9303</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n1145_lunaria" sub="b" />
+   <exelink qstep="1" npc="n1145_lunaria" sub="c">0,1,2</exelink>
+   <exelink qstep="1" npc="n1145_lunaria" sub="" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="b" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="c" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="d" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="e" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="f" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="g" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="h" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="i" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="j" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="k" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="l" />
+   <exelink qstep="3" npc="n1145_lunaria" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n1145_lunaria" sub="" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="c">1</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="!next" />
+   <journal_data recompense="93030" quest_title="구밀복검" chapterid="4" quest_level="26" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_28.dds</contents_image>
+         <destination_pos>283,n1145</destination_pos>
+         <destination_mode>custom:281@1,283@1</destination_mode>
+         <statemark_npcid>1145</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="342"><![CDATA[구밀복검I]]></title>
+         <contents mid="343"><![CDATA[<html>검은 대군주의 영지로 가서 검은 기사를 추적하자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 대군주의 영지(루나리아)</FONT></html>]]></contents>
+         <destination mid="344"><![CDATA[검은 대군주의 영지에서 루나리아와 대화]]></destination>
+         <todo_msg mid="345"><![CDATA[검은 대군주의 영지로 가세요.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_28.dds</contents_image>
+         <destination_pos>283,0,0</destination_pos>
+         <destination_mode>custom:281@3,283@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="350"><![CDATA[구밀복검II]]></title>
+         <contents mid="351"><![CDATA[<html>검은 광산에서 봤던, 그 미행자를 또 발견했다. 아무래도 다툼을 피하기는 어려울 것 같다.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 대군주의 영지</FONT></html>]]></contents>
+         <destination mid="352"><![CDATA[검은 대군주의 영지]]></destination>
+         <todo_msg mid="353"><![CDATA[미행을 하던 수상한 자들을 제압하세요.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Lunaria.dds</contents_image>
+         <destination_pos>283,n1145</destination_pos>
+         <destination_mode>custom:281@1,283@1</destination_mode>
+         <statemark_npcid>1145</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="346"><![CDATA[구밀복검III]]></title>
+         <contents mid="347"><![CDATA[<html>붉은 가면을 쓴 수상한 자들이 모두 도망쳤다. 루나리아와 다시 대화하자.<BR>
+ <BR>
+<FONT color=#086171>검은 산자락(검은 대군주의 관문)</FONT> <FONT color=#a82424>- 검은 대군주의 영지(루나리아</FONT></html>]]></contents>
+         <destination mid="348"><![CDATA[검은 대군주의 영지에서 루나리아와 대화]]></destination>
+         <todo_msg mid="349"><![CDATA[수상한 자들이 도망쳤습니다. 루나리아와 대화하세요.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="355"><![CDATA[구밀복검IV]]></title>
+         <contents mid="356"><![CDATA[<html>검은 기사는 찾지 못했다. 대신 뒤를 밟던 자들이 주교 이그나시오의 수하라는 것을 알아냈다.<BR>당분간 모르는 척 하며 동태를 살피자.<BR>
+ <BR>
+<FONT color=#086171>세인트헤이븐 왕성</FONT> - 장군 더글라스</html>]]></contents>
+         <destination mid="357"><![CDATA[왕성 내부의 장군 더글라스와 대화]]></destination>
+         <todo_msg mid="358"><![CDATA[왕성으로 돌아가 장군 더글라스와 대화하세요.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_class />
+      <prev_quest>9302</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <npc_favor />
+      <have_cash_item />
+      <have_daily_quest />
+   </condition_data>
+</quest>

@@ -1,0 +1,491 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_389_commentary_of_geraint</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>389</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>390</nextqid>
+      <nextqname>mq11_390_monoris_guardian</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[Geraint Speaks]]></qkname>
+      <qnpc>
+         <npcid>209</npcid>
+         <npcename>n209_elite_soldier</npcename>
+         <npckname>정예병사 클림드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>216</npcid>
+         <npcename>n216_geraint_wounded</npcename>
+         <npckname>제레인트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>523</npcid>
+         <npcename>n523_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-noquest" image="" itemindex="">
+      <talk_question mid="144"><![CDATA[<html>$Velskud$<BR>.......<BR><FONT color=#7e12d2>(Velskud closes his eyes while covering his wounds.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-noquest" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$Geraint$<BR>Velskud?<BR>...I don't know why you would say that name</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="" itemindex="">
+      <talk_question mid="146"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Little girl, you're quite famous these days.<BR>
+Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-noquest" image="" itemindex="">
+      <talk_question mid="150"><![CDATA[<html>$Elite Soldier Calrim$<BR>Thank you for your help, adventurer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-acceptted" mid="148"><![CDATA[<html>Yes, I did.</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_06.ogg}<BR>Did you give Velskud the painkiller you've prepared?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="151"><![CDATA[<html>$Academic Jasmine$<BR>Did you say he was at the <FONT color=#a82424>Foothills of Black Mountain</FONT>? Velskud.<BR>I hope he recovers from the injury soon....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="152"><![CDATA[<html>$Elite Soldier Calrim$<BR>Thank you for your help, adventurer.<BR>
+Rest well in Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="153"><![CDATA[<html>$Geraint$<BR>Velskud?<BR>...I don't know why you would say that name.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_question mid="154"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Little girl, you're getting quite famous these days, haha.<BR>
+You seem busy today.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-a" mid="157"><![CDATA[<html>I was dispatched because I had a task.</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Velskud$<BR>It's stupid of me to mingle with a useless child like you.<BR>...Let me ask you one thing. Why is a kid who should be in the future standing here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-a" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-b" mid="159"><![CDATA[<html>Yes. (I'm not a kid)</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Velskud$<BR>Dispatched?<BR>
+All by yourself, kid?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-b" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-c" mid="161"><![CDATA[<html>Because my sister and I developed time traveling.</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Velskud$<BR>The people in that future, are they so irresponsible to entrust their future to your hands?<BR>Or did you just come because the purpose is nothing a child can't handle?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-c" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-d" mid="163"><![CDATA[<html>I wasn't a kid.</html>]]></talk_answer>
+      <talk_question mid="162"><![CDATA[<html>$Velskud$<BR>Developed time traveling... And a young girl like you is the person in charge.<BR>Strange future, where you came from.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-d" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-1-e" mid="165"><![CDATA[<html>Then, do you believe me?!</html>]]></talk_answer>
+      <talk_question mid="164"><![CDATA[<html>$Velskud$<BR>.... You're saying, <FONT color=#a82424>you became a child due to the side effects of time traveling</FONT>.<BR>
+Hmm... it's quite reasonable.<BR>Not such nonsensical after all.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-1-e" image="" itemindex="">
+      <talk_answer link_index="n523_velskud-2" mid="167"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$Velskud$<BR>Nothing changes even if I trust you.<BR>With this injured body, I have no choice but to hide for a while.<BR>
+<FONT color=#7e12d2>(Velskud smiles bitterly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n523_velskud-2" image="" itemindex="">
+      <talk_question mid="169"><![CDATA[<html>$Velskud$<BR>.... Go away. If you keep coming here, someday, you'll be in danger.<BR>I'm not the same Velskud you know in the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-a" mid="171"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_04.ogg}<BR>Velskud still has no intention of changing his mind.<BR>Revenge, revenge to whom... Hmm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-2-b" mid="175"><![CDATA[<html>Deadline? What Deadline?</html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Academic Jasmine$<BR>This is much more difficult than we had anticipated. We still have too little data.<BR>
+I was so sure this time, but if you keep going like this, we might not be able to finish our mission in time......</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="172"><![CDATA[<html>$Academic Jasmine${sound:npc_SH_Jasmin_sp_05.ogg}<BR>Oh... I mean the time when the Nest is lifted and the Prophet disappears.<BR>Now, go back to the <FONT color=#a82424>Royal Palace</FONT> and scan the atmosphere.<BR>You always have to be on the lookout, okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="176"><![CDATA[<html>$Academic Station$<BR>※ Mission Object.<BR><FONT color=#7e12d2>※ Go to the Saint Haven Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-3-a" mid="178"><![CDATA[<html>Me?</html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Elite Soldier Calrim${action:Talk}<BR>Oh!! Welcome. I was waiting for you to show up.<BR>There is someone who really wants to meet you, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3-a" image="" itemindex="">
+      <talk_answer link_index="n209_elite_soldier-3-b" mid="180"><![CDATA[<html>Who's that?</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$Elite Soldier Calrim$<BR>Yes, he said he wanted to ask you a favour, but he specifically asked for you.<BR>
+Also, he wanted to ask you somethings regarding his research.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-3-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="181"><![CDATA[<html>$Elite Soldier Calrim$<BR>His name is <FONT color=#a82424>Heraldry Scholar Stas</FONT>. Well... He's been doing research on dragons for a long time.<BR>
+I think that's why he wants to meet you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n209_elite_soldier-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="182"><![CDATA[<html>$Elite Soldier Calrim${action:Talk}<BR>Did you meet <FONT color=#a82424>Heraldry Scholar Stas</FONT>?<BR>He's been doing research on dragons for a long time and that's why he wants to meet you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="185"><![CDATA[<html>Really?</html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Heraldry Scholar Stas$<BR>You finally came. I've been waiting for you a long time.<BR>You're quite famous these days! Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="187"><![CDATA[<html>So what can I do for you?</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$Heraldry Scholar Stas$<BR>No wonder! This little cute girl going all over and making such a huge contribution.<BR><FONT color=#a82424>Adventurers who came with</FONT> you were all complimenting you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="190"><![CDATA[<html>How did you know?</html>]]></talk_answer>
+      <talk_question mid="188"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Umm, that is... <FONT color=#7e12d2>(He lowers his voice and whispers)<BR></FONT>From what I've heard... there is a <FONT color=#a82424>Gold Dragon</FONT> in the basement of the Royal Palace.<BR>
+Is it true the Gold Dragon is guarding the Prophet...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="192"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I have my own sources. There aren't any rumors going around yet. Soldiers who had come back from the Dark Overlord Gate are talking about the dragon, but the military and the Royal Palace are keeping a tight cap on the story.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-e" mid="194"><![CDATA[<html>(Stas stares into empty space)</html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I presume <FONT color=#a82424>Duke Stuart</FONT> will make up a pretty story and tell everyone. Those fools.<BR>
+Dragons are not to be measured by human standards. Even 50 years ago, the <FONT color=#a82424>Six Heroes</FONT> made the same mistake.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-e" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-f" mid="196"><![CDATA[<html>(It must be about Geraint.)</html>]]></talk_answer>
+      <talk_question mid="195"><![CDATA[<html>$Heraldry Scholar Stas$<BR>During the <FONT color=#a82424>Black Dragon Karas</FONT> raid, they were shaken up when they saw the Gold Dragon in front of them.<BR>Even though it was fighting with them as colleagues.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-f" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-g" mid="199"><![CDATA[<html>So, you knew about Geraint's true identity?</html>]]></talk_answer>
+      <talk_question mid="197"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Karacule and Barnac became furious saying that they were betrayed.<BR>It became chaotic and humans concealed the fact that <FONT color=#a82424>Geraint</FONT>, the leader of the <FONT color=#a82424>Six Heroes</FONT> was the Gold Dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-g" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-h" mid="201"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="200"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I was there. But, I too couldn't believe my eyes. After that, I've been doing research on dragons, but as I dig deeper, the more confused I got.<BR>
+It was inevitable since there were no concrete information. In that sense....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-h" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-i" mid="203"><![CDATA[<html>Yes, alright.</html>]]></talk_answer>
+      <talk_question mid="202"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Could you go meet Geraint and ask him a few questions? I beg you!<BR>There might not be a second chance to ask in person! Don't you think so?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-i" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-j" mid="205"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Thank you! Thank you so much!<BR><FONT color=#7e12d2>(Stas hugs me with tears in his eyes.)<BR></FONT>Then, go ask him how the dragons are made.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-j" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="206"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I thought the Black Dragon that appeared 50 years ago and recently was the <FONT color=#a82424>creation of Ancient Power</FONT>.<BR>
+This was my hypothesis, but recently, I became more certain. So I'm curious to know if the other dragons are made that way, too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="208"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Please go to the <FONT color=#a82424>Gold Dragon</FONT> and ask him. Are all dragons made?<BR>
+Like Black Dragons, can they be combined using Ancient Power?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-a" mid="210"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Geraint$<BR>Humans suspect everything and don't believe easily until they have seen it with their own eyes.<BR>But they are always deceived and are influenced by emotions and delusions.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-a" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-b" mid="212"><![CDATA[<html>I'm curious, too.</html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Geraint$<BR>...I remember someone said this.<BR>I'm not good with the human language. Even if I answer you, I'm not certain you can understand all of it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-b" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-c" mid="215"><![CDATA[<html>(Dragons are being made?)</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Geraint$<BR>The Black Draon was created using a <FONT color=#a82424>fragment of the Chaos Dragon</FONT> with the help of <FONT color=#a82424>Ancient Power</FONT>.<BR>In human expression, a dragon that's created.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-d" mid="217"><![CDATA[<html>(Listen more carefully)</html>]]></talk_answer>
+      <talk_question mid="216"><![CDATA[<html>$Geraint$<BR>But we, Argenta and I, are the Descendents of the <FONT color=#a82424>Sentinel Dragon</FONT>, not a creation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-d" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-e" mid="219"><![CDATA[<html>(He's talking about a myth)</html>]]></talk_answer>
+      <talk_question mid="218"><![CDATA[<html>$Geraint$<BR>In the beginning, Goddess Altea, the <FONT color=#a82424>World Mediator</FONT> created two dragons, <FONT color=#a82424>Sentinel</FONT> and <FONT color=#a82424>Chaos</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-e" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-f" mid="221"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="220"><![CDATA[<html>$Geraint$<BR>Under the kindness of Goddess <FONT color=#a82424>Altea</FONT>, and the good deeds of the Ancients, the world was peaceful. On top of that, it was also protected by two dragons. But because of Goddess <FONT color=#a82424>Vestinel's</FONT>, jealousy of Goddess Altea, darkness soon descended upon the whole <FONT color=#a94407>Lagendia</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-f" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-g" mid="223"><![CDATA[<html>(Mist Land... I've heard of it)</html>]]></talk_answer>
+      <talk_question mid="222"><![CDATA[<html>$Geraint$<BR>When Goddess Altea drank <FONT color=#a82424>Vestinel's poison</FONT>, the good deeds of the Ancients became contaminated by darkness and the Ancients became corrupted. The evil Beyond Dragon who came from Vestinel's <FONT color=#a94407>Mist Land</FONT>, started to destroy Lagendia.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-g" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-h" mid="225"><![CDATA[<html>Did the Sentinel win?</html>]]></talk_answer>
+      <talk_answer link_index="n216_geraint_wounded-5-h" mid="226"><![CDATA[<html>Or, did the Chaos win?</html>]]></talk_answer>
+      <talk_question mid="224"><![CDATA[<html>$Geraint$<BR>Sentinel and Chaos barely defeated the <FONT color=#a82424>Beyond Dragon</FONT>. But the Chaos dragon got <FONT color=#a82424>contaminated</FONT> by Beyond's evil energy. When corrupted Chaos threatened the world once again, Sentinel tried to stop Chaos. And the epic battle began....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-h" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-i" mid="228"><![CDATA[<html>Future...?</html>]]></talk_answer>
+      <talk_question mid="227"><![CDATA[<html>$Geraint$<BR>...Nobody won. After the battle, <FONT color=#a82424>Chaos' body</FONT> was divided into many pieces and was spread all over the world.<BR>
+<FONT color=#a82424>Sentinel</FONT> also used too much of its power, so it <FONT color=#a82424>disintegrated</FONT> itself.<BR>
+To prepare for the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-i" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-j" mid="230"><![CDATA[<html>What about the Monolith?</html>]]></talk_answer>
+      <talk_question mid="229"><![CDATA[<html>$Geraint$<BR>Argenta and I are the fragments of the Sentinel Dragon. As humans like to call, siblings.<BR>Our <FONT color=#a82424>destiny</FONT> is to stop the resurrection of Chaos' creations.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-j" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-k" mid="232"><![CDATA[<html>Can humans approach it? Never?</html>]]></talk_answer>
+      <talk_question mid="231"><![CDATA[<html>$Geraint$<BR>.... <FONT color=#7e12d2>(Geraint's face darkens.)</FONT> Humans should not know about the Monolith.<BR>FOgret about it. <FONT color=#a82424>Argenta</FONT> is maintaining it with all her power.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-k" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-l" mid="234"><![CDATA[<html>But I have to go to the Monolith.</html>]]></talk_answer>
+      <talk_question mid="233"><![CDATA[<html>$Geraint$<BR>......That's correct. To reach the Goddess, you need a <FONT color=#a82424>medium</FONT>. But for humans, the Monolith will only be used as a tool for destruction and annihilation. Stop your useless curiosity.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-l" image="" itemindex="">
+      <talk_answer link_index="n216_geraint_wounded-5-m" mid="236"><![CDATA[<html>Then can the Prophet reach the Monolith?</html>]]></talk_answer>
+      <talk_question mid="235"><![CDATA[<html>$Geraint$<BR>You seem to have a desperate reason.<BR>
+But.... In any case, I will not tell you how.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-5-m" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="237"><![CDATA[<html>$Geraint$<BR>Is this the <FONT color=#a82424>answer</FONT> you were seeking? <FONT color=#7e12d2>(Geraint does not talk for a while.)<BR></FONT>I cannot stop you from finding a way yourself. But I cannot help you.<BR>
+I'm sorry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n216_geraint_wounded-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="239"><![CDATA[<html>$Geraint$<BR>Now, you better return to the <FONT color=#a82424>man waiting for the answers</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-6" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="240"><![CDATA[<html>$Academic Jasmine$<BR>Geraint told you the story. Yes.... For an ordinary human to go to Monolith is impossible. I'm well aware of that. But we can't give up.<BR>
+The only hope left for our world... lies there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-a" mid="242"><![CDATA[<html>(Pass on the response)</html>]]></talk_answer>
+      <talk_question mid="241"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Welcome.<BR>
+Did you listen to Geraint's response?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-b" mid="244"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="243"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I see. So the Black Dragon was only one of the <FONT color=#a82424>Chaos Dragon's broken piece</FONT>....<BR>Then, before all the creations are destroyed, the Black Dragon can always be made.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-c" mid="246"><![CDATA[<html>Why can't you face him?</html>]]></talk_answer>
+      <talk_question mid="245"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Hmm... thank you for the precious information.<BR>I would like to meet him myself, but I can't face him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-d" mid="248"><![CDATA[<html>(Stas lowers his head)</html>]]></talk_answer>
+      <talk_question mid="247"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>After the <FONT color=#a82424>battle 50 years ago</FONT>, I couldn't be on his side. When he disappeared without saying anything, I was filled with anger and shock.<BR>
+...I didn't look at the reality rationally.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-e" mid="250"><![CDATA[<html>Wow~ you have a lot of worries.</html>]]></talk_answer>
+      <talk_question mid="249"><![CDATA[<html>$Heraldry Scholar Stas$<BR>As a scholar, I shouldn't have done that. Concealing and fOgretting incomprehensible phenomenon. When only the <FONT color=#a82424>illusion</FONT> of Six Heroes were all that was left....<BR>
+I should have spoke out what I had seen. ...I should have done it then.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-!next" mid="252"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="251"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">389</exe>
+         <exe type="talk" npc="n393_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3890,,,,,,</exe>
+         <exe type="complete">389</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n523_velskud" sub="b" />
+   <exelink qstep="1" npc="n523_velskud" sub="c" />
+   <exelink qstep="1" npc="n523_velskud" sub="d" />
+   <exelink qstep="1" npc="n523_velskud" sub="e" />
+   <exelink qstep="1" npc="n523_velskud" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n393_academic_station" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n209_elite_soldier" sub="b">0,1</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="h" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="i" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="j">0,1</exelink>
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="b" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="c" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="d" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="e" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="f" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="g" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="h" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="i" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="j" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="k" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="l" />
+   <exelink qstep="5" npc="n216_geraint_wounded" sub="m">0,1</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="e">0</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="!next">1</exelink>
+   <journal_data recompense="3890" quest_title="제레인트님이 말합니다" chapterid="5" quest_level="34" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13,n523</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>523</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="253"><![CDATA[Geraint Speaks I]]></title>
+         <contents mid="254"><![CDATA[<html>Listen to Velskud's story at the Foothills of Black Mountain.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Velskud</FONT></html>]]></contents>
+         <destination mid="255"><![CDATA[Talk to Velskud at the Foothills of Black Mountain]]></destination>
+         <todo_msg mid="256"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>11,n393</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>393</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="257"><![CDATA[Geraint Speaks II]]></title>
+         <contents mid="258"><![CDATA[<html>It seems Velskud has no intention of cooperating. Return to Saint Haven and report to Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="259"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="260"><![CDATA[Connect to the Academic Station and report.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n209</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>209</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="261"><![CDATA[Geraint Speaks III]]></title>
+         <contents mid="262"><![CDATA[<html>Return to the Royal Palace and see if there is anything new going on.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Elite Soldier Calrim</FONT></html>]]></contents>
+         <destination mid="263"><![CDATA[Talk to someone at the Saint Haven Royal Palace]]></destination>
+         <todo_msg mid="264"><![CDATA[Go to Saint Haven Royal Palace and see if there are any news.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="265"><![CDATA[Geraint Speaks IV]]></title>
+         <contents mid="266"><![CDATA[<html>Heraldry Scholar Stas is looking for me. Meet him and find out what he has to say.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="267"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="268"><![CDATA[Talk to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Geraint_Closeeye.dds</contents_image>
+         <destination_pos>13014,n216</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>216</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="269"><![CDATA[Geraint Speaks V]]></title>
+         <contents mid="270"><![CDATA[<html>Heraldry Scholar Stas wants to know about dragons by asking Geraint. Go to Geraint and ask him what Stas wants to know.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT><FONT color=#a82424> → Geraint</FONT></html>]]></contents>
+         <destination mid="271"><![CDATA[Talk to Geraint at the secret area in the basement of the Royal Palace]]></destination>
+         <todo_msg mid="272"><![CDATA[Meet Geraint and ask him Stas' question.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="273"><![CDATA[Geraint Speaks VI]]></title>
+         <contents mid="274"><![CDATA[<html>Go to Heraldry Scholar Stas and tell him Geraint's response.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="275"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="276"><![CDATA[Return to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>388</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

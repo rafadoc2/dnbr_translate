@@ -1,0 +1,257 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_404_return_of_fatality</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>4</qchapter>
+      <qid>404</qid>
+      <designer>김인정</designer>
+      <qlevel>28</qlevel>
+      <qdesc>1. 주교와 대화
+2. 검은 영지 수비대 거점으로 이동
+3. 보스방에서 제레인트와 대화
+4. 검은 산자락의 아르젠타와 대화</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>405</nextqid>
+      <nextqname>mq11_405_cursed_fragment</nextqname>
+      <nextqnpc>n212_argenta</nextqnpc>
+      <qkname mid="1"><![CDATA[Resurrection of the Black Plague]]></qkname>
+      <qnpc>
+         <npcid>212</npcid>
+         <npcename>n212_argenta</npcename>
+         <npckname>아르젠타(검은 산자락)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>37</npcid>
+         <npcename>n037_geraint</npcename>
+         <npckname>제레인트(검은 대군주의 수비대 거점)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>39</npcid>
+         <npcename>n039_bishop_ignasio</npcename>
+         <npckname>주교 이그나시오</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Bishop Ignacio$<BR>We appreciate the effort both you and <FONT color=#a82424>General Douglas</FONT> are putting into.<BR>Please rescue the <FONT color=#a82424>Prophet</FONT>. I believe in you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-noquest" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Argenta$<BR>Never think of following<FONT color=#a82424>Geraint</FONT>.<BR>.However if you insist, I would not stop you, it is your own decision afterall</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-noquest" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Geraint$<BR>Buzz off. I am trying to find <FONT color=#a82424>his</FONT> location..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceppted" mid="71"><![CDATA[<html>So can we now chase the Black Knight?</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$General Douglas$<BR>We have completely investigate <FONT color=#a82424>Dark Overlord keep</FONT> with your help, we found a route that could minimal the damage to our troops.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Bishop Ignacio$<BR>We appreciate the effort both you and <FONT color=#a82424>General Douglas</FONT> are putting into.<BR>Please rescue the <FONT color=#a82424>Prophet</FONT>. I believe in you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-1" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Geraint$<BR>Buzz off. I am trying to find <FONT color=#a82424>his</FONT> location..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-1" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Argenta$<BR>Never think of following<FONT color=#a82424>Geraint</FONT>.<BR>.However if you insist, I would not stop you, it is your own decision afterall</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$General Douglas$<BR>Troops are ready. I considering to divide them into multiple group on the way to<FONT color=#a82424>Fortress of the Dark Overlord Army</FONT>. You should start going as soon as you finish the preparation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$General Douglas$<BR>It look as though you are qualified. A little more of training will be better before you go</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="QW_43.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-c" mid="63"><![CDATA[<html>Will do.</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$General Douglas$<BR>Even our Elite Soldiers are not familiar with <FONT color=#a82424>The Fortress of the Dark Overlord Army</FONT>.<BR>We hope we could help you as much as we could, be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-c" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$General Douglas${action:talk}<BR>The <FONT color=#a82424>Prophet</FONT> must be rescued<BR>I am worried about the future of the Nation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_43.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$General Douglas$<BR>I have despatch my troops in group. You head to <FONT color=#a82424>The Fortress of Dark Overlord</FONT> as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2" image="" itemindex="">
+      <talk_answer link_index="n037_geraint-2-a" mid="17"><![CDATA[<html>(Geraint is staring at one direction.)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Geraint$<BR>I was just a second late.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2-a" image="" itemindex="">
+      <talk_answer link_index="n037_geraint-2-b" mid="19"><![CDATA[<html>Nest? What is that mean?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Geraint$<BR>The <FONT color=#a82424>Nest</FONT> has been completed while inside. I cant approach there anymore</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-2-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Geraint$<BR><FONT color=#a82424>Argenta</FONT> will explain it to you.<BR><FONT color=#7e12d2>(Geraint remain speechless.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n039_bishop_ignasio-2" image="QW_43.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Bishop Ignacio$<BR>I heard you are going to <FONT color=#a82424>The Fortress of the Dark Overlord Army</FONT> under General's order.<BR>I will wish you that you can save the <FONT color=#a82424>Prophet</FONT> without fall. Be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n037_geraint-3" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Geraint$<BR>....<BR><FONT color=#7e12d2>(He seem reluctant to talk about it. Look for Argenta at Footshill of Foothills of Black Mountain.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-a" mid="23"><![CDATA[<html>Nest? What is it?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Argenta$<BR>I know the <FONT color=#a82424>Nest</FONT> is completed, I can feel it.<BR>We cant turn back any more, it is a critical time right now</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-a" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-b" mid="25"><![CDATA[<html>Would you listen to Geraint?.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>Would you listen to Geraint?.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-b" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n212_argenta-3-c" mid="27"><![CDATA[<html>Ok... (She being lenient to Geraint)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Argenta$<BR>What? He said that?<BR>Ok. Listen properly I not going to repeat myself the second time. This is just for you</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-c" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-d" mid="29"><![CDATA[<html>(I cant remember the monster name, but they are strong.)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Argenta$<BR>The <FONT color=#a82424>Nest</FONT> means the <FONT color=#a82424>Barrier</FONT>. Anyone who has powerful force set the barrier to protect its domain. I can't say who has the powerful force, cause weak monster like Cerberus and Manticore have it too</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-d" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-e" mid="31"><![CDATA[<html>What?! The Black Dragon is awake again?!</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Argenta$<BR>But the <FONT color=#a82424>Nest</FONT> is not created by those weak monsters. It created by the <FONT color=#a82424>Black Dragon</FONT>'s power.<BR>Which means <FONT color=#a82424>The Black Dragon is awake again</FONT>. So you got a brief idea what going on now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-e" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-f" mid="33"><![CDATA[<html>Is there any method to destory it?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Argenta$<BR>Yes. The Nest would create a powerful <FONT color=#a82424>refusal</FONT> to <FONT color=#a82424>anyone but the creator</FONT> to prevent intruders. You need to use special power and tools to actually go inside the nest</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-f" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-g" mid="35"><![CDATA[<html>You refering to the time that Black Dragon and the Six Heroes fought</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Argenta$<BR>An alternate way is to <FONT color=#a82424>get rid of the owner</FONT> who created the Nest. But it required on to enter the nest.<BR>Even <FONT color=#a82424>50 years ago</FONT>, we had to find an <FONT color=#a82424>Ancient Celebrant's</FONT> <FONT color=#a82424>Rune</FONT> to open the Black Dragon's Nest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-g" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-h" mid="37"><![CDATA[<html>What the best solution now?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Argenta$<BR>It doesn't matter how many heroes we had pass or present. Most importantly is the fact that Black Dragon is awake again and had created the nest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-h" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-i" mid="39"><![CDATA[<html>Could you please guide me on the steps involved?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Argenta$<BR>As the nest is created by the same guy who created 50 years ago. We just had to track back the resistance and we be able to open the Black Dragon Nest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-i" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-j" mid="41"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n212_argenta-3-j" image="" itemindex="">
+      <talk_answer link_index="n212_argenta-3-!next" mid="43"><![CDATA[<html>I will do it!</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Argenta$<BR>I told you already. <FONT color=#a82424>Ancient Celebrant's Rune</FONT>.<BR>If Geraint is not able to come out with a new solution, we had no choice but to make a new <FONT color=#a82424>Ancient Celebrant's Rune</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">404</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4041,4041,4042,4043,4044,4044,4046</exe>
+         <exe type="complete">404</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n037_geraint" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="b" />
+   <exelink qstep="3" npc="n212_argenta" sub="c" />
+   <exelink qstep="3" npc="n212_argenta" sub="d" />
+   <exelink qstep="3" npc="n212_argenta" sub="e" />
+   <exelink qstep="3" npc="n212_argenta" sub="f" />
+   <exelink qstep="3" npc="n212_argenta" sub="g" />
+   <exelink qstep="3" npc="n212_argenta" sub="h" />
+   <exelink qstep="3" npc="n212_argenta" sub="i">0</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="j">1</exelink>
+   <exelink qstep="3" npc="n212_argenta" sub="!next" />
+   <journal_data recompense="1:4041,2:4042,3:4043,4:4044,5:4044,6:4046" quest_title="검은 재난의 부활" chapterid="4" quest_level="28" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Resurrection of the Black Plague]]></title>
+         <contents mid="48"><![CDATA[<html>Discuss the backup plan with <FONT color=#a82424>General Douglas</FONT>.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="50"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_43.dds</contents_image>
+         <destination_pos>432,n37</destination_pos>
+         <destination_mode>custom:431@1,432@4</destination_mode>
+         <statemark_npcid>37</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Resurrection of the Black Plague]]></title>
+         <contents mid="52"><![CDATA[<html>Following Geraint is the only way to chase the Black Knight. <FONT color=#a82424>Geraint</FONT> went to <FONT color=#a82424>The Fortress of Dark Overlord Keep Army</FONT>'s way.<BR><BR><FONT color=#086171>Foothills of Black Mountain(Dark Overlord Gates)</FONT> <FONT color=#a82424>→ The Fortress of the Dark Overlord Army</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Investigate The Fortress of the Dark Overlord Army]]></destination>
+         <todo_msg mid="54"><![CDATA[Please go to The Fortress of Dark Overlrod Army and locate Geraint]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>13,n212</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>212</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Resurrection of the Black Plague]]></title>
+         <contents mid="56"><![CDATA[<html>Talk to <FONT color=#a82424>Argenta</FONT> about the <FONT color=#a82424>Nest</FONT> that you heard from Geraint.<BR> <BR><FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Argenta at Footshill of Foothills of Black Mountain]]></destination>
+         <todo_msg mid="58"><![CDATA[Please talk to Argenta at Footshill of Foothills of Black Mountain]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>-1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>421</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

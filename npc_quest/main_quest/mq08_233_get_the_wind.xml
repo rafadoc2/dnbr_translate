@@ -1,0 +1,247 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq08_233_get_the_wind</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>3</qchapter>
+      <qid>233</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc>엘레나의 명령서	300051
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>234</nextqid>
+      <nextqname>mq08_234_cant_stop</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[The Wind of Destiny is Blowing]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>554</npcid>
+         <npcename>n554_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n554_triana-noquest" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Archer Triana$<BR>I hear destiny calling me from this sad wind.<BR>Don't you hear that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="6"><![CDATA[<html>I'm not a little girl!!</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>You're doing great work.<BR>
+I have another request if you're okay, little girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="188"><![CDATA[<html>What is it about?</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Talk}<BR>It's related to <FONT color=#a82424>Archer Triana</FONT>.<BR>Asking <FONT color=#a82424>Warrior Xian</FONT> might be faster, but he's on another mission.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="190"><![CDATA[<html>Elena...?</html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>The leader of the spiders, <FONT color=#a82424>Spider Queen Raren</FONT>, lives at the <FONT color=#a82424>Dark Tower Magic Institute</FONT>.<BR>Recently, the spiders were acting suspiciously. Sure enough, they seem to be working under <FONT color=#a82424>Elena</FONT>'s orders.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="192"><![CDATA[<html>(Oh... eventually...)</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>If I look at the evidence, I think <FONT color=#a82424>Elena</FONT> is gathering poison and trying to contaminate Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2" mid="194"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>To stop it from happening I've assigned the task of eliminating Raren to <FONT color=#a82424>Archer Triana</FONT>, but I haven't heard from her yet.<BR>Can you go and see if she is okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n554_triana-1" image="" itemindex="">
+      <talk_question mid="143"><![CDATA[<html>$Archer Triana$<BR>I hear destiny calling me from this sad wind.<BR>Don't you hear that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_21.dds" itemindex="">
+      <talk_question mid="195"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Refusal}<BR>So trustworthy. I'm sorry I keep giving difficult tasks to a little girl like you.<BR>Please go to <FONT color=#a82424>Dark Tower Magic Institute</FONT> and see if <FONT color=#a82424>Archer Triana</FONT> is okay.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n554_triana-2" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_question mid="196"><![CDATA[<html>$Archer Triana$<BR>I can't move until my mission is complete.<BR>
+My mission is to eliminate {monster:510}.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n554_triana-3" image="" itemindex="">
+      <talk_answer link_index="n554_triana-3-a" mid="199"><![CDATA[<html>I came to see if you're okay.</html>]]></talk_answer>
+      <talk_question mid="197"><![CDATA[<html>$Archer Triana${action:Talk}<BR>Oh, you're <FONT color=#387206>{user_nick}</FONT>.<BR>What brings you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n554_triana-3-a" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n554_triana-3-b" mid="202"><![CDATA[<html>It's dangerous here.</html>]]></talk_answer>
+      <talk_question mid="200"><![CDATA[<html>$Archer Triana$<BR>Yes, as you can see, I'm alright.<BR>
+<FONT color=#7e12d2>(Triana wonders)<BR></FONT>If he gave me some more time, I would have completed the mission and returned.<BR>Why is he so worried?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n554_triana-3-b" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n554_triana-4" mid="204"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="203"><![CDATA[<html>$Archer Triana$<BR>Hmm.... Do humans usually worry a lot? Xian was also worried.<BR>Elves don't die easily. Not until our path of <FONT color=#a82424>Telesia</FONT> is over...<BR>So relax.<BR>
+<FONT color=#7e12d2>(Triana smiles)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n554_triana-4" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="205"><![CDATA[<html>$Archer Triana${action:Talk}<BR>I better move before other adventurers come here.<BR>
+Now, you can go back to <FONT color=#a82424>Adverturer's Guild Master Deckard</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4" image="QS_Default.dds" itemindex="300051">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-a" mid="208"><![CDATA[<html>(Hand him Elena's order scroll for monsters)</html>]]></talk_answer>
+      <talk_question mid="206"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>
+Triana came by earlier and reported to me.<BR>
+Hmm? What's that...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-a" image="QS_Default.dds" itemindex="300051">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-b" mid="238"><![CDATA[<html>(Explain what you saw)</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Adverturer's Guild Master Deckard${action:Talk}<BR>
+This is... wow. So the <FONT color=#a82424>Dark Tower Magic Institute</FONT> was indeed the base for those venomous spiders?<BR>Hmm… what was the situation there like?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-c" mid="210"><![CDATA[<html>I'm alright.</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>That must be the poison. If it is being moved, there must be some other plan.<BR>Hmm, considering the magnitude of this case, I would need more people involved along with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-c" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-d" mid="212"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Adverturer's Guild Master Deckard$<BR>The Adventurers' Guild should help you out. Other adventurers will be called in too.<BR><FONT color=#7e12d2>(Deckard isn't listening)<BR></FONT>Since you are very skillful, please continue to help us out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-4-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4-!next" mid="214"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">233</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">510</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200510</exe>
+         <exe type="addquestitem" num="1">300051</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300051</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2330,,,,,,</exe>
+         <exe type="complete">233</exe>
+         <exe type="delquestitem" num="-1">300051</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="2">0,2,3,8,1</exelink>
+   <exelink qstep="3" npc="n554_triana" sub="b" />
+   <exelink qstep="3" npc="n554_triana" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
+   <exelink qstep="4" npc="n024_adventurer_guildmaster_decud" sub="!next">2,1</exelink>
+   <journal_data recompense="2330" quest_title="숙명의 바람이 불어옵니다" chapterid="3" quest_level="18" quest_mark_type="1" use_item_list="300051">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="215"><![CDATA[The Wind of Destiny is Blowing I]]></title>
+         <contents mid="216"><![CDATA[<html>Listern to Adverturer's Guild Master Deckard's worries.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adverturer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="217"><![CDATA[Talk to Adverturer's Guild Master Deckard]]></destination>
+         <todo_msg mid="218"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>154,0,0</destination_pos>
+         <destination_mode>custom:152@1,153@1,154@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="219"><![CDATA[The Wind of Destiny is Blowing II]]></title>
+         <contents mid="220"><![CDATA[<html>Archer Triana found out that the venomous spiders at the Dark Tower Magic Institute were busy moving something so she went there to find out. Since we haven't heard from her after that, go check if she's okay.<BR>
+ <BR>
+<FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Dark Tower Magic Institute</FONT></html>]]></contents>
+         <destination mid="221"><![CDATA[Explore the Dark Tower Magic Institute]]></destination>
+         <todo_msg mid="222"><![CDATA[Find Archer Triana at the Dark Tower Magic Institute.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Triana.dds</contents_image>
+         <destination_pos>154,n554</destination_pos>
+         <destination_mode>custom:152@1,153@1,154@1</destination_mode>
+         <statemark_npcid>554</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="223"><![CDATA[The Wind of Destiny is Blowing III]]></title>
+         <contents mid="224"><![CDATA[<html>Defeated the Queen Spider Raren. Talk to Archer Triana.<BR><BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Dark Tower Magic Institute (Archer Triana)</FONT></html>]]></contents>
+         <destination mid="225"><![CDATA[Talk to Archer Triana at the Dark Tower Magic Institute.]]></destination>
+         <todo_msg mid="226"><![CDATA[Talk to Archer Triana.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="227"><![CDATA[The Wind of Destiny is Blowing IV]]></title>
+         <contents mid="228"><![CDATA[<html>Checked how Archer Triana is doing, so return to Adverturer's Guild Master Deckard and report.<BR>
+ <BR>
+<FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adverturer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="229"><![CDATA[Report to Adverturer's Guild Master Deckard]]></destination>
+         <todo_msg mid="230"><![CDATA[Return to Adverturer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>232</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

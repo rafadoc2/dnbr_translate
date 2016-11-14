@@ -1,0 +1,265 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq11_399_go_mate_with</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>5</qchapter>
+      <qid>399</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>쓸쓸한 숲의 화석 파편	300250
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>724</nextqid>
+      <nextqname>mq15_724_lotusmarsh</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Colleagues]]></qkname>
+      <qnpc>
+         <npcid>393</npcid>
+         <npcename>n393_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>519</npcid>
+         <npcename>n519_cian</npcename>
+         <npckname>워리어 시안</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>533</npcid>
+         <npcename>n533_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Archer Triana$<BR>That's destiny.<BR>
+Everything is within the flow of the <FONT color=#a82424>Telezia</FONT> which was planned by Goddess Altea.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-noquest" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Warrior Xian$<BR>Because of me... Geraint....<BR>Ahh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n393_academic_station-accepting-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_07.ogg}<BR>We almost had the <FONT color=#a82424>Prophet</FONT> in our possession....<BR>This concluded into a result not much different from our record.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-accepting-a" image="" itemindex="">
+      <talk_question mid="431"><![CDATA[<html>$Academic Jasmine$<BR>For the last time, see if there is any evidence at the <FONT color=#a82424>Secret Area in the Basement of the Royal Palace</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="380"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Mission Object.</FONT><BR>
+※ <FONT color=#7e12d2>Talk to Warrior Xian in the Basement of the Royal Palace.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-1" image="" itemindex="">
+      <talk_question mid="382"><![CDATA[<html>$Archer Triana$<BR>It's also destiny.<BR>
+Everything is within the flow of the Telezia which was planned by Goddess Altea.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1" image="QW_LotusMarshTown.dds" itemindex="">
+      <talk_answer link_index="n519_cian-1-a" mid="385"><![CDATA[<html>Lotus Marsh?</html>]]></talk_answer>
+      <talk_question mid="383"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>Archer Triana is waiting for you at the Hermalte Port.<BR>You should go to <FONT color=#a82424>Lotus Marsh</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n519_cian-1-b" mid="387"><![CDATA[<html>(I have to go that way, too...)</html>]]></talk_answer>
+      <talk_question mid="386"><![CDATA[<html>$Warrior Xian$<BR>Yes. I have to give <FONT color=#a82424>Argenta</FONT> <FONT color=#a82424>Geraint's Jewel</FONT>.<BR>This is... all I can do for him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1-b" image="" itemindex="">
+      <talk_answer link_index="n519_cian-1-c" mid="389"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="388"><![CDATA[<html>$Warrior Xian$<BR>If you're okay, <FONT color=#387206>{user_nick}</FONT>.<BR>I'm sorry, but could you do me a favour?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1-c" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n519_cian-1-d" mid="391"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="390"><![CDATA[<html>$Warrior Xian$<BR>Because Triana went to defeat Serpentra with me, she was also covered in <FONT color=#a82424>Serpentra's blood</FONT> and was poisoned. I was also contaminated.... That's my fault, but <FONT color=#a82424>Triana</FONT> didn't have to go.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1-d" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n519_cian-1-e" mid="393"><![CDATA[<html>Alone?</html>]]></talk_answer>
+      <talk_question mid="392"><![CDATA[<html>$Warrior Xian$<BR>When I asked <FONT color=#a82424>Ithilien</FONT>, she said there is a <FONT color=#a82424>temporary cure that delays the contamination progress</FONT>. Please find the material to make that cure and give it to Triana. Then tell her she can leave without me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1-e" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n519_cian-1-f" mid="396"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="394"><![CDATA[<html>$Warrior Xian$<BR>Yes, you don't have to wait for me. I happened to meet <FONT color=#a82424>Triana</FONT> at <FONT color=#a82424>Prairie Town</FONT> and came here with her. I've received so much help from her, but I did nothing except become a burden. I'm so sorry.<BR>
+(Xian sighs.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-1-f" image="QW_45.dds" itemindex="">
+      <talk_question mid="397"><![CDATA[<html>$Warrior Xian$<BR>Oh, what I need is the <FONT color=#a82424>Fossil Fragments at the Deserted Woods</FONT>.<BR>You'll be able to find it at the <FONT color=#a82424>Ghost Town of Isolated Forest</FONT>. Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-2" image="QW_45.dds" itemindex="">
+      <talk_question mid="399"><![CDATA[<html>$Warrior Xian$<BR>Find the Fossil Fragments at the <FONT color=#a82424>Ghost Town of Isolated Forest</FONT> and give it to <FONT color=#a82424>Triana</FONT> at the Hermalte Port. Please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="400"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Mission Object.</FONT><BR>
+※ <FONT color=#7e12d2>Find the Fossil Fragments of the wood at the Ghost Town of Isolated Forest.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n519_cian-3" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_question mid="403"><![CDATA[<html>$Warrior Xian${action:Talk}<BR>You found what I asked for. Now go to <FONT color=#a82424>Hermalte Port</FONT> and give it to <FONT color=#a82424> Triana</FONT>.<BR>Please tell her she doesn't have to wait for me, so go ahead and leave without me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n533_triana-3-a" mid="405"><![CDATA[<html>(Tell her Xian's message)</html>]]></talk_answer>
+      <talk_question mid="404"><![CDATA[<html>$Archer Triana$<BR>Wow, <FONT color=#a82424>Warrior Xian</FONT> told you to give this to me...?<BR>Thank you. But, how come Xian didn't come?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3-a" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n533_triana-3-b" mid="407"><![CDATA[<html>Strange?</html>]]></talk_answer>
+      <talk_question mid="406"><![CDATA[<html>$Archer Triana${action:Talk}<BR>Really? Telling me to go alone....<BR><FONT color=#7e12d2>(Triana tilts her head)<BR></FONT>Human language is strange.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3-b" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n533_triana-3-c" mid="409"><![CDATA[<html>Colleague...?</html>]]></talk_answer>
+      <talk_question mid="408"><![CDATA[<html>$Archer Triana$<BR>Strange.<BR>The person who said '<FONT color=#a82424>We're friends!' </FONT> was none other than <FONT color=#a82424>Xian</FONT> himself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3-c" image="" itemindex="">
+      <talk_answer link_index="n533_triana-3-d" mid="411"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="410"><![CDATA[<html>$Archer Triana$<BR>Yes, colleague.<BR>But why is he telling a colleague to go on a journey by herself?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3-d" image="" itemindex="">
+      <talk_answer link_index="n533_triana-3-e" mid="413"><![CDATA[<html>I think I'll be heading towards the Lotus Marsh...</html>]]></talk_answer>
+      <talk_question mid="412"><![CDATA[<html>$Archer Triana$<BR>I'm going to wait for Xian right here. We will go to Lotus Marsh together.<BR>...But, <FONT color=#387206>{user_nick}</FONT>, where are you going?<BR>Are you a colleague too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3-e" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_answer link_index="n533_triana-3-f" mid="415"><![CDATA[<html>(.........)</html>]]></talk_answer>
+      <talk_question mid="414"><![CDATA[<html>$Archer Triana${action:Talk}<BR>Then, we're friends.<BR><FONT color=#7e12d2>(Triana smiles)<BR></FONT>Now, if we wait a little longer, Xian will come. Let's go to Lotus Marsh together.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3-f" image="" itemindex="">
+      <talk_answer link_index="n533_triana-3-g" mid="438"><![CDATA[<html>I think... I better go before you guys. I'm sorry....</html>]]></talk_answer>
+      <talk_question mid="437"><![CDATA[<html>$Archer Triana$<BR>
+Huh...? Is there a problem?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3-g" image="" itemindex="">
+      <talk_answer link_index="n533_triana-3-h" mid="417"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="416"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n533_triana-3-h" image="QN_Npc_Triana.dds" itemindex="">
+      <talk_question mid="418"><![CDATA[<html>$Archer Triana$<BR>
+It's okay. <BR>If you have something to do, you better go now. Then, let's meet again at Lotus Marsh.<BR>
+<FONT color=#7e12d2>(Triana smiles.)</FONT><BR>※ <FONT color=#7e12d2>You have completed [Chapter 5. Geraint the guardian].</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n393_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="432"><![CDATA[<html>$Academic Station$<BR>
+※ <FONT color=#086171>Mission Object.</FONT><BR>
+※ <FONT color=#7e12d2>Meet Archer Triana at the Hermalte Port.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">399</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1172</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201172</exe>
+         <exe type="addquestitem" num="1">300250</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300250</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3990,,,,,,</exe>
+         <exe type="delquestitem" num="-1">300250</exe>
+         <exe type="complete">399</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n393_academic_station" sub="a">0</exelink>
+   <exelink qstep="1" npc="n519_cian" sub="b" />
+   <exelink qstep="1" npc="n519_cian" sub="c" />
+   <exelink qstep="1" npc="n519_cian" sub="d" />
+   <exelink qstep="1" npc="n519_cian" sub="e" />
+   <exelink qstep="1" npc="n519_cian" sub="f">0,2,3,5,1</exelink>
+   <exelink qstep="3" npc="n533_triana" sub="b" />
+   <exelink qstep="3" npc="n533_triana" sub="c" />
+   <exelink qstep="3" npc="n533_triana" sub="d" />
+   <exelink qstep="3" npc="n533_triana" sub="e" />
+   <exelink qstep="3" npc="n533_triana" sub="f" />
+   <exelink qstep="3" npc="n533_triana" sub="g">0</exelink>
+   <exelink qstep="3" npc="n533_triana" sub="h">1,2</exelink>
+   <journal_data recompense="3990" quest_title="동료입니까" chapterid="5" quest_level="38" quest_mark_type="1" use_item_list="300250">
+      <journal index="1">
+         <contents_image>QN_Npc_Cian.dds</contents_image>
+         <destination_pos>13014,n519</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>519</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="419"><![CDATA[Colleagues I]]></title>
+         <contents mid="420"><![CDATA[<html>Met Warrior Xian at the Secret Area in the Basement of the Royal Palace.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace(Secret Basement Area)</FONT> <FONT color=#a82424>→ Warrior Xian</FONT></html>]]></contents>
+         <destination mid="421"><![CDATA[Talk to Warrior Xian in the Basement of the Royal Palace]]></destination>
+         <todo_msg mid="422"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_45.dds</contents_image>
+         <destination_pos>453,0,0</destination_pos>
+         <destination_mode>custom:451@1,452@3,453@0</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="423"><![CDATA[Colleagues II]]></title>
+         <contents mid="424"><![CDATA[<html>Adventurers who went with Geraint must have been contaminated with Serpentra's blood. Need to make a temporary cure for them. Find the Fossil Fragments at the Ghost Town of Isolated Forest.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain(Lonely Forest Path)</FONT> <FONT color=#a82424>→ Ghost Town of Isolated Forest</FONT></html>]]></contents>
+         <destination mid="425"><![CDATA[Ghost Town of Isolated Forest]]></destination>
+         <todo_msg mid="426"><![CDATA[Find the Fossil Fragments of the Deserted Woods at the Ghost Town of Isolated Forest.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Triana.dds</contents_image>
+         <destination_pos>12,n533</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>533</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="427"><![CDATA[Colleagues III]]></title>
+         <contents mid="428"><![CDATA[<html>Give the Fossil Fragments of the Deserted Woods to Archer Triana at the Hermalte Port.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Archer Triana</FONT></html>]]></contents>
+         <destination mid="429"><![CDATA[Talk to Archer Triana at the Hermalte Port]]></destination>
+         <todo_msg mid="430"><![CDATA[Go to Hermalte Port and talk to Archer Triana.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>398</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>
