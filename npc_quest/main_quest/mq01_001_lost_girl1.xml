@@ -69,7 +69,7 @@
       <talk_question mid="198"><![CDATA[<html>$Mayor Harold$<BR>There is a place called <FONT color=#a82424>Shadow Forest Trail</FONT> near our village where the orcs appear frequently. It seems like Rose was taken by the leader <FONT color=#a82424>Orc </FONT><FONT color=#a82424>Kromish</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n001_elder_harold-1-e" image="QN_Guard_Steave.dds" itemindex="">
-      <talk_answer link_index="n001_elder_harold-2" mid="239"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_answer link_index="n001_elder_harold-2" mid="239"><![CDATA[<html>Tudo bem.</html>]]></talk_answer>
       <talk_question mid="175"><![CDATA[<html>$Mayor Harold$<BR>Thank you... Before you head out to the forest, talking to <FONT color=#a82424>Vigilante Leader Steve</FONT> might help you in your journey. It was a pleasure meeting you.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n004_guard_steave-1" image="QN_Elder_Harold.dds" itemindex="">
