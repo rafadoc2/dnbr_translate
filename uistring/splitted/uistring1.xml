@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <messages name="UIString" lang="SN1">
 <message mid="1"><![CDATA[Delete]]></message>
-<message mid="2"><![CDATA[Button]]></message>
+<message mid="2"><![CDATA[Botão]]></message>
 <message mid="3"><![CDATA[Checkbox]]></message>
 <message mid="4"><![CDATA[Radio Button 1]]></message>
 <message mid="5"><![CDATA[Radio Button 2]]></message>
@@ -67,7 +67,7 @@
 <message mid="65"><![CDATA[Title]]></message>
 <message mid="66"><![CDATA[Limit]]></message>
 <message mid="67"><![CDATA[Goal]]></message>
-<message mid="68"><![CDATA[Continue]]></message>
+<message mid="68"><![CDATA[Continuar]]></message>
 <message mid="69"><![CDATA[End Chat]]></message>
 <message mid="70"><![CDATA[Party Request]]></message>
 <message mid="71"><![CDATA[Nicknames must be between 4-10 characters. No special characters allowed.]]></message>
@@ -146,7 +146,7 @@ You'll still be able to enter a dungeon if your FTG runs out, but the item drop 
 <message mid="207"><![CDATA[Do not open again today.]]></message>
 <message mid="208"><![CDATA[This key cannot be changed.]]></message>
 <message mid="209"><![CDATA[Enter the %s key to switch to the previous Hotkey window.]]></message>
-<message mid="210"><![CDATA[Help [J]]]></message>
+<message mid="210"><![CDATA[Ajuda [J]]]></message>
 <message mid="211"><![CDATA[Keyword]]></message>
 <message mid="212"><![CDATA[Related Keywords]]></message>
 <message mid="213"><![CDATA[Brief guide]]></message>
